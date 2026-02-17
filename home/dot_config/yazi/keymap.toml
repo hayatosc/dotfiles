@@ -1,3 +1,28 @@
-[mgr]  
-prepend_keymap = [  
-]
+# smart-enter
+[[mgr.prepend_keymap]]
+on   = "<Enter>"
+run  = "plugin smart-enter"
+desc = "Enter the child directory, or open the file"
+
+# toggle-pane
+[[manager.prepend_keymap]]
+on   = "T"
+run  = "plugin toggle-pane min-preview"
+desc = "Show or hide the preview pane"
+
+[[manager.prepend_keymap]]
+on   = "i"
+run  = "plugin toggle-pane max-preview"
+desc = "Maximize or restore the preview pane"
+
+# smart-paste
+[[mgr.prepend_keymap]]
+on   = "p"
+run  = "plugin smart-paste"
+desc = "Paste into the hovered directory or CWD"
+
+# lagygit
+[[mgr.prepend_keymap]]
+on   = [ "g", "i" ]
+run  = "plugin lazygit"
+desc = "run lazygit"

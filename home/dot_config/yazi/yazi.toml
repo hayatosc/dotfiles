@@ -5,3 +5,17 @@ show_hidden = true
 edit = [
         { run = 'micro "$@"', block = true, for = "unix" },
 ]
+
+[preview]
+max_width  = 1920
+max_height = 1920
+
+[[plugin.prepend_fetchers]]
+id  = "git"
+url = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id  = "git"
+url = "*/"
+run = "git"

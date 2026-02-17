@@ -1,32 +1,39 @@
 [tools]
 "aqua:micro-editor/micro" = "latest"
-"aqua:ogham/exa" = "0.10.1"
-bat = "0.26.1"
-bun = "1.3.9"
-claude = "2.1.44"
+"aqua:ogham/exa" = "latest"
+bat = "latest"
+bun = "latest"
+claude = "latest"
 "conda:ffmpeg" = "latest"
-delta = "0.18.2"
-deno = "2.6.9"
+delta = "latest"
+deno = "latest"
 fd = "latest"
 fzf = "latest"
-gh = "2.86.0"
-ghq = "1.9.4"
+gh = "latest"
+ghq = "latest"
 imagemagick = "latest"
 jq = "latest"
-lazygit = "0.59.0"
-ni = "28.2.0"
-node = "24.13.1"
-opencode = "1.2.6"
-pnpm = "10.29.3"
-python = "3.14.3"
+lazygit = "latest"
+ni = "latest"
+node = "lts"
+opencode = "latest"
+pnpm = "latest"
+python = "latest"
 resvg = "latest"
-ripgrep = "15.1.0"
-rust = "1.93.1"
-starship = "1.24.2"
-tmux = "3.6a"
-uv = "0.10.3"
-yazi = "26.1.22"
+ripgrep = "latest"
+rust = "latest"
+starship = "latest"
+tmux = "latest"
+uv = "latest"
+yazi = "latest"
 zoxide = "latest"
 
 [settings]
 experimental = true
+lockfile = true
+
+[hooks]
+postinstall = '''
+# install yazi plugins
+ya pkg install
+'''
