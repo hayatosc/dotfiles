@@ -15,8 +15,9 @@ version = "1.3.9"
 backend = "core:bun"
 
 [[tools.claude]]
-version = "2.1.44"
+version = "2.1.45"
 backend = "aqua:anthropics/claude-code"
+"platforms.linux-x64" = { checksum = "blake3:a1f8c12ff5774d997cf27b3cf76ac1e0db077f97c41f9cf0541331cbdbd5e316", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.45/linux-x64/claude"}
 
 [[tools."conda:ffmpeg"]]
 version = "8.0.1"
@@ -27,8 +28,9 @@ version = "0.18.2"
 backend = "aqua:dandavison/delta"
 
 [[tools.deno]]
-version = "2.6.9"
+version = "2.6.10"
 backend = "core:deno"
+"platforms.linux-x64" = { checksum = "blake3:e30d9d185ba85d894b1600c53117e5cb4cb5ad81d9b395d40658120f847c4bd9"}
 
 [[tools.fd]]
 version = "10.3.0"
@@ -71,8 +73,9 @@ version = "1.2.6"
 backend = "aqua:anomalyco/opencode"
 
 [[tools.pnpm]]
-version = "10.29.3"
+version = "10.30.0"
 backend = "aqua:pnpm/pnpm"
+"platforms.linux-x64" = { checksum = "sha256:78d83aa009dc7e8d18faf5ea87e8cafed9601245f23757f00c3582284f54f793", url = "https://github.com/pnpm/pnpm/releases/download/v10.30.0/pnpm-linux-x64"}
 
 [[tools.python]]
 version = "3.14.3"
@@ -99,8 +102,9 @@ version = "3.6a"
 backend = "github:tmux/tmux-builds"
 
 [[tools.uv]]
-version = "0.10.3"
+version = "0.10.4"
 backend = "aqua:astral-sh/uv"
+"platforms.linux-x64" = { checksum = "sha256:18adf097cea30a165ba086c1e72659fec3c5aca056a560e7c39e0164ac871196", url = "https://github.com/astral-sh/uv/releases/download/0.10.4/uv-x86_64-unknown-linux-musl.tar.gz"}
 
 [[tools.yazi]]
 version = "26.1.22"
