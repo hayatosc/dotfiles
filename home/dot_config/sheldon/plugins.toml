@@ -5,33 +5,28 @@ defer = "{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}"
 
 [plugins]
 
-# zsh-defer を最初に即時ロード（他のプラグインの遅延ロードに必要）
+# lazy load
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"
 apply = ["source"]
-
-# 以下は起動後に遅延ロード
-[plugins.zsh-autosuggestions]
-github = "zsh-users/zsh-autosuggestions"
-apply = ["defer"]
 
 [plugins.zsh-autocomplete]
 github = "marlonrichert/zsh-autocomplete"
 apply = ["defer"]
 
-# ohmyzsh プラグイン（1クローンでまとめて管理）
 [plugins.ohmyzsh]
 github = "ohmyzsh/ohmyzsh"
 use = [
   "plugins/git/git.plugin.zsh",
+  "plugins/sudo/sudo.plugin.zsh",
   "plugins/copypath/copypath.plugin.zsh",
   "plugins/copyfile/copyfile.plugin.zsh",
   "plugins/docker/docker.plugin.zsh",
-  "plugins/mise/mise.plugin.zsh",
+  "plugins/docker-compose/docker-compose.plugin.zsh",
+  "plugins/gh/gh.plugin.zsh"
 ]
 apply = ["defer"]
 
-# zsh-syntax-highlighting は必ず最後にロード
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
 apply = ["defer"]

@@ -1,11 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# mise を先に初期化（sheldon など mise 管理ツールを PATH に追加するため）
-eval "$(~/.local/bin/mise activate zsh)"
-
-# plugins (sheldon)
-eval "$(sheldon source)"
 
 snap_bin_path="/snap/bin"
 if [ -n "${PATH##*${snap_bin_path}}" -a -n "${PATH##*${snap_bin_path}:*}" ]; then
@@ -16,6 +11,7 @@ fi
 alias cat="bat"
 alias ls="exa --icons"
 alias find="fd"
+alias cd="z"
 
 # yazi quick wrapper
 function y() {
@@ -26,4 +22,9 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# load mise first
+eval "$(~/.local/bin/mise activate zsh)"
+
+eval "$(sheldon source)"
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
