@@ -6,6 +6,11 @@ backend = "aqua:micro-editor/micro"
 version = "0.10.1"
 backend = "aqua:ogham/exa"
 
+[[tools."aqua:rossmacarthur/sheldon"]]
+version = "0.8.5"
+backend = "aqua:rossmacarthur/sheldon"
+"platforms.linux-x64" = { checksum = "sha256:80aa0be617072c278d67fd6c5fbce4903d3801d78b6abf8f058f0648d2242c78", url = "https://github.com/rossmacarthur/sheldon/releases/download/0.8.5/sheldon-0.8.5-x86_64-unknown-linux-musl.tar.gz"}
+
 [[tools.bat]]
 version = "0.26.1"
 backend = "aqua:sharkdp/bat"
