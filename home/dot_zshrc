@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# mise を先に初期化（sheldon など mise 管理ツールを PATH に追加するため）
+eval "$(~/.local/bin/mise activate zsh)"
+
 # plugins (sheldon)
 eval "$(sheldon source)"
 
@@ -23,5 +26,4 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-eval "$(~/.local/bin/mise activate zsh)"
 eval "$(starship init zsh)"
