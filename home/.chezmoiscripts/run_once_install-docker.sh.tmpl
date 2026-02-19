@@ -1,0 +1,53 @@
+#!/bin/bash
+{{- if contains "microsoft" .chezmoi.kernel.osrelease }}
+
+set -euo pipefail
+
+# Skip if docker is already installed
+if command -v docker &>/dev/null; then
+    echo "Docker is already installed, skipping."
+    exit 0
+fi
+
+echo "==> Installing Docker Engine on WSL2..."
+
+# Install dependencies
+sudo apt-get update -y
+sudo apt-get install -y ca-certificates curl
+
+# Add Docker's official GPG key
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+    -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add Docker's apt repository
+echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] \
+    https://download.docker.com/linux/ubuntu \
+    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" \
+    | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Install Docker Engine
+sudo apt-get update -y
+sudo apt-get install -y \
+    docker-ce \
+    docker-ce-cli \
+    containerd.io \
+    docker-buildx-plugin \
+    docker-compose-plugin
+
+# Add current user to docker group (avoids needing sudo)
+sudo usermod -aG docker "$USER"
+
+# Enable and start Docker via systemd (available on WSL2 with Ubuntu 22.04+)
+if systemctl is-enabled docker &>/dev/null || sudo systemctl enable --now docker; then
+    echo "==> Docker daemon enabled via systemd."
+else
+    echo "==> systemd not available. Start Docker manually with: sudo dockerd &"
+fi
+
+echo "==> Docker installation complete."
+echo "    Re-login (or run 'newgrp docker') to use docker without sudo."
+
+{{- end }}
