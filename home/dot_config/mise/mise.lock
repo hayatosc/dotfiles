@@ -53,6 +53,11 @@ backend = "aqua:cli/cli"
 version = "1.9.4"
 backend = "aqua:x-motemen/ghq"
 
+[[tools."github:steipete/gogcli"]]
+version = "0.11.0"
+backend = "github:steipete/gogcli"
+"platforms.linux-x64" = { checksum = "sha256:ca98ba56e29ccd3713fe7bf835fdca00ae1b97cdcb7b0bc5e393e7edb4089c84", url = "https://github.com/steipete/gogcli/releases/download/v0.11.0/gogcli_0.11.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/steipete/gogcli/releases/assets/356112477"}
+
 [[tools.imagemagick]]
 version = "7.1.2_13"
 backend = "conda:imagemagick"
