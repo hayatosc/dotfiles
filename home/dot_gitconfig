@@ -1,6 +1,7 @@
 [user]
 	name = hayatosc
 	email = hayato8190+univ@gmail.com
+	signingkey = /home/hayato/.ssh/id_ed25519.pub
 [push]
 	default = current
 [pull]
@@ -29,3 +30,7 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = gh auth git-credential
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
