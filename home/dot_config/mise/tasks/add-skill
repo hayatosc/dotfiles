@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+#MISE description="Import skills usage: add-skill <github-tree-url>"
+set -euo pipefail
+
+usage() {
+  echo "usage: add-skill <github-tree-url>" >&2
+}
+
+if [ $# -lt 1 ]; then
+  usage
+  exit 2
+fi
+
+case "$1" in
+  -h|--help)
+    usage
+    exit 0
+    ;;
+esac
+
+url="${1%/}"
+
+if [[ ! "$url" =~ ^https://github\.com/[^/]+/[^/]+/tree/[^/]+/.+ ]]; then
+  echo "error: unsupported url format: $url" >&2
+  exit 2
+fi
+
+rest="${url#https://github.com/}"
+owner_repo="${rest%%/tree/*}"
+after_tree="${rest#${owner_repo}/tree/}"
+ref="${after_tree%%/*}"
+path="${after_tree#${ref}/}"
+
+if [[ "$path" != skills/* ]]; then
+  echo "error: path must start with skills/: $path" >&2
+  exit 2
+fi
+
+if [[ "$path" == *".."* ]]; then
+  echo "error: path contains ..: $path" >&2
+  exit 2
+fi
+
+skill_name="${path##*/}"
+
+source_dir="${CHEZMOI_SOURCE_DIR:-$HOME/.local/share/chezmoi}"
+dest_root="$source_dir/home/dot_agents/skills"
+dest="$dest_root/$skill_name"
+
+if [ -e "$dest" ]; then
+  echo "error: skill already exists: $dest" >&2
+  exit 1
+fi
+
+tmp_dir="$(mktemp -d)"
+cleanup() {
+  rm -rf "$tmp_dir"
+}
+trap cleanup EXIT
+
+git clone --filter=blob:none --no-checkout "https://github.com/$owner_repo.git" "$tmp_dir/repo" >/dev/null
+(
+  cd "$tmp_dir/repo"
+  git sparse-checkout init --cone >/dev/null
+  git sparse-checkout set "$path" >/dev/null
+  git checkout "$ref" --quiet
+)
+
+src="$tmp_dir/repo/$path"
+if [ ! -d "$src" ]; then
+  echo "error: skill path not found in repo: $path" >&2
+  exit 1
+fi
+
+mkdir -p "$dest_root"
+cp -R "$src" "$dest"
+
+if [ ! -f "$dest/SKILL.md" ]; then
+  rm -rf "$dest"
+  echo "error: SKILL.md not found in copied skill: $dest" >&2
+  exit 1
+fi
+
+echo "added skill: $dest"
