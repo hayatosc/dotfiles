@@ -23,6 +23,7 @@ This file lists mandatory rules for all agents working in this repository.
 	- find -> fd
 	- cd -> z (zoxide)
 - Use [ni](https://github.com/antfu-collective/ni) for all package manager operations; do not use npm/yarn/pnpm/bun/deno command directly as possible
+	- alias -> na
 	- install -> ni
 	- add package -> ni <pkg>
 	- add dev dep -> ni -D <pkg>
