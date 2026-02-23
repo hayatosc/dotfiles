@@ -27,6 +27,7 @@ rust = "latest"
 starship = "latest"
 tmux = "latest"
 uv = "latest"
+yarn = "latest"
 yazi = { version = "latest", postinstall = "ya pkg install" }
 zoxide = "latest"
 
