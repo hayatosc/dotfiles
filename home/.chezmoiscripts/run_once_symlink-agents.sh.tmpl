@@ -1,0 +1,15 @@
+#!/bin/bash
+
+mkdir -p ~/.claude ~/.codex ~/.opencode ~/.gemini
+
+# claude
+ln -nfs ~/.agents/AGENTS.md ~/.claude/CLAUDE.md
+ln -nfs ~/.agents/skills ~/.claude/skills
+
+# codex
+ln -nfs ~/.agents/AGENTS.md ~/.codex/AGENTS.md
+ln -nfs ~/.agents/skills ~/.codex/skills
+
+# gemini
+ln -nfs ~/.agents/AGENTS.md ~/.gemini/GEMINI.md
+ln -nfs ~/.agents/skills ~/.gemini/skills
