@@ -1,3 +1,21 @@
 {
-  "model": "opusplan"
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git rebase *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Bash(sudo *)",
+      "Bash(rm -rf /*)",
+      "Bash(chmod 777 *)",
+      "Bash(npm install -g *)",
+      "Bash(git config *)",
+      "Bash(gh repo delete:*)"
+    ]
+  }
 }

@@ -1,0 +1,25 @@
+presets:
+  base:
+    allow-keychain: true
+    allow:
+      - "."
+
+  git-enabled:
+    allow-git: true
+
+  claude-code:
+    allow:
+      - "$HOME/.claude"
+
+auto-presets:
+  - command: claude
+    presets:
+      - base
+      - git-enabled
+      - claude-code
+
+  - command: opencode
+    presets:
+      - base
+      - git-enabled
+      - claude-code
