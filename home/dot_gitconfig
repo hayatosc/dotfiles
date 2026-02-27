@@ -35,3 +35,6 @@
 	format = ssh
 [commit]
 	gpgsign = true
+
+[wt]
+  basedir = {gitroot}/.git/worktrees

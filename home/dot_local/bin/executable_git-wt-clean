@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! git rev-parse --git-dir &>/dev/null; then
+  echo "error: not in a git repository" >&2
+  exit 1
+fi
+
+git fetch --prune
+
+worktrees_json=$(git-wt --json)
+
+# カレント以外・detached HEADでないworktreeのブランチ一覧を取得
+branches=$(printf '%s' "$worktrees_json" | jq -r '.[] | select(.current == false and .branch != null) | .branch')
+
+if [ -z "$branches" ]; then
+  echo "No non-current worktrees found."
+  exit 0
+fi
+
+deleted=0
+skipped=0
+
+while IFS= read -r branch; do
+  if git-wt -d "$branch"; then
+    ((deleted++)) || true
+  else
+    echo "Skipped (not merged): $branch"
+    ((skipped++)) || true
+  fi
+done <<< "$branches"
+
+echo ""
+echo "Done: ${deleted} deleted, ${skipped} skipped."
