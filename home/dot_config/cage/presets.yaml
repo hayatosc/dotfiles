@@ -7,19 +7,23 @@ presets:
   git-enabled:
     allow-git: true
 
-  claude-code:
+  agents:
     allow:
+      - "$HOME/.agents"
       - "$HOME/.claude"
+      - "$HOME/.opencode"
+      - "$HOME/.codex"
+      - "$HOME/.gemini"
 
 auto-presets:
   - command: claude
     presets:
       - base
       - git-enabled
-      - claude-code
+      - agents
 
   - command: opencode
     presets:
       - base
       - git-enabled
-      - claude-code
+      - agents
