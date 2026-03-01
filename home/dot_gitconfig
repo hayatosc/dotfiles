@@ -36,5 +36,12 @@
 [commit]
 	gpgsign = true
 
+[ghq]
+  user = hayatosc
 [wt]
-  basedir = {gitroot}/.git/worktrees
+  basedir = .git/wt
+[cx]
+  provider = copilot
+  model = gpt-5-mini
+  candidates = 3
+  timeout = 30

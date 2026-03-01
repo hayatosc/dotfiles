@@ -502,6 +502,11 @@ url = "https://api.anaconda.org/download/conda-forge/fonts-conda-ecosystem/1/noa
 url = "https://api.anaconda.org/download/conda-forge/fonts-conda-forge/1/noarch/fonts-conda-forge-1-hc364b38_1.conda"
 checksum = "sha256:54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98333"
 
+[[tools."aqua:github/copilot-cli"]]
+version = "0.0.420"
+backend = "aqua:github/copilot-cli"
+"platforms.linux-x64" = { checksum = "sha256:344f89ee1e619c9ffcb072381b7e53c2f305053008b55584dc5846d003c167b9", url = "https://github.com/github/copilot-cli/releases/download/v0.0.420/copilot-linux-x64.tar.gz"}
+
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.25.0"
 backend = "aqua:k1LoW/git-wt"
@@ -530,9 +535,9 @@ backend = "core:bun"
 "platforms.linux-x64" = { checksum = "blake3:1fde3005ad2838fe37d372ba5b213c3549db361aafbb4efb6600a43fe43d4aba"}
 
 [[tools.claude]]
-version = "2.1.62"
+version = "2.1.63"
 backend = "aqua:anthropics/claude-code"
-"platforms.linux-x64" = { checksum = "blake3:2dddb40e41b70cc148565b17a260df8e569435343a20becad93325b53c5f4f19", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/linux-x64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:70920ec7f2efc89a34fc41ef72de584093ca3366c44a1a1438e9778c5392f12d", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.63/linux-x64/claude"}
 
 [[tools."conda:ffmpeg"]]
 version = "8.0.1"
@@ -565,6 +570,11 @@ backend = "aqua:cli/cli"
 version = "1.9.4"
 backend = "aqua:x-motemen/ghq"
 
+[[tools."github:hayatosc/git-cx"]]
+version = "0.1.0"
+backend = "github:hayatosc/git-cx"
+"platforms.linux-x64" = { checksum = "sha256:ff12d69d6f6084f5827d606b07ed86d3894592bf9318fccfad71dda979be1fbe", url = "https://github.com/hayatosc/git-cx/releases/download/v0.1.0/git-cx_0.1.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/364454097"}
+
 [[tools."github:steipete/gogcli"]]
 version = "0.11.0"
 backend = "github:steipete/gogcli"
@@ -576,8 +586,12 @@ backend = "core:go"
 "platforms.linux-x64" = { checksum = "sha256:aac1b08a0fb0c4e0a7c1555beb7b59180b05dfc5a3d62e40e9de90cd42f88235", url = "https://dl.google.com/go/go1.26.0.linux-amd64.tar.gz"}
 
 [[tools."go:github.com/Warashi/cage"]]
-version = "latest"
+version = "0.1.13"
 backend = "go:github.com/Warashi/cage"
+
+[[tools."go:golang.org/x/tools/gopls"]]
+version = "0.21.1"
+backend = "go:golang.org/x/tools/gopls"
 
 [[tools.imagemagick]]
 version = "7.1.2_15"
@@ -767,9 +781,9 @@ version = "3.6a"
 backend = "github:tmux/tmux-builds"
 
 [[tools.uv]]
-version = "0.10.6"
+version = "0.10.7"
 backend = "aqua:astral-sh/uv"
-"platforms.linux-x64" = { checksum = "sha256:01d6ce770da88ce6445acb0a8764c8b1634c9f69c728dca68b19fc7a893f72b9", url = "https://github.com/astral-sh/uv/releases/download/0.10.6/uv-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:992529add6024e67135b1c80617abd2eca7be2cf0b99b3911f923de815bd8dc1", url = "https://github.com/astral-sh/uv/releases/download/0.10.7/uv-x86_64-unknown-linux-musl.tar.gz"}
 
 [[tools.yarn]]
 version = "4.12.0"
