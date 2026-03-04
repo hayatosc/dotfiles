@@ -780,6 +780,11 @@ backend = "aqua:starship/starship"
 version = "3.6a"
 backend = "github:tmux/tmux-builds"
 
+[[tools.ttyd]]
+version = "1.7.7"
+backend = "aqua:tsl0922/ttyd"
+"platforms.linux-x64" = { checksum = "blake3:6ed0d916345e111411cdc7f7d649bcb984ec1ee603d470b2151ac0a31b9585a4", url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"}
+
 [[tools.uv]]
 version = "0.10.7"
 backend = "aqua:astral-sh/uv"
