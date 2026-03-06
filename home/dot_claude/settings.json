@@ -27,6 +27,10 @@
     ],
     "defaultMode": "acceptEdits"
   },
+  "statusLine": {
+    "type": "command",
+    "command": "bun run ~/.claude/scripts/statusline.ts"
+  },
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true
   }

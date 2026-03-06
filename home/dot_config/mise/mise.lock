@@ -503,9 +503,9 @@ url = "https://api.anaconda.org/download/conda-forge/fonts-conda-forge/1/noarch/
 checksum = "sha256:54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98333"
 
 [[tools."aqua:github/copilot-cli"]]
-version = "0.0.420"
+version = "0.0.422"
 backend = "aqua:github/copilot-cli"
-"platforms.linux-x64" = { checksum = "sha256:344f89ee1e619c9ffcb072381b7e53c2f305053008b55584dc5846d003c167b9", url = "https://github.com/github/copilot-cli/releases/download/v0.0.420/copilot-linux-x64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:bbb564e1073b010adddf54cb689f60fab4dcc48ac515e812e671a9d803528e54", url = "https://github.com/github/copilot-cli/releases/download/v0.0.422/copilot-linux-x64.tar.gz"}
 
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.25.0"
@@ -535,9 +535,9 @@ backend = "core:bun"
 "platforms.linux-x64" = { checksum = "blake3:1fde3005ad2838fe37d372ba5b213c3549db361aafbb4efb6600a43fe43d4aba"}
 
 [[tools.claude]]
-version = "2.1.63"
+version = "2.1.70"
 backend = "aqua:anthropics/claude-code"
-"platforms.linux-x64" = { checksum = "blake3:70920ec7f2efc89a34fc41ef72de584093ca3366c44a1a1438e9778c5392f12d", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.63/linux-x64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:3a0c17c082ed02bddae3fc9fdd523f9044df082b92c3d53ca5cb76258c77aa2e", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.70/linux-x64/claude"}
 
 [[tools."conda:ffmpeg"]]
 version = "8.0.1"
@@ -548,18 +548,18 @@ version = "0.18.2"
 backend = "aqua:dandavison/delta"
 
 [[tools.deno]]
-version = "2.7.1"
+version = "2.7.4"
 backend = "core:deno"
-"platforms.linux-x64" = { checksum = "blake3:b441d7026803637e032f96e2475dd1933411d03f7af812ab018853aee0633711"}
+"platforms.linux-x64" = { checksum = "blake3:35450db6744b4bd1997592e3b9a1a07f8fe95f3f0421f650f509842ddc8fbdba"}
 
 [[tools.fd]]
 version = "10.3.0"
 backend = "aqua:sharkdp/fd"
 
 [[tools.fzf]]
-version = "0.68.0"
+version = "0.70.0"
 backend = "aqua:junegunn/fzf"
-"platforms.linux-x64" = { checksum = "sha256:545004a69eb65bb9adf32000971105ac21aea54bbecb618c55414d21b823fe95", url = "https://github.com/junegunn/fzf/releases/download/v0.68.0/fzf-0.68.0-linux_amd64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:8fd0e0b93bdf64ba90081ffb6658d77ea5a024c122b36852b1de30f9d2733754", url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_amd64.tar.gz"}
 
 [[tools.gh]]
 version = "2.87.3"
@@ -571,9 +571,9 @@ version = "1.9.4"
 backend = "aqua:x-motemen/ghq"
 
 [[tools."github:hayatosc/git-cx"]]
-version = "0.1.0"
+version = "0.2.0"
 backend = "github:hayatosc/git-cx"
-"platforms.linux-x64" = { checksum = "sha256:ff12d69d6f6084f5827d606b07ed86d3894592bf9318fccfad71dda979be1fbe", url = "https://github.com/hayatosc/git-cx/releases/download/v0.1.0/git-cx_0.1.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/364454097"}
+"platforms.linux-x64" = { checksum = "sha256:5c19aee65e12a6caefaba741b371e6af64e7e0103fadc734f9e8a2be2bfce8f5", url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112584"}
 
 [[tools."github:steipete/gogcli"]]
 version = "0.11.0"
@@ -581,9 +581,9 @@ backend = "github:steipete/gogcli"
 "platforms.linux-x64" = { checksum = "sha256:ca98ba56e29ccd3713fe7bf835fdca00ae1b97cdcb7b0bc5e393e7edb4089c84", url = "https://github.com/steipete/gogcli/releases/download/v0.11.0/gogcli_0.11.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/steipete/gogcli/releases/assets/356112477"}
 
 [[tools.go]]
-version = "1.26.0"
+version = "1.26.1"
 backend = "core:go"
-"platforms.linux-x64" = { checksum = "sha256:aac1b08a0fb0c4e0a7c1555beb7b59180b05dfc5a3d62e40e9de90cd42f88235", url = "https://dl.google.com/go/go1.26.0.linux-amd64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:031f088e5d955bab8657ede27ad4e3bc5b7c1ba281f05f245bcc304f327c987a", url = "https://dl.google.com/go/go1.26.1.linux-amd64.tar.gz"}
 
 [[tools."go:github.com/Warashi/cage"]]
 version = "0.1.13"
@@ -738,7 +738,7 @@ version = "0.59.0"
 backend = "aqua:jesseduffield/lazygit"
 
 [[tools.ni]]
-version = "28.2.0"
+version = "28.3.0"
 backend = "npm:@antfu/ni"
 
 [[tools.node]]
@@ -747,9 +747,9 @@ backend = "core:node"
 "platforms.linux-x64" = { checksum = "sha256:dbf5b8665dec15e59e6359a517fefb47b23fdb9152d8def975b9bca3dfc6d355", url = "https://nodejs.org/dist/v24.14.0/node-v24.14.0-linux-x64.tar.gz"}
 
 [[tools.opencode]]
-version = "1.2.15"
+version = "1.2.20"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:78b01946464e935c9b79261eda4a48f406621b0787a358fe607b6c71305f320e", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.15/opencode-linux-x64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:90188b53eadbdf36e9ab450c2c37ed567471651005fe28f4cf6587a7fb4eeba5", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.20/opencode-linux-x64.tar.gz"}
 
 [[tools.pnpm]]
 version = "10.30.3"
@@ -769,7 +769,7 @@ version = "15.1.0"
 backend = "aqua:BurntSushi/ripgrep"
 
 [[tools.rust]]
-version = "1.93.1"
+version = "1.94.0"
 backend = "core:rust"
 
 [[tools.starship]]
@@ -786,12 +786,12 @@ backend = "aqua:tsl0922/ttyd"
 "platforms.linux-x64" = { checksum = "blake3:6ed0d916345e111411cdc7f7d649bcb984ec1ee603d470b2151ac0a31b9585a4", url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"}
 
 [[tools.uv]]
-version = "0.10.7"
+version = "0.10.8"
 backend = "aqua:astral-sh/uv"
-"platforms.linux-x64" = { checksum = "sha256:992529add6024e67135b1c80617abd2eca7be2cf0b99b3911f923de815bd8dc1", url = "https://github.com/astral-sh/uv/releases/download/0.10.7/uv-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:a4e6ad1aecac61077de548d2cc9ccf2c2f1848863312b3b59fb0d2eb8d8a043c", url = "https://github.com/astral-sh/uv/releases/download/0.10.8/uv-x86_64-unknown-linux-musl.tar.gz"}
 
 [[tools.yarn]]
-version = "4.12.0"
+version = "4.13.0"
 backend = "vfox:mise-plugins/vfox-yarn"
 
 [[tools.yazi]]
