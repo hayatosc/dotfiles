@@ -1,14 +1,14 @@
 # ghq wrapper: register cloned repos in zoxide
 function ghq() {
   command ghq "$@"
-  local status=$?
-  if [[ "$1" == "get" && $status -eq 0 ]]; then
+  local exit_code=$?
+  if [[ "$1" == "get" && $exit_code -eq 0 ]]; then
     local repo="${@[-1]}"
     local full_path
     full_path=$(command ghq list --full-path "$repo" 2>/dev/null | head -1)
     [[ -n "$full_path" ]] && zoxide add "$full_path"
   fi
-  return $status
+  return $exit_code
 }
 
 # yazi quick wrapper
@@ -24,11 +24,18 @@ function y() {
 function chezmoi() {
   local subcommand=""
   local arg
+  local index=1
 
-  for arg in "$@"; do
+  while (( index <= $# )); do
+    arg="${@[$index]}"
     case "$arg" in
       --)
         break
+        ;;
+      --age-recipient|--age-recipient-file|--cache|--color|-c|--config|--config-format|-D|--destination|--mode|-o|--output|--override-data|--override-data-file|--persistent-state|--progress|-R|--refresh-externals|-S|--source|-W|--working-tree)
+        (( index++ ))
+        ;;
+      --age-recipient=*|--age-recipient-file=*|--cache=*|--color=*|--config=*|--config-format=*|--destination=*|--mode=*|--output=*|--override-data=*|--override-data-file=*|--persistent-state=*|--progress=*|--refresh-externals=*|--source=*|--working-tree=*)
         ;;
       -*)
         ;;
@@ -37,6 +44,7 @@ function chezmoi() {
         break
         ;;
     esac
+    (( index++ ))
   done
 
   command chezmoi "$@"
