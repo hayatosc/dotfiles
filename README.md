@@ -17,3 +17,7 @@ chezmoi apply
 
 mise install
 ```
+
+## Docs
+
+- [Codex config](docs/codex.md)

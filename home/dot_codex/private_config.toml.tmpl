@@ -1,0 +1,10 @@
+model = {{ .codex.model | quote }}
+model_reasoning_effort = {{ .codex.model_reasoning_effort | quote }}
+plan_mode_reasoning_effort = {{ .codex.plan_mode_reasoning_effort | quote }}
+
+{{- $trustedProjects := .codex.trusted_projects | default dict }}
+{{- range $project := keys $trustedProjects | sortAlpha }}
+[projects.{{ $project | quote }}]
+trust_level = {{ index $trustedProjects $project | quote }}
+
+{{- end }}
