@@ -4,15 +4,15 @@ Shared Codex settings are managed in [home/dot_codex/private_config.toml.tmpl](/
 
 Machine-local trusted project paths should be placed in [home/.chezmoidata/codex.local.toml](/home/hayato/.local/share/chezmoi/home/.chezmoidata/codex.local.toml), which is gitignored.
 
-zsh では `chezmoi re-add` 成功後に `~/.config/zsh/scripts/codex-sync-config.ts` が走り、`~/.codex/config.toml` を `chezmoi` source へ同期します。
+In zsh, a successful `chezmoi re-add` automatically runs `~/.config/zsh/scripts/codex-sync-config.ts` to sync `~/.codex/config.toml` back into the `chezmoi` source state.
 
-`private_config.toml.tmpl` は `projects.*` 以外の差分が出た時だけ更新されます。
+`private_config.toml.tmpl` is updated only when non-`projects.*` content changes.
 
-`codex.local.toml` には `projects.*` を raw TOML 文字列として保持します。将来 `trust_level` 以外の project 配下キーが増えても、そのまま残せます。
+`codex.local.toml` stores `projects.*` as raw TOML text, so future keys under each project can be preserved as-is, not just `trust_level`.
 
-`projects.*` が live config の途中にあっても、source 側では末尾ブロックへ正規化されます。
+Even if `projects.*` appears in the middle of the live config, it is normalized into a trailing block in the source template.
 
-`chezmoi add ~/.codex/config.toml` は template/private 属性を壊すので使わず、`chezmoi re-add` を使います。
+Do not use `chezmoi add ~/.codex/config.toml`, because it will discard the template/private attributes. Use `chezmoi re-add` instead.
 
 ## Example
 
