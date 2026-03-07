@@ -1,6 +1,13 @@
 ---
 name: self-ship
-description: Self-review, improve, commit, and push code that Claude has just written. Use this skill when the user asks Claude to "self-ship", "review and ship", "review then commit and push", or wants Claude to autonomously review its own output, apply improvements, and publish the changes to the remote repository. Triggered by: "self-ship", "ship it", "review and push", "review my changes and commit", or similar requests to complete the full write → review → commit → push cycle.
+description: >-
+  Self-review, improve, commit, and push code that Claude has just written.
+  Use this skill when the user asks Claude to "self-ship", "review and ship",
+  "review then commit and push", or wants Claude to autonomously review its own
+  output, apply improvements, and publish the changes to the remote repository.
+  Triggered by: "self-ship", "ship it", "review and push",
+  "review my changes and commit", or similar requests to complete the full
+  write → review → commit → push cycle.
 ---
 
 # Self-Ship

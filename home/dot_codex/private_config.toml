@@ -1,0 +1,8 @@
+model = "gpt-5.4"
+model_reasoning_effort = "high"
+plan_mode_reasoning_effort = "xhigh"
+[projects."/home/hayato/rust-projects/rectangles"]
+trust_level = "trusted"
+
+[projects."/home/hayato/.local/share/chezmoi"]
+trust_level = "trusted"

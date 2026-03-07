@@ -535,9 +535,14 @@ backend = "core:bun"
 "platforms.linux-x64" = { checksum = "blake3:1fde3005ad2838fe37d372ba5b213c3549db361aafbb4efb6600a43fe43d4aba"}
 
 [[tools.claude]]
-version = "2.1.70"
+version = "2.1.71"
 backend = "aqua:anthropics/claude-code"
-"platforms.linux-x64" = { checksum = "blake3:3a0c17c082ed02bddae3fc9fdd523f9044df082b92c3d53ca5cb76258c77aa2e", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.70/linux-x64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:6599ed189b3b5f6fea2b336871c0e0ab166332cac6b65111a42a479cb7aba155", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.71/linux-x64/claude"}
+
+[[tools.codex]]
+version = "0.111.0"
+backend = "aqua:openai/codex"
+"platforms.linux-x64" = { checksum = "sha256:c0e327be1de2574137c31faade8a4acc2805ddf7f426ca19e04693a2eaacbcec", url = "https://github.com/openai/codex/releases/download/rust-v0.111.0/codex-x86_64-unknown-linux-musl.zst"}
 
 [[tools."conda:ffmpeg"]]
 version = "8.0.1"
@@ -786,9 +791,9 @@ backend = "aqua:tsl0922/ttyd"
 "platforms.linux-x64" = { checksum = "blake3:6ed0d916345e111411cdc7f7d649bcb984ec1ee603d470b2151ac0a31b9585a4", url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"}
 
 [[tools.uv]]
-version = "0.10.8"
+version = "0.10.9"
 backend = "aqua:astral-sh/uv"
-"platforms.linux-x64" = { checksum = "sha256:a4e6ad1aecac61077de548d2cc9ccf2c2f1848863312b3b59fb0d2eb8d8a043c", url = "https://github.com/astral-sh/uv/releases/download/0.10.8/uv-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:433e56874739e92c7cfd661ba9e5f287b376ca612c08c8194a41a98a13158aea", url = "https://github.com/astral-sh/uv/releases/download/0.10.9/uv-x86_64-unknown-linux-musl.tar.gz"}
 
 [[tools.yarn]]
 version = "4.13.0"
