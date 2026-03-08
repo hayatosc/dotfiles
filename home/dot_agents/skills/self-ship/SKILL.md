@@ -29,13 +29,21 @@ git diff
 
 ### 2. Self-review
 
-Critically review every file you touched. Check for:
+Critically review every file you touched. Re-read each modified file as it now
+exists, not just the diff. Check for:
 
 - **Correctness** – logic errors, off-by-one errors, missing edge cases
 - **Security** – injection vulnerabilities, exposed secrets, unsafe operations
 - **Simplicity** – over-engineering, unnecessary abstractions, dead code
 - **Consistency** – naming conventions, code style, patterns used elsewhere in the repo
 - **Completeness** – missing error handling at system boundaries (user input, external APIs)
+- **Principles** – local repo instructions, design principles, and architectural intent
+
+For each file, explicitly ask:
+
+- Does this file still make sense as a whole after my change?
+- Did I leave behind stale paths, comments, helpers, or structure from earlier iterations?
+- Can this be made simpler without reducing clarity or safety?
 
 Write a brief internal review summary noting issues found.
 
@@ -45,7 +53,11 @@ Fix every issue identified in the review. Keep changes minimal and focused—do 
 
 ### 4. Final check
 
-Re-read the improved files to confirm the fixes are correct. Run tests if a test suite exists:
+Re-read the improved files in full to confirm the final state is coherent,
+simple, and consistent. Do not stop at "the diff looks fine" if the resulting
+file still feels awkward.
+
+Run tests if a test suite exists:
 
 ```bash
 # run tests
@@ -83,3 +95,5 @@ git push -u origin <current-branch>
 - **Prefer new commits over amending** published commits.
 - **Stage specific files**—never `git add -A` or `git add .` without explicitly checking what is staged.
 - If the push requires confirmation (e.g., force-push, protected branch), **stop and ask the user** before proceeding.
+- **Prefer simplification over defense of prior work**—remove or collapse code when it produces a cleaner result.
+- **Review the final file, not only the patch**—many mistakes come from stale surrounding code, not the edited lines themselves.

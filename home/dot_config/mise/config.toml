@@ -46,3 +46,7 @@ lockfile = true
 
 [hooks]
 postinstall = ""
+
+[tasks.sync-codex]
+description = "sync config.toml on .codex folder"
+run = "bun ~/.config/zsh/scripts/codex-sync-config.ts"
