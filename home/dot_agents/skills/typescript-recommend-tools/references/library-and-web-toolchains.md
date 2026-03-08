@@ -6,18 +6,26 @@ Use this file when the project is either a publishable package or a Hono-based w
 
 Choose one package manager with the user.
 
-If the environment standardizes on `ni`, prefer `ni -D ...` and `nr <script>` as wrappers. The commands below show the explicit underlying package manager choice.
+If the environment standardizes on `ni`, use it as the default command surface.
+
+### `ni`
+
+```bash
+ni -D @typescript/native-preview typescript tsdown vitest oxlint oxlint-tsgolint oxfmt
+```
+
+`ni` will route to the repository's chosen package manager. If the user explicitly wants the underlying command, use one of the following:
 
 ### `bun`
 
 ```bash
-bun add -d @typescript/native-preview typescript tsdown vitest oxlint oxlint-tsgolint oxfmt publint @arethetypeswrong/cli
+bun add -d @typescript/native-preview typescript tsdown vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 ### `pnpm`
 
 ```bash
-pnpm add -D @typescript/native-preview typescript tsdown vitest oxlint oxlint-tsgolint oxfmt publint @arethetypeswrong/cli
+pnpm add -D @typescript/native-preview typescript tsdown vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 ### Recommended scripts
@@ -26,17 +34,19 @@ pnpm add -D @typescript/native-preview typescript tsdown vitest oxlint oxlint-ts
 {
   "scripts": {
     "build": "tsdown",
+    "dev": "tsdown --watch",
     "typecheck": "tsgo --noEmit",
     "typecheck:compat": "tsc --noEmit",
     "lint": "oxlint .",
     "lint:types": "oxlint --type-aware .",
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "test": "vitest run",
-    "check:pkg": "publint && attw ."
+    "test": "vitest run"
   }
 }
 ```
+
+For libraries and packages, prefer `tsdown --watch` over `tsx` during development so the build output and watch behavior stay aligned with the actual packaging tool.
 
 ### Monorepo note
 
@@ -51,6 +61,10 @@ Prefer Hono for new APIs, lightweight services, and edge-capable applications. I
 ### Create a new Hono app
 
 ```bash
+nlx create-hono@latest my-app
+```
+
+```bash
 bun create hono@latest my-app
 ```
 
@@ -59,6 +73,10 @@ pnpm create hono@latest my-app
 ```
 
 ### Add the remaining core tools
+
+```bash
+ni -D @typescript/native-preview typescript tsx vite vitest oxlint oxlint-tsgolint oxfmt
+```
 
 ```bash
 bun add -d @typescript/native-preview typescript tsx vite vitest oxlint oxlint-tsgolint oxfmt
@@ -77,7 +95,7 @@ If the deployment target is Cloudflare Workers, Deno Deploy, or another edge run
 ```json
 {
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "vite dev",
     "typecheck": "tsgo --noEmit",
     "typecheck:compat": "tsc --noEmit",
     "lint": "oxlint .",
@@ -89,12 +107,14 @@ If the deployment target is Cloudflare Workers, Deno Deploy, or another edge run
 }
 ```
 
+Use `vite dev` whenever the project already includes Vite. If the Hono project is API-only and does not use Vite, a simple `tsx watch` loop is an acceptable fallback.
+
 ### Recommended scripts for Bun-targeted Hono
 
 ```json
 {
   "scripts": {
-    "dev": "bun --hot src/index.ts",
+    "dev": "bun run --watch src/index.ts",
     "typecheck": "tsgo --noEmit",
     "typecheck:compat": "tsc --noEmit",
     "lint": "oxlint .",
@@ -113,4 +133,3 @@ If the deployment target is Cloudflare Workers, Deno Deploy, or another edge run
 3. `oxlint .`
 4. `oxlint --type-aware .`
 5. `vitest`
-6. `publint && attw .` for publishable packages

@@ -29,7 +29,9 @@ Use this file when the user wants the reasoning behind a recommendation.
 
 ## Runtime and build choices
 
-- Prefer `tsx` for Node and CLI runtime workflows unless the user is explicitly standardizing on the Bun runtime.
+- Prefer the tool-owned dev command first. Use `tsdown --watch` for library development and `vite dev` for Vite-based web projects before introducing `tsx`.
+- Prefer `tsx` for simple Node and CLI runtime workflows when there is no better project-specific dev loop.
+- Prefer `bun run` for Bun-native runtime workflows rather than layering `tsx` on top of Bun by default.
 - Prefer `tsdown` for libraries and packages that need bundling or distribution outputs.
 - Prefer `Hono` for web frameworks, especially APIs, edge workloads, and lightweight services.
 - If the repository is already a large Express or Fastify codebase, prefer incremental toolchain adoption over recommending a framework rewrite.

@@ -45,17 +45,12 @@ Follow these steps in order:
 - Prefer type-first design for reusable APIs and complex domain logic.
 - Avoid `any`. If the value is unknown, model it as `unknown` and narrow it.
 - Avoid unsafe type assertions. `as const` and framework-required assertions are acceptable only when the runtime shape is already guaranteed.
-- Prefer `interface` for extendable object shapes and `type` for unions, mapped types, and aliases.
-- Extract complex inline types into named aliases or interfaces when they carry domain meaning, are reused, or make the implementation hard to read.
-- Use branded types for IDs and validated domain values only when the distinction prevents real mixups.
 - Make union and enum handling exhaustive.
 - Assume ES modules by default. Prefer `import` and `export`, and do not introduce `require`, `module.exports`, or mixed-module patterns unless the repository is already CommonJS or the toolchain requires it.
-- Prefer type-only imports when importing types.
-- Prefer derived types such as `Pick`, `Omit`, `Partial`, `Required`, and `Record` over duplicated handwritten shapes.
 - Keep runtime and compile-time truth aligned. Add guards at external boundaries, and do not add a new validation library solely for typing unless the user asks or the repository already uses one.
 - If runtime validation is needed, prefer the repository's existing library. If the repository has none, keep lightweight manual guards by default and add tools such as `zod` or `valibot` only on explicit request or when the repository already standardizes on them.
 
 ## References
 
-- Read `references/type-safety-patterns.md` for concrete replacements for `any` and unsafe `as`, plus review heuristics.
+- Read `references/type-safety-patterns.md` for concrete replacements for `any` and unsafe `as`, plus modeling guidance for extracted types, branded types, and review heuristics.
 - Read `references/config-baseline.md` before changing TypeScript or `typescript-eslint` settings.

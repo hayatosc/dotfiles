@@ -6,7 +6,15 @@ Use this file when the project is a Node service, CLI, worker, cron job, or othe
 
 Choose one package manager with the user.
 
-If the environment standardizes on `ni`, prefer `ni -D ...` and `nr <script>` as wrappers. The commands below show the explicit underlying package manager choice.
+If the environment standardizes on `ni`, use it as the default command surface.
+
+### `ni`
+
+```bash
+ni -D @typescript/native-preview typescript tsx vitest oxlint oxlint-tsgolint oxfmt
+```
+
+`ni` will route to the repository's chosen package manager. If the user explicitly wants the underlying command, use one of the following:
 
 ### `bun`
 
@@ -38,6 +46,8 @@ pnpm add -D @typescript/native-preview typescript tsx vitest oxlint oxlint-tsgol
 }
 ```
 
+Treat this `tsx` loop as the default fallback for plain Node and CLI projects. If the repository already has a stronger tool-owned dev loop, use that instead.
+
 ## Bun runtime exception
 
 If the user is intentionally standardizing on the Bun runtime, replace the `tsx` runtime scripts with Bun-native commands and keep the rest of the stack unchanged.
@@ -45,8 +55,8 @@ If the user is intentionally standardizing on the Bun runtime, replace the `tsx`
 ```json
 {
   "scripts": {
-    "dev": "bun --hot src/index.ts",
-    "start": "bun src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
   }
 }
 ```

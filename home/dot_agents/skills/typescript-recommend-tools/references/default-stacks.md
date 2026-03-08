@@ -4,9 +4,9 @@ Use this file when the user wants a quick recommendation without a long comparis
 
 | Project shape | Primary tools | Secondary tools | Notes |
 | --- | --- | --- | --- |
-| Node / CLI | `tsgo`, `tsx`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Use `tsx` for runtime and keep `tsc --noEmit` as a compatibility check. |
-| Library / package | `tsgo`, `tsdown`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Keep `tsc` for compatibility checks and package edge cases. |
-| Web app / web API | `tsgo`, `Hono`, `Vite`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Use `Hono` for the web framework and `Vite` when browser assets exist. |
+| Node / CLI | `tsgo`, `tsx`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Use `tsx` only when there is no tool-specific dev loop. Prefer `bun run` on Bun-native runtimes. |
+| Library / package | `tsgo`, `tsdown`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Keep `tsc` for compatibility checks and package edge cases. Prefer `tsdown --watch` for development. |
+| Web app / web API | `tsgo`, `Hono`, `Vite`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Use `Hono` for the web framework and `Vite` when browser assets exist. Prefer `vite dev` over `tsx` in Vite-based projects. |
 
 ## Shared Defaults
 

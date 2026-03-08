@@ -33,9 +33,9 @@ Follow these steps in order:
 
 ### 4. Add the project-specific runtime and build tools
 
-- `Node/CLI`: prefer `tsx`.
-- `library/package`: prefer `tsdown`.
-- `web app / web API`: prefer `Hono`, and add `Vite` when browser assets or a frontend build are part of the stack. Highlight Hono's Node, Bun, and edge runtime support when it matters.
+- `Node/CLI`: use `tsx` when there is no more specific tool-owned dev loop. If the project runs on Bun, prefer `bun run`.
+- `library/package`: prefer `tsdown`, and prefer its watch or dev mode over wiring `tsx` into package build workflows.
+- `web app / web API`: prefer `Hono`, and add `Vite` when browser assets or a frontend build are part of the stack. Prefer `vite dev` over `tsx` when Vite is already part of the project. Highlight Hono's Node, Bun, and edge runtime support when it matters.
 
 ### 5. Explain fallbacks and exceptions
 
@@ -48,19 +48,14 @@ Follow these steps in order:
 
 - Prefer `tsgo` for primary typechecking.
 - Keep `tsc` as `typecheck:compat` or other explicit compatibility checks.
-- Prefer `oxlint` for fast linting and `oxlint --type-aware` with `oxlint-tsgolint` for type-aware linting.
-- Prefer `oxfmt` for formatting.
-- Prefer `tsx` for Node and CLI runtime workflows.
-- Prefer `tsdown` for library and package builds.
+- Prefer tool-owned dev loops such as `tsdown --watch` and `vite dev` before reaching for `tsx`.
 - Prefer `Hono` for web frameworks.
-- Prefer `Vite` when browser assets or frontend builds are involved.
-- Prefer `Vitest` for tests.
 - Assume ESM-first.
 - Decide between `bun` and `pnpm` with the user or the repository state. Do not force one without context.
 
 ## References
 
-- Read `references/default-stacks.md` for the quick matrix of recommended stacks.
-- Read `references/tool-selection-rules.md` for when to choose `bun`, `pnpm`, `Hono`, `Biome`, or `typescript-eslint`.
+- Read `references/default-stacks.md` for the quick matrix of recommended stacks and the shared defaults.
+- Read `references/tool-selection-rules.md` for when to choose `bun`, `pnpm`, `Hono`, `Biome`, `typescript-eslint`, or Bun-native vs `tsx` dev loops.
 - Read `references/node-cli-toolchain.md` for concrete Node and CLI scripts.
 - Read `references/library-and-web-toolchains.md` for concrete library, package, and Hono web scripts.
