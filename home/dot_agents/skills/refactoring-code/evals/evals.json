@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "purpose": "Spot-check whether the skill consistently drives safe, incremental refactoring behavior.",
+  "rubric": [
+    "Opens with goal, preserved behavior, plan, and verification.",
+    "Keeps refactoring separate from behavior changes unless the user explicitly combines them.",
+    "Uses small, reviewable slices instead of broad rewrites.",
+    "Mentions a realistic safety net when tests are weak or behavior is unclear.",
+    "Avoids unnecessary public API changes and unrelated cleanup."
+  ],
+  "cases": [
+    {
+      "name": "duplicate-logic-extraction",
+      "prompt": "Refactor these two handlers. They both parse the same payload and run the same validation before calling different services.",
+      "must_include": [
+        "Goal:",
+        "Preserved behavior:",
+        "Plan:",
+        "Verification:"
+      ],
+      "should_mention": [
+        "shared validation or parsing extraction",
+        "small incremental steps",
+        "existing handler tests or narrow request checks"
+      ],
+      "should_avoid": [
+        "rewrite both handlers from scratch",
+        "change endpoint behavior without calling it out"
+      ]
+    },
+    {
+      "name": "legacy-module-with-weak-tests",
+      "prompt": "Please refactor this old reporting module. It is brittle, and our test coverage here is poor.",
+      "must_include": [
+        "Preserved behavior:",
+        "Verification:"
+      ],
+      "should_mention": [
+        "characterization check or narrow safety net",
+        "seam or side-effect isolation",
+        "reduced scope if behavior is unclear"
+      ],
+      "should_avoid": [
+        "large rewrite",
+        "claiming strong safety without a check"
+      ]
+    },
+    {
+      "name": "mixed-refactor-and-feature-change",
+      "prompt": "Refactor this retry service and also change it so network timeouts get one extra retry.",
+      "must_include": [
+        "Goal:",
+        "Plan:"
+      ],
+      "should_mention": [
+        "separating refactor work from the behavior change",
+        "keeping current retry behavior stable during the refactor phase",
+        "separate verification for the new retry rule"
+      ],
+      "should_avoid": [
+        "blending the retry rule change into the same unstructured step"
+      ]
+    }
+  ]
+}
