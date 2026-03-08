@@ -34,3 +34,6 @@ This file lists mandatory rules for all agents working in this repository.
 
 ## Safety
 - Do not expose or commit secrets or credentials.
+
+## Git
+- Follow Conventional Commits for all git commit messages.
