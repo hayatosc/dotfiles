@@ -27,15 +27,27 @@ If the repository uses the Oxc stack, prefer:
 
 Keep compiler checks and type-aware linting separate by default. Treat `oxlint --type-aware --type-check` as an opt-in CI simplification, not the default migration path.
 
+When `oxlint-tsgolint` is enabled, keep its TypeScript rule baseline aligned with the `@typescript-eslint` baseline below. Use the same rule intent and the same option values where both tools support them:
+
+- `typescript/no-explicit-any`
+- `typescript/no-unsafe-type-assertion`
+- `typescript/no-unnecessary-type-assertion`
+- `typescript/consistent-type-imports` with `{ prefer: "type-imports", fixStyle: "separate-type-imports", disallowTypeAnnotations: true }`
+- `typescript/switch-exhaustiveness-check` with `{ allowDefaultCaseForExhaustiveSwitch: true, considerDefaultExhaustiveForUnions: false, requireDefaultForNonUnion: false }`
+
+The first and fourth rules can run in the default `oxlint` pass. The second, third, and fifth require `oxlint --type-aware`.
+
 ## typescript-eslint Baseline
 
-Start from `recommended-type-checked` when the repository already runs ESLint with type information. Add these rules explicitly when they are not already covered:
+Start from `recommended-type-checked` when the repository already runs ESLint with type information. Keep its explicit TypeScript rule baseline aligned with `oxlint-tsgolint`:
 
 - `@typescript-eslint/no-explicit-any`
 - `@typescript-eslint/no-unsafe-type-assertion`
 - `@typescript-eslint/no-unnecessary-type-assertion`
-- `@typescript-eslint/consistent-type-imports`
-- `@typescript-eslint/switch-exhaustiveness-check`
+- `@typescript-eslint/consistent-type-imports` with `{ prefer: "type-imports", fixStyle: "separate-type-imports", disallowTypeAnnotations: true }`
+- `@typescript-eslint/switch-exhaustiveness-check` with `{ allowDefaultCaseForExhaustiveSwitch: true, considerDefaultExhaustiveForUnions: false, requireDefaultForNonUnion: false }`
+
+Add these rules explicitly when they are not already covered by the shared config so the intended baseline stays visible in the repository config.
 
 Do not default to `strict-type-checked`. Treat it as an opt-in ruleset for repositories that already want a highly opinionated, proficiency-dependent setup.
 
