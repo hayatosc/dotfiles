@@ -1,0 +1,4 @@
+interface:
+  display_name: "Article Review"
+  short_description: "Review articles with scores, risks, and rewrites"
+  default_prompt: "Use $article-review to evaluate this draft and return a scored editorial report with prioritized fixes and rewrite examples."
