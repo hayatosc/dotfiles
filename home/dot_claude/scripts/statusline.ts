@@ -236,10 +236,10 @@ let line3: string;
 if (sevenDayPct !== null) {
   const c7 = colorForPct(sevenDayPct);
   const bar7 = progressBar(sevenDayPct);
-  line3 = `${c7} 7d  ${bar7}  ${sevenDayPct}%${RESET}`;
+  line3 = `${c7} 7d  ${bar7}  ${sevenDayPct}%${RESET}`;
   if (sevenResetDisplay) line3 += `  ${DIM}${sevenResetDisplay}${RESET}`;
 } else {
-  line3 = `${GRAY} 7d  ▱▱▱▱▱▱▱▱▱▱  --%${RESET}`;
+  line3 = `${GRAY} 7d  ▱▱▱▱▱▱▱▱▱▱  --%${RESET}`;
 }
 
 // ---------- Output ----------
