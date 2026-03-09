@@ -13,10 +13,13 @@ if (!HOME) {
 const DEST_CONFIG = `${HOME}/.codex/config.toml`;
 const TEMPLATE_SUFFIX = `
 {{- $codex := get . "codex" | default dict }}
-{{- $projectsToml := get $codex "projects_toml" }}
+{{- $extractProjects := joinPath .chezmoi.sourceDir ".chezmoitemplates" "codex-projects.sh" }}
+{{- $liveConfig := joinPath .chezmoi.homeDir ".codex" "config.toml" }}
+{{- $localData := joinPath .chezmoi.sourceDir ".chezmoidata" "codex.local.toml" }}
+{{- $projectsToml := output $extractProjects $liveConfig $localData | trimSuffix "\\n" }}
 {{- if $projectsToml }}
 
-{{ $projectsToml }}
+{{ $projectsToml -}}
 {{- else }}
 {{- $trustedProjects := get $codex "trusted_projects" | default dict }}
 {{- range $project := keys $trustedProjects | sortAlpha }}

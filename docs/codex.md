@@ -10,6 +10,8 @@ In zsh, a successful `chezmoi re-add` automatically runs `~/.config/zsh/scripts/
 
 `codex.local.toml` stores `projects.*` as raw TOML text, so future keys under each project can be preserved as-is, not just `trust_level`.
 
+When `~/.codex/config.toml` already exists, `chezmoi apply` reads its current `projects.*` block at render time so local trust entries are preserved instead of being reverted.
+
 Even if `projects.*` appears in the middle of the live config, it is normalized into a trailing block in the source template.
 
 Do not use `chezmoi add ~/.codex/config.toml`, because it will discard the template/private attributes. Use `chezmoi re-add` instead.
