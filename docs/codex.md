@@ -2,7 +2,7 @@
 
 Shared Codex settings are managed in [home/dot_codex/private_config.toml.tmpl](/home/hayato/.local/share/chezmoi/home/dot_codex/private_config.toml.tmpl).
 
-Machine-local trusted project paths should be placed in [home/.chezmoidata/codex.local.toml](/home/hayato/.local/share/chezmoi/home/.chezmoidata/codex.local.toml), which is gitignored.
+Machine-local trusted project paths can be placed in [home/.chezmoidata/codex.local.toml](/home/hayato/.local/share/chezmoi/home/.chezmoidata/codex.local.toml), which is gitignored. A fresh environment can omit this file entirely.
 
 In zsh, a successful `chezmoi re-add` automatically runs `~/.config/zsh/scripts/codex-sync-config.ts` to sync `~/.codex/config.toml` back into the `chezmoi` source state.
 

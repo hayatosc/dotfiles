@@ -12,11 +12,13 @@ if (!HOME) {
 
 const DEST_CONFIG = `${HOME}/.codex/config.toml`;
 const TEMPLATE_SUFFIX = `
-{{- if .codex.projects_toml }}
+{{- $codex := get . "codex" | default dict }}
+{{- $projectsToml := get $codex "projects_toml" }}
+{{- if $projectsToml }}
 
-{{ .codex.projects_toml }}
+{{ $projectsToml }}
 {{- else }}
-{{- $trustedProjects := .codex.trusted_projects | default dict }}
+{{- $trustedProjects := get $codex "trusted_projects" | default dict }}
 {{- range $project := keys $trustedProjects | sortAlpha }}
 [projects.{{ $project | quote }}]
 trust_level = {{ index $trustedProjects $project | quote }}
