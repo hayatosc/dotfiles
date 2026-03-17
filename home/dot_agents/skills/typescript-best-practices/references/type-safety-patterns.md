@@ -57,6 +57,8 @@ const config = {
 
 `as const` is acceptable when you are intentionally preserving literal values for inference. Avoid using it as a shortcut to silence mismatches.
 
+Never use `as unknown as T`. This double-cast pattern defeats the type system entirely — the compiler cannot verify the conversion is safe. If you find yourself writing it, treat it as a signal to redesign the type boundary: add a type guard, introduce a discriminated union, or refactor the data flow so the shape is known before the call site.
+
 ## Extract Complex Types
 
 Extract a type when an inline annotation is doing too much work. Good candidates include:
@@ -127,6 +129,7 @@ Keep these tests focused on type behavior. Do not add a new dependency only to t
 - Did the change design the public types before forcing the implementation through assertions?
 - Did the change introduce or preserve `any`?
 - Did it use `as` where narrowing or a guard would be clearer?
+- Did it use `as unknown as T` to silence a type error instead of fixing the type relationship?
 - Did it leave a complex inline type that should be extracted and named?
 - Did a domain identifier or validated value need a branded type?
 - Did a reusable generic or utility type need a compile-time type test?

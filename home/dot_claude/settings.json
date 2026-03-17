@@ -5,7 +5,7 @@
       "Read(.env)",
       "Read(.env.*)",
       "Bash(sudo *)",
-      "Bash(rm -rf *)",
+      "Bash(rm *)",
       "Bash(chmod 777 *)",
       "Bash(npm install -g *)",
       "Bash(git config *)",
@@ -15,8 +15,7 @@
       "Bash(git commit *)",
       "Bash(git push *)",
       "Bash(git rebase *)"
-    ],
-    "defaultMode": "auto"
+    ]
   },
   "statusLine": {
     "type": "command",
@@ -27,5 +26,19 @@
     "typescript-lsp@claude-plugins-official": true,
     "rust-analyzer-lsp@claude-plugins-official": true
   },
-  "skipAutoPermissionPrompt": true
+  "mcpServers": {
+    "claude_ai_Notion": {
+      "disabled": true
+    },
+    "claude_ai_Google_Calendar": {
+      "disabled": true
+    },
+    "claude_ai_Gmail": {
+      "disabled": true
+    },
+    "claude_ai_Context7": {
+      "disabled": true
+    }
+  },
+  "skipDangerousModePermissionPrompt": true
 }
