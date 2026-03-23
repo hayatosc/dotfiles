@@ -107,9 +107,9 @@ checksum = "sha256:70f25f28bd696477e57caf015f1449b7311bb5c718051ba6a6bd74d11d16c
 url = "https://api.anaconda.org/download/conda-forge/gts/0.7.6/linux-64/gts-0.7.6-h977cf35_3.conda"
 checksum = "sha256:d28f64cf7cb3e4ac71e83664a2933b241fd68ad420803c8b2e6fa1cab4169a08"
 
-[conda-packages.linux-x64."linux-64/harfbuzz-13.1.1-h6083320_0"]
-url = "https://api.anaconda.org/download/conda-forge/harfbuzz/13.1.1/linux-64/harfbuzz-13.1.1-h6083320_0.conda"
-checksum = "sha256:cc536468a807a77bbfbbf392a21f205d4e1de1198be03f9359e52e01926d8597"
+[conda-packages.linux-x64."linux-64/harfbuzz-13.2.0-h6083320_0"]
+url = "https://api.anaconda.org/download/conda-forge/harfbuzz/13.2.0/linux-64/harfbuzz-13.2.0-h6083320_0.conda"
+checksum = "sha256:2b6958ab30b2ce330b0166e51fc5f20f761f71e09510d62f03f9729882707497"
 
 [conda-packages.linux-x64."linux-64/hicolor-icon-theme-0.17-ha770c72_3"]
 url = "https://api.anaconda.org/download/conda-forge/hicolor-icon-theme/0.17/linux-64/hicolor-icon-theme-0.17-ha770c72_3.conda"
@@ -146,9 +146,9 @@ checksum = "sha256:cf9c4e500397af97d813583e4d5056d2c0523bbc1638cffcea610400c3733
 url = "https://api.anaconda.org/download/conda-forge/libasprintf-devel/0.25.1/linux-64/libasprintf-devel-0.25.1-h8e693c7_0.conda"
 checksum = "sha256:4a33220f2b89e30320fdefcb55b4b788957ba716ad2ad08e4ecaba361f6da506"
 
-[conda-packages.linux-x64."linux-64/libavif16-1.4.0-hcfa2d63_0"]
-url = "https://api.anaconda.org/download/conda-forge/libavif16/1.4.0/linux-64/libavif16-1.4.0-hcfa2d63_0.conda"
-checksum = "sha256:918fd09af66968361c8fa40a76f864b7febb8286dd5dcb1419517b9db950c84c"
+[conda-packages.linux-x64."linux-64/libavif16-1.4.1-hcfa2d63_0"]
+url = "https://api.anaconda.org/download/conda-forge/libavif16/1.4.1/linux-64/libavif16-1.4.1-hcfa2d63_0.conda"
+checksum = "sha256:e29d8ed0334305c6bafecb32f9a1967cfc0a081eac916e947a1f2f7c4bb41947"
 
 [conda-packages.linux-x64."linux-64/libcups-2.3.3-h36d4200_3"]
 url = "https://api.anaconda.org/download/conda-forge/libcups/2.3.3/linux-64/libcups-2.3.3-h36d4200_3.conda"
@@ -274,9 +274,9 @@ checksum = "sha256:f41721636a7c2e51bc2c642e1127955ab9c81145470714fdaac44d4d09e4a
 url = "https://api.anaconda.org/download/conda-forge/libpng/1.6.55/linux-64/libpng-1.6.55-h421ea60_0.conda"
 checksum = "sha256:36ade759122cdf0f16e2a2562a19746d96cf9c863ffaa812f2f5071ebbe9c03c"
 
-[conda-packages.linux-x64."linux-64/librsvg-2.62.0-h4c96295_0"]
-url = "https://api.anaconda.org/download/conda-forge/librsvg/2.62.0/linux-64/librsvg-2.62.0-h4c96295_0.conda"
-checksum = "sha256:d68b57e17b0edcf52735f6f0093329d2dae53b958e55405970d4c872bd513431"
+[conda-packages.linux-x64."linux-64/librsvg-2.62.1-h4c96295_0"]
+url = "https://api.anaconda.org/download/conda-forge/librsvg/2.62.1/linux-64/librsvg-2.62.1-h4c96295_0.conda"
+checksum = "sha256:dc4698b32b2ca3fc0715d7d307476a71622bee0f2f708f9dadec8af21e1047c8"
 
 [conda-packages.linux-x64."linux-64/libsqlite-3.52.0-hf4e2dac_0"]
 url = "https://api.anaconda.org/download/conda-forge/libsqlite/3.52.0/linux-64/libsqlite-3.52.0-hf4e2dac_0.conda"
@@ -322,9 +322,9 @@ checksum = "sha256:275c324f87bda1a3b67d2f4fcc3555eeff9e228a37655aa001284a7ceb6b0
 url = "https://api.anaconda.org/download/conda-forge/libxml2-devel/2.15.2/linux-64/libxml2-devel-2.15.2-he237659_0.conda"
 checksum = "sha256:4ac0f70a6b985573f057f839445044d6e8c0312599c4839488296666ee56a8dd"
 
-[conda-packages.linux-x64."linux-64/libzlib-1.3.1-hd590300_0"]
-url = "https://api.anaconda.org/download/conda-forge/libzlib/1.3.1/linux-64/libzlib-1.3.1-hd590300_0.conda"
-checksum = "sha256:9df76697b6fe2228711283c0dda589354d5df633726db2fca7f7841dd5e50c82"
+[conda-packages.linux-x64."linux-64/libzlib-1.3.2-h25fd6f3_2"]
+url = "https://api.anaconda.org/download/conda-forge/libzlib/1.3.2/linux-64/libzlib-1.3.2-h25fd6f3_2.conda"
+checksum = "sha256:55044c403570f0dc26e6364de4dc5368e5f3fc7ff103e867c487e2b5ab2bcda9"
 
 [conda-packages.linux-x64."linux-64/llvm-openmp-22.1.0-h4922eb0_0"]
 url = "https://api.anaconda.org/download/conda-forge/llvm-openmp/22.1.0/linux-64/llvm-openmp-22.1.0-h4922eb0_0.conda"
@@ -391,9 +391,9 @@ checksum = "sha256:4a1d2005153b9454fc21c9bad1b539df189905be49e851ec62a6212c2e045
 url = "https://api.anaconda.org/download/conda-forge/tk/8.6.13/linux-64/tk-8.6.13-h2797004_0.conda"
 checksum = "sha256:679e944eb93fde45d0963a22598fafacbb429bb9e7ee26009ba81c4e0c435055"
 
-[conda-packages.linux-x64."linux-64/wayland-1.24.0-h3e06ad9_0"]
-url = "https://api.anaconda.org/download/conda-forge/wayland/1.24.0/linux-64/wayland-1.24.0-h3e06ad9_0.conda"
-checksum = "sha256:ba673427dcd480cfa9bbc262fd04a9b1ad2ed59a159bd8f7e750d4c52282f34c"
+[conda-packages.linux-x64."linux-64/wayland-1.25.0-hd6090a7_0"]
+url = "https://api.anaconda.org/download/conda-forge/wayland/1.25.0/linux-64/wayland-1.25.0-hd6090a7_0.conda"
+checksum = "sha256:ea374d57a8fcda281a0a89af0ee49a2c2e99cc4ac97cf2e2db7064e74e764bdb"
 
 [conda-packages.linux-x64."linux-64/x265-3.5-h4bd325d_0"]
 url = "https://api.anaconda.org/download/conda-forge/x265/3.5/linux-64/x265-3.5-h4bd325d_0.tar.bz2"
@@ -503,9 +503,9 @@ url = "https://api.anaconda.org/download/conda-forge/fonts-conda-forge/1/noarch/
 checksum = "sha256:54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98333"
 
 [[tools."aqua:github/copilot-cli"]]
-version = "1.0.6"
+version = "1.0.10"
 backend = "aqua:github/copilot-cli"
-"platforms.linux-x64" = { checksum = "sha256:8d0b1bfb76793419ed9c3090ef47e058b60c254c60f2e76dc006d6c84e8c9473", url = "https://github.com/github/copilot-cli/releases/download/v1.0.6/copilot-linux-x64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:b9b8a67a023f3923a76a6819a11d069293a0ff1209a04588c4f3d048c03c7328", url = "https://github.com/github/copilot-cli/releases/download/v1.0.10/copilot-linux-x64.tar.gz"}
 
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.25.0"
@@ -525,19 +525,24 @@ version = "0.8.5"
 backend = "aqua:rossmacarthur/sheldon"
 "platforms.linux-x64" = { checksum = "sha256:80aa0be617072c278d67fd6c5fbce4903d3801d78b6abf8f058f0648d2242c78", url = "https://github.com/rossmacarthur/sheldon/releases/download/0.8.5/sheldon-0.8.5-x86_64-unknown-linux-musl.tar.gz"}
 
+[[tools."aqua:tailscale/tailscale"]]
+version = "1.96.2"
+backend = "aqua:tailscale/tailscale"
+"platforms.linux-x64" = { checksum = "blake3:e0a9e14b298daf2bbe9c43e7a68b5a6f76fe8c85190e0da74831b0856087bcc2", url = "https://pkgs.tailscale.com/stable/tailscale_1.96.2_amd64.tgz"}
+
 [[tools.bat]]
 version = "0.26.1"
 backend = "aqua:sharkdp/bat"
 
 [[tools.bun]]
-version = "1.3.10"
+version = "1.3.11"
 backend = "core:bun"
-"platforms.linux-x64" = { checksum = "blake3:1fde3005ad2838fe37d372ba5b213c3549db361aafbb4efb6600a43fe43d4aba"}
+"platforms.linux-x64" = { checksum = "blake3:014395d9ba028d3463d18260852ded69e90e415b76883a1ba9d2d7d3568fbd32"}
 
 [[tools.claude]]
-version = "2.1.76"
+version = "2.1.81"
 backend = "aqua:anthropics/claude-code"
-"platforms.linux-x64" = { checksum = "blake3:e17acc8c7a56c8503c224741eedad035074123bdcc06333ceffe2306c7c32b8e", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.76/linux-x64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:11fb75be7593321acef7143bf98b01e30224904bda47ec46a39a9efa880f6753", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.81/linux-x64/claude"}
 
 [[tools.cloudflared]]
 version = "2026.3.0"
@@ -545,28 +550,23 @@ backend = "aqua:cloudflare/cloudflared"
 "platforms.linux-x64" = { checksum = "sha256:4a9e50e6d6d798e90fcd01933151a90bf7edd99a0a55c28ad18f2e16263a5c30", url = "https://github.com/cloudflare/cloudflared/releases/download/2026.3.0/cloudflared-linux-amd64"}
 
 [[tools.codex]]
-version = "0.115.0"
+version = "0.116.0"
 backend = "aqua:openai/codex"
-"platforms.linux-x64" = { checksum = "sha256:8aedf14e762568e6bbb60b1617a38a34a74f2e497870b85820bbe3807ee39105", url = "https://github.com/openai/codex/releases/download/rust-v0.115.0/codex-x86_64-unknown-linux-musl.zst"}
+"platforms.linux-x64" = { checksum = "sha256:e63d27d8d28aa8b0db04d2431f508120a09f9548cdac29cc25208983d484b1bb", url = "https://github.com/openai/codex/releases/download/rust-v0.116.0/codex-x86_64-unknown-linux-musl.zst"}
 
 [[tools."conda:ffmpeg"]]
 version = "8.0.1"
 backend = "conda:ffmpeg"
 
 [[tools.delta]]
-version = "0.18.2"
+version = "0.19.1"
 backend = "aqua:dandavison/delta"
+"platforms.linux-x64" = { checksum = "sha256:564a774237adb041a9a0098f2e55044e52b6ca5361e99cf179b892bdd5f91b92", url = "https://github.com/dandavison/delta/releases/download/0.19.1/delta-0.19.1-x86_64-unknown-linux-musl.tar.gz"}
 
 [[tools.deno]]
-version = "2.7.5"
+version = "2.7.7"
 backend = "core:deno"
-"platforms.linux-arm64" = { checksum = "sha256:69259408777465378ad78ea97c3ec6722704a93caabdb8d272b36d93d8025101", url = "https://dl.deno.land/release/v2.7.5/deno-aarch64-unknown-linux-gnu.zip"}
-"platforms.linux-arm64-musl" = { checksum = "sha256:69259408777465378ad78ea97c3ec6722704a93caabdb8d272b36d93d8025101", url = "https://dl.deno.land/release/v2.7.5/deno-aarch64-unknown-linux-gnu.zip"}
-"platforms.linux-x64" = { checksum = "sha256:fd0a9e6cf085acb861b67577a13bfd0b1829e1c6d6a6dcfd35bcb8f05c973a47", url = "https://dl.deno.land/release/v2.7.5/deno-x86_64-unknown-linux-gnu.zip"}
-"platforms.linux-x64-musl" = { checksum = "sha256:fd0a9e6cf085acb861b67577a13bfd0b1829e1c6d6a6dcfd35bcb8f05c973a47", url = "https://dl.deno.land/release/v2.7.5/deno-x86_64-unknown-linux-gnu.zip"}
-"platforms.macos-arm64" = { checksum = "sha256:cd4666cea151dc6b02df67a8a163fa33c53564a901bb47a535b3bedf6534093b", url = "https://dl.deno.land/release/v2.7.5/deno-aarch64-apple-darwin.zip"}
-"platforms.macos-x64" = { checksum = "sha256:5d70f1aef868a10dd537539f828abdfd6646614ef4ab83975f4d59341b0e2927", url = "https://dl.deno.land/release/v2.7.5/deno-x86_64-apple-darwin.zip"}
-"platforms.windows-x64" = { checksum = "sha256:Algorithm", url = "https://dl.deno.land/release/v2.7.5/deno-x86_64-pc-windows-msvc.zip"}
+"platforms.linux-x64" = { checksum = "blake3:157185bc76456b8045f174fa1953b8be96e505fd020103fe18f10b4e41dcc989"}
 
 [[tools.fd]]
 version = "10.4.2"
@@ -578,8 +578,12 @@ version = "0.70.0"
 backend = "aqua:junegunn/fzf"
 "platforms.linux-x64" = { checksum = "sha256:8fd0e0b93bdf64ba90081ffb6658d77ea5a024c122b36852b1de30f9d2733754", url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_amd64.tar.gz"}
 
+[[tools.gcloud]]
+version = "561.0.0"
+backend = "vfox:mise-plugins/vfox-gcloud"
+
 [[tools.gemini]]
-version = "0.33.2"
+version = "0.34.0"
 backend = "npm:@google/gemini-cli"
 
 [[tools.gh]]
@@ -601,6 +605,11 @@ version = "0.12.0"
 backend = "github:steipete/gogcli"
 "platforms.linux-x64" = { checksum = "sha256:a03fccbd67ea2e59a26a56e92de8918577f4bebe4b2f946823419777827cdab2", url = "https://github.com/steipete/gogcli/releases/download/v0.12.0/gogcli_0.12.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/steipete/gogcli/releases/assets/369882114"}
 
+[[tools."github:vercel-labs/agent-browser"]]
+version = "0.21.4"
+backend = "github:vercel-labs/agent-browser"
+"platforms.linux-x64" = { checksum = "sha256:c74a9b9894dc72cdd40c0ee578549c57da48bb1fa8ead04ca975a656c731e43e", url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.21.4/agent-browser-linux-x64", url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/377967234"}
+
 [[tools.go]]
 version = "1.26.1"
 backend = "core:go"
@@ -615,140 +624,140 @@ version = "0.21.1"
 backend = "go:golang.org/x/tools/gopls"
 
 [[tools.imagemagick]]
-version = "7.1.2_17"
+version = "7.1.2_18"
 backend = "conda:imagemagick"
-"platforms.linux-x64" = { checksum = "sha256:7759740c67254880b79d418d0630ee5b50a7f8b80d5634329f8c55b221fa231f", conda_deps = [
-    "linux-64/gts-0.7.6-h977cf35_3",
+"platforms.linux-x64" = { checksum = "sha256:471e1cc5ff5a57de2c37955eb2710909a5a6c35646a84f17379c8460f1883226", conda_deps = [
     "linux-64/libxkbcommon-1.13.1-hca5e8e5_0",
-    "linux-64/icu-75.1-he02047a_0",
-    "linux-64/hicolor-icon-theme-0.17-ha770c72_3",
-    "linux-64/atk-1.0-2.38.0-h04ea711_2",
-    "linux-64/libgl-devel-1.7.0-ha4b6fd6_0",
-    "linux-64/libgettextpo-devel-0.25.1-h5888daf_0",
-    "linux-64/libgfortran-ng-15.2.0-h69a702a_5",
-    "linux-64/glib-tools-2.86.4-hf516916_0",
-    "linux-64/libegl-1.7.0-ha4b6fd6_0",
-    "linux-64/graphviz-14.1.2-h8b86629_0",
-    "linux-64/libxcb-1.17.0-h8a09558_0",
+    "linux-64/libwebp-base-1.6.0-hd42ef1d_0",
+    "linux-64/libglx-1.7.0-ha4b6fd6_0",
+    "linux-64/lerc-4.1.0-hdb68285_0",
+    "linux-64/xorg-libsm-1.2.6-he73a12e_0",
     "linux-64/xorg-libxi-1.8.2-hb9d3cd8_0",
-    "noarch/fonts-conda-ecosystem-1-0",
+    "linux-64/sqlite-3.52.0-h04a0ce9_0",
+    "linux-64/libgl-1.7.0-ha4b6fd6_0",
+    "linux-64/libxml2-devel-2.15.2-he237659_0",
+    "linux-64/graphite2-1.3.14-h5888daf_0",
+    "linux-64/libasprintf-devel-0.25.1-h8e693c7_0",
+    "linux-64/xorg-libxrandr-1.5.5-hb03c661_0",
+    "linux-64/libxcb-1.17.0-h8a09558_0",
+    "noarch/fonts-conda-forge-1-hc364b38_1",
+    "linux-64/libgfortran5-15.2.0-hcd61629_5",
+    "linux-64/harfbuzz-13.2.0-h6083320_0",
+    "linux-64/libgcc-15.2.0-h767d61c_5",
+    "linux-64/tk-8.6.13-h2797004_0",
+    "linux-64/epoxy-1.5.10-hb03c661_2",
+    "linux-64/libxml2-2.15.2-he237659_0",
     "linux-64/zstd-1.5.7-hb8e6e7a_0",
+    "linux-64/libiconv-1.18-h4ce23a2_0",
+    "linux-64/libjpeg-turbo-3.1.2-hb03c661_0",
+    "linux-64/openjpeg-2.5.4-h55fea9a_0",
+    "linux-64/xorg-libxext-1.3.7-hb03c661_0",
+    "linux-64/libzlib-1.3.2-h25fd6f3_2",
+    "linux-64/libexpat-2.7.4-hecca717_0",
+    "linux-64/libdeflate-1.25-h17f619e_0",
+    "linux-64/libuuid-2.41.3-h5347b49_0",
+    "linux-64/libffi-3.5.2-h9ec8514_0",
+    "linux-64/at-spi2-atk-2.38.0-h1369247_0",
+    "linux-64/libgl-devel-1.7.0-ha4b6fd6_0",
+    "linux-64/xkeyboard-config-2.47-hb03c661_0",
     "noarch/font-ttf-ubuntu-0.83-h77eed37_1",
+    "linux-64/openssl-1.0.2u-h516909a_0",
+    "linux-64/libavif16-1.4.1-hcfa2d63_0",
+    "linux-64/glib-tools-2.86.4-hf516916_0",
+    "linux-64/readline-7.0-haf1bffa_0",
+    "linux-64/six-1.14.0-py27_0",
+    "linux-64/pthread-stubs-0.4-hb9d3cd8_1002",
+    "linux-64/pkg-config-0.29.2-h4bc722e_1009",
+    "linux-64/librsvg-2.62.1-h4c96295_0",
+    "linux-64/dbus-1.16.2-h3c4dab8_0",
+    "linux-64/pango-1.56.4-hadf4263_0",
+    "linux-64/fribidi-1.0.16-hb03c661_0",
+    "linux-64/libtiff-4.7.1-h8261f1e_0",
+    "linux-64/glib-2.86.4-h5192d8d_0",
+    "noarch/font-ttf-source-code-pro-2.038-h77eed37_0",
+    "linux-64/libfreetype-2.14.2-ha770c72_0",
+    "linux-64/aom-3.9.1-hac33072_0",
+    "linux-64/gtk3-3.24.51-ha5ea40c_0",
+    "linux-64/libcups-2.3.3-h36d4200_3",
+    "linux-64/giflib-5.2.2-hd590300_0",
     "linux-64/krb5-1.20.1-hf9c8cef_0",
+    "linux-64/libwebp-1.6.0-h9635ea4_0",
+    "linux-64/jbig-2.1-h470a237_1",
+    "linux-64/liblzma-devel-5.8.2-hb03c661_0",
+    "linux-64/cairo-1.18.4-h3394656_0",
+    "linux-64/graphviz-14.1.2-h8b86629_0",
+    "linux-64/gettext-tools-0.25.1-h5888daf_0",
+    "linux-64/libgettextpo-devel-0.25.1-h5888daf_0",
+    "linux-64/fontconfig-2.17.1-h27c8c51_0",
+    "linux-64/xorg-libxcomposite-0.4.7-hb03c661_0",
+    "linux-64/svt-av1-4.0.1-hecca717_0",
+    "linux-64/libde265-1.0.15-h00ab1b0_0",
+    "linux-64/zlib-1.3-hd590300_0",
+    "noarch/font-ttf-inconsolata-3.000-h77eed37_0",
+    "linux-64/libfreetype6-2.14.2-h73754d4_0",
+    "linux-64/keyutils-1.6.3-hb9d3cd8_0",
+    "linux-64/libegl-devel-1.7.0-ha4b6fd6_0",
+    "linux-64/libegl-1.7.0-ha4b6fd6_0",
+    "linux-64/icu-75.1-he02047a_0",
+    "linux-64/xorg-libxrender-0.9.12-hb9d3cd8_0",
+    "linux-64/x265-3.5-h4bd325d_0",
+    "linux-64/adwaita-icon-theme-41.0-ha770c72_0",
+    "linux-64/gdk-pixbuf-2.44.5-h2b0a6b4_0",
+    "linux-64/xorg-libxdamage-1.1.6-hb9d3cd8_0",
+    "linux-64/libheif-1.19.7-gpl_hc18d805_100",
+    "linux-64/libglx-devel-1.7.0-ha4b6fd6_0",
+    "linux-64/xorg-libx11-1.8.13-he1eb515_0",
+    "linux-64/bzip2-1.0.8-hd590300_5",
+    "linux-64/xorg-libxcursor-1.2.3-hb9d3cd8_0",
+    "linux-64/atk-1.0-2.38.0-h04ea711_2",
+    "linux-64/freetype-2.14.2-ha770c72_0",
+    "linux-64/libglib-2.86.4-h6548e54_0",
+    "linux-64/wayland-1.25.0-hd6090a7_0",
+    "linux-64/pyparsing-2.2.0-py27_0",
+    "linux-64/libedit-3.1.20250104-pl5321h7949ede_0",
+    "linux-64/xorg-libxau-1.0.12-hb9d3cd8_0",
+    "linux-64/ghostscript-10.06.0-hecca717_0",
+    "linux-64/hicolor-icon-theme-0.17-ha770c72_3",
+    "linux-64/libasprintf-0.25.1-h8e693c7_0",
+    "linux-64/ca-certificates-2025.1.31-hbcca054_0",
+    "linux-64/llvm-openmp-22.1.0-h4922eb0_0",
+    "linux-64/packaging-16.8-py34_0",
+    "linux-64/libgfortran-ng-15.2.0-h69a702a_5",
+    "linux-64/_openmp_mutex-4.5-3_kmp_llvm",
     "linux-64/libpciaccess-0.19-hb03c661_0",
     "linux-64/xorg-libxfixes-6.0.2-hb03c661_0",
-    "linux-64/lerc-4.1.0-hdb68285_0",
-    "linux-64/six-1.14.0-py27_0",
-    "linux-64/x265-3.5-h4bd325d_0",
-    "linux-64/libiconv-1.18-h4ce23a2_0",
-    "linux-64/pixman-0.46.4-h537e5f6_0",
-    "linux-64/xorg-libxdamage-1.1.6-hb9d3cd8_0",
-    "linux-64/xorg-libx11-1.8.13-he1eb515_0",
-    "linux-64/libavif16-1.4.0-hcfa2d63_0",
-    "linux-64/xkeyboard-config-2.47-hb03c661_0",
-    "linux-64/libasprintf-devel-0.25.1-h8e693c7_0",
-    "linux-64/libuuid-2.41.3-h5347b49_0",
-    "linux-64/xorg-libxau-1.0.12-hb9d3cd8_0",
+    "linux-64/gts-0.7.6-h977cf35_3",
     "linux-64/xorg-xextproto-7.3.0-h0b41bf4_1003",
-    "linux-64/epoxy-1.5.10-hb03c661_2",
-    "linux-64/libde265-1.0.15-h00ab1b0_0",
-    "linux-64/xorg-libxrender-0.9.12-hb9d3cd8_0",
-    "linux-64/libexpat-2.7.4-hecca717_0",
-    "linux-64/libwebp-1.6.0-h9635ea4_0",
-    "linux-64/liblzma-5.8.2-hb03c661_0",
-    "linux-64/graphite2-1.3.14-h5888daf_0",
-    "linux-64/liblzma-devel-5.8.2-hb03c661_0",
-    "linux-64/xorg-libxcomposite-0.4.7-hb03c661_0",
     "linux-64/pcre2-10.47-haa7fec5_0",
-    "linux-64/ghostscript-10.06.0-hecca717_0",
-    "linux-64/libwebp-base-1.6.0-hd42ef1d_0",
-    "linux-64/openssl-1.0.2u-h516909a_0",
-    "noarch/font-ttf-inconsolata-3.000-h77eed37_0",
-    "linux-64/libglvnd-1.7.0-ha4b6fd6_0",
-    "linux-64/gettext-tools-0.25.1-h5888daf_0",
-    "linux-64/fribidi-1.0.16-hb03c661_0",
-    "linux-64/rav1e-0.8.1-h1fbca29_0",
-    "linux-64/librsvg-2.62.0-h4c96295_0",
-    "linux-64/libgfortran-15.2.0-h69a702a_5",
-    "linux-64/keyutils-1.6.3-hb9d3cd8_0",
-    "noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
-    "linux-64/_openmp_mutex-4.5-3_kmp_llvm",
-    "linux-64/libtiff-4.7.1-h8261f1e_0",
-    "linux-64/aom-3.9.1-hac33072_0",
-    "linux-64/libglx-devel-1.7.0-ha4b6fd6_0",
-    "linux-64/pthread-stubs-0.4-hb9d3cd8_1002",
-    "linux-64/dav1d-1.2.1-hd590300_0",
-    "linux-64/svt-av1-4.0.1-hecca717_0",
-    "linux-64/glib-2.86.4-h5192d8d_0",
-    "linux-64/at-spi2-core-2.36.1-h1369247_0",
-    "linux-64/tk-8.6.13-h2797004_0",
-    "linux-64/giflib-5.2.2-hd590300_0",
-    "linux-64/libgl-1.7.0-ha4b6fd6_0",
-    "linux-64/libgfortran5-15.2.0-hcd61629_5",
-    "linux-64/jbig-2.1-h470a237_1",
-    "linux-64/libdrm-2.4.125-hb9d3cd8_0",
-    "linux-64/libdeflate-1.25-h17f619e_0",
-    "linux-64/at-spi2-atk-2.38.0-h1369247_0",
-    "linux-64/packaging-16.8-py34_0",
-    "linux-64/libzlib-1.3.1-hd590300_0",
-    "linux-64/xorg-libxrandr-1.5.5-hb03c661_0",
-    "linux-64/cairo-1.18.4-h3394656_0",
-    "linux-64/libglib-2.86.4-h6548e54_0",
-    "linux-64/xorg-libxxf86vm-1.1.7-hb03c661_0",
-    "linux-64/readline-7.0-haf1bffa_0",
-    "linux-64/harfbuzz-13.1.1-h6083320_0",
-    "linux-64/llvm-openmp-22.1.0-h4922eb0_0",
-    "linux-64/libedit-3.1.20250104-pl5321h7949ede_0",
-    "linux-64/xorg-libxcursor-1.2.3-hb9d3cd8_0",
-    "linux-64/libgd-2.3.3-h5aea950_4",
-    "linux-64/bzip2-1.0.8-hd590300_5",
-    "linux-64/dbus-1.16.2-h3c4dab8_0",
-    "linux-64/xorg-libice-1.1.2-hb9d3cd8_0",
-    "linux-64/libjpeg-turbo-3.1.2-hb03c661_0",
-    "linux-64/xorg-libxinerama-1.1.6-hecca717_0",
-    "linux-64/xorg-libxext-1.3.7-hb03c661_0",
-    "linux-64/zlib-1.3-hd590300_0",
-    "linux-64/libxml2-devel-2.15.2-he237659_0",
-    "linux-64/libxml2-16-2.15.2-hca6bf5a_0",
-    "linux-64/wayland-1.24.0-h3e06ad9_0",
-    "linux-64/openjpeg-2.5.4-h55fea9a_0",
-    "linux-64/libpng-1.6.55-h421ea60_0",
-    "linux-64/adwaita-icon-theme-41.0-ha770c72_0",
-    "linux-64/gettext-0.25.1-h5888daf_0",
-    "linux-64/jpeg-9e-h0b41bf4_3",
-    "linux-64/fontconfig-2.17.1-h27c8c51_0",
-    "linux-64/python-2.7.15-h9fef7bc_0",
-    "noarch/font-ttf-source-code-pro-2.038-h77eed37_0",
-    "linux-64/libffi-3.5.2-h9ec8514_0",
-    "linux-64/libglx-1.7.0-ha4b6fd6_0",
-    "linux-64/xorg-glproto-1.4.17-hb9d3cd8_1003",
-    "linux-64/pkg-config-0.29.2-h4bc722e_1009",
-    "linux-64/fftw-3.3.10-nompi_hf0379b8_106",
-    "linux-64/ncurses-6.2-he1b5a44_0",
-    "linux-64/xorg-libsm-1.2.6-he73a12e_0",
-    "linux-64/freetype-2.14.2-ha770c72_0",
-    "linux-64/pango-1.56.4-hadf4263_0",
-    "linux-64/gtk3-3.24.51-ha5ea40c_0",
-    "linux-64/libasprintf-0.25.1-h8e693c7_0",
-    "linux-64/pyparsing-2.2.0-py27_0",
-    "linux-64/libcups-2.3.3-h36d4200_3",
-    "linux-64/libegl-devel-1.7.0-ha4b6fd6_0",
-    "noarch/fonts-conda-forge-1-hc364b38_1",
-    "linux-64/ca-certificates-2025.1.31-hbcca054_0",
-    "linux-64/xorg-libxdmcp-1.1.5-hb9d3cd8_0",
-    "linux-64/libfreetype-2.14.2-ha770c72_0",
-    "linux-64/libgettextpo-0.25.1-h5888daf_0",
     "linux-64/libstdcxx-15.2.0-h8f9b012_5",
-    "linux-64/xorg-libxt-1.3.1-hb9d3cd8_0",
-    "linux-64/sqlite-3.52.0-h04a0ce9_0",
-    "linux-64/libfreetype6-2.14.2-h73754d4_0",
-    "linux-64/libgcc-15.2.0-h767d61c_5",
+    "linux-64/libxml2-16-2.15.2-hca6bf5a_0",
+    "linux-64/xorg-libxxf86vm-1.1.7-hb03c661_0",
+    "linux-64/libpng-1.6.55-h421ea60_0",
+    "linux-64/pixman-0.46.4-h537e5f6_0",
+    "linux-64/gettext-0.25.1-h5888daf_0",
+    "linux-64/xorg-libxinerama-1.1.6-hecca717_0",
+    "linux-64/libdrm-2.4.125-hb9d3cd8_0",
+    "linux-64/at-spi2-core-2.36.1-h1369247_0",
+    "linux-64/ncurses-6.2-he1b5a44_0",
+    "linux-64/python-2.7.15-h9fef7bc_0",
+    "linux-64/fftw-3.3.10-nompi_hf0379b8_106",
+    "linux-64/libgettextpo-0.25.1-h5888daf_0",
+    "linux-64/xorg-libice-1.1.2-hb9d3cd8_0",
+    "noarch/fonts-conda-ecosystem-1-0",
+    "linux-64/libgfortran-15.2.0-h69a702a_5",
+    "linux-64/libglvnd-1.7.0-ha4b6fd6_0",
     "linux-64/expat-2.7.4-hecca717_0",
-    "linux-64/gdk-pixbuf-2.44.5-h2b0a6b4_0",
     "linux-64/libsqlite-3.52.0-hf4e2dac_0",
-    "linux-64/libheif-1.19.7-gpl_hc18d805_100",
-    "linux-64/libxml2-2.15.2-he237659_0",
-], url = "https://api.anaconda.org/download/conda-forge/imagemagick/7.1.2_17/linux-64/imagemagick-7.1.2_17-imagemagick_hf4cd0b3_0.conda"}
+    "linux-64/jpeg-9e-h0b41bf4_3",
+    "linux-64/xorg-libxdmcp-1.1.5-hb9d3cd8_0",
+    "linux-64/xorg-glproto-1.4.17-hb9d3cd8_1003",
+    "linux-64/libgd-2.3.3-h5aea950_4",
+    "noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
+    "linux-64/rav1e-0.8.1-h1fbca29_0",
+    "linux-64/liblzma-5.8.2-hb03c661_0",
+    "linux-64/xorg-libxt-1.3.1-hb9d3cd8_0",
+    "linux-64/dav1d-1.2.1-hd590300_0",
+], url = "https://api.anaconda.org/download/conda-forge/imagemagick/7.1.2_18/linux-64/imagemagick-7.1.2_18-gpl_h24958af_0.conda"}
 
 [[tools.jq]]
 version = "1.8.1"
@@ -769,7 +778,7 @@ backend = "core:node"
 "platforms.linux-x64" = { checksum = "sha256:dbf5b8665dec15e59e6359a517fefb47b23fdb9152d8def975b9bca3dfc6d355", url = "https://nodejs.org/dist/v24.14.0/node-v24.14.0-linux-x64.tar.gz"}
 
 [[tools."npm:acpx"]]
-version = "0.3.0"
+version = "0.3.1"
 backend = "npm:acpx"
 
 [[tools."npm:typescript"]]
@@ -781,9 +790,9 @@ version = "5.1.3"
 backend = "npm:typescript-language-server"
 
 [[tools.opencode]]
-version = "1.2.27"
+version = "1.3.0"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:6fe3820b145857f7ff507d2826058b7acf1fce8258def1498468dd43809e69e8", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-x64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:be5a2d1ff5a2799b0aee16efac924ddfa6d75f5374def8203e38bce792e98429", url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-linux-x64.tar.gz"}
 
 [[tools.pnpm]]
 version = "10.32.1"
@@ -831,9 +840,9 @@ backend = "aqua:tsl0922/ttyd"
 "platforms.linux-x64" = { checksum = "blake3:6ed0d916345e111411cdc7f7d649bcb984ec1ee603d470b2151ac0a31b9585a4", url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"}
 
 [[tools.uv]]
-version = "0.10.10"
+version = "0.10.12"
 backend = "aqua:astral-sh/uv"
-"platforms.linux-x64" = { checksum = "sha256:74544e8755fbc27559e22e29fd561bdc48f91b8bd8323e760a1130f32433bea4", url = "https://github.com/astral-sh/uv/releases/download/0.10.10/uv-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:adccf40b5d1939a5e0093081ec2307ea24235adf7c2d96b122c561fa37711c46", url = "https://github.com/astral-sh/uv/releases/download/0.10.12/uv-x86_64-unknown-linux-musl.tar.gz"}
 
 [[tools.yarn]]
 version = "4.13.0"

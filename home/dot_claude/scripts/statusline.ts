@@ -5,7 +5,6 @@
 // Line 3: 7d rate limit progress bar
 
 import { $ } from "bun";
-import { readFileSync, statSync } from "fs";
 
 // ---------- ANSI Colors ----------
 const GREEN = "\x1b[38;2;151;201;195m";
@@ -17,19 +16,21 @@ const DIM = "\x1b[2m";
 const SEP = `${GRAY} │ ${RESET}`;
 
 // ---------- Interfaces ----------
+interface RateLimitWindow {
+  used_percentage?: number;
+  resets_at?: number | string; // Unix timestamp (seconds) or ISO string
+}
+
 interface StatusInput {
   model?: { display_name?: string };
   context_window?: { used_percentage?: number };
   cwd?: string;
   cost?: { total_lines_added?: number; total_lines_removed?: number };
   version?: string;
-}
-
-interface UsageCache {
-  five_hour_util?: string;
-  five_hour_reset?: string;
-  seven_day_util?: string;
-  seven_day_reset?: string;
+  rate_limits?: {
+    five_hour?: RateLimitWindow;
+    seven_day?: RateLimitWindow;
+  };
 }
 
 // ---------- Parse stdin ----------
@@ -40,7 +41,7 @@ const usedPct = input.context_window?.used_percentage ?? 0;
 const cwd = input.cwd ?? "";
 const linesAdded = input.cost?.total_lines_added ?? 0;
 const linesRemoved = input.cost?.total_lines_removed ?? 0;
-const ccVersion = input.version ?? "0.0.0";
+const rateLimits = input.rate_limits;
 
 // ---------- Color by percentage ----------
 function colorForPct(pct: number | null): string {
@@ -72,108 +73,24 @@ if (cwd) {
 const gitStats =
   linesAdded > 0 || linesRemoved > 0 ? `+${linesAdded}/-${linesRemoved}` : "";
 
-// ---------- OAuth token ----------
-function getOAuthToken(): string {
-  if (process.env.CLAUDE_CODE_OAUTH_TOKEN) {
-    return process.env.CLAUDE_CODE_OAUTH_TOKEN;
-  }
-  const credsPath = `${process.env.HOME}/.claude/.credentials.json`;
-  try {
-    const creds = JSON.parse(readFileSync(credsPath, "utf-8"));
-    return creds?.claudeAiOauth?.accessToken ?? "";
-  } catch {
-    return "";
-  }
+// ---------- Parse rate limits from stdin ----------
+function parsePct(val: number | undefined): number | null {
+  if (val === undefined || val === null) return null;
+  // used_percentage is 0-100 directly from Claude Code
+  return Math.round(val);
 }
 
-// ---------- Rate limit cache ----------
-const CACHE_FILE = "/tmp/claude-usage-cache.json";
-const CACHE_TTL = 360_000; // 360 seconds in ms
-
-async function fetchUsage(accessToken: string): Promise<UsageCache | null> {
-  try {
-    const resp = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        "Content-Type": "application/json",
-        "User-Agent": `claude-code/${ccVersion}`,
-        "anthropic-beta": "oauth-2025-04-20",
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify({
-        model: "claude-haiku-4-5-20251001",
-        max_tokens: 1,
-        messages: [{ role: "user", content: "h" }],
-      }),
-      signal: AbortSignal.timeout(8000),
-    });
-
-    const h5u = resp.headers.get("anthropic-ratelimit-unified-5h-utilization");
-    const h5r = resp.headers.get("anthropic-ratelimit-unified-5h-reset");
-    const h7u = resp.headers.get("anthropic-ratelimit-unified-7d-utilization");
-    const h7r = resp.headers.get("anthropic-ratelimit-unified-7d-reset");
-
-    if (!h5u) return null;
-
-    const cache: UsageCache = {
-      five_hour_util: h5u ?? undefined,
-      five_hour_reset: h5r ?? undefined,
-      seven_day_util: h7u ?? undefined,
-      seven_day_reset: h7r ?? undefined,
-    };
-    await Bun.write(CACHE_FILE, JSON.stringify(cache));
-    return cache;
-  } catch {
-    return null;
-  }
-}
-
-function loadCache(): UsageCache | null {
-  try {
-    const stat = statSync(CACHE_FILE);
-    if (Date.now() - stat.mtimeMs < CACHE_TTL) {
-      return JSON.parse(readFileSync(CACHE_FILE, "utf-8"));
-    }
-  } catch {}
-  return null;
-}
-
-async function getUsage(): Promise<UsageCache> {
-  const cached = loadCache();
-  if (cached) return cached;
-
-  const token = getOAuthToken();
-  if (token) {
-    const fresh = await fetchUsage(token);
-    if (fresh) return fresh;
-  }
-
-  // Fallback to stale cache
-  try {
-    return JSON.parse(readFileSync(CACHE_FILE, "utf-8"));
-  } catch {
-    return {};
-  }
-}
-
-const usage = await getUsage();
-
-// ---------- Parse utilization (0.0–1.0 → integer %) ----------
-function parsePct(val: string | undefined): number | null {
-  if (!val) return null;
-  const f = parseFloat(val);
-  if (isNaN(f) || f === 0) return null;
-  return Math.round(f * 100);
-}
-
-const fiveHourPct = parsePct(usage.five_hour_util);
-const sevenDayPct = parsePct(usage.seven_day_util);
+const fiveHourPct = parsePct(rateLimits?.five_hour?.used_percentage);
+const sevenDayPct = parsePct(rateLimits?.seven_day?.used_percentage);
 
 // ---------- Format reset time ----------
-function parseResetTime(value: string | undefined): Date | null {
-  if (!value) return null;
-  // Try epoch seconds
+function parseResetTime(value: number | string | undefined): Date | null {
+  if (value === undefined || value === null) return null;
+  if (typeof value === "number") {
+    // Unix timestamp in seconds
+    return new Date(value * 1000);
+  }
+  // Try epoch seconds as string
   const epoch = parseFloat(value);
   if (!isNaN(epoch) && epoch > 1_000_000_000) return new Date(epoch * 1000);
   // Try ISO string
@@ -208,8 +125,8 @@ function format7dReset(date: Date): string {
   return `Resets ${month} ${day} at ${formatHour(date)} (Asia/Tokyo)`;
 }
 
-const fiveResetDate = parseResetTime(usage.five_hour_reset);
-const sevenResetDate = parseResetTime(usage.seven_day_reset);
+const fiveResetDate = parseResetTime(rateLimits?.five_hour?.resets_at);
+const sevenResetDate = parseResetTime(rateLimits?.seven_day?.resets_at);
 const fiveResetDisplay = fiveResetDate ? format5hReset(fiveResetDate) : "";
 const sevenResetDisplay = sevenResetDate ? format7dReset(sevenResetDate) : "";
 

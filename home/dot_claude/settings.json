@@ -5,7 +5,6 @@
       "Read(.env)",
       "Read(.env.*)",
       "Bash(sudo *)",
-      "Bash(rm *)",
       "Bash(chmod 777 *)",
       "Bash(npm install -g *)",
       "Bash(git config *)",
@@ -26,6 +25,7 @@
     "typescript-lsp@claude-plugins-official": true,
     "rust-analyzer-lsp@claude-plugins-official": true
   },
+  "skipDangerousModePermissionPrompt": true,
   "mcpServers": {
     "claude_ai_Notion": {
       "disabled": true
@@ -39,6 +39,5 @@
     "claude_ai_Context7": {
       "disabled": true
     }
-  },
-  "skipDangerousModePermissionPrompt": true
+  }
 }

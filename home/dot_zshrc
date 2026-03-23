@@ -1,10 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-
-snap_bin_path="/snap/bin"
-if [ -n "${PATH##*${snap_bin_path}}" -a -n "${PATH##*${snap_bin_path}:*}" ]; then
-    export PATH=$PATH:${snap_bin_path}
+if [ -f "$HOME/.config/zsh/init/mise.zsh" ]; then
+  source "$HOME/.config/zsh/init/mise.zsh"
 fi
 
 # alias
@@ -12,9 +10,6 @@ alias cat="bat"
 alias ls="exa --icons"
 alias find="fd"
 alias cd="z"
-
-# load mise first
-eval "$(~/.local/bin/mise activate zsh)"
 
 for zshrc_file in ~/.config/zsh/rc.d/*.zsh(.N); do
   source "$zshrc_file"

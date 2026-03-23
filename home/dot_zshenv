@@ -1,0 +1,24 @@
+# ~/.zshenv: minimal environment for all zsh shells.
+
+if [ -d "$HOME/bin" ]; then
+    case ":$PATH:" in
+        *":$HOME/bin:"*) ;;
+        *) PATH="$HOME/bin${PATH:+:$PATH}" ;;
+    esac
+fi
+
+if [ -d "$HOME/.local/bin" ]; then
+    case ":$PATH:" in
+        *":$HOME/.local/bin:"*) ;;
+        *) PATH="$HOME/.local/bin${PATH:+:$PATH}" ;;
+    esac
+fi
+
+if [ -d "/snap/bin" ]; then
+    case ":$PATH:" in
+        *":/snap/bin:"*) ;;
+        *) PATH="${PATH:+$PATH:}/snap/bin" ;;
+    esac
+fi
+
+export PATH
