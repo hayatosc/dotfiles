@@ -503,9 +503,9 @@ url = "https://api.anaconda.org/download/conda-forge/fonts-conda-forge/1/noarch/
 checksum = "sha256:54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98333"
 
 [[tools."aqua:github/copilot-cli"]]
-version = "1.0.10"
+version = "1.0.11"
 backend = "aqua:github/copilot-cli"
-"platforms.linux-x64" = { checksum = "sha256:b9b8a67a023f3923a76a6819a11d069293a0ff1209a04588c4f3d048c03c7328", url = "https://github.com/github/copilot-cli/releases/download/v1.0.10/copilot-linux-x64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:45dcb7b18f1eabdb4247216cf6b543505bbdc934c2c72afa4cdc441a3291b66e", url = "https://github.com/github/copilot-cli/releases/download/v1.0.11/copilot-linux-x64.tar.gz"}
 
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.25.0"
@@ -540,9 +540,9 @@ backend = "core:bun"
 "platforms.linux-x64" = { checksum = "blake3:014395d9ba028d3463d18260852ded69e90e415b76883a1ba9d2d7d3568fbd32"}
 
 [[tools.claude]]
-version = "2.1.81"
+version = "2.1.84"
 backend = "aqua:anthropics/claude-code"
-"platforms.linux-x64" = { checksum = "blake3:11fb75be7593321acef7143bf98b01e30224904bda47ec46a39a9efa880f6753", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.81/linux-x64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:099421d1fdcb1b63c0a689211c0c4ae16b44ecdd0a7901609de460b01d0b2b3c", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.84/linux-x64/claude"}
 
 [[tools.cloudflared]]
 version = "2026.3.0"
@@ -564,9 +564,9 @@ backend = "aqua:dandavison/delta"
 "platforms.linux-x64" = { checksum = "sha256:564a774237adb041a9a0098f2e55044e52b6ca5361e99cf179b892bdd5f91b92", url = "https://github.com/dandavison/delta/releases/download/0.19.1/delta-0.19.1-x86_64-unknown-linux-musl.tar.gz"}
 
 [[tools.deno]]
-version = "2.7.7"
+version = "2.7.8"
 backend = "core:deno"
-"platforms.linux-x64" = { checksum = "blake3:157185bc76456b8045f174fa1953b8be96e505fd020103fe18f10b4e41dcc989"}
+"platforms.linux-x64" = { checksum = "blake3:6acb969ee341078bce51f04313eccc7915f31d71f59ffe6ede5916640c0b2552"}
 
 [[tools.fd]]
 version = "10.4.2"
@@ -579,11 +579,11 @@ backend = "aqua:junegunn/fzf"
 "platforms.linux-x64" = { checksum = "sha256:8fd0e0b93bdf64ba90081ffb6658d77ea5a024c122b36852b1de30f9d2733754", url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_amd64.tar.gz"}
 
 [[tools.gcloud]]
-version = "561.0.0"
+version = "562.0.0"
 backend = "vfox:mise-plugins/vfox-gcloud"
 
 [[tools.gemini]]
-version = "0.34.0"
+version = "0.35.1"
 backend = "npm:@google/gemini-cli"
 
 [[tools.gh]]
@@ -600,15 +600,20 @@ version = "0.2.0"
 backend = "github:hayatosc/git-cx"
 "platforms.linux-x64" = { checksum = "sha256:5c19aee65e12a6caefaba741b371e6af64e7e0103fadc734f9e8a2be2bfce8f5", url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112584"}
 
+[[tools."github:sinelaw/fresh"]]
+version = "0.2.18"
+backend = "github:sinelaw/fresh"
+"platforms.linux-x64" = { checksum = "sha256:2adf368b20716dbf3c98734b2035d451c85556b39f2e248811bed4f38528b6ad", url = "https://github.com/sinelaw/fresh/releases/download/v0.2.18/fresh-editor-x86_64-unknown-linux-gnu.tar.xz", url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/379358528"}
+
 [[tools."github:steipete/gogcli"]]
 version = "0.12.0"
 backend = "github:steipete/gogcli"
 "platforms.linux-x64" = { checksum = "sha256:a03fccbd67ea2e59a26a56e92de8918577f4bebe4b2f946823419777827cdab2", url = "https://github.com/steipete/gogcli/releases/download/v0.12.0/gogcli_0.12.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/steipete/gogcli/releases/assets/369882114"}
 
 [[tools."github:vercel-labs/agent-browser"]]
-version = "0.21.4"
+version = "0.22.3"
 backend = "github:vercel-labs/agent-browser"
-"platforms.linux-x64" = { checksum = "sha256:c74a9b9894dc72cdd40c0ee578549c57da48bb1fa8ead04ca975a656c731e43e", url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.21.4/agent-browser-linux-x64", url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/377967234"}
+"platforms.linux-x64" = { checksum = "sha256:176511df07ee3ee19b732d77db81354ee97a3045502c48212b82e0c752943c00", url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.22.3/agent-browser-linux-x64", url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/381486842"}
 
 [[tools.go]]
 version = "1.26.1"
@@ -769,13 +774,13 @@ backend = "aqua:jesseduffield/lazygit"
 "platforms.linux-x64" = { checksum = "sha256:6252ca6cf98bc4fd3e0d927b54225910cfa57b065d0ad88263f14592f7f9ab15", url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_x86_64.tar.gz"}
 
 [[tools.ni]]
-version = "29.0.0"
+version = "30.0.0"
 backend = "npm:@antfu/ni"
 
 [[tools.node]]
-version = "24.14.0"
+version = "24.14.1"
 backend = "core:node"
-"platforms.linux-x64" = { checksum = "sha256:dbf5b8665dec15e59e6359a517fefb47b23fdb9152d8def975b9bca3dfc6d355", url = "https://nodejs.org/dist/v24.14.0/node-v24.14.0-linux-x64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:ace9fa104992ed0829642629c46ca7bd7fd6e76278cb96c958c4b387d29658ea", url = "https://nodejs.org/dist/v24.14.1/node-v24.14.1-linux-x64.tar.gz"}
 
 [[tools."npm:acpx"]]
 version = "0.3.1"
@@ -790,20 +795,14 @@ version = "5.1.3"
 backend = "npm:typescript-language-server"
 
 [[tools.opencode]]
-version = "1.3.0"
+version = "1.3.2"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:be5a2d1ff5a2799b0aee16efac924ddfa6d75f5374def8203e38bce792e98429", url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-linux-x64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:6d66c24f14742618f1d6248d2a8a9d9692d44e61ee15dcef70e8310920a2df70", url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-linux-x64.tar.gz"}
 
 [[tools.pnpm]]
-version = "10.32.1"
+version = "10.33.0"
 backend = "aqua:pnpm/pnpm"
-"platforms.linux-arm64" = { checksum = "sha256:c0db0b837971fde6f9781af8914e54eb163721193a36d35cbcf1794b3474a407", url = "https://github.com/pnpm/pnpm/releases/download/v10.32.1/pnpm-linux-arm64"}
-"platforms.linux-arm64-musl" = { checksum = "sha256:c0db0b837971fde6f9781af8914e54eb163721193a36d35cbcf1794b3474a407", url = "https://github.com/pnpm/pnpm/releases/download/v10.32.1/pnpm-linux-arm64"}
-"platforms.linux-x64" = { checksum = "sha256:c5607a86bfb948297e96b393a53c90107766fe56329e62967b1f239d861d4363", url = "https://github.com/pnpm/pnpm/releases/download/v10.32.1/pnpm-linux-x64"}
-"platforms.linux-x64-musl" = { checksum = "sha256:c5607a86bfb948297e96b393a53c90107766fe56329e62967b1f239d861d4363", url = "https://github.com/pnpm/pnpm/releases/download/v10.32.1/pnpm-linux-x64"}
-"platforms.macos-arm64" = { checksum = "sha256:b0904b4e0cf36704fcdc24bcdb5f03388799a631510d1fb0d459ea69c7b1e2d9", url = "https://github.com/pnpm/pnpm/releases/download/v10.32.1/pnpm-macos-arm64"}
-"platforms.macos-x64" = { checksum = "sha256:8b83277343bbc400fdb90608bd51b4f56e380e6624ac5fd0e11d6c08815e3f04", url = "https://github.com/pnpm/pnpm/releases/download/v10.32.1/pnpm-macos-x64"}
-"platforms.windows-x64" = { checksum = "sha256:849141504c83bcd08a3d84dc20d43cff2584d672138d28c33ad62bdac809e7f2", url = "https://github.com/pnpm/pnpm/releases/download/v10.32.1/pnpm-win-x64.exe"}
+"platforms.linux-x64" = { checksum = "sha256:8d4e8f7d778e8ac482022e2577011706a872542f6f6f233e795a4d9f978ea8b5", url = "https://github.com/pnpm/pnpm/releases/download/v10.33.0/pnpm-linux-x64"}
 
 [[tools.python]]
 version = "3.14.3"
@@ -822,9 +821,9 @@ version = "1.94.0"
 backend = "core:rust"
 
 [[tools.rust-analyzer]]
-version = "2026-03-16"
+version = "2026-03-23"
 backend = "aqua:rust-lang/rust-analyzer"
-"platforms.linux-x64" = { checksum = "sha256:036c9ee4a3a0d9e696d7b0e07a318dbb6047341f8c62a36c63a1a8d775e34736", url = "https://github.com/rust-lang/rust-analyzer/releases/download/2026-03-16/rust-analyzer-x86_64-unknown-linux-gnu.gz"}
+"platforms.linux-x64" = { checksum = "sha256:14d53f5e71ec0223a776398733cb12ed529899380408c719fc398036feb07e1c", url = "https://github.com/rust-lang/rust-analyzer/releases/download/2026-03-23/rust-analyzer-x86_64-unknown-linux-gnu.gz"}
 
 [[tools.starship]]
 version = "1.24.2"
@@ -840,9 +839,9 @@ backend = "aqua:tsl0922/ttyd"
 "platforms.linux-x64" = { checksum = "blake3:6ed0d916345e111411cdc7f7d649bcb984ec1ee603d470b2151ac0a31b9585a4", url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"}
 
 [[tools.uv]]
-version = "0.10.12"
+version = "0.11.1"
 backend = "aqua:astral-sh/uv"
-"platforms.linux-x64" = { checksum = "sha256:adccf40b5d1939a5e0093081ec2307ea24235adf7c2d96b122c561fa37711c46", url = "https://github.com/astral-sh/uv/releases/download/0.10.12/uv-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:4e949471a95b37088a1ff1a585f69abed4d3cd3f921f50709a46b6ba62986d38", url = "https://github.com/astral-sh/uv/releases/download/0.11.1/uv-x86_64-unknown-linux-musl.tar.gz"}
 
 [[tools.yarn]]
 version = "4.13.0"
