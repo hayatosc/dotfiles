@@ -8,6 +8,12 @@ allowed-tools: Bash(npx agent-browser:*), Bash(agent-browser:*)
 
 The CLI uses Chrome/Chromium via CDP directly. Install via `npm i -g agent-browser`, `brew install agent-browser`, or `cargo install agent-browser`. Run `agent-browser install` to download Chrome.
 
+## Codex Sandbox Note
+
+In Codex's default Linux `workspace-write` sandbox, `agent-browser` cannot start its background daemon because the sandbox blocks the required local Unix socket and binding operations. Typical failures look like `Socket directory ... is not writable` or `Failed to bind socket`.
+
+When using Codex, run browser tasks in a profile that disables the sandbox for that session, for example `codex -p browser`, or explicitly request escalated execution for `agent-browser` commands. Changing `XDG_RUNTIME_DIR` or `AGENT_BROWSER_SOCKET_DIR` does not bypass this restriction.
+
 ## Core Workflow
 
 Every browser automation follows this pattern:
