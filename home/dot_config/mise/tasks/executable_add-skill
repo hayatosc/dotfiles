@@ -48,8 +48,9 @@ dest_root="$source_dir/home/dot_agents/skills"
 dest="$dest_root/$skill_name"
 
 if [ -e "$dest" ]; then
-  echo "error: skill already exists: $dest" >&2
-  exit 1
+  echo "skill already exists: $dest" >&2
+  echo "removing existing skill and re-installing..." >&2
+  rm -rf "$dest"
 fi
 
 tmp_dir="$(mktemp -d)"
