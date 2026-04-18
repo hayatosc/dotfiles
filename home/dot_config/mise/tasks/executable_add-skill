@@ -31,11 +31,6 @@ after_tree="${rest#${owner_repo}/tree/}"
 ref="${after_tree%%/*}"
 path="${after_tree#${ref}/}"
 
-if [[ "$path" != skills/* ]]; then
-  echo "error: path must start with skills/: $path" >&2
-  exit 2
-fi
-
 if [[ "$path" == *".."* ]]; then
   echo "error: path contains ..: $path" >&2
   exit 2
@@ -44,7 +39,12 @@ fi
 skill_name="${path##*/}"
 
 source_dir="${CHEZMOI_SOURCE_DIR:-$HOME/.local/share/chezmoi}"
-dest_root="$source_dir/home/dot_agents/skills"
+source_dir="${source_dir%/}"
+if [[ "$source_dir" == */home ]]; then
+  dest_root="$source_dir/dot_agents/skills"
+else
+  dest_root="$source_dir/home/dot_agents/skills"
+fi
 dest="$dest_root/$skill_name"
 
 if [ -e "$dest" ]; then
@@ -73,12 +73,17 @@ if [ ! -d "$src" ]; then
   exit 1
 fi
 
+if [ ! -f "$src/SKILL.md" ]; then
+  echo "error: SKILL.md not found in repo path: $path" >&2
+  exit 1
+fi
+
 mkdir -p "$dest_root"
 cp -R "$src" "$dest"
 
 if [ ! -f "$dest/SKILL.md" ]; then
   rm -rf "$dest"
-  echo "error: SKILL.md not found in copied skill: $dest" >&2
+  echo "error: SKILL.md not found after copy: $dest" >&2
   exit 1
 fi
 
