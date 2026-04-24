@@ -32,9 +32,9 @@ checksum = "sha256:69f70048a1a915be7b8ad5d2cbb7bf020baa989b5506e45a676ef4ef5106c
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h4777abc_9.conda"
 checksum = "sha256:b3495077889dde6bb370938e7db82be545c73e8589696ad0843a32221520ad4c"
 
-[conda-packages.linux-arm64."ca-certificates-2026.2.25-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.2.25-hbd8a1cb_0.conda"
-checksum = "sha256:67cc7101b36421c5913a1687ef1b99f85b5d6868da3abbf6ec1a4181e79782fc"
+[conda-packages.linux-arm64."ca-certificates-2026.4.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-hbd8a1cb_0.conda"
+checksum = "sha256:c9dbcc8039a52023660d6d1bbf87594a93dd69c6ac5a2a44323af2c92976728d"
 
 [conda-packages.linux-arm64."cairo-1.18.4-h0b6afd8_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/cairo-1.18.4-h0b6afd8_1.conda"
@@ -696,9 +696,9 @@ checksum = "sha256:69f70048a1a915be7b8ad5d2cbb7bf020baa989b5506e45a676ef4ef5106c
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h4777abc_9.conda"
 checksum = "sha256:b3495077889dde6bb370938e7db82be545c73e8589696ad0843a32221520ad4c"
 
-[conda-packages.linux-arm64-musl."ca-certificates-2026.2.25-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.2.25-hbd8a1cb_0.conda"
-checksum = "sha256:67cc7101b36421c5913a1687ef1b99f85b5d6868da3abbf6ec1a4181e79782fc"
+[conda-packages.linux-arm64-musl."ca-certificates-2026.4.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-hbd8a1cb_0.conda"
+checksum = "sha256:c9dbcc8039a52023660d6d1bbf87594a93dd69c6ac5a2a44323af2c92976728d"
 
 [conda-packages.linux-arm64-musl."cairo-1.18.4-h0b6afd8_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/cairo-1.18.4-h0b6afd8_1.conda"
@@ -1344,9 +1344,9 @@ checksum = "sha256:b08ef033817b5f9f76ce62dfcac7694e7b6b4006420372de22494503decac
 url = "https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_9.conda"
 checksum = "sha256:0b75d45f0bba3e95dc693336fa51f40ea28c980131fec438afb7ce6118ed05f6"
 
-[conda-packages.linux-x64."ca-certificates-2026.2.25-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.2.25-hbd8a1cb_0.conda"
-checksum = "sha256:67cc7101b36421c5913a1687ef1b99f85b5d6868da3abbf6ec1a4181e79782fc"
+[conda-packages.linux-x64."ca-certificates-2026.4.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-hbd8a1cb_0.conda"
+checksum = "sha256:c9dbcc8039a52023660d6d1bbf87594a93dd69c6ac5a2a44323af2c92976728d"
 
 [conda-packages.linux-x64."cairo-1.18.4-he90730b_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.4-he90730b_1.conda"
@@ -1880,9 +1880,9 @@ checksum = "sha256:b08ef033817b5f9f76ce62dfcac7694e7b6b4006420372de22494503decac
 url = "https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_9.conda"
 checksum = "sha256:0b75d45f0bba3e95dc693336fa51f40ea28c980131fec438afb7ce6118ed05f6"
 
-[conda-packages.linux-x64-baseline."ca-certificates-2026.2.25-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.2.25-hbd8a1cb_0.conda"
-checksum = "sha256:67cc7101b36421c5913a1687ef1b99f85b5d6868da3abbf6ec1a4181e79782fc"
+[conda-packages.linux-x64-baseline."ca-certificates-2026.4.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-hbd8a1cb_0.conda"
+checksum = "sha256:c9dbcc8039a52023660d6d1bbf87594a93dd69c6ac5a2a44323af2c92976728d"
 
 [conda-packages.linux-x64-baseline."cairo-1.18.4-he90730b_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.4-he90730b_1.conda"
@@ -2416,9 +2416,9 @@ checksum = "sha256:b08ef033817b5f9f76ce62dfcac7694e7b6b4006420372de22494503decac
 url = "https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_9.conda"
 checksum = "sha256:0b75d45f0bba3e95dc693336fa51f40ea28c980131fec438afb7ce6118ed05f6"
 
-[conda-packages.linux-x64-musl."ca-certificates-2026.2.25-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.2.25-hbd8a1cb_0.conda"
-checksum = "sha256:67cc7101b36421c5913a1687ef1b99f85b5d6868da3abbf6ec1a4181e79782fc"
+[conda-packages.linux-x64-musl."ca-certificates-2026.4.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-hbd8a1cb_0.conda"
+checksum = "sha256:c9dbcc8039a52023660d6d1bbf87594a93dd69c6ac5a2a44323af2c92976728d"
 
 [conda-packages.linux-x64-musl."cairo-1.18.4-he90730b_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.4-he90730b_1.conda"
@@ -2952,9 +2952,9 @@ checksum = "sha256:b08ef033817b5f9f76ce62dfcac7694e7b6b4006420372de22494503decac
 url = "https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_9.conda"
 checksum = "sha256:0b75d45f0bba3e95dc693336fa51f40ea28c980131fec438afb7ce6118ed05f6"
 
-[conda-packages.linux-x64-musl-baseline."ca-certificates-2026.2.25-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.2.25-hbd8a1cb_0.conda"
-checksum = "sha256:67cc7101b36421c5913a1687ef1b99f85b5d6868da3abbf6ec1a4181e79782fc"
+[conda-packages.linux-x64-musl-baseline."ca-certificates-2026.4.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-hbd8a1cb_0.conda"
+checksum = "sha256:c9dbcc8039a52023660d6d1bbf87594a93dd69c6ac5a2a44323af2c92976728d"
 
 [conda-packages.linux-x64-musl-baseline."cairo-1.18.4-he90730b_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.4-he90730b_1.conda"
@@ -3480,9 +3480,9 @@ checksum = "sha256:0524d0c0b61dacd0c22ac7a8067f977b1d52380210933b04141f5099c5b6f
 url = "https://conda.anaconda.org/conda-forge/win-64/bzip2-1.0.8-h0ad9c76_9.conda"
 checksum = "sha256:76dfb71df5e8d1c4eded2dbb5ba15bb8fb2e2b0fe42d94145d5eed4c75c35902"
 
-[conda-packages.windows-x64."ca-certificates-2026.2.25-h4c7d964_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.2.25-h4c7d964_0.conda"
-checksum = "sha256:37950019c59b99585cee5d30dbc2cc9696ed4e11f5742606a4db1621ed8f94d6"
+[conda-packages.windows-x64."ca-certificates-2026.4.22-h4c7d964_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-h4c7d964_0.conda"
+checksum = "sha256:6f4ff81534c19e76acf52fcabf4a258088a932b8f1ac56e9a59e98f6051f8e46"
 
 [conda-packages.windows-x64."cairo-1.18.4-h477c42c_1"]
 url = "https://conda.anaconda.org/conda-forge/win-64/cairo-1.18.4-h477c42c_1.conda"
@@ -3740,9 +3740,9 @@ checksum = "sha256:0524d0c0b61dacd0c22ac7a8067f977b1d52380210933b04141f5099c5b6f
 url = "https://conda.anaconda.org/conda-forge/win-64/bzip2-1.0.8-h0ad9c76_9.conda"
 checksum = "sha256:76dfb71df5e8d1c4eded2dbb5ba15bb8fb2e2b0fe42d94145d5eed4c75c35902"
 
-[conda-packages.windows-x64-baseline."ca-certificates-2026.2.25-h4c7d964_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.2.25-h4c7d964_0.conda"
-checksum = "sha256:37950019c59b99585cee5d30dbc2cc9696ed4e11f5742606a4db1621ed8f94d6"
+[conda-packages.windows-x64-baseline."ca-certificates-2026.4.22-h4c7d964_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.4.22-h4c7d964_0.conda"
+checksum = "sha256:6f4ff81534c19e76acf52fcabf4a258088a932b8f1ac56e9a59e98f6051f8e46"
 
 [conda-packages.windows-x64-baseline."cairo-1.18.4-h477c42c_1"]
 url = "https://conda.anaconda.org/conda-forge/win-64/cairo-1.18.4-h477c42c_1.conda"
@@ -3993,52 +3993,52 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools."aqua:github/copilot-cli"]]
-version = "1.0.34"
+version = "1.0.35"
 backend = "aqua:github/copilot-cli"
 
 [tools."aqua:github/copilot-cli"."platforms.linux-arm64"]
-checksum = "sha256:399cf7740dd084789c31066e1ac8729e3531206bae7abbe009bf634bf8d0dc97"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-linux-arm64.tar.gz"
+checksum = "sha256:c13f50e041db724d00ffe92b0a78a16be0af639db72d83ed9a62ebf1d2b766b3"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-linux-arm64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:399cf7740dd084789c31066e1ac8729e3531206bae7abbe009bf634bf8d0dc97"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-linux-arm64.tar.gz"
+checksum = "sha256:c13f50e041db724d00ffe92b0a78a16be0af639db72d83ed9a62ebf1d2b766b3"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-linux-arm64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.linux-x64"]
-checksum = "sha256:2670c0aa92b29e3aa4046b41417b074b9888fbeca9065901a435d374dacc7084"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-linux-x64.tar.gz"
+checksum = "sha256:1fa7ccf487bc7faf4fbdd80fde1de892717590d660d18d584d0b878038026786"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-linux-x64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.linux-x64-baseline"]
-checksum = "sha256:2670c0aa92b29e3aa4046b41417b074b9888fbeca9065901a435d374dacc7084"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-linux-x64.tar.gz"
+checksum = "sha256:1fa7ccf487bc7faf4fbdd80fde1de892717590d660d18d584d0b878038026786"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-linux-x64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:2670c0aa92b29e3aa4046b41417b074b9888fbeca9065901a435d374dacc7084"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-linux-x64.tar.gz"
+checksum = "sha256:1fa7ccf487bc7faf4fbdd80fde1de892717590d660d18d584d0b878038026786"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-linux-x64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:2670c0aa92b29e3aa4046b41417b074b9888fbeca9065901a435d374dacc7084"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-linux-x64.tar.gz"
+checksum = "sha256:1fa7ccf487bc7faf4fbdd80fde1de892717590d660d18d584d0b878038026786"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-linux-x64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.macos-arm64"]
-checksum = "sha256:0d196dc67dc40300fa1046bf884e01a78b9fa4b51f98ce957450fe5d56547267"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-darwin-arm64.tar.gz"
+checksum = "sha256:168e019b8e517b36630d11d797e02d2bf4ba1aa9f6cffa9a9b75a31c7988215b"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-darwin-arm64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.macos-x64"]
-checksum = "sha256:16d387f6b007f38ca7990595a11d91d58cca81d8fd836952ed91d718890092f1"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-darwin-x64.tar.gz"
+checksum = "sha256:080ff26902b7f975e8c1efaa41fb85196a3e821b72f80942adad2d53613709cf"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-darwin-x64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.macos-x64-baseline"]
-checksum = "sha256:16d387f6b007f38ca7990595a11d91d58cca81d8fd836952ed91d718890092f1"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-darwin-x64.tar.gz"
+checksum = "sha256:080ff26902b7f975e8c1efaa41fb85196a3e821b72f80942adad2d53613709cf"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-darwin-x64.tar.gz"
 
 [tools."aqua:github/copilot-cli"."platforms.windows-x64"]
-checksum = "sha256:62cd4d10db658bf3c6105b7d77914030ec4057357a38c10da8420dd1acc7bd52"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-win32-x64.zip"
+checksum = "sha256:9a2b2078cf933b5a822cf664cbf378ee779dd8bd0ef7c07d7f1b1a8dd9956d98"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-win32-x64.zip"
 
 [tools."aqua:github/copilot-cli"."platforms.windows-x64-baseline"]
-checksum = "sha256:62cd4d10db658bf3c6105b7d77914030ec4057357a38c10da8420dd1acc7bd52"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.34/copilot-win32-x64.zip"
+checksum = "sha256:9a2b2078cf933b5a822cf664cbf378ee779dd8bd0ef7c07d7f1b1a8dd9956d98"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.35/copilot-win32-x64.zip"
 
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.27.0"
@@ -4192,6 +4192,55 @@ url = "https://github.com/rossmacarthur/sheldon/releases/download/0.8.5/sheldon-
 [tools."aqua:rossmacarthur/sheldon"."platforms.macos-arm64"]
 checksum = "sha256:6e47f10a25f165b095eb2bde1ab617d4d34ad6f3ff2ca984167ca94fadd52730"
 url = "https://github.com/rossmacarthur/sheldon/releases/download/0.8.5/sheldon-0.8.5-aarch64-apple-darwin.tar.gz"
+
+[[tools.aube]]
+version = "1.0.0"
+backend = "github:endevco/aube"
+
+[tools.aube."platforms.linux-arm64"]
+checksum = "sha256:24cc19db5283b7ae76627c2ccaa77f0cf5be7f7b7c7baab481874936e246836d"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403722136"
+
+[tools.aube."platforms.linux-arm64-musl"]
+checksum = "sha256:3689d103ebb48f9709193beffe2991919f2f3001a4d9af7f1bbb06e2d85e3c18"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403722135"
+
+[tools.aube."platforms.linux-x64"]
+checksum = "sha256:f1ef1fa992eba8fa2b0859bfa772069eab1fe8962b0aed21ab6539904f5b7e26"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403720821"
+
+[tools.aube."platforms.linux-x64-baseline"]
+checksum = "sha256:f1ef1fa992eba8fa2b0859bfa772069eab1fe8962b0aed21ab6539904f5b7e26"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403720821"
+
+[tools.aube."platforms.linux-x64-musl"]
+checksum = "sha256:fd68fefa85f80a415981e260809cb5b12033d04dd09103a30088ecb74ae6de48"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403722177"
+
+[tools.aube."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:f1ef1fa992eba8fa2b0859bfa772069eab1fe8962b0aed21ab6539904f5b7e26"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403720821"
+
+[tools.aube."platforms.macos-arm64"]
+checksum = "sha256:6d90e5e35a834a6f8b0c7023526bf615751b29c3b2a046f16739f305c786f856"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403722938"
+
+[tools.aube."platforms.windows-x64"]
+checksum = "sha256:86a5a64723736037ed049e4fbdd572894415cdc357167b94f2876462c1431daf"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403725553"
+
+[tools.aube."platforms.windows-x64-baseline"]
+checksum = "sha256:86a5a64723736037ed049e4fbdd572894415cdc357167b94f2876462c1431daf"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0/aube-v1.0.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/403725553"
 
 [[tools.bat]]
 version = "0.26.1"
@@ -4511,7 +4560,7 @@ conda_deps = [
     "pthread-stubs-0.4-h86ecc28_1002",
     "xorg-libxau-1.0.12-he30d5cf_1",
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
-    "ca-certificates-2026.2.25-hbd8a1cb_0",
+    "ca-certificates-2026.4.22-hbd8a1cb_0",
     "dbus-1.16.2-h70963c4_1",
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
@@ -4641,7 +4690,7 @@ conda_deps = [
     "pthread-stubs-0.4-h86ecc28_1002",
     "xorg-libxau-1.0.12-he30d5cf_1",
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
-    "ca-certificates-2026.2.25-hbd8a1cb_0",
+    "ca-certificates-2026.4.22-hbd8a1cb_0",
     "dbus-1.16.2-h70963c4_1",
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
@@ -4787,7 +4836,7 @@ conda_deps = [
     "pthread-stubs-0.4-hb9d3cd8_1002",
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
-    "ca-certificates-2026.2.25-hbd8a1cb_0",
+    "ca-certificates-2026.4.22-hbd8a1cb_0",
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
@@ -4927,7 +4976,7 @@ conda_deps = [
     "pthread-stubs-0.4-hb9d3cd8_1002",
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
-    "ca-certificates-2026.2.25-hbd8a1cb_0",
+    "ca-certificates-2026.4.22-hbd8a1cb_0",
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
@@ -5067,7 +5116,7 @@ conda_deps = [
     "pthread-stubs-0.4-hb9d3cd8_1002",
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
-    "ca-certificates-2026.2.25-hbd8a1cb_0",
+    "ca-certificates-2026.4.22-hbd8a1cb_0",
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
@@ -5207,7 +5256,7 @@ conda_deps = [
     "pthread-stubs-0.4-hb9d3cd8_1002",
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
-    "ca-certificates-2026.2.25-hbd8a1cb_0",
+    "ca-certificates-2026.4.22-hbd8a1cb_0",
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
@@ -5295,7 +5344,7 @@ conda_deps = [
     "pango-1.56.4-h13911b6_1",
     "fribidi-1.0.16-hfd05255_0",
     "libogg-1.3.5-h2466b09_1",
-    "ca-certificates-2026.2.25-h4c7d964_0",
+    "ca-certificates-2026.4.22-h4c7d964_0",
     "sdl3-3.4.4-h5112557_0",
     "libusb-1.0.29-h1839187_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
@@ -5366,7 +5415,7 @@ conda_deps = [
     "pango-1.56.4-h13911b6_1",
     "fribidi-1.0.16-hfd05255_0",
     "libogg-1.3.5-h2466b09_1",
-    "ca-certificates-2026.2.25-h4c7d964_0",
+    "ca-certificates-2026.4.22-h4c7d964_0",
     "sdl3-3.4.4-h5112557_0",
     "libusb-1.0.29-h1839187_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
@@ -5596,7 +5645,7 @@ url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-565.0.0
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-565.0.0-windows-x86_64.zip"
 
 [[tools.gemini]]
-version = "0.38.2"
+version = "0.39.0-nightly.20260414.gdaf500623"
 backend = "npm:@google/gemini-cli"
 
 [[tools.gh]]
@@ -6118,7 +6167,7 @@ conda_deps = [
     "libpciaccess-0.18-h86ecc28_0",
     "xorg-xorgproto-2025.1-he30d5cf_0",
     "openssl-3.6.2-h546c87b_0",
-    "ca-certificates-2026.2.25-hbd8a1cb_0",
+    "ca-certificates-2026.4.22-hbd8a1cb_0",
     "ncurses-6.5-ha32ae93_3",
 ]
 
@@ -6238,7 +6287,7 @@ conda_deps = [
     "libpciaccess-0.18-h86ecc28_0",
     "xorg-xorgproto-2025.1-he30d5cf_0",
     "openssl-3.6.2-h546c87b_0",
-    "ca-certificates-2026.2.25-hbd8a1cb_0",
+    "ca-certificates-2026.4.22-hbd8a1cb_0",
     "ncurses-6.5-ha32ae93_3",
 ]
 
