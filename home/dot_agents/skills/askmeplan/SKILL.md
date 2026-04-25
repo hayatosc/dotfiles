@@ -103,20 +103,38 @@ Ready to proceed with this plan?
 ### Phase 5 — Execute
 
 On confirmation, implement without re-planning. Act on what was agreed.
+
+**Implementation-time decision guard**: The agreed plan covers high-level decisions. During implementation, you will encounter sub-decisions not explicitly covered. For each one, ask:
+- Is this a user-visible design choice? (type signature, field name, error type, option shape, behavior in edge cases) → **Surface it before implementing.** Ask as a concise inline question: "実装中に判断が必要な点があります: [question]"
+- Is this a pure internal detail with no user-visible consequence? (private variable name, loop structure, comment style) → Decide silently.
+
+When in doubt, surface it. The cost of one extra question is lower than the cost of implementing the wrong contract and having to rework it.
+
 If unexpected obstacles arise, surface them immediately and ask — do not silently diverge from the agreed plan.
 
 ## Question Design Rules
 
-**Good questions** resolve high-stakes unknowns that Claude cannot safely assume:
+**Good questions** resolve unknowns the user would reasonably want input on:
 - Scope: "Should authentication be included in this feature?"
 - Architecture: "Should state live on the server or client?"
 - Trade-offs: "Do you prefer performance or faster delivery here?"
 - Constraints: "Does this need to stay backward-compatible with [X]?"
+- **API/interface design** (when designing public-facing interfaces): type signatures of exported interfaces, field names in return values, error handling patterns, authentication configuration shapes, option naming. These are NOT derivable from context — they define the contract the user must live with.
 
 **Bad questions** (avoid):
-- Things derivable from context: naming conventions, file placement
 - Things already answered in prior messages
 - Open-ended polls with no architectural consequence
+- Internal implementation details with no user-visible consequence (e.g., private variable names, algorithm internals, test helper naming)
+
+**Threshold rule**: Before skipping a decision as "derivable from context", ask: _would the user reasonably want input on this?_ If yes, surface it. Reserve "assumption" for decisions that have no user-facing consequence.
+
+## Assumption Quality Gate
+
+Before listing an item under "Current assumptions" in Phase 2, apply this test:
+- Would the user reasonably disagree with this assumption?
+- Does this assumption affect user-visible API, behavior, or constraints?
+
+If yes to either, convert it to a question — do not list it as an assumption.
 
 ## Dialogue Hygiene
 
@@ -125,3 +143,4 @@ If unexpected obstacles arise, surface them immediately and ask — do not silen
 - **Compress answered rounds.** One acknowledgment line per answer — do not re-summarize everything.
 - **Allow fast-track.** If the user provides enough context upfront to skip to Phase 4, go directly there.
 - **Mirror language.** Use the same language the user writes in.
+- **Present options neutrally.** Do not state "I prefer X" or "I think X is better" in the question body. State tradeoffs objectively without advocating. If you have technical context to share (e.g., a constraint discovered from research), share the fact, not the preference.
