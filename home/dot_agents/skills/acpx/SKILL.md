@@ -29,7 +29,7 @@ Core capabilities:
 - Local agent process checks via `status`
 - Stable ACP client methods for filesystem and terminal requests
 - Stable ACP `authenticate` handshake via env/config credentials
-- Structured streaming output (`text`, `json`, `quiet`)
+- Structured streaming output (`text`, `json`, `quiet`) with optional `--suppress-reads`
 - Built-in agent registry plus raw `--agent` escape hatch
 
 ## Install
@@ -74,16 +74,20 @@ Friendly agent names resolve to commands:
 - `pi` -> `npx pi-acp`
 - `openclaw` -> `openclaw acp`
 - `codex` -> `npx @zed-industries/codex-acp`
-- `claude` -> `npx -y @zed-industries/claude-agent-acp`
+- `claude` -> `npx -y @agentclientprotocol/claude-agent-acp` (ACPX-owned package range)
 - `gemini` -> `gemini --acp`
 - `cursor` -> `cursor-agent acp`
 - `copilot` -> `copilot --acp --stdio`
-- `droid` -> `droid exec --output-format acp`
-- `kimi` -> `kimi acp`
-- `opencode` -> `npx -y opencode-ai acp`
-- `kiro` -> `kiro-cli acp`
+- `droid` -> `droid exec --output-format acp` (`factory-droid` and `factorydroid` also resolve to `droid`)
+- `iflow` -> `iflow --experimental-acp`
 - `kilocode` -> `npx -y @kilocode/cli acp`
+- `kimi` -> `kimi acp`
+- `kiro` -> `kiro-cli-chat acp`
+- `opencode` -> `npx -y opencode-ai acp`
+- `qoder` -> `qodercli --acp`
+  Forwards Qoder-native `--allowed-tools` and `--max-turns` startup flags from `acpx` session options.
 - `qwen` -> `qwen --acp`
+- `trae` -> `traecli acp serve`
 
 Rules:
 
@@ -135,12 +139,13 @@ Behavior:
 - Runs a single prompt in a temporary ACP session
 - Does not reuse or save persistent session state
 
-### Cancel / Mode / Config
+### Cancel / Mode / Config / Model
 
 ```bash
 acpx codex cancel
 acpx codex set-mode auto
 acpx codex set thought_level high
+acpx codex set model gpt-5.4
 ```
 
 Behavior:
@@ -150,6 +155,8 @@ Behavior:
 - `set-mode` mode ids are adapter-defined; unsupported values are rejected by the adapter (often `Invalid params`).
 - `set`: calls ACP `session/set_config_option`.
 - For codex, `thought_level` is accepted as a compatibility alias for codex-acp `reasoning_effort`.
+- `--model <id>`: Claude-compatible adapters may consume session creation metadata; other agents must advertise ACP models and support `session/set_model`, otherwise `acpx` fails clearly instead of silently falling back.
+- `set model <id>`: calls `session/set_model`. This is the generic ACP method for mid-session model switching.
 - `set-mode`/`set` route through queue-owner IPC when active, otherwise reconnect directly.
 
 ### Sessions
@@ -192,8 +199,10 @@ Behavior:
 - `--approve-reads`: auto-approve reads/searches, prompt for writes (default mode)
 - `--deny-all`: deny all permission requests
 - `--format <fmt>`: output format (`text`, `json`, `quiet`)
+- `--suppress-reads`: suppress raw read-file contents while preserving the selected format
 - `--timeout <seconds>`: max wait time (positive number)
 - `--ttl <seconds>`: queue owner idle TTL before shutdown (default `300`, `0` disables TTL)
+- `--model <id>`: request an agent model during session creation; non-Claude agents must advertise ACP models and support `session/set_model`
 - `--verbose`: verbose ACP/debug logs to stderr
 
 Permission flags are mutually exclusive.
@@ -212,10 +221,15 @@ Supported keys:
 - `ttl` (seconds)
 - `timeout` (seconds or `null`)
 - `format` (`text`, `json`, `quiet`)
-- `agents` map (`name -> { command }`)
+- `agents` map (`name -> { command, args? }`)
 - `auth` map (`authMethodId -> credential`)
 
 Use `acpx config show` to inspect the resolved config and `acpx config init` to create the global template.
+
+For ACP `authenticate` handshakes, use either config `auth` entries or explicit
+`ACPX_AUTH_<METHOD_ID>` environment variables such as `ACPX_AUTH_OPENAI_API_KEY`.
+Ambient provider env vars such as `OPENAI_API_KEY` are still passed through to
+child agents, but they do not trigger ACP auth-method selection on their own.
 
 ## Session behavior
 
@@ -266,6 +280,7 @@ Use `--format <fmt>`:
 - `text` (default): human-readable stream with updates/tool status and done line
 - `json`: NDJSON event stream (good for automation)
 - `quiet`: final assistant text only
+- `--suppress-reads`: replace raw read-file contents with `[read output suppressed]` in `text` and `json` output
 
 Example automation:
 
@@ -321,6 +336,13 @@ Raw custom adapter command:
 
 ```bash
 acpx --agent './bin/custom-acp-server --profile ci' 'run validation checks'
+```
+
+Flow run:
+
+```bash
+acpx flow run ./my-flow.ts --input-file ./flow-input.json
+acpx flow run examples/flows/branch.flow.ts --input-json '{"task":"FIX: add a regression test"}'
 ```
 
 Repo-scoped review with permissive mode:
