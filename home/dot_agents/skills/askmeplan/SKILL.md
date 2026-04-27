@@ -61,6 +61,7 @@ I will ask the remaining issues in sequence.
 Rules for Phase 2:
 - Ask **exactly one question** per round — never multiple at once
 - State current assumptions so the user can correct silent ones
+- If multiple valid interpretations of the request exist, surface them — don't pick silently
 - Frame questions as concrete choices with their consequences, not open-ended queries
 - Show progress: `[1/N]` where N is total rounds estimated
 
@@ -90,7 +91,7 @@ When dialogue is complete, output:
 - [decision 2]: [chosen direction]
 
 **Implementation steps:**
-1. [step] — [why this order]
+1. [step] — [why this order] → verify: [check]
 2. ...
 
 **Assumptions held / out of scope:**
@@ -120,6 +121,7 @@ If unexpected obstacles arise, surface them immediately and ask — do not silen
 - Trade-offs: "Do you prefer performance or faster delivery here?"
 - Constraints: "Does this need to stay backward-compatible with [X]?"
 - **API/interface design** (when designing public-facing interfaces): type signatures of exported interfaces, field names in return values, error handling patterns, authentication configuration shapes, option naming. These are NOT derivable from context — they define the contract the user must live with.
+- **Simpler alternatives**: If a significantly simpler approach exists that satisfies the core request, surface it as an option rather than silently following the more complex path.
 
 **Bad questions** (avoid):
 - Things already answered in prior messages
