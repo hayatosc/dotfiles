@@ -43,6 +43,24 @@ Use command examples from:
 Use authoring details from:
 - `references/rule-authoring.md`
 
+## Safe Rewrite Script
+
+Run `scripts/sg_safe_rewrite.py` to enforce preview-first rewrites for large codebases.
+
+```bash
+python scripts/sg_safe_rewrite.py \
+  --pattern 'console.log($$$ARGS)' \
+  --rewrite 'logger.info($$$ARGS)' \
+  --lang TypeScript \
+  --glob 'src/**/*.ts' \
+  --mode interactive
+```
+
+Modes:
+- `preview`: show rewrite diff only
+- `interactive`: review and accept changes selectively
+- `apply`: apply all matched rewrites (`--update-all`)
+
 ## Execution Rules
 
 1. Prefer narrowing by syntax (`--lang`, AST pattern shape) before adding broad regex-like workarounds.
