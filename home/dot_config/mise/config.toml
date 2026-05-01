@@ -48,6 +48,7 @@ yazi = { version = "latest", postinstall = "ya pkg install" }
 zig = "latest"
 zoxide = "latest"
 aube = "latest"
+ast-grep = "latest"
 
 [settings]
 experimental = true
