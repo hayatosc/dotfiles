@@ -44,6 +44,7 @@ This file lists mandatory rules for all agents working in this repository.
 - Match existing style, even if you'd do it differently.
 - If you notice unrelated dead code, mention it — don't delete it.
 - Remove only imports/variables/functions that YOUR changes made unused.
+- Don’t fight errors! Whenever you encounter the same error twice, research the web and find 3-5 possible ways to fix it. Then choose the most efficient solution and implement it
 
 ## Safety
 - Do not expose or commit secrets or credentials.
