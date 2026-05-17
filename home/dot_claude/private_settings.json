@@ -1,6 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
+    "allow": [
+      "mcp__pencil"
+    ],
     "deny": [
       "Read(.env)",
       "Read(.env.*)",
@@ -14,9 +17,6 @@
       "Bash(git commit *)",
       "Bash(git push *)",
       "Bash(git rebase *)"
-    ],
-    "allow": [
-      "mcp__pencil"
     ]
   },
   "statusLine": {
@@ -26,7 +26,16 @@
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
-    "rust-analyzer-lsp@claude-plugins-official": true
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "agentkit-shopify@worldcoin-agentkit": true
+  },
+  "extraKnownMarketplaces": {
+    "worldcoin-agentkit": {
+      "source": {
+        "source": "github",
+        "repo": "worldcoin/agentkit-shopify-demo"
+      }
+    }
   },
   "skipDangerousModePermissionPrompt": true,
   "mcpServers": {
@@ -42,5 +51,18 @@
     "claude_ai_Context7": {
       "disabled": true
     }
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
   }
 }

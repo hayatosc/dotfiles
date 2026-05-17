@@ -1,11 +1,12 @@
 model = "gpt-5.5"
 model_reasoning_effort = "medium"
-plan_mode_reasoning_effort = "xhigh"
-add_dir = [ "~/.cache", "~/go/pkg/mod" ]
+plan_mode_reasoning_effort = "high"
 
-[profiles.browser]
-sandbox_mode = "danger-full-access"
+approvals_reviewer = "auto_review"
 approval_policy = "on-request"
+
+[features]
+guardian_approval = true
 
 [plugins."gmail@openai-curated"]
 enabled = true
@@ -21,10 +22,6 @@ approval_mode = "approve"
 
 [apps.connector_692f171973888191b610a24ee6d1a512.tools.context7_resolve-library-id]
 approval_mode = "approve"
-
-[mcp_servers.pencil]
-command = "/home/hayato/.pencil/mcp/visual_studio_code/out/mcp-server-linux-x64"
-args = [ "--app", "visual_studio_code" ]
 
 [tui.model_availability_nux]
 "gpt-5.5" = 4

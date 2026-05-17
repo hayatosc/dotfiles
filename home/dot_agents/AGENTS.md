@@ -11,7 +11,7 @@ This file lists mandatory rules for all agents working in this repository.
 - Prefer the standard library; minimize external dependencies.
 
 ## Design
-- Follow SOLID and DRY principles.
+- Follow SOLID, DRY, KISS and YAGNI principles.
 - No features beyond what was asked; no speculative abstractions or configurability.
 - No error handling for impossible or internal-only scenarios.
 - If a solution is 200 lines but could be 50, rewrite it.
@@ -38,6 +38,9 @@ This file lists mandatory rules for all agents working in this repository.
 	- execute -> nlx <pkg>
 	- upgrade -> nu
 	- remove -> nun <pkg>
+- Some tools are running under [rtk](https://github.com/rtk-ai/rtk) via agent hooks to save tokens.
+  - check `~/.agents/RTK.md` for details.
+  - for codex, rtk does not support codex hook yet, so you should mannualy use rtk command.
 
 ## Code Changes
 - Touch only what the task requires; don't improve adjacent code or formatting.
