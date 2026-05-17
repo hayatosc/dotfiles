@@ -53,3 +53,23 @@ Good opening:
 - `Preserved behavior:` current retry behavior stays unchanged during the refactor phase
 - `Plan:` first perform the internal cleanup in small slices, verify the unchanged behavior, then handle the retry rule as a second phase
 - `Verification:` run the existing retry tests before and after the refactor phase, then add coverage for the new rule separately
+
+## Example 5: Existing Duplication Across Scripts
+
+Input:
+
+`I noticed three shell scripts in this repo all normalize file paths the same way. Can we clean that up?`
+
+Good opening:
+
+- `Goal:` extract the shared path-normalization logic into a single helper and migrate all three scripts
+- `Preserved behavior:` every script must resolve relative paths and handle missing `HOME` exactly as before
+- `Plan:`
+  1. grep for the normalization pattern and list all occurrences
+  2. classify whether all three copies evolve together (genuine duplication)
+  3. extract one canonical implementation in a shared lib file
+  4. migrate the first script, verify with a sample path
+  5. migrate the second script, verify
+  6. migrate the third script, verify
+  7. delete the inline copies
+- `Verification:` run each script with a relative path and assert the resolved output matches the pre-refactor result

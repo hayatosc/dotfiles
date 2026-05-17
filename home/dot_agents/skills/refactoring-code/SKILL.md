@@ -36,6 +36,7 @@ Follow these steps in order:
 - Make one structural intention per step: rename, extract, split, move, isolate side effects, remove duplication, or simplify control flow.
 - Prefer preparatory refactoring that makes the next step obvious and safer.
 - Keep public interfaces stable unless the user explicitly asked to change them.
+- **Before creating new helpers, utilities, or types, search the existing codebase for similar implementations. Reuse or generalize existing code rather than introducing a parallel abstraction.**
 
 ### 5. Execute incrementally
 
@@ -54,6 +55,7 @@ Follow these steps in order:
 - Do not perform drive-by cleanup unrelated to the current scope.
 - Prefer extraction, renaming, movement, and dependency isolation over rewriting whole files.
 - Remove duplication only when the resulting abstraction is clearer than the repeated code.
+- **When duplication already exists across the codebase, detect it first: use structural search, dependency analysis, or grep for similar patterns. Classify whether the duplication is genuine (same rule, same evolution path) or accidental (similar syntax, different semantics). Then extract or unify in the smallest safe step.**
 - If the code is legacy or brittle, introduce seams and observability before ambitious cleanup.
 - If a public API or data shape must change, call that out explicitly before proceeding.
 - Keep diffs small enough to review and verify confidently.

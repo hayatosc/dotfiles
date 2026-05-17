@@ -12,6 +12,7 @@ This file lists mandatory rules for all agents working in this repository.
 
 ## Design
 - Follow SOLID, DRY, KISS and YAGNI principles.
+- Before writing any new function, type, or utility, search the existing codebase for similar implementations. Reuse them via import / source / require. Do not re-implement.
 - No features beyond what was asked; no speculative abstractions or configurability.
 - No error handling for impossible or internal-only scenarios.
 - If a solution is 200 lines but could be 50, rewrite it.

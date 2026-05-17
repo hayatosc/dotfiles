@@ -49,6 +49,7 @@ Follow these steps in order:
 - Assume ES modules by default. Prefer `import` and `export`, and do not introduce `require`, `module.exports`, or mixed-module patterns unless the repository is already CommonJS or the toolchain requires it.
 - Keep runtime and compile-time truth aligned. Add guards at external boundaries, and do not add a new validation library solely for typing unless the user asks or the repository already uses one.
 - If runtime validation is needed, prefer the repository's existing library. If the repository has none, keep lightweight manual guards by default and add tools such as `zod` or `valibot` only on explicit request or when the repository already standardizes on them.
+- Write TSDoc (`/** ... */`) on all exported functions, classes, methods, interfaces, types, and constants. Include a summary sentence, describe each parameter with `@param`, and document return values with `@returns`. Use `@throws` when a function can throw. Do not duplicate type information already expressed in TypeScript signatures; focus on intent, constraints, and usage examples.
 
 ## References
 

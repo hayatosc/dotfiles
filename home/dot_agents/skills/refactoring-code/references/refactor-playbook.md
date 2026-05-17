@@ -57,20 +57,57 @@ Use when repeated code expresses the same rule, not just similar syntax.
 - Prefer extracting a shared helper over introducing a configurable abstraction too early.
 - Stop if the abstraction becomes harder to read than the duplication.
 
-## Sequencing Heuristics
+#### When duplication already exists across files
 
-- First make the code easier to change, then make the intended cleanup.
-- Prefer many reversible steps over one clever transformation.
-- Keep behavior-preserving refactors separate from feature additions.
-- Verify after each slice, not only at the end.
+1. **Detect**: search for similar functions, types, constants, or regexes using grep, structural search, or dependency analysis.
+2. **Classify**: determine if the duplication is genuine (same rule, same evolution path) or accidental (similar syntax, different semantics).
+3. **Verify one instance**: confirm behavior with existing tests or a manual repro before touching the second instance.
+4. **Extract the shared unit**: create a helper, module, or shared file that captures the common logic without premature configurability.
+5. **Migrate call sites one at a time**: replace the first duplicate, verify, then replace the second. Do not change both in the same commit unless the change is trivial.
+6. **Delete the old code** only after all call sites are migrated and verified.
 
-## Smell to Move Mapping
+#### Common extraction targets in dotfiles and scripting
+
+- Shell helpers that spawn commands, parse output, or normalize paths.
+- TypeScript wrappers for file I/O, process spawning, or TOML/JSON parsing.
+- Validation logic that appears in multiple templates or config generators.
+- Regexes or awk/sed patterns that perform the same text transformation.
+
+## Detecting Existing Duplication
+
+Use when the user asks to reduce duplication or when you notice repeated logic while working.
+
+### Search Strategy
+
+1. **Textual similarity**: grep for distinctive strings, error messages, regex literals, or magic numbers.
+2. **Structural similarity**: look for functions with the same parameter types, same control flow, or same return shape.
+3. **Semantic similarity**: read the code to see if different-looking blocks encode the same rule (e.g., two awk scripts that extract the same TOML section).
+4. **Dependency analysis**: check if multiple files import the same third-party utilities but wrap them differently.
+
+### Classification Checklist
+
+Ask these questions before unifying:
+
+- Do both copies change for the same reason? (genuine duplication)
+- Would one copy need to diverge while the other stays the same? (accidental similarity — do not unify)
+- Is the repeated code a stable language idiom or a one-off pattern? (idioms are fine to repeat)
+- Does unifying require adding configuration flags or conditionals that make the code harder to read? (stop if yes)
+
+### Smell to Move Mapping
 
 - Giant function: split by phase, then extract named helpers.
 - Mixed pure logic and side effects: isolate side effects first.
 - Misleading names: rename before deeper changes.
 - Tangled dependencies: extract interfaces or seams before moving code.
 - Repeated branching rules: extract shared decision logic if the rule is truly the same.
+- **Scattered duplicate helpers: extract one canonical version, migrate callers incrementally, then delete the rest.**
+
+## Sequencing Heuristics
+
+- First make the code easier to change, then make the intended cleanup.
+- Prefer many reversible steps over one clever transformation.
+- Keep behavior-preserving refactors separate from feature additions.
+- Verify after each slice, not only at the end.
 
 ## Stop Conditions
 
