@@ -57,5 +57,6 @@ Follow these steps in order:
 
 - Read `references/default-stacks.md` for the quick matrix of recommended stacks and the shared defaults.
 - Read `references/tool-selection-rules.md` for when to choose `bun`, `pnpm`, `Hono`, `Biome`, `typescript-eslint`, or Bun-native vs `tsx` dev loops.
+- Read `references/linting-and-formatting.md` for `.oxlintrc.json` and `.oxfmtrc.json` configurations, type-aware linting strategies, and integration patterns.
 - Read `references/node-cli-toolchain.md` for concrete Node and CLI scripts.
 - Read `references/library-and-web-toolchains.md` for concrete library, package, and Hono web scripts.
