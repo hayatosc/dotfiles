@@ -1,115 +1,14 @@
 # Linting and Formatting: Oxlint and Oxfmt Configuration
 
-Recommended configurations for `oxlint` and `oxfmt` in TypeScript projects.
+Recommended configurations for `oxlint` and `oxfmt` in TypeScript projects, enforcing strict type safety by rejecting unsafe `any` and `as` type assertions.
 
 ## Quick Reference
 
-| Tool | Default Config | Primary Command |
+| Tool | Strategy | Primary Command |
 | --- | --- | --- |
-| `oxlint` | `extended` or `recommended` preset | `oxlint` |
-| `oxlint` (type-aware) | + `oxlint-tsgolint` | `oxlint --type-aware` |
-| `oxfmt` | 2-space indentation, 100 char line width | `oxfmt --write .` |
-
-## Oxlint Configuration
-
-### `.oxlintrc.json` - Preset Selection
-
-**Preset options**:
-- `"recommended"` (default): Production-ready, balanced coverage
-- `"all"`: Maximum strictness, includes style-focused rules
-- `"nursery"`: Experimental rules under development
-
-### Node / CLI Project
-
-```json
-{
-  "env": {
-    "node": true,
-    "es2022": true
-  },
-  "extends": "recommended",
-  "rules": {
-    "no-console": "off",
-    "no-process-exit": "off",
-    "no-only-tests": "error"
-  }
-}
-```
-
-**Rationale**: CLI tools legitimately use `console` and `process.exit()`. Prevent accidental test-only code.
-
-### Library / Package Project
-
-```json
-{
-  "env": {
-    "node": true,
-    "es2022": true,
-    "jest": true
-  },
-  "extends": "recommended",
-  "rules": {
-    "no-console": "warn",
-    "no-only-tests": "error"
-  }
-}
-```
-
-**Rationale**: Libraries should minimize console output (warn level). Test-only checks prevent regressions.
-
-### Web App / Web API Project (Hono + Vite)
-
-```json
-{
-  "env": {
-    "node": true,
-    "browser": true,
-    "es2022": true
-  },
-  "extends": "recommended",
-  "rules": {
-    "no-console": "warn",
-    "no-only-tests": "error"
-  }
-}
-```
-
-**Rationale**: Both server-side (Hono) and client-side (Vite) contexts exist. Console warnings acceptable in development.
-
-### File Ignoring
-
-Add to `.oxlintrc.json`:
-
-```json
-{
-  "ignorePatterns": ["dist", "build", "node_modules", "coverage"]
-}
-```
-
-## Type-Aware Linting
-
-### When to Enable
-
-Use `oxlint --type-aware` when:
-- Project has strict TypeScript configuration
-- Type-based rules provide significant value
-- False positives from fast linting cause friction
-
-**Do not** enable type-aware linting by default. Keep `tsgo --noEmit` as primary type check.
-
-### Setup in `package.json`
-
-```json
-{
-  "scripts": {
-    "typecheck": "tsgo --noEmit",
-    "typecheck:compat": "tsc --noEmit",
-    "lint": "oxlint",
-    "lint:type-aware": "oxlint --type-aware",
-    "lint:fix": "oxlint --fix"
-  }
-}
-```
+| `oxlint` | Type-aware with strict rules | `oxlint` |
+| `oxfmt` | Single quote, trailing comma all, 100 char width | `oxfmt --write .` |
+| Safety focus | Reject `any` and unsafe type assertions | Auto-enforced |
 
 ## Oxfmt Configuration
 
@@ -117,47 +16,205 @@ Use `oxlint --type-aware` when:
 
 ```json
 {
-  "indent_size": 2,
-  "line_width": 100
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "quoteProps": "as-needed",
+  "printWidth": 100,
+  "sortImports": true,
+  "ignorePatterns": ["dist/**", "node_modules/**"]
 }
 ```
 
-**Why these values**:
-- `indent_size: 2`: Aligns with modern JavaScript/TypeScript conventions
-- `line_width: 100`: Balances readability with typical screen dimensions
+**Configuration details**:
+- `semi: false`: Omit semicolons (JavaScript style)
+- `singleQuote: true`: Use single quotes
+- `trailingComma: all`: Add trailing commas in all contexts (ES5+)
+- `printWidth: 100`: 100-character line width
+- `sortImports: true`: Auto-sort import statements
+- `ignorePatterns`: Exclude build and dependency directories
 
-### Alternative: No Config
+## Oxlint Configuration: Strict Type Safety
 
-For most projects, omit `.oxfmtrc.json` and use `oxfmt` defaults. The tool is intentionally opinionated to reduce bikeshedding.
-
-### Full Configuration Options
-
-```json
-{
-  "indent_size": 2,
-  "line_width": 100,
-  "use_tabs": false,
-  "trailing_comma": "es5"
-}
-```
-
-- `use_tabs`: Use tabs instead of spaces (default: `false`)
-- `trailing_comma`: `"es5"` | `"all"` | `"none"` (default: `"es5"`)
-
-## Integration: `package.json` Scripts
-
-### Minimal
+### `.oxlintrc.json` - Type-Aware with Strict Rules
 
 ```json
 {
-  "scripts": {
-    "lint": "oxlint",
-    "format": "oxfmt --write ."
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": ["dist/**", "node_modules/**"],
+  "rules": {
+    "typescript/no-explicit-any": "error",
+    "typescript/no-unsafe-type-assertion": "error",
+    "typescript/no-unnecessary-type-assertion": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-unused-vars": "error",
+    "typescript/no-floating-promises": "error",
+    "typescript/switch-exhaustiveness-check": "warn",
+    "typescript/consistent-type-assertions": "warn",
+    "typescript/no-non-null-assertion": "warn"
+  },
+  "env": {
+    "builtin": true
   }
 }
 ```
 
-### Comprehensive
+**Safety rules explained**:
+- `no-explicit-any`: **Error** - Reject bare `any` types
+- `no-unsafe-type-assertion`: **Error** - Reject unsafe `as` type casts
+- `no-unnecessary-type-assertion`: **Error** - Reject redundant assertions
+- `consistent-type-imports`: **Error** - Use `import type {}` consistently
+- `no-unused-vars`: **Error** - Catch dead code
+- `no-floating-promises`: **Error** - Await all promises
+
+### Node / CLI Project
+
+Use base config above with console exceptions:
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": ["dist/**", "node_modules/**"],
+  "rules": {
+    "typescript/no-explicit-any": "error",
+    "typescript/no-unsafe-type-assertion": "error",
+    "typescript/no-unnecessary-type-assertion": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-unused-vars": "error",
+    "typescript/no-floating-promises": "error",
+    "typescript/switch-exhaustiveness-check": "warn",
+    "typescript/consistent-type-assertions": "warn",
+    "typescript/no-non-null-assertion": "warn",
+    "no-console": "off"
+  },
+  "env": {
+    "builtin": true
+  }
+}
+```
+
+### Library / Package Project
+
+Use base config with test file exceptions:
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": ["dist/**", "node_modules/**"],
+  "rules": {
+    "typescript/no-explicit-any": "error",
+    "typescript/no-unsafe-type-assertion": "error",
+    "typescript/no-unnecessary-type-assertion": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-unused-vars": "error",
+    "typescript/no-floating-promises": "error",
+    "typescript/switch-exhaustiveness-check": "warn",
+    "typescript/consistent-type-assertions": "warn",
+    "typescript/no-non-null-assertion": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.test.ts", "src/**/*.test.tsx"],
+      "rules": {
+        "typescript/await-thenable": "off"
+      }
+    }
+  ],
+  "env": {
+    "builtin": true
+  }
+}
+```
+
+### Web App / Web API Project (Hono + Vite)
+
+Use base config with browser and vite exceptions:
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": ["dist/**", "node_modules/**", "src/**/*.config.ts"],
+  "rules": {
+    "typescript/no-explicit-any": "error",
+    "typescript/no-unsafe-type-assertion": "error",
+    "typescript/no-unnecessary-type-assertion": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-unused-vars": "error",
+    "typescript/no-floating-promises": "error",
+    "typescript/switch-exhaustiveness-check": "warn",
+    "typescript/consistent-type-assertions": "warn",
+    "typescript/no-non-null-assertion": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["vite.config.ts", "vitest.config.ts"],
+      "rules": {
+        "typescript/no-floating-promises": "off"
+      }
+    }
+  ],
+  "env": {
+    "builtin": true
+  }
+}
+```
+
+## Type-Aware Linting Strategy
+
+**Key principle**: Type-aware linting is enabled by default via `typeAware: true`. This allows rules like `no-floating-promises` and unsafe assertion detection to work across the codebase.
+
+### Performance Note
+
+Type-aware linting is slower than fast linting. For projects where CI speed is critical:
+
+```json
+{
+  "options": {
+    "typeAware": false
+  }
+}
+```
+
+Then add a separate type-aware check script in `package.json`:
+
+```json
+{
+  "scripts": {
+    "lint:strict": "oxlint --type-aware"
+  }
+}
+```
+
+## Integration: `package.json` Scripts
 
 ```json
 {
@@ -165,7 +222,6 @@ For most projects, omit `.oxfmtrc.json` and use `oxfmt` defaults. The tool is in
     "typecheck": "tsgo --noEmit",
     "typecheck:compat": "tsc --noEmit",
     "lint": "oxlint",
-    "lint:type-aware": "oxlint --type-aware",
     "lint:fix": "oxlint --fix",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
@@ -178,23 +234,22 @@ For most projects, omit `.oxfmtrc.json` and use `oxfmt` defaults. The tool is in
 
 | Command | Purpose |
 | --- | --- |
-| `oxlint` | Lint files in current directory |
+| `oxlint` | Run type-aware linting on all files |
 | `oxlint --fix` | Lint and auto-fix fixable issues |
-| `oxlint --type-aware` | Enable type-aware rules (slower) |
 | `oxfmt --write .` | Format all files in-place |
 | `oxfmt --check .` | Check formatting without changes |
 
 ## Inline Rule Disable
 
-For specific exceptions, use ESLint-compatible directives:
+For exceptions, document clearly and use ESLint-compatible directives:
 
 ```typescript
-// eslint-disable-next-line no-console
-console.log('debug info');
-
-// eslint-disable-next-line
-const debugValue = expensiveComputation();
+// Unsafe cast intentional: external API requires this workaround
+// eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
+const typed = unknownValue as SpecificType;
 ```
+
+Avoid using `any` or unsafe assertions without documenting the reason.
 
 ## Environment-Specific Setup
 
@@ -206,46 +261,25 @@ nr format        # runs: oxfmt --write .
 nr check         # runs: oxlint && oxfmt --check .
 ```
 
-Scripts remain the same; wrappers handle package manager selection.
-
-## Migration Checklist
-
-### From ESLint + Prettier
-
-1. Install: `npm install -D oxlint oxfmt oxlint-tsgolint`
-2. Create `.oxlintrc.json` (use preset above for your project type)
-3. Create `.oxfmtrc.json` (or omit and use defaults)
-4. Test without code changes: `oxlint` and `oxfmt --check .`
-5. Update `package.json` scripts
-6. Gradually deprecate old ESLint and Prettier configs
-
-### From Biome
-
-1. Both tools are fast and comprehensive
-2. Create `.oxlintrc.json` using preset above
-3. Create `.oxfmtrc.json` matching your current Biome style
-4. Update scripts and remove Biome
-5. Keep type-aware linting optional unless central to your current setup
-
 ## Troubleshooting
 
-**Rule too strict?**
-- Check preset matches project type
-- Use `"warn"` instead of `"error"` during learning phase
-- Document exceptions in `.oxlintrc.json`
+**`no-explicit-any` too strict?**
+- Document why `any` is necessary with a comment
+- Use a more specific type instead (prefer `unknown` if truly unknown)
+- As a last resort: `// eslint-disable-next-line`
 
-**Performance issues?**
-- Avoid `--type-aware` by default (use only in opt-in script)
-- Verify `ignorePatterns` excludes build directories
-- Profile with tool timing if needed
+**`no-unsafe-type-assertion` blocking me?**
+- Reconsider the type hierarchy (often indicates a design issue)
+- Use gradual typing with explicit intermediate types
+- Document why the unsafe cast is necessary
 
-**Need ESLint plugins?**
-- Keep `oxlint` as primary
-- Layer `typescript-eslint` for specific missing rules only
-- Document this layering in contribution guide
+**Performance degradation?**
+- Profile with `oxlint --timing`
+- Consider disabling type-aware linting in fast CI, enable in strict CI
 
 ## References
 
 - [Oxlint documentation](https://oxc.rs/docs/guide/linter.html)
 - [Oxfmt documentation](https://oxc.rs/docs/guide/formatter.html)
 - [Oxc rules reference](https://oxc.rs/docs/rules/index.html)
+- [TypeScript strict mode guide](https://www.typescriptlang.org/tsconfig#strict)
