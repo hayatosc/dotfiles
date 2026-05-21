@@ -26,10 +26,8 @@
     colorMoved = default
 
 [credential "https://github.com"]
-	helper =
 	helper = !gh auth git-credential
 [credential "https://gist.github.com"]
-	helper =
 	helper = !gh auth git-credential
 [gpg]
 	format = ssh
@@ -39,7 +37,7 @@
 [ghq]
   user = hayatosc
 [wt]
-  basedir = .git/wt
+  basedir = ../wt
 [cx]
   provider = copilot
   model = gpt-5-mini

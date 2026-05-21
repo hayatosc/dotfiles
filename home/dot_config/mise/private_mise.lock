@@ -4712,6 +4712,54 @@ url = "https://github.com/github/copilot-cli/releases/download/v1.0.47/copilot-w
 checksum = "sha256:7c9b7fb6359b5b262fdf4e0fbdffe8c7d2e0cc4c6463a3896748c2c998e40c13"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.47/copilot-win32-x64.zip"
 
+[[tools."aqua:google.com/antigravity-cli"]]
+version = "1.0.0-5288553236791296"
+backend = "aqua:google.com/antigravity-cli"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.linux-arm64"]
+checksum = "sha512:9797c7955d0e07fc57605f81fab16dfd2f390d43b2508af3ca697b1cfa498e37e43a3a9a55ad8b26eb1353d80bbec522d108eb75a0eb0eb00e979cb579d6e277"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/linux-arm/cli_linux_arm64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.linux-arm64-musl"]
+checksum = "sha512:9797c7955d0e07fc57605f81fab16dfd2f390d43b2508af3ca697b1cfa498e37e43a3a9a55ad8b26eb1353d80bbec522d108eb75a0eb0eb00e979cb579d6e277"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/linux-arm/cli_linux_arm64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.linux-x64"]
+checksum = "sha512:5ccdcc01fb863c7e8e56473c6c95dba75fed4fd2a242200d80cfc4c7fab811b733f5a7fab25332130aad298e72627e1018e6911a5658f4f059ef6e019f211972"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/linux-x64/cli_linux_x64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.linux-x64-baseline"]
+checksum = "sha512:5ccdcc01fb863c7e8e56473c6c95dba75fed4fd2a242200d80cfc4c7fab811b733f5a7fab25332130aad298e72627e1018e6911a5658f4f059ef6e019f211972"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/linux-x64/cli_linux_x64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.linux-x64-musl"]
+checksum = "sha512:5ccdcc01fb863c7e8e56473c6c95dba75fed4fd2a242200d80cfc4c7fab811b733f5a7fab25332130aad298e72627e1018e6911a5658f4f059ef6e019f211972"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/linux-x64/cli_linux_x64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.linux-x64-musl-baseline"]
+checksum = "sha512:5ccdcc01fb863c7e8e56473c6c95dba75fed4fd2a242200d80cfc4c7fab811b733f5a7fab25332130aad298e72627e1018e6911a5658f4f059ef6e019f211972"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/linux-x64/cli_linux_x64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.macos-arm64"]
+checksum = "sha512:ce4cd93454387070410260fdd57ad9839e8aea031a6b34ad6a33cc6d6772444678454db9850db176d33a6733a49f41e5a2a509275c135cc741b327e979eeffe2"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/darwin-arm/cli_mac_arm64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.macos-x64"]
+checksum = "sha512:66a84058e0c35e42a8362324e23f906ce4938647044d071205ce3220476f62998bbb619b04c400de0f16c7d1b4050c47684023684383a0992637dd4bb88dacaa"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/darwin-x64/cli_mac_x64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.macos-x64-baseline"]
+checksum = "sha512:66a84058e0c35e42a8362324e23f906ce4938647044d071205ce3220476f62998bbb619b04c400de0f16c7d1b4050c47684023684383a0992637dd4bb88dacaa"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/darwin-x64/cli_mac_x64.tar.gz"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.windows-x64"]
+checksum = "sha512:32a277541d61a3536e4b558bf17fc25625a92f72dbc2a7dc40edf4fbc300df73de88fe79f5b37d69303ceed31a95e30a83d235713097e66aeb086b8807aea16f"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/windows-x64/cli_windows_x64.exe"
+
+[tools."aqua:google.com/antigravity-cli"."platforms.windows-x64-baseline"]
+checksum = "sha512:32a277541d61a3536e4b558bf17fc25625a92f72dbc2a7dc40edf4fbc300df73de88fe79f5b37d69303ceed31a95e30a83d235713097e66aeb086b8807aea16f"
+url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.0-5288553236791296/windows-x64/cli_windows_x64.exe"
+
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.27.0"
 backend = "aqua:k1LoW/git-wt"
@@ -6476,67 +6524,56 @@ backend = "github:hayatosc/git-cx"
 checksum = "sha256:58ff0cc957537df3fb5ea9f89c2f649d238b7a5fd8332be410a04dcddfa4dbaa"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112585"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.linux-arm64-musl"]
 checksum = "sha256:58ff0cc957537df3fb5ea9f89c2f649d238b7a5fd8332be410a04dcddfa4dbaa"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112585"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.linux-x64"]
 checksum = "sha256:5c19aee65e12a6caefaba741b371e6af64e7e0103fadc734f9e8a2be2bfce8f5"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112584"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.linux-x64-baseline"]
 checksum = "sha256:5c19aee65e12a6caefaba741b371e6af64e7e0103fadc734f9e8a2be2bfce8f5"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112584"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.linux-x64-musl"]
 checksum = "sha256:5c19aee65e12a6caefaba741b371e6af64e7e0103fadc734f9e8a2be2bfce8f5"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112584"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:5c19aee65e12a6caefaba741b371e6af64e7e0103fadc734f9e8a2be2bfce8f5"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112584"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.macos-arm64"]
 checksum = "sha256:1f0d6884d9b217e206e619664d607269dc4cec01de6b521022842eb37fe1f5b4"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112589"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.macos-x64"]
 checksum = "sha256:7fcc9b831f13770e172065438af9900c190a5a3549d3fb109f46a3a05937bfe1"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_darwin_amd64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112590"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.macos-x64-baseline"]
 checksum = "sha256:7fcc9b831f13770e172065438af9900c190a5a3549d3fb109f46a3a05937bfe1"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_darwin_amd64.tar.gz"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112590"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.windows-x64"]
 checksum = "sha256:c8ad79b81c299cc865fcfc2bec9f2287eae53b6956055b7e38eb98dd08b226f9"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_windows_amd64.zip"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112583"
-github_attestations = "unavailable"
 
 [tools."github:hayatosc/git-cx"."platforms.windows-x64-baseline"]
 checksum = "sha256:c8ad79b81c299cc865fcfc2bec9f2287eae53b6956055b7e38eb98dd08b226f9"
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_windows_amd64.zip"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112583"
-github_attestations = "unavailable"
 
 [[tools."github:sinelaw/fresh"]]
 version = "0.3.5"
@@ -6616,67 +6653,56 @@ backend = "github:steipete/gogcli"
 checksum = "sha256:a11ca8d92e0162477c23ae901fe36d51f7cebd9e11d0320da4d10584f8235324"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730783"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.linux-arm64-musl"]
 checksum = "sha256:a11ca8d92e0162477c23ae901fe36d51f7cebd9e11d0320da4d10584f8235324"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730783"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.linux-x64"]
 checksum = "sha256:46c8ffa71a4e425e6885b926f1c67be7899f444c9e254ae8da9c46ea297a6bda"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730792"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.linux-x64-baseline"]
 checksum = "sha256:46c8ffa71a4e425e6885b926f1c67be7899f444c9e254ae8da9c46ea297a6bda"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730792"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.linux-x64-musl"]
 checksum = "sha256:46c8ffa71a4e425e6885b926f1c67be7899f444c9e254ae8da9c46ea297a6bda"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730792"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:46c8ffa71a4e425e6885b926f1c67be7899f444c9e254ae8da9c46ea297a6bda"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730792"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.macos-arm64"]
 checksum = "sha256:8d16cfa777c713377b58baec71f6ec7f68ac17baf93724c885cb5f02eac93797"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730784"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.macos-x64"]
 checksum = "sha256:64cf59eb50707ccad36f7e8b7d62eb2927d81547e034b3893a0ad02fa774c4b2"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_darwin_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730797"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.macos-x64-baseline"]
 checksum = "sha256:64cf59eb50707ccad36f7e8b7d62eb2927d81547e034b3893a0ad02fa774c4b2"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_darwin_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730797"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.windows-x64"]
 checksum = "sha256:ab6d23205b7c3702bb6231ba4e67e634894c2bbc2f2ad191624cbf87594d1ea3"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_windows_amd64.zip"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730785"
-github_attestations = "unavailable"
 
 [tools."github:steipete/gogcli"."platforms.windows-x64-baseline"]
 checksum = "sha256:ab6d23205b7c3702bb6231ba4e67e634894c2bbc2f2ad191624cbf87594d1ea3"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.16.0/gogcli_0.16.0_windows_amd64.zip"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/416730785"
-github_attestations = "unavailable"
 
 [[tools."github:vercel-labs/agent-browser"]]
 version = "0.27.0"
@@ -6686,67 +6712,56 @@ backend = "github:vercel-labs/agent-browser"
 checksum = "sha256:622d5cb27388a8efbf6a6d7434b20bcac497ed6d55765ec8e37eaa27dc0db963"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-linux-arm64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527083"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-arm64-musl"]
 checksum = "sha256:1381110e54c0d9e6c6dc4a0a7e97a64de4a7bb4d6bc067de2e091c940700e741"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-linux-musl-arm64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527081"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-x64"]
 checksum = "sha256:c249a948cb6a60df94320e319c372a5e679466ca8ea2cc4e69bac4fcc7c270f3"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-linux-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527093"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-x64-baseline"]
 checksum = "sha256:c249a948cb6a60df94320e319c372a5e679466ca8ea2cc4e69bac4fcc7c270f3"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-linux-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527093"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-x64-musl"]
 checksum = "sha256:94725da72c38ce931118a0fa3be314dec5350100af645341af1e97277be88a0b"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-linux-musl-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527084"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:94725da72c38ce931118a0fa3be314dec5350100af645341af1e97277be88a0b"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-linux-musl-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527084"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.macos-arm64"]
 checksum = "sha256:a703fd9b74836d2849cfd6deb279e5d8ddcb768aa7b3d9c00352166cb930757a"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-darwin-arm64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527082"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.macos-x64"]
 checksum = "sha256:7482cfca7f55bb874a649247d5d9c220c404be527e6f0e01c36861949a9e9969"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-darwin-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527080"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.macos-x64-baseline"]
 checksum = "sha256:7482cfca7f55bb874a649247d5d9c220c404be527e6f0e01c36861949a9e9969"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-darwin-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527080"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.windows-x64"]
 checksum = "sha256:cbd20c16d1909d63d9e4b8f14959bf20df2134ebf86a5e87efe6eb0f2a1577be"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-win32-x64.exe"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527096"
-github_attestations = "unavailable"
 
 [tools."github:vercel-labs/agent-browser"."platforms.windows-x64-baseline"]
 checksum = "sha256:cbd20c16d1909d63d9e4b8f14959bf20df2134ebf86a5e87efe6eb0f2a1577be"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.0/agent-browser-win32-x64.exe"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/414527096"
-github_attestations = "unavailable"
 
 [[tools.go]]
 version = "1.26.3"
@@ -7947,67 +7962,56 @@ backend = "github:rtk-ai/rtk"
 checksum = "sha256:1d0087ad62a182c0833c2251ac678b5e05356418d91aa57305ac51a126c9b102"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581651"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.linux-arm64-musl"]
 checksum = "sha256:1d0087ad62a182c0833c2251ac678b5e05356418d91aa57305ac51a126c9b102"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581651"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.linux-x64"]
 checksum = "sha256:a75d210a445874106bc16da2b4efba01d36d297afa33ec134728f2d5f42ef5af"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581643"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.linux-x64-baseline"]
 checksum = "sha256:a75d210a445874106bc16da2b4efba01d36d297afa33ec134728f2d5f42ef5af"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581643"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.linux-x64-musl"]
 checksum = "sha256:a75d210a445874106bc16da2b4efba01d36d297afa33ec134728f2d5f42ef5af"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581643"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:a75d210a445874106bc16da2b4efba01d36d297afa33ec134728f2d5f42ef5af"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581643"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.macos-arm64"]
 checksum = "sha256:60c2c325b4edf0367cfa9716ac2e2c888abcd065eff45d01510da6561ab82e3c"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-aarch64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581645"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.macos-x64"]
 checksum = "sha256:8eac502fb812056973da2a8c2f0c00e1427ba5f71bd14c01520bc540630cb98a"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581650"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.macos-x64-baseline"]
 checksum = "sha256:8eac502fb812056973da2a8c2f0c00e1427ba5f71bd14c01520bc540630cb98a"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581650"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.windows-x64"]
 checksum = "sha256:7fc90190f76f55dc170898d0ac755e89f405fc2d1d89f717ad8600640ab0f1ed"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581646"
-github_attestations = "unavailable"
 
 [tools.rtk."platforms.windows-x64-baseline"]
 checksum = "sha256:7fc90190f76f55dc170898d0ac755e89f405fc2d1d89f717ad8600640ab0f1ed"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.40.0/rtk-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/419581646"
-github_attestations = "unavailable"
 
 [[tools.rust]]
 version = "1.95.0"
@@ -8113,67 +8117,56 @@ backend = "aqua:tmux/tmux-builds"
 checksum = "sha256:bb5afd9d646df54a7d7c66e198aa22c7d293c7453534f1670f7c540534db8b5e"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787049"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.linux-arm64-musl"]
 checksum = "sha256:bb5afd9d646df54a7d7c66e198aa22c7d293c7453534f1670f7c540534db8b5e"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787049"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.linux-x64"]
 checksum = "sha256:c0a772a5e6ca8f129b0111d10029a52e02bcbc8352d5a8c0d3de8466a1e59c2e"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787044"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.linux-x64-baseline"]
 checksum = "sha256:c0a772a5e6ca8f129b0111d10029a52e02bcbc8352d5a8c0d3de8466a1e59c2e"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787044"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.linux-x64-musl"]
 checksum = "sha256:c0a772a5e6ca8f129b0111d10029a52e02bcbc8352d5a8c0d3de8466a1e59c2e"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787044"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:c0a772a5e6ca8f129b0111d10029a52e02bcbc8352d5a8c0d3de8466a1e59c2e"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787044"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.macos-arm64"]
 checksum = "sha256:12b5b9f8696e1286897d946649c0a80d0169dd76e018d34476a1fbd34de89a0f"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-macos-arm64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787046"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.macos-x64"]
 checksum = "sha256:b9b12eaeba43acf5671acf3857d947525440b544185a8db34ea557199a090251"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-macos-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787045"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.macos-x64-baseline"]
 checksum = "sha256:b9b12eaeba43acf5671acf3857d947525440b544185a8db34ea557199a090251"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-macos-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787045"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.windows-x64"]
 checksum = "sha256:8c2baf3d33c70512d1ee77ae2b337991a32eaae8e1cc47e597a2a77e78209ed6"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/LICENSES.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787047"
-github_attestations = "unavailable"
 
 [tools.tmux."platforms.windows-x64-baseline"]
 checksum = "sha256:8c2baf3d33c70512d1ee77ae2b337991a32eaae8e1cc47e597a2a77e78209ed6"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/LICENSES.tar.gz"
 url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/331787047"
-github_attestations = "unavailable"
 
 [[tools.ttyd]]
 version = "1.7.7"

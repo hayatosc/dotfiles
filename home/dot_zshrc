@@ -15,6 +15,16 @@ for zshrc_file in ~/.config/zsh/rc.d/*.zsh(.N); do
   source "$zshrc_file"
 done
 
+# HACK: Start gnome-keyring-daemon for WSL2 (enables CLI token persistence)
+# Temporary workaround for: https://discuss.ai.google.dev/t/bug-antigravity-cli-agy-fails-to-persist-authentication-state-in-wsl-2-environment/146059
+# TODO: Remove once Antigravity CLI natively supports headless keyring or file-based token storage
+if [[ -z "$DISPLAY" && -n "$WSL_DISTRO_NAME" ]]; then
+  export $(dbus-launch 2>/dev/null)
+  eval "$(echo "" | gnome-keyring-daemon --unlock 2>/dev/null)"
+  eval "$(gnome-keyring-daemon --start 2>/dev/null)"
+  export SSH_AUTH_SOCK
+fi
+
 eval "$(sheldon source)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
