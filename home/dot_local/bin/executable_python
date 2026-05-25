@@ -1,0 +1,84 @@
+#!/bin/sh
+# uv-python wrapper: runs Python scripts through uv for automatic dependency resolution.
+#
+# Features:
+#   - Stdin/heredoc input   → uv run --script -  (PEP 723 inline metadata supported)
+#   - python -c '...'       → uv run python -c '...'
+#   - python script.py      → uv run --script script.py
+#   - PYTHON_WITH='pkg ...' → --with pkg ...
+#   - PYTHON_UV=0           → bypass uv, use system python directly
+#   - PYTHON_OFFLINE=1      → --offline flag
+#
+# Notes:
+#   - In a uv project (pyproject.toml/uv.lock found upward), the project environment is used automatically.
+#   - Outside a project, runs in an isolated environment (--no-project).
+#   - 'python -m pip install' is not effective; use PYTHON_WITH or 'uv add' instead.
+#
+# Escape hatch:
+#   PYTHON_UV=0 python ...
+
+python_cmd="$(basename "$0")"
+
+# Remove ~/.local/bin from PATH to avoid infinite recursion when calling the underlying python
+PATH=$(echo "$PATH" | sed -e "s|:$HOME/.local/bin:|:|g" -e "s|^$HOME/.local/bin:||" -e "s|:$HOME/.local/bin$||")
+export PATH
+
+if [ "${PYTHON_UV:-1}" = "0" ] || ! command -v uv >/dev/null 2>&1; then
+  exec "$python_cmd" "$@"
+fi
+
+# Intercept 'python -m pip' — ineffective in uv-managed environments
+if [ "$1" = "-m" ] && [ "$2" = "pip" ]; then
+  echo "[uv-python] 'python -m pip' has no effect here." >&2
+  echo "  In a project : uv add <pkg>" >&2
+  echo "  One-off run  : PYTHON_WITH=\"<pkg>\" python ..." >&2
+  exit 1
+fi
+
+# Use --no-project only when outside a uv/Python project
+_dir="$PWD"
+_in_project=0
+while [ "$_dir" != "/" ]; do
+  if [ -f "$_dir/pyproject.toml" ] || [ -f "$_dir/uv.lock" ]; then
+    _in_project=1
+    break
+  fi
+  _dir="$(dirname "$_dir")"
+done
+unset _dir
+
+uv_args="--no-python-downloads"
+if [ "$_in_project" = "0" ]; then
+  uv_args="$uv_args --no-project"
+fi
+unset _in_project
+
+for pkg in $PYTHON_WITH; do
+  uv_args="$uv_args --with $pkg"
+done
+
+if [ "${PYTHON_OFFLINE:-0}" = "1" ]; then
+  uv_args="$uv_args --offline"
+fi
+
+run_and_hint() {
+  "$@"
+  cmd_exit_code=$?
+  if [ $cmd_exit_code -ne 0 ]; then
+    echo "[uv-python] exit $cmd_exit_code — missing module? Use PYTHON_WITH=\"pkg\" or PEP 723 metadata. (PYTHON_UV=0 to bypass)" >&2
+  fi
+  exit $cmd_exit_code
+}
+
+if [ $# -eq 0 ] && [ ! -t 0 ]; then
+  run_and_hint uv run $uv_args --script -
+elif [ "$1" = "-" ]; then
+  shift
+  run_and_hint uv run $uv_args --script - "$@"
+elif [ "$1" = "-c" ]; then
+  run_and_hint uv run $uv_args "$python_cmd" "$@"
+elif [ $# -gt 0 ] && [ -f "$1" ]; then
+  run_and_hint uv run $uv_args --script "$@"
+else
+  run_and_hint uv run $uv_args "$python_cmd" "$@"
+fi

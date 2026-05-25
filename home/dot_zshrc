@@ -29,3 +29,7 @@ eval "$(sheldon source)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(git wt --init zsh)"
+
+# Ensure ~/.local/bin overrides mise shims (for python/python3 wrappers etc.)
+path=("$HOME/.local/bin" ${path:#$HOME/.local/bin})
+

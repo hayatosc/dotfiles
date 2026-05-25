@@ -39,6 +39,12 @@ This file lists mandatory rules for all agents working in this repository.
 	- execute -> nlx <pkg>
 	- upgrade -> nu
 	- remove -> nun <pkg>
+- `python` / `python3` are wrapper scripts in `~/.local/bin/` that route through `uv run`:
+  - Heredoc / pipe input: automatically uses `uv run --script -` (supports PEP 723 inline metadata)
+  - `.py` files: uses `uv run --script file.py`
+  - `-c` flag: uses `uv run python -c '...'`
+  - Set `PYTHON_WITH='requests rich'` to add `--with` dependencies
+  - Set `PYTHON_UV=0` to bypass uv and use system python directly
 - Some tools are running under [rtk](https://github.com/rtk-ai/rtk) via agent hooks to save tokens.
   - check `~/.agents/RTK.md` for details.
   - for codex, rtk does not support codex hook yet, so you should mannualy use rtk command.
