@@ -1,6 +1,10 @@
 # Codex config
 
-Shared Codex settings are managed in [home/dot_codex/private_config.toml.tmpl](/home/hayato/.local/share/chezmoi/home/dot_codex/private_config.toml.tmpl).
+Shared Codex settings are managed in [home/dot_codex/private_config.toml.tmpl](file:///home/hayato/.local/share/chezmoi/home/dot_codex/private_config.toml.tmpl).
+
+> [!IMPORTANT]
+> **Do not edit `~/.codex/config.toml` directly for shared settings.**
+> Always edit the template inside the repository at [home/dot_codex/private_config.toml.tmpl](file:///home/hayato/.local/share/chezmoi/home/dot_codex/private_config.toml.tmpl) and run `chezmoi apply` to deploy changes.
 
 Machine-local trusted project paths can be placed in [home/.chezmoidata/codex.local.toml](/home/hayato/.local/share/chezmoi/home/.chezmoidata/codex.local.toml), which is gitignored. A fresh environment can omit this file entirely.
 

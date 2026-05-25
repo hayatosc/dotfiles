@@ -21,3 +21,5 @@ mise install
 ## Docs
 
 - [Codex config](docs/codex.md)
+- [AI Agents Environment](docs/agents.md)
+- [Python Execution Wrappers](docs/python.md)
