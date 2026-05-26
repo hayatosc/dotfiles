@@ -1,0 +1,104 @@
+lockfile_version: '1'
+generated_at: '2026-05-26T05:13:53.733006+00:00'
+apm_version: 0.14.2
+dependencies:
+- repo_url: GoogleChrome/modern-web-guidance
+  host: github.com
+  resolved_commit: 65d7f20ac85517a362107ce89b7be7f905105fd3
+  resolved_ref: 65d7f20ac85517a362107ce89b7be7f905105fd3
+  virtual_path: skills/modern-web-guidance
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/modern-web-guidance
+  content_hash: sha256:322b3f5620be102387bbdddae4ed5aa80d67427c6e38dd6a76ba09b12b48717e
+- repo_url: anthropics/skills
+  host: github.com
+  resolved_commit: 690f15cac7f7b4c055c5ab109c79ed9259934081
+  resolved_ref: 690f15cac7f7b4c055c5ab109c79ed9259934081
+  virtual_path: skills/frontend-design
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/frontend-design
+  content_hash: sha256:063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67
+- repo_url: anthropics/skills
+  host: github.com
+  resolved_commit: 690f15cac7f7b4c055c5ab109c79ed9259934081
+  resolved_ref: 690f15cac7f7b4c055c5ab109c79ed9259934081
+  virtual_path: skills/skill-creator
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/skill-creator
+  content_hash: sha256:b2bfe91d69ca99994c0566baede889e7d2b9bb8791c6b6106c5d387392f717f6
+- repo_url: dominikmartn/nothing-design-skill
+  host: github.com
+  resolved_commit: 74affbb786af098b18503467b205c10a7df30126
+  resolved_ref: 74affbb786af098b18503467b205c10a7df30126
+  virtual_path: nothing-design
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/nothing-design
+  content_hash: sha256:bd835bf84356f346fe0adffe9b388bd45eb77eb2b50d83defde371e1d4861b34
+- repo_url: emilkowalski/skill
+  host: github.com
+  resolved_commit: ecf66bbd1fb33c25332b6b0e454d08049978284c
+  resolved_ref: ecf66bbd1fb33c25332b6b0e454d08049978284c
+  virtual_path: skills/emil-design-eng
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/emil-design-eng
+  content_hash: sha256:8bdf9e4e6de7a4969147bf4828a4ad2c5aacd9fba4b690b250a85e0467ca387d
+- repo_url: openclaw/acpx
+  host: github.com
+  resolved_commit: fea7ee6e14566df0c9aa23e8949adad8071b5653
+  resolved_ref: fea7ee6e14566df0c9aa23e8949adad8071b5653
+  virtual_path: skills/acpx
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/acpx
+  content_hash: sha256:c632a50700da3eaf59e3ee24e592c31f7689d11a7a50b8ef742b9ed6510e37fa
+- repo_url: vercel-labs/agent-browser
+  host: github.com
+  resolved_commit: 4ad284890cb59564af603e6de403dd75dd19e832
+  resolved_ref: 4ad284890cb59564af603e6de403dd75dd19e832
+  virtual_path: skills/agent-browser
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/agent-browser
+  content_hash: sha256:edad4d958bc4baf821e3391bb9889a03a8bbc0e4d7f54ee4a5f30837654fed83
+- repo_url: vercel-labs/agent-skills
+  host: github.com
+  resolved_commit: 18a24346600009dc3fcb99e4b2cd83b301601775
+  resolved_ref: 18a24346600009dc3fcb99e4b2cd83b301601775
+  virtual_path: skills/web-design-guidelines
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/web-design-guidelines
+  content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
+- repo_url: vuejs-ai/skills
+  host: github.com
+  resolved_commit: f3dd1bf4d3ac78331bdc903e4519d561c538ca6a
+  resolved_ref: f3dd1bf4d3ac78331bdc903e4519d561c538ca6a
+  virtual_path: skills/vue-best-practices
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/vue-best-practices
+  content_hash: sha256:90980085ec288dd0a3326fc09af639a5e88cff74c15c77db84398fd42797a770
+local_deployed_files:
+- .agents/skills/article-review
+- .agents/skills/askmeplan
+- .agents/skills/ast-grep
+- .agents/skills/empirical-prompt-tuning
+- .agents/skills/golang-best-practices
+- .agents/skills/refactoring-code
+- .agents/skills/self-ship
+- .agents/skills/typescript-best-practices
+- .agents/skills/typescript-recommend-tools

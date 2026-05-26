@@ -32,15 +32,25 @@ For more details, see [home/dot_agents/private_RTK.md](file:///home/hayato/.loca
 
 ---
 
-## 3. Custom Skills
+## 3. Agent Skills (managed by APM)
 
-Custom agent skills are defined in the [home/dot_agents/skills/](file:///home/hayato/.local/share/chezmoi/home/dot_agents/skills/) directory. These are symlinked into the agent's execution environments (e.g. `~/.gemini/skills/` or `~/.claude/skills/`).
+Agent skills are managed under [skills/](file:///home/hayato/.local/share/chezmoi/skills/) at the chezmoi repository root, using [Microsoft APM](https://github.com/microsoft/apm) (Agent Package Manager). This directory is **outside** chezmoi's source root (`.chezmoiroot=home`), so it is not deployed by `chezmoi apply` as files — instead, an `apm install` run during apply populates the actual deploy target.
 
-Key skills available:
-- `agent-browser`: CLI browser automation.
-- `askmeplan`: Socratic planning dialogue tool.
-- `frontend-design` & `impeccable` & `emil-design-eng`: UI styling and premium frontend guidelines.
-- `golang-best-practices` & `typescript-best-practices`: Language-specific programming guidelines.
-- `nothing-design`: Nothing OS styling instructions.
-- `empirical-prompt-tuning`: Evaluating and tuning agent prompts.
-- `refactoring-code`: Safe step-by-step code refactoring.
+- `skills/apm.yml` / `skills/apm.lock.yaml`: dependency manifest for external skills.
+- `skills/.apm/skills/`: self-authored skills.
+- `skills/.agents`: symlink to `~/.agents` (gitignored), created by the chezmoi script below so that APM's `agent-skills` target deploys to `~/.agents/skills/`.
+
+Deployment flow:
+
+1. `chezmoi apply` runs [home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl](file:///home/hayato/.local/share/chezmoi/home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl) when `apm.yml` or `.apm/skills/` changes.
+2. The script ensures the `skills/.agents -> ~/.agents` symlink exists, then runs `apm install --target agent-skills` from `skills/`.
+3. APM deploys all skills (self-authored + external dependencies) to `~/.agents/skills/`.
+4. Each harness reads via the symlinks set up by `run_once_symlink-agents.sh.tmpl`: `~/.claude/skills`, `~/.codex/skills`, `~/.gemini/skills` all point to `~/.agents/skills/`.
+
+### Convenience tasks (mise)
+
+- `mise run apm:add <pkg>`: add a skill (e.g. `mise run apm:add owner/repo/path/to/skill`).
+- `mise run apm:install`: re-sync from `apm.lock.yaml`.
+- `mise run apm:update`: refresh dependencies to latest matching refs.
+
+All three `cd` into `chezmoi/skills/` before invoking `apm`, so they can be run from anywhere.

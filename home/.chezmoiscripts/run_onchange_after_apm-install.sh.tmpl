@@ -1,0 +1,22 @@
+#!/bin/bash
+# Re-run whenever apm.yml or any self-authored skill under skills/.apm/ changes.
+# apm.yml hash: {{ output "sh" "-c" (printf "sha256sum %s 2>/dev/null | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" "apm.yml")) }}
+# .apm/skills/ hash: {{ output "sh" "-c" (printf "find %s -type f 2>/dev/null | sort | xargs cat 2>/dev/null | sha256sum | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" ".apm")) }}
+
+set -euo pipefail
+
+if ! command -v apm >/dev/null 2>&1; then
+    echo "apm CLI not installed. Run \`mise install\` first." >&2
+    exit 0
+fi
+
+SKILLS_DIR="${HOME}/.local/share/chezmoi/skills"
+
+# apm deploys to {project_root}/.agents/skills/. Symlink that to ~/.agents so
+# the actual files land under ~/.agents/skills/ (consumed by all harnesses).
+mkdir -p "${HOME}/.agents"
+ln -nfs "${HOME}/.agents" "${SKILLS_DIR}/.agents"
+
+cd "${SKILLS_DIR}"
+echo "==> apm install (deploying skills to ~/.agents/skills/ via symlink)"
+apm install --target agent-skills

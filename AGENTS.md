@@ -11,7 +11,7 @@ This repository contains the **dotfiles** for user `hayato`, managed using **che
 - `home/`: The source directory representing the user's home folder (`/home/hayato`). Chezmoi templates and files are defined here:
   - `home/dot_config/` -> `~/.config/` (contains configs for `yazi`, `zsh`, `cage`, `sheldon`, `starship.toml`, `mise`, `tmux`, `micro`, `opencode`)
   - `home/dot_zshrc`, `home/dot_zshenv`, `home/dot_zprofile`, `home/dot_profile` -> Zsh / shell configurations
-  - `home/dot_agents/` -> `~/.agents/` (contains agent rules and custom skills)
+  - `home/dot_agents/` -> `~/.agents/` (cross-harness agent rules only; skills are managed separately under `skills/`)
   - `home/dot_claude/` -> `~/.claude/` (Claude-specific configurations)
   - `home/dot_gemini/` -> `~/.gemini/` (Gemini-specific configurations)
   - `home/dot_codex/` -> `~/.codex/` (Codex-specific configurations)
@@ -19,6 +19,7 @@ This repository contains the **dotfiles** for user `hayato`, managed using **che
   - `home/.chezmoidata/` -> Chezmoi data variables (e.g. `codex.local.toml`)
   - `home/.chezmoiscripts/` -> One-time or run-on-change scripts executed by chezmoi (e.g., package installation, symlinking)
   - `home/.chezmoitemplates/` -> Templates reused across chezmoi configurations
+- `skills/`: Microsoft APM project root for agent skills (not deployed by chezmoi). `apm.yml` declares external skill dependencies; `.apm/skills/` holds self-authored skills. `chezmoi apply` triggers `apm install` via `home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl`, which symlinks `skills/.agents` -> `~/.agents` so deploys land in `~/.agents/skills/` (cross-harness via existing symlinks).
 - `docs/`: Repository documentation (e.g., `docs/codex.md` for Codex configuration).
 - `scripts/`: Custom scripts used within the repository.
 - `pyproject.toml`, `uv.lock`: Python environment definition managed by `uv`.

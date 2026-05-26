@@ -1,0 +1,19 @@
+name: dotfile-skills
+version: 0.1.0
+description: hayato's agent skills managed via Microsoft APM (Agent Package Manager).
+  Self-authored skills live under .apm/skills/; external skills are pulled as dependencies.
+  `apm install` deploys to ./.agents/skills/, which is a symlink to ~/.agents/skills/
+  created by chezmoi's run_onchange_after_apm-install.sh.
+targets:
+- agent-skills
+dependencies:
+  apm:
+  - anthropics/skills/skills/frontend-design#690f15cac7f7b4c055c5ab109c79ed9259934081
+  - anthropics/skills/skills/skill-creator#690f15cac7f7b4c055c5ab109c79ed9259934081
+  - vercel-labs/agent-skills/skills/web-design-guidelines#18a24346600009dc3fcb99e4b2cd83b301601775
+  - vercel-labs/agent-browser/skills/agent-browser#4ad284890cb59564af603e6de403dd75dd19e832
+  - GoogleChrome/modern-web-guidance/skills/modern-web-guidance#65d7f20ac85517a362107ce89b7be7f905105fd3
+  - openclaw/acpx/skills/acpx#fea7ee6e14566df0c9aa23e8949adad8071b5653
+  - emilkowalski/skill/skills/emil-design-eng#ecf66bbd1fb33c25332b6b0e454d08049978284c
+  - dominikmartn/nothing-design-skill/nothing-design#74affbb786af098b18503467b205c10a7df30126
+  - vuejs-ai/skills/skills/vue-best-practices#f3dd1bf4d3ac78331bdc903e4519d561c538ca6a

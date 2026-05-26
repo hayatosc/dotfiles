@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#MISE description="Run apm against chezmoi/skills (usage: mise run apm <subcmd> [args...])"
+#USAGE arg "<args>" var=#true
+set -euo pipefail
+
+source_dir="${CHEZMOI_SOURCE_DIR:-$HOME/.local/share/chezmoi}"
+source_dir="${source_dir%/}"
+[[ "$source_dir" == */home ]] && source_dir="${source_dir%/home}"
+skills_dir="$source_dir/skills"
+
+cd "$skills_dir"
+exec apm "$@"
