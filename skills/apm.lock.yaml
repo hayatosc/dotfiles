@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-05-26T06:19:35.578183+00:00'
+generated_at: '2026-05-26T06:23:46.184979+00:00'
 apm_version: 0.14.2
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
@@ -47,6 +47,24 @@ dependencies:
   deployed_files:
   - .agents/skills/emil-design-eng
   content_hash: sha256:8bdf9e4e6de7a4969147bf4828a4ad2c5aacd9fba4b690b250a85e0467ca387d
+- repo_url: openai/skills
+  host: github.com
+  resolved_commit: b0401f07213a66414d84a65cb50c1d226f99485a
+  virtual_path: skills/.curated/gh-address-comments
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/gh-address-comments
+  content_hash: sha256:068d34fb59cb97a39aea3de1708877b6a01210d02fa7eda5e74fc8277ed52916
+- repo_url: openai/skills
+  host: github.com
+  resolved_commit: b0401f07213a66414d84a65cb50c1d226f99485a
+  virtual_path: skills/.curated/gh-fix-ci
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/gh-fix-ci
+  content_hash: sha256:02b4d97e4bd91e342e3ec3efa06b7871097d6a64e8398f4ed5b69c64d8d902fb
 - repo_url: openclaw/acpx
   host: github.com
   resolved_commit: fea7ee6e14566df0c9aa23e8949adad8071b5653
