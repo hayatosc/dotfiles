@@ -1,11 +1,10 @@
 lockfile_version: '1'
-generated_at: '2026-05-26T05:13:53.733006+00:00'
+generated_at: '2026-05-26T06:19:35.578183+00:00'
 apm_version: 0.14.2
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
   host: github.com
   resolved_commit: 65d7f20ac85517a362107ce89b7be7f905105fd3
-  resolved_ref: 65d7f20ac85517a362107ce89b7be7f905105fd3
   virtual_path: skills/modern-web-guidance
   is_virtual: true
   package_type: claude_skill
@@ -15,7 +14,6 @@ dependencies:
 - repo_url: anthropics/skills
   host: github.com
   resolved_commit: 690f15cac7f7b4c055c5ab109c79ed9259934081
-  resolved_ref: 690f15cac7f7b4c055c5ab109c79ed9259934081
   virtual_path: skills/frontend-design
   is_virtual: true
   package_type: claude_skill
@@ -25,7 +23,6 @@ dependencies:
 - repo_url: anthropics/skills
   host: github.com
   resolved_commit: 690f15cac7f7b4c055c5ab109c79ed9259934081
-  resolved_ref: 690f15cac7f7b4c055c5ab109c79ed9259934081
   virtual_path: skills/skill-creator
   is_virtual: true
   package_type: claude_skill
@@ -35,7 +32,6 @@ dependencies:
 - repo_url: dominikmartn/nothing-design-skill
   host: github.com
   resolved_commit: 74affbb786af098b18503467b205c10a7df30126
-  resolved_ref: 74affbb786af098b18503467b205c10a7df30126
   virtual_path: nothing-design
   is_virtual: true
   package_type: claude_skill
@@ -45,7 +41,6 @@ dependencies:
 - repo_url: emilkowalski/skill
   host: github.com
   resolved_commit: ecf66bbd1fb33c25332b6b0e454d08049978284c
-  resolved_ref: ecf66bbd1fb33c25332b6b0e454d08049978284c
   virtual_path: skills/emil-design-eng
   is_virtual: true
   package_type: claude_skill
@@ -55,7 +50,6 @@ dependencies:
 - repo_url: openclaw/acpx
   host: github.com
   resolved_commit: fea7ee6e14566df0c9aa23e8949adad8071b5653
-  resolved_ref: fea7ee6e14566df0c9aa23e8949adad8071b5653
   virtual_path: skills/acpx
   is_virtual: true
   package_type: claude_skill
@@ -65,7 +59,6 @@ dependencies:
 - repo_url: vercel-labs/agent-browser
   host: github.com
   resolved_commit: 4ad284890cb59564af603e6de403dd75dd19e832
-  resolved_ref: 4ad284890cb59564af603e6de403dd75dd19e832
   virtual_path: skills/agent-browser
   is_virtual: true
   package_type: claude_skill
@@ -75,17 +68,24 @@ dependencies:
 - repo_url: vercel-labs/agent-skills
   host: github.com
   resolved_commit: 18a24346600009dc3fcb99e4b2cd83b301601775
-  resolved_ref: 18a24346600009dc3fcb99e4b2cd83b301601775
   virtual_path: skills/web-design-guidelines
   is_virtual: true
   package_type: claude_skill
   deployed_files:
   - .agents/skills/web-design-guidelines
   content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
+- repo_url: vercel-labs/skills
+  host: github.com
+  resolved_commit: e4243fbf7d9398722024f62850ece90fa0d5c693
+  virtual_path: skills/find-skills
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/find-skills
+  content_hash: sha256:d31e234f0c90694a670222cdd1dafa853e051d7066beda389f1097c22dadd461
 - repo_url: vuejs-ai/skills
   host: github.com
-  resolved_commit: f3dd1bf4d3ac78331bdc903e4519d561c538ca6a
-  resolved_ref: f3dd1bf4d3ac78331bdc903e4519d561c538ca6a
+  resolved_commit: c9d355ff23f654309dd02006be671859df0a134c
   virtual_path: skills/vue-best-practices
   is_virtual: true
   package_type: claude_skill
