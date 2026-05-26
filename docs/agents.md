@@ -46,11 +46,3 @@ Deployment flow:
 2. The script ensures the `skills/.agents -> ~/.agents` symlink exists, then runs `apm install --target agent-skills` from `skills/`.
 3. APM deploys all skills (self-authored + external dependencies) to `~/.agents/skills/`.
 4. Each harness reads via the symlinks set up by `run_once_symlink-agents.sh.tmpl`: `~/.claude/skills`, `~/.codex/skills`, `~/.gemini/skills` all point to `~/.agents/skills/`.
-
-### Convenience tasks (mise)
-
-- `mise run apm:add <pkg>`: add a skill (e.g. `mise run apm:add owner/repo/path/to/skill`).
-- `mise run apm:install`: re-sync from `apm.lock.yaml`.
-- `mise run apm:update`: refresh dependencies to latest matching refs.
-
-All three `cd` into `chezmoi/skills/` before invoking `apm`, so they can be run from anywhere.
