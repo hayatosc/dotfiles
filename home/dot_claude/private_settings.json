@@ -43,6 +43,7 @@
   },
   "effortLevel": "medium",
   "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true,
   "mcpServers": {
     "claude_ai_Notion": {
       "disabled": true
@@ -56,6 +57,5 @@
     "claude_ai_Context7": {
       "disabled": true
     }
-  },
-  "skipAutoPermissionPrompt": true
+  }
 }
