@@ -1,7 +1,7 @@
 #!/bin/bash
-# Re-run whenever apm.yml or any self-authored skill under skills/.apm/ changes.
+# Re-run whenever apm.yml or any self-authored skill under skills/ changes.
 # apm.yml hash: {{ output "sh" "-c" (printf "sha256sum %s 2>/dev/null | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" "apm.yml")) }}
-# .apm/skills/ hash: {{ output "sh" "-c" (printf "find %s -type f 2>/dev/null | sort | xargs cat 2>/dev/null | sha256sum | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" ".apm")) }}
+# skills/ hash: {{ output "sh" "-c" (printf "find %s -mindepth 2 -maxdepth 3 -type f ! -path '*/.*' ! -path '*/apm_modules/*' 2>/dev/null | sort | xargs cat 2>/dev/null | sha256sum | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills")) }}
 
 set -euo pipefail
 
@@ -12,11 +12,42 @@ fi
 
 SKILLS_DIR="${HOME}/.local/share/chezmoi/skills"
 
-# apm deploys to {project_root}/.agents/skills/. Symlink that to ~/.agents so
-# the actual files land under ~/.agents/skills/ (consumed by all harnesses).
-mkdir -p "${HOME}/.agents"
-ln -nfs "${HOME}/.agents" "${SKILLS_DIR}/.agents"
+# 1. Clean up old permanent symlink if it exists
+if [ -L "${SKILLS_DIR}/.agents" ]; then
+    rm "${SKILLS_DIR}/.agents"
+fi
 
+# 2. Set up temporary deployment and local source directories
+TEMP_AGENTS_DIR="${SKILLS_DIR}/.agents"
+TEMP_APM_DIR="${SKILLS_DIR}/.apm"
+mkdir -p "${TEMP_AGENTS_DIR}"
+mkdir -p "${TEMP_APM_DIR}/skills"
+
+# 3. Temporarily symlink self-authored skills under .apm/skills
+for dir in "${SKILLS_DIR}"/*/; do
+    dir_name=$(basename "${dir}")
+    if [[ "${dir_name}" != "apm_modules" && "${dir_name}" != "tests" && "${dir_name}" != "scratch" && "${dir_name}" != "."* ]]; then
+        ln -nfs "../../${dir_name}" "${TEMP_APM_DIR}/skills/${dir_name}"
+    fi
+done
+
+# 4. Install dependencies and compile skills locally into the temp .agents directory
 cd "${SKILLS_DIR}"
-echo "==> apm install (deploying skills to ~/.agents/skills/ via symlink)"
+echo "==> apm install (deploying skills temporarily to ${TEMP_AGENTS_DIR}/skills)"
 apm install --target agent-skills
+
+# 5. Sync the compiled skills to the actual destination (~/.agents/skills)
+mkdir -p "${HOME}/.agents/skills"
+if command -v rsync >/dev/null 2>&1; then
+    rsync -a --delete "${TEMP_AGENTS_DIR}/skills/" "${HOME}/.agents/skills/"
+else
+    rm -rf "${HOME}/.agents/skills"
+    cp -a "${TEMP_AGENTS_DIR}/skills" "${HOME}/.agents/"
+fi
+
+# 6. Clean up temporary directories
+rm -rf "${TEMP_AGENTS_DIR}"
+rm -rf "${TEMP_APM_DIR}"
+
+echo "==> apm install completed and cleaned up temporary directories"
+
