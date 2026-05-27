@@ -79,17 +79,132 @@ Prefer descriptive names that explain the role of the type. Use descriptive gene
 
 ## Branded Types
 
-Use branded types when two values share the same runtime representation but should not be mixed accidentally, such as `UserId` vs `OrgId`, or raw strings vs validated strings.
+TypeScript's type system is structural (shape-based), which means different types with the same shape (e.g., raw primitive strings/numbers or similar objects) are assignable to each other. To prevent logical bugs from accidentally mixing values that share the same runtime representation, actively use **branded types** (also called **opaque types**) to emulate nominal (name-based) typing.
+
+Actively model core domain models (like unique identifiers, units of measurement, and input schemas) with branded types. It adds substantial compile-time safety and self-documentation to the codebase.
+
+### Branding Patterns
+
+Choose the level of strictness that matches your safety requirements:
+
+#### 1. Strong Branding (Property-Based)
+Use a shared generic utility to quickly define branded primitives. This is suitable for general domain boundaries where standardizing brand keys is preferred.
 
 ```ts
-declare const userIdBrand: unique symbol;
+type Branded<T, Brand> = T & { readonly __brand: Brand };
 
-type UserId = string & {
-  readonly [userIdBrand]: "UserId";
-};
+type UserId = Branded<string, "UserId">;
+type OrderId = Branded<string, "OrderId">;
+
+// @ts-expect-error - Different brands cannot be assigned to each other
+const bad: UserId = "order_123" as OrderId;
 ```
 
-Brand values at a clear construction or validation boundary. Do not brand everything by default; use the pattern only when it prevents a real class of mistakes.
+#### 2. Strict Branding (Symbol-Based)
+For sensitive domain boundaries (e.g., security tokens, critical database keys, or money/currency), use a non-exported `unique symbol` as the brand key. This makes it impossible for code outside the defining module to manually cast a primitive using a plain property brand.
+
+```ts
+// In user-domain.ts
+declare const userIdBrand: unique symbol;
+export type UserId = string & { readonly [userIdBrand]: "UserId" };
+
+// Only functions exported from user-domain.ts can construct a UserId
+```
+
+#### 3. Weak Branding (Flavored Types)
+If strong branding is too restrictive (e.g., you want to allow passing raw string literals to functions accepting branded IDs, but still prevent passing a `UserId` to an `OrderId` parameter), make the brand property optional.
+
+```ts
+type Flavored<T, Brand> = T & { readonly __flavor?: Brand };
+
+type UserId = Flavored<string, "UserId">;
+type OrderId = Flavored<string, "OrderId">;
+
+let raw: string = "user_123";
+let userId: UserId = raw; // OK: primitives can be assigned to flavored types
+
+// @ts-expect-error - Different flavors cannot be assigned to each other
+let orderId: OrderId = userId;
+```
+
+### Validation & Construction Boundaries
+
+Never cast a value to a branded type (`as UserId`) directly in the application flow. Instead, encapsulate the type assertion inside a dedicated validation boundary or constructor helper.
+
+#### 1. Runtime Type Predicates (`is`)
+Use type predicates when you want to safely check and narrow a primitive's type dynamically:
+
+```ts
+type Positive = Branded<number, "Positive">;
+
+function isPositive(n: number): n is Positive {
+  return n > 0;
+}
+```
+
+#### 2. Assertion Functions (`asserts is`)
+Use assertion functions at entry points (like API boundaries or form submissions) to validate and enforce invariants, throwing readable errors when invariants fail.
+
+```ts
+function assertPositive(n: number): asserts n is Positive {
+  if (n <= 0) {
+    throw new Error(`Invalid positive number: ${n}`);
+  }
+}
+```
+
+#### 3. Reusable Constructor Factories
+Use factories to bundle runtime validation with type casting, ensuring that every branded value in the system has passed validation rules:
+
+```ts
+function createBrandedConstructor<T, Brand>(
+  validator: (val: T) => boolean,
+  errorMessage: (val: T) => string
+) {
+  return (val: T): Branded<T, Brand> => {
+    if (!validator(val)) {
+      throw new Error(errorMessage(val));
+    }
+    return val as Branded<T, Brand>;
+  };
+}
+
+export const asEmailAddress = createBrandedConstructor<string, "EmailAddress">(
+  (email) => email.includes("@"),
+  (email) => `Invalid email format: ${email}`
+);
+```
+
+### Common Use Cases & Limitations
+
+- **Domain Identifiers**: Distinguish between `UserId`, `OrgId`, `PostId`, and `CommentId` to catch parameter-swapping bugs at compile time.
+- **Validated Content**: Model strings that require parsing or sanitization, such as `EmailAddress`, `Url`, or `SafeHtml`.
+- **Units of Measure**: Distinguish numeric values with units, such as `Meters`, `Kilometers`, or `Seconds`.
+  - **WARNING**: In TypeScript, binary arithmetic operations (like `+`, `-`, `*`) on branded numbers discard the brand and return a plain `number`. Be prepared to re-cast or re-validate the result of calculations when passing the result back to branded boundaries:
+    ```ts
+    const distance1 = 10 as Meters;
+    const distance2 = 20 as Meters;
+    const totalRaw = distance1 + distance2; // type is plain number
+    const total = totalRaw as Meters; // re-cast/assert if safe
+    ```
+
+### Type-Level Testing
+
+To guarantee your brands behave correctly in the type system, write compile-time tests using `@ts-expect-error` to assert type boundaries:
+
+```ts
+// type-tests.ts
+import { asEmailAddress } from "./email";
+import type { UserId } from "./user";
+
+const email = asEmailAddress("test@example.com");
+
+// @ts-expect-error - Raw string cannot be assigned to strong brand EmailAddress
+const badEmail: EmailAddress = "plain-string";
+
+// @ts-expect-error - Different brands must not be compatible
+const badUser: UserId = email;
+```
 
 ## Exhaustiveness
 

@@ -25,6 +25,7 @@ Follow these steps in order:
 - Treat network, file, JSON, DOM, environment, and third-party data as `unknown` until narrowed.
 - Replace `any` with concrete types, generics, `unknown`, or utility types.
 - Replace unsafe `as` with narrowing, predicates, discriminated unions, `satisfies`, or small refactors that make the type relationship explicit.
+- Use branded types (`Branded<T, Brand>`) to model primitives at core domain boundaries (such as unique identifiers, units of measurement, or validated payloads) to prevent accidental mixing of structurally identical data.
 
 ### 3. Tighten configuration when it materially improves safety
 

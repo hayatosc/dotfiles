@@ -1,16 +1,16 @@
 lockfile_version: '1'
-generated_at: '2026-05-26T17:20:22.253788+00:00'
+generated_at: '2026-05-27T13:22:25.621487+00:00'
 apm_version: 0.14.2
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
   host: github.com
-  resolved_commit: 65d7f20ac85517a362107ce89b7be7f905105fd3
+  resolved_commit: d0f7544492d329e87b4878d96c266799ac5eeeba
   virtual_path: skills/modern-web-guidance
   is_virtual: true
   package_type: claude_skill
   deployed_files:
   - .agents/skills/modern-web-guidance
-  content_hash: sha256:322b3f5620be102387bbdddae4ed5aa80d67427c6e38dd6a76ba09b12b48717e
+  content_hash: sha256:6f666fa7c384d08f10270bd5f5915cf5583164e5b60b59174a5c7eb736cb8de1
 - repo_url: anthropics/skills
   host: github.com
   resolved_commit: 690f15cac7f7b4c055c5ab109c79ed9259934081
@@ -85,7 +85,7 @@ dependencies:
   content_hash: sha256:edad4d958bc4baf821e3391bb9889a03a8bbc0e4d7f54ee4a5f30837654fed83
 - repo_url: vercel-labs/agent-skills
   host: github.com
-  resolved_commit: 18a24346600009dc3fcb99e4b2cd83b301601775
+  resolved_commit: 180115660cfb8a86b808f117475a01f54caf3bc5
   virtual_path: skills/web-design-guidelines
   is_virtual: true
   package_type: claude_skill
