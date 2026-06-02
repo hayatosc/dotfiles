@@ -2996,6 +2996,38 @@ checksum = "sha256:02b9874049112f2b7335c9a3e880ac05d99a08d9a98160c5a98898b2b3ac4
 url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda"
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
+[[tools."aqua:eza-community/eza"]]
+version = "0.23.4"
+backend = "aqua:eza-community/eza"
+
+[tools."aqua:eza-community/eza"."platforms.linux-arm64"]
+checksum = "sha256:366e8430225f9955c3dc659b452150c169894833ccfef455e01765e265a3edda"
+url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_aarch64-unknown-linux-gnu.tar.gz"
+
+[tools."aqua:eza-community/eza"."platforms.linux-x64"]
+checksum = "sha256:d231bb3ee33b08c76279b5888845dceb7034d055c42bb9be46dbe0dae39394df"
+url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz"
+
+[tools."aqua:eza-community/eza"."platforms.linux-x64-baseline"]
+checksum = "sha256:d231bb3ee33b08c76279b5888845dceb7034d055c42bb9be46dbe0dae39394df"
+url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz"
+
+[tools."aqua:eza-community/eza"."platforms.linux-x64-musl"]
+checksum = "sha256:d231bb3ee33b08c76279b5888845dceb7034d055c42bb9be46dbe0dae39394df"
+url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz"
+
+[tools."aqua:eza-community/eza"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:d231bb3ee33b08c76279b5888845dceb7034d055c42bb9be46dbe0dae39394df"
+url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz"
+
+[tools."aqua:eza-community/eza"."platforms.windows-x64"]
+checksum = "sha256:4d4f87f6bc8e6ee176789c28bee698234ce0275da013709eb16b0f14819c1688"
+url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza.exe_x86_64-pc-windows-gnu.tar.gz"
+
+[tools."aqua:eza-community/eza"."platforms.windows-x64-baseline"]
+checksum = "sha256:4d4f87f6bc8e6ee176789c28bee698234ce0275da013709eb16b0f14819c1688"
+url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza.exe_x86_64-pc-windows-gnu.tar.gz"
+
 [[tools."aqua:github/copilot-cli"]]
 version = "1.0.57"
 backend = "aqua:github/copilot-cli"
@@ -3123,22 +3155,6 @@ url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0
 [tools."aqua:micro-editor/micro"."platforms.windows-x64"]
 checksum = "sha256:90635c53c11aa2a0d997f5e3ed43528877740725500207640b29551cef18479b"
 url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-win64.zip"
-
-[[tools."aqua:ogham/exa"]]
-version = "0.10.1"
-backend = "aqua:ogham/exa"
-
-[tools."aqua:ogham/exa"."platforms.linux-x64"]
-url = "https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-musl-v0.10.1.zip"
-
-[tools."aqua:ogham/exa"."platforms.linux-x64-musl"]
-url = "https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-musl-v0.10.1.zip"
-
-[tools."aqua:ogham/exa"."platforms.macos-arm64"]
-url = "https://github.com/ogham/exa/releases/download/v0.10.1/exa-macos-x86_64-v0.10.1.zip"
-
-[tools."aqua:ogham/exa"."platforms.macos-x64"]
-url = "https://github.com/ogham/exa/releases/download/v0.10.1/exa-macos-x86_64-v0.10.1.zip"
 
 [[tools."aqua:rossmacarthur/sheldon"]]
 version = "0.8.5"
@@ -4139,7 +4155,13 @@ url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0
 [tools.gcloud."platforms.linux-x64"]
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-x86_64.tar.gz"
 
+[tools.gcloud."platforms.linux-x64-baseline"]
+url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-x86_64.tar.gz"
+
 [tools.gcloud."platforms.linux-x64-musl"]
+url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-x86_64.tar.gz"
+
+[tools.gcloud."platforms.linux-x64-musl-baseline"]
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-x86_64.tar.gz"
 
 [tools.gcloud."platforms.macos-arm64"]
@@ -4148,7 +4170,13 @@ url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0
 [tools.gcloud."platforms.macos-x64"]
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-darwin-x86_64.tar.gz"
 
+[tools.gcloud."platforms.macos-x64-baseline"]
+url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-darwin-x86_64.tar.gz"
+
 [tools.gcloud."platforms.windows-x64"]
+url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-windows-x86_64.zip"
+
+[tools.gcloud."platforms.windows-x64-baseline"]
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-windows-x86_64.zip"
 
 [[tools.gemini]]
@@ -5373,10 +5401,19 @@ url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.aarch64"
 [tools.ttyd."platforms.linux-x64"]
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
 
+[tools.ttyd."platforms.linux-x64-baseline"]
+url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
+
 [tools.ttyd."platforms.linux-x64-musl"]
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
 
+[tools.ttyd."platforms.linux-x64-musl-baseline"]
+url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
+
 [tools.ttyd."platforms.windows-x64"]
+url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.win32.exe"
+
+[tools.ttyd."platforms.windows-x64-baseline"]
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.win32.exe"
 
 [[tools.uv]]
