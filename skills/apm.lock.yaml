@@ -1,6 +1,6 @@
 lockfile_version: '1'
-generated_at: '2026-05-27T13:22:25.621487+00:00'
-apm_version: 0.14.2
+generated_at: '2026-06-02T07:29:59.494121+00:00'
+apm_version: 0.16.0
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
   host: github.com
@@ -110,13 +110,3 @@ dependencies:
   deployed_files:
   - .agents/skills/vue-best-practices
   content_hash: sha256:90980085ec288dd0a3326fc09af639a5e88cff74c15c77db84398fd42797a770
-local_deployed_files:
-- .agents/skills/article-review
-- .agents/skills/askmeplan
-- .agents/skills/ast-grep
-- .agents/skills/empirical-prompt-tuning
-- .agents/skills/golang-best-practices
-- .agents/skills/refactoring-code
-- .agents/skills/self-ship
-- .agents/skills/typescript-best-practices
-- .agents/skills/typescript-recommend-tools

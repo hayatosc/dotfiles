@@ -33,8 +33,42 @@ done
 
 # 4. Install dependencies and compile skills locally into the temp .agents directory
 cd "${SKILLS_DIR}"
+
+# Back up config files to preserve mtime and generated_at if they don't actually change
+cp -p apm.lock.yaml apm.lock.yaml.bak 2>/dev/null || true
+cp -p apm.yml apm.yml.bak 2>/dev/null || true
+
 echo "==> apm install (deploying skills temporarily to ${TEMP_AGENTS_DIR}/skills)"
 apm install --target agent-skills
+
+# Restore apm.lock.yaml if only generated_at changed (preventing unnecessary mtime / git diff updates)
+if [ -f apm.lock.yaml.bak ]; then
+    if [ -f apm.lock.yaml ]; then
+        filter_lock() {
+            grep -v '^[[:space:]]*generated_at:' "$1"
+        }
+        if diff <(filter_lock apm.lock.yaml) <(filter_lock apm.lock.yaml.bak) >/dev/null 2>&1; then
+            mv apm.lock.yaml.bak apm.lock.yaml
+        else
+            rm apm.lock.yaml.bak
+        fi
+    else
+        mv apm.lock.yaml.bak apm.lock.yaml
+    fi
+fi
+
+# Restore apm.yml if it didn't change (preventing unnecessary mtime updates)
+if [ -f apm.yml.bak ]; then
+    if [ -f apm.yml ]; then
+        if diff apm.yml apm.yml.bak >/dev/null 2>&1; then
+            mv apm.yml.bak apm.yml
+        else
+            rm apm.yml.bak
+        fi
+    else
+        mv apm.yml.bak apm.yml
+    fi
+fi
 
 # 5. Sync the compiled skills to the actual destination (~/.agents/skills)
 mkdir -p "${HOME}/.agents/skills"
