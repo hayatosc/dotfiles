@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-06-02T07:29:59.494121+00:00'
+generated_at: '2026-06-02T16:56:09.218790+00:00'
 apm_version: 0.16.0
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
@@ -13,7 +13,7 @@ dependencies:
   content_hash: sha256:6f666fa7c384d08f10270bd5f5915cf5583164e5b60b59174a5c7eb736cb8de1
 - repo_url: anthropics/skills
   host: github.com
-  resolved_commit: 690f15cac7f7b4c055c5ab109c79ed9259934081
+  resolved_commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
   virtual_path: skills/frontend-design
   is_virtual: true
   package_type: claude_skill
@@ -22,7 +22,7 @@ dependencies:
   content_hash: sha256:063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67
 - repo_url: anthropics/skills
   host: github.com
-  resolved_commit: 690f15cac7f7b4c055c5ab109c79ed9259934081
+  resolved_commit: da20c92503b2e8ff1cf28ca81a0df4673debdbf7
   virtual_path: skills/skill-creator
   is_virtual: true
   package_type: claude_skill
@@ -49,7 +49,7 @@ dependencies:
   content_hash: sha256:8bdf9e4e6de7a4969147bf4828a4ad2c5aacd9fba4b690b250a85e0467ca387d
 - repo_url: openai/skills
   host: github.com
-  resolved_commit: b0401f07213a66414d84a65cb50c1d226f99485a
+  resolved_commit: a8924c2a35cfa290458852c4fad17c9133054c2e
   virtual_path: skills/.curated/gh-address-comments
   is_virtual: true
   package_type: claude_skill
@@ -58,7 +58,7 @@ dependencies:
   content_hash: sha256:068d34fb59cb97a39aea3de1708877b6a01210d02fa7eda5e74fc8277ed52916
 - repo_url: openai/skills
   host: github.com
-  resolved_commit: b0401f07213a66414d84a65cb50c1d226f99485a
+  resolved_commit: a8924c2a35cfa290458852c4fad17c9133054c2e
   virtual_path: skills/.curated/gh-fix-ci
   is_virtual: true
   package_type: claude_skill
@@ -67,16 +67,16 @@ dependencies:
   content_hash: sha256:02b4d97e4bd91e342e3ec3efa06b7871097d6a64e8398f4ed5b69c64d8d902fb
 - repo_url: openclaw/acpx
   host: github.com
-  resolved_commit: fea7ee6e14566df0c9aa23e8949adad8071b5653
+  resolved_commit: 1522159f9fd85695f8cbf7ffb08ac5184fb4e00e
   virtual_path: skills/acpx
   is_virtual: true
   package_type: claude_skill
   deployed_files:
   - .agents/skills/acpx
-  content_hash: sha256:c632a50700da3eaf59e3ee24e592c31f7689d11a7a50b8ef742b9ed6510e37fa
+  content_hash: sha256:319a22fd864dea608a6dd58de4ebbc076c892ef2b0cf082fb332a7541dac3f96
 - repo_url: vercel-labs/agent-browser
   host: github.com
-  resolved_commit: 4ad284890cb59564af603e6de403dd75dd19e832
+  resolved_commit: 90050f2913159875e2c3719e424746396ccb3cbf
   virtual_path: skills/agent-browser
   is_virtual: true
   package_type: claude_skill
@@ -85,7 +85,7 @@ dependencies:
   content_hash: sha256:edad4d958bc4baf821e3391bb9889a03a8bbc0e4d7f54ee4a5f30837654fed83
 - repo_url: vercel-labs/agent-skills
   host: github.com
-  resolved_commit: 180115660cfb8a86b808f117475a01f54caf3bc5
+  resolved_commit: 4ec6f84b61cd3c931046c3e6e398f3ae7de372f7
   virtual_path: skills/web-design-guidelines
   is_virtual: true
   package_type: claude_skill
@@ -94,7 +94,7 @@ dependencies:
   content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
 - repo_url: vercel-labs/skills
   host: github.com
-  resolved_commit: e4243fbf7d9398722024f62850ece90fa0d5c693
+  resolved_commit: b469d6954dd10be20d3e8d9bb59463584d42efbb
   virtual_path: skills/find-skills
   is_virtual: true
   package_type: claude_skill
@@ -110,13 +110,3 @@ dependencies:
   deployed_files:
   - .agents/skills/vue-best-practices
   content_hash: sha256:90980085ec288dd0a3326fc09af639a5e88cff74c15c77db84398fd42797a770
-local_deployed_files:
-- .agents/skills/article-review
-- .agents/skills/askmeplan
-- .agents/skills/ast-grep
-- .agents/skills/empirical-prompt-tuning
-- .agents/skills/golang-best-practices
-- .agents/skills/refactoring-code
-- .agents/skills/self-ship
-- .agents/skills/typescript-best-practices
-- .agents/skills/typescript-recommend-tools
