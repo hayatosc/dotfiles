@@ -9,6 +9,7 @@ on:
       - home/dot_config/mise/config.toml
       - home/dot_config/mise/mise.lock
       - .github/workflows/mise-check.yml
+      - .github/scripts/mise-changed-specs.ts
 
 permissions:
   contents: read
@@ -33,69 +34,11 @@ jobs:
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
-          specs=$(python3 - <<'PY'
-          import os, subprocess, tomllib
-
-          def load(ref):
-              r = subprocess.run(
-                  ["git", "show", f"{ref}:home/dot_config/mise/config.toml"],
-                  capture_output=True,
-              )
-              return tomllib.loads(r.stdout.decode()).get("tools", {}) if r.returncode == 0 else {}
-
-          def ver(v):
-              if v is None:
-                  return None
-              return v if isinstance(v, str) else v.get("version")
-
-          base, head = load(os.environ["BASE_SHA"]), load("HEAD")
-          print("\n".join(f"{k}@{ver(v)}" for k, v in head.items() if ver(v) != ver(base.get(k))))
-          PY
-          )
-
+          specs=$(mise exec bun -- bun .github/scripts/mise-changed-specs.ts)
           if [ -z "$specs" ]; then
-            # config.toml の変更がなくても mise.lock だけ更新される Renovate PR (lockFileMaintenance 等) があるため、
-            # lock の差分から影響ツールを抽出してインストール検証する
-            specs=$(python3 - <<'PY'
-            import os
-            import re
-            import subprocess
-            import tomllib
-            from pathlib import Path
-
-            base_sha = os.environ["BASE_SHA"]
-            diff = subprocess.run(
-                ["git", "diff", f"{base_sha}..HEAD", "--", "home/dot_config/mise/mise.lock"],
-                capture_output=True,
-                text=True,
-            ).stdout
-
-            names = set()
-            for line in diff.splitlines():
-                if not line.startswith(("+", "-")):
-                    continue
-                m = re.match(r'^[+-]\[\[tools\."([^"]+)"\]\]', line) or re.match(r'^[+-]\[tools\."([^"]+)"\.', line)
-                if m:
-                    names.add(m.group(1))
-
-            cfg = tomllib.loads(Path("home/dot_config/mise/config.toml").read_text(encoding="utf-8")).get("tools", {})
-
-            def ver(v):
-                if v is None:
-                    return None
-                return v if isinstance(v, str) else v.get("version")
-
-            specs = [f"{k}@{ver(cfg.get(k))}" for k in sorted(names) if ver(cfg.get(k))]
-            print("\n".join(specs))
-            PY
-            )
-
-            if [ -z "$specs" ]; then
-              echo "config.toml にツールのバージョン変更なし。インストール検証はスキップします。"
-              exit 0
-            fi
+            echo "変更されたツールなし。インストール検証はスキップします。"
+            exit 0
           fi
-
           echo "変更されたツールをインストールして検証します:"
           echo "$specs"
           mise install $specs
