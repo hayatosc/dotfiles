@@ -68,38 +68,6 @@ url = "https://github.com/github/copilot-cli/releases/download/v1.0.57/copilot-w
 version = "1.0.4"
 backend = "aqua:google-antigravity/antigravity-cli"
 
-[[tools."aqua:google.com/antigravity-cli"]]
-version = "1.0.4-6410134369468416"
-backend = "aqua:google.com/antigravity-cli"
-
-[tools."aqua:google.com/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha512:cfbbec3cfefc18de3f0d57bc71c28193a6e804e2ba1c6c319db67ef7ce18201380906cba424b4cbbe0786efd574e2c9677a3434dcb106cd29314015513925a41"
-url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.4-6410134369468416/linux-arm/cli_linux_arm64.tar.gz"
-
-[tools."aqua:google.com/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha512:cfbbec3cfefc18de3f0d57bc71c28193a6e804e2ba1c6c319db67ef7ce18201380906cba424b4cbbe0786efd574e2c9677a3434dcb106cd29314015513925a41"
-url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.4-6410134369468416/linux-arm/cli_linux_arm64.tar.gz"
-
-[tools."aqua:google.com/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha512:fd95930b06384ed4b5672d1a8f32041ccd9686630187d981db7172180a2a0bb77ec63a887adc66291d2bcb50ff5b08a4996b9cbacc589c56c861c40209d57f10"
-url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.4-6410134369468416/linux-x64/cli_linux_x64.tar.gz"
-
-[tools."aqua:google.com/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha512:fd95930b06384ed4b5672d1a8f32041ccd9686630187d981db7172180a2a0bb77ec63a887adc66291d2bcb50ff5b08a4996b9cbacc589c56c861c40209d57f10"
-url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.4-6410134369468416/linux-x64/cli_linux_x64.tar.gz"
-
-[tools."aqua:google.com/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha512:7f72c8a31da304111468f43023e3c611b9b1035955a9155e5fc0fa770830976e2a23785e15f03041831b044fef2eec23bdbfa2394b39f6cd541d9e449da1c7db"
-url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.4-6410134369468416/darwin-arm/cli_mac_arm64.tar.gz"
-
-[tools."aqua:google.com/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha512:1acce9221efc36d1470b1c5faef0358df1b0fa848aa51661617551145da575c5244855c89ec26c94652a1d7634cc91376da0a41be5b5cac94ace5f9c1ae640e0"
-url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.4-6410134369468416/darwin-x64/cli_mac_x64.tar.gz"
-
-[tools."aqua:google.com/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha512:e3b5f571aaf4730949a58322f15663c8a7828355a52ecffeb21447cb8defa17f71239e2cf83d2a38ee52db5960e82d2b9bcee8f1adfdf7618efe1cb26c2c385f"
-url = "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.0.4-6410134369468416/windows-x64/cli_windows_x64.exe"
-
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.28.0"
 backend = "aqua:k1LoW/git-wt"

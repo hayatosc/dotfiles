@@ -1,0 +1,44 @@
+name: mise install check
+
+# Renovate が更新した mise ツールが実際にインストールできるか検証する。
+# このチェックが green になると Renovate が自動マージする (renovate.json5)。
+
+on:
+  pull_request:
+    paths:
+      - home/dot_config/mise/config.toml
+      - home/dot_config/mise/mise.lock
+      - .github/workflows/mise-check.yml
+      - .github/scripts/mise-changed-specs.ts
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    env:
+      # chezmoi のソースパスにある mise 設定を global config として使わせる
+      MISE_GLOBAL_CONFIG_FILE: ${{ github.workspace }}/home/dot_config/mise/config.toml
+      MISE_EXPERIMENTAL: "1"
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: jdx/mise-action@v4
+        with:
+          install: false
+
+      - name: Install changed tools
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          specs=$(mise exec bun -- bun .github/scripts/mise-changed-specs.ts)
+          if [ -z "$specs" ]; then
+            echo "変更されたツールなし。インストール検証はスキップします。"
+            exit 0
+          fi
+          echo "変更されたツールをインストールして検証します:"
+          echo "$specs"
+          mise install $specs
