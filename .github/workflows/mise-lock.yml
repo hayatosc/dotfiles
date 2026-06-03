@@ -13,7 +13,7 @@ on:
     paths:
       - home/dot_config/mise/config.toml
       - .github/workflows/mise-lock.yml
-      - .github/scripts/commit-via-graphql.sh
+      - .github/scripts/commit-via-graphql.ts
 
 permissions:
   contents: write
@@ -54,4 +54,4 @@ jobs:
           MESSAGE: "chore(mise): update mise.lock"
           REGENERATE_CMD: |
             ( cd home/dot_config/mise && rm -f mise.lock && mise lock )
-        run: bash .github/scripts/commit-via-graphql.sh
+        run: mise exec bun -- bun .github/scripts/commit-via-graphql.ts
