@@ -6,4 +6,9 @@
   mise: {
     managerFilePatterns: ["/^home/dot_config/mise/config\\.toml$/"],
   },
+  // バージョンバンプ時は同じ PR で mise.lock を更新し、加えて定期的にロックファイルを再生成する
+  // (Renovate が binarySource=install で mise を実行時インストールして lock を更新する)
+  lockFileMaintenance: {
+    enabled: true,
+  },
 }
