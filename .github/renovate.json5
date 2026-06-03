@@ -1,25 +1,17 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["config:recommended"],
-  // mise の settings.minimum_release_age = "3d" に合わせ、リリースから3日経過した
-  // バージョンのみ更新対象にする
+  silent: false,
   minimumReleaseAge: "3 days",
-  // CI (mise install チェック) の成否で自動マージを判断させるため、GitHub のネイティブ
-  // 自動マージ (要ブランチ保護) ではなく Renovate 自身のマージ機能を使う。
-  // これによりステータスチェックが green になるまでマージされない。
   platformAutomerge: false,
-  // chezmoi のソースパスにある mise 設定を Renovate の mise マネージャの対象にする
-  // (デフォルトの mise.toml / .config/mise/config.toml などには一致しないため追加)
   mise: {
     managerFilePatterns: ["^home/dot_config/mise/config\\.toml$"],
   },
-  // バージョンバンプ時は同じ PR で mise.lock を更新し、加えて定期的にロックファイルを再生成する
-  // (Renovate が binarySource=install で mise を実行時インストールして lock を更新する)
+  // lockfileも入れるようにする
   lockFileMaintenance: {
     enabled: true,
   },
   packageRules: [
-    // マイナー / パッチ更新は自動マージ。メジャー更新は PR を出すだけ (自動マージしない)
     {
       matchUpdateTypes: ["minor", "patch"],
       automerge: true,
