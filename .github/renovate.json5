@@ -11,4 +11,11 @@
   lockFileMaintenance: {
     enabled: true,
   },
+  packageRules: [
+    // マイナー / パッチ更新は自動マージ。メジャー更新は PR を出すだけ (自動マージしない)
+    {
+      matchUpdateTypes: ["minor", "patch"],
+      automerge: true,
+    },
+  ],
 }
