@@ -1,0 +1,63 @@
+name: mise install check
+
+# Renovate が更新した mise ツールが実際にインストールできるか検証する。
+# このチェックが green になると Renovate が自動マージする (renovate.json5)。
+
+on:
+  pull_request:
+    paths:
+      - home/dot_config/mise/config.toml
+      - home/dot_config/mise/mise.lock
+      - .github/workflows/mise-check.yml
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    env:
+      # chezmoi のソースパスにある mise 設定を global config として使わせる
+      MISE_GLOBAL_CONFIG_FILE: ${{ github.workspace }}/home/dot_config/mise/config.toml
+      MISE_EXPERIMENTAL: "1"
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: jdx/mise-action@v3
+        with:
+          install: false
+
+      - name: Install changed tools
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          specs=$(python3 - <<'PY'
+          import os, subprocess, tomllib
+
+          def load(ref):
+              r = subprocess.run(
+                  ["git", "show", f"{ref}:home/dot_config/mise/config.toml"],
+                  capture_output=True,
+              )
+              return tomllib.loads(r.stdout.decode()).get("tools", {}) if r.returncode == 0 else {}
+
+          def ver(v):
+              if v is None:
+                  return None
+              return v if isinstance(v, str) else v.get("version")
+
+          base, head = load(os.environ["BASE_SHA"]), load("HEAD")
+          print("\n".join(f"{k}@{ver(v)}" for k, v in head.items() if ver(v) != ver(base.get(k))))
+          PY
+          )
+
+          if [ -z "$specs" ]; then
+            echo "config.toml にツールのバージョン変更なし。インストール検証はスキップします。"
+            exit 0
+          fi
+
+          echo "変更されたツールをインストールして検証します:"
+          echo "$specs"
+          mise install $specs
