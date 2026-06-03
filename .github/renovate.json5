@@ -1,0 +1,9 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["config:recommended"],
+  // chezmoi のソースパスにある mise 設定を Renovate の mise マネージャの対象にする
+  // (デフォルトの mise.toml / .config/mise/config.toml などには一致しないため追加)
+  mise: {
+    managerFilePatterns: ["/^home/dot_config/mise/config\\.toml$/"],
+  },
+}
