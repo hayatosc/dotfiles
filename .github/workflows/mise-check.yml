@@ -54,8 +54,46 @@ jobs:
           )
 
           if [ -z "$specs" ]; then
-            echo "config.toml にツールのバージョン変更なし。インストール検証はスキップします。"
-            exit 0
+            # config.toml の変更がなくても mise.lock だけ更新される Renovate PR (lockFileMaintenance 等) があるため、
+            # lock の差分から影響ツールを抽出してインストール検証する
+            specs=$(python3 - <<'PY'
+            import os
+            import re
+            import subprocess
+            import tomllib
+            from pathlib import Path
+
+            base_sha = os.environ["BASE_SHA"]
+            diff = subprocess.run(
+                ["git", "diff", f"{base_sha}..HEAD", "--", "home/dot_config/mise/mise.lock"],
+                capture_output=True,
+                text=True,
+            ).stdout
+
+            names = set()
+            for line in diff.splitlines():
+                if not line.startswith(("+", "-")):
+                    continue
+                m = re.match(r'^[+-]\[\[tools\."([^"]+)"\]\]', line) or re.match(r'^[+-]\[tools\."([^"]+)"\.', line)
+                if m:
+                    names.add(m.group(1))
+
+            cfg = tomllib.loads(Path("home/dot_config/mise/config.toml").read_text(encoding="utf-8")).get("tools", {})
+
+            def ver(v):
+                if v is None:
+                    return None
+                return v if isinstance(v, str) else v.get("version")
+
+            specs = [f"{k}@{ver(cfg.get(k))}" for k in sorted(names) if ver(cfg.get(k))]
+            print("\n".join(specs))
+            PY
+            )
+
+            if [ -z "$specs" ]; then
+              echo "config.toml にツールのバージョン変更なし。インストール検証はスキップします。"
+              exit 0
+            fi
           fi
 
           echo "変更されたツールをインストールして検証します:"
