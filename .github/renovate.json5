@@ -7,10 +7,15 @@
   mise: {
     managerFilePatterns: ["^home/dot_config/mise/config\\.toml$"],
   },
-  // lockfileも入れるようにする
+  // Mend ホスト型では mise config を trust できず Renovate 内の `mise lock` が
+  // 失敗する (mise 子プロセスに CI / MISE_TRUSTED_CONFIG_PATHS を渡せないため)。
+  // 代わりに mise.lock は専用ワークフロー (.github/workflows/mise-lock.yml) が
+  // PR ブランチ上で再生成・コミットする。Renovate 自身には lock を触らせない。
   lockFileMaintenance: {
-    enabled: true,
+    enabled: false,
   },
+  // Renovate 内の `mise lock` 失敗の artifact エラー通知 (PR コメント / Issue) を抑制する。
+  suppressNotifications: ["artifactErrors"],
   packageRules: [
     {
       matchUpdateTypes: ["minor", "patch"],
