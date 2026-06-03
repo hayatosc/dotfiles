@@ -22,7 +22,7 @@ jobs:
       MISE_GLOBAL_CONFIG_FILE: ${{ github.workspace }}/home/dot_config/mise/config.toml
       MISE_EXPERIMENTAL: "1"
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
