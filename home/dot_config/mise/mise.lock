@@ -3323,7 +3323,6 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.159/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "blake3:7417a4db1190d7911f06fad09e2718a1552122e7bc2adda21cc945a59d833e4f"
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.159/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
@@ -4255,17 +4254,7 @@ checksum = "sha256:f009abe3a3dfb4976638b71ea18a1abd85d05313ceca4f203d91e111e4c13
 url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846515"
 
-[tools."github:babarot/gomi"."platforms.linux-x64-baseline"]
-checksum = "sha256:f009abe3a3dfb4976638b71ea18a1abd85d05313ceca4f203d91e111e4c1319f"
-url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846515"
-
 [tools."github:babarot/gomi"."platforms.linux-x64-musl"]
-checksum = "sha256:f009abe3a3dfb4976638b71ea18a1abd85d05313ceca4f203d91e111e4c1319f"
-url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846515"
-
-[tools."github:babarot/gomi"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:f009abe3a3dfb4976638b71ea18a1abd85d05313ceca4f203d91e111e4c1319f"
 url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846515"
@@ -4280,17 +4269,7 @@ checksum = "sha256:66a0c5cc9b308b8d3b5100e9431b530c7f16d54c1994d6255dbf2f48037d4
 url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Darwin_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846526"
 
-[tools."github:babarot/gomi"."platforms.macos-x64-baseline"]
-checksum = "sha256:66a0c5cc9b308b8d3b5100e9431b530c7f16d54c1994d6255dbf2f48037d453d"
-url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Darwin_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846526"
-
 [tools."github:babarot/gomi"."platforms.windows-x64"]
-checksum = "sha256:892bb1a8660b850cb476dc5e8ae94607b01ab16059859253dd5822c9b55fbca2"
-url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Windows_x86_64.zip"
-url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846517"
-
-[tools."github:babarot/gomi"."platforms.windows-x64-baseline"]
 checksum = "sha256:892bb1a8660b850cb476dc5e8ae94607b01ab16059859253dd5822c9b55fbca2"
 url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Windows_x86_64.zip"
 url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846517"
@@ -4335,43 +4314,43 @@ url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112583"
 
 [[tools."github:microsoft/apm"]]
-version = "0.16.0"
+version = "0.16.1"
 backend = "github:microsoft/apm"
 
 [tools."github:microsoft/apm"."platforms.linux-arm64"]
-checksum = "sha256:b30c8a48a47bab0416df47f3e017075fbb44999721e2a76d4ada20e99db49999"
-url = "https://github.com/microsoft/apm/releases/download/v0.16.0/apm-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/432088194"
+checksum = "sha256:c41bad9fcc55180295fd7efc54a088543ee9498cb8934344916fc9bd3609d797"
+url = "https://github.com/microsoft/apm/releases/download/v0.16.1/apm-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/435453765"
 
 [tools."github:microsoft/apm"."platforms.linux-arm64-musl"]
-checksum = "sha256:b30c8a48a47bab0416df47f3e017075fbb44999721e2a76d4ada20e99db49999"
-url = "https://github.com/microsoft/apm/releases/download/v0.16.0/apm-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/432088194"
+checksum = "sha256:c41bad9fcc55180295fd7efc54a088543ee9498cb8934344916fc9bd3609d797"
+url = "https://github.com/microsoft/apm/releases/download/v0.16.1/apm-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/435453765"
 
 [tools."github:microsoft/apm"."platforms.linux-x64"]
-checksum = "sha256:2b6ace79257328a9599b2569f4751e5e372e21aeada9e90b423d51df95f24f4d"
-url = "https://github.com/microsoft/apm/releases/download/v0.16.0/apm-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/432088197"
+checksum = "sha256:7e3c7aae3972398885d85edfaeb4134ff06d79c9ff63d161873e3407e8a7729c"
+url = "https://github.com/microsoft/apm/releases/download/v0.16.1/apm-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/435453760"
 
 [tools."github:microsoft/apm"."platforms.linux-x64-musl"]
-checksum = "sha256:2b6ace79257328a9599b2569f4751e5e372e21aeada9e90b423d51df95f24f4d"
-url = "https://github.com/microsoft/apm/releases/download/v0.16.0/apm-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/432088197"
+checksum = "sha256:7e3c7aae3972398885d85edfaeb4134ff06d79c9ff63d161873e3407e8a7729c"
+url = "https://github.com/microsoft/apm/releases/download/v0.16.1/apm-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/435453760"
 
 [tools."github:microsoft/apm"."platforms.macos-arm64"]
-checksum = "sha256:f990cca0396658807622e03f23c4e801b1f9dfbf9c06503e0ae77516c514c701"
-url = "https://github.com/microsoft/apm/releases/download/v0.16.0/apm-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/432088191"
+checksum = "sha256:57771452f017aba208351ab1d0b384273c463faf2bb4516c94eba422a4fe028d"
+url = "https://github.com/microsoft/apm/releases/download/v0.16.1/apm-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/435453764"
 
 [tools."github:microsoft/apm"."platforms.macos-x64"]
-checksum = "sha256:4abb16fe99bc6954ae64305f2da7ff2e984ba39b50e643ddd324e4aa23dc6797"
-url = "https://github.com/microsoft/apm/releases/download/v0.16.0/apm-darwin-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/432088198"
+checksum = "sha256:96f04ea961ea0bf3885906fb6475695347a6de5d6ff2c46d3e641453e7c68ae9"
+url = "https://github.com/microsoft/apm/releases/download/v0.16.1/apm-darwin-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/435453766"
 
 [tools."github:microsoft/apm"."platforms.windows-x64"]
-checksum = "sha256:74dbd4b0cca1c3d2d9e5d4ba3b02c6ce30046a7dd2b97a9cc951e7afe78d661d"
-url = "https://github.com/microsoft/apm/releases/download/v0.16.0/apm-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/432088199"
+checksum = "sha256:35ca70b778a5f2d1201f5dc034b183dc46b281e454ccb027cbbe18d1f156fe08"
+url = "https://github.com/microsoft/apm/releases/download/v0.16.1/apm-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/435453767"
 
 [[tools."github:sinelaw/fresh"]]
 version = "0.3.10"
@@ -5307,37 +5286,26 @@ backend = "aqua:rtk-ai/rtk"
 [tools.rtk."platforms.linux-arm64"]
 checksum = "sha256:62bb749df1ed64f09149998c31de864932f047a1be4e0f882a8ceada849e0871"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637339"
-
-[tools.rtk."platforms.linux-arm64-musl"]
-checksum = "sha256:62bb749df1ed64f09149998c31de864932f047a1be4e0f882a8ceada849e0871"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637339"
 
 [tools.rtk."platforms.linux-x64"]
 checksum = "sha256:cdd4f87ac97ce958f71b53a991880d6adcc41cc5bca1044175a64630980152be"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637341"
 
 [tools.rtk."platforms.linux-x64-musl"]
 checksum = "sha256:cdd4f87ac97ce958f71b53a991880d6adcc41cc5bca1044175a64630980152be"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637341"
 
 [tools.rtk."platforms.macos-arm64"]
 checksum = "sha256:cddc9cd11cdf80b3342eebaba0e6ab26d9c8dec45295ea44cf98062987185724"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637345"
 
 [tools.rtk."platforms.macos-x64"]
 checksum = "sha256:3b1b9f13548599ae9d920f5e3169cc402db1930044ea24e0be4e236b7f072a99"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637340"
 
 [tools.rtk."platforms.windows-x64"]
 checksum = "sha256:527552ec419988ff4a862415ba28d5aa7c1148ef3dc926ae11a4c133e63a7491"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637344"
 
 [[tools.rust]]
 version = "1.96.0"
