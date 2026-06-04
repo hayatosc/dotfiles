@@ -8,7 +8,7 @@
   // この bot commit を「人間の手編集」とみなすと Renovate の rebase/automerge が止まるため、
   // Renovate PR 上では無視させる。
   gitIgnoredAuthors: [
-    "hayatosc-dotfiles-bot[bot] <290341541+hayatosc-dotfiles-bot[bot]@users.noreply.github.com>",
+    "290341541+hayatosc-dotfiles-bot[bot]@users.noreply.github.com",
   ],
   mise: {
     managerFilePatterns: ["^home/dot_config/mise/config\\.toml$"],
