@@ -35,6 +35,7 @@ This file lists mandatory rules for all agents working in this repository.
 	- ls -> eza --icons
 	- find -> fd
 	- cd -> z (zoxide)
+	- rm -> gomi
 - Use [ni](https://github.com/antfu-collective/ni) for all package manager operations; do not use npm/yarn/pnpm/bun/deno command directly as possible
 	- alias -> na
 	- install -> ni

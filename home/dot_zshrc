@@ -10,6 +10,7 @@ alias cat="bat"
 alias ls="eza --icons"
 alias find="fd"
 alias cd="z"
+alias rm="gomi"
 
 for zshrc_file in ~/.config/zsh/rc.d/*.zsh(.N); do
   source "$zshrc_file"

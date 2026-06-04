@@ -9,13 +9,7 @@
       "Bash(chmod 777 *)",
       "Bash(npm install -g *)",
       "Bash(git config *)",
-      "Bash(gh repo delete:*)",
-      "Bash(rm *)"
-    ],
-    "ask": [
-      "Bash(git commit *)",
-      "Bash(git push *)",
-      "Bash(git rebase *)"
+      "Bash(gh repo delete:*)"
     ],
     "defaultMode": "auto"
   },

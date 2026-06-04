@@ -3323,6 +3323,7 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.159/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
+checksum = "blake3:7417a4db1190d7911f06fad09e2718a1552122e7bc2adda21cc945a59d833e4f"
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.159/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
@@ -3946,8 +3947,8 @@ conda_deps = [
 ]
 
 [tools."conda:ffmpeg"."platforms.windows-x64"]
-checksum = "sha256:8b3a902ea5924cd4a3ea30ee27b8052fa8a1079b3f209edbb1393f277b6e0711"
-url = "https://conda.anaconda.org/conda-forge/win-64/ffmpeg-8.1.1-gpl_h7d7abef_902.conda"
+checksum = "sha256:d4c84b11244c3c6b9dcc26449d4195864d83b6227e2237f09e4f98ba520a875d"
+url = "https://conda.anaconda.org/conda-forge/win-64/ffmpeg-8.1.1-gpl_h7d7abef_903.conda"
 conda_deps = [
     "x265-3.5-h2d74725_3",
     "svt-av1-4.0.1-hac47afa_0",
@@ -3957,25 +3958,25 @@ conda_deps = [
     "libzlib-1.3.2-hfd05255_2",
     "libwebp-base-1.6.0-h4d5522a_0",
     "libvulkan-loader-1.4.341.0-h477610d_0",
+    "librsvg-2.62.3-h15cfe45_0",
     "libopus-1.6.1-h6a83c73_0",
     "liblzma-5.8.3-hfd05255_0",
     "libfreetype6-2.14.3-hdbac1cb_0",
     "libfreetype-2.14.3-h57928b3_0",
     "libexpat-2.8.1-hac47afa_0",
+    "harfbuzz-14.2.1-h5a1b470_0",
     "fonts-conda-ecosystem-1-0",
+    "fontconfig-2.18.1-hd47e2ca_0",
     "dav1d-1.2.1-hcfcfb64_0",
     "aom-3.9.1-he0c23c2_0",
-    "bzip2-1.0.8-h0ad9c76_9",
-    "fontconfig-2.18.1-hd47e2ca_0",
-    "harfbuzz-14.2.1-h5a1b470_0",
+    "gdk-pixbuf-2.44.6-h1f5b9c4_0",
     "icu-78.3-h637d24d_0",
     "cairo-1.18.4-h477c42c_1",
+    "bzip2-1.0.8-h0ad9c76_9",
     "lame-3.100-hcfcfb64_1003",
     "libiconv-1.18-hc1393d2_2",
     "libjxl-0.11.2-h932607e_1",
     "libhwy-1.4.0-h172a326_0",
-    "librsvg-2.62.3-h15cfe45_0",
-    "gdk-pixbuf-2.44.6-h1f5b9c4_0",
     "libvorbis-1.3.7-h5112557_2",
     "libxml2-2.15.3-h8ef44ab_0",
     "libxml2-16-2.15.3-h3cfd58e_0",
@@ -4234,6 +4235,65 @@ url = "https://github.com/x-motemen/ghq/releases/download/v1.10.1/ghq_darwin_amd
 [tools.ghq."platforms.windows-x64"]
 checksum = "sha256:a526da44d5f67250598fa95e5654815e9f672b2c05d1d98c28bce0e60d3cfa6c"
 url = "https://github.com/x-motemen/ghq/releases/download/v1.10.1/ghq_windows_amd64.zip"
+
+[[tools."github:babarot/gomi"]]
+version = "1.6.3"
+backend = "github:babarot/gomi"
+
+[tools."github:babarot/gomi"."platforms.linux-arm64"]
+checksum = "sha256:7f132fd7204af17a0ca6c0334bf7127e61a3a7e51b1f40203e7e944e5bd014bc"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846523"
+
+[tools."github:babarot/gomi"."platforms.linux-arm64-musl"]
+checksum = "sha256:7f132fd7204af17a0ca6c0334bf7127e61a3a7e51b1f40203e7e944e5bd014bc"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846523"
+
+[tools."github:babarot/gomi"."platforms.linux-x64"]
+checksum = "sha256:f009abe3a3dfb4976638b71ea18a1abd85d05313ceca4f203d91e111e4c1319f"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846515"
+
+[tools."github:babarot/gomi"."platforms.linux-x64-baseline"]
+checksum = "sha256:f009abe3a3dfb4976638b71ea18a1abd85d05313ceca4f203d91e111e4c1319f"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846515"
+
+[tools."github:babarot/gomi"."platforms.linux-x64-musl"]
+checksum = "sha256:f009abe3a3dfb4976638b71ea18a1abd85d05313ceca4f203d91e111e4c1319f"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846515"
+
+[tools."github:babarot/gomi"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:f009abe3a3dfb4976638b71ea18a1abd85d05313ceca4f203d91e111e4c1319f"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846515"
+
+[tools."github:babarot/gomi"."platforms.macos-arm64"]
+checksum = "sha256:aed023b1e6561903bbfcf22a7900cbf40199615af8f820e3a472cdd3b965ef3a"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846519"
+
+[tools."github:babarot/gomi"."platforms.macos-x64"]
+checksum = "sha256:66a0c5cc9b308b8d3b5100e9431b530c7f16d54c1994d6255dbf2f48037d453d"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Darwin_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846526"
+
+[tools."github:babarot/gomi"."platforms.macos-x64-baseline"]
+checksum = "sha256:66a0c5cc9b308b8d3b5100e9431b530c7f16d54c1994d6255dbf2f48037d453d"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Darwin_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846526"
+
+[tools."github:babarot/gomi"."platforms.windows-x64"]
+checksum = "sha256:892bb1a8660b850cb476dc5e8ae94607b01ab16059859253dd5822c9b55fbca2"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Windows_x86_64.zip"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846517"
+
+[tools."github:babarot/gomi"."platforms.windows-x64-baseline"]
+checksum = "sha256:892bb1a8660b850cb476dc5e8ae94607b01ab16059859253dd5822c9b55fbca2"
+url = "https://github.com/babarot/gomi/releases/download/v1.6.3/gomi_Windows_x86_64.zip"
+url_api = "https://api.github.com/repos/babarot/gomi/releases/assets/377846517"
 
 [[tools."github:hayatosc/git-cx"]]
 version = "0.2.0"
@@ -5247,26 +5307,37 @@ backend = "aqua:rtk-ai/rtk"
 [tools.rtk."platforms.linux-arm64"]
 checksum = "sha256:62bb749df1ed64f09149998c31de864932f047a1be4e0f882a8ceada849e0871"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637339"
+
+[tools.rtk."platforms.linux-arm64-musl"]
+checksum = "sha256:62bb749df1ed64f09149998c31de864932f047a1be4e0f882a8ceada849e0871"
+url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637339"
 
 [tools.rtk."platforms.linux-x64"]
 checksum = "sha256:cdd4f87ac97ce958f71b53a991880d6adcc41cc5bca1044175a64630980152be"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637341"
 
 [tools.rtk."platforms.linux-x64-musl"]
 checksum = "sha256:cdd4f87ac97ce958f71b53a991880d6adcc41cc5bca1044175a64630980152be"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637341"
 
 [tools.rtk."platforms.macos-arm64"]
 checksum = "sha256:cddc9cd11cdf80b3342eebaba0e6ab26d9c8dec45295ea44cf98062987185724"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637345"
 
 [tools.rtk."platforms.macos-x64"]
 checksum = "sha256:3b1b9f13548599ae9d920f5e3169cc402db1930044ea24e0be4e236b7f072a99"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637340"
 
 [tools.rtk."platforms.windows-x64"]
 checksum = "sha256:527552ec419988ff4a862415ba28d5aa7c1148ef3dc926ae11a4c133e63a7491"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/428637344"
 
 [[tools.rust]]
 version = "1.96.0"
