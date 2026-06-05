@@ -12,6 +12,10 @@ checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_0.conda"
 checksum = "sha256:722a24bb4a2faabcedf694ae494393e6f9b698dddbf0782fb0dcd7bfcc0c2027"
 
+[conda-packages.linux-arm64."aom-3.14.1-pl5321h8fffa31_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_0.conda"
+checksum = "sha256:8ebfe18b9bd94902a28a751aa0f5ec56c4edd0b19d7516ff500953d554c71d8e"
+
 [conda-packages.linux-arm64."aom-3.9.1-hcccb83c_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.9.1-hcccb83c_0.conda"
 checksum = "sha256:ac438ce5d3d3673a9188b535fc7cda413b479f0d52536aeeac1bd82faa656ea0"
@@ -676,6 +680,10 @@ checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_0.conda"
 checksum = "sha256:722a24bb4a2faabcedf694ae494393e6f9b698dddbf0782fb0dcd7bfcc0c2027"
 
+[conda-packages.linux-arm64-musl."aom-3.14.1-pl5321h8fffa31_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_0.conda"
+checksum = "sha256:8ebfe18b9bd94902a28a751aa0f5ec56c4edd0b19d7516ff500953d554c71d8e"
+
 [conda-packages.linux-arm64-musl."aom-3.9.1-hcccb83c_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.9.1-hcccb83c_0.conda"
 checksum = "sha256:ac438ce5d3d3673a9188b535fc7cda413b479f0d52536aeeac1bd82faa656ea0"
@@ -1339,6 +1347,10 @@ checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501
 [conda-packages.linux-x64."alsa-lib-1.2.16-hb03c661_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_0.conda"
 checksum = "sha256:64484cb7e7cf65d9c7188498d595125a6e0751604dd7fb483e1bb327eec0f738"
+
+[conda-packages.linux-x64."aom-3.14.1-pl5321h039972f_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_0.conda"
+checksum = "sha256:9a2636576e767510f8f668a7953251bfbbe17aea0fdccf33d54c9aa230078de7"
 
 [conda-packages.linux-x64."aom-3.9.1-hac33072_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.9.1-hac33072_0.conda"
@@ -2044,6 +2056,10 @@ checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501
 url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_0.conda"
 checksum = "sha256:64484cb7e7cf65d9c7188498d595125a6e0751604dd7fb483e1bb327eec0f738"
 
+[conda-packages.linux-x64-musl."aom-3.14.1-pl5321h039972f_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_0.conda"
+checksum = "sha256:9a2636576e767510f8f668a7953251bfbbe17aea0fdccf33d54c9aa230078de7"
+
 [conda-packages.linux-x64-musl."aom-3.9.1-hac33072_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.9.1-hac33072_0.conda"
 checksum = "sha256:b08ef033817b5f9f76ce62dfcac7694e7b6b4006420372de22494503decac855"
@@ -2736,9 +2752,9 @@ checksum = "sha256:245c9ee8d688e23661b95e3c6dd7272ca936fabc03d423cdb3cdee1bbcf9f
 url = "https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_6.conda"
 checksum = "sha256:68f0206ca6e98fea941e5717cec780ed2873ffabc0e1ed34428c061e2c6268c7"
 
-[conda-packages.windows-x64."aom-3.9.1-he0c23c2_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/aom-3.9.1-he0c23c2_0.conda"
-checksum = "sha256:0524d0c0b61dacd0c22ac7a8067f977b1d52380210933b04141f5099c5b6fec7"
+[conda-packages.windows-x64."aom-3.14.1-pl5321h06fc181_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/aom-3.14.1-pl5321h06fc181_0.conda"
+checksum = "sha256:114f7f87337af0c438dbd33c080d300aabb791360b0e4ad809186e9464542514"
 
 [conda-packages.windows-x64."bzip2-1.0.8-h0ad9c76_9"]
 url = "https://conda.anaconda.org/conda-forge/win-64/bzip2-1.0.8-h0ad9c76_9.conda"
@@ -3406,8 +3422,8 @@ backend = "conda:ffmpeg"
 channel = "conda-forge"
 
 [tools."conda:ffmpeg"."platforms.linux-arm64"]
-checksum = "sha256:0c367099aab698cc1b169385ade96610cfafc45fe6b647ddb64176556a1b16fc"
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ffmpeg-8.1.1-gpl_hf0333a9_903.conda"
+checksum = "sha256:5d50fac41e33f43144fccc32fadf84eff748b7397cf7fb2bebbce54413448762"
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ffmpeg-8.1.1-gpl_hef17b83_904.conda"
 conda_deps = [
     "xorg-libx11-1.8.13-h63a1b12_0",
     "svt-av1-4.0.1-hfae3067_0",
@@ -3442,7 +3458,7 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
-    "aom-3.9.1-hcccb83c_0",
+    "aom-3.14.1-pl5321h8fffa31_0",
     "alsa-lib-1.2.16-he30d5cf_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "gdk-pixbuf-2.44.6-h90308e0_0",
@@ -3536,8 +3552,8 @@ conda_deps = [
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-arm64-musl"]
-checksum = "sha256:0c367099aab698cc1b169385ade96610cfafc45fe6b647ddb64176556a1b16fc"
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ffmpeg-8.1.1-gpl_hf0333a9_903.conda"
+checksum = "sha256:5d50fac41e33f43144fccc32fadf84eff748b7397cf7fb2bebbce54413448762"
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ffmpeg-8.1.1-gpl_hef17b83_904.conda"
 conda_deps = [
     "xorg-libx11-1.8.13-h63a1b12_0",
     "svt-av1-4.0.1-hfae3067_0",
@@ -3572,7 +3588,7 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
-    "aom-3.9.1-hcccb83c_0",
+    "aom-3.14.1-pl5321h8fffa31_0",
     "alsa-lib-1.2.16-he30d5cf_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "gdk-pixbuf-2.44.6-h90308e0_0",
@@ -3666,8 +3682,8 @@ conda_deps = [
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-x64"]
-checksum = "sha256:a75b78ff3ee58ccf4d71e880a7ae06a299db28e5de5116d2c7552aa644bc1144"
-url = "https://conda.anaconda.org/conda-forge/linux-64/ffmpeg-8.1.1-gpl_h9330d3b_903.conda"
+checksum = "sha256:d9064d5f8575e4f7b6a2c73718f4d4b8986808d8a92eabc5f6b50d5a2fbb18ec"
+url = "https://conda.anaconda.org/conda-forge/linux-64/ffmpeg-8.1.1-gpl_h6d6c1bd_904.conda"
 conda_deps = [
     "xorg-libx11-1.8.13-he1eb515_0",
     "svt-av1-4.0.1-hecca717_0",
@@ -3706,7 +3722,7 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-h27c8c51_0",
     "dav1d-1.2.1-hd590300_0",
-    "aom-3.9.1-hac33072_0",
+    "aom-3.14.1-pl5321h039972f_0",
     "alsa-lib-1.2.16-hb03c661_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
@@ -3806,8 +3822,8 @@ conda_deps = [
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-x64-musl"]
-checksum = "sha256:a75b78ff3ee58ccf4d71e880a7ae06a299db28e5de5116d2c7552aa644bc1144"
-url = "https://conda.anaconda.org/conda-forge/linux-64/ffmpeg-8.1.1-gpl_h9330d3b_903.conda"
+checksum = "sha256:d9064d5f8575e4f7b6a2c73718f4d4b8986808d8a92eabc5f6b50d5a2fbb18ec"
+url = "https://conda.anaconda.org/conda-forge/linux-64/ffmpeg-8.1.1-gpl_h6d6c1bd_904.conda"
 conda_deps = [
     "xorg-libx11-1.8.13-he1eb515_0",
     "svt-av1-4.0.1-hecca717_0",
@@ -3846,7 +3862,7 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-h27c8c51_0",
     "dav1d-1.2.1-hd590300_0",
-    "aom-3.9.1-hac33072_0",
+    "aom-3.14.1-pl5321h039972f_0",
     "alsa-lib-1.2.16-hb03c661_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
@@ -3946,8 +3962,8 @@ conda_deps = [
 ]
 
 [tools."conda:ffmpeg"."platforms.windows-x64"]
-checksum = "sha256:d4c84b11244c3c6b9dcc26449d4195864d83b6227e2237f09e4f98ba520a875d"
-url = "https://conda.anaconda.org/conda-forge/win-64/ffmpeg-8.1.1-gpl_h7d7abef_903.conda"
+checksum = "sha256:6931df70697ae0d74ea9680695facd1a5e1e0163bf0e4a5618a086bef7a6f220"
+url = "https://conda.anaconda.org/conda-forge/win-64/ffmpeg-8.1.1-gpl_h6d5d71d_904.conda"
 conda_deps = [
     "x265-3.5-h2d74725_3",
     "svt-av1-4.0.1-hac47afa_0",
@@ -3967,7 +3983,7 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hd47e2ca_0",
     "dav1d-1.2.1-hcfcfb64_0",
-    "aom-3.9.1-he0c23c2_0",
+    "aom-3.14.1-pl5321h06fc181_0",
     "gdk-pixbuf-2.44.6-h1f5b9c4_0",
     "icu-78.3-h637d24d_0",
     "cairo-1.18.4-h477c42c_1",
@@ -4477,36 +4493,36 @@ url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.1/ag
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/435568417"
 
 [[tools.go]]
-version = "1.26.3"
+version = "1.26.4"
 backend = "core:go"
 
 [tools.go."platforms.linux-arm64"]
-checksum = "sha256:9d89a3ea57d141c2b22d70083f2c8459ba3890f2d9e818e7e933b75614936565"
-url = "https://dl.google.com/go/go1.26.3.linux-arm64.tar.gz"
+checksum = "sha256:ef758ae7c6cf9267c9c0ef080b8965f453d89ab2d25d9eb22de4405925238768"
+url = "https://dl.google.com/go/go1.26.4.linux-arm64.tar.gz"
 
 [tools.go."platforms.linux-arm64-musl"]
-checksum = "sha256:9d89a3ea57d141c2b22d70083f2c8459ba3890f2d9e818e7e933b75614936565"
-url = "https://dl.google.com/go/go1.26.3.linux-arm64.tar.gz"
+checksum = "sha256:ef758ae7c6cf9267c9c0ef080b8965f453d89ab2d25d9eb22de4405925238768"
+url = "https://dl.google.com/go/go1.26.4.linux-arm64.tar.gz"
 
 [tools.go."platforms.linux-x64"]
-checksum = "sha256:2b2cfc7148493da5e73981bffbf3353af381d5f93e789c82c79aff64962eb556"
-url = "https://dl.google.com/go/go1.26.3.linux-amd64.tar.gz"
+checksum = "sha256:1153d3d50e0ac764b447adfe05c2bcf08e889d42a02e0fe0259bd47f6733ad7f"
+url = "https://dl.google.com/go/go1.26.4.linux-amd64.tar.gz"
 
 [tools.go."platforms.linux-x64-musl"]
-checksum = "sha256:2b2cfc7148493da5e73981bffbf3353af381d5f93e789c82c79aff64962eb556"
-url = "https://dl.google.com/go/go1.26.3.linux-amd64.tar.gz"
+checksum = "sha256:1153d3d50e0ac764b447adfe05c2bcf08e889d42a02e0fe0259bd47f6733ad7f"
+url = "https://dl.google.com/go/go1.26.4.linux-amd64.tar.gz"
 
 [tools.go."platforms.macos-arm64"]
-checksum = "sha256:875cf54a15311eee2c99b9dd67c68c4a49351d489ab622bf2cfd28c8f2078d3c"
-url = "https://dl.google.com/go/go1.26.3.darwin-arm64.tar.gz"
+checksum = "sha256:b62ad2b6d7d2464f12a5bcad7ff47f19d08325773b5efd21610e445a05a9bf53"
+url = "https://dl.google.com/go/go1.26.4.darwin-arm64.tar.gz"
 
 [tools.go."platforms.macos-x64"]
-checksum = "sha256:278d580b32e299fe4a9c990fcf2d02acfe538c7e551a6ee18f9c7164573d2c63"
-url = "https://dl.google.com/go/go1.26.3.darwin-amd64.tar.gz"
+checksum = "sha256:05dc9b5f9997744520aaebb3d5deaa7c755371aebbfb7f97c2511a9f3367538d"
+url = "https://dl.google.com/go/go1.26.4.darwin-amd64.tar.gz"
 
 [tools.go."platforms.windows-x64"]
-checksum = "sha256:20d2ceafb4ed41b96b879010927b28bc92a5be57a7c1801ce365a9ca51d3224a"
-url = "https://dl.google.com/go/go1.26.3.windows-amd64.zip"
+checksum = "sha256:3ca8fb4630b07c419cbdd51f754e31363cfcfb83b3a5354d9e895c90be2cc345"
+url = "https://dl.google.com/go/go1.26.4.windows-amd64.zip"
 
 [[tools."go:github.com/Warashi/cage"]]
 version = "0.1.13"
