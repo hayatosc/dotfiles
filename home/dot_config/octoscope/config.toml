@@ -1,0 +1,20 @@
+# octoscope configuration
+# Auto-saved by octoscope. Edit by hand or via the in-app settings
+# panel (press ',' while running).
+
+# Auto-refresh interval. Go duration syntax: "30s", "1m", "5m", "1h".
+refresh_interval = "1m0s"
+
+# Hide private repositories, PRs and issues from the list tabs.
+public_only = false
+
+# Use the dense card layout in the Overview tab.
+compact = true
+
+# Visual theme. Built-in: octoscope (default), high-contrast,
+# terminal, monochrome, stranger-things, phosphor, amber.
+theme = "terminal"
+
+# Show the sponsor splash at launch. Set to false to opt out, or pass
+# --no-sponsor for a single run. Always suppressed under --public-only.
+show_sponsor = true
