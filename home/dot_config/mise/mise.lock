@@ -12,9 +12,9 @@ checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_0.conda"
 checksum = "sha256:722a24bb4a2faabcedf694ae494393e6f9b698dddbf0782fb0dcd7bfcc0c2027"
 
-[conda-packages.linux-arm64."aom-3.14.1-pl5321h8fffa31_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_0.conda"
-checksum = "sha256:8ebfe18b9bd94902a28a751aa0f5ec56c4edd0b19d7516ff500953d554c71d8e"
+[conda-packages.linux-arm64."aom-3.14.1-pl5321h8fffa31_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_1.conda"
+checksum = "sha256:a228f46f68fa3e2e50a09b5a4cefd1ee2c1ce868bfa2a288867b3d44b6e77427"
 
 [conda-packages.linux-arm64."aom-3.9.1-hcccb83c_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.9.1-hcccb83c_0.conda"
@@ -680,9 +680,9 @@ checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_0.conda"
 checksum = "sha256:722a24bb4a2faabcedf694ae494393e6f9b698dddbf0782fb0dcd7bfcc0c2027"
 
-[conda-packages.linux-arm64-musl."aom-3.14.1-pl5321h8fffa31_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_0.conda"
-checksum = "sha256:8ebfe18b9bd94902a28a751aa0f5ec56c4edd0b19d7516ff500953d554c71d8e"
+[conda-packages.linux-arm64-musl."aom-3.14.1-pl5321h8fffa31_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_1.conda"
+checksum = "sha256:a228f46f68fa3e2e50a09b5a4cefd1ee2c1ce868bfa2a288867b3d44b6e77427"
 
 [conda-packages.linux-arm64-musl."aom-3.9.1-hcccb83c_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.9.1-hcccb83c_0.conda"
@@ -1348,9 +1348,9 @@ checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501
 url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_0.conda"
 checksum = "sha256:64484cb7e7cf65d9c7188498d595125a6e0751604dd7fb483e1bb327eec0f738"
 
-[conda-packages.linux-x64."aom-3.14.1-pl5321h039972f_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_0.conda"
-checksum = "sha256:9a2636576e767510f8f668a7953251bfbbe17aea0fdccf33d54c9aa230078de7"
+[conda-packages.linux-x64."aom-3.14.1-pl5321h039972f_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_1.conda"
+checksum = "sha256:b1d972a9b949a88babee681437535550b3ca5dbca6a23a40dffeb7900fec19fd"
 
 [conda-packages.linux-x64."aom-3.9.1-hac33072_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.9.1-hac33072_0.conda"
@@ -2056,9 +2056,9 @@ checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501
 url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_0.conda"
 checksum = "sha256:64484cb7e7cf65d9c7188498d595125a6e0751604dd7fb483e1bb327eec0f738"
 
-[conda-packages.linux-x64-musl."aom-3.14.1-pl5321h039972f_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_0.conda"
-checksum = "sha256:9a2636576e767510f8f668a7953251bfbbe17aea0fdccf33d54c9aa230078de7"
+[conda-packages.linux-x64-musl."aom-3.14.1-pl5321h039972f_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_1.conda"
+checksum = "sha256:b1d972a9b949a88babee681437535550b3ca5dbca6a23a40dffeb7900fec19fd"
 
 [conda-packages.linux-x64-musl."aom-3.9.1-hac33072_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.9.1-hac33072_0.conda"
@@ -2752,9 +2752,9 @@ checksum = "sha256:245c9ee8d688e23661b95e3c6dd7272ca936fabc03d423cdb3cdee1bbcf9f
 url = "https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_6.conda"
 checksum = "sha256:68f0206ca6e98fea941e5717cec780ed2873ffabc0e1ed34428c061e2c6268c7"
 
-[conda-packages.windows-x64."aom-3.14.1-pl5321h06fc181_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/aom-3.14.1-pl5321h06fc181_0.conda"
-checksum = "sha256:114f7f87337af0c438dbd33c080d300aabb791360b0e4ad809186e9464542514"
+[conda-packages.windows-x64."aom-3.14.1-pl5321h06fc181_1"]
+url = "https://conda.anaconda.org/conda-forge/win-64/aom-3.14.1-pl5321h06fc181_1.conda"
+checksum = "sha256:3033fa8953f7f0c1bb5b89b5af77253badc14a89ba94d743dde3c9159e10fd5e"
 
 [conda-packages.windows-x64."bzip2-1.0.8-h0ad9c76_9"]
 url = "https://conda.anaconda.org/conda-forge/win-64/bzip2-1.0.8-h0ad9c76_9.conda"
@@ -3458,7 +3458,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
-    "aom-3.14.1-pl5321h8fffa31_0",
     "alsa-lib-1.2.16-he30d5cf_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "gdk-pixbuf-2.44.6-h90308e0_0",
@@ -3470,6 +3469,7 @@ conda_deps = [
     "cairo-1.18.4-h0b6afd8_1",
     "xorg-libsm-1.2.6-h0808dbd_0",
     "xorg-libice-1.1.2-h86ecc28_0",
+    "aom-3.14.1-pl5321h8fffa31_1",
     "bzip2-1.0.8-h4777abc_9",
     "gmp-6.3.0-h0a1ffab_2",
     "lame-3.100-h4e544f5_1003",
@@ -3588,7 +3588,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
-    "aom-3.14.1-pl5321h8fffa31_0",
     "alsa-lib-1.2.16-he30d5cf_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "gdk-pixbuf-2.44.6-h90308e0_0",
@@ -3600,6 +3599,7 @@ conda_deps = [
     "cairo-1.18.4-h0b6afd8_1",
     "xorg-libsm-1.2.6-h0808dbd_0",
     "xorg-libice-1.1.2-h86ecc28_0",
+    "aom-3.14.1-pl5321h8fffa31_1",
     "bzip2-1.0.8-h4777abc_9",
     "gmp-6.3.0-h0a1ffab_2",
     "lame-3.100-h4e544f5_1003",
@@ -3722,7 +3722,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-h27c8c51_0",
     "dav1d-1.2.1-hd590300_0",
-    "aom-3.14.1-pl5321h039972f_0",
     "alsa-lib-1.2.16-hb03c661_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
@@ -3736,6 +3735,7 @@ conda_deps = [
     "cairo-1.18.4-he90730b_1",
     "xorg-libsm-1.2.6-he73a12e_0",
     "xorg-libice-1.1.2-hb9d3cd8_0",
+    "aom-3.14.1-pl5321h039972f_1",
     "bzip2-1.0.8-hda65f42_9",
     "gmp-6.3.0-hac33072_2",
     "lame-3.100-h166bdaf_1003",
@@ -3862,7 +3862,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-h27c8c51_0",
     "dav1d-1.2.1-hd590300_0",
-    "aom-3.14.1-pl5321h039972f_0",
     "alsa-lib-1.2.16-hb03c661_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
@@ -3876,6 +3875,7 @@ conda_deps = [
     "cairo-1.18.4-he90730b_1",
     "xorg-libsm-1.2.6-he73a12e_0",
     "xorg-libice-1.1.2-hb9d3cd8_0",
+    "aom-3.14.1-pl5321h039972f_1",
     "bzip2-1.0.8-hda65f42_9",
     "gmp-6.3.0-hac33072_2",
     "lame-3.100-h166bdaf_1003",
@@ -3983,10 +3983,10 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hd47e2ca_0",
     "dav1d-1.2.1-hcfcfb64_0",
-    "aom-3.14.1-pl5321h06fc181_0",
     "gdk-pixbuf-2.44.6-h1f5b9c4_0",
     "icu-78.3-h637d24d_0",
     "cairo-1.18.4-h477c42c_1",
+    "aom-3.14.1-pl5321h06fc181_1",
     "bzip2-1.0.8-h0ad9c76_9",
     "lame-3.100-hcfcfb64_1003",
     "libiconv-1.18-hc1393d2_2",
@@ -4057,36 +4057,36 @@ checksum = "sha256:ac8ebb4a9f1cbee8b9ea897ba119808a244181adae6f3bed1f3b6b923c50b
 url = "https://github.com/dandavison/delta/releases/download/0.19.2/delta-0.19.2-x86_64-pc-windows-msvc.zip"
 
 [[tools.deno]]
-version = "2.8.1"
+version = "2.8.2"
 backend = "core:deno"
 
 [tools.deno."platforms.linux-arm64"]
-checksum = "sha256:67e9df91870fd0af700df924173e3009ea7ff6956e2c3c3bb86065d6070d0fd6"
-url = "https://dl.deno.land/release/v2.8.1/deno-aarch64-unknown-linux-gnu.zip"
+checksum = "sha256:48647189aee6454ed9b9852fa700a77f92b39465c04c625901d165bc8e937afc"
+url = "https://dl.deno.land/release/v2.8.2/deno-aarch64-unknown-linux-gnu.zip"
 
 [tools.deno."platforms.linux-arm64-musl"]
-checksum = "sha256:67e9df91870fd0af700df924173e3009ea7ff6956e2c3c3bb86065d6070d0fd6"
-url = "https://dl.deno.land/release/v2.8.1/deno-aarch64-unknown-linux-gnu.zip"
+checksum = "sha256:48647189aee6454ed9b9852fa700a77f92b39465c04c625901d165bc8e937afc"
+url = "https://dl.deno.land/release/v2.8.2/deno-aarch64-unknown-linux-gnu.zip"
 
 [tools.deno."platforms.linux-x64"]
-checksum = "sha256:2d7bb6195226ac832e0bf7109a115f0af65ee69ac797a4bbde5b27a06cc242d9"
-url = "https://dl.deno.land/release/v2.8.1/deno-x86_64-unknown-linux-gnu.zip"
+checksum = "sha256:184da7a5267ab649bc08821b3bc3ce6805d8e6985fb82707cb8d5e9fd6535362"
+url = "https://dl.deno.land/release/v2.8.2/deno-x86_64-unknown-linux-gnu.zip"
 
 [tools.deno."platforms.linux-x64-musl"]
-checksum = "sha256:2d7bb6195226ac832e0bf7109a115f0af65ee69ac797a4bbde5b27a06cc242d9"
-url = "https://dl.deno.land/release/v2.8.1/deno-x86_64-unknown-linux-gnu.zip"
+checksum = "sha256:184da7a5267ab649bc08821b3bc3ce6805d8e6985fb82707cb8d5e9fd6535362"
+url = "https://dl.deno.land/release/v2.8.2/deno-x86_64-unknown-linux-gnu.zip"
 
 [tools.deno."platforms.macos-arm64"]
-checksum = "sha256:8154e2de0ee8c1cae31fa88e078724aaef0295fab9fd2ad6f8520389cee908f6"
-url = "https://dl.deno.land/release/v2.8.1/deno-aarch64-apple-darwin.zip"
+checksum = "sha256:02e5eb795c9f763772dfd081429cead9029e0a4a6aaff6d4e5f3ed6d2e94d361"
+url = "https://dl.deno.land/release/v2.8.2/deno-aarch64-apple-darwin.zip"
 
 [tools.deno."platforms.macos-x64"]
-checksum = "sha256:47473845e0522ba11dd279e3dd318e2d84ee200c56b8280594e0ae0b0f827460"
-url = "https://dl.deno.land/release/v2.8.1/deno-x86_64-apple-darwin.zip"
+checksum = "sha256:77cf27f835f1921e49434449675c57432c6314d54edc725e2474cc825546e206"
+url = "https://dl.deno.land/release/v2.8.2/deno-x86_64-apple-darwin.zip"
 
 [tools.deno."platforms.windows-x64"]
 checksum = "sha256:Algorithm"
-url = "https://dl.deno.land/release/v2.8.1/deno-x86_64-pc-windows-msvc.zip"
+url = "https://dl.deno.land/release/v2.8.2/deno-x86_64-pc-windows-msvc.zip"
 
 [[tools.fd]]
 version = "10.4.2"
