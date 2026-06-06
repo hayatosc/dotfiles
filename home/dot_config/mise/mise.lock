@@ -5335,32 +5335,32 @@ checksum = "sha256:124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d874
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.rtk]]
-version = "0.42.0"
+version = "v0.42.1"
 backend = "aqua:rtk-ai/rtk"
 
 [tools.rtk."platforms.linux-arm64"]
-checksum = "sha256:62bb749df1ed64f09149998c31de864932f047a1be4e0f882a8ceada849e0871"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:32f4d78766e2f5b43756efce3c699dc4da8beef5296deb02fa7756f3257eb25c"
+url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.1/rtk-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.rtk."platforms.linux-x64"]
-checksum = "sha256:cdd4f87ac97ce958f71b53a991880d6adcc41cc5bca1044175a64630980152be"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:a37ca300a42510a964453f2bc2e217769ef0872780af802db8a7d698f1da2465"
+url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.1/rtk-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.rtk."platforms.linux-x64-musl"]
-checksum = "sha256:cdd4f87ac97ce958f71b53a991880d6adcc41cc5bca1044175a64630980152be"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:a37ca300a42510a964453f2bc2e217769ef0872780af802db8a7d698f1da2465"
+url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.1/rtk-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.rtk."platforms.macos-arm64"]
-checksum = "sha256:cddc9cd11cdf80b3342eebaba0e6ab26d9c8dec45295ea44cf98062987185724"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:401d72a80c0efc597ae9469f053ce51c70334ea427527464ab76f8e298da2447"
+url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.1/rtk-aarch64-apple-darwin.tar.gz"
 
 [tools.rtk."platforms.macos-x64"]
-checksum = "sha256:3b1b9f13548599ae9d920f5e3169cc402db1930044ea24e0be4e236b7f072a99"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:6165d80f40db0f46f8af2ea15d0132e957e2717aa74507906c7ce5b3c20c655e"
+url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.1/rtk-x86_64-apple-darwin.tar.gz"
 
 [tools.rtk."platforms.windows-x64"]
-checksum = "sha256:527552ec419988ff4a862415ba28d5aa7c1148ef3dc926ae11a4c133e63a7491"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.0/rtk-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:5f292b031595405671b41e29aa5016931e8598949c25d9751f0eebd2eccefe0b"
+url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.1/rtk-x86_64-pc-windows-msvc.zip"
 
 [[tools.rust]]
 version = "1.96.0"
