@@ -1,6 +1,6 @@
 lockfile_version: '1'
-generated_at: '2026-06-02T16:56:09.218790+00:00'
-apm_version: 0.16.0
+generated_at: '2026-06-08T13:42:37.989301+00:00'
+apm_version: 0.16.1
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
   host: github.com
@@ -47,6 +47,15 @@ dependencies:
   deployed_files:
   - .agents/skills/emil-design-eng
   content_hash: sha256:8bdf9e4e6de7a4969147bf4828a4ad2c5aacd9fba4b690b250a85e0467ca387d
+- repo_url: moonbitlang/skills
+  host: github.com
+  resolved_commit: c3f061da2abf7c6914e06df93572858dd21ef6bc
+  virtual_path: skills/moonbit-agent-guide
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/moonbit-agent-guide
+  content_hash: sha256:e134b3d874181787abdb59ff012f1eee71a537997305582e488bc979b5ff7294
 - repo_url: openai/skills
   host: github.com
   resolved_commit: a8924c2a35cfa290458852c4fad17c9133054c2e
@@ -110,13 +119,3 @@ dependencies:
   deployed_files:
   - .agents/skills/vue-best-practices
   content_hash: sha256:90980085ec288dd0a3326fc09af639a5e88cff74c15c77db84398fd42797a770
-local_deployed_files:
-- .agents/skills/article-review
-- .agents/skills/askmeplan
-- .agents/skills/ast-grep
-- .agents/skills/empirical-prompt-tuning
-- .agents/skills/golang-best-practices
-- .agents/skills/refactoring-code
-- .agents/skills/self-ship
-- .agents/skills/typescript-best-practices
-- .agents/skills/typescript-recommend-tools
