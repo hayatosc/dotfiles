@@ -4168,7 +4168,7 @@ url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-windows-x86_64.zip"
 
 [[tools.gemini]]
-version = "0.45.0"
+version = "0.45.1"
 backend = "npm:@google/gemini-cli"
 
 [tools.gemini.options]
