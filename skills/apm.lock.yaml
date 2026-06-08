@@ -119,3 +119,13 @@ dependencies:
   deployed_files:
   - .agents/skills/vue-best-practices
   content_hash: sha256:90980085ec288dd0a3326fc09af639a5e88cff74c15c77db84398fd42797a770
+local_deployed_files:
+- .agents/skills/article-review
+- .agents/skills/askmeplan
+- .agents/skills/ast-grep
+- .agents/skills/empirical-prompt-tuning
+- .agents/skills/golang-best-practices
+- .agents/skills/refactoring-code
+- .agents/skills/self-ship
+- .agents/skills/typescript-best-practices
+- .agents/skills/typescript-recommend-tools
