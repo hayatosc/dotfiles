@@ -3065,36 +3065,36 @@ checksum = "sha256:1343c3b919311bd9c34f827fe47176fd0b976a6a585368041745954b99b12
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.60/copilot-win32-x64.zip"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.0.5"
+version = "1.0.6"
 backend = "aqua:google-antigravity/antigravity-cli"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:b7a371a126b8de02c3728fe736fbebc87272a5144c7647476572b507c3264eca"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.5/agy_cli_linux_arm64.tar.gz"
+checksum = "sha256:be6303d4b891a79457ca6ed169aff2efd3ceb694354634e85ef58c883bae6739"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.6/agy_cli_linux_arm64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:b7a371a126b8de02c3728fe736fbebc87272a5144c7647476572b507c3264eca"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.5/agy_cli_linux_arm64.tar.gz"
+checksum = "sha256:be6303d4b891a79457ca6ed169aff2efd3ceb694354634e85ef58c883bae6739"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.6/agy_cli_linux_arm64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:2101c31fbc33189999f44c08abd2df4937d002e78fce5a92e71f0d0a248fdccc"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.5/agy_cli_linux_x64.tar.gz"
+checksum = "sha256:3eae552781d3054b782142e3cfe7be73e3bd068c736a432ca6f1adaa40f19e07"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.6/agy_cli_linux_x64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:2101c31fbc33189999f44c08abd2df4937d002e78fce5a92e71f0d0a248fdccc"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.5/agy_cli_linux_x64.tar.gz"
+checksum = "sha256:3eae552781d3054b782142e3cfe7be73e3bd068c736a432ca6f1adaa40f19e07"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.6/agy_cli_linux_x64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:47f70951b117d404ade49c3d5b09cad91455999d6e59fc2ee2e987aa92bc1285"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.5/agy_cli_mac_arm64.tar.gz"
+checksum = "sha256:75d23ad8451a6ab2fc49b7baa615bb532f157b4152d877ba76a2ee72a63ec7d0"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.6/agy_cli_mac_arm64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:7214eabe5407005320e27826fa40f6f1b03a581dfc3157302480bc6247da7152"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.5/agy_cli_mac_x64.tar.gz"
+checksum = "sha256:619817086950c0bd37f2fcb7796e82f90dc1fff920ef2f5fed4e11170c04ab3e"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.6/agy_cli_mac_x64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:3bb4d107494d66f86f298c8b5ebeaab296bf0fa26023686280b0a1ddb17fc700"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.5/agy_cli_windows_x64.zip"
+checksum = "sha256:96bd5da4469d1a425bae1f112ae5915b6d7a731d08c38e8e30627c654ee7306b"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.6/agy_cli_windows_x64.zip"
 
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.29.0"
