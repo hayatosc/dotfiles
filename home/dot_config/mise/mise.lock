@@ -8,9 +8,9 @@ checksum = "sha256:a2527b1d81792a0ccd2c05850960df119c2b6d8f5fdec97f2db7d25dc23b1
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
 checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
 
-[conda-packages.linux-arm64."alsa-lib-1.2.16-he30d5cf_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_0.conda"
-checksum = "sha256:722a24bb4a2faabcedf694ae494393e6f9b698dddbf0782fb0dcd7bfcc0c2027"
+[conda-packages.linux-arm64."alsa-lib-1.2.16-he30d5cf_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_1.conda"
+checksum = "sha256:f849561e8aef6cde4a8878a7b4a11e603c6511bbeb2cea36019ea262bbe85d53"
 
 [conda-packages.linux-arm64."aom-3.14.1-pl5321h8fffa31_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_1.conda"
@@ -676,9 +676,9 @@ checksum = "sha256:a2527b1d81792a0ccd2c05850960df119c2b6d8f5fdec97f2db7d25dc23b1
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
 checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
 
-[conda-packages.linux-arm64-musl."alsa-lib-1.2.16-he30d5cf_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_0.conda"
-checksum = "sha256:722a24bb4a2faabcedf694ae494393e6f9b698dddbf0782fb0dcd7bfcc0c2027"
+[conda-packages.linux-arm64-musl."alsa-lib-1.2.16-he30d5cf_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_1.conda"
+checksum = "sha256:f849561e8aef6cde4a8878a7b4a11e603c6511bbeb2cea36019ea262bbe85d53"
 
 [conda-packages.linux-arm64-musl."aom-3.14.1-pl5321h8fffa31_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_1.conda"
@@ -1344,9 +1344,9 @@ checksum = "sha256:1dd3fffd892081df9726d7eb7e0dea6198962ba775bd88842135a4ddb4deb
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
 checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
 
-[conda-packages.linux-x64."alsa-lib-1.2.16-hb03c661_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_0.conda"
-checksum = "sha256:64484cb7e7cf65d9c7188498d595125a6e0751604dd7fb483e1bb327eec0f738"
+[conda-packages.linux-x64."alsa-lib-1.2.16-hb03c661_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_1.conda"
+checksum = "sha256:65f50a67b8715ad01eb73710d540c816aab14cc3e52a74e48fc97e4716224f2e"
 
 [conda-packages.linux-x64."aom-3.14.1-pl5321h039972f_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_1.conda"
@@ -2052,9 +2052,9 @@ checksum = "sha256:1dd3fffd892081df9726d7eb7e0dea6198962ba775bd88842135a4ddb4deb
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
 checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
 
-[conda-packages.linux-x64-musl."alsa-lib-1.2.16-hb03c661_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_0.conda"
-checksum = "sha256:64484cb7e7cf65d9c7188498d595125a6e0751604dd7fb483e1bb327eec0f738"
+[conda-packages.linux-x64-musl."alsa-lib-1.2.16-hb03c661_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_1.conda"
+checksum = "sha256:65f50a67b8715ad01eb73710d540c816aab14cc3e52a74e48fc97e4716224f2e"
 
 [conda-packages.linux-x64-musl."aom-3.14.1-pl5321h039972f_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_1.conda"
@@ -3209,38 +3209,32 @@ checksum = "sha256:a4febbc8c48671e5729d85e29e4ebe5a051b7250d19545bca18e725ccf40e
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.43.0/app-x86_64-pc-windows-msvc.zip"
 
 [[tools.aube]]
-version = "v1.18.0"
-backend = "aqua:endevco/aube"
+version = "v1.18.1"
+backend = "aqua:jdx/aube"
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:e7881daae7b5704a68bef2c1d25740f5b808f982a9013e99625910fa72c7e04c"
-url = "https://github.com/jdx/aube/releases/download/v1.18.0/aube-v1.18.0-aarch64-unknown-linux-gnu.tar.gz"
-provenance = "github-attestations"
+checksum = "sha256:976dc58cfc3c6fddcded6f00596e066f22bfeabbdf0526c2adf381dd9e89c16e"
+url = "https://github.com/jdx/aube/releases/download/v1.18.1/aube-v1.18.1-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.aube."platforms.linux-arm64-musl"]
-checksum = "sha256:ed39261b679c9b96cedc0e64744e66c5080247a1d34a6cf2669c40cce8956309"
-url = "https://github.com/jdx/aube/releases/download/v1.18.0/aube-v1.18.0-aarch64-unknown-linux-musl.tar.gz"
-provenance = "github-attestations"
+checksum = "sha256:e4c32ff77505daae3ba6945a9b109350e1c846ecd37ee6f7aece43ddfc898978"
+url = "https://github.com/jdx/aube/releases/download/v1.18.1/aube-v1.18.1-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.aube."platforms.linux-x64"]
-checksum = "sha256:20b158c2439087267c95451dcc5feba13cfd1045b7a108e41a85c779bebbe1da"
-url = "https://github.com/jdx/aube/releases/download/v1.18.0/aube-v1.18.0-x86_64-unknown-linux-gnu.tar.gz"
-provenance = "github-attestations"
+checksum = "sha256:ac5dafafa8dcda43825a96d89ac85471c6452aa5cf313f610c320f79b5a8b4cd"
+url = "https://github.com/jdx/aube/releases/download/v1.18.1/aube-v1.18.1-x86_64-unknown-linux-gnu.tar.gz"
 
 [tools.aube."platforms.linux-x64-musl"]
-checksum = "sha256:d4ef67a858817fd0e158aa4022787b079f4af566eebce7914bdd7eaf0cc803c1"
-url = "https://github.com/jdx/aube/releases/download/v1.18.0/aube-v1.18.0-x86_64-unknown-linux-musl.tar.gz"
-provenance = "github-attestations"
+checksum = "sha256:8a6af26deebaab73a2520d3436f6586b096cbadc6381c15cbd6d97348fd0ceda"
+url = "https://github.com/jdx/aube/releases/download/v1.18.1/aube-v1.18.1-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:0d050f30ff4f80c2fe4bbba106a7c439b7d79702c923ee95502695d8a910a600"
-url = "https://github.com/jdx/aube/releases/download/v1.18.0/aube-v1.18.0-aarch64-apple-darwin.tar.gz"
-provenance = "github-attestations"
+checksum = "sha256:224190686f194ff46660a2119a75a46eb85452e67abffe611408932f1578a657"
+url = "https://github.com/jdx/aube/releases/download/v1.18.1/aube-v1.18.1-aarch64-apple-darwin.tar.gz"
 
 [tools.aube."platforms.windows-x64"]
-checksum = "sha256:ddc94d1cf21c14d675271761a7837193a23869f719a9cf57149807525e6b8620"
-url = "https://github.com/jdx/aube/releases/download/v1.18.0/aube-v1.18.0-x86_64-pc-windows-msvc.zip"
-provenance = "github-attestations"
+checksum = "sha256:426d5633aaf0ba23f189cd6f7db91182506a0b9dacaf23465c3288e1b358cb6a"
+url = "https://github.com/jdx/aube/releases/download/v1.18.1/aube-v1.18.1-x86_64-pc-windows-msvc.zip"
 
 [[tools.bat]]
 version = "0.26.1"
@@ -3450,7 +3444,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
-    "alsa-lib-1.2.16-he30d5cf_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "gdk-pixbuf-2.44.6-h90308e0_0",
     "libabseil-20260107.1-cxx17_h6983b43_0",
@@ -3461,6 +3454,7 @@ conda_deps = [
     "cairo-1.18.4-h0b6afd8_1",
     "xorg-libsm-1.2.6-h0808dbd_0",
     "xorg-libice-1.1.2-h86ecc28_0",
+    "alsa-lib-1.2.16-he30d5cf_1",
     "aom-3.14.1-pl5321h8fffa31_1",
     "bzip2-1.0.8-h4777abc_9",
     "gmp-6.3.0-h0a1ffab_2",
@@ -3580,7 +3574,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
-    "alsa-lib-1.2.16-he30d5cf_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "gdk-pixbuf-2.44.6-h90308e0_0",
     "libabseil-20260107.1-cxx17_h6983b43_0",
@@ -3591,6 +3584,7 @@ conda_deps = [
     "cairo-1.18.4-h0b6afd8_1",
     "xorg-libsm-1.2.6-h0808dbd_0",
     "xorg-libice-1.1.2-h86ecc28_0",
+    "alsa-lib-1.2.16-he30d5cf_1",
     "aom-3.14.1-pl5321h8fffa31_1",
     "bzip2-1.0.8-h4777abc_9",
     "gmp-6.3.0-h0a1ffab_2",
@@ -3716,7 +3710,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-h27c8c51_0",
     "dav1d-1.2.1-hd590300_0",
-    "alsa-lib-1.2.16-hb03c661_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
     "gdk-pixbuf-2.44.6-h2b0a6b4_0",
@@ -3729,6 +3722,7 @@ conda_deps = [
     "cairo-1.18.4-he90730b_1",
     "xorg-libsm-1.2.6-he73a12e_0",
     "xorg-libice-1.1.2-hb9d3cd8_0",
+    "alsa-lib-1.2.16-hb03c661_1",
     "aom-3.14.1-pl5321h039972f_1",
     "bzip2-1.0.8-hda65f42_9",
     "gmp-6.3.0-hac33072_2",
@@ -3856,7 +3850,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-h27c8c51_0",
     "dav1d-1.2.1-hd590300_0",
-    "alsa-lib-1.2.16-hb03c661_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
     "gdk-pixbuf-2.44.6-h2b0a6b4_0",
@@ -3869,6 +3862,7 @@ conda_deps = [
     "cairo-1.18.4-he90730b_1",
     "xorg-libsm-1.2.6-he73a12e_0",
     "xorg-libice-1.1.2-hb9d3cd8_0",
+    "alsa-lib-1.2.16-hb03c661_1",
     "aom-3.14.1-pl5321h039972f_1",
     "bzip2-1.0.8-hda65f42_9",
     "gmp-6.3.0-hac33072_2",
