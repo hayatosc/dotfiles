@@ -53,7 +53,6 @@ This file lists mandatory rules for all agents working in this repository.
   - Set `PYTHON_UV=0` to bypass uv and use system python directly
 - Some tools are running under [rtk](https://github.com/rtk-ai/rtk) via agent hooks to save tokens.
   - check `~/.agents/RTK.md` for details.
-  - for codex, rtk does not support codex hook yet, so you should mannualy use rtk command.
 
 ## Code Changes
 - Touch only what the task requires; don't improve adjacent code or formatting.

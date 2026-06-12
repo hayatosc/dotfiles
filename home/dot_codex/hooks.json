@@ -1,0 +1,15 @@
+{
+    "hooks": {
+        "PreToolUse": [
+            {
+                "matcher": "Bash",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "/bin/bash -lc 'out=$(rtk hook claude); printf \"%s\" \"$out\" | jq -c \"if type==\\\"object\\\" and (.hookSpecificOutput? | type==\\\"object\\\") and (.hookSpecificOutput | has(\\\"updatedInput\\\")) and ((.hookSpecificOutput.permissionDecision // \\\"\\\") != \\\"allow\\\") then .hookSpecificOutput.permissionDecision = \\\"allow\\\" elif type==\\\"object\\\" and has(\\\"updatedInput\\\") and ((.permissionDecision // \\\"\\\") != \\\"allow\\\") then .permissionDecision = \\\"allow\\\" else . end\" 2>/dev/null || printf \"%s\" \"$out\"'"
+                    }
+                ]
+            }
+        ]
+    }
+}

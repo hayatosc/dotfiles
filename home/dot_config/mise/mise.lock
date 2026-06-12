@@ -5206,52 +5206,52 @@ checksum = "sha256:20b9638f685333d623798e733effbad2487093f15ba592f6c7752360ff3b7
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.5.2/cloudflared-windows-amd64.exe"
 
 [[tools.codex]]
-version = "0.135.0"
+version = "0.139.0"
 backend = "aqua:openai/codex"
 
 [tools.codex."platforms.linux-arm64"]
-checksum = "sha256:6356f7c65faf3ba51dc89288ac9b6c869803d3492e8f0555ad3fa24009057ba1"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-aarch64-unknown-linux-musl.zst"
+checksum = "sha256:2faa1c8d89f5fe39b704c738b2f82364f00d47a8db462821d8d7372f0702d6f4"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-aarch64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.linux-arm64-musl"]
-checksum = "sha256:6356f7c65faf3ba51dc89288ac9b6c869803d3492e8f0555ad3fa24009057ba1"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-aarch64-unknown-linux-musl.zst"
+checksum = "sha256:2faa1c8d89f5fe39b704c738b2f82364f00d47a8db462821d8d7372f0702d6f4"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-aarch64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.linux-x64"]
-checksum = "sha256:9707e105109eb4f0f6b2c0f8f14a3df39126f002f61b04e1c1fbe6786ed964a7"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-unknown-linux-musl.zst"
+checksum = "sha256:f79ebac185b6dcc826401ef660516190a8db54c5c963f1717e40261a62be1c7c"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.linux-x64-baseline"]
-checksum = "sha256:9707e105109eb4f0f6b2c0f8f14a3df39126f002f61b04e1c1fbe6786ed964a7"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-unknown-linux-musl.zst"
+checksum = "sha256:f79ebac185b6dcc826401ef660516190a8db54c5c963f1717e40261a62be1c7c"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.linux-x64-musl"]
-checksum = "sha256:9707e105109eb4f0f6b2c0f8f14a3df39126f002f61b04e1c1fbe6786ed964a7"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-unknown-linux-musl.zst"
+checksum = "sha256:f79ebac185b6dcc826401ef660516190a8db54c5c963f1717e40261a62be1c7c"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:9707e105109eb4f0f6b2c0f8f14a3df39126f002f61b04e1c1fbe6786ed964a7"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-unknown-linux-musl.zst"
+checksum = "sha256:f79ebac185b6dcc826401ef660516190a8db54c5c963f1717e40261a62be1c7c"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.macos-arm64"]
-checksum = "sha256:66ab59c5f62850c169d6530e7152075eb4ef6ebbe9bc073122630de82a471047"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-aarch64-apple-darwin.zst"
+checksum = "sha256:bb0110c0d51f45d35acbddb38d2eb0194f7cd03eaf2e4b3496d63933d0d269d0"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-aarch64-apple-darwin.zst"
 
 [tools.codex."platforms.macos-x64"]
-checksum = "sha256:b753b9598c7fe95d6e24577d8d76752b79b85d12c460a81c4ab5d73815fcced8"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-apple-darwin.zst"
+checksum = "sha256:18ef0a1fc22d19c0e9cea67d9ac3b3905a0e8cc8140cd14b8ff4a18637c58f11"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-apple-darwin.zst"
 
 [tools.codex."platforms.macos-x64-baseline"]
-checksum = "sha256:b753b9598c7fe95d6e24577d8d76752b79b85d12c460a81c4ab5d73815fcced8"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-apple-darwin.zst"
+checksum = "sha256:18ef0a1fc22d19c0e9cea67d9ac3b3905a0e8cc8140cd14b8ff4a18637c58f11"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-apple-darwin.zst"
 
 [tools.codex."platforms.windows-x64"]
-checksum = "sha256:c8b5e0c2ab4a5fad516e94738bf19f9299b89dddfc7aa32bccb56b6fa882e61f"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-pc-windows-msvc.exe.zst"
+checksum = "sha256:295337cb916a61ec899e5bd7e2d05656c6feced34e2a41b9aeb52325a02ba8ef"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-pc-windows-msvc.exe.zst"
 
 [tools.codex."platforms.windows-x64-baseline"]
-checksum = "sha256:c8b5e0c2ab4a5fad516e94738bf19f9299b89dddfc7aa32bccb56b6fa882e61f"
-url = "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-pc-windows-msvc.exe.zst"
+checksum = "sha256:295337cb916a61ec899e5bd7e2d05656c6feced34e2a41b9aeb52325a02ba8ef"
+url = "https://github.com/openai/codex/releases/download/rust-v0.139.0/codex-x86_64-pc-windows-msvc.exe.zst"
 
 [[tools."conda:ffmpeg"]]
 version = "8.1.1"
@@ -6221,6 +6221,54 @@ conda_deps = [
     "lerc-4.1.0-hd936e49_0",
     "zstd-1.5.7-h534d264_6",
 ]
+
+[[tools.copilot]]
+version = "1.0.61"
+backend = "aqua:github/copilot-cli"
+
+[tools.copilot."platforms.linux-arm64"]
+checksum = "sha256:225c87742394096557ec5d1cc559362654da895a672d5a7aa6fdc204b1c95d36"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-linux-arm64.tar.gz"
+
+[tools.copilot."platforms.linux-arm64-musl"]
+checksum = "sha256:225c87742394096557ec5d1cc559362654da895a672d5a7aa6fdc204b1c95d36"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-linux-arm64.tar.gz"
+
+[tools.copilot."platforms.linux-x64"]
+checksum = "sha256:228bd802a369ad6b3477be1c08510d555628bb1fc8a53a26337f336659f817db"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-linux-x64.tar.gz"
+
+[tools.copilot."platforms.linux-x64-baseline"]
+checksum = "sha256:228bd802a369ad6b3477be1c08510d555628bb1fc8a53a26337f336659f817db"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-linux-x64.tar.gz"
+
+[tools.copilot."platforms.linux-x64-musl"]
+checksum = "sha256:228bd802a369ad6b3477be1c08510d555628bb1fc8a53a26337f336659f817db"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-linux-x64.tar.gz"
+
+[tools.copilot."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:228bd802a369ad6b3477be1c08510d555628bb1fc8a53a26337f336659f817db"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-linux-x64.tar.gz"
+
+[tools.copilot."platforms.macos-arm64"]
+checksum = "sha256:448f550b8cecb216c60cff5cdfaa46fe984606c316fdb62b5b5ed83248eef0ae"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-darwin-arm64.tar.gz"
+
+[tools.copilot."platforms.macos-x64"]
+checksum = "sha256:8f7a7105b7a025bf57331b3443578dcd3fae252977c8246be797a01cffbab426"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-darwin-x64.tar.gz"
+
+[tools.copilot."platforms.macos-x64-baseline"]
+checksum = "sha256:8f7a7105b7a025bf57331b3443578dcd3fae252977c8246be797a01cffbab426"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-darwin-x64.tar.gz"
+
+[tools.copilot."platforms.windows-x64"]
+checksum = "sha256:554f2972903385528573500de183d3a4ef6a8335e22ea252e6588247ca03c466"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-win32-x64.zip"
+
+[tools.copilot."platforms.windows-x64-baseline"]
+checksum = "sha256:554f2972903385528573500de183d3a4ef6a8335e22ea252e6588247ca03c466"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.61/copilot-win32-x64.zip"
 
 [[tools.delta]]
 version = "0.19.2"
