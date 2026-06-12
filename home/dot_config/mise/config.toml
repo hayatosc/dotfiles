@@ -61,6 +61,7 @@ zoxide = "0.9.9"
 experimental = true
 lockfile = true
 minimum_release_age = "3d"
+aqua.registry_cache_ttl = "1d"
 
 [hooks]
 postinstall = ""
