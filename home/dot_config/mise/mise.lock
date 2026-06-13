@@ -2984,21 +2984,21 @@ checksum = "sha256:4d77eec06ee4c5de38d330fb7dfd6dac2f867ec007123acb901be9942e12c
 url = "https://conda.anaconda.org/conda-forge/win-64/ucrt-10.0.26100.0-h57928b3_0.conda"
 checksum = "sha256:3005729dce6f3d3f5ec91dfc49fc75a0095f9cd23bab49efb899657297ac91a5"
 
-[conda-packages.windows-x64."vc-14.5-h1b7c187_38"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vc-14.5-h1b7c187_38.conda"
-checksum = "sha256:61b68e5a4fc71a17f8d64b12e013a2f971ad980bd08e9c389d5e68efe1a67de0"
+[conda-packages.windows-x64."vc-14.5-h1b7c187_39"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vc-14.5-h1b7c187_39.conda"
+checksum = "sha256:17693b60cb54f80c60275f003f3bfc1b128af56dbfd65c4fae37c64eeb755ce1"
 
-[conda-packages.windows-x64."vc14_runtime-14.51.36231-h1b9f54f_38"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.51.36231-h1b9f54f_38.conda"
-checksum = "sha256:957c7c65583c7107a5e76f39756c6361fcb7b0dc101ac7c0aea86e7ca09fe49c"
+[conda-packages.windows-x64."vc14_runtime-14.51.36231-h1b9f54f_39"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.51.36231-h1b9f54f_39.conda"
+checksum = "sha256:8153ed849c92e891eacac0f2f8d7ecb79f9b5fd7f7917fbb896f252a60a40390"
 
-[conda-packages.windows-x64."vcomp14-14.51.36231-h1b9f54f_38"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36231-h1b9f54f_38.conda"
-checksum = "sha256:c645fdc1f0f47718431d973386e946754a10200e7ba2c32032560913a970cacd"
+[conda-packages.windows-x64."vcomp14-14.51.36231-h1b9f54f_39"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36231-h1b9f54f_39.conda"
+checksum = "sha256:07fb14713c4bc62e2533a2e23a363abfb0e65650681fba0ae4c840e2219350f3"
 
-[conda-packages.windows-x64."vs2015_runtime-14.51.36231-h84cd919_38"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.51.36231-h84cd919_38.conda"
-checksum = "sha256:c4f38268563dc6b8322b0191481e5d20002fc6e37b076c15e0b955a553c8b4a0"
+[conda-packages.windows-x64."vs2015_runtime-14.51.36231-h84cd919_39"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.51.36231-h84cd919_39.conda"
+checksum = "sha256:6de6c2cf008fc2dce61060b583f2d8494c83883106952b201381b6b0505f03d7"
 
 [conda-packages.windows-x64."x264-1!164.3095-h8ffe710_2"]
 url = "https://conda.anaconda.org/conda-forge/win-64/x264-1!164.3095-h8ffe710_2.tar.bz2"
@@ -3954,10 +3954,10 @@ conda_deps = [
     "libxml2-16-2.15.3-h3cfd58e_0",
     "openssl-3.6.3-hf411b9b_0",
     "ucrt-10.0.26100.0-h57928b3_0",
-    "vc-14.5-h1b7c187_38",
-    "vc14_runtime-14.51.36231-h1b9f54f_38",
-    "vcomp14-14.51.36231-h1b9f54f_38",
-    "vs2015_runtime-14.51.36231-h84cd919_38",
+    "vc-14.5-h1b7c187_39",
+    "vc14_runtime-14.51.36231-h1b9f54f_39",
+    "vcomp14-14.51.36231-h1b9f54f_39",
+    "vs2015_runtime-14.51.36231-h84cd919_39",
     "x264-1!164.3095-h8ffe710_2",
     "libintl-0.22.5-h5728263_3",
     "fonts-conda-forge-1-hc364b38_1",
@@ -4162,7 +4162,7 @@ url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-windows-x86_64.zip"
 
 [[tools.gemini]]
-version = "0.45.2"
+version = "0.46.0"
 backend = "npm:@google/gemini-cli"
 
 [tools.gemini.options]
