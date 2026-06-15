@@ -580,9 +580,9 @@ checksum = "sha256:b48f150db8c052c197691c9d76f59e252d3a7f01de123753d51ebf2eed1cf
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2"
 checksum = "sha256:cb2227f2441499900bdc0168eb423d7b2056c8fd5a3541df4e2d05509a88c668"
 
-[conda-packages.linux-arm64."xkeyboard-config-2.47-he30d5cf_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xkeyboard-config-2.47-he30d5cf_0.conda"
-checksum = "sha256:ec7ff9dffbd41faa31a30fa0724699f05bca000d57c745a195ecdb56888a8605"
+[conda-packages.linux-arm64."xkeyboard-config-2.47-h80f16a2_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xkeyboard-config-2.47-h80f16a2_1.conda"
+checksum = "sha256:70070c1bd0c8f6af2640fa6302c06c29ad5740c80e290a6b287c8a6498290207"
 
 [conda-packages.linux-arm64."xorg-libice-1.1.2-h86ecc28_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xorg-libice-1.1.2-h86ecc28_0.conda"
@@ -1248,9 +1248,9 @@ checksum = "sha256:b48f150db8c052c197691c9d76f59e252d3a7f01de123753d51ebf2eed1cf
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2"
 checksum = "sha256:cb2227f2441499900bdc0168eb423d7b2056c8fd5a3541df4e2d05509a88c668"
 
-[conda-packages.linux-arm64-musl."xkeyboard-config-2.47-he30d5cf_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xkeyboard-config-2.47-he30d5cf_0.conda"
-checksum = "sha256:ec7ff9dffbd41faa31a30fa0724699f05bca000d57c745a195ecdb56888a8605"
+[conda-packages.linux-arm64-musl."xkeyboard-config-2.47-h80f16a2_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xkeyboard-config-2.47-h80f16a2_1.conda"
+checksum = "sha256:70070c1bd0c8f6af2640fa6302c06c29ad5740c80e290a6b287c8a6498290207"
 
 [conda-packages.linux-arm64-musl."xorg-libice-1.1.2-h86ecc28_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xorg-libice-1.1.2-h86ecc28_0.conda"
@@ -1956,9 +1956,9 @@ checksum = "sha256:175315eb3d6ea1f64a6ce470be00fa2ee59980108f246d3072ab8b977cb04
 url = "https://conda.anaconda.org/conda-forge/linux-64/x265-3.5-h924138e_3.tar.bz2"
 checksum = "sha256:76c7405bcf2af639971150f342550484efac18219c0203c5ee2e38b8956fe2a0"
 
-[conda-packages.linux-x64."xkeyboard-config-2.47-hb03c661_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.47-hb03c661_0.conda"
-checksum = "sha256:19c2bb14bec84b0e995b56b752369775c75f1589314b43733948bb5f471a6915"
+[conda-packages.linux-x64."xkeyboard-config-2.47-h280c20c_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.47-h280c20c_1.conda"
+checksum = "sha256:2bd7452f68c39bfff954385b062aca9389262369e318739af270d23af47580a5"
 
 [conda-packages.linux-x64."xorg-libice-1.1.2-hb9d3cd8_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.1.2-hb9d3cd8_0.conda"
@@ -2664,9 +2664,9 @@ checksum = "sha256:175315eb3d6ea1f64a6ce470be00fa2ee59980108f246d3072ab8b977cb04
 url = "https://conda.anaconda.org/conda-forge/linux-64/x265-3.5-h924138e_3.tar.bz2"
 checksum = "sha256:76c7405bcf2af639971150f342550484efac18219c0203c5ee2e38b8956fe2a0"
 
-[conda-packages.linux-x64-musl."xkeyboard-config-2.47-hb03c661_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.47-hb03c661_0.conda"
-checksum = "sha256:19c2bb14bec84b0e995b56b752369775c75f1589314b43733948bb5f471a6915"
+[conda-packages.linux-x64-musl."xkeyboard-config-2.47-h280c20c_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.47-h280c20c_1.conda"
+checksum = "sha256:2bd7452f68c39bfff954385b062aca9389262369e318739af270d23af47580a5"
 
 [conda-packages.linux-x64-musl."xorg-libice-1.1.2-hb9d3cd8_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.1.2-hb9d3cd8_0.conda"
@@ -3291,26 +3291,26 @@ checksum = "sha256:538f9c846355d9e847b2671bc00c47da4229a0befb24df3282b739770f3b4
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.14/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.173"
+version = "2.1.175"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.173/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.175/linux-arm64/claude"
 
 [tools.claude."platforms.linux-arm64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.173/linux-arm64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.175/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.173/linux-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.175/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.173/linux-x64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.175/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.173/darwin-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.175/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.173/darwin-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.175/darwin-x64/claude"
 
 [[tools.cloudflared]]
 version = "2026.6.0"
@@ -3510,7 +3510,7 @@ conda_deps = [
     "xorg-libxtst-1.2.5-h57736b2_3",
     "lerc-4.1.0-h52b7260_0",
     "zstd-1.5.7-h85ac4a6_6",
-    "xkeyboard-config-2.47-he30d5cf_0",
+    "xkeyboard-config-2.47-h80f16a2_1",
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-arm64-musl"]
@@ -3640,7 +3640,7 @@ conda_deps = [
     "xorg-libxtst-1.2.5-h57736b2_3",
     "lerc-4.1.0-h52b7260_0",
     "zstd-1.5.7-h85ac4a6_6",
-    "xkeyboard-config-2.47-he30d5cf_0",
+    "xkeyboard-config-2.47-h80f16a2_1",
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-x64"]
@@ -3780,7 +3780,7 @@ conda_deps = [
     "libudev1-260.2-h6f4a2f1_1",
     "lerc-4.1.0-hdb68285_0",
     "zstd-1.5.7-hb78ec9c_6",
-    "xkeyboard-config-2.47-hb03c661_0",
+    "xkeyboard-config-2.47-h280c20c_1",
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-x64-musl"]
@@ -3920,7 +3920,7 @@ conda_deps = [
     "libudev1-260.2-h6f4a2f1_1",
     "lerc-4.1.0-hdb68285_0",
     "zstd-1.5.7-hb78ec9c_6",
-    "xkeyboard-config-2.47-hb03c661_0",
+    "xkeyboard-config-2.47-h280c20c_1",
 ]
 
 [tools."conda:ffmpeg"."platforms.windows-x64"]
@@ -4684,7 +4684,7 @@ conda_deps = [
     "libgl-1.7.0-hd24410f_3",
     "libglx-devel-1.7.0-hd24410f_3",
     "xorg-libxxf86vm-1.1.7-he30d5cf_0",
-    "xkeyboard-config-2.47-he30d5cf_0",
+    "xkeyboard-config-2.47-h80f16a2_1",
     "xorg-libxtst-1.2.5-h57736b2_3",
     "xorg-xorgproto-2025.1-he30d5cf_0",
     "openssl-3.6.3-h546c87b_0",
@@ -4804,7 +4804,7 @@ conda_deps = [
     "libgl-1.7.0-hd24410f_3",
     "libglx-devel-1.7.0-hd24410f_3",
     "xorg-libxxf86vm-1.1.7-he30d5cf_0",
-    "xkeyboard-config-2.47-he30d5cf_0",
+    "xkeyboard-config-2.47-h80f16a2_1",
     "xorg-libxtst-1.2.5-h57736b2_3",
     "xorg-xorgproto-2025.1-he30d5cf_0",
     "openssl-3.6.3-h546c87b_0",
@@ -4924,7 +4924,7 @@ conda_deps = [
     "libgl-1.7.0-ha4b6fd6_3",
     "libglx-devel-1.7.0-ha4b6fd6_3",
     "xorg-libxxf86vm-1.1.7-hb03c661_0",
-    "xkeyboard-config-2.47-hb03c661_0",
+    "xkeyboard-config-2.47-h280c20c_1",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
     "xorg-xorgproto-2025.1-hb03c661_0",
     "openssl-3.6.3-h35e630c_0",
@@ -5044,7 +5044,7 @@ conda_deps = [
     "libgl-1.7.0-ha4b6fd6_3",
     "libglx-devel-1.7.0-ha4b6fd6_3",
     "xorg-libxxf86vm-1.1.7-hb03c661_0",
-    "xkeyboard-config-2.47-hb03c661_0",
+    "xkeyboard-config-2.47-h280c20c_1",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
     "xorg-xorgproto-2025.1-hb03c661_0",
     "openssl-3.6.3-h35e630c_0",
