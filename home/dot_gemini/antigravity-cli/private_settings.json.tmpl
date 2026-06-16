@@ -1,0 +1,21 @@
+{{- $gemini := get . "gemini" | default dict -}}
+{{- $liveConfig := joinPath .chezmoi.homeDir ".gemini" "antigravity-cli" "settings.json" -}}
+{{- $workspaces := list -}}
+{{- if stat $liveConfig -}}
+  {{- $data := include $liveConfig | fromJson -}}
+  {{- $workspaces = $data.trustedWorkspaces -}}
+{{- else -}}
+  {{- $workspaces = get $gemini "trusted_workspaces" | default list -}}
+{{- end -}}
+{
+  "allowNonWorkspaceAccess": true,
+  "colorScheme": "tokyo night",
+  "model": "Gemini 3.5 Flash (High)",
+  "statusLine": {
+    "type": "",
+    "command": "~/.gemini/antigravity-cli/scripts/statusline.ts",
+    "enabled": true
+  },
+  "toolPermission": "always-proceed",
+  "trustedWorkspaces": {{ $workspaces | uniq | sortAlpha | toJson }}
+}
