@@ -8,9 +8,9 @@ checksum = "sha256:a2527b1d81792a0ccd2c05850960df119c2b6d8f5fdec97f2db7d25dc23b1
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
 checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
 
-[conda-packages.linux-arm64."alsa-lib-1.2.16-he30d5cf_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_1.conda"
-checksum = "sha256:f849561e8aef6cde4a8878a7b4a11e603c6511bbeb2cea36019ea262bbe85d53"
+[conda-packages.linux-arm64."alsa-lib-1.2.16.1-he30d5cf_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16.1-he30d5cf_0.conda"
+checksum = "sha256:105e4c19cfa770affcb9a64b9d2451f406914cd09a67664009910869fa01a639"
 
 [conda-packages.linux-arm64."aom-3.14.1-pl5321h8fffa31_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_1.conda"
@@ -676,9 +676,9 @@ checksum = "sha256:a2527b1d81792a0ccd2c05850960df119c2b6d8f5fdec97f2db7d25dc23b1
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
 checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
 
-[conda-packages.linux-arm64-musl."alsa-lib-1.2.16-he30d5cf_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16-he30d5cf_1.conda"
-checksum = "sha256:f849561e8aef6cde4a8878a7b4a11e603c6511bbeb2cea36019ea262bbe85d53"
+[conda-packages.linux-arm64-musl."alsa-lib-1.2.16.1-he30d5cf_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/alsa-lib-1.2.16.1-he30d5cf_0.conda"
+checksum = "sha256:105e4c19cfa770affcb9a64b9d2451f406914cd09a67664009910869fa01a639"
 
 [conda-packages.linux-arm64-musl."aom-3.14.1-pl5321h8fffa31_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/aom-3.14.1-pl5321h8fffa31_1.conda"
@@ -1344,9 +1344,9 @@ checksum = "sha256:1dd3fffd892081df9726d7eb7e0dea6198962ba775bd88842135a4ddb4deb
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
 checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
 
-[conda-packages.linux-x64."alsa-lib-1.2.16-hb03c661_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_1.conda"
-checksum = "sha256:65f50a67b8715ad01eb73710d540c816aab14cc3e52a74e48fc97e4716224f2e"
+[conda-packages.linux-x64."alsa-lib-1.2.16.1-hb03c661_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16.1-hb03c661_0.conda"
+checksum = "sha256:cf93ca0f1f107e95a35969a4622684e08fcb8cf37f8cf4a1e9e424828386c921"
 
 [conda-packages.linux-x64."aom-3.14.1-pl5321h039972f_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_1.conda"
@@ -2052,9 +2052,9 @@ checksum = "sha256:1dd3fffd892081df9726d7eb7e0dea6198962ba775bd88842135a4ddb4deb
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
 checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
 
-[conda-packages.linux-x64-musl."alsa-lib-1.2.16-hb03c661_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16-hb03c661_1.conda"
-checksum = "sha256:65f50a67b8715ad01eb73710d540c816aab14cc3e52a74e48fc97e4716224f2e"
+[conda-packages.linux-x64-musl."alsa-lib-1.2.16.1-hb03c661_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/alsa-lib-1.2.16.1-hb03c661_0.conda"
+checksum = "sha256:cf93ca0f1f107e95a35969a4622684e08fcb8cf37f8cf4a1e9e424828386c921"
 
 [conda-packages.linux-x64-musl."aom-3.14.1-pl5321h039972f_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/aom-3.14.1-pl5321h039972f_1.conda"
@@ -3033,36 +3033,36 @@ checksum = "sha256:4d4f87f6bc8e6ee176789c28bee698234ce0275da013709eb16b0f14819c1
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza.exe_x86_64-pc-windows-gnu.tar.gz"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.0.7"
+version = "1.0.8"
 backend = "aqua:google-antigravity/antigravity-cli"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:400a48e67723e41f1ff2c84705fc8866c5822c4fab21d4b72fe7dbaf120b2114"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.7/agy_cli_linux_arm64.tar.gz"
+checksum = "sha256:cdbc51ffcd8a2b94991fd36c866fb0855cfaed1e2ef0ab1fcf3be7b64a3f9f71"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.8/agy_cli_linux_arm64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:400a48e67723e41f1ff2c84705fc8866c5822c4fab21d4b72fe7dbaf120b2114"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.7/agy_cli_linux_arm64.tar.gz"
+checksum = "sha256:cdbc51ffcd8a2b94991fd36c866fb0855cfaed1e2ef0ab1fcf3be7b64a3f9f71"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.8/agy_cli_linux_arm64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:f5bb465edb938212eb0a185d68c420ff5b78f08c72de5a6d88dfefaf7af17074"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.7/agy_cli_linux_x64.tar.gz"
+checksum = "sha256:db8ca9d3c8cce0651e72b6fffa8374e2799c5554d94df2b1f9e42bb515745bff"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.8/agy_cli_linux_x64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:f5bb465edb938212eb0a185d68c420ff5b78f08c72de5a6d88dfefaf7af17074"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.7/agy_cli_linux_x64.tar.gz"
+checksum = "sha256:db8ca9d3c8cce0651e72b6fffa8374e2799c5554d94df2b1f9e42bb515745bff"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.8/agy_cli_linux_x64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:e0dec63ee4bd0a6aa2a3521eb3e9fc90448c453991ce2300e0cff138bd1bf31a"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.7/agy_cli_mac_arm64.tar.gz"
+checksum = "sha256:1c234ee8d31645bf874db1b71d5e02421c6350661c8a0f408dab310501bc5b94"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.8/agy_cli_mac_arm64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:24865be9d7233156827a75c4973306846f02c0ea664aaca2aeb2dc22ef5decd7"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.7/agy_cli_mac_x64.tar.gz"
+checksum = "sha256:54826c52358dc01406daf4ddb73bd620ae6b91e376bea5abc10b6e08b47f8cdf"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.8/agy_cli_mac_x64.tar.gz"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:018657f38e3be78c3494eef812ef0b99005092a661003b87b8a314f4cfb24aaa"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.7/agy_cli_windows_x64.zip"
+checksum = "sha256:4c0fa511a986ac36675e259fd11f566b016cc092a0acefe6963c23f77d60564e"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.8/agy_cli_windows_x64.zip"
 
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.29.0"
@@ -3427,7 +3427,7 @@ conda_deps = [
     "cairo-1.18.4-h0b6afd8_1",
     "xorg-libsm-1.2.6-h0808dbd_0",
     "xorg-libice-1.1.2-h86ecc28_0",
-    "alsa-lib-1.2.16-he30d5cf_1",
+    "alsa-lib-1.2.16.1-he30d5cf_0",
     "aom-3.14.1-pl5321h8fffa31_1",
     "bzip2-1.0.8-h4777abc_9",
     "gmp-6.3.0-h0a1ffab_2",
@@ -3557,7 +3557,7 @@ conda_deps = [
     "cairo-1.18.4-h0b6afd8_1",
     "xorg-libsm-1.2.6-h0808dbd_0",
     "xorg-libice-1.1.2-h86ecc28_0",
-    "alsa-lib-1.2.16-he30d5cf_1",
+    "alsa-lib-1.2.16.1-he30d5cf_0",
     "aom-3.14.1-pl5321h8fffa31_1",
     "bzip2-1.0.8-h4777abc_9",
     "gmp-6.3.0-h0a1ffab_2",
@@ -3695,7 +3695,7 @@ conda_deps = [
     "cairo-1.18.4-he90730b_1",
     "xorg-libsm-1.2.6-he73a12e_0",
     "xorg-libice-1.1.2-hb9d3cd8_0",
-    "alsa-lib-1.2.16-hb03c661_1",
+    "alsa-lib-1.2.16.1-hb03c661_0",
     "aom-3.14.1-pl5321h039972f_1",
     "bzip2-1.0.8-hda65f42_9",
     "gmp-6.3.0-hac33072_2",
@@ -3835,7 +3835,7 @@ conda_deps = [
     "cairo-1.18.4-he90730b_1",
     "xorg-libsm-1.2.6-he73a12e_0",
     "xorg-libice-1.1.2-hb9d3cd8_0",
-    "alsa-lib-1.2.16-hb03c661_1",
+    "alsa-lib-1.2.16.1-hb03c661_0",
     "aom-3.14.1-pl5321h039972f_1",
     "bzip2-1.0.8-hda65f42_9",
     "gmp-6.3.0-hac33072_2",
