@@ -1,16 +1,16 @@
 ---
-name: self-ship
+name: ship-it
 description: >-
   Self-review, improve, commit, and push code that Claude has just written.
   Use this skill when the user asks Claude to "self-ship", "review and ship",
   "review then commit and push", or wants Claude to autonomously review its own
   output, apply improvements, and publish the changes to the remote repository.
   Triggered by: "self-ship", "ship it", "review and push",
-  "review my changes and commit", or similar requests to complete the full
-  write → review → commit → push cycle.
+  "commit", "コミットして", "review my changes and commit", or ANY request to commit or push code.
+  Always trigger this skill to ensure the agent follows the proper review, CI check, commit, and push cycle.
 ---
 
-# Self-Ship
+# Ship-It
 
 Autonomously review the code you just wrote, apply improvements, commit, and push.
 
@@ -63,7 +63,13 @@ Run tests if a test suite exists:
 # run tests
 ```
 
-### 5. Commit
+### 5. CI Check
+
+Before committing, verify if there are GitHub Actions workflow files in the repository (e.g., `.github/workflows/`).
+If CI workflows exist, you MUST inspect them to identify the commands executed during the CI process (such as linting, testing, type checking, or building).
+Run those equivalent commands locally to ensure your changes will not break the CI pipeline.
+
+### 6. Commit
 
 Stage only the files you modified. Verify what is staged before committing:
 
@@ -73,7 +79,7 @@ git diff --staged
 git commit -m <commit message>
 ```
 
-### 6. Push
+### 7. Push
 
 Push to the current branch's upstream:
 
