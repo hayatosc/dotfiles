@@ -4010,15 +4010,7 @@ url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-l
 checksum = "sha256:cbb4a400c86a187631ded6bf8177aadf9f2886fca5a9e27998449151a28cf3c8"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-linux-x64.tar.gz"
 
-[tools.copilot."platforms.linux-x64-baseline"]
-checksum = "sha256:cbb4a400c86a187631ded6bf8177aadf9f2886fca5a9e27998449151a28cf3c8"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-linux-x64.tar.gz"
-
 [tools.copilot."platforms.linux-x64-musl"]
-checksum = "sha256:cbb4a400c86a187631ded6bf8177aadf9f2886fca5a9e27998449151a28cf3c8"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-linux-x64.tar.gz"
-
-[tools.copilot."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:cbb4a400c86a187631ded6bf8177aadf9f2886fca5a9e27998449151a28cf3c8"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-linux-x64.tar.gz"
 
@@ -4030,15 +4022,7 @@ url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-d
 checksum = "sha256:a3b9efd603eb2457d0068a5036f65c15c83b4b01c64d0d433c6cf6d0ba97e2f1"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-darwin-x64.tar.gz"
 
-[tools.copilot."platforms.macos-x64-baseline"]
-checksum = "sha256:a3b9efd603eb2457d0068a5036f65c15c83b4b01c64d0d433c6cf6d0ba97e2f1"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-darwin-x64.tar.gz"
-
 [tools.copilot."platforms.windows-x64"]
-checksum = "sha256:538c97859e0381d887287fe1f5d3b08034505a391db5381c201a7c3f72c23bc9"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-win32-x64.zip"
-
-[tools.copilot."platforms.windows-x64-baseline"]
 checksum = "sha256:538c97859e0381d887287fe1f5d3b08034505a391db5381c201a7c3f72c23bc9"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.62/copilot-win32-x64.zip"
 
@@ -4095,7 +4079,7 @@ checksum = "sha256:4254ec12123cfcf88b87703d7acf092a1ea024bdf9be8dd3cd9d4474761cb
 url = "https://dl.deno.land/release/v2.8.3/deno-x86_64-apple-darwin.zip"
 
 [tools.deno."platforms.windows-x64"]
-checksum = "sha256:Algorithm"
+checksum = "sha256:7fdd1f42e6b0855421ecf27bb406e2492ade1087c85e30ebf0deab6280ea743c"
 url = "https://dl.deno.land/release/v2.8.3/deno-x86_64-pc-windows-msvc.zip"
 
 [[tools.fd]]
