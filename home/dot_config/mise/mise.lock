@@ -36,9 +36,9 @@ checksum = "sha256:69f70048a1a915be7b8ad5d2cbb7bf020baa989b5506e45a676ef4ef5106c
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h4777abc_9.conda"
 checksum = "sha256:b3495077889dde6bb370938e7db82be545c73e8589696ad0843a32221520ad4c"
 
-[conda-packages.linux-arm64."ca-certificates-2026.5.20-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.5.20-hbd8a1cb_0.conda"
-checksum = "sha256:9812a303a1395e1dafbd92e5bc8a1ff6013bcbba0a09c7f03a8d23e43560aa9b"
+[conda-packages.linux-arm64."ca-certificates-2026.6.17-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
+checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
 
 [conda-packages.linux-arm64."cairo-1.18.4-h0b6afd8_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/cairo-1.18.4-h0b6afd8_1.conda"
@@ -704,9 +704,9 @@ checksum = "sha256:69f70048a1a915be7b8ad5d2cbb7bf020baa989b5506e45a676ef4ef5106c
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h4777abc_9.conda"
 checksum = "sha256:b3495077889dde6bb370938e7db82be545c73e8589696ad0843a32221520ad4c"
 
-[conda-packages.linux-arm64-musl."ca-certificates-2026.5.20-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.5.20-hbd8a1cb_0.conda"
-checksum = "sha256:9812a303a1395e1dafbd92e5bc8a1ff6013bcbba0a09c7f03a8d23e43560aa9b"
+[conda-packages.linux-arm64-musl."ca-certificates-2026.6.17-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
+checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
 
 [conda-packages.linux-arm64-musl."cairo-1.18.4-h0b6afd8_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/cairo-1.18.4-h0b6afd8_1.conda"
@@ -1372,9 +1372,9 @@ checksum = "sha256:df682395d05050cd1222740a42a551281210726a67447e5258968dd558543
 url = "https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_9.conda"
 checksum = "sha256:0b75d45f0bba3e95dc693336fa51f40ea28c980131fec438afb7ce6118ed05f6"
 
-[conda-packages.linux-x64."ca-certificates-2026.5.20-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.5.20-hbd8a1cb_0.conda"
-checksum = "sha256:9812a303a1395e1dafbd92e5bc8a1ff6013bcbba0a09c7f03a8d23e43560aa9b"
+[conda-packages.linux-x64."ca-certificates-2026.6.17-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
+checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
 
 [conda-packages.linux-x64."cairo-1.18.4-he90730b_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.4-he90730b_1.conda"
@@ -2080,9 +2080,9 @@ checksum = "sha256:df682395d05050cd1222740a42a551281210726a67447e5258968dd558543
 url = "https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_9.conda"
 checksum = "sha256:0b75d45f0bba3e95dc693336fa51f40ea28c980131fec438afb7ce6118ed05f6"
 
-[conda-packages.linux-x64-musl."ca-certificates-2026.5.20-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.5.20-hbd8a1cb_0.conda"
-checksum = "sha256:9812a303a1395e1dafbd92e5bc8a1ff6013bcbba0a09c7f03a8d23e43560aa9b"
+[conda-packages.linux-x64-musl."ca-certificates-2026.6.17-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
+checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
 
 [conda-packages.linux-x64-musl."cairo-1.18.4-he90730b_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.4-he90730b_1.conda"
@@ -2760,9 +2760,9 @@ checksum = "sha256:3033fa8953f7f0c1bb5b89b5af77253badc14a89ba94d743dde3c9159e10f
 url = "https://conda.anaconda.org/conda-forge/win-64/bzip2-1.0.8-h0ad9c76_9.conda"
 checksum = "sha256:76dfb71df5e8d1c4eded2dbb5ba15bb8fb2e2b0fe42d94145d5eed4c75c35902"
 
-[conda-packages.windows-x64."ca-certificates-2026.5.20-h4c7d964_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.5.20-h4c7d964_0.conda"
-checksum = "sha256:86981d764e4ea1883409d30447ff9da46127426d31a63df08315aaded768e652"
+[conda-packages.windows-x64."ca-certificates-2026.6.17-h4c7d964_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-h4c7d964_0.conda"
+checksum = "sha256:7f458e4a82514d7bebbfef23d92817794a16aaf1c748a15f04870d4fb49aeab2"
 
 [conda-packages.windows-x64."cairo-1.18.4-h477c42c_1"]
 url = "https://conda.anaconda.org/conda-forge/win-64/cairo-1.18.4-h477c42c_1.conda"
@@ -3473,7 +3473,7 @@ conda_deps = [
     "pthread-stubs-0.4-h86ecc28_1002",
     "xorg-libxau-1.0.12-he30d5cf_1",
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
-    "ca-certificates-2026.5.20-hbd8a1cb_0",
+    "ca-certificates-2026.6.17-hbd8a1cb_0",
     "dbus-1.16.2-h70963c4_1",
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
@@ -3603,7 +3603,7 @@ conda_deps = [
     "pthread-stubs-0.4-h86ecc28_1002",
     "xorg-libxau-1.0.12-he30d5cf_1",
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
-    "ca-certificates-2026.5.20-hbd8a1cb_0",
+    "ca-certificates-2026.6.17-hbd8a1cb_0",
     "dbus-1.16.2-h70963c4_1",
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
@@ -3750,7 +3750,7 @@ conda_deps = [
     "pthread-stubs-0.4-hb9d3cd8_1002",
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
-    "ca-certificates-2026.5.20-hbd8a1cb_0",
+    "ca-certificates-2026.6.17-hbd8a1cb_0",
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
@@ -3890,7 +3890,7 @@ conda_deps = [
     "pthread-stubs-0.4-hb9d3cd8_1002",
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
-    "ca-certificates-2026.5.20-hbd8a1cb_0",
+    "ca-certificates-2026.6.17-hbd8a1cb_0",
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
@@ -3977,7 +3977,7 @@ conda_deps = [
     "pango-1.56.4-h13911b6_1",
     "fribidi-1.0.16-hfd05255_0",
     "libogg-1.3.5-h2466b09_1",
-    "ca-certificates-2026.5.20-h4c7d964_0",
+    "ca-certificates-2026.6.17-h4c7d964_0",
     "sdl3-3.4.10-h5112557_0",
     "libusb-1.0.29-h1839187_0",
     "glslang-16.3.0-h294ba9c_0",
@@ -4166,13 +4166,6 @@ url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0
 
 [tools.gcloud."platforms.windows-x64"]
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-windows-x86_64.zip"
-
-[[tools.gemini]]
-version = "0.46.0"
-backend = "npm:@google/gemini-cli"
-
-[tools.gemini.options]
-allow_builds = '["@github/keytar", "node-pty"]'
 
 [[tools.gh]]
 version = "2.94.0"
@@ -4688,7 +4681,7 @@ conda_deps = [
     "xorg-libxtst-1.2.5-h57736b2_3",
     "xorg-xorgproto-2025.1-he30d5cf_0",
     "openssl-3.6.3-h546c87b_0",
-    "ca-certificates-2026.5.20-hbd8a1cb_0",
+    "ca-certificates-2026.6.17-hbd8a1cb_0",
     "ncurses-6.6-hf8d1292_0",
 ]
 
@@ -4808,7 +4801,7 @@ conda_deps = [
     "xorg-libxtst-1.2.5-h57736b2_3",
     "xorg-xorgproto-2025.1-he30d5cf_0",
     "openssl-3.6.3-h546c87b_0",
-    "ca-certificates-2026.5.20-hbd8a1cb_0",
+    "ca-certificates-2026.6.17-hbd8a1cb_0",
     "ncurses-6.6-hf8d1292_0",
 ]
 
@@ -4928,7 +4921,7 @@ conda_deps = [
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
     "xorg-xorgproto-2025.1-hb03c661_0",
     "openssl-3.6.3-h35e630c_0",
-    "ca-certificates-2026.5.20-hbd8a1cb_0",
+    "ca-certificates-2026.6.17-hbd8a1cb_0",
     "ncurses-6.6-hdb14827_0",
 ]
 
@@ -5048,7 +5041,7 @@ conda_deps = [
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
     "xorg-xorgproto-2025.1-hb03c661_0",
     "openssl-3.6.3-h35e630c_0",
-    "ca-certificates-2026.5.20-hbd8a1cb_0",
+    "ca-certificates-2026.6.17-hbd8a1cb_0",
     "ncurses-6.6-hdb14827_0",
 ]
 
@@ -5122,10 +5115,6 @@ url = "https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygi
 [tools.lazygit."platforms.windows-x64"]
 checksum = "sha256:805bfcb2445273b77a32b7758dfb5d2d8dbd7b80b7336ab868935584a2fad0ba"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygit_0.62.2_windows_x86_64.zip"
-
-[[tools.moonbit]]
-version = "latest"
-backend = "vfox:moonbit"
 
 [[tools.ni]]
 version = "30.1.0"
@@ -5344,15 +5333,7 @@ url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-aarch64-unkno
 checksum = "sha256:34975116da11e09e502501daf758143e0b22ed3a42a10eb67fb693a6270d9e36"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-x86_64-unknown-linux-musl.tar.gz"
 
-[tools.rtk."platforms.linux-x64-baseline"]
-checksum = "sha256:34975116da11e09e502501daf758143e0b22ed3a42a10eb67fb693a6270d9e36"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-x86_64-unknown-linux-musl.tar.gz"
-
 [tools.rtk."platforms.linux-x64-musl"]
-checksum = "sha256:34975116da11e09e502501daf758143e0b22ed3a42a10eb67fb693a6270d9e36"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-x86_64-unknown-linux-musl.tar.gz"
-
-[tools.rtk."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:34975116da11e09e502501daf758143e0b22ed3a42a10eb67fb693a6270d9e36"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-x86_64-unknown-linux-musl.tar.gz"
 
@@ -5364,15 +5345,7 @@ url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-aarch64-apple
 checksum = "sha256:84121316867613e61925c209607f033b2113bb0ce312c267a79d3e3e8f221e49"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-x86_64-apple-darwin.tar.gz"
 
-[tools.rtk."platforms.macos-x64-baseline"]
-checksum = "sha256:84121316867613e61925c209607f033b2113bb0ce312c267a79d3e3e8f221e49"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-x86_64-apple-darwin.tar.gz"
-
 [tools.rtk."platforms.windows-x64"]
-checksum = "sha256:f0ec18963581657173bd6a51f5ba012b093823f844db749fec218581af30a568"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-x86_64-pc-windows-msvc.zip"
-
-[tools.rtk."platforms.windows-x64-baseline"]
 checksum = "sha256:f0ec18963581657173bd6a51f5ba012b093823f844db749fec218581af30a568"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.42.4/rtk-x86_64-pc-windows-msvc.zip"
 
