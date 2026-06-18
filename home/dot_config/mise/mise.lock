@@ -1684,57 +1684,57 @@ checksum = "sha256:7858f6a173206bc8a5bdc8e75690483bb66c0dcc3809ac1cb43c561a47236
 url = "https://conda.anaconda.org/conda-forge/linux-64/libogg-1.3.5-hd0c01bc_1.conda"
 checksum = "sha256:ffb066ddf2e76953f92e06677021c73c85536098f1c21fcd15360dbc859e22e4"
 
-[conda-packages.linux-x64."libopenvino-2026.2.0-hb56ce9e_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-2026.2.0-hb56ce9e_0.conda"
-checksum = "sha256:1f2d5f0236eaf872c6c11891e59d9f4166913f3ab3b342352d12280b02b58185"
+[conda-packages.linux-x64."libopenvino-2026.2.0-h1f0fae8_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-2026.2.0-h1f0fae8_1.conda"
+checksum = "sha256:7f489b58a4729026440ccb07d8caea2ea30cee9df7e8690378b5f29a6cb89dbe"
 
-[conda-packages.linux-x64."libopenvino-auto-batch-plugin-2026.2.0-hd85de46_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-auto-batch-plugin-2026.2.0-hd85de46_0.conda"
-checksum = "sha256:b926fd97763e5c8fc2f4f53eaa657818eca85eab6f7d3992d3ceef5bd86349ca"
+[conda-packages.linux-x64."libopenvino-auto-batch-plugin-2026.2.0-h7e124b3_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-auto-batch-plugin-2026.2.0-h7e124b3_1.conda"
+checksum = "sha256:86c6157aa1718f24b1fcc07f7241cbc8df8c30e881dfd554c1999bd888855262"
 
-[conda-packages.linux-x64."libopenvino-auto-plugin-2026.2.0-hd85de46_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-auto-plugin-2026.2.0-hd85de46_0.conda"
-checksum = "sha256:0f386b1f58fbe63bd599855a08bd9d738615730cba86d9e64f2bba8d3872d24e"
+[conda-packages.linux-x64."libopenvino-auto-plugin-2026.2.0-h7e124b3_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-auto-plugin-2026.2.0-h7e124b3_1.conda"
+checksum = "sha256:46d53912d41a08f26e2cd856cda93ae6e54e5b9a230385075d0c7ad2f4a3ee80"
 
-[conda-packages.linux-x64."libopenvino-hetero-plugin-2026.2.0-hd41364c_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-hetero-plugin-2026.2.0-hd41364c_0.conda"
-checksum = "sha256:dbb54fe5cbb27d9528797826c9aa80b0f742bc07e44652c09de2c79750719a5d"
+[conda-packages.linux-x64."libopenvino-hetero-plugin-2026.2.0-hd41364c_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-hetero-plugin-2026.2.0-hd41364c_1.conda"
+checksum = "sha256:4e5b545b05cb2d95c98e760d66243f68cde8029877ed8ac8f62e14e121593353"
 
-[conda-packages.linux-x64."libopenvino-intel-cpu-plugin-2026.2.0-hb56ce9e_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-cpu-plugin-2026.2.0-hb56ce9e_0.conda"
-checksum = "sha256:87aa0a430b462c275a5f7b7ffb5f490d37d8ce97ccdc3d6e93b8bccb3d66f19f"
+[conda-packages.linux-x64."libopenvino-intel-cpu-plugin-2026.2.0-h1f0fae8_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-cpu-plugin-2026.2.0-h1f0fae8_1.conda"
+checksum = "sha256:7e485478d665279a6f278132e8cec3c501183be7d56186c7c60b3875483c1fb7"
 
-[conda-packages.linux-x64."libopenvino-intel-gpu-plugin-2026.2.0-hb56ce9e_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-gpu-plugin-2026.2.0-hb56ce9e_0.conda"
-checksum = "sha256:1efa48f137a3720a83276ee0b50201d540e1d41a92efe323118c43410ccf697b"
+[conda-packages.linux-x64."libopenvino-intel-gpu-plugin-2026.2.0-h1f0fae8_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-gpu-plugin-2026.2.0-h1f0fae8_1.conda"
+checksum = "sha256:57b50e34355e5aba5fb1d768c631238fcf3f7070ad725a68c10d1cbec56ea21c"
 
-[conda-packages.linux-x64."libopenvino-intel-npu-plugin-2026.2.0-hb56ce9e_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-npu-plugin-2026.2.0-hb56ce9e_0.conda"
-checksum = "sha256:c300e263c51208457a320c98f94f1b18e713451577ed81ab425793e52e483d03"
+[conda-packages.linux-x64."libopenvino-intel-npu-plugin-2026.2.0-h1f0fae8_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-npu-plugin-2026.2.0-h1f0fae8_1.conda"
+checksum = "sha256:9faaef86d0a0dbba58a6b7dc3677f0de155e6741b11534c591df4dd245989c2b"
 
-[conda-packages.linux-x64."libopenvino-ir-frontend-2026.2.0-hd41364c_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-ir-frontend-2026.2.0-hd41364c_0.conda"
-checksum = "sha256:4e8e2c111820120d563d58e0863d239e0ff155f5bcbf5cf88fa3084b52fa0829"
+[conda-packages.linux-x64."libopenvino-ir-frontend-2026.2.0-hd41364c_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-ir-frontend-2026.2.0-hd41364c_1.conda"
+checksum = "sha256:e0165152cc633ae8e041ac732c51169959e27e48a981f11950bb21fd0274fecb"
 
-[conda-packages.linux-x64."libopenvino-onnx-frontend-2026.2.0-h7a07914_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-onnx-frontend-2026.2.0-h7a07914_0.conda"
-checksum = "sha256:d34154e5dfdb43fce02ba15277d52e9b0a524d789826e6b1ea8289fd76a8ad75"
+[conda-packages.linux-x64."libopenvino-onnx-frontend-2026.2.0-h7a07914_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-onnx-frontend-2026.2.0-h7a07914_1.conda"
+checksum = "sha256:081ee84091459766b2bd817430af901ff6efeddfd34ceaf0e9c04a07b32fb8a0"
 
-[conda-packages.linux-x64."libopenvino-paddle-frontend-2026.2.0-h7a07914_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-paddle-frontend-2026.2.0-h7a07914_0.conda"
-checksum = "sha256:e0d2e852c4cf581efc6e5065b5ae48ab782bc4430d5dde358387c777eaaa9e95"
+[conda-packages.linux-x64."libopenvino-paddle-frontend-2026.2.0-h7a07914_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-paddle-frontend-2026.2.0-h7a07914_1.conda"
+checksum = "sha256:cb3c1cefe5b07162fa5f42cac64a3b56d61378954ad3adc347b4044a493e2087"
 
-[conda-packages.linux-x64."libopenvino-pytorch-frontend-2026.2.0-hecca717_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-pytorch-frontend-2026.2.0-hecca717_0.conda"
-checksum = "sha256:712a3ca68db324a503cfe13223b992fbb90fced5e53d561941b4186c4714bb08"
+[conda-packages.linux-x64."libopenvino-pytorch-frontend-2026.2.0-hecca717_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-pytorch-frontend-2026.2.0-hecca717_1.conda"
+checksum = "sha256:9944c66eb0cbffcb8cd737e1db2ca72ed34326f006bdedb204910895e0cf3539"
 
-[conda-packages.linux-x64."libopenvino-tensorflow-frontend-2026.2.0-h78e8023_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-tensorflow-frontend-2026.2.0-h78e8023_0.conda"
-checksum = "sha256:7df7413374e2e4e2c77960c0e4265d4a5871668f2766545253b91585c9bf50b7"
+[conda-packages.linux-x64."libopenvino-tensorflow-frontend-2026.2.0-h78e8023_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-tensorflow-frontend-2026.2.0-h78e8023_1.conda"
+checksum = "sha256:2b2bc9ef6dfde1752bf363e463b6b0020c7674c98b6c1aed0a551ac2ea5ac494"
 
-[conda-packages.linux-x64."libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_0.conda"
-checksum = "sha256:72474e82f180fb15d8cf207b2ded6c12041871ebf9cae02c81c3a5c381b3f4c9"
+[conda-packages.linux-x64."libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_1.conda"
+checksum = "sha256:5a2c5cabb91a241f624b7c99973664dea39013a4189a3700ff5f57e0901e0ef0"
 
 [conda-packages.linux-x64."libopus-1.6.1-h280c20c_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libopus-1.6.1-h280c20c_0.conda"
@@ -2392,57 +2392,57 @@ checksum = "sha256:7858f6a173206bc8a5bdc8e75690483bb66c0dcc3809ac1cb43c561a47236
 url = "https://conda.anaconda.org/conda-forge/linux-64/libogg-1.3.5-hd0c01bc_1.conda"
 checksum = "sha256:ffb066ddf2e76953f92e06677021c73c85536098f1c21fcd15360dbc859e22e4"
 
-[conda-packages.linux-x64-musl."libopenvino-2026.2.0-hb56ce9e_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-2026.2.0-hb56ce9e_0.conda"
-checksum = "sha256:1f2d5f0236eaf872c6c11891e59d9f4166913f3ab3b342352d12280b02b58185"
+[conda-packages.linux-x64-musl."libopenvino-2026.2.0-h1f0fae8_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-2026.2.0-h1f0fae8_1.conda"
+checksum = "sha256:7f489b58a4729026440ccb07d8caea2ea30cee9df7e8690378b5f29a6cb89dbe"
 
-[conda-packages.linux-x64-musl."libopenvino-auto-batch-plugin-2026.2.0-hd85de46_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-auto-batch-plugin-2026.2.0-hd85de46_0.conda"
-checksum = "sha256:b926fd97763e5c8fc2f4f53eaa657818eca85eab6f7d3992d3ceef5bd86349ca"
+[conda-packages.linux-x64-musl."libopenvino-auto-batch-plugin-2026.2.0-h7e124b3_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-auto-batch-plugin-2026.2.0-h7e124b3_1.conda"
+checksum = "sha256:86c6157aa1718f24b1fcc07f7241cbc8df8c30e881dfd554c1999bd888855262"
 
-[conda-packages.linux-x64-musl."libopenvino-auto-plugin-2026.2.0-hd85de46_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-auto-plugin-2026.2.0-hd85de46_0.conda"
-checksum = "sha256:0f386b1f58fbe63bd599855a08bd9d738615730cba86d9e64f2bba8d3872d24e"
+[conda-packages.linux-x64-musl."libopenvino-auto-plugin-2026.2.0-h7e124b3_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-auto-plugin-2026.2.0-h7e124b3_1.conda"
+checksum = "sha256:46d53912d41a08f26e2cd856cda93ae6e54e5b9a230385075d0c7ad2f4a3ee80"
 
-[conda-packages.linux-x64-musl."libopenvino-hetero-plugin-2026.2.0-hd41364c_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-hetero-plugin-2026.2.0-hd41364c_0.conda"
-checksum = "sha256:dbb54fe5cbb27d9528797826c9aa80b0f742bc07e44652c09de2c79750719a5d"
+[conda-packages.linux-x64-musl."libopenvino-hetero-plugin-2026.2.0-hd41364c_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-hetero-plugin-2026.2.0-hd41364c_1.conda"
+checksum = "sha256:4e5b545b05cb2d95c98e760d66243f68cde8029877ed8ac8f62e14e121593353"
 
-[conda-packages.linux-x64-musl."libopenvino-intel-cpu-plugin-2026.2.0-hb56ce9e_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-cpu-plugin-2026.2.0-hb56ce9e_0.conda"
-checksum = "sha256:87aa0a430b462c275a5f7b7ffb5f490d37d8ce97ccdc3d6e93b8bccb3d66f19f"
+[conda-packages.linux-x64-musl."libopenvino-intel-cpu-plugin-2026.2.0-h1f0fae8_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-cpu-plugin-2026.2.0-h1f0fae8_1.conda"
+checksum = "sha256:7e485478d665279a6f278132e8cec3c501183be7d56186c7c60b3875483c1fb7"
 
-[conda-packages.linux-x64-musl."libopenvino-intel-gpu-plugin-2026.2.0-hb56ce9e_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-gpu-plugin-2026.2.0-hb56ce9e_0.conda"
-checksum = "sha256:1efa48f137a3720a83276ee0b50201d540e1d41a92efe323118c43410ccf697b"
+[conda-packages.linux-x64-musl."libopenvino-intel-gpu-plugin-2026.2.0-h1f0fae8_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-gpu-plugin-2026.2.0-h1f0fae8_1.conda"
+checksum = "sha256:57b50e34355e5aba5fb1d768c631238fcf3f7070ad725a68c10d1cbec56ea21c"
 
-[conda-packages.linux-x64-musl."libopenvino-intel-npu-plugin-2026.2.0-hb56ce9e_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-npu-plugin-2026.2.0-hb56ce9e_0.conda"
-checksum = "sha256:c300e263c51208457a320c98f94f1b18e713451577ed81ab425793e52e483d03"
+[conda-packages.linux-x64-musl."libopenvino-intel-npu-plugin-2026.2.0-h1f0fae8_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-intel-npu-plugin-2026.2.0-h1f0fae8_1.conda"
+checksum = "sha256:9faaef86d0a0dbba58a6b7dc3677f0de155e6741b11534c591df4dd245989c2b"
 
-[conda-packages.linux-x64-musl."libopenvino-ir-frontend-2026.2.0-hd41364c_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-ir-frontend-2026.2.0-hd41364c_0.conda"
-checksum = "sha256:4e8e2c111820120d563d58e0863d239e0ff155f5bcbf5cf88fa3084b52fa0829"
+[conda-packages.linux-x64-musl."libopenvino-ir-frontend-2026.2.0-hd41364c_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-ir-frontend-2026.2.0-hd41364c_1.conda"
+checksum = "sha256:e0165152cc633ae8e041ac732c51169959e27e48a981f11950bb21fd0274fecb"
 
-[conda-packages.linux-x64-musl."libopenvino-onnx-frontend-2026.2.0-h7a07914_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-onnx-frontend-2026.2.0-h7a07914_0.conda"
-checksum = "sha256:d34154e5dfdb43fce02ba15277d52e9b0a524d789826e6b1ea8289fd76a8ad75"
+[conda-packages.linux-x64-musl."libopenvino-onnx-frontend-2026.2.0-h7a07914_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-onnx-frontend-2026.2.0-h7a07914_1.conda"
+checksum = "sha256:081ee84091459766b2bd817430af901ff6efeddfd34ceaf0e9c04a07b32fb8a0"
 
-[conda-packages.linux-x64-musl."libopenvino-paddle-frontend-2026.2.0-h7a07914_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-paddle-frontend-2026.2.0-h7a07914_0.conda"
-checksum = "sha256:e0d2e852c4cf581efc6e5065b5ae48ab782bc4430d5dde358387c777eaaa9e95"
+[conda-packages.linux-x64-musl."libopenvino-paddle-frontend-2026.2.0-h7a07914_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-paddle-frontend-2026.2.0-h7a07914_1.conda"
+checksum = "sha256:cb3c1cefe5b07162fa5f42cac64a3b56d61378954ad3adc347b4044a493e2087"
 
-[conda-packages.linux-x64-musl."libopenvino-pytorch-frontend-2026.2.0-hecca717_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-pytorch-frontend-2026.2.0-hecca717_0.conda"
-checksum = "sha256:712a3ca68db324a503cfe13223b992fbb90fced5e53d561941b4186c4714bb08"
+[conda-packages.linux-x64-musl."libopenvino-pytorch-frontend-2026.2.0-hecca717_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-pytorch-frontend-2026.2.0-hecca717_1.conda"
+checksum = "sha256:9944c66eb0cbffcb8cd737e1db2ca72ed34326f006bdedb204910895e0cf3539"
 
-[conda-packages.linux-x64-musl."libopenvino-tensorflow-frontend-2026.2.0-h78e8023_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-tensorflow-frontend-2026.2.0-h78e8023_0.conda"
-checksum = "sha256:7df7413374e2e4e2c77960c0e4265d4a5871668f2766545253b91585c9bf50b7"
+[conda-packages.linux-x64-musl."libopenvino-tensorflow-frontend-2026.2.0-h78e8023_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-tensorflow-frontend-2026.2.0-h78e8023_1.conda"
+checksum = "sha256:2b2bc9ef6dfde1752bf363e463b6b0020c7674c98b6c1aed0a551ac2ea5ac494"
 
-[conda-packages.linux-x64-musl."libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_0.conda"
-checksum = "sha256:72474e82f180fb15d8cf207b2ded6c12041871ebf9cae02c81c3a5c381b3f4c9"
+[conda-packages.linux-x64-musl."libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_1.conda"
+checksum = "sha256:5a2c5cabb91a241f624b7c99973664dea39013a4189a3700ff5f57e0901e0ef0"
 
 [conda-packages.linux-x64-musl."libopus-1.6.1-h280c20c_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libopus-1.6.1-h280c20c_0.conda"
@@ -3303,22 +3303,13 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 [tools.claude."platforms.linux-x64"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/linux-x64/claude"
 
-[tools.claude."platforms.linux-x64-baseline"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/linux-x64/claude"
-
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/linux-x64-musl/claude"
-
-[tools.claude."platforms.linux-x64-musl-baseline"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/darwin-x64/claude"
-
-[tools.claude."platforms.macos-x64-baseline"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/darwin-x64/claude"
 
 [[tools.cloudflared]]
@@ -3671,19 +3662,6 @@ conda_deps = [
     "librsvg-2.62.3-h4c96295_0",
     "libplacebo-7.360.1-h9eeb4b2_0",
     "libopus-1.6.1-h280c20c_0",
-    "libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_0",
-    "libopenvino-tensorflow-frontend-2026.2.0-h78e8023_0",
-    "libopenvino-pytorch-frontend-2026.2.0-hecca717_0",
-    "libopenvino-paddle-frontend-2026.2.0-h7a07914_0",
-    "libopenvino-onnx-frontend-2026.2.0-h7a07914_0",
-    "libopenvino-ir-frontend-2026.2.0-hd41364c_0",
-    "libopenvino-intel-npu-plugin-2026.2.0-hb56ce9e_0",
-    "libopenvino-intel-gpu-plugin-2026.2.0-hb56ce9e_0",
-    "libopenvino-intel-cpu-plugin-2026.2.0-hb56ce9e_0",
-    "libopenvino-hetero-plugin-2026.2.0-hd41364c_0",
-    "libopenvino-auto-plugin-2026.2.0-hd85de46_0",
-    "libopenvino-auto-batch-plugin-2026.2.0-hd85de46_0",
-    "libopenvino-2026.2.0-hb56ce9e_0",
     "liblzma-5.8.3-hb03c661_0",
     "libfreetype6-2.14.3-h73754d4_0",
     "libfreetype-2.14.3-ha770c72_0",
@@ -3695,9 +3673,6 @@ conda_deps = [
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
     "gdk-pixbuf-2.44.6-h2b0a6b4_0",
-    "libabseil-20260107.1-cxx17_h7b12aa8_0",
-    "pugixml-1.15-h3f63f65_0",
-    "level-zero-1.29.0-hb700be7_0",
     "icu-78.3-h33c6efd_0",
     "xorg-libxrender-0.9.12-hb9d3cd8_0",
     "cairo-1.18.4-he90730b_1",
@@ -3716,6 +3691,22 @@ conda_deps = [
     "libiconv-1.18-h3b78370_2",
     "libjxl-0.11.2-h174a0a3_1",
     "libhwy-1.4.0-h10be129_0",
+    "libopenvino-2026.2.0-h1f0fae8_1",
+    "pugixml-1.15-h3f63f65_0",
+    "libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_1",
+    "libopenvino-tensorflow-frontend-2026.2.0-h78e8023_1",
+    "libopenvino-pytorch-frontend-2026.2.0-hecca717_1",
+    "libopenvino-paddle-frontend-2026.2.0-h7a07914_1",
+    "libopenvino-onnx-frontend-2026.2.0-h7a07914_1",
+    "libopenvino-ir-frontend-2026.2.0-hd41364c_1",
+    "libopenvino-intel-npu-plugin-2026.2.0-h1f0fae8_1",
+    "libopenvino-intel-gpu-plugin-2026.2.0-h1f0fae8_1",
+    "libopenvino-intel-cpu-plugin-2026.2.0-h1f0fae8_1",
+    "libopenvino-hetero-plugin-2026.2.0-hd41364c_1",
+    "libopenvino-auto-plugin-2026.2.0-h7e124b3_1",
+    "libopenvino-auto-batch-plugin-2026.2.0-h7e124b3_1",
+    "libabseil-20260107.1-cxx17_h7b12aa8_0",
+    "level-zero-1.29.0-hb700be7_0",
     "libvorbis-1.3.7-h54a6638_2",
     "libxml2-2.15.3-h49c6c72_0",
     "libxml2-16-2.15.3-hca6bf5a_0",
@@ -3811,19 +3802,6 @@ conda_deps = [
     "librsvg-2.62.3-h4c96295_0",
     "libplacebo-7.360.1-h9eeb4b2_0",
     "libopus-1.6.1-h280c20c_0",
-    "libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_0",
-    "libopenvino-tensorflow-frontend-2026.2.0-h78e8023_0",
-    "libopenvino-pytorch-frontend-2026.2.0-hecca717_0",
-    "libopenvino-paddle-frontend-2026.2.0-h7a07914_0",
-    "libopenvino-onnx-frontend-2026.2.0-h7a07914_0",
-    "libopenvino-ir-frontend-2026.2.0-hd41364c_0",
-    "libopenvino-intel-npu-plugin-2026.2.0-hb56ce9e_0",
-    "libopenvino-intel-gpu-plugin-2026.2.0-hb56ce9e_0",
-    "libopenvino-intel-cpu-plugin-2026.2.0-hb56ce9e_0",
-    "libopenvino-hetero-plugin-2026.2.0-hd41364c_0",
-    "libopenvino-auto-plugin-2026.2.0-hd85de46_0",
-    "libopenvino-auto-batch-plugin-2026.2.0-hd85de46_0",
-    "libopenvino-2026.2.0-hb56ce9e_0",
     "liblzma-5.8.3-hb03c661_0",
     "libfreetype6-2.14.3-h73754d4_0",
     "libfreetype-2.14.3-ha770c72_0",
@@ -3835,9 +3813,6 @@ conda_deps = [
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
     "gdk-pixbuf-2.44.6-h2b0a6b4_0",
-    "libabseil-20260107.1-cxx17_h7b12aa8_0",
-    "pugixml-1.15-h3f63f65_0",
-    "level-zero-1.29.0-hb700be7_0",
     "icu-78.3-h33c6efd_0",
     "xorg-libxrender-0.9.12-hb9d3cd8_0",
     "cairo-1.18.4-he90730b_1",
@@ -3856,6 +3831,22 @@ conda_deps = [
     "libiconv-1.18-h3b78370_2",
     "libjxl-0.11.2-h174a0a3_1",
     "libhwy-1.4.0-h10be129_0",
+    "libopenvino-2026.2.0-h1f0fae8_1",
+    "pugixml-1.15-h3f63f65_0",
+    "libopenvino-tensorflow-lite-frontend-2026.2.0-hecca717_1",
+    "libopenvino-tensorflow-frontend-2026.2.0-h78e8023_1",
+    "libopenvino-pytorch-frontend-2026.2.0-hecca717_1",
+    "libopenvino-paddle-frontend-2026.2.0-h7a07914_1",
+    "libopenvino-onnx-frontend-2026.2.0-h7a07914_1",
+    "libopenvino-ir-frontend-2026.2.0-hd41364c_1",
+    "libopenvino-intel-npu-plugin-2026.2.0-h1f0fae8_1",
+    "libopenvino-intel-gpu-plugin-2026.2.0-h1f0fae8_1",
+    "libopenvino-intel-cpu-plugin-2026.2.0-h1f0fae8_1",
+    "libopenvino-hetero-plugin-2026.2.0-hd41364c_1",
+    "libopenvino-auto-plugin-2026.2.0-h7e124b3_1",
+    "libopenvino-auto-batch-plugin-2026.2.0-h7e124b3_1",
+    "libabseil-20260107.1-cxx17_h7b12aa8_0",
+    "level-zero-1.29.0-hb700be7_0",
     "libvorbis-1.3.7-h54a6638_2",
     "libxml2-2.15.3-h49c6c72_0",
     "libxml2-16-2.15.3-hca6bf5a_0",
