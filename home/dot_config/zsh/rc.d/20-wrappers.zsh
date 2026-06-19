@@ -54,6 +54,9 @@ function chezmoi() {
     if ! ~/.config/zsh/scripts/codex-sync-config.ts; then
       echo "warning: codex-sync-config failed after chezmoi re-add" >&2
     fi
+    if ! ~/.config/zsh/scripts/antigravity-sync-config.ts; then
+      echo "warning: antigravity-sync-config failed after chezmoi re-add" >&2
+    fi
   fi
 
   return $exit_code

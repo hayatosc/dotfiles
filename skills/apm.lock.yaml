@@ -1,6 +1,6 @@
 lockfile_version: '1'
-generated_at: '2026-06-17T05:49:46.310045+00:00'
-apm_version: 0.18.0
+generated_at: '2026-06-18T16:08:42.931176+00:00'
+apm_version: 0.19.0
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
   host: github.com
@@ -10,6 +10,283 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/modern-web-guidance
+  - .agents/skills/modern-web-guidance/SKILL.md
+  - .agents/skills/modern-web-guidance/guides/accessibility/accessibility.md
+  - .agents/skills/modern-web-guidance/guides/accessibility/accessible-error-announcement.md
+  - .agents/skills/modern-web-guidance/guides/built-in-ai/language-detection.md
+  - .agents/skills/modern-web-guidance/guides/built-in-ai/language-model.md
+  - .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md
+  - .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md
+  - .agents/skills/modern-web-guidance/guides/css-layout/css-layout.md
+  - .agents/skills/modern-web-guidance/guides/css/css.md
+  - .agents/skills/modern-web-guidance/guides/css/highlight-text-ranges.md
+  - .agents/skills/modern-web-guidance/guides/forms/animated-select-picker.md
+  - .agents/skills/modern-web-guidance/guides/forms/autofill-address-form.md
+  - .agents/skills/modern-web-guidance/guides/forms/autofill-highlight-inputs.md
+  - .agents/skills/modern-web-guidance/guides/forms/autofill-payment-form.md
+  - .agents/skills/modern-web-guidance/guides/forms/autofill-sign-in-form.md
+  - .agents/skills/modern-web-guidance/guides/forms/autofill-sign-up-form.md
+  - .agents/skills/modern-web-guidance/guides/forms/brand-consistent-forms.md
+  - .agents/skills/modern-web-guidance/guides/forms/branded-select-styling.md
+  - .agents/skills/modern-web-guidance/guides/forms/custom-select-picker-layouts.md
+  - .agents/skills/modern-web-guidance/guides/forms/form-fields-automatically-fit-contents.md
+  - .agents/skills/modern-web-guidance/guides/forms/forms.md
+  - .agents/skills/modern-web-guidance/guides/forms/required-field-feedback.md
+  - .agents/skills/modern-web-guidance/guides/forms/rich-media-picker.md
+  - .agents/skills/modern-web-guidance/guides/forms/select-menu-interaction.md
+  - .agents/skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md
+  - .agents/skills/modern-web-guidance/guides/html/html.md
+  - .agents/skills/modern-web-guidance/guides/passkeys/passkey-authentication.md
+  - .agents/skills/modern-web-guidance/guides/passkeys/passkey-conditional-create.md
+  - .agents/skills/modern-web-guidance/guides/passkeys/passkey-management.md
+  - .agents/skills/modern-web-guidance/guides/passkeys/passkey-reauthentication.md
+  - .agents/skills/modern-web-guidance/guides/passkeys/passkey-registration.md
+  - .agents/skills/modern-web-guidance/guides/passkeys/passkeys.md
+  - .agents/skills/modern-web-guidance/guides/performance/batch-analytics-events.md
+  - .agents/skills/modern-web-guidance/guides/performance/break-up-long-tasks.md
+  - .agents/skills/modern-web-guidance/guides/performance/calculate-total-foreground-time.md
+  - .agents/skills/modern-web-guidance/guides/performance/conditional-async-dependencies.md
+  - .agents/skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md
+  - .agents/skills/modern-web-guidance/guides/performance/defer-work-until-scroll-ends.md
+  - .agents/skills/modern-web-guidance/guides/performance/deprioritize-background-fetches.md
+  - .agents/skills/modern-web-guidance/guides/performance/detect-initial-visibility-state.md
+  - .agents/skills/modern-web-guidance/guides/performance/efficient-background-processing.md
+  - .agents/skills/modern-web-guidance/guides/performance/faster-spa-view-transitions.md
+  - .agents/skills/modern-web-guidance/guides/performance/full-session-analytics.md
+  - .agents/skills/modern-web-guidance/guides/performance/identify-heavy-scripts.md
+  - .agents/skills/modern-web-guidance/guides/performance/identify-inp-causes.md
+  - .agents/skills/modern-web-guidance/guides/performance/improve-next-page-load-performance.md
+  - .agents/skills/modern-web-guidance/guides/performance/interactions-in-complex-layouts.md
+  - .agents/skills/modern-web-guidance/guides/performance/optimize-image-priority.md
+  - .agents/skills/modern-web-guidance/guides/performance/optimize-preload-priority.md
+  - .agents/skills/modern-web-guidance/guides/performance/optimize-script-priority.md
+  - .agents/skills/modern-web-guidance/guides/performance/performance.md
+  - .agents/skills/modern-web-guidance/guides/performance/resolution-optimized-pseudo-elements.md
+  - .agents/skills/modern-web-guidance/guides/performance/schedule-tasks-by-priority.md
+  - .agents/skills/modern-web-guidance/guides/performance/sequence-distributed-events.md
+  - .agents/skills/modern-web-guidance/guides/privacy/privacy.md
+  - .agents/skills/modern-web-guidance/guides/security/security.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/adapt-scrollbar-to-contrast-preferences.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/anchor-positioning-tab-underline.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/animate-element-entry-exit.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/animate-to-from-top-layer.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/animate-to-intrinsic-sizes.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/apply-webgl-shaders.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/calculate-event-differentials.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/calculate-with-intrinsic-sizes.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/capture-location-agnostic-data.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/carousel-slide-effects.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/carousel-snap-highlights.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/child-state-based-styling.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/complex-shapes.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/component-specific-light-dark-theme.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/consistent-cross-document-transitions.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/content-based-styling.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/coordinate-global-events.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/cross-document-transitions.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/customize-scrollbar-color-and-thickness.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/dark-mode.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/declarative-button-actions.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/deliver-optimized-decorative-images.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/design-token-reactivity.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/directional-navigation-transitions.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-animations.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-styling.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/export-html-media-from-canvas.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/expose-canvas-content-to-browser-features.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/flicker-free-client-side-ab-testing.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/fluid-scaling.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/format-human-readable-durations.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/group-element-transitions.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/improve-text-layout-and-legibility.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/individual-transform-properties.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/interactive-content-in-3d-scenes.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/interactive-content-reveal.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/interest-triggered-action-previews.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/interest-triggered-tooltips.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/light-dismiss-a-dialog.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/manage-recurring-intervals.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/model-partial-time-concepts.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/move-dom-element-without-losing-state.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/navigation-drawer.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/overflow-clipping-control.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/parallax-scroll-effects.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/persistent-app-tours.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/persistent-toast-notifications.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/persistent-top-layer-ui.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/physics-based-easing.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/platform-controls-dismiss-dialog.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/position-aware-tooltips.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/precise-text-alignment.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/prevent-text-wrapping.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/pull-to-reveal.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/reduce-style-repetition.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/resilient-context-menus-and-nested-dropdowns.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/same-document-transitions.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-entry-exit-effects.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-position-aware-elements.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-progress-indicator.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-snap-realtime-feedback.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-snap-state-sync.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-target-on-load.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/scrollability-affordance-hints.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/scrollytelling.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/search-hidden-content.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/shaped-cutouts.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/shrinking-header-on-scroll.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/size-aware-styling.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/soft-edge-content-fade.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/stabilize-reactive-state.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/stack-drill-down.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/style-parent-with-has.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/support-global-calendar-systems.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/swipe-to-remove.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/visually-stable-font-fallbacks.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/visually-stable-mixed-fonts.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/visually-texture-content.md
+  - .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md
+  - .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md
+  - .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md
+  deployed_file_hashes:
+    .agents/skills/modern-web-guidance/SKILL.md: sha256:a1ed8448959e8c988ebe7e2ba060b25b748fcb16c232435354a1afcf09f1bf7b
+    .agents/skills/modern-web-guidance/guides/accessibility/accessibility.md: sha256:b1023deceb022ea7415bf447fb47f19909c3a2b6914751d3ab247295c2d892ca
+    .agents/skills/modern-web-guidance/guides/accessibility/accessible-error-announcement.md: sha256:5e2ee36ebef9da9fa732bbaffe2171a22905b93911b8939f4eb03981594a2ef2
+    .agents/skills/modern-web-guidance/guides/built-in-ai/language-detection.md: sha256:502e78345e7aa5f79f4e7ef153dff5ad8b926c35231c3bbe6b55d4cf655465bf
+    .agents/skills/modern-web-guidance/guides/built-in-ai/language-model.md: sha256:dffd1317b408c56fef206bee1005f61dc44691ad1434a5871a4d4477fbfb6aff
+    .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md: sha256:18d23ef2ef3b243af85345f4f45abdd72aa31b775e7f6e9f3f0690881389e8d3
+    .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md: sha256:51b5961403e9e94996c53b7986cd33e8f479b5970d94eb06c138394c23828dec
+    .agents/skills/modern-web-guidance/guides/css-layout/css-layout.md: sha256:ff1d632ba2af9dfafb14f49e8e65539769bd3d837b5dc307071367b602ab95b2
+    .agents/skills/modern-web-guidance/guides/css/css.md: sha256:8a23dbec80bb90c3c025fba8bfde1bcbfa04b5ecd6f0d43f71db3e6a0ec598c1
+    .agents/skills/modern-web-guidance/guides/css/highlight-text-ranges.md: sha256:fac1a8aba8c9581a4b7d37ec6fbd61d925fb28bb0d77314c6c3612713f449d4e
+    .agents/skills/modern-web-guidance/guides/forms/animated-select-picker.md: sha256:a6d0b70c535d04136f1cecf942520198ce6f438c45b5214a04f0ba7873e3f4a0
+    .agents/skills/modern-web-guidance/guides/forms/autofill-address-form.md: sha256:4635ca2463c2a37c7988acd552681854d7d9fea758d15d12964274a5c4aee52f
+    .agents/skills/modern-web-guidance/guides/forms/autofill-highlight-inputs.md: sha256:661b8ff3f54e04b866e703b36f0cfed1f92356d7a4e7e436ba1f7e1cecfce7b4
+    .agents/skills/modern-web-guidance/guides/forms/autofill-payment-form.md: sha256:392e50f182fac5162d401f8b5e34e5b75465e14e0a85e6ffd2ea71958c53d2f9
+    .agents/skills/modern-web-guidance/guides/forms/autofill-sign-in-form.md: sha256:1d92a581574c1b99911c7fc8c4e046726e85704215f404aa88b9da78ddd290b3
+    .agents/skills/modern-web-guidance/guides/forms/autofill-sign-up-form.md: sha256:74a5a92794cb1635cb7817a8b001c039d6af2d0aba899d05b280dcfb5b3f4f58
+    .agents/skills/modern-web-guidance/guides/forms/brand-consistent-forms.md: sha256:a66d259828c9e6bc359cd9d09c3a35e1d8c94ad1051ea257751691489730cf33
+    .agents/skills/modern-web-guidance/guides/forms/branded-select-styling.md: sha256:683cdd9a4da1ddd578e3b15b51649dc772fe540787838a7298150e7faea0111e
+    .agents/skills/modern-web-guidance/guides/forms/custom-select-picker-layouts.md: sha256:1b3810e7a569df9e13e06cb46e4b196539ce174d05f559c7d3c23c367607c156
+    .agents/skills/modern-web-guidance/guides/forms/form-fields-automatically-fit-contents.md: sha256:64f1d1d122ce82fbf23aa70caa6fcfc0a5103e62d56eb8c1c08a3e3d357f14cb
+    .agents/skills/modern-web-guidance/guides/forms/forms.md: sha256:aedfc0e82cb3c97eb0a3785d56b87748bb9c50ebb62b9fdd80aa6f0b128ec091
+    .agents/skills/modern-web-guidance/guides/forms/required-field-feedback.md: sha256:6e5cab4e43105ba39ad13800d6df434b95c0f8ae163e799f4ef8f38cd59bb69e
+    .agents/skills/modern-web-guidance/guides/forms/rich-media-picker.md: sha256:3d1be9161c9561ee29c36c8f81af3330e1448d8f60a7815a4eb1b1cc5f8d44fa
+    .agents/skills/modern-web-guidance/guides/forms/select-menu-interaction.md: sha256:4756813c60ac587fe30103efe3d618c6cf7d6a9b888a84a968a792bab03ff0f3
+    .agents/skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md: sha256:a3699bb30041af3142858c9ec4066932e865410f2777873684ce8ad1a188cc3f
+    .agents/skills/modern-web-guidance/guides/html/html.md: sha256:42fb0379a33805f17f10bbb1b262a425e9fe27cfb4f6aee9d7642537c3a573a2
+    .agents/skills/modern-web-guidance/guides/passkeys/passkey-authentication.md: sha256:288cab4f4c850827b31cfea7a5b9d10d47e688aad116910a95898d560900fb2e
+    .agents/skills/modern-web-guidance/guides/passkeys/passkey-conditional-create.md: sha256:aa62394296c239422778684aa7234ada63b94dbb4d8b0291fb5b243854ef5b4d
+    .agents/skills/modern-web-guidance/guides/passkeys/passkey-management.md: sha256:f9c6ea2290b4275f7659ff78a030ca874421aae24563e5edad185d7bd338e7cb
+    .agents/skills/modern-web-guidance/guides/passkeys/passkey-reauthentication.md: sha256:8b68611a6bf18a183ae8c5bed430266da6671d667af26fbe7c4ae5ff58894f65
+    .agents/skills/modern-web-guidance/guides/passkeys/passkey-registration.md: sha256:98a4df5b0744687bd5ee9933c7df9bf26a5a1ebaec8c997cea3663de481d5e92
+    .agents/skills/modern-web-guidance/guides/passkeys/passkeys.md: sha256:8ff7aaed460b7563d09b1fcd94497790c22e46224868a0da3bb9be41ce98dfba
+    .agents/skills/modern-web-guidance/guides/performance/batch-analytics-events.md: sha256:42e0ec8135e8e6c8547161148ed99f57a7c50d531e8197ac7c74bc54a4640175
+    .agents/skills/modern-web-guidance/guides/performance/break-up-long-tasks.md: sha256:f68b925a8bc439c58ba3dc131124258dfc2264eb80616ae17c6530db77cd493e
+    .agents/skills/modern-web-guidance/guides/performance/calculate-total-foreground-time.md: sha256:d0c29d8924bb1da00b8febf6694fb14bece0bfd1abcf732aec1be5cefea6ea94
+    .agents/skills/modern-web-guidance/guides/performance/conditional-async-dependencies.md: sha256:1fe64d5bd74039220de9a50fe057ce5d4e8a3954a309cefde30e5dfd216b3640
+    .agents/skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md: sha256:99f4e9b7b376b7be9c9acd22c04ec66d8bb8b50677a31d212c394d84f74adae9
+    .agents/skills/modern-web-guidance/guides/performance/defer-work-until-scroll-ends.md: sha256:3e69a3fb9e3e8a748bec61392e013839c690322424ea8e84a42b6e1cf178f758
+    .agents/skills/modern-web-guidance/guides/performance/deprioritize-background-fetches.md: sha256:14836fc6fc94567c2451ef427c11c381a71b1d348ae57f23b4082eceb9773b12
+    .agents/skills/modern-web-guidance/guides/performance/detect-initial-visibility-state.md: sha256:0bad03c06a041d1c70b3f25f03866debdc215952579b1736655cb10c359fe62a
+    .agents/skills/modern-web-guidance/guides/performance/efficient-background-processing.md: sha256:585dc8e70e7f302e8c250407e36505ad5bd47cea8750717887844f7a79ab9f9a
+    .agents/skills/modern-web-guidance/guides/performance/faster-spa-view-transitions.md: sha256:e1b353e06c9ec52bae90f41150ffa5ce1d3f2f3f18e23141ecde79e550973a97
+    .agents/skills/modern-web-guidance/guides/performance/full-session-analytics.md: sha256:24872a06076e961b0db74916441d538db87801f1fc0bded10135fc919b1a29b8
+    .agents/skills/modern-web-guidance/guides/performance/identify-heavy-scripts.md: sha256:8206670b5caaee2e9fedbe495ca7b832acb2327eab30a79ecadbb888ba8fc2b2
+    .agents/skills/modern-web-guidance/guides/performance/identify-inp-causes.md: sha256:bbf6b3708a59c56f02f9063fb41e09dd52197c8dfd67ee37c6575635c7391f88
+    .agents/skills/modern-web-guidance/guides/performance/improve-next-page-load-performance.md: sha256:658a82e15246136dd9b7ce5a55b38100d01e87f471730a27fd4db1d77fd9eaf2
+    .agents/skills/modern-web-guidance/guides/performance/interactions-in-complex-layouts.md: sha256:32519cb50656ec3188565cf934826f483c1f1ef3075547dc04414f1908deafc3
+    .agents/skills/modern-web-guidance/guides/performance/optimize-image-priority.md: sha256:f525cc12fc172db4e134c538fa459fa1ac75a9d4cc67e72f3545709bbaf75361
+    .agents/skills/modern-web-guidance/guides/performance/optimize-preload-priority.md: sha256:5239d1bb2718a2698a5288b069018af1cf40385c2a2d997e7ab9d7b49c892bf1
+    .agents/skills/modern-web-guidance/guides/performance/optimize-script-priority.md: sha256:a3b6af33195d56febe9ca9490af06e420b0d3c62f37d9cf3594f89233d5ab41a
+    .agents/skills/modern-web-guidance/guides/performance/performance.md: sha256:7c31a4fbf4c39b1337a4efa2f02edb4766ca05fef7f385aa23ee93ff56fd7a9c
+    .agents/skills/modern-web-guidance/guides/performance/resolution-optimized-pseudo-elements.md: sha256:c2b314ab5762f947703f48404711fd9c73bce837c8d29b9b971ebafe74c18fa1
+    .agents/skills/modern-web-guidance/guides/performance/schedule-tasks-by-priority.md: sha256:21f602d099585c6d12d7d156bb30c46d3e1426f6a1de90455b330d6c0bc8e369
+    .agents/skills/modern-web-guidance/guides/performance/sequence-distributed-events.md: sha256:77ef181ced3afc8db506a2a04e566d8fa6d512704089a5c78e89ebc7f462a129
+    .agents/skills/modern-web-guidance/guides/privacy/privacy.md: sha256:0abfb8bbaa1766cd9a986cdf925b05dda21fd7b0d5cf46d52335572cc481e28d
+    .agents/skills/modern-web-guidance/guides/security/security.md: sha256:39dee469938960946b45af3d19ed7a4a361d281f41046a028b63ca0b9fe09b9c
+    .agents/skills/modern-web-guidance/guides/user-experience/adapt-scrollbar-to-contrast-preferences.md: sha256:afa06625e02f48d7d844edb2ea4b24b022412ce69760e1c9176ff8c6d7dbaed9
+    .agents/skills/modern-web-guidance/guides/user-experience/anchor-positioning-tab-underline.md: sha256:596d9391a2e9cb99af1da77ae4c9acc9616ed0735f2a57d848a4bfa68b55ac52
+    .agents/skills/modern-web-guidance/guides/user-experience/animate-element-entry-exit.md: sha256:75e717d68c94ad4d61e51a9b1cb624904b63a4b43bc81f2e7434c39378b70a08
+    .agents/skills/modern-web-guidance/guides/user-experience/animate-to-from-top-layer.md: sha256:66c2c9998ef87e0682481872f624cb7e8ad7fcde7cd3d7bbdd9e563be455e393
+    .agents/skills/modern-web-guidance/guides/user-experience/animate-to-intrinsic-sizes.md: sha256:785a8b2e26a3e1e2d06cc773334fffe6497533b24d89dc3a90efceac09c029cd
+    .agents/skills/modern-web-guidance/guides/user-experience/apply-webgl-shaders.md: sha256:9fb56e26cb6bfa5159c062172ccbfc6c84033bbd3d013bb1f5990ec7dbec6faf
+    .agents/skills/modern-web-guidance/guides/user-experience/calculate-event-differentials.md: sha256:831b206770b705b2d072050149a63a4036f3b19b2817ab46bf1331b5ea3035e1
+    .agents/skills/modern-web-guidance/guides/user-experience/calculate-with-intrinsic-sizes.md: sha256:45733897f683ddd0959c5285c7039150527d9eea4a0673ac3c56f93d73332f76
+    .agents/skills/modern-web-guidance/guides/user-experience/capture-location-agnostic-data.md: sha256:b4c60d575d4ec775744d1c9da1e138cf82b0f6bc68ae222e248b50b6ecc51988
+    .agents/skills/modern-web-guidance/guides/user-experience/carousel-slide-effects.md: sha256:8e6c8109a078dd5616b9d6c79044f1f38576c63fd7b1d43d990797cf95a7f34e
+    .agents/skills/modern-web-guidance/guides/user-experience/carousel-snap-highlights.md: sha256:efd069ae8d95174ca4347592179396f3844862b9cbb4c0e4e19d8198faa14180
+    .agents/skills/modern-web-guidance/guides/user-experience/child-state-based-styling.md: sha256:8dcb6d2a5089fe7983ad3fa40b87d80a33a0e1cf78e7079d810a28c821fe2948
+    .agents/skills/modern-web-guidance/guides/user-experience/complex-shapes.md: sha256:cf290a56fb11fd128836305a5d7967d3bdf17ccd8b28b2589c5c1020b573720f
+    .agents/skills/modern-web-guidance/guides/user-experience/component-specific-light-dark-theme.md: sha256:4076c0a3918b9d59034c03670ac5296dfe36106091d383c47cd1f96f41a248ca
+    .agents/skills/modern-web-guidance/guides/user-experience/consistent-cross-document-transitions.md: sha256:4d1742785801c6e49756234abad7728f3a30bf4319c5e5f3f7f5057b3b90f8eb
+    .agents/skills/modern-web-guidance/guides/user-experience/content-based-styling.md: sha256:35759c095a2e5245d2fcad14a4478264825513a42215c2186233eccbd639d100
+    .agents/skills/modern-web-guidance/guides/user-experience/coordinate-global-events.md: sha256:11a845d354ac112a874666561eeb34e669048072ed334108a43cdf38b2267ec6
+    .agents/skills/modern-web-guidance/guides/user-experience/cross-document-transitions.md: sha256:b59ae459d1f436dfaac1533eb463194f8a10866e392b76f125f5068663cea47b
+    .agents/skills/modern-web-guidance/guides/user-experience/customize-scrollbar-color-and-thickness.md: sha256:8b73513c3fedc839dafd4ddb9b0ba15c350deaef739e4b6158008006661a86f7
+    .agents/skills/modern-web-guidance/guides/user-experience/dark-mode.md: sha256:830d58cee58bce2422a459b61b815a6e9fc7238516df05f3c14f6ff222f69f24
+    .agents/skills/modern-web-guidance/guides/user-experience/declarative-button-actions.md: sha256:7f5bfb4d6fea432a69fcee7d3154dd657f73b41fd00932e62383497d1d19477b
+    .agents/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md: sha256:0e21be87e17e36688f9c672d0f85e88e2f3bcb48ab7f0ac8c90216b312c99649
+    .agents/skills/modern-web-guidance/guides/user-experience/deliver-optimized-decorative-images.md: sha256:0d480274ccb5649172d01e9c2e433fdb5059dd0f7b6297856b6182158e1a03c5
+    .agents/skills/modern-web-guidance/guides/user-experience/design-token-reactivity.md: sha256:ca59dd6c912aa96d50e038c919d245f755dfea18762750cdfda1b698b463534e
+    .agents/skills/modern-web-guidance/guides/user-experience/directional-navigation-transitions.md: sha256:f308e3d9bdd060c2b5f17a08c5270e12c75e7f487bad159d5df56f57b14a0b7a
+    .agents/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-animations.md: sha256:98493ff7e5ebbb01c580a7c306d20933a5aa19b28d8b1a1c289cc3476bb09532
+    .agents/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-styling.md: sha256:cb70beee2f130bc9dbd98685a54d0cfd05c62f109b596ccfe86f8828907eed08
+    .agents/skills/modern-web-guidance/guides/user-experience/export-html-media-from-canvas.md: sha256:21fcd33f60be01f02415cb8b9627b302406fe6b6919c4d936ce659c88bd5d87f
+    .agents/skills/modern-web-guidance/guides/user-experience/expose-canvas-content-to-browser-features.md: sha256:fdabca71aa9967472466593cb6f3c180cb11502c6695923eefcdffd58b505003
+    .agents/skills/modern-web-guidance/guides/user-experience/flicker-free-client-side-ab-testing.md: sha256:22b9e88076030dba35e63b4007a7fef59abb85b65ca6b01800fa1d36580ba7fa
+    .agents/skills/modern-web-guidance/guides/user-experience/fluid-scaling.md: sha256:59b7c060a0363924397cf52213c61a60bce97a1c252517c8623e5dc2ebd5ddcd
+    .agents/skills/modern-web-guidance/guides/user-experience/format-human-readable-durations.md: sha256:ee4bc2f7d8d5dccb4c1e11fd86d4dd840458f0257ebfefacdae6593d8cf04e83
+    .agents/skills/modern-web-guidance/guides/user-experience/group-element-transitions.md: sha256:5b140ac01a0d4382206c0ff2645be60eb7c26a3172a66e0fa097d5409b71a486
+    .agents/skills/modern-web-guidance/guides/user-experience/improve-text-layout-and-legibility.md: sha256:0164f260705783182686eaacac6a4f49685cf1c1ea36b689a5d85297c62cd87f
+    .agents/skills/modern-web-guidance/guides/user-experience/individual-transform-properties.md: sha256:adc19c640a5e3070192a3d01761cb07e6cf464b4c6c18149116f8f7314b5c86a
+    .agents/skills/modern-web-guidance/guides/user-experience/interactive-content-in-3d-scenes.md: sha256:c9b6586607dc6d215de19fa1fea4292a05b4619ef7f78c184bfd36d0fff04e7f
+    .agents/skills/modern-web-guidance/guides/user-experience/interactive-content-reveal.md: sha256:f3168013cce36885a4f22652fdb4877bc91ce8a43238bacf1dd686e075ca10b5
+    .agents/skills/modern-web-guidance/guides/user-experience/interest-triggered-action-previews.md: sha256:52072dcb60cc3cfb60ea81a719294bc6e7e5b815fa0a4357338a43812949f27f
+    .agents/skills/modern-web-guidance/guides/user-experience/interest-triggered-tooltips.md: sha256:928bf576bb0b5387289d1bef76d90f81dabf5b690ed6330664774fce93cfa935
+    .agents/skills/modern-web-guidance/guides/user-experience/light-dismiss-a-dialog.md: sha256:fd4551c66be7cd3e738e634d1007022f499296a85fd8d6aeb3f54af2ef5758e5
+    .agents/skills/modern-web-guidance/guides/user-experience/manage-recurring-intervals.md: sha256:f0fae6733619ab0f3bd9d6768d67383f9aa823cb3963e106b42b5ddf9bd9aa0c
+    .agents/skills/modern-web-guidance/guides/user-experience/model-partial-time-concepts.md: sha256:522b8cfa990688540d4b6153bff107cf1fdb1261a818fb8b5cb3c2ad183c7640
+    .agents/skills/modern-web-guidance/guides/user-experience/move-dom-element-without-losing-state.md: sha256:acefb9f4ff932f863680f5697e5a50047663c2faee198c0e2bc8d6dcb0c8e6f7
+    .agents/skills/modern-web-guidance/guides/user-experience/navigation-drawer.md: sha256:1b80ea46753d0d7942a9c3d7817f2c7f6e443d53aeb4f24231965e4f38b24450
+    .agents/skills/modern-web-guidance/guides/user-experience/overflow-clipping-control.md: sha256:11a29817d15a7f66020e58c1d7e86cfc7ccb6f5af9b573cb18f925a4fcf272d4
+    .agents/skills/modern-web-guidance/guides/user-experience/parallax-scroll-effects.md: sha256:081ae662fddca6287f41c09f8b75f080ce700b1a8f2a626b816935cc7190e729
+    .agents/skills/modern-web-guidance/guides/user-experience/persistent-app-tours.md: sha256:ee5e052a0fce06d5d70e4684f7a42597b3a9989d4b97df2cfb34081989091266
+    .agents/skills/modern-web-guidance/guides/user-experience/persistent-toast-notifications.md: sha256:d9b663b3594016e40685df787b5704c2c7b641917af926449bcc7af6804d7820
+    .agents/skills/modern-web-guidance/guides/user-experience/persistent-top-layer-ui.md: sha256:1b2d37d385c81e08a18e53faabf1d8edbf0ac0e1401d83de1c6dafa897a1c21d
+    .agents/skills/modern-web-guidance/guides/user-experience/physics-based-easing.md: sha256:58406665775a501143177a94ce9550175104d0be0d90beaab6fe0a0611318a5c
+    .agents/skills/modern-web-guidance/guides/user-experience/platform-controls-dismiss-dialog.md: sha256:25b18cb2d2901109e9a53c9d4a580bfa584fd4f48b999c985d5bf410d2585683
+    .agents/skills/modern-web-guidance/guides/user-experience/position-aware-tooltips.md: sha256:241e34fda134474c260a0c3184dff356b43efcfb50bc0c7fbff9b57980f16461
+    .agents/skills/modern-web-guidance/guides/user-experience/precise-text-alignment.md: sha256:1d84c9915c6992c2331fc04cbbf48437b86dd085942d9515ef46ffa242fe4bb7
+    .agents/skills/modern-web-guidance/guides/user-experience/prevent-text-wrapping.md: sha256:8ad8c7e088705bdafd823bef4f0e087e5a1d0a6185fa7e2eedff2b0f2ce9dbb4
+    .agents/skills/modern-web-guidance/guides/user-experience/pull-to-reveal.md: sha256:5ff57863a7f9201671f0cf86da9f063d334ccaeaacd85ef4f875f66e85fc0510
+    .agents/skills/modern-web-guidance/guides/user-experience/reduce-style-repetition.md: sha256:22555756086c65ae722899dfc0ada13dafdc41573c618e149ff168caad8ae34a
+    .agents/skills/modern-web-guidance/guides/user-experience/resilient-context-menus-and-nested-dropdowns.md: sha256:d05f3fe9731e75a4135882864dda75ec86195e4d3093310e8ed913f9cc7e858a
+    .agents/skills/modern-web-guidance/guides/user-experience/same-document-transitions.md: sha256:a7ed8055ea00003017cd965588f87921915054a83e35915ac60dee1d89e452a1
+    .agents/skills/modern-web-guidance/guides/user-experience/scroll-entry-exit-effects.md: sha256:f41013965318de41cf35b2c607340ce0f0cef2a13d5722204385e7a103cd93ec
+    .agents/skills/modern-web-guidance/guides/user-experience/scroll-position-aware-elements.md: sha256:419beaadd335e253de0cae7e2365fc328b2f6f047c0d7864973149be8e8fdf7e
+    .agents/skills/modern-web-guidance/guides/user-experience/scroll-progress-indicator.md: sha256:eb0b4e2b957b63e6b9084243977d9e4e081c605e9e20a0e17e0ac84edaccbc0d
+    .agents/skills/modern-web-guidance/guides/user-experience/scroll-snap-realtime-feedback.md: sha256:eb77ff1361af47628c3dcfabd33abfc7b1090b70bf41f9d27d408357ab4c9e3d
+    .agents/skills/modern-web-guidance/guides/user-experience/scroll-snap-state-sync.md: sha256:2f3c8b7526e5ddaee1fdb7535d6a0a0ad036c495dc5bc613e0f5b1e4f25eb2b1
+    .agents/skills/modern-web-guidance/guides/user-experience/scroll-target-on-load.md: sha256:e7d8dcaf71be2a46cf633916efac4a2ae2aa483269538032ad0c46fc6e8ade19
+    .agents/skills/modern-web-guidance/guides/user-experience/scrollability-affordance-hints.md: sha256:22842290248cc8f6ebd0fd838f3d94d8bd96f0b899b708f7bff2a4e12ed826e9
+    .agents/skills/modern-web-guidance/guides/user-experience/scrollytelling.md: sha256:16076be601b69c1b9f315f04ef5ffe0728653bcde4280ca4e9f5aca7eec10e0a
+    .agents/skills/modern-web-guidance/guides/user-experience/search-hidden-content.md: sha256:8eea952ff3e8d7411e0cebf833359977de309c73db3870206bcdc2de2a0a8d18
+    .agents/skills/modern-web-guidance/guides/user-experience/shaped-cutouts.md: sha256:ceedfd90d3fa74b588eb7089245608647a90c99d39be25ddfaa47067d2600204
+    .agents/skills/modern-web-guidance/guides/user-experience/shrinking-header-on-scroll.md: sha256:cdfa80971710b0f90170fcb1b8289fb6384514dd3864393c474cc02a59ad53e4
+    .agents/skills/modern-web-guidance/guides/user-experience/size-aware-styling.md: sha256:555b7ad29591b5545ac0085da8b94f45b6b59cf87e2512d5460076d62d4ae69a
+    .agents/skills/modern-web-guidance/guides/user-experience/soft-edge-content-fade.md: sha256:4f0dfdc0a27d714fcac44f8c2cc8b107dd20122febdcddd527715441ca919202
+    .agents/skills/modern-web-guidance/guides/user-experience/stabilize-reactive-state.md: sha256:d00cb877441ab105fd66fbae2ad7e139250bb7e5e31ba2104eeb45c8f24ed8da
+    .agents/skills/modern-web-guidance/guides/user-experience/stack-drill-down.md: sha256:5a161583757ea9a64349fc9efd4d627990545ce99955a2740e5c15c8e128147b
+    .agents/skills/modern-web-guidance/guides/user-experience/style-parent-with-has.md: sha256:42443aaca14192daeed4390471431b4118216437877325f55f9bb818a951f32b
+    .agents/skills/modern-web-guidance/guides/user-experience/support-global-calendar-systems.md: sha256:ec389be8fa12890eee6e84f41fd4af409fe1237585f16c1531ad35da60b3b508
+    .agents/skills/modern-web-guidance/guides/user-experience/swipe-to-remove.md: sha256:4eabd7286aac3148752bc6cbda289e5d58e6bc4b964044e502dc7ce9aa8cbca3
+    .agents/skills/modern-web-guidance/guides/user-experience/visually-stable-font-fallbacks.md: sha256:e2e9e362c976e4289509afdc8068fb986e76b07fc59576b67d92e8e4c645c77a
+    .agents/skills/modern-web-guidance/guides/user-experience/visually-stable-mixed-fonts.md: sha256:c5770035287d0999fec3cf10d247c530d0d34c64739ccf4fc037475814d118a6
+    .agents/skills/modern-web-guidance/guides/user-experience/visually-texture-content.md: sha256:54dacc485416bb4091df9af7662754b253f5a5ef802dd36cb6fd0eec72bcb4c3
+    .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md: sha256:c9210a53221ae230c3820b94b75f4b7b21196d9b0b6b0979b789866c2f2a8396
+    .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:2ec01ee5f86b00ce69f487e13141258da8cc751d0917eeb43e94386ac7612ff3
+    .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:78b80afc94fcdc0177345d7cbd0abb83660f309a400266ff408325142db41b2c
   content_hash: sha256:6d5177c625ee67de1755aa96e473cc722abf95c26e2d1227ee5e1ee80035896e
 - repo_url: anthropics/skills
   host: github.com
@@ -19,6 +296,11 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/frontend-design
+  - .agents/skills/frontend-design/LICENSE.txt
+  - .agents/skills/frontend-design/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/frontend-design/LICENSE.txt: sha256:0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594
+    .agents/skills/frontend-design/SKILL.md: sha256:1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd
   content_hash: sha256:4eabc66183767153e404b39d1b839b1c37f2d82d86f0a0d7e880a579d8d62336
 - repo_url: anthropics/skills
   host: github.com
@@ -28,6 +310,43 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/skill-creator
+  - .agents/skills/skill-creator/LICENSE.txt
+  - .agents/skills/skill-creator/SKILL.md
+  - .agents/skills/skill-creator/agents/analyzer.md
+  - .agents/skills/skill-creator/agents/comparator.md
+  - .agents/skills/skill-creator/agents/grader.md
+  - .agents/skills/skill-creator/assets/eval_review.html
+  - .agents/skills/skill-creator/eval-viewer/generate_review.py
+  - .agents/skills/skill-creator/eval-viewer/viewer.html
+  - .agents/skills/skill-creator/references/schemas.md
+  - .agents/skills/skill-creator/scripts/__init__.py
+  - .agents/skills/skill-creator/scripts/aggregate_benchmark.py
+  - .agents/skills/skill-creator/scripts/generate_report.py
+  - .agents/skills/skill-creator/scripts/improve_description.py
+  - .agents/skills/skill-creator/scripts/package_skill.py
+  - .agents/skills/skill-creator/scripts/quick_validate.py
+  - .agents/skills/skill-creator/scripts/run_eval.py
+  - .agents/skills/skill-creator/scripts/run_loop.py
+  - .agents/skills/skill-creator/scripts/utils.py
+  deployed_file_hashes:
+    .agents/skills/skill-creator/LICENSE.txt: sha256:bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362
+    .agents/skills/skill-creator/SKILL.md: sha256:dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf
+    .agents/skills/skill-creator/agents/analyzer.md: sha256:bf68f4cac5a56c673a928c2e6d619586c5b93ea364026ab37547772cb45a663a
+    .agents/skills/skill-creator/agents/comparator.md: sha256:fe1fc9787c495d864c5d6eada47396478572325fde1b33a96d78bf4b849b7a3e
+    .agents/skills/skill-creator/agents/grader.md: sha256:57134da0c1a4eea33fbd74a1c9c44aa814f07d6bc64de303edb586f941e5d21a
+    .agents/skills/skill-creator/assets/eval_review.html: sha256:ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452
+    .agents/skills/skill-creator/eval-viewer/generate_review.py: sha256:fc9d1b9243fe5ab6012ebd579bd76d0035de1b79fd3b969de114defab26478fb
+    .agents/skills/skill-creator/eval-viewer/viewer.html: sha256:a53213426ee1100441d701a3a0d49cda7a842f992d2c36463f4d3cc0258575fa
+    .agents/skills/skill-creator/references/schemas.md: sha256:8e8876180a8989b406a4d3edddf875b04cdfd5805cc8616686d552b11ce4455f
+    .agents/skills/skill-creator/scripts/__init__.py: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    .agents/skills/skill-creator/scripts/aggregate_benchmark.py: sha256:123ef128ea5ccc01a4b1ac212ef5567f21e9c13d3d240609780beeb3200c49aa
+    .agents/skills/skill-creator/scripts/generate_report.py: sha256:13df7118a3c50c83c4c3250a606d5f2b20b25a3d44cbc392b3d669ec75281453
+    .agents/skills/skill-creator/scripts/improve_description.py: sha256:87d864570220b699fac52da309d2d6efdb060647bfebc74f768128e646accf80
+    .agents/skills/skill-creator/scripts/package_skill.py: sha256:1a33059b0db1ef73375d46d513e5ea81369d2e8838c970597b0d52ddef8d1c0f
+    .agents/skills/skill-creator/scripts/quick_validate.py: sha256:67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365
+    .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
+    .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
+    .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
   content_hash: sha256:b2bfe91d69ca99994c0566baede889e7d2b9bb8791c6b6106c5d387392f717f6
 - repo_url: dominikmartn/nothing-design-skill
   host: github.com
@@ -37,6 +356,15 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/nothing-design
+  - .agents/skills/nothing-design/SKILL.md
+  - .agents/skills/nothing-design/references/components.md
+  - .agents/skills/nothing-design/references/platform-mapping.md
+  - .agents/skills/nothing-design/references/tokens.md
+  deployed_file_hashes:
+    .agents/skills/nothing-design/SKILL.md: sha256:64275c2031790e64bdc95e77fd87f75afc6f5d73989a5d1b2a766ee161059ad1
+    .agents/skills/nothing-design/references/components.md: sha256:f9452969d79600d5efdc46e35a11b7c7d1a1cd1377d7581097ebac721202cd6e
+    .agents/skills/nothing-design/references/platform-mapping.md: sha256:66e15975efdfad553d4e357ad7fdd6357fce03d073dd11ed1a36fe1d4063871d
+    .agents/skills/nothing-design/references/tokens.md: sha256:39afb46a2012dc6454ca3c4081e1b27e959b6780efc6abed18dcaeeff9320e5e
   content_hash: sha256:bd835bf84356f346fe0adffe9b388bd45eb77eb2b50d83defde371e1d4861b34
 - repo_url: emilkowalski/skill
   host: github.com
@@ -46,7 +374,36 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/emil-design-eng
+  - .agents/skills/emil-design-eng/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/emil-design-eng/SKILL.md: sha256:433b5a239cda18e0576e4e558532e7e53512e21fafe5b85db4894c28ec399b72
   content_hash: sha256:8bdf9e4e6de7a4969147bf4828a4ad2c5aacd9fba4b690b250a85e0467ca387d
+- repo_url: iKora128/stop-ai-slop-jp
+  host: github.com
+  resolved_commit: e09d32796f253a62693885757cea484c275d06f2
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/stop-ai-slop-jp
+  - .agents/skills/stop-ai-slop-jp/.gitignore
+  - .agents/skills/stop-ai-slop-jp/CHANGELOG.md
+  - .agents/skills/stop-ai-slop-jp/LICENSE
+  - .agents/skills/stop-ai-slop-jp/README.en.md
+  - .agents/skills/stop-ai-slop-jp/README.md
+  - .agents/skills/stop-ai-slop-jp/SKILL.md
+  - .agents/skills/stop-ai-slop-jp/references/examples.md
+  - .agents/skills/stop-ai-slop-jp/references/phrases.md
+  - .agents/skills/stop-ai-slop-jp/references/structures.md
+  deployed_file_hashes:
+    .agents/skills/stop-ai-slop-jp/.gitignore: sha256:cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e
+    .agents/skills/stop-ai-slop-jp/CHANGELOG.md: sha256:13b54e7ba2750b34f62c04ee47a29495777348e7ff90847078e3029dd1c742bd
+    .agents/skills/stop-ai-slop-jp/LICENSE: sha256:f9145903368bf0483fec06d7f2ed12d2e20667190783a7ffea161e92ff39f301
+    .agents/skills/stop-ai-slop-jp/README.en.md: sha256:37874550afb353707d5ef3f2706c776c4f97e3fe904dcf1057fc4c3ab66d3d40
+    .agents/skills/stop-ai-slop-jp/README.md: sha256:555c1fcabb809420cb5b8de240ab0be49e88a915bac872ce12a0b35b7916f4d8
+    .agents/skills/stop-ai-slop-jp/SKILL.md: sha256:4da89e5f9c69ce69a8d6c04e8f3d238686cd3a3ba3946c5cfadad805116c50f3
+    .agents/skills/stop-ai-slop-jp/references/examples.md: sha256:a971dfc0f69e914365d29b7566cf1dbcf4cbaf3abf3c331b384e8d29beb9b5f5
+    .agents/skills/stop-ai-slop-jp/references/phrases.md: sha256:0e23388b43146d7f560cdc04a1f8ebe3518b57889404e39fa258b025ab4d2003
+    .agents/skills/stop-ai-slop-jp/references/structures.md: sha256:af7447458633e522394a153295ac2a5ef8c14c6e82befae212a0650058e52969
+  content_hash: sha256:2e81e3a96cd7e5eaaf6fae3a597a76c8538c027a3ec86b8643cb454dc231f8ff
 - repo_url: moonbitlang/skills
   host: github.com
   resolved_commit: c3f061da2abf7c6914e06df93572858dd21ef6bc
@@ -55,6 +412,25 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/moonbit-agent-guide
+  - .agents/skills/moonbit-agent-guide/.gitignore
+  - .agents/skills/moonbit-agent-guide/LICENSE
+  - .agents/skills/moonbit-agent-guide/README.md
+  - .agents/skills/moonbit-agent-guide/SKILL.mbt.md
+  - .agents/skills/moonbit-agent-guide/SKILL.md
+  - .agents/skills/moonbit-agent-guide/ide.md
+  - .agents/skills/moonbit-agent-guide/references/advanced-moonbit-build.md
+  - .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.mbt.md
+  - .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.md
+  deployed_file_hashes:
+    .agents/skills/moonbit-agent-guide/.gitignore: sha256:0d85bcad78281a70f6540deb184a1b9398e34acaa5ff6dd3f544d6b21b6f92ca
+    .agents/skills/moonbit-agent-guide/LICENSE: sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+    .agents/skills/moonbit-agent-guide/README.md: sha256:eb1b649a7203ed9e2b3dd774d1c144343f74d605fa3eda7d733216445b9b6ee6
+    .agents/skills/moonbit-agent-guide/SKILL.mbt.md: sha256:00ffb3de741373666f0cb854f657275e5748e1e30e89bcfbea888b86a3b41ed6
+    .agents/skills/moonbit-agent-guide/SKILL.md: sha256:00ffb3de741373666f0cb854f657275e5748e1e30e89bcfbea888b86a3b41ed6
+    .agents/skills/moonbit-agent-guide/ide.md: sha256:56fa73e1b8d472bf5b72e444c862bc54b3311fa2d5c78b853a6557c872289c70
+    .agents/skills/moonbit-agent-guide/references/advanced-moonbit-build.md: sha256:a7d71b0738b814414edc5cfcbeff66931870da4d515f7aa864e6e51a3e8ed708
+    .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.mbt.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
+    .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
   content_hash: sha256:e134b3d874181787abdb59ff012f1eee71a537997305582e488bc979b5ff7294
 - repo_url: openai/skills
   host: github.com
@@ -64,6 +440,19 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/gh-address-comments
+  - .agents/skills/gh-address-comments/LICENSE.txt
+  - .agents/skills/gh-address-comments/SKILL.md
+  - .agents/skills/gh-address-comments/agents/openai.yaml
+  - .agents/skills/gh-address-comments/assets/github-small.svg
+  - .agents/skills/gh-address-comments/assets/github.png
+  - .agents/skills/gh-address-comments/scripts/fetch_comments.py
+  deployed_file_hashes:
+    .agents/skills/gh-address-comments/LICENSE.txt: sha256:58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd
+    .agents/skills/gh-address-comments/SKILL.md: sha256:77389eefd3fb6584210668ca8e43f4b8de87e7722ddd953474bc9e24cdfaaedd
+    .agents/skills/gh-address-comments/agents/openai.yaml: sha256:12cf845a78254dde85e60eefb45a60e6ce2129d321f3e1d691d4ebca9a140861
+    .agents/skills/gh-address-comments/assets/github-small.svg: sha256:ee05e92d373d4d84f4612af3c1090ef67698d421bbe30896a4ed5a00cb86a069
+    .agents/skills/gh-address-comments/assets/github.png: sha256:d55a9baa41798d8b5108e3058df3a5bda09914ea9fd73b49929cc38a8832424f
+    .agents/skills/gh-address-comments/scripts/fetch_comments.py: sha256:d7bc64f6b26f7482f9ca9dd7c923a5b8b20e1ef13491ae2d9052cd208a7c1ad1
   content_hash: sha256:068d34fb59cb97a39aea3de1708877b6a01210d02fa7eda5e74fc8277ed52916
 - repo_url: openai/skills
   host: github.com
@@ -73,6 +462,19 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/gh-fix-ci
+  - .agents/skills/gh-fix-ci/LICENSE.txt
+  - .agents/skills/gh-fix-ci/SKILL.md
+  - .agents/skills/gh-fix-ci/agents/openai.yaml
+  - .agents/skills/gh-fix-ci/assets/github-small.svg
+  - .agents/skills/gh-fix-ci/assets/github.png
+  - .agents/skills/gh-fix-ci/scripts/inspect_pr_checks.py
+  deployed_file_hashes:
+    .agents/skills/gh-fix-ci/LICENSE.txt: sha256:4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9
+    .agents/skills/gh-fix-ci/SKILL.md: sha256:7b326b4a2f0f5f85122144628ec02077e48841e0e0e82efce88b3415bcfb7c26
+    .agents/skills/gh-fix-ci/agents/openai.yaml: sha256:36f73b9450504983d1647c960689596f59bf9147c14b1b43162912ed7ada9af6
+    .agents/skills/gh-fix-ci/assets/github-small.svg: sha256:ee05e92d373d4d84f4612af3c1090ef67698d421bbe30896a4ed5a00cb86a069
+    .agents/skills/gh-fix-ci/assets/github.png: sha256:d55a9baa41798d8b5108e3058df3a5bda09914ea9fd73b49929cc38a8832424f
+    .agents/skills/gh-fix-ci/scripts/inspect_pr_checks.py: sha256:9459e5b03f86785d184a83e5cd8d621b832e918ec04158a2962d867785812c6c
   content_hash: sha256:02b4d97e4bd91e342e3ec3efa06b7871097d6a64e8398f4ed5b69c64d8d902fb
 - repo_url: openclaw/acpx
   host: github.com
@@ -82,6 +484,9 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/acpx
+  - .agents/skills/acpx/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/acpx/SKILL.md: sha256:941e0ec1cd6ed3e56b8c68b5b1fc9e7e89f8b1f87e324293a2c45f71a3002e21
   content_hash: sha256:16fdcc48b17017539b04bcd92c0ade9ccdee54c5df87901b5f562b197cb6877d
 - repo_url: vercel-labs/agent-browser
   host: github.com
@@ -91,6 +496,9 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/agent-browser
+  - .agents/skills/agent-browser/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/agent-browser/SKILL.md: sha256:00709861067d0cbb634609778b1be0469de6d6cef5293fcd24cbd469faaae42c
   content_hash: sha256:edad4d958bc4baf821e3391bb9889a03a8bbc0e4d7f54ee4a5f30837654fed83
 - repo_url: vercel-labs/agent-skills
   host: github.com
@@ -100,6 +508,9 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/web-design-guidelines
+  - .agents/skills/web-design-guidelines/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/web-design-guidelines/SKILL.md: sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f
   content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
 - repo_url: vercel-labs/skills
   host: github.com
@@ -109,6 +520,9 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/find-skills
+  - .agents/skills/find-skills/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/find-skills/SKILL.md: sha256:1e85f6f9686e145aca4a124e3b704b9bbea9aa87e08515c1e352eee70f6e6e7a
   content_hash: sha256:d31e234f0c90694a670222cdd1dafa853e051d7066beda389f1097c22dadd461
 - repo_url: vuejs-ai/skills
   host: github.com
@@ -118,14 +532,135 @@ dependencies:
   package_type: claude_skill
   deployed_files:
   - .agents/skills/vue-best-practices
+  - .agents/skills/vue-best-practices/SKILL.md
+  - .agents/skills/vue-best-practices/references/animation-class-based-technique.md
+  - .agents/skills/vue-best-practices/references/animation-state-driven-technique.md
+  - .agents/skills/vue-best-practices/references/component-async.md
+  - .agents/skills/vue-best-practices/references/component-data-flow.md
+  - .agents/skills/vue-best-practices/references/component-fallthrough-attrs.md
+  - .agents/skills/vue-best-practices/references/component-keep-alive.md
+  - .agents/skills/vue-best-practices/references/component-slots.md
+  - .agents/skills/vue-best-practices/references/component-suspense.md
+  - .agents/skills/vue-best-practices/references/component-teleport.md
+  - .agents/skills/vue-best-practices/references/component-transition-group.md
+  - .agents/skills/vue-best-practices/references/component-transition.md
+  - .agents/skills/vue-best-practices/references/composables.md
+  - .agents/skills/vue-best-practices/references/directives.md
+  - .agents/skills/vue-best-practices/references/perf-avoid-component-abstraction-in-lists.md
+  - .agents/skills/vue-best-practices/references/perf-v-once-v-memo-directives.md
+  - .agents/skills/vue-best-practices/references/perf-virtualize-large-lists.md
+  - .agents/skills/vue-best-practices/references/plugins.md
+  - .agents/skills/vue-best-practices/references/reactivity.md
+  - .agents/skills/vue-best-practices/references/render-functions.md
+  - .agents/skills/vue-best-practices/references/sfc.md
+  - .agents/skills/vue-best-practices/references/state-management.md
+  - .agents/skills/vue-best-practices/references/updated-hook-performance.md
+  deployed_file_hashes:
+    .agents/skills/vue-best-practices/SKILL.md: sha256:05b373713e6bbd216fb3ee9709289b68bcdeb9eac8ffea477e35bdbd8e0f9acd
+    .agents/skills/vue-best-practices/references/animation-class-based-technique.md: sha256:d37e4ae4f124454fc5dfa54d23816edb16d337228641a77ec04c8ee9fe5a32fe
+    .agents/skills/vue-best-practices/references/animation-state-driven-technique.md: sha256:9a17a15356b32c8cd8669c3ede28dd890e9a48c03101047738a5c6dec7c716d6
+    .agents/skills/vue-best-practices/references/component-async.md: sha256:e20036c6622a1647d9e1c23f1fe871b2465cf4bab434422e17eb05710c8878f3
+    .agents/skills/vue-best-practices/references/component-data-flow.md: sha256:81277341d7dfe240721c2324548b9d404354d3ce270515acb130e8ac0c7396aa
+    .agents/skills/vue-best-practices/references/component-fallthrough-attrs.md: sha256:62d291508df9997d3b6c5adfde251d6c722926ecf5f7168dea0272564f119919
+    .agents/skills/vue-best-practices/references/component-keep-alive.md: sha256:8738608665ad42baa6d2d7548d46b3ecd318a85f4ec3a0afac5f728948ade3ca
+    .agents/skills/vue-best-practices/references/component-slots.md: sha256:726fdac036fcdb6071e669f1ed90af5b3bdc5fc150ad82ff41afa0af5e39f481
+    .agents/skills/vue-best-practices/references/component-suspense.md: sha256:6a5a98dcc6a2093f038f877eb6fefeedb199aba058a5dea71b139017c557bdd1
+    .agents/skills/vue-best-practices/references/component-teleport.md: sha256:4e48748842262df50c293ab23857c22c107e3e8360c87da482d23f0eb88b2c3f
+    .agents/skills/vue-best-practices/references/component-transition-group.md: sha256:cfdd76e2466a8c0ef8a965674a74924e5cf25e538e75ce97d02213472442ccb2
+    .agents/skills/vue-best-practices/references/component-transition.md: sha256:bc59a19f2e8eed7a228bdb6383d423a57c6dd75704ae11c9596018c9fb1cac42
+    .agents/skills/vue-best-practices/references/composables.md: sha256:8fcb3ede4ecb13f8dc7e4c7db07561652f6d306c85a91bc6736fda4fae2b624d
+    .agents/skills/vue-best-practices/references/directives.md: sha256:70d4c68ea15a961eec6471c42b4c44d37adfeb094f694b6811fb718eab7b2cf7
+    .agents/skills/vue-best-practices/references/perf-avoid-component-abstraction-in-lists.md: sha256:a5fb787065cbaa4731a12d3ab2f40284d058a4d6a45972b48b3052931e4f80da
+    .agents/skills/vue-best-practices/references/perf-v-once-v-memo-directives.md: sha256:066a45e60f6faa702cb75b76724c391d7e560aa6805c9bc379c06f2c64d97677
+    .agents/skills/vue-best-practices/references/perf-virtualize-large-lists.md: sha256:69712f1f296cf03401c47f936e1a9c32481bfd82623f536b1fe08d05c846bada
+    .agents/skills/vue-best-practices/references/plugins.md: sha256:b1583522aca059c4295708517ba987530dd6a13134f6046aed9fd7327fb9c936
+    .agents/skills/vue-best-practices/references/reactivity.md: sha256:48c97831e72f0b82bfae0344cf02a181c7723e1ee4a29a58a85009aab7d60a4b
+    .agents/skills/vue-best-practices/references/render-functions.md: sha256:01b35e671f7890939fa5acda52c5cf0a50b398e153d80cc9fc9f74c19e460357
+    .agents/skills/vue-best-practices/references/sfc.md: sha256:dfe09f28869a2bc44e618068c3b6269f55d925d096714df25e253d2bbb58c28f
+    .agents/skills/vue-best-practices/references/state-management.md: sha256:9e98a1c6d9009c0c8ef7228b6b3bcf10d30be6b713ffcef448ab7db3b419a851
+    .agents/skills/vue-best-practices/references/updated-hook-performance.md: sha256:ded08ce93f9b23082538846f84e8d159d84af757c27b2c6b43a9283df803a32b
   content_hash: sha256:90980085ec288dd0a3326fc09af639a5e88cff74c15c77db84398fd42797a770
 local_deployed_files:
 - .agents/skills/article-review
+- .agents/skills/article-review/README.md
+- .agents/skills/article-review/SKILL.md
+- .agents/skills/article-review/agents/openai.yaml
+- .agents/skills/article-review/references/report-template.md
+- .agents/skills/article-review/references/review-rubric.md
 - .agents/skills/askmeplan
+- .agents/skills/askmeplan/SKILL.md
 - .agents/skills/ast-grep
+- .agents/skills/ast-grep/SKILL.md
+- .agents/skills/ast-grep/references/command-cookbook.md
+- .agents/skills/ast-grep/references/rule-authoring.md
 - .agents/skills/empirical-prompt-tuning
+- .agents/skills/empirical-prompt-tuning/SKILL.md
 - .agents/skills/golang-best-practices
+- .agents/skills/golang-best-practices/SKILL.md
+- .agents/skills/golang-best-practices/dist/golang-best-practices.skill
+- .agents/skills/golang-best-practices/references/code-style.md
+- .agents/skills/golang-best-practices/references/concurrency.md
+- .agents/skills/golang-best-practices/references/error-handling.md
+- .agents/skills/golang-best-practices/references/modernize.md
+- .agents/skills/golang-best-practices/references/performance.md
+- .agents/skills/golang-best-practices/references/project-layout.md
+- .agents/skills/golang-best-practices/references/security.md
+- .agents/skills/golang-best-practices/references/testing.md
+- .agents/skills/japanese-tech-writing
+- .agents/skills/japanese-tech-writing/SKILL.md
 - .agents/skills/refactoring-code
-- .agents/skills/self-ship
+- .agents/skills/refactoring-code/SKILL.md
+- .agents/skills/refactoring-code/evals/evals.json
+- .agents/skills/refactoring-code/references/examples.md
+- .agents/skills/refactoring-code/references/legacy-safety-net.md
+- .agents/skills/refactoring-code/references/refactor-playbook.md
+- .agents/skills/ship-it
+- .agents/skills/ship-it/SKILL.md
 - .agents/skills/typescript-best-practices
+- .agents/skills/typescript-best-practices/SKILL.md
+- .agents/skills/typescript-best-practices/references/config-baseline.md
+- .agents/skills/typescript-best-practices/references/type-safety-patterns.md
 - .agents/skills/typescript-recommend-tools
+- .agents/skills/typescript-recommend-tools/SKILL.md
+- .agents/skills/typescript-recommend-tools/references/default-stacks.md
+- .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md
+- .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md
+- .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md
+- .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md
+local_deployed_file_hashes:
+  .agents/skills/article-review/README.md: sha256:fc0221ba8a1b22e90e4ec415f0e4f5d97375dac847e9f6a455c74b914a869c90
+  .agents/skills/article-review/SKILL.md: sha256:a86cc756a084ce7c6b520e9b65446cb05b93f3502ab5ae5563f19ecb70d2fee9
+  .agents/skills/article-review/agents/openai.yaml: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
+  .agents/skills/article-review/references/report-template.md: sha256:60c5656b28571ac85c746d0450fa05bcde3fc3d9d4c0117b61aed93f2affd97e
+  .agents/skills/article-review/references/review-rubric.md: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
+  .agents/skills/askmeplan/SKILL.md: sha256:0fbcabac373ad9dd005f878b473d5062904dcd4fe3ee7410581fb97cb59339ff
+  .agents/skills/ast-grep/SKILL.md: sha256:bef077370d7711b54cafb46032cd0071c500575bcff0b01f294553861bae74a7
+  .agents/skills/ast-grep/references/command-cookbook.md: sha256:a64cb2a1bb607dc2729617a2b1a2ae1eb784d491001d06a2b7d808f39e468731
+  .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
+  .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:21cb213c1d2c02794c94e6fd0ad20e779e6c767850f292e6475b60cb3500c82f
+  .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
+  .agents/skills/golang-best-practices/dist/golang-best-practices.skill: sha256:81c910efff41c82348eb1b3aef17f392e3744225f134c9519df010cba17e59d7
+  .agents/skills/golang-best-practices/references/code-style.md: sha256:46fb9140517d8bd1cc73042e4484c5a01f9ef2c867f62f425c58627b0ecdf99c
+  .agents/skills/golang-best-practices/references/concurrency.md: sha256:a29eb23cb630e5dbbd5be1e6e55b8bad8632f823caf6a442b3f5c506c2ce8d41
+  .agents/skills/golang-best-practices/references/error-handling.md: sha256:81a6517cb07c7968b1e2a827d63939af0b976cb2eecd726ec1d5c8bfb2e808c5
+  .agents/skills/golang-best-practices/references/modernize.md: sha256:5bbc66567f58076b836fdf7d5a27935508139d51d983ff75d930d4e3d5294425
+  .agents/skills/golang-best-practices/references/performance.md: sha256:4f8845b8c67eb99a8c2324f5429121271c75abd79e102fdd30dda4834918db60
+  .agents/skills/golang-best-practices/references/project-layout.md: sha256:376101b3f098290daaabaf235e24a9cf41f4afbe5f42dc68df8cf1e2d6e44584
+  .agents/skills/golang-best-practices/references/security.md: sha256:691e69477a8122037251b7a9b2f09b983a9e358aeab932841a49659facfa9f66
+  .agents/skills/golang-best-practices/references/testing.md: sha256:b9cd30a2ea2d760b48b8ae929d7c8e75131814505fbee6fc049d364706e73b18
+  .agents/skills/japanese-tech-writing/SKILL.md: sha256:1f2ecac39b4dd1aad33cb6d09ccf10d66cfe35e73e6541c02ee4399004531b15
+  .agents/skills/refactoring-code/SKILL.md: sha256:0ebc0651dd358d17686c7f3c2e76e7ece79779d6afd09c835e1ced2ca18a4fa5
+  .agents/skills/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
+  .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
+  .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:c6e7bec0c3b67ea8235430c748ea72f501df0ee1cf61028e93e753ec850248f6
+  .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
+  .agents/skills/ship-it/SKILL.md: sha256:c63ebd97da127a508c83d68615797bcf3e70ab44de8af3edcdecba79ee4ef7fb
+  .agents/skills/typescript-best-practices/SKILL.md: sha256:db4e568724df8c46d25fcb095170524fe37af97b50c8cd1b31a7b9bcfb3ead74
+  .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:ff55f4af960ee3df49fe23fcf434932e416d77bcca8b11c88e119b8c05f9658e
+  .agents/skills/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
+  .agents/skills/typescript-recommend-tools/SKILL.md: sha256:e97f4f4488d54accd52b474a2d2216ffc5f33c1b1312cb40a974ae3f259c884d
+  .agents/skills/typescript-recommend-tools/references/default-stacks.md: sha256:ad7fc36f7f19716c003e313e5dd5bf663ea627036766be790d2fd7ae0951f599
+  .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md: sha256:cf0813867bf94ec7d3604838812aae72cdf2d1d73d219ddf47957c3c2fb3469a
+  .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md: sha256:8fd2765648b6a8c91e42010cd08f2061c3d2c57c326d53ce75ee3bdadae077a4
+  .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:d2995766ef0a8c5547a1244aa5660395a1c761cd053b0f973c0340ff28af3d7d
+  .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md: sha256:9a52f1ab408e9fd5b372d1fb0bb66905a8dcd7f0e5e0d18b957ed722d9b474ca

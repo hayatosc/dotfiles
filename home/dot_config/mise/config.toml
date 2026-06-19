@@ -68,3 +68,7 @@ postinstall = ""
 [tasks.sync-codex]
 description = "sync config.toml on .codex folder"
 run = "bun ~/.config/zsh/scripts/codex-sync-config.ts"
+
+[tasks.sync-antigravity]
+description = "sync settings.json on .gemini/antigravity-cli folder"
+run = "bun ~/.config/zsh/scripts/antigravity-sync-config.ts"
