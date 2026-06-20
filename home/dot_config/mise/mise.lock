@@ -3195,17 +3195,7 @@ checksum = "sha256:bb8eeed5226d38fdc1f9e1665c071347c07b08a31675371a9062ea7422534
 url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-unknown-linux-gnu.tar.gz"
 provenance = "github-attestations"
 
-[tools.aube."platforms.linux-x64-baseline"]
-checksum = "sha256:bb8eeed5226d38fdc1f9e1665c071347c07b08a31675371a9062ea742253401a"
-url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-unknown-linux-gnu.tar.gz"
-provenance = "github-attestations"
-
 [tools.aube."platforms.linux-x64-musl"]
-checksum = "sha256:5e954780c6ff60be86f3e6ea76e3ec68e1458fa475ae67c48057b813bf30c5f5"
-url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-unknown-linux-musl.tar.gz"
-provenance = "github-attestations"
-
-[tools.aube."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:5e954780c6ff60be86f3e6ea76e3ec68e1458fa475ae67c48057b813bf30c5f5"
 url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
@@ -3216,11 +3206,6 @@ url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-aarch6
 provenance = "github-attestations"
 
 [tools.aube."platforms.windows-x64"]
-checksum = "sha256:b41850c94db54a470f1e486ea637cf0ebffd87d9b904c144e5c78657ad6101f2"
-url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-pc-windows-msvc.zip"
-provenance = "github-attestations"
-
-[tools.aube."platforms.windows-x64-baseline"]
 checksum = "sha256:b41850c94db54a470f1e486ea637cf0ebffd87d9b904c144e5c78657ad6101f2"
 url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
