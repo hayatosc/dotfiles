@@ -4480,43 +4480,43 @@ url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565552"
 
 [[tools."github:vercel-labs/agent-browser"]]
-version = "0.27.3"
+version = "0.28.0"
 backend = "github:vercel-labs/agent-browser"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-arm64"]
-checksum = "sha256:34bc369408d0756d554da911a72a535a076b3ab2e3875f9a2a9ac9e125f65365"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.3/agent-browser-linux-arm64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/446134277"
+checksum = "sha256:cceff680589c78b8582b425f4dc44b14179546d09b84c61b62dc5265baba7463"
+url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-linux-arm64"
+url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468693"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-arm64-musl"]
-checksum = "sha256:aa104eb098b3d21162dc06040287ed176a2e4795136d20c2659c95e6b9fedd8f"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.3/agent-browser-linux-musl-arm64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/446134278"
+checksum = "sha256:d339ca7dde5b21b311f993a50c01c231c5b39f869ec647909668f7f7c89050bc"
+url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-linux-musl-arm64"
+url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468692"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-x64"]
-checksum = "sha256:373f010e2f915c026f2a50b79f0676b8deace93372af43b82ce20a7737764353"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.3/agent-browser-linux-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/446134301"
+checksum = "sha256:c0bef69599d6ed123bf147bd6747755978330948d2ef5eaae492ef171b659556"
+url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-linux-x64"
+url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468719"
 
 [tools."github:vercel-labs/agent-browser"."platforms.linux-x64-musl"]
-checksum = "sha256:0ddee530e9758fab03565e84417b2e60c0c78d892506f85731a059532adab97f"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.3/agent-browser-linux-musl-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/446134279"
+checksum = "sha256:4e90910f4921b4dbeee6c80322dd802fd6375dfca199d92e55043d9e5e8d972c"
+url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-linux-musl-x64"
+url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468696"
 
 [tools."github:vercel-labs/agent-browser"."platforms.macos-arm64"]
-checksum = "sha256:589edd78eaec9dcadcd9fb9a4ca080cb1ae5a27a99e02c531fdb7c68e7083723"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.3/agent-browser-darwin-arm64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/446134280"
+checksum = "sha256:bc2b3faec46e7ec33c02009d322f58036eaa09aba392e143139d3d16aae02492"
+url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-darwin-arm64"
+url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468695"
 
 [tools."github:vercel-labs/agent-browser"."platforms.macos-x64"]
-checksum = "sha256:0d6e81da0ddb6eeb4ba7b2d48d0d6b85429ac7951771cdb5cbf25a6e98d0f52f"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.3/agent-browser-darwin-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/446134281"
+checksum = "sha256:d655361c8bd96ae3973654b6814cc859b9827b0ad8614654966f4e6a5cd428d9"
+url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-darwin-x64"
+url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468697"
 
 [tools."github:vercel-labs/agent-browser"."platforms.windows-x64"]
-checksum = "sha256:1d2e5230859dcb5b0dae3594c017b88cb80219478ca019196dbff1e929251d3c"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.27.3/agent-browser-win32-x64.exe"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/446134302"
+checksum = "sha256:7a6212a96c5b960da37ed1c29885da138ef9b38e41b4ee4c1bbd92df752b12d3"
+url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-win32-x64.exe"
+url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468723"
 
 [[tools.go]]
 version = "1.26.4"
