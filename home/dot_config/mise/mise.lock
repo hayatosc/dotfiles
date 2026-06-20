@@ -5176,15 +5176,7 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-
 checksum = "sha256:60fe5a92dc9af64ec079348fedde17e12da6a867efe7e8353be8038480607924"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-linux-x64.tar.gz"
 
-[tools.opencode."platforms.linux-x64-baseline"]
-checksum = "sha256:60fe5a92dc9af64ec079348fedde17e12da6a867efe7e8353be8038480607924"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-linux-x64.tar.gz"
-
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:2381268a01fe8c6c20aa4f3d5c44a97357607427731c7110ac2cfaa734f39435"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-linux-x64-musl.tar.gz"
-
-[tools.opencode."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:2381268a01fe8c6c20aa4f3d5c44a97357607427731c7110ac2cfaa734f39435"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-linux-x64-musl.tar.gz"
 
@@ -5196,15 +5188,7 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-
 checksum = "sha256:4953e7c3c8db8c623ea726d8ecb6657ba04806b7b4d906c078fc072fb172cfe0"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-darwin-x64.zip"
 
-[tools.opencode."platforms.macos-x64-baseline"]
-checksum = "sha256:4953e7c3c8db8c623ea726d8ecb6657ba04806b7b4d906c078fc072fb172cfe0"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-darwin-x64.zip"
-
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:0c8e1cc71795f47b1bc43f5336a45679a0607afb6ca850e965bc2285cb4b54b5"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-windows-x64.zip"
-
-[tools.opencode."platforms.windows-x64-baseline"]
 checksum = "sha256:0c8e1cc71795f47b1bc43f5336a45679a0607afb6ca850e965bc2285cb4b54b5"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.7/opencode-windows-x64.zip"
 
