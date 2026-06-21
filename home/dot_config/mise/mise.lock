@@ -580,9 +580,9 @@ checksum = "sha256:b48f150db8c052c197691c9d76f59e252d3a7f01de123753d51ebf2eed1cf
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2"
 checksum = "sha256:cb2227f2441499900bdc0168eb423d7b2056c8fd5a3541df4e2d05509a88c668"
 
-[conda-packages.linux-arm64."xkeyboard-config-2.47-h80f16a2_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xkeyboard-config-2.47-h80f16a2_1.conda"
-checksum = "sha256:70070c1bd0c8f6af2640fa6302c06c29ad5740c80e290a6b287c8a6498290207"
+[conda-packages.linux-arm64."xkeyboard-config-2.48-h80f16a2_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xkeyboard-config-2.48-h80f16a2_0.conda"
+checksum = "sha256:96078068df25ddccc60958be740e6fa99efb1e0fa2dae2f84e775201bf84d70c"
 
 [conda-packages.linux-arm64."xorg-libice-1.1.2-h86ecc28_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xorg-libice-1.1.2-h86ecc28_0.conda"
@@ -1248,9 +1248,9 @@ checksum = "sha256:b48f150db8c052c197691c9d76f59e252d3a7f01de123753d51ebf2eed1cf
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/x265-3.5-hdd96247_3.tar.bz2"
 checksum = "sha256:cb2227f2441499900bdc0168eb423d7b2056c8fd5a3541df4e2d05509a88c668"
 
-[conda-packages.linux-arm64-musl."xkeyboard-config-2.47-h80f16a2_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xkeyboard-config-2.47-h80f16a2_1.conda"
-checksum = "sha256:70070c1bd0c8f6af2640fa6302c06c29ad5740c80e290a6b287c8a6498290207"
+[conda-packages.linux-arm64-musl."xkeyboard-config-2.48-h80f16a2_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xkeyboard-config-2.48-h80f16a2_0.conda"
+checksum = "sha256:96078068df25ddccc60958be740e6fa99efb1e0fa2dae2f84e775201bf84d70c"
 
 [conda-packages.linux-arm64-musl."xorg-libice-1.1.2-h86ecc28_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/xorg-libice-1.1.2-h86ecc28_0.conda"
@@ -1956,9 +1956,9 @@ checksum = "sha256:175315eb3d6ea1f64a6ce470be00fa2ee59980108f246d3072ab8b977cb04
 url = "https://conda.anaconda.org/conda-forge/linux-64/x265-3.5-h924138e_3.tar.bz2"
 checksum = "sha256:76c7405bcf2af639971150f342550484efac18219c0203c5ee2e38b8956fe2a0"
 
-[conda-packages.linux-x64."xkeyboard-config-2.47-h280c20c_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.47-h280c20c_1.conda"
-checksum = "sha256:2bd7452f68c39bfff954385b062aca9389262369e318739af270d23af47580a5"
+[conda-packages.linux-x64."xkeyboard-config-2.48-h280c20c_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.48-h280c20c_0.conda"
+checksum = "sha256:3b04afd5d1a65d2d27ac2d49a63b01ab8bcd875776779ec63e337370ed38afdc"
 
 [conda-packages.linux-x64."xorg-libice-1.1.2-hb9d3cd8_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.1.2-hb9d3cd8_0.conda"
@@ -2664,9 +2664,9 @@ checksum = "sha256:175315eb3d6ea1f64a6ce470be00fa2ee59980108f246d3072ab8b977cb04
 url = "https://conda.anaconda.org/conda-forge/linux-64/x265-3.5-h924138e_3.tar.bz2"
 checksum = "sha256:76c7405bcf2af639971150f342550484efac18219c0203c5ee2e38b8956fe2a0"
 
-[conda-packages.linux-x64-musl."xkeyboard-config-2.47-h280c20c_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.47-h280c20c_1.conda"
-checksum = "sha256:2bd7452f68c39bfff954385b062aca9389262369e318739af270d23af47580a5"
+[conda-packages.linux-x64-musl."xkeyboard-config-2.48-h280c20c_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/xkeyboard-config-2.48-h280c20c_0.conda"
+checksum = "sha256:3b04afd5d1a65d2d27ac2d49a63b01ab8bcd875776779ec63e337370ed38afdc"
 
 [conda-packages.linux-x64-musl."xorg-libice-1.1.2-hb9d3cd8_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/xorg-libice-1.1.2-hb9d3cd8_0.conda"
@@ -3510,7 +3510,7 @@ conda_deps = [
     "xorg-libxtst-1.2.5-h57736b2_3",
     "lerc-4.1.0-h52b7260_0",
     "zstd-1.5.7-h85ac4a6_6",
-    "xkeyboard-config-2.47-h80f16a2_1",
+    "xkeyboard-config-2.48-h80f16a2_0",
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-arm64-musl"]
@@ -3640,7 +3640,7 @@ conda_deps = [
     "xorg-libxtst-1.2.5-h57736b2_3",
     "lerc-4.1.0-h52b7260_0",
     "zstd-1.5.7-h85ac4a6_6",
-    "xkeyboard-config-2.47-h80f16a2_1",
+    "xkeyboard-config-2.48-h80f16a2_0",
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-x64"]
@@ -3780,7 +3780,7 @@ conda_deps = [
     "libudev1-260.2-h6f4a2f1_1",
     "lerc-4.1.0-hdb68285_0",
     "zstd-1.5.7-hb78ec9c_6",
-    "xkeyboard-config-2.47-h280c20c_1",
+    "xkeyboard-config-2.48-h280c20c_0",
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-x64-musl"]
@@ -3920,7 +3920,7 @@ conda_deps = [
     "libudev1-260.2-h6f4a2f1_1",
     "lerc-4.1.0-hdb68285_0",
     "zstd-1.5.7-hb78ec9c_6",
-    "xkeyboard-config-2.47-h280c20c_1",
+    "xkeyboard-config-2.48-h280c20c_0",
 ]
 
 [tools."conda:ffmpeg"."platforms.windows-x64"]
@@ -4677,7 +4677,7 @@ conda_deps = [
     "krb5-1.22.2-h2fb54aa_1",
     "libedit-3.1.20250104-pl5321h976ea20_0",
     "keyutils-1.6.3-h86ecc28_0",
-    "xkeyboard-config-2.47-h80f16a2_1",
+    "xkeyboard-config-2.48-h80f16a2_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
     "xorg-xorgproto-2025.1-he30d5cf_0",
     "openssl-3.6.3-h546c87b_0",
@@ -4797,7 +4797,7 @@ conda_deps = [
     "krb5-1.22.2-h2fb54aa_1",
     "libedit-3.1.20250104-pl5321h976ea20_0",
     "keyutils-1.6.3-h86ecc28_0",
-    "xkeyboard-config-2.47-h80f16a2_1",
+    "xkeyboard-config-2.48-h80f16a2_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
     "xorg-xorgproto-2025.1-he30d5cf_0",
     "openssl-3.6.3-h546c87b_0",
@@ -4917,7 +4917,7 @@ conda_deps = [
     "krb5-1.22.2-hbde042b_1",
     "libedit-3.1.20250104-pl5321h7949ede_0",
     "keyutils-1.6.3-hb9d3cd8_0",
-    "xkeyboard-config-2.47-h280c20c_1",
+    "xkeyboard-config-2.48-h280c20c_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
     "xorg-xorgproto-2025.1-hb03c661_0",
     "openssl-3.6.3-h35e630c_0",
@@ -5037,7 +5037,7 @@ conda_deps = [
     "krb5-1.22.2-hbde042b_1",
     "libedit-3.1.20250104-pl5321h7949ede_0",
     "keyutils-1.6.3-hb9d3cd8_0",
-    "xkeyboard-config-2.47-h280c20c_1",
+    "xkeyboard-config-2.48-h280c20c_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
     "xorg-xorgproto-2025.1-hb03c661_0",
     "openssl-3.6.3-h35e630c_0",
