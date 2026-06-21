@@ -5,6 +5,16 @@
 
 set -euo pipefail
 
+# Ensure mise and its shims are in PATH if apm is not found
+if ! command -v apm >/dev/null 2>&1; then
+    if [ -f "${HOME}/.local/bin/mise" ] && ! command -v mise >/dev/null 2>&1; then
+        export PATH="${HOME}/.local/bin:${PATH}"
+    fi
+    if [ -d "${HOME}/.local/share/mise/shims" ]; then
+        export PATH="${HOME}/.local/share/mise/shims:${PATH}"
+    fi
+fi
+
 if ! command -v apm >/dev/null 2>&1; then
     echo "apm CLI not installed. Run \`mise install\` first." >&2
     exit 0
