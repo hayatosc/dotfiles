@@ -4435,19 +4435,7 @@ url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x8
 url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243608"
 provenance = "github-attestations"
 
-[tools."github:sinelaw/fresh"."platforms.linux-x64-baseline"]
-checksum = "sha256:0a8d1c75481aa426e5009c8a01f3368921b8c51425db858c7075270602e7fee5"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243608"
-provenance = "github-attestations"
-
 [tools."github:sinelaw/fresh"."platforms.linux-x64-musl"]
-checksum = "sha256:4b74edbd4e0f0f950522b0e18a33d2efd5ddcecbc0ef9ff0e127d963ad9aee38"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243803"
-provenance = "github-attestations"
-
-[tools."github:sinelaw/fresh"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:4b74edbd4e0f0f950522b0e18a33d2efd5ddcecbc0ef9ff0e127d963ad9aee38"
 url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243803"
@@ -4465,19 +4453,7 @@ url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x8
 url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243605"
 provenance = "github-attestations"
 
-[tools."github:sinelaw/fresh"."platforms.macos-x64-baseline"]
-checksum = "sha256:87071df277b87c75549f1b7b358bf9539246a037e07400df7ff50668e6e6556b"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243605"
-provenance = "github-attestations"
-
 [tools."github:sinelaw/fresh"."platforms.windows-x64"]
-checksum = "sha256:af39978731c379f1ebe3dd54976ee81ba2cc6e7e5590f2bec44a6cc20a4df4a5"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243851"
-provenance = "github-attestations"
-
-[tools."github:sinelaw/fresh"."platforms.windows-x64-baseline"]
 checksum = "sha256:af39978731c379f1ebe3dd54976ee81ba2cc6e7e5590f2bec44a6cc20a4df4a5"
 url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243851"
