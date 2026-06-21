@@ -11,16 +11,8 @@ This file lists mandatory rules for all agents working in this repository.
 ## Communication
 - Respond in Japanese.
 
-## Dependencies
-- Research required libraries before implementation.
-- Prefer the standard library; minimize external dependencies.
-
-## Design
-- Follow SOLID, DRY, KISS and YAGNI principles.
-- Before writing any new function, type, or utility, search the existing codebase for similar implementations. Reuse them via import / source / require. Do not re-implement.
-- No features beyond what was asked; no speculative abstractions or configurability.
-- No error handling for impossible or internal-only scenarios.
-- If a solution is 200 lines but could be 50, rewrite it.
+## Coding Style
+- You **MUST** load and read the `coding-style` skill before writing any code. All rules regarding dependencies, design principles, and code changes have been moved there.
 
 ## Questions
 - Before implementing, state your assumptions explicitly.
@@ -53,13 +45,6 @@ This file lists mandatory rules for all agents working in this repository.
   - Set `PYTHON_UV=0` to bypass uv and use system python directly
 - Some tools are running under [rtk](https://github.com/rtk-ai/rtk) via agent hooks to save tokens.
   - check `~/.agents/RTK.md` for details.
-
-## Code Changes
-- Touch only what the task requires; don't improve adjacent code or formatting.
-- Match existing style, even if you'd do it differently.
-- If you notice unrelated dead code, mention it — don't delete it.
-- Remove only imports/variables/functions that YOUR changes made unused.
-- Don’t fight errors! Whenever you encounter the same error twice, research the web and find 3-5 possible ways to fix it. Then choose the most efficient solution and implement it
 
 ## Safety
 - Do not expose or commit secrets or credentials.

@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-06-18T16:08:42.931176+00:00'
+generated_at: '2026-06-21T16:11:43.344816+00:00'
 apm_version: 0.19.0
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
@@ -368,7 +368,7 @@ dependencies:
   content_hash: sha256:bd835bf84356f346fe0adffe9b388bd45eb77eb2b50d83defde371e1d4861b34
 - repo_url: emilkowalski/skill
   host: github.com
-  resolved_commit: ecf66bbd1fb33c25332b6b0e454d08049978284c
+  resolved_commit: 43d8284140edf1301a3a0a781b86c83200857080
   virtual_path: skills/emil-design-eng
   is_virtual: true
   package_type: claude_skill
@@ -434,7 +434,7 @@ dependencies:
   content_hash: sha256:e134b3d874181787abdb59ff012f1eee71a537997305582e488bc979b5ff7294
 - repo_url: openai/skills
   host: github.com
-  resolved_commit: a8924c2a35cfa290458852c4fad17c9133054c2e
+  resolved_commit: 972cb867affac58fda9afa76bb1a19b399a278cf
   virtual_path: skills/.curated/gh-address-comments
   is_virtual: true
   package_type: claude_skill
@@ -456,7 +456,7 @@ dependencies:
   content_hash: sha256:068d34fb59cb97a39aea3de1708877b6a01210d02fa7eda5e74fc8277ed52916
 - repo_url: openai/skills
   host: github.com
-  resolved_commit: a8924c2a35cfa290458852c4fad17c9133054c2e
+  resolved_commit: 972cb867affac58fda9afa76bb1a19b399a278cf
   virtual_path: skills/.curated/gh-fix-ci
   is_virtual: true
   package_type: claude_skill
@@ -478,7 +478,7 @@ dependencies:
   content_hash: sha256:02b4d97e4bd91e342e3ec3efa06b7871097d6a64e8398f4ed5b69c64d8d902fb
 - repo_url: openclaw/acpx
   host: github.com
-  resolved_commit: abbb96819e80ee0ee77b6a10e563020e1d4980e0
+  resolved_commit: ce0f657d6c4e6d248863f5a0822f59b3629cb495
   virtual_path: skills/acpx
   is_virtual: true
   package_type: claude_skill
@@ -490,7 +490,7 @@ dependencies:
   content_hash: sha256:16fdcc48b17017539b04bcd92c0ade9ccdee54c5df87901b5f562b197cb6877d
 - repo_url: vercel-labs/agent-browser
   host: github.com
-  resolved_commit: 6323df571ffd17d14e60ec19fcb56cc1caf498ab
+  resolved_commit: 4572acf0d71c0086009206c9c1e2136fc54ec9e5
   virtual_path: skills/agent-browser
   is_virtual: true
   package_type: claude_skill
@@ -498,8 +498,8 @@ dependencies:
   - .agents/skills/agent-browser
   - .agents/skills/agent-browser/SKILL.md
   deployed_file_hashes:
-    .agents/skills/agent-browser/SKILL.md: sha256:00709861067d0cbb634609778b1be0469de6d6cef5293fcd24cbd469faaae42c
-  content_hash: sha256:edad4d958bc4baf821e3391bb9889a03a8bbc0e4d7f54ee4a5f30837654fed83
+    .agents/skills/agent-browser/SKILL.md: sha256:bb6b4c5aae49ff88addb31312437f94242a3e5aae950503ab4f332e28186c261
+  content_hash: sha256:b93b77d9a63143fcefa7d371c1fceba58f1f310ef76a5f2ad3d4d2077efa8c25
 - repo_url: vercel-labs/agent-skills
   host: github.com
   resolved_commit: f8a72b9603728bb92a217a879b7e62e43ad76c81
@@ -514,7 +514,7 @@ dependencies:
   content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
 - repo_url: vercel-labs/skills
   host: github.com
-  resolved_commit: be0dd25b4a8665894a56f45ef582cc02ca802c39
+  resolved_commit: e5c075e3a84b37c5eb398ab74e581558d3fceb0e
   virtual_path: skills/find-skills
   is_virtual: true
   package_type: claude_skill
@@ -593,6 +593,10 @@ local_deployed_files:
 - .agents/skills/ast-grep/SKILL.md
 - .agents/skills/ast-grep/references/command-cookbook.md
 - .agents/skills/ast-grep/references/rule-authoring.md
+- .agents/skills/before-commit
+- .agents/skills/before-commit/SKILL.md
+- .agents/skills/coding-style
+- .agents/skills/coding-style/SKILL.md
 - .agents/skills/empirical-prompt-tuning
 - .agents/skills/empirical-prompt-tuning/SKILL.md
 - .agents/skills/golang-best-practices
@@ -614,8 +618,6 @@ local_deployed_files:
 - .agents/skills/refactoring-code/references/examples.md
 - .agents/skills/refactoring-code/references/legacy-safety-net.md
 - .agents/skills/refactoring-code/references/refactor-playbook.md
-- .agents/skills/ship-it
-- .agents/skills/ship-it/SKILL.md
 - .agents/skills/typescript-best-practices
 - .agents/skills/typescript-best-practices/SKILL.md
 - .agents/skills/typescript-best-practices/references/config-baseline.md
@@ -637,6 +639,8 @@ local_deployed_file_hashes:
   .agents/skills/ast-grep/SKILL.md: sha256:bef077370d7711b54cafb46032cd0071c500575bcff0b01f294553861bae74a7
   .agents/skills/ast-grep/references/command-cookbook.md: sha256:a64cb2a1bb607dc2729617a2b1a2ae1eb784d491001d06a2b7d808f39e468731
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
+  .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
+  .agents/skills/coding-style/SKILL.md: sha256:1df32e9569d36e048b8ae0bff6425a064e4bbf5113727ec50574b8b7116c453c
   .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:21cb213c1d2c02794c94e6fd0ad20e779e6c767850f292e6475b60cb3500c82f
   .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
   .agents/skills/golang-best-practices/dist/golang-best-practices.skill: sha256:81c910efff41c82348eb1b3aef17f392e3744225f134c9519df010cba17e59d7
@@ -654,7 +658,6 @@ local_deployed_file_hashes:
   .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
   .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:c6e7bec0c3b67ea8235430c748ea72f501df0ee1cf61028e93e753ec850248f6
   .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
-  .agents/skills/ship-it/SKILL.md: sha256:c63ebd97da127a508c83d68615797bcf3e70ab44de8af3edcdecba79ee4ef7fb
   .agents/skills/typescript-best-practices/SKILL.md: sha256:db4e568724df8c46d25fcb095170524fe37af97b50c8cd1b31a7b9bcfb3ead74
   .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:ff55f4af960ee3df49fe23fcf434932e416d77bcca8b11c88e119b8c05f9658e
   .agents/skills/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
