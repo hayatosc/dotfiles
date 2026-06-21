@@ -5,18 +5,12 @@
 
 set -euo pipefail
 
-# Attempt to activate mise if apm is not in PATH
+# Ensure mise and its shims are in PATH if apm is not found
 if ! command -v apm >/dev/null 2>&1; then
-    if [ -f "${HOME}/.local/bin/mise" ]; then
-        eval "$("${HOME}/.local/bin/mise" activate bash)"
-    elif command -v mise >/dev/null 2>&1; then
-        eval "$(mise activate bash)"
+    if [ -f "${HOME}/.local/bin/mise" ] && ! command -v mise >/dev/null 2>&1; then
+        export PATH="${HOME}/.local/bin:${PATH}"
     fi
-fi
-
-# Fallback: add mise shim directory directly to PATH if apm is found there
-if ! command -v apm >/dev/null 2>&1; then
-    if [ -x "${HOME}/.local/share/mise/shims/apm" ]; then
+    if [ -d "${HOME}/.local/share/mise/shims" ]; then
         export PATH="${HOME}/.local/share/mise/shims:${PATH}"
     fi
 fi
