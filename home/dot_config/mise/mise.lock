@@ -3048,15 +3048,7 @@ url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1
 checksum = "sha256:cd80f85f43b52b389d7b498d6784f8316d57a9cc62eae23d840c5de368f9c4d5"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.9/agy_cli_linux_x64.tar.gz"
 
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-baseline"]
-checksum = "sha256:cd80f85f43b52b389d7b498d6784f8316d57a9cc62eae23d840c5de368f9c4d5"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.9/agy_cli_linux_x64.tar.gz"
-
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:cd80f85f43b52b389d7b498d6784f8316d57a9cc62eae23d840c5de368f9c4d5"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.9/agy_cli_linux_x64.tar.gz"
-
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:cd80f85f43b52b389d7b498d6784f8316d57a9cc62eae23d840c5de368f9c4d5"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.9/agy_cli_linux_x64.tar.gz"
 
@@ -3068,15 +3060,7 @@ url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1
 checksum = "sha256:d665f3a4d3c3a57b8ca17742ab2126ffaadd21ac031d57da2fbbb4925cdd770d"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.9/agy_cli_mac_x64.tar.gz"
 
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64-baseline"]
-checksum = "sha256:d665f3a4d3c3a57b8ca17742ab2126ffaadd21ac031d57da2fbbb4925cdd770d"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.9/agy_cli_mac_x64.tar.gz"
-
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:f417fe7d7a3261fb9fabfcdacbce40bb90b81faf1c43632df58420fbc0a100f5"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.9/agy_cli_windows_x64.zip"
-
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64-baseline"]
 checksum = "sha256:f417fe7d7a3261fb9fabfcdacbce40bb90b81faf1c43632df58420fbc0a100f5"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.9/agy_cli_windows_x64.zip"
 
@@ -3211,17 +3195,7 @@ checksum = "sha256:bb8eeed5226d38fdc1f9e1665c071347c07b08a31675371a9062ea7422534
 url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-unknown-linux-gnu.tar.gz"
 provenance = "github-attestations"
 
-[tools.aube."platforms.linux-x64-baseline"]
-checksum = "sha256:bb8eeed5226d38fdc1f9e1665c071347c07b08a31675371a9062ea742253401a"
-url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-unknown-linux-gnu.tar.gz"
-provenance = "github-attestations"
-
 [tools.aube."platforms.linux-x64-musl"]
-checksum = "sha256:5e954780c6ff60be86f3e6ea76e3ec68e1458fa475ae67c48057b813bf30c5f5"
-url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-unknown-linux-musl.tar.gz"
-provenance = "github-attestations"
-
-[tools.aube."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:5e954780c6ff60be86f3e6ea76e3ec68e1458fa475ae67c48057b813bf30c5f5"
 url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
@@ -3232,11 +3206,6 @@ url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-aarch6
 provenance = "github-attestations"
 
 [tools.aube."platforms.windows-x64"]
-checksum = "sha256:b41850c94db54a470f1e486ea637cf0ebffd87d9b904c144e5c78657ad6101f2"
-url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-pc-windows-msvc.zip"
-provenance = "github-attestations"
-
-[tools.aube."platforms.windows-x64-baseline"]
 checksum = "sha256:b41850c94db54a470f1e486ea637cf0ebffd87d9b904c144e5c78657ad6101f2"
 url = "https://github.com/jdx/aube/releases/download/v1.22.0/aube-v1.22.0-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
@@ -3332,25 +3301,15 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.181/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "blake3:6255e03337c1a9bda10250da8f885e1250b1eebfe7a480280416fe84cc8ab336"
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.181/linux-x64/claude"
-
-[tools.claude."platforms.linux-x64-baseline"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.181/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.181/linux-x64-musl/claude"
-
-[tools.claude."platforms.linux-x64-musl-baseline"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.181/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.181/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.181/darwin-x64/claude"
-
-[tools.claude."platforms.macos-x64-baseline"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.181/darwin-x64/claude"
 
 [[tools.cloudflared]]
@@ -3369,15 +3328,7 @@ url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/clou
 checksum = "sha256:5861a10a438fe8ddcfebb3b830f83966cbf193edafce0fe2eeb198fbae1f7a22"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-linux-amd64"
 
-[tools.cloudflared."platforms.linux-x64-baseline"]
-checksum = "sha256:5861a10a438fe8ddcfebb3b830f83966cbf193edafce0fe2eeb198fbae1f7a22"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-linux-amd64"
-
 [tools.cloudflared."platforms.linux-x64-musl"]
-checksum = "sha256:5861a10a438fe8ddcfebb3b830f83966cbf193edafce0fe2eeb198fbae1f7a22"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-linux-amd64"
-
-[tools.cloudflared."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:5861a10a438fe8ddcfebb3b830f83966cbf193edafce0fe2eeb198fbae1f7a22"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-linux-amd64"
 
@@ -3389,15 +3340,7 @@ url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/clou
 checksum = "sha256:d7a66b525fe76820da6e5406611b61e48b40de682368ac00454d9158f085be4b"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-darwin-amd64.tgz"
 
-[tools.cloudflared."platforms.macos-x64-baseline"]
-checksum = "sha256:d7a66b525fe76820da6e5406611b61e48b40de682368ac00454d9158f085be4b"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-darwin-amd64.tgz"
-
 [tools.cloudflared."platforms.windows-x64"]
-checksum = "sha256:5253e66f1f493c4e13539749f1aa86fd0c61e3072900fec29a44ba046a6d97e2"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-windows-amd64.exe"
-
-[tools.cloudflared."platforms.windows-x64-baseline"]
 checksum = "sha256:5253e66f1f493c4e13539749f1aa86fd0c61e3072900fec29a44ba046a6d97e2"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.6.1/cloudflared-windows-amd64.exe"
 
@@ -4243,17 +4186,7 @@ checksum = "sha256:25d1e4729e8808c9ed3d613e96ebd3f3e44446f2d368c89d878a71a36ddb3
 url = "https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_linux_amd64.tar.gz"
 provenance = "github-attestations"
 
-[tools.gh."platforms.linux-x64-baseline"]
-checksum = "sha256:25d1e4729e8808c9ed3d613e96ebd3f3e44446f2d368c89d878a71a36ddb3d8c"
-url = "https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_linux_amd64.tar.gz"
-provenance = "github-attestations"
-
 [tools.gh."platforms.linux-x64-musl"]
-checksum = "sha256:25d1e4729e8808c9ed3d613e96ebd3f3e44446f2d368c89d878a71a36ddb3d8c"
-url = "https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_linux_amd64.tar.gz"
-provenance = "github-attestations"
-
-[tools.gh."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:25d1e4729e8808c9ed3d613e96ebd3f3e44446f2d368c89d878a71a36ddb3d8c"
 url = "https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_linux_amd64.tar.gz"
 provenance = "github-attestations"
@@ -4268,17 +4201,7 @@ checksum = "sha256:985707e9ac60c95ed51cddd808c338b481abe69fffa77e9d6547c3750045f
 url = "https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_macOS_amd64.zip"
 provenance = "github-attestations"
 
-[tools.gh."platforms.macos-x64-baseline"]
-checksum = "sha256:985707e9ac60c95ed51cddd808c338b481abe69fffa77e9d6547c3750045f77e"
-url = "https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_macOS_amd64.zip"
-provenance = "github-attestations"
-
 [tools.gh."platforms.windows-x64"]
-checksum = "sha256:19a7154161ada9cfaa9e57edb752ecc679b75c391a62e4f7b586eea1df30b5bb"
-url = "https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_windows_amd64.zip"
-provenance = "github-attestations"
-
-[tools.gh."platforms.windows-x64-baseline"]
 checksum = "sha256:19a7154161ada9cfaa9e57edb752ecc679b75c391a62e4f7b586eea1df30b5bb"
 url = "https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_windows_amd64.zip"
 provenance = "github-attestations"
@@ -4373,17 +4296,7 @@ checksum = "sha256:76a3961f878b8158922f483ae066549b8b24308c240c1cb98e0d674ff7376
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.20.1/octoscope_0.20.1_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/449222071"
 
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-baseline"]
-checksum = "sha256:76a3961f878b8158922f483ae066549b8b24308c240c1cb98e0d674ff7376c4c"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.20.1/octoscope_0.20.1_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/449222071"
-
 [tools."github:gfazioli/octoscope"."platforms.linux-x64-musl"]
-checksum = "sha256:76a3961f878b8158922f483ae066549b8b24308c240c1cb98e0d674ff7376c4c"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.20.1/octoscope_0.20.1_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/449222071"
-
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:76a3961f878b8158922f483ae066549b8b24308c240c1cb98e0d674ff7376c4c"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.20.1/octoscope_0.20.1_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/449222071"
@@ -4398,17 +4311,7 @@ checksum = "sha256:adfde5388e25386d50f8107ecdb70513cc6c273237e687bfe55627bba2882
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.20.1/octoscope_0.20.1_macOS_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/449222069"
 
-[tools."github:gfazioli/octoscope"."platforms.macos-x64-baseline"]
-checksum = "sha256:adfde5388e25386d50f8107ecdb70513cc6c273237e687bfe55627bba2882439"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.20.1/octoscope_0.20.1_macOS_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/449222069"
-
 [tools."github:gfazioli/octoscope"."platforms.windows-x64"]
-checksum = "sha256:b00edf92788f66c5ae91163930ba12a7a247d2416f6ec8d87a8ea0f87f7030c0"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.20.1/octoscope_0.20.1_Windows_x86_64.zip"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/449222095"
-
-[tools."github:gfazioli/octoscope"."platforms.windows-x64-baseline"]
 checksum = "sha256:b00edf92788f66c5ae91163930ba12a7a247d2416f6ec8d87a8ea0f87f7030c0"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.20.1/octoscope_0.20.1_Windows_x86_64.zip"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/449222095"
@@ -4500,17 +4403,7 @@ checksum = "sha256:07c58facb2b1849fbbcab51fcaf99d2c0f8d32af56f368db9792a8af1d873
 url = "https://github.com/mizchi/actrun/releases/download/v0.29.0/actrun-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/mizchi/actrun/releases/assets/385521185"
 
-[tools."github:mizchi/actrun"."platforms.linux-x64-baseline"]
-checksum = "sha256:07c58facb2b1849fbbcab51fcaf99d2c0f8d32af56f368db9792a8af1d8738a6"
-url = "https://github.com/mizchi/actrun/releases/download/v0.29.0/actrun-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/mizchi/actrun/releases/assets/385521185"
-
 [tools."github:mizchi/actrun"."platforms.linux-x64-musl"]
-checksum = "sha256:07c58facb2b1849fbbcab51fcaf99d2c0f8d32af56f368db9792a8af1d8738a6"
-url = "https://github.com/mizchi/actrun/releases/download/v0.29.0/actrun-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/mizchi/actrun/releases/assets/385521185"
-
-[tools."github:mizchi/actrun"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:07c58facb2b1849fbbcab51fcaf99d2c0f8d32af56f368db9792a8af1d8738a6"
 url = "https://github.com/mizchi/actrun/releases/download/v0.29.0/actrun-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/mizchi/actrun/releases/assets/385521185"
@@ -4585,17 +4478,7 @@ checksum = "sha256:5076a41ef1fd09573e20559c1911de3ba7abcb08bff61788867a302d3d2d9
 url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565550"
 
-[tools."github:steipete/gogcli"."platforms.linux-x64-baseline"]
-checksum = "sha256:5076a41ef1fd09573e20559c1911de3ba7abcb08bff61788867a302d3d2d90d8"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.0_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565550"
-
 [tools."github:steipete/gogcli"."platforms.linux-x64-musl"]
-checksum = "sha256:5076a41ef1fd09573e20559c1911de3ba7abcb08bff61788867a302d3d2d90d8"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.0_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565550"
-
-[tools."github:steipete/gogcli"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:5076a41ef1fd09573e20559c1911de3ba7abcb08bff61788867a302d3d2d90d8"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565550"
@@ -4610,17 +4493,7 @@ checksum = "sha256:e0e55f360967860f1caeb2cdf434289eca8296f18335a3024e9710edd8087
 url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.0_darwin_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565571"
 
-[tools."github:steipete/gogcli"."platforms.macos-x64-baseline"]
-checksum = "sha256:e0e55f360967860f1caeb2cdf434289eca8296f18335a3024e9710edd808727f"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.0_darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565571"
-
 [tools."github:steipete/gogcli"."platforms.windows-x64"]
-checksum = "sha256:ff59cc3c91a449c188feb433c37c7fdb129186069261fc5c1624e8a9de27d7d7"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.0_windows_amd64.zip"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565552"
-
-[tools."github:steipete/gogcli"."platforms.windows-x64-baseline"]
 checksum = "sha256:ff59cc3c91a449c188feb433c37c7fdb129186069261fc5c1624e8a9de27d7d7"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.28.0/gogcli_0.28.0_windows_amd64.zip"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/448565552"
@@ -4644,17 +4517,7 @@ checksum = "sha256:c0bef69599d6ed123bf147bd6747755978330948d2ef5eaae492ef171b659
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-linux-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468719"
 
-[tools."github:vercel-labs/agent-browser"."platforms.linux-x64-baseline"]
-checksum = "sha256:c0bef69599d6ed123bf147bd6747755978330948d2ef5eaae492ef171b659556"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-linux-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468719"
-
 [tools."github:vercel-labs/agent-browser"."platforms.linux-x64-musl"]
-checksum = "sha256:4e90910f4921b4dbeee6c80322dd802fd6375dfca199d92e55043d9e5e8d972c"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-linux-musl-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468696"
-
-[tools."github:vercel-labs/agent-browser"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:4e90910f4921b4dbeee6c80322dd802fd6375dfca199d92e55043d9e5e8d972c"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-linux-musl-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468696"
@@ -4669,17 +4532,7 @@ checksum = "sha256:d655361c8bd96ae3973654b6814cc859b9827b0ad8614654966f4e6a5cd42
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-darwin-x64"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468697"
 
-[tools."github:vercel-labs/agent-browser"."platforms.macos-x64-baseline"]
-checksum = "sha256:d655361c8bd96ae3973654b6814cc859b9827b0ad8614654966f4e6a5cd428d9"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-darwin-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468697"
-
 [tools."github:vercel-labs/agent-browser"."platforms.windows-x64"]
-checksum = "sha256:7a6212a96c5b960da37ed1c29885da138ef9b38e41b4ee4c1bbd92df752b12d3"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-win32-x64.exe"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468723"
-
-[tools."github:vercel-labs/agent-browser"."platforms.windows-x64-baseline"]
 checksum = "sha256:7a6212a96c5b960da37ed1c29885da138ef9b38e41b4ee4c1bbd92df752b12d3"
 url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.28.0/agent-browser-win32-x64.exe"
 url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/449468723"
@@ -5282,10 +5135,6 @@ url = "https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygi
 checksum = "sha256:805bfcb2445273b77a32b7758dfb5d2d8dbd7b80b7336ab868935584a2fad0ba"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygit_0.62.2_windows_x86_64.zip"
 
-[[tools.moonbit]]
-version = "latest"
-backend = "vfox:moonbit"
-
 [[tools.ni]]
 version = "30.1.0"
 backend = "npm:@antfu/ni"
@@ -5346,15 +5195,7 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-
 checksum = "sha256:13fffc29227093462b7d14777ea6b804cfd94c2612819c101bbf933d862b1e5f"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-linux-x64.tar.gz"
 
-[tools.opencode."platforms.linux-x64-baseline"]
-checksum = "sha256:13fffc29227093462b7d14777ea6b804cfd94c2612819c101bbf933d862b1e5f"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-linux-x64.tar.gz"
-
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:1d8d26fe78bd932f3e09ee59749da88e765be3ab2ebab6bffdeba56ef3c95d0d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-linux-x64-musl.tar.gz"
-
-[tools.opencode."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:1d8d26fe78bd932f3e09ee59749da88e765be3ab2ebab6bffdeba56ef3c95d0d"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-linux-x64-musl.tar.gz"
 
@@ -5366,15 +5207,7 @@ url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-
 checksum = "sha256:b952a52025aab521fa04040e5dd14a401cc8b0efa311a9d6073e2f40ddf1d2a1"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-darwin-x64.zip"
 
-[tools.opencode."platforms.macos-x64-baseline"]
-checksum = "sha256:b952a52025aab521fa04040e5dd14a401cc8b0efa311a9d6073e2f40ddf1d2a1"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-darwin-x64.zip"
-
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:bf5f74cb786bfd55bbf8c7ae385d52c3472bf4b357d6c1d9c6faa4cc667d7669"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-windows-x64.zip"
-
-[tools.opencode."platforms.windows-x64-baseline"]
 checksum = "sha256:bf5f74cb786bfd55bbf8c7ae385d52c3472bf4b357d6c1d9c6faa4cc667d7669"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.8/opencode-windows-x64.zip"
 
