@@ -1,6 +1,6 @@
 ---
 name: refactoring-code
-description: Analyze and execute behavior-preserving refactors in small, verified steps. Use when the user asks to refactor, clean up code structure, extract functions or modules, reduce duplication, improve maintainability, or modernize code without changing external behavior.
+description: Analyze and execute behavior-preserving refactors in small, verified steps. Use when the user asks to refactor, clean up code structure, extract functions or modules, reduce duplication, improve maintainability, or modernize code without changing external behavior. Also trigger when the user says things like "this code is messy", "there's too much duplication", "this is hard to maintain", "this function is too long", "コードが散らかりすぎ", "整理したい", "読みやすくしたい", "同じような処理があちこちに", "肥大化してきた", or expresses any desire to improve code structure without changing behavior. Even vague expressions of code dissatisfaction should trigger this skill.
 ---
 
 # Refactoring Code

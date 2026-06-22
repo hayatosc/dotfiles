@@ -1,6 +1,6 @@
 ---
 name: ast-grep
-description: Explore and transform large codebases with ast-grep using AST-aware search, rule-based scanning, and safe codemod workflows. Use when requests involve structural code search beyond regex, writing/testing ast-grep YAML rules, reducing noisy matches by syntax, or applying multi-file rewrites with controlled rollout.
+description: Explore and transform large codebases with ast-grep using AST-aware search, rule-based scanning, and safe codemod workflows. Use when requests involve structural code search beyond regex, writing/testing ast-grep YAML rules, reducing noisy matches by syntax, or applying multi-file rewrites with controlled rollout. Also trigger when the user needs to find code patterns that regex can't reliably match (like "all useEffect calls with empty dependency arrays", "functions with more than 3 parameters", "class methods that call super"), when grep/ripgrep returns too many false positives due to syntax variations, or when the user wants to enforce code patterns across a codebase. Any request for syntax-aware code search or transformation should use this skill.
 ---
 
 # ast-grep

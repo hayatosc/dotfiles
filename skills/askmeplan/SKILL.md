@@ -8,6 +8,12 @@ description: >
   "help me think through", "grill me", or any request to plan interactively.
   Also use when the request is ambiguous or involves significant trade-offs
   that require human judgment before implementation can begin.
+  Also trigger when the user says things like "I'm not sure which approach to take",
+  "there are too many options", "how should I architecture this", "what's the best way to",
+  "I'm torn between X and Y", "help me decide", "一緒に考えよう", "どうするのがベストか",
+  "迷ってる", "整理できてない", or any expression of uncertainty about technical direction.
+  Even if the user doesn't explicitly ask for a "plan", if they're weighing trade-offs
+  or exploring design space, this skill should be used.
 ---
 
 # askmeplan

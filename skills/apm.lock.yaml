@@ -635,8 +635,8 @@ local_deployed_file_hashes:
   .agents/skills/article-review/agents/openai.yaml: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
   .agents/skills/article-review/references/report-template.md: sha256:60c5656b28571ac85c746d0450fa05bcde3fc3d9d4c0117b61aed93f2affd97e
   .agents/skills/article-review/references/review-rubric.md: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
-  .agents/skills/askmeplan/SKILL.md: sha256:0fbcabac373ad9dd005f878b473d5062904dcd4fe3ee7410581fb97cb59339ff
-  .agents/skills/ast-grep/SKILL.md: sha256:bef077370d7711b54cafb46032cd0071c500575bcff0b01f294553861bae74a7
+  .agents/skills/askmeplan/SKILL.md: sha256:387f5f286c93ee4e605356a4581cd3e421310f5f3d751bae92f54b0c9d093e85
+  .agents/skills/ast-grep/SKILL.md: sha256:08ea89c4f4e065a16564a5ed3ed5f3e263a7fdb6aca955671a5f03f8d3250973
   .agents/skills/ast-grep/references/command-cookbook.md: sha256:a64cb2a1bb607dc2729617a2b1a2ae1eb784d491001d06a2b7d808f39e468731
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
   .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
@@ -653,7 +653,7 @@ local_deployed_file_hashes:
   .agents/skills/golang-best-practices/references/security.md: sha256:691e69477a8122037251b7a9b2f09b983a9e358aeab932841a49659facfa9f66
   .agents/skills/golang-best-practices/references/testing.md: sha256:b9cd30a2ea2d760b48b8ae929d7c8e75131814505fbee6fc049d364706e73b18
   .agents/skills/japanese-tech-writing/SKILL.md: sha256:1f2ecac39b4dd1aad33cb6d09ccf10d66cfe35e73e6541c02ee4399004531b15
-  .agents/skills/refactoring-code/SKILL.md: sha256:0ebc0651dd358d17686c7f3c2e76e7ece79779d6afd09c835e1ced2ca18a4fa5
+  .agents/skills/refactoring-code/SKILL.md: sha256:ebc352404701d2289496f04fe361dfbb8a1253ce9c6921f49564a9b883c9529a
   .agents/skills/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
   .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
   .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:c6e7bec0c3b67ea8235430c748ea72f501df0ee1cf61028e93e753ec850248f6
