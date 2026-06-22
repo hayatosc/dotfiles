@@ -416,17 +416,17 @@ checksum = "sha256:1dadc45e599f510dd5f97141dddcdbb9844d9f1430c1f3a38075cf1c58f87
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libstdcxx-ng-15.2.0-hdbbeba8_19.conda"
 checksum = "sha256:56b5ec297a988961486694f1c598889c3a697d77a0b42b8cea3faaa12e9bd360"
 
-[conda-packages.linux-arm64."libsystemd0-260.2-hb290c7d_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-260.2-hb290c7d_1.conda"
-checksum = "sha256:456d1b6b072d1b0f3ad432e8ea2121ed4e6ed349a19ef3b072b42131e7a1339d"
+[conda-packages.linux-arm64.libsystemd0-261-hb290c7d_0]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-261-hb290c7d_0.conda"
+checksum = "sha256:13397a68339de549c715cc42f7d8e3b3d846f72f95721c73ad43ad4bbb615ea1"
 
 [conda-packages.linux-arm64."libtiff-4.7.1-hdb009f0_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libtiff-4.7.1-hdb009f0_1.conda"
 checksum = "sha256:7ff79470db39e803e21b8185bc8f19c460666d5557b1378d1b1e857d929c6b39"
 
-[conda-packages.linux-arm64."libudev1-260.2-hb290c7d_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-260.2-hb290c7d_1.conda"
-checksum = "sha256:780e55b7b7275b047231d8f5b6194a7088122e8c988c74100e988614015482aa"
+[conda-packages.linux-arm64.libudev1-261-hb290c7d_0]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-261-hb290c7d_0.conda"
+checksum = "sha256:28d3f64294601507360f8d16d90aa4b939c269cf15529479e70db65c0648465b"
 
 [conda-packages.linux-arm64."libunwind-1.8.3-h6470e1d_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libunwind-1.8.3-h6470e1d_0.conda"
@@ -1084,17 +1084,17 @@ checksum = "sha256:1dadc45e599f510dd5f97141dddcdbb9844d9f1430c1f3a38075cf1c58f87
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libstdcxx-ng-15.2.0-hdbbeba8_19.conda"
 checksum = "sha256:56b5ec297a988961486694f1c598889c3a697d77a0b42b8cea3faaa12e9bd360"
 
-[conda-packages.linux-arm64-musl."libsystemd0-260.2-hb290c7d_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-260.2-hb290c7d_1.conda"
-checksum = "sha256:456d1b6b072d1b0f3ad432e8ea2121ed4e6ed349a19ef3b072b42131e7a1339d"
+[conda-packages.linux-arm64-musl.libsystemd0-261-hb290c7d_0]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-261-hb290c7d_0.conda"
+checksum = "sha256:13397a68339de549c715cc42f7d8e3b3d846f72f95721c73ad43ad4bbb615ea1"
 
 [conda-packages.linux-arm64-musl."libtiff-4.7.1-hdb009f0_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libtiff-4.7.1-hdb009f0_1.conda"
 checksum = "sha256:7ff79470db39e803e21b8185bc8f19c460666d5557b1378d1b1e857d929c6b39"
 
-[conda-packages.linux-arm64-musl."libudev1-260.2-hb290c7d_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-260.2-hb290c7d_1.conda"
-checksum = "sha256:780e55b7b7275b047231d8f5b6194a7088122e8c988c74100e988614015482aa"
+[conda-packages.linux-arm64-musl.libudev1-261-hb290c7d_0]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-261-hb290c7d_0.conda"
+checksum = "sha256:28d3f64294601507360f8d16d90aa4b939c269cf15529479e70db65c0648465b"
 
 [conda-packages.linux-arm64-musl."libunwind-1.8.3-h6470e1d_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libunwind-1.8.3-h6470e1d_0.conda"
@@ -1772,17 +1772,17 @@ checksum = "sha256:dff1058c76ec6b8759e41cefa2508162d00e4a5e6721aa68ec3fd10094e70
 url = "https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-15.2.0-hdf11a46_19.conda"
 checksum = "sha256:0672b6b6e1791c92e8eccad58081a99d614fcf82bca5841f9dfa3c3e658f83b9"
 
-[conda-packages.linux-x64."libsystemd0-260.2-h6f4a2f1_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-260.2-h6f4a2f1_1.conda"
-checksum = "sha256:52956aaa627d54867e5713bb99ae530444c3ade9957aeb994a0a21ea90c09b48"
+[conda-packages.linux-x64.libsystemd0-261-h6f4a2f1_0]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-261-h6f4a2f1_0.conda"
+checksum = "sha256:25dcb91249e1d3bdcd9d89b3eb973f42defc3c2c33c28aa14ada4d879c31b022"
 
 [conda-packages.linux-x64."libtiff-4.7.1-h9d88235_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.7.1-h9d88235_1.conda"
 checksum = "sha256:e5f8c38625aa6d567809733ae04bb71c161a42e44a9fa8227abe61fa5c60ebe0"
 
-[conda-packages.linux-x64."libudev1-260.2-h6f4a2f1_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-260.2-h6f4a2f1_1.conda"
-checksum = "sha256:ac3ea9e1a2442d10b6a85e89f97e8490fb3fd2354602f2b5a3edbf0f04bc25f2"
+[conda-packages.linux-x64.libudev1-261-h6f4a2f1_0]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-261-h6f4a2f1_0.conda"
+checksum = "sha256:633fc1b956518156aa65735bc195cce0242147d4d5d99b04e59d72f84491b5fb"
 
 [conda-packages.linux-x64."libunwind-1.8.3-h65a8314_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
@@ -2480,17 +2480,17 @@ checksum = "sha256:dff1058c76ec6b8759e41cefa2508162d00e4a5e6721aa68ec3fd10094e70
 url = "https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-15.2.0-hdf11a46_19.conda"
 checksum = "sha256:0672b6b6e1791c92e8eccad58081a99d614fcf82bca5841f9dfa3c3e658f83b9"
 
-[conda-packages.linux-x64-musl."libsystemd0-260.2-h6f4a2f1_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-260.2-h6f4a2f1_1.conda"
-checksum = "sha256:52956aaa627d54867e5713bb99ae530444c3ade9957aeb994a0a21ea90c09b48"
+[conda-packages.linux-x64-musl.libsystemd0-261-h6f4a2f1_0]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-261-h6f4a2f1_0.conda"
+checksum = "sha256:25dcb91249e1d3bdcd9d89b3eb973f42defc3c2c33c28aa14ada4d879c31b022"
 
 [conda-packages.linux-x64-musl."libtiff-4.7.1-h9d88235_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.7.1-h9d88235_1.conda"
 checksum = "sha256:e5f8c38625aa6d567809733ae04bb71c161a42e44a9fa8227abe61fa5c60ebe0"
 
-[conda-packages.linux-x64-musl."libudev1-260.2-h6f4a2f1_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-260.2-h6f4a2f1_1.conda"
-checksum = "sha256:ac3ea9e1a2442d10b6a85e89f97e8490fb3fd2354602f2b5a3edbf0f04bc25f2"
+[conda-packages.linux-x64-musl.libudev1-261-h6f4a2f1_0]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-261-h6f4a2f1_0.conda"
+checksum = "sha256:633fc1b956518156aa65735bc195cce0242147d4d5d99b04e59d72f84491b5fb"
 
 [conda-packages.linux-x64-musl."libunwind-1.8.3-h65a8314_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
@@ -3477,7 +3477,7 @@ conda_deps = [
     "dbus-1.16.2-h70963c4_1",
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
-    "libsystemd0-260.2-hb290c7d_1",
+    "libsystemd0-261-hb290c7d_0",
     "libcap-2.78-hf9559e3_0",
     "sdl3-3.4.10-had2c13b_0",
     "xorg-libxi-1.8.3-he30d5cf_0",
@@ -3506,7 +3506,7 @@ conda_deps = [
     "libtiff-4.7.1-hdb009f0_1",
     "libdeflate-1.25-h1af38f5_0",
     "libflac-1.5.0-he9c94f4_1",
-    "libudev1-260.2-hb290c7d_1",
+    "libudev1-261-hb290c7d_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
     "lerc-4.1.0-h52b7260_0",
     "zstd-1.5.7-h85ac4a6_6",
@@ -3607,7 +3607,7 @@ conda_deps = [
     "dbus-1.16.2-h70963c4_1",
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
-    "libsystemd0-260.2-hb290c7d_1",
+    "libsystemd0-261-hb290c7d_0",
     "libcap-2.78-hf9559e3_0",
     "sdl3-3.4.10-had2c13b_0",
     "xorg-libxi-1.8.3-he30d5cf_0",
@@ -3636,7 +3636,7 @@ conda_deps = [
     "libtiff-4.7.1-hdb009f0_1",
     "libdeflate-1.25-h1af38f5_0",
     "libflac-1.5.0-he9c94f4_1",
-    "libudev1-260.2-hb290c7d_1",
+    "libudev1-261-hb290c7d_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
     "lerc-4.1.0-h52b7260_0",
     "zstd-1.5.7-h85ac4a6_6",
@@ -3754,7 +3754,7 @@ conda_deps = [
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
-    "libsystemd0-260.2-h6f4a2f1_1",
+    "libsystemd0-261-h6f4a2f1_0",
     "libcap-2.78-hd0affe5_0",
     "sdl3-3.4.10-hdeec2a5_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
@@ -3777,7 +3777,7 @@ conda_deps = [
     "libdeflate-1.25-h17f619e_0",
     "libflac-1.5.0-he200343_1",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
-    "libudev1-260.2-h6f4a2f1_1",
+    "libudev1-261-h6f4a2f1_0",
     "lerc-4.1.0-hdb68285_0",
     "zstd-1.5.7-hb78ec9c_6",
     "xkeyboard-config-2.48-h280c20c_0",
@@ -3894,7 +3894,7 @@ conda_deps = [
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
-    "libsystemd0-260.2-h6f4a2f1_1",
+    "libsystemd0-261-h6f4a2f1_0",
     "libcap-2.78-hd0affe5_0",
     "sdl3-3.4.10-hdeec2a5_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
@@ -3917,7 +3917,7 @@ conda_deps = [
     "libdeflate-1.25-h17f619e_0",
     "libflac-1.5.0-he200343_1",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
-    "libudev1-260.2-h6f4a2f1_1",
+    "libudev1-261-h6f4a2f1_0",
     "lerc-4.1.0-hdb68285_0",
     "zstd-1.5.7-hb78ec9c_6",
     "xkeyboard-config-2.48-h280c20c_0",
@@ -5498,17 +5498,7 @@ checksum = "sha256:6be47081100ff1ce0ac7e85ba2ac12e32f2ffa6f946d78bf7f24ee9ce3a46
 url = "https://github.com/astral-sh/uv/releases/download/0.11.23/uv-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
-[tools.uv."platforms.linux-x64-baseline"]
-checksum = "sha256:6be47081100ff1ce0ac7e85ba2ac12e32f2ffa6f946d78bf7f24ee9ce3a46181"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.23/uv-x86_64-unknown-linux-musl.tar.gz"
-provenance = "github-attestations"
-
 [tools.uv."platforms.linux-x64-musl"]
-checksum = "sha256:6be47081100ff1ce0ac7e85ba2ac12e32f2ffa6f946d78bf7f24ee9ce3a46181"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.23/uv-x86_64-unknown-linux-musl.tar.gz"
-provenance = "github-attestations"
-
-[tools.uv."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:6be47081100ff1ce0ac7e85ba2ac12e32f2ffa6f946d78bf7f24ee9ce3a46181"
 url = "https://github.com/astral-sh/uv/releases/download/0.11.23/uv-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
@@ -5523,17 +5513,7 @@ checksum = "sha256:7a88155033cc469bba5bd5a24212e355eb92e3e2a276320b669ec576296c1
 url = "https://github.com/astral-sh/uv/releases/download/0.11.23/uv-x86_64-apple-darwin.tar.gz"
 provenance = "github-attestations"
 
-[tools.uv."platforms.macos-x64-baseline"]
-checksum = "sha256:7a88155033cc469bba5bd5a24212e355eb92e3e2a276320b669ec576296c1e25"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.23/uv-x86_64-apple-darwin.tar.gz"
-provenance = "github-attestations"
-
 [tools.uv."platforms.windows-x64"]
-checksum = "sha256:02ad29f07e674d68726ba3bb1ff25b335d83515756e2b1a194bb56c3cc30e07c"
-url = "https://github.com/astral-sh/uv/releases/download/0.11.23/uv-x86_64-pc-windows-msvc.zip"
-provenance = "github-attestations"
-
-[tools.uv."platforms.windows-x64-baseline"]
 checksum = "sha256:02ad29f07e674d68726ba3bb1ff25b335d83515756e2b1a194bb56c3cc30e07c"
 url = "https://github.com/astral-sh/uv/releases/download/0.11.23/uv-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
