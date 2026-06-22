@@ -4374,17 +4374,7 @@ checksum = "sha256:65c976117740335452c33f131aa6b2306cbaa4865d2d2efe949ff8be9db1d
 url = "https://github.com/microsoft/apm/releases/download/v0.21.0/apm-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/452270966"
 
-[tools."github:microsoft/apm"."platforms.linux-x64-baseline"]
-checksum = "sha256:65c976117740335452c33f131aa6b2306cbaa4865d2d2efe949ff8be9db1d805"
-url = "https://github.com/microsoft/apm/releases/download/v0.21.0/apm-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/452270966"
-
 [tools."github:microsoft/apm"."platforms.linux-x64-musl"]
-checksum = "sha256:65c976117740335452c33f131aa6b2306cbaa4865d2d2efe949ff8be9db1d805"
-url = "https://github.com/microsoft/apm/releases/download/v0.21.0/apm-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/452270966"
-
-[tools."github:microsoft/apm"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:65c976117740335452c33f131aa6b2306cbaa4865d2d2efe949ff8be9db1d805"
 url = "https://github.com/microsoft/apm/releases/download/v0.21.0/apm-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/452270966"
@@ -4399,17 +4389,7 @@ checksum = "sha256:1ee56574a53b43a2e379ff26982749a60f5b3376146fe778fc5a153137fea
 url = "https://github.com/microsoft/apm/releases/download/v0.21.0/apm-darwin-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/452270971"
 
-[tools."github:microsoft/apm"."platforms.macos-x64-baseline"]
-checksum = "sha256:1ee56574a53b43a2e379ff26982749a60f5b3376146fe778fc5a153137feab7d"
-url = "https://github.com/microsoft/apm/releases/download/v0.21.0/apm-darwin-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/452270971"
-
 [tools."github:microsoft/apm"."platforms.windows-x64"]
-checksum = "sha256:ba7b4adfb13652ba09aca22cdba3aa5efc4bd4420be58a0da815d1877ad95277"
-url = "https://github.com/microsoft/apm/releases/download/v0.21.0/apm-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/452270974"
-
-[tools."github:microsoft/apm"."platforms.windows-x64-baseline"]
 checksum = "sha256:ba7b4adfb13652ba09aca22cdba3aa5efc4bd4420be58a0da815d1877ad95277"
 url = "https://github.com/microsoft/apm/releases/download/v0.21.0/apm-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/452270974"
