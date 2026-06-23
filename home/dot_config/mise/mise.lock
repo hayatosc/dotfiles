@@ -5155,15 +5155,7 @@ url = "https://unofficial-builds.nodejs.org/download/release/v24.17.0/node-v24.1
 checksum = "sha256:e0472427aa791ad80bdc426ff7cc73cdd28ed0f616d1ff9689a23a7f47f1265f"
 url = "https://nodejs.org/dist/v24.17.0/node-v24.17.0-linux-x64.tar.gz"
 
-[tools.node."platforms.linux-x64-baseline"]
-checksum = "sha256:e0472427aa791ad80bdc426ff7cc73cdd28ed0f616d1ff9689a23a7f47f1265f"
-url = "https://nodejs.org/dist/v24.17.0/node-v24.17.0-linux-x64.tar.gz"
-
 [tools.node."platforms.linux-x64-musl"]
-checksum = "sha256:f884c958c0652f7cd0ea43fdc39dddd1a98456ea9b1adeca85964847e2e39fb0"
-url = "https://unofficial-builds.nodejs.org/download/release/v24.17.0/node-v24.17.0-linux-x64-musl.tar.gz"
-
-[tools.node."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:f884c958c0652f7cd0ea43fdc39dddd1a98456ea9b1adeca85964847e2e39fb0"
 url = "https://unofficial-builds.nodejs.org/download/release/v24.17.0/node-v24.17.0-linux-x64-musl.tar.gz"
 
@@ -5175,15 +5167,7 @@ url = "https://nodejs.org/dist/v24.17.0/node-v24.17.0-darwin-arm64.tar.gz"
 checksum = "sha256:80da552fe037290cb130e9dea590f5eeeb7aa450636f0c89ab41415511c1ec27"
 url = "https://nodejs.org/dist/v24.17.0/node-v24.17.0-darwin-x64.tar.gz"
 
-[tools.node."platforms.macos-x64-baseline"]
-checksum = "sha256:80da552fe037290cb130e9dea590f5eeeb7aa450636f0c89ab41415511c1ec27"
-url = "https://nodejs.org/dist/v24.17.0/node-v24.17.0-darwin-x64.tar.gz"
-
 [tools.node."platforms.windows-x64"]
-checksum = "sha256:f2aa33b35b75aca5f3f7b85675a6f6423201053e9381911e64961f3bda2528ab"
-url = "https://nodejs.org/dist/v24.17.0/node-v24.17.0-win-x64.zip"
-
-[tools.node."platforms.windows-x64-baseline"]
 checksum = "sha256:f2aa33b35b75aca5f3f7b85675a6f6423201053e9381911e64961f3bda2528ab"
 url = "https://nodejs.org/dist/v24.17.0/node-v24.17.0-win-x64.zip"
 
