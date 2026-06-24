@@ -7,15 +7,15 @@
 {{- else -}}
   {{- $workspaces = get $gemini "trusted_workspaces" | default list -}}
 {{- end -}}
-{{- dict
-  "allowNonWorkspaceAccess" true
-  "colorScheme" "tokyo night"
-  "model" "Gemini 3.5 Flash (High)"
-  "statusLine" (dict
-    "command" "~/.gemini/antigravity-cli/scripts/statusline.ts"
-    "enabled" true
-    "type" ""
-  )
-  "toolPermission" "always-proceed"
-  "trustedWorkspaces" ($workspaces | uniq | sortAlpha)
-| toPrettyJson }}
+{
+  "allowNonWorkspaceAccess": true,
+  "colorScheme": "tokyo night",
+  "model": "Gemini 3.5 Flash (High)",
+  "statusLine": {
+    "command": "~/.gemini/antigravity-cli/scripts/statusline.ts",
+    "enabled": true,
+    "type": ""
+  },
+  "toolPermission": "always-proceed",
+  "trustedWorkspaces": {{ $workspaces | uniq | sortAlpha | toJson }}
+}

@@ -13,7 +13,7 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "opus[1m]",
+  "model": "sonnet",
   "hooks": {
     "PreToolUse": [
       {
@@ -54,5 +54,6 @@
     "claude_ai_Context7": {
       "disabled": true
     }
-  }
+  },
+  "tui": "fullscreen"
 }
