@@ -3164,10 +3164,6 @@ url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64
 checksum = "sha256:a074982c59a749371d225e6129faf5815f731f460aa080c004af9b7e79c55632"
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-unknown-linux-gnu.zip"
 
-[tools.ast-grep."platforms.linux-x64-baseline"]
-checksum = "sha256:a074982c59a749371d225e6129faf5815f731f460aa080c004af9b7e79c55632"
-url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-unknown-linux-gnu.zip"
-
 [tools.ast-grep."platforms.macos-arm64"]
 checksum = "sha256:80ad83ae28c56cbbaa2beaa391f564b073a99c2a0a20d49fd9ddc10aaafd6979"
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64-apple-darwin.zip"
@@ -3176,15 +3172,7 @@ url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64
 checksum = "sha256:0df15196bd07a598dbc600feb95b5e707c062542be282d3f6ebd92436ef7777e"
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-apple-darwin.zip"
 
-[tools.ast-grep."platforms.macos-x64-baseline"]
-checksum = "sha256:0df15196bd07a598dbc600feb95b5e707c062542be282d3f6ebd92436ef7777e"
-url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-apple-darwin.zip"
-
 [tools.ast-grep."platforms.windows-x64"]
-checksum = "sha256:90b80c3126f2db07767ba8fecf23b8878b5ef68db08ff445ba4bab827dd4eb6f"
-url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-pc-windows-msvc.zip"
-
-[tools.ast-grep."platforms.windows-x64-baseline"]
 checksum = "sha256:90b80c3126f2db07767ba8fecf23b8878b5ef68db08ff445ba4bab827dd4eb6f"
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-pc-windows-msvc.zip"
 
@@ -4510,45 +4498,6 @@ checksum = "sha256:f56fc041ad2610ea0b2eb05042ff761684e1298adc81ce3c5a50677cd7afe
 url = "https://github.com/openclaw/gogcli/releases/download/v0.29.0/gogcli_0.29.0_windows_amd64.zip"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/452095102"
 
-[[tools."github:vercel-labs/agent-browser"]]
-version = "0.29.0"
-backend = "github:vercel-labs/agent-browser"
-
-[tools."github:vercel-labs/agent-browser"."platforms.linux-arm64"]
-checksum = "sha256:57020e11b968e9ef03f6c4f02210bcc0fd378b2aca9f15923224a7cd0df8f97b"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.29.0/agent-browser-linux-arm64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/453344557"
-
-[tools."github:vercel-labs/agent-browser"."platforms.linux-arm64-musl"]
-checksum = "sha256:09cf5bb2bb40073e5a87d2434db7a626c23df12d9f5fee908341adf0c419f28e"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.29.0/agent-browser-linux-musl-arm64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/453344560"
-
-[tools."github:vercel-labs/agent-browser"."platforms.linux-x64"]
-checksum = "sha256:1fd6e06b784278aa10bfa6bba1da8d5171dcda5175e2f59f2b56b88d6856574a"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.29.0/agent-browser-linux-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/453344570"
-
-[tools."github:vercel-labs/agent-browser"."platforms.linux-x64-musl"]
-checksum = "sha256:96a6e8458a02dda8610aab8a92ccd174c7558ac0a71a2ff16c6aadfc9f7a5568"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.29.0/agent-browser-linux-musl-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/453344562"
-
-[tools."github:vercel-labs/agent-browser"."platforms.macos-arm64"]
-checksum = "sha256:6d1f1e54405762d9f8d0443e67b005c383bcc02686cba287333dfe03e024d53b"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.29.0/agent-browser-darwin-arm64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/453344561"
-
-[tools."github:vercel-labs/agent-browser"."platforms.macos-x64"]
-checksum = "sha256:44b3b72245c703341b1cefe803e0e9e7f31a47ab7ed28c1f455498c758900872"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.29.0/agent-browser-darwin-x64"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/453344559"
-
-[tools."github:vercel-labs/agent-browser"."platforms.windows-x64"]
-checksum = "sha256:da3f7385b6c568ca6d816b6cada22e18e80ff6a9f16701b96bb35f46efbc70b6"
-url = "https://github.com/vercel-labs/agent-browser/releases/download/v0.29.0/agent-browser-win32-x64.exe"
-url_api = "https://api.github.com/repos/vercel-labs/agent-browser/releases/assets/453344573"
-
 [[tools.go]]
 version = "1.26.4"
 backend = "core:go"
@@ -5147,10 +5096,6 @@ url = "https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygi
 checksum = "sha256:805bfcb2445273b77a32b7758dfb5d2d8dbd7b80b7336ab868935584a2fad0ba"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygit_0.62.2_windows_x86_64.zip"
 
-[[tools.moonbit]]
-version = "latest"
-backend = "vfox:moonbit"
-
 [[tools.ni]]
 version = "30.1.0"
 backend = "npm:@antfu/ni"
@@ -5192,7 +5137,7 @@ version = "0.11.0"
 backend = "npm:acpx"
 
 [[tools."npm:agent-browser"]]
-version = "0.29.0"
+version = "0.29.1"
 backend = "npm:agent-browser"
 
 [[tools."npm:typescript-language-server"]]
