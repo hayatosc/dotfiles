@@ -14,6 +14,9 @@ This file lists mandatory rules for all agents working in this repository.
 ## Coding Style
 - You **MUST** load and read the `coding-style` skill before writing any code. All rules regarding dependencies, design principles, and code changes have been moved there.
 
+## Code Exploration
+- When exploring or navigating a codebase (finding where something is defined, understanding how a feature works, tracing a call path), use the `code-search` skill before reading whole files.
+
 ## Questions
 - Before implementing, state your assumptions explicitly.
 - If multiple interpretations exist, present them — don't pick silently.

@@ -5,66 +5,88 @@ description: Explore and transform large codebases with ast-grep using AST-aware
 
 # ast-grep
 
-Use ast-grep for syntax-aware exploration and rewrite that stays resilient in large or mixed-language repositories.
+Use ast-grep for syntax-aware exploration, linting, and rewrite that stays resilient in large or mixed-language repositories.
 
 ## Start
 
 1. Confirm `ast-grep` is installed.
-2. Identify the task mode: one-off query (`run`) or rule-driven scan (`scan`).
-3. Restrict search surface before matching (path, language, globs, ignore policy).
-4. Run preview-only search first.
-5. Apply rewrite interactively or in batches.
-6. Re-run scan/tests after each batch.
+2. Identify the task mode: exploration/search (using `outline` or `run`), one-off rewrite (`run --rewrite`), or rule-driven scanning/linting (`scan`).
+3. For file exploration, ALWAYS use `outline` first to get a map before reading the whole file to save tokens.
+4. Restrict search/replace surface (path, language, globs, ignore policy).
+5. Apply modifications in small batch rollouts.
 
 ## Choose Workflow
 
-1. Use **Run Workflow** for one-off structural queries or quick codemods.
-2. Use **Rule Workflow** for repeatable checks, team-wide policies, or migrations requiring tests/snapshots.
-3. Use **Safe Rewrite Script** for guarded rollout of a single pattern rewrite.
+1. Use **Search / Explore Workflow** to inspect code structures or find specific AST patterns.
+2. Use **Replace / Rewrite Workflow** for one-off modifications or safe automated refactoring.
+3. Use **Rule / Lint Workflow** for repeatable scans, custom linting rules, and large migrations requiring tests.
 
-## Run Workflow
+## Search / Explore Workflow (ファイルサーチ)
 
-1. Build a minimal pattern with explicit language when extension inference is unreliable.
-2. Add scope constraints (`--globs`, path) before changing strictness.
-3. Inspect pattern parsing with `--debug-query` when matches are missing.
-4. Rewrite with preview first, then `--interactive` or `--update-all`.
+### 1. Structural Map with `ast-grep outline` (First Pass)
+Before opening or reading the full source of a file, use `outline` to obtain a syntax-aware table of contents (exports, imports, classes, structs, methods) without building an index.
+- **Inspect file structure**:
+  ```bash
+  ast-grep outline src/parser.ts
+  ```
+- **List exported surface of a directory** (use a glob — bare directory path returns nothing):
+  ```bash
+  ast-grep outline src/*.ts
+  ```
+- **Filter and inspect file imports**:
+  ```bash
+  ast-grep outline src/parser.ts --items imports
+  ```
+- **Expand specific symbol details**:
+  ```bash
+  ast-grep outline src/parser.ts --match Parser --view expanded
+  ```
+- **Find specific dependency imports across a folder**:
+  ```bash
+  ast-grep outline src/*.ts --items imports --match ast-grep-core --view signatures
+  ```
+
+### 2. AST Pattern Search
+Use `run` to perform structural search.
+- **AST pattern match**:
+  ```bash
+  ast-grep run -p 'Promise.all($$$ARGS)' -l TypeScript src
+  ```
+- Narrow down search via `--globs` and specify `--lang` when extension inference is unreliable.
+- Inspect pattern parsing with `--debug-query=ast` when matches are missing.
 
 Use command examples from:
 - `references/command-cookbook.md`
 
-## Rule Workflow
+## Replace / Rewrite Workflow (ファイル置換)
+
+### 1. Quick Rewrites
+Perform one-off changes using `run --rewrite`.
+- **Preview changes (diff only)**:
+  ```bash
+  ast-grep run -p 'foo($A)' -r 'bar($A)' -l TypeScript src
+  ```
+- **Interactive apply**:
+  ```bash
+  ast-grep run -p 'foo($A)' -r 'bar($A)' -l TypeScript src --interactive
+  ```
+- **Apply all changes**:
+  ```bash
+  ast-grep run -p 'foo($A)' -r 'bar($A)' -l TypeScript src --update-all
+  ```
+## Rule / Lint Workflow
 
 1. Initialize project/rule/test scaffolding with `ast-grep new ...`.
-2. Write rule YAML with `id`, `language`, `rule`, and optional `constraints`/`fix`.
-3. Add file targeting with `files`/`ignores` in YAML.
-4. Validate rule behavior with `ast-grep test`.
-5. Execute selective rollout with `scan --filter` or bounded paths.
+2. Write rule YAML with `id`, `language`, `rule`, `constraints`, and `fix`.
+3. Validate rule behavior with `ast-grep test`.
+4. Scan with `ast-grep scan` (or `scan --inline-rules`).
 
 Use authoring details from:
 - `references/rule-authoring.md`
 
-## Safe Rewrite Script
-
-Run `scripts/sg_safe_rewrite.py` to enforce preview-first rewrites for large codebases.
-
-```bash
-python scripts/sg_safe_rewrite.py \
-  --pattern 'console.log($$$ARGS)' \
-  --rewrite 'logger.info($$$ARGS)' \
-  --lang TypeScript \
-  --glob 'src/**/*.ts' \
-  --mode interactive
-```
-
-Modes:
-- `preview`: show rewrite diff only
-- `interactive`: review and accept changes selectively
-- `apply`: apply all matched rewrites (`--update-all`)
-
 ## Execution Rules
 
-1. Prefer narrowing by syntax (`--lang`, AST pattern shape) before adding broad regex-like workarounds.
-2. Prefer `scan --inline-rules` for quick hypothesis tests; promote stable logic to YAML files.
-3. Prefer `--json=stream` for large output pipelines; avoid pretty JSON for machine processing.
-4. Use `--inspect summary` to debug unexpected file/rule discovery behavior.
-5. Apply rewrites in small slices when touching many modules to reduce rollback cost.
+1. **Outline First**: Always summarize a target file using `ast-grep outline` before opening it, especially in large codebases (helps reduce Claude Code costs by up to 55%).
+2. **Narrow Scope First**: Order of narrowing to reduce noise: Path -> `--lang` -> `--globs` -> Pattern strictness.
+3. Prefer `scan --inline-rules` for quick hypothesis testing; promote stable logic to YAML files.
+4. Prefer `--json=stream` for large output pipelines; avoid pretty JSON for machine processing.

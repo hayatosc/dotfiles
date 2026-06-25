@@ -595,6 +595,9 @@ local_deployed_files:
 - .agents/skills/ast-grep/references/rule-authoring.md
 - .agents/skills/before-commit
 - .agents/skills/before-commit/SKILL.md
+- .agents/skills/code-search
+- .agents/skills/code-search/SKILL.md
+- .agents/skills/code-search/references/funnel-playbook.md
 - .agents/skills/coding-style
 - .agents/skills/coding-style/SKILL.md
 - .agents/skills/empirical-prompt-tuning
@@ -640,6 +643,8 @@ local_deployed_file_hashes:
   .agents/skills/ast-grep/references/command-cookbook.md: sha256:6634e377ea8ba10fe95561d7f7360ddc4edd68a8cea7ba08ad05c60f061f8f65
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
   .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
+  .agents/skills/code-search/SKILL.md: sha256:daa06d50c3611eb1aed8fb01c31f75447c52225304b386920cb715d5ae5f81b2
+  .agents/skills/code-search/references/funnel-playbook.md: sha256:470109bbc4c9ba3a287dbf544e302912f07bc99a24534efadf231cd2015308fa
   .agents/skills/coding-style/SKILL.md: sha256:1df32e9569d36e048b8ae0bff6425a064e4bbf5113727ec50574b8b7116c453c
   .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:21cb213c1d2c02794c94e6fd0ad20e779e6c767850f292e6475b60cb3500c82f
   .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
