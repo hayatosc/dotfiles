@@ -3,11 +3,6 @@
 ## Scope
 This file lists mandatory rules for all agents working in this repository.
 
-## Chezmoi Dotfiles Management
-- This system's dotfiles and configuration settings are managed by `chezmoi` in `/home/hayato/.local/share/chezmoi/`.
-- If you need to modify any configuration files (e.g., settings under `~/.config/`, shell profiles, etc.), **DO NOT** edit them directly in the home directory.
-- Instead, modify the source files under the repository's `home/` directory (e.g., `/home/hayato/.local/share/chezmoi/home/...`) and run `chezmoi apply` to apply the changes.
-
 ## Communication
 - Respond in Japanese.
 

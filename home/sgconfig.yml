@@ -1,0 +1,47 @@
+customLanguages:
+  vue:
+    libraryPath: .tree-sitter/vue.so
+    extensions: [vue]
+    expandoChar: $
+  svelte:
+    libraryPath: .tree-sitter/svelte.so
+    extensions: [svelte]
+    expandoChar: $
+  astro:
+    libraryPath: .tree-sitter/astro.so
+    extensions: [astro]
+    expandoChar: $
+  scss:
+    libraryPath: .tree-sitter/scss.so
+    extensions: [scss]
+    expandoChar: $
+
+languageInjections:
+  - hostLanguage: vue
+    rule:
+      kind: template_element
+    injected: html
+  - hostLanguage: vue
+    rule:
+      kind: script_element
+    injected: typescript
+  - hostLanguage: vue
+    rule:
+      kind: style_element
+    injected: scss
+  - hostLanguage: svelte
+    rule:
+      kind: script_element
+    injected: typescript
+  - hostLanguage: svelte
+    rule:
+      kind: style_element
+    injected: css
+  - hostLanguage: astro
+    rule:
+      kind: frontmatter
+    injected: typescript
+  - hostLanguage: astro
+    rule:
+      kind: style_element
+    injected: css
