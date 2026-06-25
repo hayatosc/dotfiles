@@ -21,7 +21,7 @@ Use ast-grep for syntax-aware exploration, linting, and rewrite that stays resil
 2. Use **Replace / Rewrite Workflow** for one-off modifications or safe automated refactoring.
 3. Use **Rule / Lint Workflow** for repeatable scans, custom linting rules, and large migrations requiring tests.
 
-## Search / Explore Workflow (ファイルサーチ)
+## Search / Explore Workflow
 
 ### 1. Structural Map with `ast-grep outline` (First Pass)
 Before opening or reading the full source of a file, use `outline` to obtain a syntax-aware table of contents (exports, imports, classes, structs, methods) without building an index.
@@ -58,7 +58,7 @@ Use `run` to perform structural search.
 Use command examples from:
 - `references/command-cookbook.md`
 
-## Replace / Rewrite Workflow (ファイル置換)
+## Replace / Rewrite Workflow
 
 ### 1. Quick Rewrites
 Perform one-off changes using `run --rewrite`.
