@@ -1,10 +1,10 @@
 lockfile_version: '1'
-generated_at: '2026-06-21T16:11:43.344816+00:00'
-apm_version: 0.19.0
+generated_at: '2026-06-25T03:45:01.003873+00:00'
+apm_version: 0.21.0
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
   host: github.com
-  resolved_commit: 18c2f84274f959df2b31b919c4b16a2cc65e82e1
+  resolved_commit: 2354c8c5856602e0730d7c65d91f1c29ffc479ee
   virtual_path: skills/modern-web-guidance
   is_virtual: true
   package_type: claude_skill
@@ -84,9 +84,9 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/user-experience/content-based-styling.md
   - .agents/skills/modern-web-guidance/guides/user-experience/coordinate-global-events.md
   - .agents/skills/modern-web-guidance/guides/user-experience/cross-document-transitions.md
+  - .agents/skills/modern-web-guidance/guides/user-experience/custom-button-actions.md
   - .agents/skills/modern-web-guidance/guides/user-experience/customize-scrollbar-color-and-thickness.md
   - .agents/skills/modern-web-guidance/guides/user-experience/dark-mode.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/declarative-button-actions.md
   - .agents/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md
   - .agents/skills/modern-web-guidance/guides/user-experience/deliver-optimized-decorative-images.md
   - .agents/skills/modern-web-guidance/guides/user-experience/design-token-reactivity.md
@@ -223,10 +223,10 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/user-experience/content-based-styling.md: sha256:35759c095a2e5245d2fcad14a4478264825513a42215c2186233eccbd639d100
     .agents/skills/modern-web-guidance/guides/user-experience/coordinate-global-events.md: sha256:11a845d354ac112a874666561eeb34e669048072ed334108a43cdf38b2267ec6
     .agents/skills/modern-web-guidance/guides/user-experience/cross-document-transitions.md: sha256:b59ae459d1f436dfaac1533eb463194f8a10866e392b76f125f5068663cea47b
+    .agents/skills/modern-web-guidance/guides/user-experience/custom-button-actions.md: sha256:f06d1d08117b2e2a9faff1f610d88b0df8db02b8130fcd407873584bacec20af
     .agents/skills/modern-web-guidance/guides/user-experience/customize-scrollbar-color-and-thickness.md: sha256:8b73513c3fedc839dafd4ddb9b0ba15c350deaef739e4b6158008006661a86f7
     .agents/skills/modern-web-guidance/guides/user-experience/dark-mode.md: sha256:830d58cee58bce2422a459b61b815a6e9fc7238516df05f3c14f6ff222f69f24
-    .agents/skills/modern-web-guidance/guides/user-experience/declarative-button-actions.md: sha256:7f5bfb4d6fea432a69fcee7d3154dd657f73b41fd00932e62383497d1d19477b
-    .agents/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md: sha256:0e21be87e17e36688f9c672d0f85e88e2f3bcb48ab7f0ac8c90216b312c99649
+    .agents/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md: sha256:c510eb3a450b4ba4dc4762d70ef7dc07cefc43d2967fd60c9d0be3fe22e070e2
     .agents/skills/modern-web-guidance/guides/user-experience/deliver-optimized-decorative-images.md: sha256:0d480274ccb5649172d01e9c2e433fdb5059dd0f7b6297856b6182158e1a03c5
     .agents/skills/modern-web-guidance/guides/user-experience/design-token-reactivity.md: sha256:ca59dd6c912aa96d50e038c919d245f755dfea18762750cdfda1b698b463534e
     .agents/skills/modern-web-guidance/guides/user-experience/directional-navigation-transitions.md: sha256:f308e3d9bdd060c2b5f17a08c5270e12c75e7f487bad159d5df56f57b14a0b7a
@@ -287,7 +287,7 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md: sha256:c9210a53221ae230c3820b94b75f4b7b21196d9b0b6b0979b789866c2f2a8396
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:2ec01ee5f86b00ce69f487e13141258da8cc751d0917eeb43e94386ac7612ff3
     .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:78b80afc94fcdc0177345d7cbd0abb83660f309a400266ff408325142db41b2c
-  content_hash: sha256:6d5177c625ee67de1755aa96e473cc722abf95c26e2d1227ee5e1ee80035896e
+  content_hash: sha256:2b322a85b2e35e73c9c3fa01c53178e99d88450fc4432695c28edad42e3f1170
 - repo_url: anthropics/skills
   host: github.com
   resolved_commit: 57546260929473d4e0d1c1bb75297be2fdfa1949
@@ -368,7 +368,7 @@ dependencies:
   content_hash: sha256:bd835bf84356f346fe0adffe9b388bd45eb77eb2b50d83defde371e1d4861b34
 - repo_url: emilkowalski/skill
   host: github.com
-  resolved_commit: 43d8284140edf1301a3a0a781b86c83200857080
+  resolved_commit: 8a4a02183f466f54315138e5f94b349df5b84acf
   virtual_path: skills/emil-design-eng
   is_virtual: true
   package_type: claude_skill
@@ -434,7 +434,7 @@ dependencies:
   content_hash: sha256:e134b3d874181787abdb59ff012f1eee71a537997305582e488bc979b5ff7294
 - repo_url: openai/skills
   host: github.com
-  resolved_commit: 972cb867affac58fda9afa76bb1a19b399a278cf
+  resolved_commit: 49f948faa9258a0c61caceaf225e179651397431
   virtual_path: skills/.curated/gh-address-comments
   is_virtual: true
   package_type: claude_skill
@@ -456,7 +456,7 @@ dependencies:
   content_hash: sha256:068d34fb59cb97a39aea3de1708877b6a01210d02fa7eda5e74fc8277ed52916
 - repo_url: openai/skills
   host: github.com
-  resolved_commit: 972cb867affac58fda9afa76bb1a19b399a278cf
+  resolved_commit: 49f948faa9258a0c61caceaf225e179651397431
   virtual_path: skills/.curated/gh-fix-ci
   is_virtual: true
   package_type: claude_skill
@@ -478,7 +478,7 @@ dependencies:
   content_hash: sha256:02b4d97e4bd91e342e3ec3efa06b7871097d6a64e8398f4ed5b69c64d8d902fb
 - repo_url: openclaw/acpx
   host: github.com
-  resolved_commit: ce0f657d6c4e6d248863f5a0822f59b3629cb495
+  resolved_commit: 7a5470e2319ba636a05e0198f5712bfa9ccdf78a
   virtual_path: skills/acpx
   is_virtual: true
   package_type: claude_skill
@@ -486,11 +486,11 @@ dependencies:
   - .agents/skills/acpx
   - .agents/skills/acpx/SKILL.md
   deployed_file_hashes:
-    .agents/skills/acpx/SKILL.md: sha256:941e0ec1cd6ed3e56b8c68b5b1fc9e7e89f8b1f87e324293a2c45f71a3002e21
-  content_hash: sha256:16fdcc48b17017539b04bcd92c0ade9ccdee54c5df87901b5f562b197cb6877d
+    .agents/skills/acpx/SKILL.md: sha256:5df2a28dc714126b65e0c8a74a435bd3d36f474291ead8fd28ecad39ff5a29e0
+  content_hash: sha256:c7bba623522b83899068a3880a060a034a07b3f7cd21b0482d80f968e0e3beb9
 - repo_url: vercel-labs/agent-browser
   host: github.com
-  resolved_commit: 4572acf0d71c0086009206c9c1e2136fc54ec9e5
+  resolved_commit: 7379f7dbea76ad8dbf47f177349c4c3ce9263dcb
   virtual_path: skills/agent-browser
   is_virtual: true
   package_type: claude_skill
@@ -514,7 +514,7 @@ dependencies:
   content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
 - repo_url: vercel-labs/skills
   host: github.com
-  resolved_commit: e5c075e3a84b37c5eb398ab74e581558d3fceb0e
+  resolved_commit: 9a7d8acfbf29f9cced7fb5a504da1d65b484aed3
   virtual_path: skills/find-skills
   is_virtual: true
   package_type: claude_skill
@@ -522,8 +522,8 @@ dependencies:
   - .agents/skills/find-skills
   - .agents/skills/find-skills/SKILL.md
   deployed_file_hashes:
-    .agents/skills/find-skills/SKILL.md: sha256:1e85f6f9686e145aca4a124e3b704b9bbea9aa87e08515c1e352eee70f6e6e7a
-  content_hash: sha256:d31e234f0c90694a670222cdd1dafa853e051d7066beda389f1097c22dadd461
+    .agents/skills/find-skills/SKILL.md: sha256:deddc03b4b5f50755b97fcdb737a786676992ef7e9be614d2cd2c71e0320bebf
+  content_hash: sha256:1c27b1774a4ec17ad4556a72e3c0168beab3af0183b2c1b8aa9e320af3ff41ce
 - repo_url: vuejs-ai/skills
   host: github.com
   resolved_commit: c9d355ff23f654309dd02006be671859df0a134c
@@ -636,8 +636,8 @@ local_deployed_file_hashes:
   .agents/skills/article-review/references/report-template.md: sha256:60c5656b28571ac85c746d0450fa05bcde3fc3d9d4c0117b61aed93f2affd97e
   .agents/skills/article-review/references/review-rubric.md: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
   .agents/skills/askmeplan/SKILL.md: sha256:387f5f286c93ee4e605356a4581cd3e421310f5f3d751bae92f54b0c9d093e85
-  .agents/skills/ast-grep/SKILL.md: sha256:08ea89c4f4e065a16564a5ed3ed5f3e263a7fdb6aca955671a5f03f8d3250973
-  .agents/skills/ast-grep/references/command-cookbook.md: sha256:a64cb2a1bb607dc2729617a2b1a2ae1eb784d491001d06a2b7d808f39e468731
+  .agents/skills/ast-grep/SKILL.md: sha256:94f60cfb444b0283cd72dd6ef2635ff198863847eec6b8d6aa12d809b6000d74
+  .agents/skills/ast-grep/references/command-cookbook.md: sha256:6634e377ea8ba10fe95561d7f7360ddc4edd68a8cea7ba08ad05c60f061f8f65
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
   .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
   .agents/skills/coding-style/SKILL.md: sha256:1df32e9569d36e048b8ae0bff6425a064e4bbf5113727ec50574b8b7116c453c
