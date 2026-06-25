@@ -3164,10 +3164,6 @@ url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64
 checksum = "sha256:a074982c59a749371d225e6129faf5815f731f460aa080c004af9b7e79c55632"
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-unknown-linux-gnu.zip"
 
-[tools.ast-grep."platforms.linux-x64-baseline"]
-checksum = "sha256:a074982c59a749371d225e6129faf5815f731f460aa080c004af9b7e79c55632"
-url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-unknown-linux-gnu.zip"
-
 [tools.ast-grep."platforms.macos-arm64"]
 checksum = "sha256:80ad83ae28c56cbbaa2beaa391f564b073a99c2a0a20d49fd9ddc10aaafd6979"
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64-apple-darwin.zip"
@@ -3176,15 +3172,7 @@ url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-aarch64
 checksum = "sha256:0df15196bd07a598dbc600feb95b5e707c062542be282d3f6ebd92436ef7777e"
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-apple-darwin.zip"
 
-[tools.ast-grep."platforms.macos-x64-baseline"]
-checksum = "sha256:0df15196bd07a598dbc600feb95b5e707c062542be282d3f6ebd92436ef7777e"
-url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-apple-darwin.zip"
-
 [tools.ast-grep."platforms.windows-x64"]
-checksum = "sha256:90b80c3126f2db07767ba8fecf23b8878b5ef68db08ff445ba4bab827dd4eb6f"
-url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-pc-windows-msvc.zip"
-
-[tools.ast-grep."platforms.windows-x64-baseline"]
 checksum = "sha256:90b80c3126f2db07767ba8fecf23b8878b5ef68db08ff445ba4bab827dd4eb6f"
 url = "https://github.com/ast-grep/ast-grep/releases/download/0.44.0/app-x86_64-pc-windows-msvc.zip"
 
