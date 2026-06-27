@@ -4010,15 +4010,7 @@ url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-l
 checksum = "sha256:3c4125ab23fef5f33e8a1924e482a7fb5802c0508b6938be06980d45e13e0d56"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-linux-x64.tar.gz"
 
-[tools.copilot."platforms.linux-x64-baseline"]
-checksum = "sha256:3c4125ab23fef5f33e8a1924e482a7fb5802c0508b6938be06980d45e13e0d56"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-linux-x64.tar.gz"
-
 [tools.copilot."platforms.linux-x64-musl"]
-checksum = "sha256:3c4125ab23fef5f33e8a1924e482a7fb5802c0508b6938be06980d45e13e0d56"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-linux-x64.tar.gz"
-
-[tools.copilot."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:3c4125ab23fef5f33e8a1924e482a7fb5802c0508b6938be06980d45e13e0d56"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-linux-x64.tar.gz"
 
@@ -4030,15 +4022,7 @@ url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-d
 checksum = "sha256:687930e86417eb8c7be0b3d2f6df34fb2ecd661bd857345d419827574aa234ed"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-darwin-x64.tar.gz"
 
-[tools.copilot."platforms.macos-x64-baseline"]
-checksum = "sha256:687930e86417eb8c7be0b3d2f6df34fb2ecd661bd857345d419827574aa234ed"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-darwin-x64.tar.gz"
-
 [tools.copilot."platforms.windows-x64"]
-checksum = "sha256:e2e46199874512d5976a5e2a1ed838bf1d072c1eff7d5c69b6bb732895dcde5b"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-win32-x64.zip"
-
-[tools.copilot."platforms.windows-x64-baseline"]
 checksum = "sha256:e2e46199874512d5976a5e2a1ed838bf1d072c1eff7d5c69b6bb732895dcde5b"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.64/copilot-win32-x64.zip"
 
