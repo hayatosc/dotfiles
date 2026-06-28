@@ -3048,15 +3048,7 @@ url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1
 checksum = "sha256:7e3075df68ebad58aa1cf42231e9d8b83bf2895b5b058ab1736b0b6383c75008"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.12/agy_cli_linux_x64.tar.gz"
 
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-baseline"]
-checksum = "sha256:7e3075df68ebad58aa1cf42231e9d8b83bf2895b5b058ab1736b0b6383c75008"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.12/agy_cli_linux_x64.tar.gz"
-
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:7e3075df68ebad58aa1cf42231e9d8b83bf2895b5b058ab1736b0b6383c75008"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.12/agy_cli_linux_x64.tar.gz"
-
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:7e3075df68ebad58aa1cf42231e9d8b83bf2895b5b058ab1736b0b6383c75008"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.12/agy_cli_linux_x64.tar.gz"
 
@@ -3068,15 +3060,7 @@ url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1
 checksum = "sha256:03c6233261548872b176547e3a938f406282fbaf33ffcdefb63c35ca2246b7a8"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.12/agy_cli_mac_x64.tar.gz"
 
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64-baseline"]
-checksum = "sha256:03c6233261548872b176547e3a938f406282fbaf33ffcdefb63c35ca2246b7a8"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.12/agy_cli_mac_x64.tar.gz"
-
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:cee987083652c58c7e31d09f177692a52be313e1089b6b1d9144e68ef9e14c44"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.12/agy_cli_windows_x64.zip"
-
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64-baseline"]
 checksum = "sha256:cee987083652c58c7e31d09f177692a52be313e1089b6b1d9144e68ef9e14c44"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.12/agy_cli_windows_x64.zip"
 
