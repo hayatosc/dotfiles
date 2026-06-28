@@ -96,9 +96,9 @@ checksum = "sha256:1112c56bc19cbce233b30d9d31ce8eb6fcc100c9baa5145315aaa1e3a25b5
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/fribidi-1.0.16-he30d5cf_0.conda"
 checksum = "sha256:1bfcd715bcb49a0b22d5d1899a22c6ff884b06f8e141eb746f3949752469a422"
 
-[conda-packages.linux-arm64."gdk-pixbuf-2.44.6-h90308e0_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/gdk-pixbuf-2.44.6-h90308e0_0.conda"
-checksum = "sha256:53ac38045a8c0b6aa9cfaf784443a3744dc86ab4737c1479b44ae85c96926fe1"
+[conda-packages.linux-arm64."gdk-pixbuf-2.44.7-h90308e0_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/gdk-pixbuf-2.44.7-h90308e0_0.conda"
+checksum = "sha256:f406e0b58a51da8648b100316c7b5893e5585256b67eb410126e2357a901f0d2"
 
 [conda-packages.linux-arm64."ghostscript-10.07.1-hfae3067_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ghostscript-10.07.1-hfae3067_0.conda"
@@ -764,9 +764,9 @@ checksum = "sha256:1112c56bc19cbce233b30d9d31ce8eb6fcc100c9baa5145315aaa1e3a25b5
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/fribidi-1.0.16-he30d5cf_0.conda"
 checksum = "sha256:1bfcd715bcb49a0b22d5d1899a22c6ff884b06f8e141eb746f3949752469a422"
 
-[conda-packages.linux-arm64-musl."gdk-pixbuf-2.44.6-h90308e0_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/gdk-pixbuf-2.44.6-h90308e0_0.conda"
-checksum = "sha256:53ac38045a8c0b6aa9cfaf784443a3744dc86ab4737c1479b44ae85c96926fe1"
+[conda-packages.linux-arm64-musl."gdk-pixbuf-2.44.7-h90308e0_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/gdk-pixbuf-2.44.7-h90308e0_0.conda"
+checksum = "sha256:f406e0b58a51da8648b100316c7b5893e5585256b67eb410126e2357a901f0d2"
 
 [conda-packages.linux-arm64-musl."ghostscript-10.07.1-hfae3067_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ghostscript-10.07.1-hfae3067_0.conda"
@@ -1432,9 +1432,9 @@ checksum = "sha256:c934c385889c7836f034039b43b05ccfa98f53c900db03d8411189892ced0
 url = "https://conda.anaconda.org/conda-forge/linux-64/fribidi-1.0.16-hb03c661_0.conda"
 checksum = "sha256:858283ff33d4c033f4971bf440cebff217d5552a5222ba994c49be990dacd40d"
 
-[conda-packages.linux-x64."gdk-pixbuf-2.44.6-h2b0a6b4_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/gdk-pixbuf-2.44.6-h2b0a6b4_0.conda"
-checksum = "sha256:c5594497f0646e9079705b3199dbb2d5b13c48173cf110000fa1c8818e2b3e0c"
+[conda-packages.linux-x64."gdk-pixbuf-2.44.7-h2b0a6b4_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/gdk-pixbuf-2.44.7-h2b0a6b4_0.conda"
+checksum = "sha256:1c22e37f9d7e06e9e0582ee5a55c2ddd19ea75f71f44eb13b56f504ef5c37aa5"
 
 [conda-packages.linux-x64."ghostscript-10.07.1-hecca717_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/ghostscript-10.07.1-hecca717_0.conda"
@@ -2140,9 +2140,9 @@ checksum = "sha256:c934c385889c7836f034039b43b05ccfa98f53c900db03d8411189892ced0
 url = "https://conda.anaconda.org/conda-forge/linux-64/fribidi-1.0.16-hb03c661_0.conda"
 checksum = "sha256:858283ff33d4c033f4971bf440cebff217d5552a5222ba994c49be990dacd40d"
 
-[conda-packages.linux-x64-musl."gdk-pixbuf-2.44.6-h2b0a6b4_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/gdk-pixbuf-2.44.6-h2b0a6b4_0.conda"
-checksum = "sha256:c5594497f0646e9079705b3199dbb2d5b13c48173cf110000fa1c8818e2b3e0c"
+[conda-packages.linux-x64-musl."gdk-pixbuf-2.44.7-h2b0a6b4_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/gdk-pixbuf-2.44.7-h2b0a6b4_0.conda"
+checksum = "sha256:1c22e37f9d7e06e9e0582ee5a55c2ddd19ea75f71f44eb13b56f504ef5c37aa5"
 
 [conda-packages.linux-x64-musl."ghostscript-10.07.1-hecca717_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/ghostscript-10.07.1-hecca717_0.conda"
@@ -2804,9 +2804,9 @@ checksum = "sha256:54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98
 url = "https://conda.anaconda.org/conda-forge/win-64/fribidi-1.0.16-hfd05255_0.conda"
 checksum = "sha256:15011071ee56c216ffe276c8d734427f1f893f275ef733f728d13f610ed89e6e"
 
-[conda-packages.windows-x64."gdk-pixbuf-2.44.6-h1f5b9c4_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.6-h1f5b9c4_0.conda"
-checksum = "sha256:3b8a4bdb183b3b9b70caa91498680add15fb70678ec2a21391e6860c5dfed3e7"
+[conda-packages.windows-x64."gdk-pixbuf-2.44.7-h1f5b9c4_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/gdk-pixbuf-2.44.7-h1f5b9c4_0.conda"
+checksum = "sha256:4965bf7c84c9b7c970f1f7bc475962e43441018cf9551682a4a22960c5090588"
 
 [conda-packages.windows-x64."glslang-16.3.0-h294ba9c_0"]
 url = "https://conda.anaconda.org/conda-forge/win-64/glslang-16.3.0-h294ba9c_0.conda"
@@ -3291,26 +3291,26 @@ checksum = "sha256:538f9c846355d9e847b2671bc00c47da4229a0befb24df3282b739770f3b4
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.14/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.187"
+version = "2.1.191"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.187/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.191/linux-arm64/claude"
 
 [tools.claude."platforms.linux-arm64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.187/linux-arm64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.191/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.187/linux-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.191/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.187/linux-x64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.191/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.187/darwin-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.191/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.187/darwin-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.191/darwin-x64/claude"
 
 [[tools.cloudflared]]
 version = "2026.6.1"
@@ -3418,7 +3418,6 @@ conda_deps = [
     "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
-    "gdk-pixbuf-2.44.6-h90308e0_0",
     "libabseil-20260107.1-cxx17_h6983b43_0",
     "pugixml-1.15-h6ef32b0_0",
     "icu-78.3-hcab7f73_0",
@@ -3468,6 +3467,7 @@ conda_deps = [
     "lcms2-2.19.1-h9d5b58d_1",
     "libjpeg-turbo-3.1.4.1-he30d5cf_0",
     "libdovi-3.3.2-hf71c8f5_4",
+    "gdk-pixbuf-2.44.7-h90308e0_0",
     "pango-1.56.4-h8547ced_1",
     "libogg-1.3.5-h86ecc28_1",
     "pthread-stubs-0.4-h86ecc28_1002",
@@ -3548,7 +3548,6 @@ conda_deps = [
     "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
-    "gdk-pixbuf-2.44.6-h90308e0_0",
     "libabseil-20260107.1-cxx17_h6983b43_0",
     "pugixml-1.15-h6ef32b0_0",
     "icu-78.3-hcab7f73_0",
@@ -3598,6 +3597,7 @@ conda_deps = [
     "lcms2-2.19.1-h9d5b58d_1",
     "libjpeg-turbo-3.1.4.1-he30d5cf_0",
     "libdovi-3.3.2-hf71c8f5_4",
+    "gdk-pixbuf-2.44.7-h90308e0_0",
     "pango-1.56.4-h8547ced_1",
     "libogg-1.3.5-h86ecc28_1",
     "pthread-stubs-0.4-h86ecc28_1002",
@@ -3672,7 +3672,6 @@ conda_deps = [
     "dav1d-1.2.1-hd590300_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
-    "gdk-pixbuf-2.44.6-h2b0a6b4_0",
     "icu-78.3-h33c6efd_0",
     "xorg-libxrender-0.9.12-hb9d3cd8_0",
     "cairo-1.18.4-he90730b_1",
@@ -3734,6 +3733,7 @@ conda_deps = [
     "libdovi-3.3.2-ha23c83e_4",
     "lcms2-2.19.1-h0c24ade_1",
     "libjpeg-turbo-3.1.4.1-hb03c661_0",
+    "gdk-pixbuf-2.44.7-h2b0a6b4_0",
     "pango-1.56.4-hda50119_1",
     "libdrm-2.4.127-hb03c661_0",
     "libpciaccess-0.19-hb03c661_0",
@@ -3812,7 +3812,6 @@ conda_deps = [
     "dav1d-1.2.1-hd590300_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
-    "gdk-pixbuf-2.44.6-h2b0a6b4_0",
     "icu-78.3-h33c6efd_0",
     "xorg-libxrender-0.9.12-hb9d3cd8_0",
     "cairo-1.18.4-he90730b_1",
@@ -3874,6 +3873,7 @@ conda_deps = [
     "libdovi-3.3.2-ha23c83e_4",
     "lcms2-2.19.1-h0c24ade_1",
     "libjpeg-turbo-3.1.4.1-hb03c661_0",
+    "gdk-pixbuf-2.44.7-h2b0a6b4_0",
     "pango-1.56.4-hda50119_1",
     "libdrm-2.4.127-hb03c661_0",
     "libpciaccess-0.19-hb03c661_0",
@@ -3942,7 +3942,6 @@ conda_deps = [
     "fonts-conda-ecosystem-1-0",
     "fontconfig-2.18.1-hd47e2ca_0",
     "dav1d-1.2.1-hcfcfb64_0",
-    "gdk-pixbuf-2.44.6-h1f5b9c4_0",
     "icu-78.3-h637d24d_0",
     "cairo-1.18.4-h477c42c_1",
     "aom-3.14.1-pl5321h06fc181_1",
@@ -3974,6 +3973,8 @@ conda_deps = [
     "libbrotlienc-1.2.0-hfd05255_1",
     "libbrotlicommon-1.2.0-hfd05255_1",
     "libbrotlidec-1.2.0-hfd05255_1",
+    "gdk-pixbuf-2.44.7-h1f5b9c4_0",
+    "libjpeg-turbo-3.1.4.1-hfd05255_0",
     "pango-1.56.4-h13911b6_1",
     "fribidi-1.0.16-hfd05255_0",
     "libogg-1.3.5-h2466b09_1",
@@ -3987,7 +3988,6 @@ conda_deps = [
     "font-ttf-source-code-pro-2.038-h77eed37_0",
     "pixman-0.46.4-h5112557_1",
     "libffi-3.5.2-h3d046cb_0",
-    "libjpeg-turbo-3.1.4.1-hfd05255_0",
     "libtiff-4.7.1-h8f73337_1",
     "libdeflate-1.25-h51727cc_0",
     "lerc-4.1.0-hd936e49_0",
@@ -4587,7 +4587,6 @@ conda_deps = [
     "liblzma-5.8.3-he30d5cf_0",
     "liblzma-devel-5.8.3-he30d5cf_0",
     "librsvg-2.62.3-hf685517_0",
-    "gdk-pixbuf-2.44.6-h90308e0_0",
     "icu-78.3-hcab7f73_0",
     "libgd-2.3.3-h88aa843_12",
     "cairo-1.18.4-h0b6afd8_1",
@@ -4609,6 +4608,7 @@ conda_deps = [
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
     "adwaita-icon-theme-49.0-unix_0",
+    "gdk-pixbuf-2.44.7-h90308e0_0",
     "gtk3-3.24.52-h75d4e7a_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "xorg-libxinerama-1.1.6-hfae3067_0",
@@ -4707,7 +4707,6 @@ conda_deps = [
     "liblzma-5.8.3-he30d5cf_0",
     "liblzma-devel-5.8.3-he30d5cf_0",
     "librsvg-2.62.3-hf685517_0",
-    "gdk-pixbuf-2.44.6-h90308e0_0",
     "icu-78.3-hcab7f73_0",
     "libgd-2.3.3-h88aa843_12",
     "cairo-1.18.4-h0b6afd8_1",
@@ -4729,6 +4728,7 @@ conda_deps = [
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
     "adwaita-icon-theme-49.0-unix_0",
+    "gdk-pixbuf-2.44.7-h90308e0_0",
     "gtk3-3.24.52-h75d4e7a_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "xorg-libxinerama-1.1.6-hfae3067_0",
@@ -4827,7 +4827,6 @@ conda_deps = [
     "liblzma-devel-5.8.3-hb03c661_0",
     "libpng-1.6.58-h421ea60_0",
     "librsvg-2.62.3-h4c96295_0",
-    "gdk-pixbuf-2.44.6-h2b0a6b4_0",
     "libtiff-4.7.1-h9d88235_1",
     "libdeflate-1.25-h17f619e_0",
     "libxml2-2.15.3-h49c6c72_0",
@@ -4849,6 +4848,7 @@ conda_deps = [
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
     "adwaita-icon-theme-49.0-unix_0",
+    "gdk-pixbuf-2.44.7-h2b0a6b4_0",
     "gtk3-3.24.52-ha5ea40c_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxinerama-1.1.6-hecca717_0",
@@ -4947,7 +4947,6 @@ conda_deps = [
     "liblzma-devel-5.8.3-hb03c661_0",
     "libpng-1.6.58-h421ea60_0",
     "librsvg-2.62.3-h4c96295_0",
-    "gdk-pixbuf-2.44.6-h2b0a6b4_0",
     "libtiff-4.7.1-h9d88235_1",
     "libdeflate-1.25-h17f619e_0",
     "libxml2-2.15.3-h49c6c72_0",
@@ -4969,6 +4968,7 @@ conda_deps = [
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
     "adwaita-icon-theme-49.0-unix_0",
+    "gdk-pixbuf-2.44.7-h2b0a6b4_0",
     "gtk3-3.24.52-ha5ea40c_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxinerama-1.1.6-hecca717_0",
