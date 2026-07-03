@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-07-03T08:16:43.025589+00:00'
+generated_at: '2026-07-03T11:42:19.716920+00:00'
 apm_version: 0.23.0
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
@@ -3936,6 +3936,38 @@ dependencies:
   deployed_file_hashes:
     .agents/skills/acpx/SKILL.md: sha256:5df2a28dc714126b65e0c8a74a435bd3d36f474291ead8fd28ecad39ff5a29e0
   content_hash: sha256:c7bba623522b83899068a3880a060a034a07b3f7cd21b0482d80f968e0e3beb9
+- repo_url: sveltejs/ai-tools
+  name: ai-tools
+  host: github.com
+  resolved_commit: 129a307df0c82702a6932659068d025e9a1fef32
+  version: unknown
+  virtual_path: tools/skills/svelte-core-bestpractices
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/svelte-core-bestpractices
+  - .agents/skills/svelte-core-bestpractices/SKILL.md
+  - .agents/skills/svelte-core-bestpractices/references/$inspect.md
+  - .agents/skills/svelte-core-bestpractices/references/@attach.md
+  - .agents/skills/svelte-core-bestpractices/references/@render.md
+  - .agents/skills/svelte-core-bestpractices/references/await-expressions.md
+  - .agents/skills/svelte-core-bestpractices/references/bind.md
+  - .agents/skills/svelte-core-bestpractices/references/each.md
+  - .agents/skills/svelte-core-bestpractices/references/hydratable.md
+  - .agents/skills/svelte-core-bestpractices/references/snippet.md
+  - .agents/skills/svelte-core-bestpractices/references/svelte-reactivity.md
+  deployed_file_hashes:
+    .agents/skills/svelte-core-bestpractices/SKILL.md: sha256:219fb2ca4add257da041c640ab18218f470bfc67ef24d04dcb879f87aaf38a1e
+    .agents/skills/svelte-core-bestpractices/references/$inspect.md: sha256:dfde53b9e3e49c6e08f2b827ca3e835dc92807033d0f0c3bd8fb70d03ef34182
+    .agents/skills/svelte-core-bestpractices/references/@attach.md: sha256:d5bdce1ce096814531444870d33a0f71e975971f88c08076010972372ff6729c
+    .agents/skills/svelte-core-bestpractices/references/@render.md: sha256:4fbd46b2834cf1ee4028ba97a00c27f1a4b68dd5eece430dd52cf2329bb402eb
+    .agents/skills/svelte-core-bestpractices/references/await-expressions.md: sha256:b5174624af983314468ad215cf731fadd1059202d4286a50d80144159246feb2
+    .agents/skills/svelte-core-bestpractices/references/bind.md: sha256:1469edf37edd305427467870c47f0a6d805f95660998376f7af019187d80df92
+    .agents/skills/svelte-core-bestpractices/references/each.md: sha256:5ba456d6a1655e361cb37de1575a56e2f04af7be61023e309747ec8a2e1b2c3e
+    .agents/skills/svelte-core-bestpractices/references/hydratable.md: sha256:7cb66827137d842acf99b34d1c565616dc2c706509e8ee4919bdca56068105b8
+    .agents/skills/svelte-core-bestpractices/references/snippet.md: sha256:15a07fbed5f18ad51dc43339c39941e4825e844b9b970138d2ddd4cc145caac6
+    .agents/skills/svelte-core-bestpractices/references/svelte-reactivity.md: sha256:621b9d2ab1e2128eea098f8aacebefd3165873383c545b07660e0ac60858a102
+  content_hash: sha256:f87b9c827e7d06b850f572d61d767197fb6bb91e03ef359394a6a43be1e9ecd7
 - repo_url: vercel-labs/agent-browser
   name: agent-browser
   host: github.com
