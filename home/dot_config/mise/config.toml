@@ -25,10 +25,8 @@ ghq = "1.10.1"
 "github:hayatosc/git-cx" = "0.2.0"
 "github:microsoft/apm" = "v0.23.0"
 "github:mizchi/actrun" = "0.29.0"
-"github:sinelaw/fresh" = "v0.4.1"
 "github:steipete/gogcli" = "v0.31.1"
 go = "1.26.4"
-"go:github.com/Warashi/cage" = "0.1.13"
 "go:golang.org/x/tools/gopls" = "0.22.0"
 imagemagick = "7.1.2_18"
 jq = "1.8.2"
@@ -56,6 +54,7 @@ yarn = "4.17.0"
 yazi = { version = "26.5.6", postinstall = "ya pkg install" }
 zig = "0.16.0"
 zoxide = "0.9.9"
+herdr = "0.7.1"
 
 [settings]
 experimental = true

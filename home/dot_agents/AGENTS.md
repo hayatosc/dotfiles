@@ -5,6 +5,7 @@ This file lists mandatory rules for all agents working in this repository.
 
 ## Communication
 - Respond in Japanese.
+- Write code comments, commit messages, documentation, and all developer-facing explanations/documents in English.
 
 ## Coding Style
 - You **MUST** load and read the `coding-style` skill before writing any code. All rules regarding dependencies, design principles, and code changes have been moved there.
