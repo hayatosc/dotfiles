@@ -10,3 +10,10 @@ agent_panel_sort = "spaces"
 key = "prefix+r"
 type = "plugin_action"
 command = "persiyanov.reviewr.toggle"
+
+[[keys.command]]
+key = "prefix+g"
+type = "shell"
+command = "res=$(herdr tab create --focus --label 'lazygit') && pane=$(echo \"$res\" | jq -r '.result.root_pane.pane_id') && herdr pane run \"$pane\" lazygit"
+description = "open lazygit in a new tab"
+

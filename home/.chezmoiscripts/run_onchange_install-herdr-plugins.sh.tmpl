@@ -1,0 +1,31 @@
+#!/bin/bash
+# herdr: {{ lookPath "herdr" }}
+set -euo pipefail
+
+# Ensure mise is in PATH if not found
+if ! command -v mise >/dev/null 2>&1; then
+    if [ -f "${HOME}/.local/bin/mise" ]; then
+        export PATH="${HOME}/.local/bin:${PATH}"
+    fi
+fi
+
+# Check if mise is available
+if ! command -v mise >/dev/null 2>&1; then
+    echo "mise is not installed. Skipping herdr plugin installation."
+    exit 0
+fi
+
+echo "Installing/updating herdr plugins..."
+
+# List of plugins to manage
+# Re-run the script if this list changes (via run_onchange_ prefix)
+PLUGINS=(
+    "persiyanov/herdr-reviewr"
+)
+
+for plugin in "${PLUGINS[@]}"; do
+    echo "Installing ${plugin}..."
+    mise exec herdr -- herdr plugin install "${plugin}" --yes
+done
+
+
