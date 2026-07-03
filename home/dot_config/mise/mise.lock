@@ -328,9 +328,9 @@ checksum = "sha256:1473451cd282b48d24515795a595801c9b65b567fe399d7e12d50b2d6cdb0
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjpeg-turbo-3.1.4.1-he30d5cf_0.conda"
 checksum = "sha256:e97ec2af5f09f8f6ea8ecd550055c95ae80fae22015fcfadaa94eafe025c9ccc"
 
-[conda-packages.linux-arm64."libjxl-0.11.2-hbae46ee_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjxl-0.11.2-hbae46ee_1.conda"
-checksum = "sha256:237bbfa18c4f245a24000c12924d61a9e54f7e6f689f405c0dc8e188a40de890"
+[conda-packages.linux-arm64."libjxl-0.12.0-hbae46ee_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjxl-0.12.0-hbae46ee_0.conda"
+checksum = "sha256:5f01e24e44fdeeaa2f690e4b0211b313e45441bb9cdd380a4e6490d305cc4793"
 
 [conda-packages.linux-arm64."liblzma-5.8.3-he30d5cf_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/liblzma-5.8.3-he30d5cf_0.conda"
@@ -1004,9 +1004,9 @@ checksum = "sha256:1473451cd282b48d24515795a595801c9b65b567fe399d7e12d50b2d6cdb0
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjpeg-turbo-3.1.4.1-he30d5cf_0.conda"
 checksum = "sha256:e97ec2af5f09f8f6ea8ecd550055c95ae80fae22015fcfadaa94eafe025c9ccc"
 
-[conda-packages.linux-arm64-musl."libjxl-0.11.2-hbae46ee_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjxl-0.11.2-hbae46ee_1.conda"
-checksum = "sha256:237bbfa18c4f245a24000c12924d61a9e54f7e6f689f405c0dc8e188a40de890"
+[conda-packages.linux-arm64-musl."libjxl-0.12.0-hbae46ee_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjxl-0.12.0-hbae46ee_0.conda"
+checksum = "sha256:5f01e24e44fdeeaa2f690e4b0211b313e45441bb9cdd380a4e6490d305cc4793"
 
 [conda-packages.linux-arm64-musl."liblzma-5.8.3-he30d5cf_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/liblzma-5.8.3-he30d5cf_0.conda"
@@ -1692,9 +1692,9 @@ checksum = "sha256:c467851a7312765447155e071752d7bf9bf44d610a5687e32706f480aad28
 url = "https://conda.anaconda.org/conda-forge/linux-64/libjpeg-turbo-3.1.4.1-hb03c661_0.conda"
 checksum = "sha256:10056646c28115b174de81a44e23e3a0a3b95b5347d2e6c45cc6d49d35294256"
 
-[conda-packages.linux-x64."libjxl-0.11.2-h174a0a3_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.11.2-h174a0a3_1.conda"
-checksum = "sha256:0c8a78c6a42a6e4c6de3a5e82d692f60400d43f4cc80591745f28b37daad9c70"
+[conda-packages.linux-x64."libjxl-0.12.0-h174a0a3_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.12.0-h174a0a3_0.conda"
+checksum = "sha256:c5c4fa9a8e74efcf23005d9d600ccad5be07de419de9cb5c9757e64c48ae9d7a"
 
 [conda-packages.linux-x64."liblzma-5.8.3-hb03c661_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.3-hb03c661_0.conda"
@@ -2408,9 +2408,9 @@ checksum = "sha256:c467851a7312765447155e071752d7bf9bf44d610a5687e32706f480aad28
 url = "https://conda.anaconda.org/conda-forge/linux-64/libjpeg-turbo-3.1.4.1-hb03c661_0.conda"
 checksum = "sha256:10056646c28115b174de81a44e23e3a0a3b95b5347d2e6c45cc6d49d35294256"
 
-[conda-packages.linux-x64-musl."libjxl-0.11.2-h174a0a3_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.11.2-h174a0a3_1.conda"
-checksum = "sha256:0c8a78c6a42a6e4c6de3a5e82d692f60400d43f4cc80591745f28b37daad9c70"
+[conda-packages.linux-x64-musl."libjxl-0.12.0-h174a0a3_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.12.0-h174a0a3_0.conda"
+checksum = "sha256:c5c4fa9a8e74efcf23005d9d600ccad5be07de419de9cb5c9757e64c48ae9d7a"
 
 [conda-packages.linux-x64-musl."liblzma-5.8.3-hb03c661_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.3-hb03c661_0.conda"
@@ -2940,9 +2940,9 @@ checksum = "sha256:be1f3c48bc750bca7e68955d57180dfd826d6f9fa7eb32994f6cb61b813f9
 url = "https://conda.anaconda.org/conda-forge/win-64/libjpeg-turbo-3.1.4.1-hfd05255_0.conda"
 checksum = "sha256:698d57b5b90120270eaa401298319fcb25ea186ae95b340c2f4813ed9171083d"
 
-[conda-packages.windows-x64."libjxl-0.11.2-h932607e_1"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libjxl-0.11.2-h932607e_1.conda"
-checksum = "sha256:4715e22c602526c85da09f73865676add67e0995a944b821fbff84547a9db533"
+[conda-packages.windows-x64."libjxl-0.12.0-h932607e_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libjxl-0.12.0-h932607e_0.conda"
+checksum = "sha256:4aab84e9acfdd5650ad4e797409566d04fe7fa7de06245c5ea9be988d94ec870"
 
 [conda-packages.windows-x64."liblzma-5.8.3-hfd05255_0"]
 url = "https://conda.anaconda.org/conda-forge/win-64/liblzma-5.8.3-hfd05255_0.conda"
@@ -3125,43 +3125,43 @@ url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza.exe_x8
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249826"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.0.13"
+version = "1.0.14"
 backend = "aqua:google-antigravity/antigravity-cli"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:e2f062ff8a573d2da54c03c8f0b66e130a563a08c87b6db174953a9afdd21235"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.13/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/459155670"
+checksum = "sha256:992653b4de4fe667ee5bd66ca259edd6b88b308f20a31880a77002624204e277"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.14/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/461727015"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:e2f062ff8a573d2da54c03c8f0b66e130a563a08c87b6db174953a9afdd21235"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.13/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/459155670"
+checksum = "sha256:992653b4de4fe667ee5bd66ca259edd6b88b308f20a31880a77002624204e277"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.14/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/461727015"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:6bf990458c114af3b3173dcbc1b0fb9ab93bea91c53b605fdd69aedd29a21cd9"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.13/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/459155714"
+checksum = "sha256:7170d598193ee0addcaba7d8c3a2c2e307ae8622dacf749831128bd1ad3ca458"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.14/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/461727052"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:6bf990458c114af3b3173dcbc1b0fb9ab93bea91c53b605fdd69aedd29a21cd9"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.13/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/459155714"
+checksum = "sha256:7170d598193ee0addcaba7d8c3a2c2e307ae8622dacf749831128bd1ad3ca458"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.14/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/461727052"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:c00b3aa10d4eee821f7ddaf3185942c88511ebbe425663692f7732d8dd1e83c2"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.13/agy_cli_mac_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/459155733"
+checksum = "sha256:44fb1db46b67d8566fdafe31ff44722c02ad1655d588cc18029ee349122bb3a3"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.14/agy_cli_mac_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/461727077"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:53e23ef3f54d0212df7fc73ea1eb99c34e4c97bffa1f886afe565fd142c9ab89"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.13/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/459155755"
+checksum = "sha256:75a2840202f67a25396b5fb758ab77c212636a6a0e934a5b4175c49e79ae6df4"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.14/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/461727099"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:ca397c0f07157b6f38a2e11a3c9e97ef56c24ec4238a0deef6a5dd390dee1836"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.13/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/459155824"
+checksum = "sha256:9ff9c4b7db3b873c545964956369b06207decd7c81550eaad1c57c397c8ce397"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.0.14/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/461727140"
 
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.29.0"
@@ -3437,25 +3437,15 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.196/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "blake3:bc60c255f6e7e10ae9e9189c775422acdfe2f6f3364736a14476d96480f34c75"
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.196/linux-x64/claude"
-
-[tools.claude."platforms.linux-x64-baseline"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.196/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.196/linux-x64-musl/claude"
-
-[tools.claude."platforms.linux-x64-musl-baseline"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.196/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.196/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.196/darwin-x64/claude"
-
-[tools.claude."platforms.macos-x64-baseline"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.196/darwin-x64/claude"
 
 [[tools.cloudflared]]
@@ -3608,7 +3598,7 @@ conda_deps = [
     "libgcc-ng-15.2.0-he9431aa_19",
     "libstdcxx-15.2.0-hef695bb_19",
     "libstdcxx-ng-15.2.0-hdbbeba8_19",
-    "libjxl-0.11.2-hbae46ee_1",
+    "libjxl-0.12.0-hbae46ee_0",
     "libhwy-1.4.0-h0626a34_0",
     "libxml2-2.15.3-h869d058_0",
     "libxml2-16-2.15.3-h79dcc73_0",
@@ -3741,7 +3731,7 @@ conda_deps = [
     "libgcc-ng-15.2.0-he9431aa_19",
     "libstdcxx-15.2.0-hef695bb_19",
     "libstdcxx-ng-15.2.0-hdbbeba8_19",
-    "libjxl-0.11.2-hbae46ee_1",
+    "libjxl-0.12.0-hbae46ee_0",
     "libhwy-1.4.0-h0626a34_0",
     "libxml2-2.15.3-h869d058_0",
     "libxml2-16-2.15.3-h79dcc73_0",
@@ -3883,7 +3873,7 @@ conda_deps = [
     "libgcc-ng-15.2.0-h69a702a_19",
     "libstdcxx-15.2.0-h934c35e_19",
     "libstdcxx-ng-15.2.0-hdf11a46_19",
-    "libjxl-0.11.2-h174a0a3_1",
+    "libjxl-0.12.0-h174a0a3_0",
     "libhwy-1.4.0-h10be129_0",
     "libxml2-2.15.3-h49c6c72_0",
     "libxml2-16-2.15.3-hca6bf5a_0",
@@ -4026,7 +4016,7 @@ conda_deps = [
     "libgcc-ng-15.2.0-h69a702a_19",
     "libstdcxx-15.2.0-h934c35e_19",
     "libstdcxx-ng-15.2.0-hdf11a46_19",
-    "libjxl-0.11.2-h174a0a3_1",
+    "libjxl-0.12.0-h174a0a3_0",
     "libhwy-1.4.0-h10be129_0",
     "libxml2-2.15.3-h49c6c72_0",
     "libxml2-16-2.15.3-hca6bf5a_0",
@@ -4135,7 +4125,7 @@ conda_deps = [
     "openh264-2.6.0-h1eab103_1",
     "x264-1!164.3095-h8ffe710_2",
     "bzip2-1.0.8-h0ad9c76_9",
-    "libjxl-0.11.2-h932607e_1",
+    "libjxl-0.12.0-h932607e_0",
     "libhwy-1.4.0-h172a326_0",
     "libxml2-2.15.3-h8ef44ab_0",
     "libxml2-16-2.15.3-h3cfd58e_0",
@@ -4521,20 +4511,10 @@ checksum = "sha256:63ab568676b4b82e3d9ce14e10a10b61cbb067d2bf85a54f93b61a2c12e7a
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.22.0/octoscope_0.22.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/460332991"
 
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-baseline"]
-checksum = "sha256:47a27a6c91d4d6f5480a888073ebd338de296b3cf86461e0d22e35b611d46c19"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.21.0/octoscope_0.21.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/454259296"
-
 [tools."github:gfazioli/octoscope"."platforms.linux-x64-musl"]
 checksum = "sha256:63ab568676b4b82e3d9ce14e10a10b61cbb067d2bf85a54f93b61a2c12e7ab2f"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.22.0/octoscope_0.22.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/460332991"
-
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:47a27a6c91d4d6f5480a888073ebd338de296b3cf86461e0d22e35b611d46c19"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.21.0/octoscope_0.21.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/454259296"
 
 [tools."github:gfazioli/octoscope"."platforms.macos-arm64"]
 checksum = "sha256:204d0e39797dc93d993edd198c8c62e587a8b57d82b8786b578da0e9b45a4ae9"
@@ -4546,20 +4526,10 @@ checksum = "sha256:3aa8abede0fdb8a8be5db69f534c8384ba50c82e9c911f61c9c03123d6f58
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.22.0/octoscope_0.22.0_macOS_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/460332992"
 
-[tools."github:gfazioli/octoscope"."platforms.macos-x64-baseline"]
-checksum = "sha256:cbc2071749abb2f183e89a0721cb3cbfa5354ad7b542f34f72d1431a9d2ae968"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.21.0/octoscope_0.21.0_macOS_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/454259299"
-
 [tools."github:gfazioli/octoscope"."platforms.windows-x64"]
 checksum = "sha256:4ffbac2f5a08933c77cfcdf22891d5c454db9981a7db799664dabf9043998139"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.22.0/octoscope_0.22.0_Windows_x86_64.zip"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/460333001"
-
-[tools."github:gfazioli/octoscope"."platforms.windows-x64-baseline"]
-checksum = "sha256:3c6e84fa3817de038ce3bec9706987b04e1d33cd44bdc8f81d9a2a24dec955f8"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.21.0/octoscope_0.21.0_Windows_x86_64.zip"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/454259307"
 
 [[tools."github:hayatosc/git-cx"]]
 version = "0.2.0"
@@ -4658,52 +4628,6 @@ checksum = "sha256:72a2ed8fa7823238837e803706beddbaf4000b04a87cc1c42634b1d5319d1
 url = "https://github.com/mizchi/actrun/releases/download/v0.29.0/actrun-macos-arm64.tar.gz"
 url_api = "https://api.github.com/repos/mizchi/actrun/releases/assets/385521186"
 
-[[tools."github:sinelaw/fresh"]]
-version = "0.4.1"
-backend = "github:sinelaw/fresh"
-
-[tools."github:sinelaw/fresh"."platforms.linux-arm64"]
-checksum = "sha256:8718761e643691143945d0539c720bc33e7397cccd3a59a1128ea13b479cc4b0"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-aarch64-unknown-linux-gnu.tar.xz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243606"
-provenance = "github-attestations"
-
-[tools."github:sinelaw/fresh"."platforms.linux-arm64-musl"]
-checksum = "sha256:ac6ce491025b0ce4df267cfb24bd62e31ae45bf036e8fe6d93c14fdf1749d36f"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243802"
-provenance = "github-attestations"
-
-[tools."github:sinelaw/fresh"."platforms.linux-x64"]
-checksum = "sha256:0a8d1c75481aa426e5009c8a01f3368921b8c51425db858c7075270602e7fee5"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-unknown-linux-gnu.tar.xz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243608"
-provenance = "github-attestations"
-
-[tools."github:sinelaw/fresh"."platforms.linux-x64-musl"]
-checksum = "sha256:4b74edbd4e0f0f950522b0e18a33d2efd5ddcecbc0ef9ff0e127d963ad9aee38"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243803"
-provenance = "github-attestations"
-
-[tools."github:sinelaw/fresh"."platforms.macos-arm64"]
-checksum = "sha256:d1a8a8f82cf30b9bec6208fad00e9e5ac94a3f86aeb4279f5b80baa53cb5ddab"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243609"
-provenance = "github-attestations"
-
-[tools."github:sinelaw/fresh"."platforms.macos-x64"]
-checksum = "sha256:87071df277b87c75549f1b7b358bf9539246a037e07400df7ff50668e6e6556b"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243605"
-provenance = "github-attestations"
-
-[tools."github:sinelaw/fresh"."platforms.windows-x64"]
-checksum = "sha256:af39978731c379f1ebe3dd54976ee81ba2cc6e7e5590f2bec44a6cc20a4df4a5"
-url = "https://github.com/sinelaw/fresh/releases/download/v0.4.1/fresh-editor-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/sinelaw/fresh/releases/assets/451243851"
-provenance = "github-attestations"
-
 [[tools."github:steipete/gogcli"]]
 version = "0.31.1"
 backend = "github:steipete/gogcli"
@@ -4775,10 +4699,6 @@ url = "https://dl.google.com/go/go1.26.4.darwin-amd64.tar.gz"
 checksum = "sha256:3ca8fb4630b07c419cbdd51f754e31363cfcfb83b3a5354d9e895c90be2cc345"
 url = "https://dl.google.com/go/go1.26.4.windows-amd64.zip"
 
-[[tools."go:github.com/Warashi/cage"]]
-version = "0.1.13"
-backend = "go:github.com/Warashi/cage"
-
 [[tools."go:golang.org/x/tools/gopls"]]
 version = "0.22.0"
 backend = "go:golang.org/x/tools/gopls"
@@ -4802,17 +4722,7 @@ checksum = "sha256:b965acaffc2c22f54b6e6c64af7cf8e98a3f4ac2622630a0599c67a4b9d8a
 url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-linux-x86_64"
 url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674304"
 
-[tools.herdr."platforms.linux-x64-baseline"]
-checksum = "sha256:b965acaffc2c22f54b6e6c64af7cf8e98a3f4ac2622630a0599c67a4b9d8a654"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674304"
-
 [tools.herdr."platforms.linux-x64-musl"]
-checksum = "sha256:b965acaffc2c22f54b6e6c64af7cf8e98a3f4ac2622630a0599c67a4b9d8a654"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674304"
-
-[tools.herdr."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:b965acaffc2c22f54b6e6c64af7cf8e98a3f4ac2622630a0599c67a4b9d8a654"
 url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-linux-x86_64"
 url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674304"
@@ -4823,11 +4733,6 @@ url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-maco
 url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674306"
 
 [tools.herdr."platforms.macos-x64"]
-checksum = "sha256:5780fa07dbb9a78d79e52d20b86a61013f6cba02667f20b6cf89663015090846"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674307"
-
-[tools.herdr."platforms.macos-x64-baseline"]
 checksum = "sha256:5780fa07dbb9a78d79e52d20b86a61013f6cba02667f20b6cf89663015090846"
 url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-macos-x86_64"
 url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/456674307"
@@ -5412,14 +5317,6 @@ checksum = "sha256:805bfcb2445273b77a32b7758dfb5d2d8dbd7b80b7336ab868935584a2fad
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygit_0.62.2_windows_x86_64.zip"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/438031216"
 
-[[tools.moonbit]]
-version = "latest"
-backend = "vfox:moonbit"
-
-[[tools.moonbit]]
-version = "latest"
-backend = "vfox:moonbit"
-
 [[tools.ni]]
 version = "30.2.0"
 backend = "npm:@antfu/ni"
@@ -5667,18 +5564,10 @@ checksum = "sha256:ff8a1e7766496e175291a85aeca1dc97c9ff6df33e51e5893d1fbc78fea2a
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.43.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/460115882"
 
-[tools.rtk."platforms.linux-x64-baseline"]
-checksum = "sha256:ff8a1e7766496e175291a85aeca1dc97c9ff6df33e51e5893d1fbc78fea2a609"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.43.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-
 [tools.rtk."platforms.linux-x64-musl"]
 checksum = "sha256:ff8a1e7766496e175291a85aeca1dc97c9ff6df33e51e5893d1fbc78fea2a609"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.43.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/460115882"
-
-[tools.rtk."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:ff8a1e7766496e175291a85aeca1dc97c9ff6df33e51e5893d1fbc78fea2a609"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.43.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.rtk."platforms.macos-arm64"]
 checksum = "sha256:8a17e49acbd378997eb21d0eb6f7f861111f35b4fc9b1c74edf4c7448e576c65"
@@ -5690,18 +5579,10 @@ checksum = "sha256:a85f60e2637811be68366208b8d8b9c5ba1b748cb5df4477ab20cd73d3c5d
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.43.0/rtk-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/460115887"
 
-[tools.rtk."platforms.macos-x64-baseline"]
-checksum = "sha256:a85f60e2637811be68366208b8d8b9c5ba1b748cb5df4477ab20cd73d3c5d9f8"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.43.0/rtk-x86_64-apple-darwin.tar.gz"
-
 [tools.rtk."platforms.windows-x64"]
 checksum = "sha256:7c5e4a2ef816a4d4ed947ddd74ca3df851fc39ea87d49a3ca2bf3abc515a016b"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.43.0/rtk-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/460115883"
-
-[tools.rtk."platforms.windows-x64-baseline"]
-checksum = "sha256:7c5e4a2ef816a4d4ed947ddd74ca3df851fc39ea87d49a3ca2bf3abc515a016b"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.43.0/rtk-x86_64-pc-windows-msvc.zip"
 
 [[tools.rust]]
 version = "1.96.0"
@@ -5760,18 +5641,10 @@ checksum = "sha256:b7c232b0e8249d8e55a40beb79c5c43a7d370f3f9408bd215deb0170daeaa
 url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/starship/starship/releases/assets/460374630"
 
-[tools.starship."platforms.linux-x64-baseline"]
-checksum = "sha256:b7c232b0e8249d8e55a40beb79c5c43a7d370f3f9408bd215deb0170daeaadf3"
-url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-unknown-linux-musl.tar.gz"
-
 [tools.starship."platforms.linux-x64-musl"]
 checksum = "sha256:b7c232b0e8249d8e55a40beb79c5c43a7d370f3f9408bd215deb0170daeaadf3"
 url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/starship/starship/releases/assets/460374630"
-
-[tools.starship."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:b7c232b0e8249d8e55a40beb79c5c43a7d370f3f9408bd215deb0170daeaadf3"
-url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.starship."platforms.macos-arm64"]
 checksum = "sha256:c40b27b11f580411e068f2fa6c1be7830a387c0bc47a94d1d37f32b054c5361d"
@@ -5783,18 +5656,10 @@ checksum = "sha256:5548f406a4b6f5695903bdea83f77ce47ec12c8c0e62dabd33122d8f133e4
 url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/starship/starship/releases/assets/460374608"
 
-[tools.starship."platforms.macos-x64-baseline"]
-checksum = "sha256:5548f406a4b6f5695903bdea83f77ce47ec12c8c0e62dabd33122d8f133e4207"
-url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-apple-darwin.tar.gz"
-
 [tools.starship."platforms.windows-x64"]
 checksum = "sha256:690021e22f2bf2c57d5867dc0fababe5e55e714c26942bd909ffddb6c5df42f2"
 url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/starship/starship/releases/assets/460374615"
-
-[tools.starship."platforms.windows-x64-baseline"]
-checksum = "sha256:690021e22f2bf2c57d5867dc0fababe5e55e714c26942bd909ffddb6c5df42f2"
-url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-pc-windows-msvc.zip"
 
 [[tools.tmux]]
 version = "3.6b"
