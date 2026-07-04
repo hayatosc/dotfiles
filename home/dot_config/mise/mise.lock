@@ -328,9 +328,9 @@ checksum = "sha256:1473451cd282b48d24515795a595801c9b65b567fe399d7e12d50b2d6cdb0
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjpeg-turbo-3.1.4.1-he30d5cf_0.conda"
 checksum = "sha256:e97ec2af5f09f8f6ea8ecd550055c95ae80fae22015fcfadaa94eafe025c9ccc"
 
-[conda-packages.linux-arm64."libjxl-0.12.0-hbae46ee_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjxl-0.12.0-hbae46ee_1.conda"
-checksum = "sha256:476f42670da6c1ad30d0cc830a9ef995975c14075d626e261c8dd1dd0db41558"
+[conda-packages.linux-arm64."libjxl-0.11.2-hbae46ee_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjxl-0.11.2-hbae46ee_1.conda"
+checksum = "sha256:237bbfa18c4f245a24000c12924d61a9e54f7e6f689f405c0dc8e188a40de890"
 
 [conda-packages.linux-arm64."liblzma-5.8.3-he30d5cf_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/liblzma-5.8.3-he30d5cf_0.conda"
@@ -1004,9 +1004,9 @@ checksum = "sha256:1473451cd282b48d24515795a595801c9b65b567fe399d7e12d50b2d6cdb0
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjpeg-turbo-3.1.4.1-he30d5cf_0.conda"
 checksum = "sha256:e97ec2af5f09f8f6ea8ecd550055c95ae80fae22015fcfadaa94eafe025c9ccc"
 
-[conda-packages.linux-arm64-musl."libjxl-0.12.0-hbae46ee_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjxl-0.12.0-hbae46ee_1.conda"
-checksum = "sha256:476f42670da6c1ad30d0cc830a9ef995975c14075d626e261c8dd1dd0db41558"
+[conda-packages.linux-arm64-musl."libjxl-0.11.2-hbae46ee_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libjxl-0.11.2-hbae46ee_1.conda"
+checksum = "sha256:237bbfa18c4f245a24000c12924d61a9e54f7e6f689f405c0dc8e188a40de890"
 
 [conda-packages.linux-arm64-musl."liblzma-5.8.3-he30d5cf_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/liblzma-5.8.3-he30d5cf_0.conda"
@@ -1692,9 +1692,9 @@ checksum = "sha256:c467851a7312765447155e071752d7bf9bf44d610a5687e32706f480aad28
 url = "https://conda.anaconda.org/conda-forge/linux-64/libjpeg-turbo-3.1.4.1-hb03c661_0.conda"
 checksum = "sha256:10056646c28115b174de81a44e23e3a0a3b95b5347d2e6c45cc6d49d35294256"
 
-[conda-packages.linux-x64."libjxl-0.12.0-h174a0a3_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.12.0-h174a0a3_1.conda"
-checksum = "sha256:1811d6c6558fbfe89326616c207cc7584032b60bc6f4329d2a76b961e2936a15"
+[conda-packages.linux-x64."libjxl-0.11.2-h174a0a3_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.11.2-h174a0a3_1.conda"
+checksum = "sha256:0c8a78c6a42a6e4c6de3a5e82d692f60400d43f4cc80591745f28b37daad9c70"
 
 [conda-packages.linux-x64."liblzma-5.8.3-hb03c661_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.3-hb03c661_0.conda"
@@ -2408,9 +2408,9 @@ checksum = "sha256:c467851a7312765447155e071752d7bf9bf44d610a5687e32706f480aad28
 url = "https://conda.anaconda.org/conda-forge/linux-64/libjpeg-turbo-3.1.4.1-hb03c661_0.conda"
 checksum = "sha256:10056646c28115b174de81a44e23e3a0a3b95b5347d2e6c45cc6d49d35294256"
 
-[conda-packages.linux-x64-musl."libjxl-0.12.0-h174a0a3_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.12.0-h174a0a3_1.conda"
-checksum = "sha256:1811d6c6558fbfe89326616c207cc7584032b60bc6f4329d2a76b961e2936a15"
+[conda-packages.linux-x64-musl."libjxl-0.11.2-h174a0a3_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libjxl-0.11.2-h174a0a3_1.conda"
+checksum = "sha256:0c8a78c6a42a6e4c6de3a5e82d692f60400d43f4cc80591745f28b37daad9c70"
 
 [conda-packages.linux-x64-musl."liblzma-5.8.3-hb03c661_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/liblzma-5.8.3-hb03c661_0.conda"
@@ -2940,9 +2940,9 @@ checksum = "sha256:be1f3c48bc750bca7e68955d57180dfd826d6f9fa7eb32994f6cb61b813f9
 url = "https://conda.anaconda.org/conda-forge/win-64/libjpeg-turbo-3.1.4.1-hfd05255_0.conda"
 checksum = "sha256:698d57b5b90120270eaa401298319fcb25ea186ae95b340c2f4813ed9171083d"
 
-[conda-packages.windows-x64."libjxl-0.12.0-h932607e_1"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libjxl-0.12.0-h932607e_1.conda"
-checksum = "sha256:141310ec747808be57ba9e7501fcfab75b260803233dd9ba818fb85f6080aad9"
+[conda-packages.windows-x64."libjxl-0.11.2-h932607e_1"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libjxl-0.11.2-h932607e_1.conda"
+checksum = "sha256:4715e22c602526c85da09f73865676add67e0995a944b821fbff84547a9db533"
 
 [conda-packages.windows-x64."liblzma-5.8.3-hfd05255_0"]
 url = "https://conda.anaconda.org/conda-forge/win-64/liblzma-5.8.3-hfd05255_0.conda"
@@ -3598,7 +3598,7 @@ conda_deps = [
     "libgcc-ng-15.2.0-he9431aa_19",
     "libstdcxx-15.2.0-hef695bb_19",
     "libstdcxx-ng-15.2.0-hdbbeba8_19",
-    "libjxl-0.12.0-hbae46ee_1",
+    "libjxl-0.11.2-hbae46ee_1",
     "libhwy-1.4.0-h0626a34_0",
     "libxml2-2.15.3-h869d058_0",
     "libxml2-16-2.15.3-h79dcc73_0",
@@ -3731,7 +3731,7 @@ conda_deps = [
     "libgcc-ng-15.2.0-he9431aa_19",
     "libstdcxx-15.2.0-hef695bb_19",
     "libstdcxx-ng-15.2.0-hdbbeba8_19",
-    "libjxl-0.12.0-hbae46ee_1",
+    "libjxl-0.11.2-hbae46ee_1",
     "libhwy-1.4.0-h0626a34_0",
     "libxml2-2.15.3-h869d058_0",
     "libxml2-16-2.15.3-h79dcc73_0",
@@ -3873,7 +3873,7 @@ conda_deps = [
     "libgcc-ng-15.2.0-h69a702a_19",
     "libstdcxx-15.2.0-h934c35e_19",
     "libstdcxx-ng-15.2.0-hdf11a46_19",
-    "libjxl-0.12.0-h174a0a3_1",
+    "libjxl-0.11.2-h174a0a3_1",
     "libhwy-1.4.0-h10be129_0",
     "libxml2-2.15.3-h49c6c72_0",
     "libxml2-16-2.15.3-hca6bf5a_0",
@@ -4016,7 +4016,7 @@ conda_deps = [
     "libgcc-ng-15.2.0-h69a702a_19",
     "libstdcxx-15.2.0-h934c35e_19",
     "libstdcxx-ng-15.2.0-hdf11a46_19",
-    "libjxl-0.12.0-h174a0a3_1",
+    "libjxl-0.11.2-h174a0a3_1",
     "libhwy-1.4.0-h10be129_0",
     "libxml2-2.15.3-h49c6c72_0",
     "libxml2-16-2.15.3-hca6bf5a_0",
@@ -4125,7 +4125,7 @@ conda_deps = [
     "openh264-2.6.0-h1eab103_1",
     "x264-1!164.3095-h8ffe710_2",
     "bzip2-1.0.8-h0ad9c76_9",
-    "libjxl-0.12.0-h932607e_1",
+    "libjxl-0.11.2-h932607e_1",
     "libhwy-1.4.0-h172a326_0",
     "libxml2-2.15.3-h8ef44ab_0",
     "libxml2-16-2.15.3-h3cfd58e_0",
@@ -4239,36 +4239,36 @@ url = "https://github.com/dandavison/delta/releases/download/0.19.2/delta-0.19.2
 url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/383663165"
 
 [[tools.deno]]
-version = "2.9.0"
+version = "2.9.1"
 backend = "core:deno"
 
 [tools.deno."platforms.linux-arm64"]
-checksum = "sha256:a0f266eb189af2f27db0c6dcf9eb2f68ba2e8bbff1442c969ace398463f8b2bf"
-url = "https://dl.deno.land/release/v2.9.0/deno-aarch64-unknown-linux-gnu.zip"
+checksum = "sha256:0a60d079fa79635a59803074dbbfe86ccc35746dc2c4f8d73f2e50338b3283a9"
+url = "https://dl.deno.land/release/v2.9.1/deno-aarch64-unknown-linux-gnu.zip"
 
 [tools.deno."platforms.linux-arm64-musl"]
-checksum = "sha256:a0f266eb189af2f27db0c6dcf9eb2f68ba2e8bbff1442c969ace398463f8b2bf"
-url = "https://dl.deno.land/release/v2.9.0/deno-aarch64-unknown-linux-gnu.zip"
+checksum = "sha256:0a60d079fa79635a59803074dbbfe86ccc35746dc2c4f8d73f2e50338b3283a9"
+url = "https://dl.deno.land/release/v2.9.1/deno-aarch64-unknown-linux-gnu.zip"
 
 [tools.deno."platforms.linux-x64"]
-checksum = "sha256:96c9c73fc05ea57603bc28d8071d41e861bd40bcf2a9f849dd5969ed1a2c8498"
-url = "https://dl.deno.land/release/v2.9.0/deno-x86_64-unknown-linux-gnu.zip"
+checksum = "sha256:710c54d63477d1100844ef4818f19507ce0dbf40510903b1d883f19e394446a2"
+url = "https://dl.deno.land/release/v2.9.1/deno-x86_64-unknown-linux-gnu.zip"
 
 [tools.deno."platforms.linux-x64-musl"]
-checksum = "sha256:96c9c73fc05ea57603bc28d8071d41e861bd40bcf2a9f849dd5969ed1a2c8498"
-url = "https://dl.deno.land/release/v2.9.0/deno-x86_64-unknown-linux-gnu.zip"
+checksum = "sha256:710c54d63477d1100844ef4818f19507ce0dbf40510903b1d883f19e394446a2"
+url = "https://dl.deno.land/release/v2.9.1/deno-x86_64-unknown-linux-gnu.zip"
 
 [tools.deno."platforms.macos-arm64"]
-checksum = "sha256:2d11cf0505d4600a4492de8d07456a7a5e7eedebf68bdcbcb9092f520fcde0f1"
-url = "https://dl.deno.land/release/v2.9.0/deno-aarch64-apple-darwin.zip"
+checksum = "sha256:ee3473502118eab301eca93aa6b31d6b0b6c1602d0f59e4cb89d4a262b12f6e7"
+url = "https://dl.deno.land/release/v2.9.1/deno-aarch64-apple-darwin.zip"
 
 [tools.deno."platforms.macos-x64"]
-checksum = "sha256:04f71604d738ef2a3b0c08d00743b1a6580fd65d0dab604da2f57f30f4c74b55"
-url = "https://dl.deno.land/release/v2.9.0/deno-x86_64-apple-darwin.zip"
+checksum = "sha256:89cbc8c974247772d9200724741b4e692ef49fe470b2ff555da905817c3daa11"
+url = "https://dl.deno.land/release/v2.9.1/deno-x86_64-apple-darwin.zip"
 
 [tools.deno."platforms.windows-x64"]
-checksum = "sha256:37e3a8e5f4ee360d08bbeec9ee07fdcaa9dcd1a39d4aeaac5807354aec557451"
-url = "https://dl.deno.land/release/v2.9.0/deno-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:ab310b4232cca207d40ffa41867e93aaf9f893802bc76756e74f486a6b21b371"
+url = "https://dl.deno.land/release/v2.9.1/deno-x86_64-pc-windows-msvc.zip"
 
 [[tools.fd]]
 version = "10.4.2"
