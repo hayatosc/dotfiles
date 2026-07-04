@@ -1,5 +1,6 @@
 #!/usr/bin/env bun
 
+import { $ } from "bun";
 import { existsSync, mkdirSync, readFileSync } from "fs";
 import { dirname, join } from "path";
 
@@ -27,46 +28,18 @@ function normalize(text: string): string {
   return text.replace(/\r\n/g, "\n");
 }
 
-function runCommand(cmd: string[]): string {
-  const proc = Bun.spawnSync({
-    cmd,
-    stdout: "pipe",
-    stderr: "pipe",
-  });
-  const stdout = normalize(Buffer.from(proc.stdout).toString("utf-8")).trimEnd();
-  const stderr = normalize(Buffer.from(proc.stderr).toString("utf-8")).trim();
-  if (proc.exitCode !== 0) {
-    throw new Error(stderr || `${cmd.join(" ")} failed with exit code ${proc.exitCode}`);
-  }
-  return stdout;
-}
-
-function findSourceRoot(path: string): string {
-  let dir = dirname(path);
-  while (dir && dir !== "/" && dir !== ".") {
-    if (existsSync(join(dir, ".chezmoidata")) || existsSync(join(dir, ".chezmoiroot"))) {
-      return dir;
-    }
-    const parent = dirname(dir);
-    if (parent === dir) break;
-    dir = parent;
-  }
-  // Fallback to going up 3 levels
-  return dirname(dirname(dirname(path)));
-}
-
 try {
   if (!existsSync(DEST_CONFIG)) {
     process.exit(0);
   }
 
-  const sourcePath = runCommand(["chezmoi", "source-path", DEST_CONFIG]);
+  const sourcePath = normalize(await $`chezmoi source-path ${DEST_CONFIG}`.quiet().text()).trim();
   if (!sourcePath) {
     throw new Error(`could not resolve source path for ${DEST_CONFIG}`);
   }
 
-  const sourceRoot = findSourceRoot(sourcePath);
-  const localDataPath = join(sourceRoot, ".chezmoidata", "gemini.local.toml");
+  const sourceDir = normalize(await $`chezmoi execute-template ${"{{ .chezmoi.sourceDir }}"}`.quiet().text()).trim();
+  const localDataPath = join(sourceDir, ".chezmoidata", "gemini.local.toml");
   const liveConfigText = normalize(readFileSync(DEST_CONFIG, "utf-8"));
   const liveConfig = JSON.parse(liveConfigText);
 
@@ -121,7 +94,8 @@ try {
     console.log("antigravity-sync-config: updated Antigravity chezmoi sources");
   }
 } catch (error) {
-  const message = error instanceof Error ? error.message : String(error);
+  const stderr = (error as { stderr?: Uint8Array }).stderr;
+  const message = stderr ? normalize(Buffer.from(stderr).toString("utf-8")).trim() : error instanceof Error ? error.message : String(error);
   console.error(`antigravity-sync-config: ${message}`);
   process.exit(1);
 }

@@ -1,48 +1,43 @@
-model = "gpt-5.5"
-model_reasoning_effort = "medium"
-plan_mode_reasoning_effort = "high"
-
-approvals_reviewer = "auto_review"
-approval_policy = "on-request"
-
-[features]
-guardian_approval = true
-
-[plugins."gmail@openai-curated"]
-enabled = true
-
-[plugins."github@openai-curated"]
-enabled = true
-
-[notice]
-hide_rate_limit_model_nudge = true
-
-[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_create_pull_request]
-approval_mode = "approve"
-
-[apps.connector_692f171973888191b610a24ee6d1a512.tools.context7_resolve-library-id]
-approval_mode = "approve"
-
-[tui]
-status_line = ["model-with-reasoning", "current-dir", "context-used", "five-hour-limit", "weekly-limit"]
-status_line_use_colors = true
-
-[tui.model_availability_nux]
-"gpt-5.5" = 4
-
-{{- $codex := get . "codex" | default dict }}
-{{- $extractProjects := joinPath .chezmoi.sourceDir ".chezmoitemplates" "codex-projects.sh" }}
-{{- $liveConfig := joinPath .chezmoi.homeDir ".codex" "config.toml" }}
-{{- $localData := joinPath .chezmoi.sourceDir ".chezmoidata" "codex.local.toml" }}
-{{- $projectsToml := output $extractProjects $liveConfig $localData | trimSuffix "\n" }}
-{{- if $projectsToml }}
-
-{{ $projectsToml -}}
-{{- else }}
-{{- $trustedProjects := get $codex "trusted_projects" | default dict }}
-{{- range $project := keys $trustedProjects | sortAlpha }}
-[projects.{{ $project | quote }}]
-trust_level = {{ index $trustedProjects $project | quote }}
-
-{{- end }}
-{{- end }}
+{{- $liveConfig := joinPath .chezmoi.homeDir ".codex" "config.toml" -}}
+{{- $localData := joinPath .chezmoi.sourceDir ".chezmoidata" "codex.local.toml" -}}
+{{- $current := dict -}}
+{{- if stat $liveConfig -}}
+{{-   $current = include $liveConfig | fromToml -}}
+{{- else if stat $localData -}}
+{{-   $current = include $localData | fromToml -}}
+{{- end -}}
+{{- $shared := dict
+      "model" "gpt-5.5"
+      "model_reasoning_effort" "medium"
+      "plan_mode_reasoning_effort" "high"
+      "approvals_reviewer" "auto_review"
+      "approval_policy" "on-request"
+      "features" (dict
+        "guardian_approval" true
+      )
+      "plugins" (dict
+        "gmail@openai-curated" (dict "enabled" true)
+        "github@openai-curated" (dict "enabled" true)
+      )
+      "notice" (dict
+        "hide_rate_limit_model_nudge" true
+      )
+      "apps" (dict
+        "connector_76869538009648d5b282a4bb21c3d157" (dict
+          "tools" (dict
+            "github_create_pull_request" (dict "approval_mode" "approve")
+          )
+        )
+        "connector_692f171973888191b610a24ee6d1a512" (dict
+          "tools" (dict
+            "context7_resolve-library-id" (dict "approval_mode" "approve")
+          )
+        )
+      )
+      "tui" (dict
+        "status_line" (list "model-with-reasoning" "current-dir" "context-used" "five-hour-limit" "weekly-limit")
+        "status_line_use_colors" true
+        "model_availability_nux" (dict "gpt-5.5" 4)
+      )
+-}}
+{{ mergeOverwrite $current $shared | toToml }}

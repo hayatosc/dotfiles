@@ -1,8 +1,9 @@
 onboarding = false
 
 [theme]
-name = "tokyo-night"
+name = "dracula"
 
+auto_switch = false
 [ui]
 agent_panel_sort = "spaces"
 
@@ -17,3 +18,5 @@ type = "shell"
 command = "res=$(herdr tab create --focus --label 'lazygit') && pane=$(echo \"$res\" | jq -r '.result.root_pane.pane_id') && herdr pane run \"$pane\" lazygit"
 description = "open lazygit in a new tab"
 
+[ui.sound]
+enabled = false
