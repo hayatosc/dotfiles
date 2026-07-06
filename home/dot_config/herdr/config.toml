@@ -5,6 +5,7 @@ name = "dracula"
 
 auto_switch = false
 [ui]
+prompt_new_tab_name = false
 agent_panel_sort = "spaces"
 
 [[keys.command]]
@@ -14,9 +15,8 @@ command = "persiyanov.reviewr.toggle"
 
 [[keys.command]]
 key = "prefix+g"
-type = "shell"
-command = "res=$(herdr tab create --focus --label 'lazygit') && pane=$(echo \"$res\" | jq -r '.result.root_pane.pane_id') && herdr pane run \"$pane\" lazygit"
-description = "open lazygit in a new tab"
+type = "pane"
+command = "lazygit"
 
 [ui.sound]
 enabled = false

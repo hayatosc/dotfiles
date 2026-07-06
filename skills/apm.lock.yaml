@@ -354,6 +354,40 @@ dependencies:
     .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
   content_hash: sha256:b2bfe91d69ca99994c0566baede889e7d2b9bb8791c6b6106c5d387392f717f6
+- repo_url: cloudflare/security-audit-skill
+  name: security-audit-skill
+  host: github.com
+  resolved_commit: 8bac42001ddd90a4dcd8d5a5045199283a8eba75
+  version: unknown
+  virtual_path: skills/security-audit
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/security-audit
+  - .agents/skills/security-audit/AI-AND-LLM.md
+  - .agents/skills/security-audit/ATTACK-CLASSES.md
+  - .agents/skills/security-audit/CLIENT-SIDE.md
+  - .agents/skills/security-audit/HUNTING.md
+  - .agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md
+  - .agents/skills/security-audit/RECONNAISSANCE.md
+  - .agents/skills/security-audit/SKILL.md
+  - .agents/skills/security-audit/VALIDATION-AND-REPORTING.md
+  - .agents/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md
+  - .agents/skills/security-audit/report-schema.json
+  - .agents/skills/security-audit/validate-findings.cjs
+  deployed_file_hashes:
+    .agents/skills/security-audit/AI-AND-LLM.md: sha256:e3f1f732de2bdd469023a6ac591849a1285abe9b0d12de11fb7d9fd13f6c108e
+    .agents/skills/security-audit/ATTACK-CLASSES.md: sha256:f3fab5e6a113553f357e3586f488b9c7e047d48c2ee5443c77724ec1d1d5fdb0
+    .agents/skills/security-audit/CLIENT-SIDE.md: sha256:14a0bef183b95e62de4945b886fbfd677c53c68d77f8fdf4c7e2d42e9815f883
+    .agents/skills/security-audit/HUNTING.md: sha256:735caebbc3bfed31d2c9fbbf61f383060305774708e0d0ac38050a7eac7ac679
+    .agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md: sha256:8e1f8e8d9029941083fd5739fec493de7f2699a13fec23d0d0a9a3aae85f7e55
+    .agents/skills/security-audit/RECONNAISSANCE.md: sha256:89e2f899107335467716f06bc0bb175e87ccfb662dd9878b9a0f155d8005343f
+    .agents/skills/security-audit/SKILL.md: sha256:928503b4eb74321199fe2f8a8a38ea0f52b7902f49fe6bdfed118fa7a7cada1d
+    .agents/skills/security-audit/VALIDATION-AND-REPORTING.md: sha256:049dea0289689c66fd913aafa7d6d6df3d5b38d5d9d8e571825ba58f4308c2bd
+    .agents/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md: sha256:b8f9a0e29ad6685a3d96cf42a538be7012c4a18925a4871a475291aae497ed04
+    .agents/skills/security-audit/report-schema.json: sha256:05c24d50f3314b025dbfb28dfee550d9dec9775602d51fc5c891013a3ab8b273
+    .agents/skills/security-audit/validate-findings.cjs: sha256:36d445209703d838c320c6366935f6476823e96e6b76d99a64f3aaf9beb51f2e
+  content_hash: sha256:c692c7443030869df339078a05ccae5342852ba711b7018564385c6f4dbf50c3
 - repo_url: dominikmartn/nothing-design-skill
   name: nothing-design-skill
   host: github.com
