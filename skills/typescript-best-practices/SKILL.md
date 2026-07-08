@@ -16,7 +16,7 @@ Follow these steps in order:
 ### 1. Inspect repository constraints
 
 - Read the active `tsconfig` files, ESLint configuration, and package scripts before changing code.
-- Reuse the repository's existing toolchain. If a typecheck script exists, run that. If the repository follows `typescript-recommend-tools`, prefer `tsgo --noEmit` as the main check and keep `tsc --noEmit` as the compatibility fallback. Otherwise, use the repository's current `tsc --noEmit` path.
+- Reuse the repository's existing toolchain. If a typecheck script exists, run that. Otherwise, use `tsc --noEmit` (TypeScript 7 ships the native Go compiler as `tsc`).
 - For exported APIs, shared utilities, and non-trivial domain logic, sketch or confirm the types first. Prefer to model input, output, and invariants before writing implementation details.
 
 ### 2. Implement safely

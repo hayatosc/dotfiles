@@ -2,16 +2,15 @@
 
 Use this file when the user wants a quick recommendation without a long comparison.
 
-| Project shape | Primary tools | Secondary tools | Notes |
-| --- | --- | --- | --- |
-| Node / CLI | `tsgo`, `tsx`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Use `tsx` only when there is no tool-specific dev loop. Prefer `bun run` on Bun-native runtimes. |
-| Library / package | `tsgo`, `tsdown`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Keep `tsc` for compatibility checks and package edge cases. Prefer `tsdown --watch` for development. |
-| Web app / web API | `tsgo`, `Hono`, `Vite`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | `tsc` | Use `Hono` for the web framework and `Vite` when browser assets exist. Prefer `vite dev` over `tsx` in Vite-based projects. |
+| Project shape | Primary tools | Notes |
+| --- | --- | --- |
+| Node / CLI | `tsc`, `tsx`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | Use `tsx` only when there is no tool-specific dev loop. Prefer `bun run` on Bun-native runtimes. |
+| Library / package | `tsc`, `tsdown`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | Prefer `tsdown --watch` for development. |
+| Web app / web API | `tsc`, `Hono`, `Vite`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | Use `Hono` for the web framework and `Vite` when browser assets exist. Prefer `vite dev` over `tsx` in Vite-based projects. |
 
 ## Shared Defaults
 
-- Primary typecheck: `tsgo --noEmit`
-- Secondary compatibility check: `tsc --noEmit`
+- Typecheck: `tsc --noEmit` (TypeScript 7 ships the native Go compiler as `tsc`)
 - Type-aware lint: `oxlint --type-aware`
 - Package manager: align on `bun` or `pnpm` with the user
 - Module system: ESM-first

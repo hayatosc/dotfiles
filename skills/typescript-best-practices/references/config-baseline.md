@@ -1,6 +1,6 @@
 # Configuration Baseline
 
-Use this reference before changing `tsconfig`, `tsgo` or `tsc` workflows, `oxlint`, or `typescript-eslint` settings.
+Use this reference before changing `tsconfig`, `tsc` workflows, `oxlint`, or `typescript-eslint` settings.
 
 ## TypeScript Compiler Baseline
 
@@ -15,7 +15,7 @@ These settings catch different classes of mistakes. Apply them incrementally whe
 
 Assume an ESM-first codebase by default. Prefer consistent `import` and `export` syntax and avoid mixing CommonJS and ES modules in the same workflow unless the repository already does that intentionally.
 
-If the repository uses a `tsgo`-first workflow, keep `tsgo --noEmit` as the primary check and retain `tsc --noEmit` as a compatibility command. Do not silently remove `tsc` from mature repositories without checking their CI, editor, and package build expectations.
+TypeScript 7 ships the native Go-based compiler as `tsc` in the main `typescript` npm package. Use `tsc --noEmit` as the single typecheck command. There is no longer a separate `tsgo` command or a `typecheck:compat` / `tsc` fallback script.
 
 ## Oxc Baseline
 
@@ -78,7 +78,7 @@ In those cases, keep the code change local and describe the configuration gap se
 ## Verification
 
 - Prefer the repository's existing typecheck script.
-- If none exists, run the relevant `tsgo --noEmit` or `tsc --noEmit` command against the active `tsconfig`, following the repository's current toolchain.
+- If none exists, run `tsc --noEmit` against the active `tsconfig` (TypeScript 7 ships the native Go compiler as `tsc`).
 - If ESLint is type-aware, run it after the typecheck passes.
 - If the repository uses Oxlint type-aware linting, run `oxlint --type-aware` after compiler checks pass.
 - If compile-time type tests are part of the change, make sure they run under the same verification flow rather than creating a parallel unchecked path.

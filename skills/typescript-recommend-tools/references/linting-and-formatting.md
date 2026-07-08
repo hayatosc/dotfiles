@@ -127,8 +127,7 @@ Then add a separate type-aware check script in `package.json`:
 ```json
 {
   "scripts": {
-    "typecheck": "tsgo --noEmit",
-    "typecheck:compat": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "format": "oxfmt --write .",

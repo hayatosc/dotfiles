@@ -1,13 +1,13 @@
 ---
 name: typescript-recommend-tools
-description: Recommend a modern TypeScript toolchain. Use when choosing or updating a TypeScript stack for Node or CLI projects, libraries or packages, and web apps or APIs; selecting tsgo as the primary typechecker with tsc as compatibility fallback; recommending Hono, tsx, tsdown, Vite, Vitest, oxlint, oxlint-tsgolint, oxfmt, or deciding between bun and pnpm.
+description: Recommend a modern TypeScript toolchain. Use when choosing or updating a TypeScript stack for Node or CLI projects, libraries or packages, and web apps or APIs; recommending Hono, tsx, tsdown, Vite, Vitest, oxlint, oxlint-tsgolint, oxfmt, or deciding between bun and pnpm.
 ---
 
 # TypeScript Recommend Tools
 
 ## Overview
 
-Recommend a tsgo-first TypeScript toolchain for the current project shape. Start from a clear default stack, explain why it fits, and only branch when runtime, packaging, workspace, or repository constraints require it.
+Recommend a TypeScript 7 toolchain for the current project shape. Start from a clear default stack, explain why it fits, and only branch when runtime, packaging, workspace, or repository constraints require it.
 
 ## Workflow
 
@@ -26,8 +26,7 @@ Follow these steps in order:
 
 ### 3. Recommend the default stack
 
-- Use `tsgo` as the primary typecheck command.
-- Keep `tsc` as a compatibility and fallback check.
+- Use `tsc --noEmit` as the typecheck command (TypeScript 7 ships the native Go compiler as `tsc`).
 - Use `Vitest` for testing, `oxlint` for fast linting, `oxlint --type-aware` with `oxlint-tsgolint` for type-aware linting, and `oxfmt` for formatting.
 - Assume ESM-first unless the repository is intentionally CommonJS.
 
@@ -39,15 +38,14 @@ Follow these steps in order:
 
 ### 5. Explain fallbacks and exceptions
 
-- Keep `tsc` in the toolchain even when `tsgo` is primary.
+- If the repository depends on tools that use the TypeScript programmatic API (such as `typescript-eslint`, `ts-morph`, or custom transformers), note that TypeScript 7 does not yet expose a stable programmatic API. Those tools may need `@typescript/typescript6` as a peer dependency until TypeScript 7.1.
 - Use `Biome` only when the repository clearly benefits from a single integrated formatter and linter across multiple asset types.
 - Use `typescript-eslint` only when the repository already depends on the ESLint plugin ecosystem or Oxlint cannot provide the required rules.
 - For large existing frameworks or entrenched stacks, prefer incremental migration advice over framework replacement advice.
 
 ## Default Rules
 
-- Prefer `tsgo` for primary typechecking.
-- Keep `tsc` as `typecheck:compat` or other explicit compatibility checks.
+- Use `tsc --noEmit` for typechecking (TypeScript 7 ships the Go-based native compiler as `tsc`).
 - Prefer tool-owned dev loops such as `tsdown --watch` and `vite dev` before reaching for `tsx`.
 - Prefer `Hono` for web frameworks.
 - Assume ESM-first.

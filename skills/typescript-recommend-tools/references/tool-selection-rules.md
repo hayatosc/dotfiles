@@ -2,12 +2,12 @@
 
 Use this file when the user wants the reasoning behind a recommendation.
 
-## `tsgo` and `tsc`
+## TypeScript 7 and `tsc`
 
-- Recommend `tsgo` as the primary typechecker and fast feedback loop.
-- Keep `tsc` installed as a compatibility check and fallback command.
-- Prefer separate scripts such as `typecheck` and `typecheck:compat` instead of silently replacing `tsc`.
-- If a project exposes a gap between `tsgo` and the stable compiler, treat `tsc` as the source of compatibility truth and document the gap clearly.
+- TypeScript 7 ships the native Go-based compiler as `tsc` inside the main `typescript` npm package.
+- Use `tsc --noEmit` as the single typecheck command. There is no longer a separate `tsgo` command or `@typescript/native-preview` package to install.
+- Keep a `typecheck` script in `package.json`; no separate `typecheck:compat` script is needed.
+- If the repository depends on tools that consume the TypeScript programmatic API (such as `typescript-eslint`, `ts-morph`, or custom transformers), those tools may not yet support the TypeScript 7 API. Check each tool's compatibility and use `@typescript/typescript6` as a peer dependency where needed until TypeScript 7.1 stabilizes the programmatic API.
 
 ## `bun` and `pnpm`
 
@@ -20,7 +20,7 @@ Use this file when the user wants the reasoning behind a recommendation.
 
 - Recommend `oxlint` as the default lint command for speed.
 - Recommend `oxlint --type-aware` when the repository wants type-aware linting. Assume `oxlint-tsgolint` is installed for that path.
-- Keep `tsgo --noEmit` as the primary typecheck even when type-aware lint is enabled.
+- Keep `tsc --noEmit` as the primary typecheck even when type-aware lint is enabled.
 - Treat `oxlint --type-aware --type-check` as an opt-in combined path, not the default flow.
 - Treat `oxfmt` as the default formatter when the repository is already aligned with the Oxc toolchain.
 - Install `oxfmt` explicitly as a dev dependency. Do not assume it arrives transitively with `oxlint`.

@@ -11,7 +11,7 @@ If the environment standardizes on `ni`, use it as the default command surface.
 ### `ni`
 
 ```bash
-ni -D @typescript/native-preview typescript tsx vitest oxlint oxlint-tsgolint oxfmt
+ni -D typescript tsx vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 `ni` will route to the repository's chosen package manager. If the user explicitly wants the underlying command, use one of the following:
@@ -19,13 +19,13 @@ ni -D @typescript/native-preview typescript tsx vitest oxlint oxlint-tsgolint ox
 ### `bun`
 
 ```bash
-bun add -d @typescript/native-preview typescript tsx vitest oxlint oxlint-tsgolint oxfmt
+bun add -d typescript tsx vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 ### `pnpm`
 
 ```bash
-pnpm add -D @typescript/native-preview typescript tsx vitest oxlint oxlint-tsgolint oxfmt
+pnpm add -D typescript tsx vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 ## Recommended scripts
@@ -35,8 +35,7 @@ pnpm add -D @typescript/native-preview typescript tsx vitest oxlint oxlint-tsgol
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts",
-    "typecheck": "tsgo --noEmit",
-    "typecheck:compat": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "lint": "oxlint .",
     "lint:types": "oxlint --type-aware .",
     "format": "oxfmt .",
@@ -63,8 +62,7 @@ If the user is intentionally standardizing on the Bun runtime, replace the `tsx`
 
 ## Verification order
 
-1. `tsgo --noEmit`
-2. `tsc --noEmit`
-3. `oxlint .`
-4. `oxlint --type-aware .`
-5. `vitest`
+1. `tsc --noEmit`
+2. `oxlint .`
+3. `oxlint --type-aware .`
+4. `vitest`
