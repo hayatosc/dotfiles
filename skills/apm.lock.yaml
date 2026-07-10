@@ -1,12 +1,12 @@
 lockfile_version: '1'
-generated_at: '2026-07-08T19:33:16.957254+00:00'
+generated_at: '2026-07-10T04:53:54.815987+00:00'
 apm_version: 0.23.0
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
   name: modern-web-guidance
   host: github.com
   resolved_commit: 13b2c44d266ce7a317cdc424da050fab1cef845c
-  version: 1.0.0
+  version: unknown
   virtual_path: skills/modern-web-guidance
   is_virtual: true
   package_type: claude_skill
@@ -453,10 +453,10 @@ dependencies:
     .agents/skills/stop-ai-slop-jp/references/structures.md: sha256:af7447458633e522394a153295ac2a5ef8c14c6e82befae212a0650058e52969
   content_hash: sha256:2e81e3a96cd7e5eaaf6fae3a597a76c8538c027a3ec86b8643cb454dc231f8ff
 - repo_url: moonbitlang/skills
-  name: moonbit-agent-guide
+  name: skills
   host: github.com
   resolved_commit: 5caf81c57cb2ae45654b8f99c5c8f68c812beb91
-  version: 1.0.0
+  version: unknown
   virtual_path: skills/moonbit-agent-guide
   is_virtual: true
   package_type: claude_skill
@@ -486,7 +486,7 @@ dependencies:
   name: herdr
   host: github.com
   resolved_commit: b708f85e7d17d8109bef70ea3f595cea0ae40c46
-  version: 1.0.0
+  version: unknown
   package_type: claude_skill
   deployed_files:
   - .agents/skills/herdr
@@ -4128,7 +4128,7 @@ dependencies:
   name: acpx
   host: github.com
   resolved_commit: 6a24a546d2349cbe71ed032d52d07cab611e320c
-  version: 1.0.0
+  version: unknown
   virtual_path: skills/acpx
   is_virtual: true
   package_type: claude_skill
@@ -4139,10 +4139,10 @@ dependencies:
     .agents/skills/acpx/SKILL.md: sha256:7ca752f8a015a0841df1dccabe983c348bafa8ca1ed8b632c7a81356184d6e4c
   content_hash: sha256:161686918fb684f31091400b07c0e909e139407a9acdc6cf2cc5106f4b3d339d
 - repo_url: sveltejs/ai-tools
-  name: svelte-core-bestpractices
+  name: ai-tools
   host: github.com
   resolved_commit: 8a7763868a3639413d5cad0ac89790007b7d96ad
-  version: 1.0.0
+  version: unknown
   virtual_path: tools/skills/svelte-core-bestpractices
   is_virtual: true
   package_type: claude_skill
@@ -4174,7 +4174,7 @@ dependencies:
   name: agent-browser
   host: github.com
   resolved_commit: afae698a51242166170b6fe4809dd57fe9f75798
-  version: 1.0.0
+  version: unknown
   virtual_path: skills/agent-browser
   is_virtual: true
   package_type: claude_skill
@@ -4199,10 +4199,10 @@ dependencies:
     .agents/skills/web-design-guidelines/SKILL.md: sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f
   content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
 - repo_url: vercel-labs/skills
-  name: find-skills
+  name: skills
   host: github.com
   resolved_commit: 4ce6d48ac44c8b637db87b2102fea3baca719df1
-  version: 1.0.0
+  version: unknown
   virtual_path: skills/find-skills
   is_virtual: true
   package_type: claude_skill
@@ -4270,3 +4270,95 @@ dependencies:
     .agents/skills/vue-best-practices/references/state-management.md: sha256:9e98a1c6d9009c0c8ef7228b6b3bcf10d30be6b713ffcef448ab7db3b419a851
     .agents/skills/vue-best-practices/references/updated-hook-performance.md: sha256:ded08ce93f9b23082538846f84e8d159d84af757c27b2c6b43a9283df803a32b
   content_hash: sha256:90980085ec288dd0a3326fc09af639a5e88cff74c15c77db84398fd42797a770
+local_deployed_files:
+- .agents/skills/article-review
+- .agents/skills/article-review/README.md
+- .agents/skills/article-review/SKILL.md
+- .agents/skills/article-review/agents/openai.yaml
+- .agents/skills/article-review/references/report-template.md
+- .agents/skills/article-review/references/review-rubric.md
+- .agents/skills/askmeplan
+- .agents/skills/askmeplan/SKILL.md
+- .agents/skills/ast-grep
+- .agents/skills/ast-grep/SKILL.md
+- .agents/skills/ast-grep/references/command-cookbook.md
+- .agents/skills/ast-grep/references/rule-authoring.md
+- .agents/skills/before-commit
+- .agents/skills/before-commit/SKILL.md
+- .agents/skills/code-search
+- .agents/skills/code-search/SKILL.md
+- .agents/skills/code-search/references/funnel-playbook.md
+- .agents/skills/coding-style
+- .agents/skills/coding-style/SKILL.md
+- .agents/skills/empirical-prompt-tuning
+- .agents/skills/empirical-prompt-tuning/SKILL.md
+- .agents/skills/golang-best-practices
+- .agents/skills/golang-best-practices/SKILL.md
+- .agents/skills/golang-best-practices/dist/golang-best-practices.skill
+- .agents/skills/golang-best-practices/references/code-style.md
+- .agents/skills/golang-best-practices/references/concurrency.md
+- .agents/skills/golang-best-practices/references/error-handling.md
+- .agents/skills/golang-best-practices/references/modernize.md
+- .agents/skills/golang-best-practices/references/performance.md
+- .agents/skills/golang-best-practices/references/project-layout.md
+- .agents/skills/golang-best-practices/references/security.md
+- .agents/skills/golang-best-practices/references/testing.md
+- .agents/skills/japanese-tech-writing
+- .agents/skills/japanese-tech-writing/SKILL.md
+- .agents/skills/refactoring-code
+- .agents/skills/refactoring-code/SKILL.md
+- .agents/skills/refactoring-code/evals/evals.json
+- .agents/skills/refactoring-code/references/examples.md
+- .agents/skills/refactoring-code/references/legacy-safety-net.md
+- .agents/skills/refactoring-code/references/refactor-playbook.md
+- .agents/skills/typescript-best-practices
+- .agents/skills/typescript-best-practices/SKILL.md
+- .agents/skills/typescript-best-practices/references/config-baseline.md
+- .agents/skills/typescript-best-practices/references/type-safety-patterns.md
+- .agents/skills/typescript-recommend-tools
+- .agents/skills/typescript-recommend-tools/SKILL.md
+- .agents/skills/typescript-recommend-tools/references/default-stacks.md
+- .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md
+- .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md
+- .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md
+- .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md
+local_deployed_file_hashes:
+  .agents/skills/article-review/README.md: sha256:fc0221ba8a1b22e90e4ec415f0e4f5d97375dac847e9f6a455c74b914a869c90
+  .agents/skills/article-review/SKILL.md: sha256:a86cc756a084ce7c6b520e9b65446cb05b93f3502ab5ae5563f19ecb70d2fee9
+  .agents/skills/article-review/agents/openai.yaml: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
+  .agents/skills/article-review/references/report-template.md: sha256:60c5656b28571ac85c746d0450fa05bcde3fc3d9d4c0117b61aed93f2affd97e
+  .agents/skills/article-review/references/review-rubric.md: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
+  .agents/skills/askmeplan/SKILL.md: sha256:387f5f286c93ee4e605356a4581cd3e421310f5f3d751bae92f54b0c9d093e85
+  .agents/skills/ast-grep/SKILL.md: sha256:f92bc21670afbc85a9914807f6574986371c75f56ead4277bed17a40aef883ed
+  .agents/skills/ast-grep/references/command-cookbook.md: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
+  .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
+  .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
+  .agents/skills/code-search/SKILL.md: sha256:daa06d50c3611eb1aed8fb01c31f75447c52225304b386920cb715d5ae5f81b2
+  .agents/skills/code-search/references/funnel-playbook.md: sha256:470109bbc4c9ba3a287dbf544e302912f07bc99a24534efadf231cd2015308fa
+  .agents/skills/coding-style/SKILL.md: sha256:1df32e9569d36e048b8ae0bff6425a064e4bbf5113727ec50574b8b7116c453c
+  .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:21cb213c1d2c02794c94e6fd0ad20e779e6c767850f292e6475b60cb3500c82f
+  .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
+  .agents/skills/golang-best-practices/dist/golang-best-practices.skill: sha256:81c910efff41c82348eb1b3aef17f392e3744225f134c9519df010cba17e59d7
+  .agents/skills/golang-best-practices/references/code-style.md: sha256:46fb9140517d8bd1cc73042e4484c5a01f9ef2c867f62f425c58627b0ecdf99c
+  .agents/skills/golang-best-practices/references/concurrency.md: sha256:a29eb23cb630e5dbbd5be1e6e55b8bad8632f823caf6a442b3f5c506c2ce8d41
+  .agents/skills/golang-best-practices/references/error-handling.md: sha256:81a6517cb07c7968b1e2a827d63939af0b976cb2eecd726ec1d5c8bfb2e808c5
+  .agents/skills/golang-best-practices/references/modernize.md: sha256:5bbc66567f58076b836fdf7d5a27935508139d51d983ff75d930d4e3d5294425
+  .agents/skills/golang-best-practices/references/performance.md: sha256:4f8845b8c67eb99a8c2324f5429121271c75abd79e102fdd30dda4834918db60
+  .agents/skills/golang-best-practices/references/project-layout.md: sha256:376101b3f098290daaabaf235e24a9cf41f4afbe5f42dc68df8cf1e2d6e44584
+  .agents/skills/golang-best-practices/references/security.md: sha256:691e69477a8122037251b7a9b2f09b983a9e358aeab932841a49659facfa9f66
+  .agents/skills/golang-best-practices/references/testing.md: sha256:b9cd30a2ea2d760b48b8ae929d7c8e75131814505fbee6fc049d364706e73b18
+  .agents/skills/japanese-tech-writing/SKILL.md: sha256:1f2ecac39b4dd1aad33cb6d09ccf10d66cfe35e73e6541c02ee4399004531b15
+  .agents/skills/refactoring-code/SKILL.md: sha256:ebc352404701d2289496f04fe361dfbb8a1253ce9c6921f49564a9b883c9529a
+  .agents/skills/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
+  .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
+  .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:c6e7bec0c3b67ea8235430c748ea72f501df0ee1cf61028e93e753ec850248f6
+  .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
+  .agents/skills/typescript-best-practices/SKILL.md: sha256:34d0c5317e8e5a350fd0c1f850461f28c5f1d57fbb8d094c44274156cdb7179b
+  .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
+  .agents/skills/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
+  .agents/skills/typescript-recommend-tools/SKILL.md: sha256:e3d8dbd53a6334aba25f29a90887d2b167466bde8fa518022124a6abe680c736
+  .agents/skills/typescript-recommend-tools/references/default-stacks.md: sha256:6496414b6b4f302f18f01b207123386a69c81f4c9b876b1d1aa796f6752b9a8e
+  .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md: sha256:3e98227275ea67495c289e1b873f376490c8bf636d4a7e42556b116627473d9f
+  .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
+  .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:166fd16e619259499bf8af9ead9442f11a63bead32375e9108bbf0f8e652a86c
+  .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md: sha256:b29ff2099c526d1d88e3e5ca2ba55ee95daacf0b911a26a5332d2924c70359e4
