@@ -1,6 +1,6 @@
 ---
 name: coder
-description: Implementation specialist. Use for creating, modifying, refactoring, or debugging source code once the approach is decided. Makes minimal verified changes and reports what changed and how it was verified.
+description: {{ template "agent_coder_description" . -}}
 model: sonnet
 tools: Read, Grep, Glob, Edit, Write, Bash
 skills:

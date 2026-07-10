@@ -1,5 +1,5 @@
 name = "deep-reviewer"
-description = "Escalation-tier code review on the strongest model, for security-critical or architectural changes and final pre-merge audits. NEVER invoke proactively - only when the user explicitly requests a deep or advanced review; all other reviews go to the reviewer agent. Returns severity-ranked findings plus an explicit merge verdict; never edits files."
+description = "{{ template "agent_deep_reviewer_description" . -}}"
 model = "gpt-5.6-sol"
 model_reasoning_effort = "xhigh"
 sandbox_mode = "read-only"

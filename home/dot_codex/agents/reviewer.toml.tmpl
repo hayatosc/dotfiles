@@ -1,5 +1,5 @@
 name = "reviewer"
-description = "Default code review specialist for all changes. Use proactively after code changes and before commits to catch logic bugs, security vulnerabilities, and standards violations. Returns findings ranked by severity with path:line references and concrete failure scenarios; never edits files."
+description = "{{ template "agent_reviewer_description" . -}}"
 model = "gpt-5.6-terra"
 model_reasoning_effort = "high"
 sandbox_mode = "read-only"
