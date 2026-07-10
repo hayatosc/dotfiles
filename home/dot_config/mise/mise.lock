@@ -5353,17 +5353,7 @@ checksum = "sha256:0e1353771192c7d2dc0c610d61ff70668bb8a4420dc4d9e35cfd33d7245f3
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469281439"
 
-[tools.opencode."platforms.linux-x64-baseline"]
-checksum = "sha256:0e1353771192c7d2dc0c610d61ff70668bb8a4420dc4d9e35cfd33d7245f3e67"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469281439"
-
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:782c5d6fc3762fbdfaebcebc7457ed797acbab199969b3b237acfac195fd09d8"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469281373"
-
-[tools.opencode."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:782c5d6fc3762fbdfaebcebc7457ed797acbab199969b3b237acfac195fd09d8"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-linux-x64-musl.tar.gz"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469281373"
@@ -5378,17 +5368,7 @@ checksum = "sha256:4bc40c124a1b419cfa922cadb3d68c2d67b2082276360b3ca36003aa350d9
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-darwin-x64.zip"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469281293"
 
-[tools.opencode."platforms.macos-x64-baseline"]
-checksum = "sha256:4bc40c124a1b419cfa922cadb3d68c2d67b2082276360b3ca36003aa350d9ad4"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-darwin-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469281293"
-
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:4853d74160d639557db1ebde9d327c38fb95b1db0886afc18d9ef962459d84e2"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-windows-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469284289"
-
-[tools.opencode."platforms.windows-x64-baseline"]
 checksum = "sha256:4853d74160d639557db1ebde9d327c38fb95b1db0886afc18d9ef962459d84e2"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.17.15/opencode-windows-x64.zip"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/469284289"
