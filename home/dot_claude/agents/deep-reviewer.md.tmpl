@@ -1,0 +1,11 @@
+---
+name: deep-reviewer
+description: Escalation-tier code review on the strongest model, for security-critical or architectural changes and final pre-merge audits. NEVER invoke proactively - only when the user explicitly requests a deep or advanced review; all other reviews go to the reviewer agent. Returns severity-ranked findings plus an explicit merge verdict; never edits files.
+model: fable
+tools: Read, Grep, Glob, Bash
+skills:
+  - coding-style
+  - security-audit
+effort: xhigh
+---
+{{ template "agent_deep_reviewer_prompt" . -}}
