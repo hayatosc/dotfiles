@@ -1,0 +1,10 @@
+---
+name: reviewer
+description: Default code review specialist for all changes. Use proactively after code changes and before commits to catch logic bugs, security vulnerabilities, and standards violations. Returns findings ranked by severity with path:line references and concrete failure scenarios; never edits files.
+model: sonnet
+tools: Read, Grep, Glob, Bash
+skills:
+  - coding-style
+effort: high
+---
+{{ template "agent_reviewer_prompt" . -}}

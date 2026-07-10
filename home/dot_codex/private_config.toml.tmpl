@@ -7,11 +7,14 @@
 {{-   $current = include $localData | fromToml -}}
 {{- end -}}
 {{- $shared := dict
-      "model" "gpt-5.5"
-      "model_reasoning_effort" "medium"
+      "model" "gpt-5.6-sol"
+      "model_reasoning_effort" "high"
       "plan_mode_reasoning_effort" "high"
       "approvals_reviewer" "auto_review"
       "approval_policy" "on-request"
+      "agents" (dict
+        "max_threads" 4
+      )
       "features" (dict
         "guardian_approval" true
       )
