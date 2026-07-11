@@ -8,7 +8,7 @@
 {{- end -}}
 {{- $shared := dict
       "model" "gpt-5.6-sol"
-      "model_reasoning_effort" "high"
+      "model_reasoning_effort" "medium"
       "plan_mode_reasoning_effort" "high"
       "approvals_reviewer" "auto_review"
       "approval_policy" "on-request"
@@ -17,6 +17,12 @@
       )
       "features" (dict
         "guardian_approval" true
+        "multi_agent_v2" (dict
+          "enabled" true
+          "min_wait_timeout_ms" 300000
+          "default_wait_timeout_ms" 300000
+          "max_wait_timeout_ms" 3600000
+        )
       )
       "plugins" (dict
         "gmail@openai-curated" (dict "enabled" true)
@@ -29,11 +35,6 @@
         "connector_76869538009648d5b282a4bb21c3d157" (dict
           "tools" (dict
             "github_create_pull_request" (dict "approval_mode" "approve")
-          )
-        )
-        "connector_692f171973888191b610a24ee6d1a512" (dict
-          "tools" (dict
-            "context7_resolve-library-id" (dict "approval_mode" "approve")
           )
         )
       )
