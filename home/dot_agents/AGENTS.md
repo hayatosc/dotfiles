@@ -50,3 +50,12 @@ This file lists mandatory rules for all agents working in this repository.
 
 ## Git
 - Follow Conventional Commits for all git commit messages.
+
+## Multi-agent / Subagent delegation
+
+When delegating work to subagents, always pass the explicit role argument that matches the agent configuration file's `name`. Do not rely on task names, nicknames, or prefixes to select an agent configuration.
+
+- In **Codex**, use `agent_role` (e.g., `agent_role = "coder"`).
+- In **Claude Code**, use `subagent_type` (e.g., `subagent_type = "reviewer"`).
+
+Available custom agent roles: `coder`, `reviewer`, `explorer`, `deep-reviewer`.
