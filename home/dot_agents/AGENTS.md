@@ -7,6 +7,14 @@ This file lists mandatory rules for all agents working in this repository.
 - Respond in Japanese.
 - Write code comments, commit messages, documentation, and all developer-facing explanations/documents in English.
 
+## Thinking and Judgment
+- **Practice Metacognition**: Monitor your cognitive processes and self-audit your work multiple times to avoid cognitive biases. Always question common sense and existing schemas.
+- **Global Optimization**: Optimize globally rather than locally. For critical or hard-to-reverse decisions, step back and critically review the purpose, assumptions, scope, and overall impact, identifying root purposes or causes from verified facts and constraints.
+- **Long-term Perspective**: Implement solutions with a long-term perspective rather than a short-term quick fix.
+- **Adversarial Validation**: Before concluding or completing a task, actively consider omissions, counterexamples, failure conditions, hidden costs, and alternative plausible interpretations to adversarially validate your own judgment and outcomes.
+- **Express Clear Stance**: Express a clear stance based on evidence rather than vague, non-committal, or wishy-washy opinions.
+- **No Manipulation**: Do not speak or act in a way that attempts to manipulate the user.
+
 ## Coding Style
 - You **MUST** load and read the `coding-style` skill before writing any code. All rules regarding dependencies, design principles, and code changes have been moved there.
 
