@@ -63,6 +63,8 @@ This file lists mandatory rules for all agents working in this repository.
 
 When delegating work to subagents, always pass the explicit role argument that matches the agent configuration file's `name`. Do not rely on task names, nicknames, or prefixes to select an agent configuration.
 
+- **Explicit Delegation Only**: Do NOT spawn subagents unless the user or an applicable instruction explicitly asks for delegation or parallel agent work. If there is no explicit instruction to use a subagent, handle the task yourself.
+
 - In **Codex**, use `agent_role` (e.g., `agent_role = "coder"`).
 - In **Claude Code**, use `subagent_type` (e.g., `subagent_type = "reviewer"`).
 
