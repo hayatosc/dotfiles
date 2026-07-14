@@ -35,6 +35,6 @@ This repository contains the **dotfiles**, managed using **chezmoi**.
 > To update any configuration, you **MUST**:
 > 1. Edit the source template or file inside the repository's `home/` directory (e.g., `~/.local/share/chezmoi/home/...`).
 > 2. Or, if you want to edit agent skills, go `skills` directory.
-> 3. Run the command `chezmoi apply` to apply the changes to the user's home directory.
+> 3. Run the command `chezmoi apply --force` to apply the changes to the user's home directory.
 >
 > Failing to do so will result in your changes being overwritten the next time `chezmoi apply` is run.
