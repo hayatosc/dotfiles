@@ -1,29 +1,33 @@
 ---
 name: subagent-orchestration
-description: Guide and rules for orchestrating and delegating tasks to subagents. Use this skill when you need to spawn, configure, manage, or communicate with subagents (e.g. coder, reviewer, explorer, deep-reviewer) via `invoke_subagent` and `send_message`, or when coordinating multi-agent workflows.
+description: Guide and rules for orchestrating and delegating tasks to subagents. Use this skill when you need to spawn, configure, manage, or communicate with subagents (e.g. coder, reviewer, explorer, deep-reviewer) via `invoke_subagent` and `send_message`, or when coordinating multi-agent workflows. Also trigger when the user says things like "do these in parallel", "run this in the background", "have another agent handle X", "split this across agents", or any request implying concurrent or delegated execution — even if they don't explicitly say "subagent".
 ---
 
 # Subagent Orchestration
 
-This skill defines the rules and protocols for spawning, managing, and delegating tasks to subagents.
+## When to delegate (and when not to)
 
-## Rule of Engagement
-When delegating work to subagents, follow these instructions strictly:
+Spawn a subagent only when the user or an applicable instruction explicitly asks for delegation or parallel agent work. Doing it silently on your own initiative surprises the user and can burn tokens and time on a task you could have handled directly. When in doubt, handle the task yourself.
 
-- **Explicit Delegation Only**: Do NOT spawn subagents unless the user or an applicable instruction explicitly asks for delegation or parallel agent work. If there is no explicit instruction to use a subagent, handle the task yourself.
-- **Explicit Role Arguments**: Always pass the explicit role argument that matches the agent configuration file's `name`. Do not rely on task names, nicknames, or prefixes to select an agent configuration.
+## Spawning a subagent
 
-### Harness-Specific Parameters
-- In **Codex**, use the `agent_role` parameter (e.g., `agent_role = "coder"`).
-- In **Claude Code**, use the `subagent_type` parameter (e.g., `subagent_type = "reviewer"`).
+Use `invoke_subagent` with a **clear, self-contained prompt** that includes all necessary context — the subagent won't have access to your conversation history. Specify the role explicitly using the name from the agent configuration file; don't rely on nicknames or task names.
 
-### Available Custom Agent Roles
-- `coder`
-- `reviewer`
-- `explorer`
-- `deep-reviewer`
+### Harness-specific parameters
 
-## Workflow and Communication
-- Use `invoke_subagent` to spawn a subagent with a clear, actionable prompt containing all necessary context and constraints.
-- Communicate with active subagents using `send_message` with their conversation ID.
-- Avoid polling command status or inbox in a loop; the system automatically notifies you when a subagent finishes or sends a message. Call no more tools to yield execution while waiting.
+| Harness | Parameter | Example |
+|---|---|---|
+| **Antigravity** | `TypeName` | `TypeName: "self"` or `TypeName: "research"` |
+| **Codex** | `agent_role` | `agent_role = "coder"` |
+| **Claude Code** | `subagent_type` | `subagent_type = "reviewer"` |
+
+### Available custom agent roles
+`coder` · `reviewer` · `explorer` · `deep-reviewer`
+
+## Communicating with running subagents
+
+Use `send_message` with the subagent's conversation ID (returned by `invoke_subagent`) to send follow-up instructions or context.
+
+## Waiting for results
+
+After launching a subagent, **stop calling tools** — the system automatically wakes you when the subagent sends a message or completes. Polling with repeated `command_status` or inbox checks wastes tokens and doesn't speed anything up.
