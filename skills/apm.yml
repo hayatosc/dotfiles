@@ -1,9 +1,9 @@
 name: dotfile-skills
 version: 0.1.0
-description: hayato's agent skills managed via Microsoft APM (Agent Package Manager).
-  Self-authored skills live under .apm/skills/; external skills are pulled as dependencies.
-  `apm install` deploys to ./.agents/skills/, which is a symlink to ~/.agents/skills/
-  created by chezmoi's run_onchange_after_apm-install.sh.
+description: agent skills managed via Microsoft APM (Agent Package Manager).
+  Self-authored skills live in directories directly under skills/; external skills are
+  pulled as dependencies. chezmoi's run_apm-install.sh stages them into a temporary
+  .apm/skills/, runs `apm install`, and syncs the result to ~/.agents/skills/.
 targets:
 - agent-skills
 dependencies:

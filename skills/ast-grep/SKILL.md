@@ -74,6 +74,13 @@ Perform one-off changes using `run --rewrite`.
   ```bash
   ast-grep run -p 'foo($A)' -r 'bar($A)' -l TypeScript src --update-all
   ```
+
+### 2. Verify After Apply
+`--rewrite` only replaces matched nodes — it never adds imports or definitions for identifiers introduced by the replacement. Before reporting success:
+1. If the replacement introduces an identifier (e.g. `safeParse`), confirm every modified file imports or defines it; add missing imports yourself.
+2. Re-run the original search pattern to confirm zero remaining matches.
+3. Run the repository's typecheck/build (or at minimum a syntax check) on the modified files.
+
 ## Rule / Lint Workflow
 
 1. Initialize project/rule/test scaffolding with `ast-grep new ...`.

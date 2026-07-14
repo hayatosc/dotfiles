@@ -32,6 +32,8 @@ Co-create plans through Socratic dialogue. The plan emerges *through* conversati
 
 ### Phase 2 — Ask one question at a time
 
+**Gate: no first question before actual exploration.** Phase 1 step 1 means real tool calls, not intent. Alongside the first question, list the files you checked and the decisions they already resolved — if you checked nothing, go back to Phase 1.
+
 Use the dedicated user-question tool when available. Fall back to text output only if no such tool exists.
 
 Known tool names by platform:

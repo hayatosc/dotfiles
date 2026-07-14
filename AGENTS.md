@@ -19,7 +19,7 @@ This repository contains the **dotfiles**, managed using **chezmoi**.
   - `home/.chezmoidata/` -> Chezmoi data variables (e.g. `codex.local.toml`)
   - `home/.chezmoiscripts/` -> One-time or run-on-change scripts executed by chezmoi (e.g., package installation, symlinking)
   - `home/.chezmoitemplates/` -> Templates reused across chezmoi configurations
-- `skills/`: Microsoft APM project root for agent skills (not deployed by chezmoi). `apm.yml` declares external skill dependencies; `.apm/skills/` holds self-authored skills. `chezmoi apply` triggers `apm install` via `home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl`, which symlinks `skills/.agents` -> `~/.agents` so deploys land in `~/.agents/skills/` (cross-harness via existing symlinks).
+- `skills/`: Microsoft APM project root for agent skills (not deployed by chezmoi). `apm.yml` declares external skill dependencies; self-authored skills live in directories directly under `skills/`. `chezmoi apply` triggers `apm install` via `home/.chezmoiscripts/run_apm-install.sh.tmpl`, which stages self-authored skills into a temporary `skills/.apm/skills/`, runs `apm install --target agent-skills`, and syncs the result to `~/.agents/skills/` (cross-harness via existing symlinks).
 - `docs/`: Repository documentation (e.g., `docs/codex.md` for Codex configuration).
 - `scripts/`: Custom scripts used within the repository.
 - `pyproject.toml`, `uv.lock`: Python environment definition managed by `uv`.

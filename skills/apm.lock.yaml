@@ -4330,15 +4330,15 @@ local_deployed_file_hashes:
   .agents/skills/article-review/agents/openai.yaml: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
   .agents/skills/article-review/references/report-template.md: sha256:60c5656b28571ac85c746d0450fa05bcde3fc3d9d4c0117b61aed93f2affd97e
   .agents/skills/article-review/references/review-rubric.md: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
-  .agents/skills/askmeplan/SKILL.md: sha256:387f5f286c93ee4e605356a4581cd3e421310f5f3d751bae92f54b0c9d093e85
-  .agents/skills/ast-grep/SKILL.md: sha256:f92bc21670afbc85a9914807f6574986371c75f56ead4277bed17a40aef883ed
+  .agents/skills/askmeplan/SKILL.md: sha256:c17d88581e637adda8b768f8d57799e99071fda3b1979602df117071220587ab
+  .agents/skills/ast-grep/SKILL.md: sha256:46cb345c660e6275384e99529c053704aeb51bf94d45e51a9846fe897f707d7f
   .agents/skills/ast-grep/references/command-cookbook.md: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
   .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
   .agents/skills/code-search/SKILL.md: sha256:daa06d50c3611eb1aed8fb01c31f75447c52225304b386920cb715d5ae5f81b2
   .agents/skills/code-search/references/funnel-playbook.md: sha256:470109bbc4c9ba3a287dbf544e302912f07bc99a24534efadf231cd2015308fa
-  .agents/skills/coding-style/SKILL.md: sha256:1df32e9569d36e048b8ae0bff6425a064e4bbf5113727ec50574b8b7116c453c
-  .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:21cb213c1d2c02794c94e6fd0ad20e779e6c767850f292e6475b60cb3500c82f
+  .agents/skills/coding-style/SKILL.md: sha256:dcebc9bbb93860e454ad00f8fa13094dd057832c242035494fe49ae6b4ff419d
+  .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
   .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
   .agents/skills/golang-best-practices/dist/golang-best-practices.skill: sha256:81c910efff41c82348eb1b3aef17f392e3744225f134c9519df010cba17e59d7
   .agents/skills/golang-best-practices/references/code-style.md: sha256:46fb9140517d8bd1cc73042e4484c5a01f9ef2c867f62f425c58627b0ecdf99c
@@ -4355,7 +4355,7 @@ local_deployed_file_hashes:
   .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
   .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:c6e7bec0c3b67ea8235430c748ea72f501df0ee1cf61028e93e753ec850248f6
   .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
-  .agents/skills/subagent-orchestration/SKILL.md: sha256:d54f5c72109414bb396f6195b7fa442a567f560121d971a13a0964509538f324
+  .agents/skills/subagent-orchestration/SKILL.md: sha256:1b38f16ad547e6dff6c917a3ff9cd92a3cba00773c9309e09afb31b222f993ad
   .agents/skills/typescript-best-practices/SKILL.md: sha256:34d0c5317e8e5a350fd0c1f850461f28c5f1d57fbb8d094c44274156cdb7179b
   .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
   .agents/skills/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99

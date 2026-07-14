@@ -22,7 +22,7 @@ This skill sets language-agnostic policy. Language-specific skills (e.g., typesc
 
 Before writing any code, stop at the first rung that holds:
 
-1. **Does this need to exist at all?** — Speculative need = skip it, say so in one line. (YAGNI)
+1. **Does this need to exist at all?** — Speculative need = skip it, say so in one line. (YAGNI) This holds even when the user explicitly asks for speculative infrastructure "for later": ship the concrete part, and push back on the speculative part in one line instead of building a minimal version of it.
 2. **Stdlib does it?** — Use it.
 3. **Native platform feature covers it?** — `<input type="date">` over a picker lib, CSS over JS, DB constraint over app code.
 4. **Already-installed dependency solves it?** — Use it. Never add a new one for what a few lines can do.
