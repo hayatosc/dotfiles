@@ -1,27 +1,29 @@
 name: dotfile-skills
 version: 0.1.0
-description: agent skills managed via Microsoft APM (Agent Package Manager).
-  Self-authored skills live in directories directly under skills/; external skills are
-  pulled as dependencies. chezmoi's run_apm-install.sh stages them into a temporary
-  .apm/skills/, runs `apm install`, and syncs the result to ~/.agents/skills/.
+description: agent skills managed via Microsoft APM (Agent Package Manager). 
+  Self-authored skills live in directories directly under skills/; external 
+  skills are pulled as dependencies. chezmoi's run_apm-install.sh stages them 
+  into a temporary .apm/skills/, runs `apm install`, and syncs the result to 
+  ~/.agents/skills/.
 targets:
-- agent-skills
+  - agent-skills
 dependencies:
   apm:
-  - anthropics/skills/skills/frontend-design
-  - anthropics/skills/skills/skill-creator
-  - vercel-labs/agent-skills/skills/web-design-guidelines
-  - vercel-labs/agent-browser/skills/agent-browser
-  - GoogleChrome/modern-web-guidance/skills/modern-web-guidance
-  - openclaw/acpx/skills/acpx
-  - emilkowalski/skill/skills/emil-design-eng
-  - dominikmartn/nothing-design-skill/nothing-design
-  - vuejs-ai/skills/skills/vue-best-practices
-  - vercel-labs/skills/skills/find-skills
-  - openai/skills/skills/.curated/gh-fix-ci
-  - openai/skills/skills/.curated/gh-address-comments
-  - moonbitlang/skills/skills/moonbit-agent-guide
-  - iKora128/stop-ai-slop-jp
-  - ogulcancelik/herdr
-  - sveltejs/ai-tools/tools/skills/svelte-core-bestpractices
-  - cloudflare/security-audit-skill/skills/security-audit
+    - anthropics/skills/skills/frontend-design
+    - anthropics/skills/skills/skill-creator
+    - vercel-labs/agent-skills/skills/web-design-guidelines
+    - vercel-labs/agent-browser/skills/agent-browser
+    - GoogleChrome/modern-web-guidance/skills/modern-web-guidance
+    - openclaw/acpx/skills/acpx
+    - emilkowalski/skill/skills/emil-design-eng
+    - dominikmartn/nothing-design-skill/nothing-design
+    - vuejs-ai/skills/skills/vue-best-practices
+    - vercel-labs/skills/skills/find-skills
+    - openai/skills/skills/.curated/gh-fix-ci
+    - openai/skills/skills/.curated/gh-address-comments
+    - moonbitlang/skills/skills/moonbit-agent-guide
+    - iKora128/stop-ai-slop-jp
+    - ogulcancelik/herdr
+    - sveltejs/ai-tools/tools/skills/svelte-core-bestpractices
+    - cloudflare/security-audit-skill/skills/security-audit
+    - Nutlope/hallmark/skills/hallmark

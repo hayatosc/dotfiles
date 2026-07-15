@@ -1,12 +1,12 @@
 lockfile_version: '1'
-generated_at: '2026-07-10T10:00:35.456724+00:00'
+generated_at: '2026-07-15T15:34:12.620987+00:00'
 apm_version: 0.24.0
 dependencies:
 - repo_url: GoogleChrome/modern-web-guidance
   name: modern-web-guidance
   host: github.com
-  resolved_commit: 13b2c44d266ce7a317cdc424da050fab1cef845c
-  version: unknown
+  resolved_commit: c54db496e0d2137a90d197c9c01ee9a290c1b2cf
+  version: 1.0.0
   virtual_path: skills/modern-web-guidance
   is_virtual: true
   package_type: claude_skill
@@ -20,9 +20,41 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md
   - .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md
   - .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md
+  - .agents/skills/modern-web-guidance/guides/canvas/apply-webgl-shaders.md
+  - .agents/skills/modern-web-guidance/guides/canvas/export-html-media-from-canvas.md
+  - .agents/skills/modern-web-guidance/guides/canvas/expose-canvas-content-to-browser-features.md
+  - .agents/skills/modern-web-guidance/guides/canvas/interactive-content-in-3d-scenes.md
+  - .agents/skills/modern-web-guidance/guides/css-layout/animate-to-intrinsic-sizes.md
+  - .agents/skills/modern-web-guidance/guides/css-layout/calculate-with-intrinsic-sizes.md
   - .agents/skills/modern-web-guidance/guides/css-layout/css-layout.md
+  - .agents/skills/modern-web-guidance/guides/css-layout/design-token-reactivity.md
+  - .agents/skills/modern-web-guidance/guides/css-layout/fluid-scaling.md
+  - .agents/skills/modern-web-guidance/guides/css-layout/overflow-clipping-control.md
+  - .agents/skills/modern-web-guidance/guides/css-layout/size-aware-styling.md
+  - .agents/skills/modern-web-guidance/guides/css/adapt-scrollbar-to-contrast-preferences.md
+  - .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md
+  - .agents/skills/modern-web-guidance/guides/css/complex-shapes.md
+  - .agents/skills/modern-web-guidance/guides/css/component-specific-light-dark-theme.md
+  - .agents/skills/modern-web-guidance/guides/css/content-based-styling.md
   - .agents/skills/modern-web-guidance/guides/css/css.md
+  - .agents/skills/modern-web-guidance/guides/css/customize-scrollbar-color-and-thickness.md
+  - .agents/skills/modern-web-guidance/guides/css/dark-mode.md
+  - .agents/skills/modern-web-guidance/guides/css/dynamic-sibling-styling.md
   - .agents/skills/modern-web-guidance/guides/css/highlight-text-ranges.md
+  - .agents/skills/modern-web-guidance/guides/css/interactive-content-reveal.md
+  - .agents/skills/modern-web-guidance/guides/css/reduce-style-repetition.md
+  - .agents/skills/modern-web-guidance/guides/css/shaped-cutouts.md
+  - .agents/skills/modern-web-guidance/guides/css/soft-edge-content-fade.md
+  - .agents/skills/modern-web-guidance/guides/css/style-parent-with-has.md
+  - .agents/skills/modern-web-guidance/guides/css/visually-texture-content.md
+  - .agents/skills/modern-web-guidance/guides/datetime/calculate-event-differentials.md
+  - .agents/skills/modern-web-guidance/guides/datetime/capture-location-agnostic-data.md
+  - .agents/skills/modern-web-guidance/guides/datetime/coordinate-global-events.md
+  - .agents/skills/modern-web-guidance/guides/datetime/format-human-readable-durations.md
+  - .agents/skills/modern-web-guidance/guides/datetime/manage-recurring-intervals.md
+  - .agents/skills/modern-web-guidance/guides/datetime/model-partial-time-concepts.md
+  - .agents/skills/modern-web-guidance/guides/datetime/stabilize-reactive-state.md
+  - .agents/skills/modern-web-guidance/guides/datetime/support-global-calendar-systems.md
   - .agents/skills/modern-web-guidance/guides/forms/animated-select-picker.md
   - .agents/skills/modern-web-guidance/guides/forms/autofill-address-form.md
   - .agents/skills/modern-web-guidance/guides/forms/autofill-highlight-inputs.md
@@ -38,7 +70,32 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/forms/rich-media-picker.md
   - .agents/skills/modern-web-guidance/guides/forms/select-menu-interaction.md
   - .agents/skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md
+  - .agents/skills/modern-web-guidance/guides/html/custom-button-actions.md
   - .agents/skills/modern-web-guidance/guides/html/html.md
+  - .agents/skills/modern-web-guidance/guides/html/move-dom-element-without-losing-state.md
+  - .agents/skills/modern-web-guidance/guides/html/persistent-top-layer-ui.md
+  - .agents/skills/modern-web-guidance/guides/html/search-hidden-content.md
+  - .agents/skills/modern-web-guidance/guides/motion/anchor-positioning-tab-underline.md
+  - .agents/skills/modern-web-guidance/guides/motion/animate-element-entry-exit.md
+  - .agents/skills/modern-web-guidance/guides/motion/consistent-cross-document-transitions.md
+  - .agents/skills/modern-web-guidance/guides/motion/cross-document-transitions.md
+  - .agents/skills/modern-web-guidance/guides/motion/directional-navigation-transitions.md
+  - .agents/skills/modern-web-guidance/guides/motion/dynamic-sibling-animations.md
+  - .agents/skills/modern-web-guidance/guides/motion/group-element-transitions.md
+  - .agents/skills/modern-web-guidance/guides/motion/individual-transform-properties.md
+  - .agents/skills/modern-web-guidance/guides/motion/physics-based-easing.md
+  - .agents/skills/modern-web-guidance/guides/motion/same-document-transitions.md
+  - .agents/skills/modern-web-guidance/guides/overlays/animate-to-from-top-layer.md
+  - .agents/skills/modern-web-guidance/guides/overlays/declarative-dialog-popover-control.md
+  - .agents/skills/modern-web-guidance/guides/overlays/interest-triggered-action-previews.md
+  - .agents/skills/modern-web-guidance/guides/overlays/interest-triggered-tooltips.md
+  - .agents/skills/modern-web-guidance/guides/overlays/light-dismiss-a-dialog.md
+  - .agents/skills/modern-web-guidance/guides/overlays/navigation-drawer.md
+  - .agents/skills/modern-web-guidance/guides/overlays/persistent-app-tours.md
+  - .agents/skills/modern-web-guidance/guides/overlays/persistent-toast-notifications.md
+  - .agents/skills/modern-web-guidance/guides/overlays/platform-controls-dismiss-dialog.md
+  - .agents/skills/modern-web-guidance/guides/overlays/position-aware-tooltips.md
+  - .agents/skills/modern-web-guidance/guides/overlays/resilient-context-menus-and-nested-dropdowns.md
   - .agents/skills/modern-web-guidance/guides/passkeys/passkey-authentication.md
   - .agents/skills/modern-web-guidance/guides/passkeys/passkey-conditional-create.md
   - .agents/skills/modern-web-guidance/guides/passkeys/passkey-management.md
@@ -51,10 +108,12 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/performance/conditional-async-dependencies.md
   - .agents/skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md
   - .agents/skills/modern-web-guidance/guides/performance/defer-work-until-scroll-ends.md
+  - .agents/skills/modern-web-guidance/guides/performance/deliver-optimized-decorative-images.md
   - .agents/skills/modern-web-guidance/guides/performance/deprioritize-background-fetches.md
   - .agents/skills/modern-web-guidance/guides/performance/detect-initial-visibility-state.md
   - .agents/skills/modern-web-guidance/guides/performance/efficient-background-processing.md
   - .agents/skills/modern-web-guidance/guides/performance/faster-spa-view-transitions.md
+  - .agents/skills/modern-web-guidance/guides/performance/flicker-free-client-side-ab-testing.md
   - .agents/skills/modern-web-guidance/guides/performance/full-session-analytics.md
   - .agents/skills/modern-web-guidance/guides/performance/identify-heavy-scripts.md
   - .agents/skills/modern-web-guidance/guides/performance/identify-inp-causes.md
@@ -68,86 +127,27 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/performance/schedule-tasks-by-priority.md
   - .agents/skills/modern-web-guidance/guides/performance/sequence-distributed-events.md
   - .agents/skills/modern-web-guidance/guides/privacy/privacy.md
+  - .agents/skills/modern-web-guidance/guides/scroll/carousel-slide-effects.md
+  - .agents/skills/modern-web-guidance/guides/scroll/carousel-snap-highlights.md
+  - .agents/skills/modern-web-guidance/guides/scroll/parallax-scroll-effects.md
+  - .agents/skills/modern-web-guidance/guides/scroll/pull-to-reveal.md
+  - .agents/skills/modern-web-guidance/guides/scroll/scroll-entry-exit-effects.md
+  - .agents/skills/modern-web-guidance/guides/scroll/scroll-position-aware-elements.md
+  - .agents/skills/modern-web-guidance/guides/scroll/scroll-progress-indicator.md
+  - .agents/skills/modern-web-guidance/guides/scroll/scroll-snap-realtime-feedback.md
+  - .agents/skills/modern-web-guidance/guides/scroll/scroll-snap-state-sync.md
+  - .agents/skills/modern-web-guidance/guides/scroll/scroll-target-on-load.md
+  - .agents/skills/modern-web-guidance/guides/scroll/scrollability-affordance-hints.md
+  - .agents/skills/modern-web-guidance/guides/scroll/scrollytelling.md
+  - .agents/skills/modern-web-guidance/guides/scroll/shrinking-header-on-scroll.md
+  - .agents/skills/modern-web-guidance/guides/scroll/stack-drill-down.md
+  - .agents/skills/modern-web-guidance/guides/scroll/swipe-to-remove.md
   - .agents/skills/modern-web-guidance/guides/security/security.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/adapt-scrollbar-to-contrast-preferences.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/anchor-positioning-tab-underline.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/animate-element-entry-exit.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/animate-to-from-top-layer.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/animate-to-intrinsic-sizes.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/apply-webgl-shaders.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/calculate-event-differentials.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/calculate-with-intrinsic-sizes.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/capture-location-agnostic-data.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/carousel-slide-effects.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/carousel-snap-highlights.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/child-state-based-styling.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/complex-shapes.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/component-specific-light-dark-theme.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/consistent-cross-document-transitions.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/content-based-styling.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/coordinate-global-events.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/cross-document-transitions.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/custom-button-actions.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/customize-scrollbar-color-and-thickness.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/dark-mode.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/deliver-optimized-decorative-images.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/design-token-reactivity.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/directional-navigation-transitions.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-animations.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-styling.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/export-html-media-from-canvas.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/expose-canvas-content-to-browser-features.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/flicker-free-client-side-ab-testing.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/fluid-scaling.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/format-human-readable-durations.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/group-element-transitions.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/improve-text-layout-and-legibility.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/individual-transform-properties.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/interactive-content-in-3d-scenes.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/interactive-content-reveal.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/interest-triggered-action-previews.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/interest-triggered-tooltips.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/light-dismiss-a-dialog.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/manage-recurring-intervals.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/model-partial-time-concepts.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/move-dom-element-without-losing-state.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/navigation-drawer.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/overflow-clipping-control.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/parallax-scroll-effects.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/persistent-app-tours.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/persistent-toast-notifications.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/persistent-top-layer-ui.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/physics-based-easing.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/platform-controls-dismiss-dialog.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/position-aware-tooltips.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/precise-text-alignment.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/prevent-text-wrapping.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/pull-to-reveal.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/reduce-style-repetition.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/resilient-context-menus-and-nested-dropdowns.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/same-document-transitions.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-entry-exit-effects.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-position-aware-elements.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-progress-indicator.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-snap-realtime-feedback.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-snap-state-sync.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/scroll-target-on-load.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/scrollability-affordance-hints.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/scrollytelling.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/search-hidden-content.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/shaped-cutouts.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/shrinking-header-on-scroll.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/size-aware-styling.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/soft-edge-content-fade.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/stabilize-reactive-state.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/stack-drill-down.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/style-parent-with-has.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/support-global-calendar-systems.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/swipe-to-remove.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/visually-stable-font-fallbacks.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/visually-stable-mixed-fonts.md
-  - .agents/skills/modern-web-guidance/guides/user-experience/visually-texture-content.md
+  - .agents/skills/modern-web-guidance/guides/typography/improve-text-layout-and-legibility.md
+  - .agents/skills/modern-web-guidance/guides/typography/precise-text-alignment.md
+  - .agents/skills/modern-web-guidance/guides/typography/prevent-text-wrapping.md
+  - .agents/skills/modern-web-guidance/guides/typography/visually-stable-font-fallbacks.md
+  - .agents/skills/modern-web-guidance/guides/typography/visually-stable-mixed-fonts.md
   - .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md
   - .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md
   - .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md
@@ -160,9 +160,41 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md: sha256:d3dcfe5247b7afe74d6a34f94e049b0d08c579bec8760e29d37cfb7167cf52e2
     .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md: sha256:7922ab19ccac7e68262007dd8d96812d6d455aa643cb1edb3fc9f25a4cece2a7
     .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md: sha256:8e379baae33e0c34799cc93f1dc6c8929ed6f9f4891d9b1c0b6f0c62d5124b14
+    .agents/skills/modern-web-guidance/guides/canvas/apply-webgl-shaders.md: sha256:9fb56e26cb6bfa5159c062172ccbfc6c84033bbd3d013bb1f5990ec7dbec6faf
+    .agents/skills/modern-web-guidance/guides/canvas/export-html-media-from-canvas.md: sha256:21fcd33f60be01f02415cb8b9627b302406fe6b6919c4d936ce659c88bd5d87f
+    .agents/skills/modern-web-guidance/guides/canvas/expose-canvas-content-to-browser-features.md: sha256:fdabca71aa9967472466593cb6f3c180cb11502c6695923eefcdffd58b505003
+    .agents/skills/modern-web-guidance/guides/canvas/interactive-content-in-3d-scenes.md: sha256:c9b6586607dc6d215de19fa1fea4292a05b4619ef7f78c184bfd36d0fff04e7f
+    .agents/skills/modern-web-guidance/guides/css-layout/animate-to-intrinsic-sizes.md: sha256:785a8b2e26a3e1e2d06cc773334fffe6497533b24d89dc3a90efceac09c029cd
+    .agents/skills/modern-web-guidance/guides/css-layout/calculate-with-intrinsic-sizes.md: sha256:45733897f683ddd0959c5285c7039150527d9eea4a0673ac3c56f93d73332f76
     .agents/skills/modern-web-guidance/guides/css-layout/css-layout.md: sha256:ff1d632ba2af9dfafb14f49e8e65539769bd3d837b5dc307071367b602ab95b2
+    .agents/skills/modern-web-guidance/guides/css-layout/design-token-reactivity.md: sha256:8cd941d585686e718c7b9f8bcc4b3d312d0fa4e4ea2c781b1d904cab27cbf48b
+    .agents/skills/modern-web-guidance/guides/css-layout/fluid-scaling.md: sha256:59b7c060a0363924397cf52213c61a60bce97a1c252517c8623e5dc2ebd5ddcd
+    .agents/skills/modern-web-guidance/guides/css-layout/overflow-clipping-control.md: sha256:11a29817d15a7f66020e58c1d7e86cfc7ccb6f5af9b573cb18f925a4fcf272d4
+    .agents/skills/modern-web-guidance/guides/css-layout/size-aware-styling.md: sha256:555b7ad29591b5545ac0085da8b94f45b6b59cf87e2512d5460076d62d4ae69a
+    .agents/skills/modern-web-guidance/guides/css/adapt-scrollbar-to-contrast-preferences.md: sha256:afa06625e02f48d7d844edb2ea4b24b022412ce69760e1c9176ff8c6d7dbaed9
+    .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md: sha256:8dcb6d2a5089fe7983ad3fa40b87d80a33a0e1cf78e7079d810a28c821fe2948
+    .agents/skills/modern-web-guidance/guides/css/complex-shapes.md: sha256:cf290a56fb11fd128836305a5d7967d3bdf17ccd8b28b2589c5c1020b573720f
+    .agents/skills/modern-web-guidance/guides/css/component-specific-light-dark-theme.md: sha256:4076c0a3918b9d59034c03670ac5296dfe36106091d383c47cd1f96f41a248ca
+    .agents/skills/modern-web-guidance/guides/css/content-based-styling.md: sha256:35759c095a2e5245d2fcad14a4478264825513a42215c2186233eccbd639d100
     .agents/skills/modern-web-guidance/guides/css/css.md: sha256:8a23dbec80bb90c3c025fba8bfde1bcbfa04b5ecd6f0d43f71db3e6a0ec598c1
+    .agents/skills/modern-web-guidance/guides/css/customize-scrollbar-color-and-thickness.md: sha256:8b73513c3fedc839dafd4ddb9b0ba15c350deaef739e4b6158008006661a86f7
+    .agents/skills/modern-web-guidance/guides/css/dark-mode.md: sha256:cb14030bf581478475c357e735c7092623e30524df89a90ebd2f23fdb025c149
+    .agents/skills/modern-web-guidance/guides/css/dynamic-sibling-styling.md: sha256:cb70beee2f130bc9dbd98685a54d0cfd05c62f109b596ccfe86f8828907eed08
     .agents/skills/modern-web-guidance/guides/css/highlight-text-ranges.md: sha256:fac1a8aba8c9581a4b7d37ec6fbd61d925fb28bb0d77314c6c3612713f449d4e
+    .agents/skills/modern-web-guidance/guides/css/interactive-content-reveal.md: sha256:f3168013cce36885a4f22652fdb4877bc91ce8a43238bacf1dd686e075ca10b5
+    .agents/skills/modern-web-guidance/guides/css/reduce-style-repetition.md: sha256:22555756086c65ae722899dfc0ada13dafdc41573c618e149ff168caad8ae34a
+    .agents/skills/modern-web-guidance/guides/css/shaped-cutouts.md: sha256:ceedfd90d3fa74b588eb7089245608647a90c99d39be25ddfaa47067d2600204
+    .agents/skills/modern-web-guidance/guides/css/soft-edge-content-fade.md: sha256:4f0dfdc0a27d714fcac44f8c2cc8b107dd20122febdcddd527715441ca919202
+    .agents/skills/modern-web-guidance/guides/css/style-parent-with-has.md: sha256:42443aaca14192daeed4390471431b4118216437877325f55f9bb818a951f32b
+    .agents/skills/modern-web-guidance/guides/css/visually-texture-content.md: sha256:54dacc485416bb4091df9af7662754b253f5a5ef802dd36cb6fd0eec72bcb4c3
+    .agents/skills/modern-web-guidance/guides/datetime/calculate-event-differentials.md: sha256:831b206770b705b2d072050149a63a4036f3b19b2817ab46bf1331b5ea3035e1
+    .agents/skills/modern-web-guidance/guides/datetime/capture-location-agnostic-data.md: sha256:b4c60d575d4ec775744d1c9da1e138cf82b0f6bc68ae222e248b50b6ecc51988
+    .agents/skills/modern-web-guidance/guides/datetime/coordinate-global-events.md: sha256:11a845d354ac112a874666561eeb34e669048072ed334108a43cdf38b2267ec6
+    .agents/skills/modern-web-guidance/guides/datetime/format-human-readable-durations.md: sha256:ee4bc2f7d8d5dccb4c1e11fd86d4dd840458f0257ebfefacdae6593d8cf04e83
+    .agents/skills/modern-web-guidance/guides/datetime/manage-recurring-intervals.md: sha256:f0fae6733619ab0f3bd9d6768d67383f9aa823cb3963e106b42b5ddf9bd9aa0c
+    .agents/skills/modern-web-guidance/guides/datetime/model-partial-time-concepts.md: sha256:522b8cfa990688540d4b6153bff107cf1fdb1261a818fb8b5cb3c2ad183c7640
+    .agents/skills/modern-web-guidance/guides/datetime/stabilize-reactive-state.md: sha256:d00cb877441ab105fd66fbae2ad7e139250bb7e5e31ba2104eeb45c8f24ed8da
+    .agents/skills/modern-web-guidance/guides/datetime/support-global-calendar-systems.md: sha256:ec389be8fa12890eee6e84f41fd4af409fe1237585f16c1531ad35da60b3b508
     .agents/skills/modern-web-guidance/guides/forms/animated-select-picker.md: sha256:a6d0b70c535d04136f1cecf942520198ce6f438c45b5214a04f0ba7873e3f4a0
     .agents/skills/modern-web-guidance/guides/forms/autofill-address-form.md: sha256:4635ca2463c2a37c7988acd552681854d7d9fea758d15d12964274a5c4aee52f
     .agents/skills/modern-web-guidance/guides/forms/autofill-highlight-inputs.md: sha256:661b8ff3f54e04b866e703b36f0cfed1f92356d7a4e7e436ba1f7e1cecfce7b4
@@ -178,7 +210,32 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/forms/rich-media-picker.md: sha256:3d1be9161c9561ee29c36c8f81af3330e1448d8f60a7815a4eb1b1cc5f8d44fa
     .agents/skills/modern-web-guidance/guides/forms/select-menu-interaction.md: sha256:4756813c60ac587fe30103efe3d618c6cf7d6a9b888a84a968a792bab03ff0f3
     .agents/skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md: sha256:a3699bb30041af3142858c9ec4066932e865410f2777873684ce8ad1a188cc3f
+    .agents/skills/modern-web-guidance/guides/html/custom-button-actions.md: sha256:f06d1d08117b2e2a9faff1f610d88b0df8db02b8130fcd407873584bacec20af
     .agents/skills/modern-web-guidance/guides/html/html.md: sha256:42fb0379a33805f17f10bbb1b262a425e9fe27cfb4f6aee9d7642537c3a573a2
+    .agents/skills/modern-web-guidance/guides/html/move-dom-element-without-losing-state.md: sha256:acefb9f4ff932f863680f5697e5a50047663c2faee198c0e2bc8d6dcb0c8e6f7
+    .agents/skills/modern-web-guidance/guides/html/persistent-top-layer-ui.md: sha256:1b2d37d385c81e08a18e53faabf1d8edbf0ac0e1401d83de1c6dafa897a1c21d
+    .agents/skills/modern-web-guidance/guides/html/search-hidden-content.md: sha256:8eea952ff3e8d7411e0cebf833359977de309c73db3870206bcdc2de2a0a8d18
+    .agents/skills/modern-web-guidance/guides/motion/anchor-positioning-tab-underline.md: sha256:596d9391a2e9cb99af1da77ae4c9acc9616ed0735f2a57d848a4bfa68b55ac52
+    .agents/skills/modern-web-guidance/guides/motion/animate-element-entry-exit.md: sha256:75e717d68c94ad4d61e51a9b1cb624904b63a4b43bc81f2e7434c39378b70a08
+    .agents/skills/modern-web-guidance/guides/motion/consistent-cross-document-transitions.md: sha256:4d1742785801c6e49756234abad7728f3a30bf4319c5e5f3f7f5057b3b90f8eb
+    .agents/skills/modern-web-guidance/guides/motion/cross-document-transitions.md: sha256:b59ae459d1f436dfaac1533eb463194f8a10866e392b76f125f5068663cea47b
+    .agents/skills/modern-web-guidance/guides/motion/directional-navigation-transitions.md: sha256:f308e3d9bdd060c2b5f17a08c5270e12c75e7f487bad159d5df56f57b14a0b7a
+    .agents/skills/modern-web-guidance/guides/motion/dynamic-sibling-animations.md: sha256:98493ff7e5ebbb01c580a7c306d20933a5aa19b28d8b1a1c289cc3476bb09532
+    .agents/skills/modern-web-guidance/guides/motion/group-element-transitions.md: sha256:5b140ac01a0d4382206c0ff2645be60eb7c26a3172a66e0fa097d5409b71a486
+    .agents/skills/modern-web-guidance/guides/motion/individual-transform-properties.md: sha256:adc19c640a5e3070192a3d01761cb07e6cf464b4c6c18149116f8f7314b5c86a
+    .agents/skills/modern-web-guidance/guides/motion/physics-based-easing.md: sha256:58406665775a501143177a94ce9550175104d0be0d90beaab6fe0a0611318a5c
+    .agents/skills/modern-web-guidance/guides/motion/same-document-transitions.md: sha256:a7ed8055ea00003017cd965588f87921915054a83e35915ac60dee1d89e452a1
+    .agents/skills/modern-web-guidance/guides/overlays/animate-to-from-top-layer.md: sha256:66c2c9998ef87e0682481872f624cb7e8ad7fcde7cd3d7bbdd9e563be455e393
+    .agents/skills/modern-web-guidance/guides/overlays/declarative-dialog-popover-control.md: sha256:c510eb3a450b4ba4dc4762d70ef7dc07cefc43d2967fd60c9d0be3fe22e070e2
+    .agents/skills/modern-web-guidance/guides/overlays/interest-triggered-action-previews.md: sha256:52072dcb60cc3cfb60ea81a719294bc6e7e5b815fa0a4357338a43812949f27f
+    .agents/skills/modern-web-guidance/guides/overlays/interest-triggered-tooltips.md: sha256:928bf576bb0b5387289d1bef76d90f81dabf5b690ed6330664774fce93cfa935
+    .agents/skills/modern-web-guidance/guides/overlays/light-dismiss-a-dialog.md: sha256:fd4551c66be7cd3e738e634d1007022f499296a85fd8d6aeb3f54af2ef5758e5
+    .agents/skills/modern-web-guidance/guides/overlays/navigation-drawer.md: sha256:1b80ea46753d0d7942a9c3d7817f2c7f6e443d53aeb4f24231965e4f38b24450
+    .agents/skills/modern-web-guidance/guides/overlays/persistent-app-tours.md: sha256:ee5e052a0fce06d5d70e4684f7a42597b3a9989d4b97df2cfb34081989091266
+    .agents/skills/modern-web-guidance/guides/overlays/persistent-toast-notifications.md: sha256:d9b663b3594016e40685df787b5704c2c7b641917af926449bcc7af6804d7820
+    .agents/skills/modern-web-guidance/guides/overlays/platform-controls-dismiss-dialog.md: sha256:25b18cb2d2901109e9a53c9d4a580bfa584fd4f48b999c985d5bf410d2585683
+    .agents/skills/modern-web-guidance/guides/overlays/position-aware-tooltips.md: sha256:241e34fda134474c260a0c3184dff356b43efcfb50bc0c7fbff9b57980f16461
+    .agents/skills/modern-web-guidance/guides/overlays/resilient-context-menus-and-nested-dropdowns.md: sha256:d05f3fe9731e75a4135882864dda75ec86195e4d3093310e8ed913f9cc7e858a
     .agents/skills/modern-web-guidance/guides/passkeys/passkey-authentication.md: sha256:288cab4f4c850827b31cfea7a5b9d10d47e688aad116910a95898d560900fb2e
     .agents/skills/modern-web-guidance/guides/passkeys/passkey-conditional-create.md: sha256:aa62394296c239422778684aa7234ada63b94dbb4d8b0291fb5b243854ef5b4d
     .agents/skills/modern-web-guidance/guides/passkeys/passkey-management.md: sha256:f9c6ea2290b4275f7659ff78a030ca874421aae24563e5edad185d7bd338e7cb
@@ -191,10 +248,12 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/performance/conditional-async-dependencies.md: sha256:1fe64d5bd74039220de9a50fe057ce5d4e8a3954a309cefde30e5dfd216b3640
     .agents/skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md: sha256:99f4e9b7b376b7be9c9acd22c04ec66d8bb8b50677a31d212c394d84f74adae9
     .agents/skills/modern-web-guidance/guides/performance/defer-work-until-scroll-ends.md: sha256:3e69a3fb9e3e8a748bec61392e013839c690322424ea8e84a42b6e1cf178f758
+    .agents/skills/modern-web-guidance/guides/performance/deliver-optimized-decorative-images.md: sha256:0d480274ccb5649172d01e9c2e433fdb5059dd0f7b6297856b6182158e1a03c5
     .agents/skills/modern-web-guidance/guides/performance/deprioritize-background-fetches.md: sha256:14836fc6fc94567c2451ef427c11c381a71b1d348ae57f23b4082eceb9773b12
     .agents/skills/modern-web-guidance/guides/performance/detect-initial-visibility-state.md: sha256:0bad03c06a041d1c70b3f25f03866debdc215952579b1736655cb10c359fe62a
     .agents/skills/modern-web-guidance/guides/performance/efficient-background-processing.md: sha256:585dc8e70e7f302e8c250407e36505ad5bd47cea8750717887844f7a79ab9f9a
     .agents/skills/modern-web-guidance/guides/performance/faster-spa-view-transitions.md: sha256:e1b353e06c9ec52bae90f41150ffa5ce1d3f2f3f18e23141ecde79e550973a97
+    .agents/skills/modern-web-guidance/guides/performance/flicker-free-client-side-ab-testing.md: sha256:22b9e88076030dba35e63b4007a7fef59abb85b65ca6b01800fa1d36580ba7fa
     .agents/skills/modern-web-guidance/guides/performance/full-session-analytics.md: sha256:24872a06076e961b0db74916441d538db87801f1fc0bded10135fc919b1a29b8
     .agents/skills/modern-web-guidance/guides/performance/identify-heavy-scripts.md: sha256:8206670b5caaee2e9fedbe495ca7b832acb2327eab30a79ecadbb888ba8fc2b2
     .agents/skills/modern-web-guidance/guides/performance/identify-inp-causes.md: sha256:bbf6b3708a59c56f02f9063fb41e09dd52197c8dfd67ee37c6575635c7391f88
@@ -208,90 +267,255 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/performance/schedule-tasks-by-priority.md: sha256:21f602d099585c6d12d7d156bb30c46d3e1426f6a1de90455b330d6c0bc8e369
     .agents/skills/modern-web-guidance/guides/performance/sequence-distributed-events.md: sha256:77ef181ced3afc8db506a2a04e566d8fa6d512704089a5c78e89ebc7f462a129
     .agents/skills/modern-web-guidance/guides/privacy/privacy.md: sha256:0abfb8bbaa1766cd9a986cdf925b05dda21fd7b0d5cf46d52335572cc481e28d
+    .agents/skills/modern-web-guidance/guides/scroll/carousel-slide-effects.md: sha256:8e6c8109a078dd5616b9d6c79044f1f38576c63fd7b1d43d990797cf95a7f34e
+    .agents/skills/modern-web-guidance/guides/scroll/carousel-snap-highlights.md: sha256:efd069ae8d95174ca4347592179396f3844862b9cbb4c0e4e19d8198faa14180
+    .agents/skills/modern-web-guidance/guides/scroll/parallax-scroll-effects.md: sha256:081ae662fddca6287f41c09f8b75f080ce700b1a8f2a626b816935cc7190e729
+    .agents/skills/modern-web-guidance/guides/scroll/pull-to-reveal.md: sha256:5ff57863a7f9201671f0cf86da9f063d334ccaeaacd85ef4f875f66e85fc0510
+    .agents/skills/modern-web-guidance/guides/scroll/scroll-entry-exit-effects.md: sha256:f41013965318de41cf35b2c607340ce0f0cef2a13d5722204385e7a103cd93ec
+    .agents/skills/modern-web-guidance/guides/scroll/scroll-position-aware-elements.md: sha256:419beaadd335e253de0cae7e2365fc328b2f6f047c0d7864973149be8e8fdf7e
+    .agents/skills/modern-web-guidance/guides/scroll/scroll-progress-indicator.md: sha256:eb0b4e2b957b63e6b9084243977d9e4e081c605e9e20a0e17e0ac84edaccbc0d
+    .agents/skills/modern-web-guidance/guides/scroll/scroll-snap-realtime-feedback.md: sha256:eb77ff1361af47628c3dcfabd33abfc7b1090b70bf41f9d27d408357ab4c9e3d
+    .agents/skills/modern-web-guidance/guides/scroll/scroll-snap-state-sync.md: sha256:2f3c8b7526e5ddaee1fdb7535d6a0a0ad036c495dc5bc613e0f5b1e4f25eb2b1
+    .agents/skills/modern-web-guidance/guides/scroll/scroll-target-on-load.md: sha256:e7d8dcaf71be2a46cf633916efac4a2ae2aa483269538032ad0c46fc6e8ade19
+    .agents/skills/modern-web-guidance/guides/scroll/scrollability-affordance-hints.md: sha256:22842290248cc8f6ebd0fd838f3d94d8bd96f0b899b708f7bff2a4e12ed826e9
+    .agents/skills/modern-web-guidance/guides/scroll/scrollytelling.md: sha256:16076be601b69c1b9f315f04ef5ffe0728653bcde4280ca4e9f5aca7eec10e0a
+    .agents/skills/modern-web-guidance/guides/scroll/shrinking-header-on-scroll.md: sha256:cdfa80971710b0f90170fcb1b8289fb6384514dd3864393c474cc02a59ad53e4
+    .agents/skills/modern-web-guidance/guides/scroll/stack-drill-down.md: sha256:5a161583757ea9a64349fc9efd4d627990545ce99955a2740e5c15c8e128147b
+    .agents/skills/modern-web-guidance/guides/scroll/swipe-to-remove.md: sha256:4eabd7286aac3148752bc6cbda289e5d58e6bc4b964044e502dc7ce9aa8cbca3
     .agents/skills/modern-web-guidance/guides/security/security.md: sha256:39dee469938960946b45af3d19ed7a4a361d281f41046a028b63ca0b9fe09b9c
-    .agents/skills/modern-web-guidance/guides/user-experience/adapt-scrollbar-to-contrast-preferences.md: sha256:afa06625e02f48d7d844edb2ea4b24b022412ce69760e1c9176ff8c6d7dbaed9
-    .agents/skills/modern-web-guidance/guides/user-experience/anchor-positioning-tab-underline.md: sha256:596d9391a2e9cb99af1da77ae4c9acc9616ed0735f2a57d848a4bfa68b55ac52
-    .agents/skills/modern-web-guidance/guides/user-experience/animate-element-entry-exit.md: sha256:75e717d68c94ad4d61e51a9b1cb624904b63a4b43bc81f2e7434c39378b70a08
-    .agents/skills/modern-web-guidance/guides/user-experience/animate-to-from-top-layer.md: sha256:66c2c9998ef87e0682481872f624cb7e8ad7fcde7cd3d7bbdd9e563be455e393
-    .agents/skills/modern-web-guidance/guides/user-experience/animate-to-intrinsic-sizes.md: sha256:785a8b2e26a3e1e2d06cc773334fffe6497533b24d89dc3a90efceac09c029cd
-    .agents/skills/modern-web-guidance/guides/user-experience/apply-webgl-shaders.md: sha256:9fb56e26cb6bfa5159c062172ccbfc6c84033bbd3d013bb1f5990ec7dbec6faf
-    .agents/skills/modern-web-guidance/guides/user-experience/calculate-event-differentials.md: sha256:831b206770b705b2d072050149a63a4036f3b19b2817ab46bf1331b5ea3035e1
-    .agents/skills/modern-web-guidance/guides/user-experience/calculate-with-intrinsic-sizes.md: sha256:45733897f683ddd0959c5285c7039150527d9eea4a0673ac3c56f93d73332f76
-    .agents/skills/modern-web-guidance/guides/user-experience/capture-location-agnostic-data.md: sha256:b4c60d575d4ec775744d1c9da1e138cf82b0f6bc68ae222e248b50b6ecc51988
-    .agents/skills/modern-web-guidance/guides/user-experience/carousel-slide-effects.md: sha256:8e6c8109a078dd5616b9d6c79044f1f38576c63fd7b1d43d990797cf95a7f34e
-    .agents/skills/modern-web-guidance/guides/user-experience/carousel-snap-highlights.md: sha256:efd069ae8d95174ca4347592179396f3844862b9cbb4c0e4e19d8198faa14180
-    .agents/skills/modern-web-guidance/guides/user-experience/child-state-based-styling.md: sha256:8dcb6d2a5089fe7983ad3fa40b87d80a33a0e1cf78e7079d810a28c821fe2948
-    .agents/skills/modern-web-guidance/guides/user-experience/complex-shapes.md: sha256:cf290a56fb11fd128836305a5d7967d3bdf17ccd8b28b2589c5c1020b573720f
-    .agents/skills/modern-web-guidance/guides/user-experience/component-specific-light-dark-theme.md: sha256:4076c0a3918b9d59034c03670ac5296dfe36106091d383c47cd1f96f41a248ca
-    .agents/skills/modern-web-guidance/guides/user-experience/consistent-cross-document-transitions.md: sha256:4d1742785801c6e49756234abad7728f3a30bf4319c5e5f3f7f5057b3b90f8eb
-    .agents/skills/modern-web-guidance/guides/user-experience/content-based-styling.md: sha256:35759c095a2e5245d2fcad14a4478264825513a42215c2186233eccbd639d100
-    .agents/skills/modern-web-guidance/guides/user-experience/coordinate-global-events.md: sha256:11a845d354ac112a874666561eeb34e669048072ed334108a43cdf38b2267ec6
-    .agents/skills/modern-web-guidance/guides/user-experience/cross-document-transitions.md: sha256:b59ae459d1f436dfaac1533eb463194f8a10866e392b76f125f5068663cea47b
-    .agents/skills/modern-web-guidance/guides/user-experience/custom-button-actions.md: sha256:f06d1d08117b2e2a9faff1f610d88b0df8db02b8130fcd407873584bacec20af
-    .agents/skills/modern-web-guidance/guides/user-experience/customize-scrollbar-color-and-thickness.md: sha256:8b73513c3fedc839dafd4ddb9b0ba15c350deaef739e4b6158008006661a86f7
-    .agents/skills/modern-web-guidance/guides/user-experience/dark-mode.md: sha256:cb14030bf581478475c357e735c7092623e30524df89a90ebd2f23fdb025c149
-    .agents/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md: sha256:c510eb3a450b4ba4dc4762d70ef7dc07cefc43d2967fd60c9d0be3fe22e070e2
-    .agents/skills/modern-web-guidance/guides/user-experience/deliver-optimized-decorative-images.md: sha256:0d480274ccb5649172d01e9c2e433fdb5059dd0f7b6297856b6182158e1a03c5
-    .agents/skills/modern-web-guidance/guides/user-experience/design-token-reactivity.md: sha256:8cd941d585686e718c7b9f8bcc4b3d312d0fa4e4ea2c781b1d904cab27cbf48b
-    .agents/skills/modern-web-guidance/guides/user-experience/directional-navigation-transitions.md: sha256:f308e3d9bdd060c2b5f17a08c5270e12c75e7f487bad159d5df56f57b14a0b7a
-    .agents/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-animations.md: sha256:98493ff7e5ebbb01c580a7c306d20933a5aa19b28d8b1a1c289cc3476bb09532
-    .agents/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-styling.md: sha256:cb70beee2f130bc9dbd98685a54d0cfd05c62f109b596ccfe86f8828907eed08
-    .agents/skills/modern-web-guidance/guides/user-experience/export-html-media-from-canvas.md: sha256:21fcd33f60be01f02415cb8b9627b302406fe6b6919c4d936ce659c88bd5d87f
-    .agents/skills/modern-web-guidance/guides/user-experience/expose-canvas-content-to-browser-features.md: sha256:fdabca71aa9967472466593cb6f3c180cb11502c6695923eefcdffd58b505003
-    .agents/skills/modern-web-guidance/guides/user-experience/flicker-free-client-side-ab-testing.md: sha256:22b9e88076030dba35e63b4007a7fef59abb85b65ca6b01800fa1d36580ba7fa
-    .agents/skills/modern-web-guidance/guides/user-experience/fluid-scaling.md: sha256:59b7c060a0363924397cf52213c61a60bce97a1c252517c8623e5dc2ebd5ddcd
-    .agents/skills/modern-web-guidance/guides/user-experience/format-human-readable-durations.md: sha256:ee4bc2f7d8d5dccb4c1e11fd86d4dd840458f0257ebfefacdae6593d8cf04e83
-    .agents/skills/modern-web-guidance/guides/user-experience/group-element-transitions.md: sha256:5b140ac01a0d4382206c0ff2645be60eb7c26a3172a66e0fa097d5409b71a486
-    .agents/skills/modern-web-guidance/guides/user-experience/improve-text-layout-and-legibility.md: sha256:0164f260705783182686eaacac6a4f49685cf1c1ea36b689a5d85297c62cd87f
-    .agents/skills/modern-web-guidance/guides/user-experience/individual-transform-properties.md: sha256:adc19c640a5e3070192a3d01761cb07e6cf464b4c6c18149116f8f7314b5c86a
-    .agents/skills/modern-web-guidance/guides/user-experience/interactive-content-in-3d-scenes.md: sha256:c9b6586607dc6d215de19fa1fea4292a05b4619ef7f78c184bfd36d0fff04e7f
-    .agents/skills/modern-web-guidance/guides/user-experience/interactive-content-reveal.md: sha256:f3168013cce36885a4f22652fdb4877bc91ce8a43238bacf1dd686e075ca10b5
-    .agents/skills/modern-web-guidance/guides/user-experience/interest-triggered-action-previews.md: sha256:52072dcb60cc3cfb60ea81a719294bc6e7e5b815fa0a4357338a43812949f27f
-    .agents/skills/modern-web-guidance/guides/user-experience/interest-triggered-tooltips.md: sha256:928bf576bb0b5387289d1bef76d90f81dabf5b690ed6330664774fce93cfa935
-    .agents/skills/modern-web-guidance/guides/user-experience/light-dismiss-a-dialog.md: sha256:fd4551c66be7cd3e738e634d1007022f499296a85fd8d6aeb3f54af2ef5758e5
-    .agents/skills/modern-web-guidance/guides/user-experience/manage-recurring-intervals.md: sha256:f0fae6733619ab0f3bd9d6768d67383f9aa823cb3963e106b42b5ddf9bd9aa0c
-    .agents/skills/modern-web-guidance/guides/user-experience/model-partial-time-concepts.md: sha256:522b8cfa990688540d4b6153bff107cf1fdb1261a818fb8b5cb3c2ad183c7640
-    .agents/skills/modern-web-guidance/guides/user-experience/move-dom-element-without-losing-state.md: sha256:acefb9f4ff932f863680f5697e5a50047663c2faee198c0e2bc8d6dcb0c8e6f7
-    .agents/skills/modern-web-guidance/guides/user-experience/navigation-drawer.md: sha256:1b80ea46753d0d7942a9c3d7817f2c7f6e443d53aeb4f24231965e4f38b24450
-    .agents/skills/modern-web-guidance/guides/user-experience/overflow-clipping-control.md: sha256:11a29817d15a7f66020e58c1d7e86cfc7ccb6f5af9b573cb18f925a4fcf272d4
-    .agents/skills/modern-web-guidance/guides/user-experience/parallax-scroll-effects.md: sha256:081ae662fddca6287f41c09f8b75f080ce700b1a8f2a626b816935cc7190e729
-    .agents/skills/modern-web-guidance/guides/user-experience/persistent-app-tours.md: sha256:ee5e052a0fce06d5d70e4684f7a42597b3a9989d4b97df2cfb34081989091266
-    .agents/skills/modern-web-guidance/guides/user-experience/persistent-toast-notifications.md: sha256:d9b663b3594016e40685df787b5704c2c7b641917af926449bcc7af6804d7820
-    .agents/skills/modern-web-guidance/guides/user-experience/persistent-top-layer-ui.md: sha256:1b2d37d385c81e08a18e53faabf1d8edbf0ac0e1401d83de1c6dafa897a1c21d
-    .agents/skills/modern-web-guidance/guides/user-experience/physics-based-easing.md: sha256:58406665775a501143177a94ce9550175104d0be0d90beaab6fe0a0611318a5c
-    .agents/skills/modern-web-guidance/guides/user-experience/platform-controls-dismiss-dialog.md: sha256:25b18cb2d2901109e9a53c9d4a580bfa584fd4f48b999c985d5bf410d2585683
-    .agents/skills/modern-web-guidance/guides/user-experience/position-aware-tooltips.md: sha256:241e34fda134474c260a0c3184dff356b43efcfb50bc0c7fbff9b57980f16461
-    .agents/skills/modern-web-guidance/guides/user-experience/precise-text-alignment.md: sha256:1d84c9915c6992c2331fc04cbbf48437b86dd085942d9515ef46ffa242fe4bb7
-    .agents/skills/modern-web-guidance/guides/user-experience/prevent-text-wrapping.md: sha256:8ad8c7e088705bdafd823bef4f0e087e5a1d0a6185fa7e2eedff2b0f2ce9dbb4
-    .agents/skills/modern-web-guidance/guides/user-experience/pull-to-reveal.md: sha256:5ff57863a7f9201671f0cf86da9f063d334ccaeaacd85ef4f875f66e85fc0510
-    .agents/skills/modern-web-guidance/guides/user-experience/reduce-style-repetition.md: sha256:22555756086c65ae722899dfc0ada13dafdc41573c618e149ff168caad8ae34a
-    .agents/skills/modern-web-guidance/guides/user-experience/resilient-context-menus-and-nested-dropdowns.md: sha256:d05f3fe9731e75a4135882864dda75ec86195e4d3093310e8ed913f9cc7e858a
-    .agents/skills/modern-web-guidance/guides/user-experience/same-document-transitions.md: sha256:a7ed8055ea00003017cd965588f87921915054a83e35915ac60dee1d89e452a1
-    .agents/skills/modern-web-guidance/guides/user-experience/scroll-entry-exit-effects.md: sha256:f41013965318de41cf35b2c607340ce0f0cef2a13d5722204385e7a103cd93ec
-    .agents/skills/modern-web-guidance/guides/user-experience/scroll-position-aware-elements.md: sha256:419beaadd335e253de0cae7e2365fc328b2f6f047c0d7864973149be8e8fdf7e
-    .agents/skills/modern-web-guidance/guides/user-experience/scroll-progress-indicator.md: sha256:eb0b4e2b957b63e6b9084243977d9e4e081c605e9e20a0e17e0ac84edaccbc0d
-    .agents/skills/modern-web-guidance/guides/user-experience/scroll-snap-realtime-feedback.md: sha256:eb77ff1361af47628c3dcfabd33abfc7b1090b70bf41f9d27d408357ab4c9e3d
-    .agents/skills/modern-web-guidance/guides/user-experience/scroll-snap-state-sync.md: sha256:2f3c8b7526e5ddaee1fdb7535d6a0a0ad036c495dc5bc613e0f5b1e4f25eb2b1
-    .agents/skills/modern-web-guidance/guides/user-experience/scroll-target-on-load.md: sha256:e7d8dcaf71be2a46cf633916efac4a2ae2aa483269538032ad0c46fc6e8ade19
-    .agents/skills/modern-web-guidance/guides/user-experience/scrollability-affordance-hints.md: sha256:22842290248cc8f6ebd0fd838f3d94d8bd96f0b899b708f7bff2a4e12ed826e9
-    .agents/skills/modern-web-guidance/guides/user-experience/scrollytelling.md: sha256:16076be601b69c1b9f315f04ef5ffe0728653bcde4280ca4e9f5aca7eec10e0a
-    .agents/skills/modern-web-guidance/guides/user-experience/search-hidden-content.md: sha256:8eea952ff3e8d7411e0cebf833359977de309c73db3870206bcdc2de2a0a8d18
-    .agents/skills/modern-web-guidance/guides/user-experience/shaped-cutouts.md: sha256:ceedfd90d3fa74b588eb7089245608647a90c99d39be25ddfaa47067d2600204
-    .agents/skills/modern-web-guidance/guides/user-experience/shrinking-header-on-scroll.md: sha256:cdfa80971710b0f90170fcb1b8289fb6384514dd3864393c474cc02a59ad53e4
-    .agents/skills/modern-web-guidance/guides/user-experience/size-aware-styling.md: sha256:555b7ad29591b5545ac0085da8b94f45b6b59cf87e2512d5460076d62d4ae69a
-    .agents/skills/modern-web-guidance/guides/user-experience/soft-edge-content-fade.md: sha256:4f0dfdc0a27d714fcac44f8c2cc8b107dd20122febdcddd527715441ca919202
-    .agents/skills/modern-web-guidance/guides/user-experience/stabilize-reactive-state.md: sha256:d00cb877441ab105fd66fbae2ad7e139250bb7e5e31ba2104eeb45c8f24ed8da
-    .agents/skills/modern-web-guidance/guides/user-experience/stack-drill-down.md: sha256:5a161583757ea9a64349fc9efd4d627990545ce99955a2740e5c15c8e128147b
-    .agents/skills/modern-web-guidance/guides/user-experience/style-parent-with-has.md: sha256:42443aaca14192daeed4390471431b4118216437877325f55f9bb818a951f32b
-    .agents/skills/modern-web-guidance/guides/user-experience/support-global-calendar-systems.md: sha256:ec389be8fa12890eee6e84f41fd4af409fe1237585f16c1531ad35da60b3b508
-    .agents/skills/modern-web-guidance/guides/user-experience/swipe-to-remove.md: sha256:4eabd7286aac3148752bc6cbda289e5d58e6bc4b964044e502dc7ce9aa8cbca3
-    .agents/skills/modern-web-guidance/guides/user-experience/visually-stable-font-fallbacks.md: sha256:e2e9e362c976e4289509afdc8068fb986e76b07fc59576b67d92e8e4c645c77a
-    .agents/skills/modern-web-guidance/guides/user-experience/visually-stable-mixed-fonts.md: sha256:c5770035287d0999fec3cf10d247c530d0d34c64739ccf4fc037475814d118a6
-    .agents/skills/modern-web-guidance/guides/user-experience/visually-texture-content.md: sha256:54dacc485416bb4091df9af7662754b253f5a5ef802dd36cb6fd0eec72bcb4c3
+    .agents/skills/modern-web-guidance/guides/typography/improve-text-layout-and-legibility.md: sha256:0164f260705783182686eaacac6a4f49685cf1c1ea36b689a5d85297c62cd87f
+    .agents/skills/modern-web-guidance/guides/typography/precise-text-alignment.md: sha256:1d84c9915c6992c2331fc04cbbf48437b86dd085942d9515ef46ffa242fe4bb7
+    .agents/skills/modern-web-guidance/guides/typography/prevent-text-wrapping.md: sha256:8ad8c7e088705bdafd823bef4f0e087e5a1d0a6185fa7e2eedff2b0f2ce9dbb4
+    .agents/skills/modern-web-guidance/guides/typography/visually-stable-font-fallbacks.md: sha256:e2e9e362c976e4289509afdc8068fb986e76b07fc59576b67d92e8e4c645c77a
+    .agents/skills/modern-web-guidance/guides/typography/visually-stable-mixed-fonts.md: sha256:c5770035287d0999fec3cf10d247c530d0d34c64739ccf4fc037475814d118a6
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md: sha256:c9210a53221ae230c3820b94b75f4b7b21196d9b0b6b0979b789866c2f2a8396
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:7b26edd8a70d0c33a1eef465edc4abc6391ce0d8f94c41acbed5a2487a558745
     .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:78b80afc94fcdc0177345d7cbd0abb83660f309a400266ff408325142db41b2c
-  content_hash: sha256:1d4f1ce5e92bca162bd7f8951843b8c7522a84659311997467edff31e828b05d
+  content_hash: sha256:c3bc108dedfab36b2eea34a4e923401c888d7d60c909cc05a17d81a37578020d
+- repo_url: Nutlope/hallmark
+  name: hallmark
+  host: github.com
+  resolved_commit: aeb42fb354ff4efa36ab475773a082315a3af2ce
+  version: unknown
+  virtual_path: skills/hallmark
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/hallmark
+  - .agents/skills/hallmark/SKILL.md
+  - .agents/skills/hallmark/references/anti-patterns.md
+  - .agents/skills/hallmark/references/assets.md
+  - .agents/skills/hallmark/references/color.md
+  - .agents/skills/hallmark/references/component-cookbook.md
+  - .agents/skills/hallmark/references/components/c1-outlined-chip.md
+  - .agents/skills/hallmark/references/components/c2-inline-form-as-cta.md
+  - .agents/skills/hallmark/references/components/c3-typographic-link.md
+  - .agents/skills/hallmark/references/components/c4-sticky-bottom-bar.md
+  - .agents/skills/hallmark/references/components/f1-bento-grid.md
+  - .agents/skills/hallmark/references/components/f2-sticky-scroll-stack.md
+  - .agents/skills/hallmark/references/components/f3-tabular-spec-sheet.md
+  - .agents/skills/hallmark/references/components/f4-step-sequence.md
+  - .agents/skills/hallmark/references/components/f5-annotated-screenshot.md
+  - .agents/skills/hallmark/references/components/f6-product-card-grid.md
+  - .agents/skills/hallmark/references/components/ft1-mast-headed.md
+  - .agents/skills/hallmark/references/components/ft2-inline-rule-single-line.md
+  - .agents/skills/hallmark/references/components/ft3-index-style-category-list.md
+  - .agents/skills/hallmark/references/components/ft4-dense-typographic.md
+  - .agents/skills/hallmark/references/components/ft5-statement.md
+  - .agents/skills/hallmark/references/components/ft6-letter-close.md
+  - .agents/skills/hallmark/references/components/ft7-newsletter-first.md
+  - .agents/skills/hallmark/references/components/ft8-marquee-scroll.md
+  - .agents/skills/hallmark/references/components/h1-marquee.md
+  - .agents/skills/hallmark/references/components/h2-split-diptych.md
+  - .agents/skills/hallmark/references/components/h3-quote-led.md
+  - .agents/skills/hallmark/references/components/h4-stat-led.md
+  - .agents/skills/hallmark/references/components/h5-letter-hero.md
+  - .agents/skills/hallmark/references/components/h6-photographic-fold.md
+  - .agents/skills/hallmark/references/components/h7-demo-video-clipped-by-viewport-edge.md
+  - .agents/skills/hallmark/references/components/h8-mockup-split-browser-framed.md
+  - .agents/skills/hallmark/references/components/h9-custom-illustration-centerpiece.md
+  - .agents/skills/hallmark/references/components/n1-wordmark-2-links.md
+  - .agents/skills/hallmark/references/components/n10-floating-on-scroll-morph.md
+  - .agents/skills/hallmark/references/components/n11-mega-menu.md
+  - .agents/skills/hallmark/references/components/n12-banner-retract.md
+  - .agents/skills/hallmark/references/components/n13-inline-cmdk-pill.md
+  - .agents/skills/hallmark/references/components/n1b-saas-three-section.md
+  - .agents/skills/hallmark/references/components/n2-floating-chip.md
+  - .agents/skills/hallmark/references/components/n3-side-rail.md
+  - .agents/skills/hallmark/references/components/n4-hidden-behind-k.md
+  - .agents/skills/hallmark/references/components/n5-floating-pill.md
+  - .agents/skills/hallmark/references/components/n6-newspaper-masthead.md
+  - .agents/skills/hallmark/references/components/n7-brutal-slab.md
+  - .agents/skills/hallmark/references/components/n8-terminal-command.md
+  - .agents/skills/hallmark/references/components/n9-edge-aligned-minimal.md
+  - .agents/skills/hallmark/references/components/s1-left-margin-numbered.md
+  - .agents/skills/hallmark/references/components/s2-hanging.md
+  - .agents/skills/hallmark/references/components/s3-sticky-pinned.md
+  - .agents/skills/hallmark/references/components/s4-inline-no-break.md
+  - .agents/skills/hallmark/references/components/s5-bottom-anchored.md
+  - .agents/skills/hallmark/references/components/t1-pull-quote-with-marginalia.md
+  - .agents/skills/hallmark/references/components/t2-logo-wall-hairline.md
+  - .agents/skills/hallmark/references/components/t3-single-huge-quote.md
+  - .agents/skills/hallmark/references/components/t4-numbered-stat-strip.md
+  - .agents/skills/hallmark/references/contract.md
+  - .agents/skills/hallmark/references/copy.md
+  - .agents/skills/hallmark/references/custom-craft.md
+  - .agents/skills/hallmark/references/custom-theme.md
+  - .agents/skills/hallmark/references/design-md.md
+  - .agents/skills/hallmark/references/export-formats.md
+  - .agents/skills/hallmark/references/floating-nav.md
+  - .agents/skills/hallmark/references/genres/atmospheric.md
+  - .agents/skills/hallmark/references/genres/editorial.md
+  - .agents/skills/hallmark/references/genres/modern-minimal.md
+  - .agents/skills/hallmark/references/genres/playful.md
+  - .agents/skills/hallmark/references/hero-enrichment.md
+  - .agents/skills/hallmark/references/imagery-kit.md
+  - .agents/skills/hallmark/references/interaction-and-states.md
+  - .agents/skills/hallmark/references/layout-and-space.md
+  - .agents/skills/hallmark/references/macrostructures.md
+  - .agents/skills/hallmark/references/macrostructures/01-bento-grid.md
+  - .agents/skills/hallmark/references/macrostructures/02-long-document.md
+  - .agents/skills/hallmark/references/macrostructures/03-marquee-hero.md
+  - .agents/skills/hallmark/references/macrostructures/04-stat-led.md
+  - .agents/skills/hallmark/references/macrostructures/05-workbench.md
+  - .agents/skills/hallmark/references/macrostructures/06-conversational-faq.md
+  - .agents/skills/hallmark/references/macrostructures/07-manifesto.md
+  - .agents/skills/hallmark/references/macrostructures/08-photographic.md
+  - .agents/skills/hallmark/references/macrostructures/09-quote-led.md
+  - .agents/skills/hallmark/references/macrostructures/10-specimen.md
+  - .agents/skills/hallmark/references/macrostructures/11-catalogue.md
+  - .agents/skills/hallmark/references/macrostructures/12-letter.md
+  - .agents/skills/hallmark/references/macrostructures/13-index-first.md
+  - .agents/skills/hallmark/references/macrostructures/14-narrative-workflow.md
+  - .agents/skills/hallmark/references/macrostructures/15-split-studio.md
+  - .agents/skills/hallmark/references/macrostructures/16-feature-stack.md
+  - .agents/skills/hallmark/references/macrostructures/17-type-specimen.md
+  - .agents/skills/hallmark/references/macrostructures/18-portfolio-grid.md
+  - .agents/skills/hallmark/references/macrostructures/19-map-diagram.md
+  - .agents/skills/hallmark/references/macrostructures/20-ecosystem-index.md
+  - .agents/skills/hallmark/references/macrostructures/21-component-playground.md
+  - .agents/skills/hallmark/references/microinteractions.md
+  - .agents/skills/hallmark/references/motion.md
+  - .agents/skills/hallmark/references/preview-examples.md
+  - .agents/skills/hallmark/references/responsive.md
+  - .agents/skills/hallmark/references/slop-test.md
+  - .agents/skills/hallmark/references/structure.md
+  - .agents/skills/hallmark/references/study.md
+  - .agents/skills/hallmark/references/themes/carnival.md
+  - .agents/skills/hallmark/references/themes/cobalt.md
+  - .agents/skills/hallmark/references/themes/hum.md
+  - .agents/skills/hallmark/references/themes/lumen.md
+  - .agents/skills/hallmark/references/typography.md
+  - .agents/skills/hallmark/references/verbs/audit.md
+  - .agents/skills/hallmark/references/verbs/redesign.md
+  deployed_file_hashes:
+    .agents/skills/hallmark/SKILL.md: sha256:5437b73a1a829210681ca21fa09b7276a5978875f960d3998846e0dc333e9343
+    .agents/skills/hallmark/references/anti-patterns.md: sha256:a36eb346ad59cafaa26119ed1e7c0bbb8aca6637209ee110eb630dd1a9307070
+    .agents/skills/hallmark/references/assets.md: sha256:60929b3dc2258b69caf3012d99d174e1ad73da9645263db81a9b271cd6fd7d61
+    .agents/skills/hallmark/references/color.md: sha256:31c470d16ceb17ccce290cbdd00b9e9a88f2094df8eaaefb67c86ec1e1cdb876
+    .agents/skills/hallmark/references/component-cookbook.md: sha256:4d9ff4eeb675b9d668516ce5d098031d3552453b3671e50da30fb38cb9ab58bb
+    .agents/skills/hallmark/references/components/c1-outlined-chip.md: sha256:bfc3bcef6e23062710845dd8986dbf98574c6c46ffade1db255dbe13a3203262
+    .agents/skills/hallmark/references/components/c2-inline-form-as-cta.md: sha256:1a6e3d564f49a1d3345117bf2f8af5aea46938c6974bf7eb86cf890e5068bc95
+    .agents/skills/hallmark/references/components/c3-typographic-link.md: sha256:59362c6d9f683ec15c3e09862f2ea6cd8e2a84574738ece98e479c58607d0d69
+    .agents/skills/hallmark/references/components/c4-sticky-bottom-bar.md: sha256:67234a8d8722bf0685d00a64ac737748c82af7e0c25271d0c50f418739bd03c6
+    .agents/skills/hallmark/references/components/f1-bento-grid.md: sha256:d696a5ab7d6258cff0d2d9527fe07651bfbda6a725a4dfd8de00f678e1fb2bbc
+    .agents/skills/hallmark/references/components/f2-sticky-scroll-stack.md: sha256:0079ce8c01e8d008882411ed807aa367276cc67af9b956c4f06da1714007ae83
+    .agents/skills/hallmark/references/components/f3-tabular-spec-sheet.md: sha256:16331628cf441c7b570055c8edd60693d0aa793d1bc5eb2bfd145da700d9f072
+    .agents/skills/hallmark/references/components/f4-step-sequence.md: sha256:d3ca2aa99f7e639b8ccda20f5e263f3a33b03830f8c93d666f469b8e629975e2
+    .agents/skills/hallmark/references/components/f5-annotated-screenshot.md: sha256:58f9f4811ea60f923b2f44e0f3e9bac95c40929f8b1af4fdeedd1eae424051ec
+    .agents/skills/hallmark/references/components/f6-product-card-grid.md: sha256:22ebc07b00d71c950be8d1a0fdad2cc0e7340cfbbf2cd62c43804bfcfaaf106a
+    .agents/skills/hallmark/references/components/ft1-mast-headed.md: sha256:7f5671b583e9991f9a4671c223d6c15efdee5c1161dc616cbe2b398eb8d1b6db
+    .agents/skills/hallmark/references/components/ft2-inline-rule-single-line.md: sha256:de13bf7d9bfaddb42a84fc8584646e914f2273abdb34aa98ea9bd2f5d7ff0493
+    .agents/skills/hallmark/references/components/ft3-index-style-category-list.md: sha256:9f70608d62872be05af910a6168017c872ee1c17b2dbb8329128569231aa3cce
+    .agents/skills/hallmark/references/components/ft4-dense-typographic.md: sha256:b8d087773614698036e63474a8546024d874bb6da2b575e64fcaacc2fba0ad60
+    .agents/skills/hallmark/references/components/ft5-statement.md: sha256:71be63a51def6a3b59badcd481e49d4d5c5d9f3d63a3b4a5b9c05482110f4000
+    .agents/skills/hallmark/references/components/ft6-letter-close.md: sha256:8119d22fbbfb3efa83d0bdc41acbfc5037f2c80cb7c39659623d5216eb16c03e
+    .agents/skills/hallmark/references/components/ft7-newsletter-first.md: sha256:2cd766761a8e18bff7bc473b3303392b806a15e461187ac325138f77a308dd48
+    .agents/skills/hallmark/references/components/ft8-marquee-scroll.md: sha256:32b8d38df984b0db385e9ce2251bbf6bb8df279e3933c441b97a0b703961e9f0
+    .agents/skills/hallmark/references/components/h1-marquee.md: sha256:8258b25e27232994126701a4f72bf05267fc9c5dfdc14bcf186efaf96a7dbb10
+    .agents/skills/hallmark/references/components/h2-split-diptych.md: sha256:f6077864f5c58414d7a10648aa8a3162767f2e356d0701d01953181a83cf3364
+    .agents/skills/hallmark/references/components/h3-quote-led.md: sha256:4b1427750c5041ab9201cd18fcdd3dd7a93622644eff518d9ad300339f9a46b7
+    .agents/skills/hallmark/references/components/h4-stat-led.md: sha256:9ada00461ea12be83dec2fba58e19fffd2c559925e68eb72ec18e0ec434f6cec
+    .agents/skills/hallmark/references/components/h5-letter-hero.md: sha256:afcd7bb6b4c888d7e8460e7af5e86dc50149ca253419757bed2834bf66083321
+    .agents/skills/hallmark/references/components/h6-photographic-fold.md: sha256:59e046afd5648bfe2737966f1203c0212e7311fbf0e1edee448e3f68f45aa0d0
+    .agents/skills/hallmark/references/components/h7-demo-video-clipped-by-viewport-edge.md: sha256:12b6f32a47a0b2e73547a0ac8b641cc19b1caa05dda4ffde424defb53afaa0de
+    .agents/skills/hallmark/references/components/h8-mockup-split-browser-framed.md: sha256:954b0a3aebfe6de8a3be70fedda669099125dd2ebc9c07948fbdb457fd8dc166
+    .agents/skills/hallmark/references/components/h9-custom-illustration-centerpiece.md: sha256:1d3d32859e6e451a67bfc38a403bd80115a42b6898a4d8788e4cfadb8c83e8d6
+    .agents/skills/hallmark/references/components/n1-wordmark-2-links.md: sha256:8504774127e33f24a09844eb4c678e91b09ed513690fce51f7863d7cf3fdeab1
+    .agents/skills/hallmark/references/components/n10-floating-on-scroll-morph.md: sha256:056c2107492ab0eb9dafc7ab4c7ff5454222c1ee127fa45615ccc7b8955da36a
+    .agents/skills/hallmark/references/components/n11-mega-menu.md: sha256:b715421012d0997d25d5739c209be6129132fc91add677d75a8ad82d8672e1d4
+    .agents/skills/hallmark/references/components/n12-banner-retract.md: sha256:2d52ecb8725b1991d4f6b78301cd6f112464f7b17315bdf0febbff67bca50a56
+    .agents/skills/hallmark/references/components/n13-inline-cmdk-pill.md: sha256:6375fa0a1bbc92cba9a435159aa46cb084fc030c63e1abf8f073688959d7be75
+    .agents/skills/hallmark/references/components/n1b-saas-three-section.md: sha256:c2631c7807e33eea9b02faa9121a0f9e64861467b57b8635ee97f5fa52bb60ae
+    .agents/skills/hallmark/references/components/n2-floating-chip.md: sha256:70ea848537c5fe29be30f5e4b7478ecc39f86d0089f207549dc98a873b6c8fc1
+    .agents/skills/hallmark/references/components/n3-side-rail.md: sha256:20ed8a06a599d73190502a4801a3be2933b8e06874371167196b7d32dae66111
+    .agents/skills/hallmark/references/components/n4-hidden-behind-k.md: sha256:bccddb3a25a6afd457163b71e09de07ac23bf5d922fdeb9561e25d825bb97dcf
+    .agents/skills/hallmark/references/components/n5-floating-pill.md: sha256:6dc8ffb9628fd7ee3669208091e11497864cecea69becc6b513ebdc1f3a737a3
+    .agents/skills/hallmark/references/components/n6-newspaper-masthead.md: sha256:243a28d1165328c3479a1b75a3ae05dbfe2a6b8c9f867df8e35873b391f8edd5
+    .agents/skills/hallmark/references/components/n7-brutal-slab.md: sha256:6c58d29129f7fd89b9fc755143648397749cdd06043ae0c0b51e6f07e7e6dcb5
+    .agents/skills/hallmark/references/components/n8-terminal-command.md: sha256:c88d787bd2e5cf8bf6fb2c4121602dc0289760b41235d437468322821ee4334b
+    .agents/skills/hallmark/references/components/n9-edge-aligned-minimal.md: sha256:cc20c76a5abe7099ed2bde3480c81f75f02a760a4c0d2ac79de1503dca9f9ee3
+    .agents/skills/hallmark/references/components/s1-left-margin-numbered.md: sha256:074ed68eafb03ca775b0593d0599fe20c7891356f473f04996f42425e6586585
+    .agents/skills/hallmark/references/components/s2-hanging.md: sha256:7b6d04cb896051006fe41b041a67ed77d25010edb579c60b03d88f68ae471462
+    .agents/skills/hallmark/references/components/s3-sticky-pinned.md: sha256:4101cd7a28fe21a9b8094848ac6cc13c89f9e6f9bf801f04ac69b986c76727b4
+    .agents/skills/hallmark/references/components/s4-inline-no-break.md: sha256:4b6d36da05383df1b29afe17b96645b816de07373016deb667efca340bb61ac6
+    .agents/skills/hallmark/references/components/s5-bottom-anchored.md: sha256:55c159e2d8299501f14ac97468404dc8cad35695c2b7eaad2e972d314620eca0
+    .agents/skills/hallmark/references/components/t1-pull-quote-with-marginalia.md: sha256:c7139796972c5f47d723742cbff02916a1ee0f2496456b86ac05d8839542be38
+    .agents/skills/hallmark/references/components/t2-logo-wall-hairline.md: sha256:942121342a61bb4650722f7ba1b605347c6178d69ebeb740139b0bfb5c810e7f
+    .agents/skills/hallmark/references/components/t3-single-huge-quote.md: sha256:7bca56e2cd630da3669f7cf8befd1bd654a5b249cf38b6d9af5a7c62e33b9239
+    .agents/skills/hallmark/references/components/t4-numbered-stat-strip.md: sha256:a5fb5615902f9c4026f4ae7b0c96b536bb3cbb2fb4259031342d1cd190dab729
+    .agents/skills/hallmark/references/contract.md: sha256:2923a056b95da63d04100ac56bc8cdff6bc0a717ac3e5da5cef69eb5feb4619c
+    .agents/skills/hallmark/references/copy.md: sha256:703cdbf81fbef6f71d90596a32041d2a33a46fb71ba07ccf5ede6b4b1471d347
+    .agents/skills/hallmark/references/custom-craft.md: sha256:417ff74cd83e1fea50c41948c53e18365269b880806ef4f31d9e0ebda0f99246
+    .agents/skills/hallmark/references/custom-theme.md: sha256:a5026a0b00f69180ba9c24acec6e717bae0fb6e01daf998e8e900c57958a9eea
+    .agents/skills/hallmark/references/design-md.md: sha256:a9368b64dd9b6e53e8c707830ce28fd8601d3195a81647ea46b6995aa3556b3c
+    .agents/skills/hallmark/references/export-formats.md: sha256:de0a73d9bec7a31abbd0cbbf1ecd51c2e440f1f3fdc08f476a343959ca6c22f3
+    .agents/skills/hallmark/references/floating-nav.md: sha256:c8c80f6560700bf6ee6baf28b81ec1539e9ff920d885624707de5fe8803c25d1
+    .agents/skills/hallmark/references/genres/atmospheric.md: sha256:58d36e9a59c7d9e0ca99edeaaadab885f2635386fa69d52ea9eda3c29977e190
+    .agents/skills/hallmark/references/genres/editorial.md: sha256:1e88cd0c94435c6a9edd1c0b93b67db4321fb3481ff0d66ee24869e655847319
+    .agents/skills/hallmark/references/genres/modern-minimal.md: sha256:6125db00e38f2baca9369ed4d4aa917d977b85dd5eac6f19dac89707c3c3534b
+    .agents/skills/hallmark/references/genres/playful.md: sha256:e52c6ff3fe21b5024c83ac1f03285e1d627e3469ff140d6bea728642026c4f95
+    .agents/skills/hallmark/references/hero-enrichment.md: sha256:63c14cc2c256dd78a69a1c36f4bcb764940aa7f1ba2e6dd40ca36013f8884a83
+    .agents/skills/hallmark/references/imagery-kit.md: sha256:39d71df8dd6186b27f174fd8ab8ffd379553be3917cff50810c72365f6d6cb53
+    .agents/skills/hallmark/references/interaction-and-states.md: sha256:e816eb2d067ba9f6f288a3831549da95624a05f432ed2a50f54136f27dd2d67f
+    .agents/skills/hallmark/references/layout-and-space.md: sha256:987f3a45f5dbe81547117a77987bcedf5376608a6412067e04337047e0c7c839
+    .agents/skills/hallmark/references/macrostructures.md: sha256:a9024133c43e9ef388c331b5bc2f60de3d4a8c22b07b2d277bbafde941b24ea2
+    .agents/skills/hallmark/references/macrostructures/01-bento-grid.md: sha256:aa268415862188414f8db94715e20ae7d29df3dc7c494083683378705f3f8493
+    .agents/skills/hallmark/references/macrostructures/02-long-document.md: sha256:8ca81106396f2bd00eb9ef5d5d1f00c3aab0500394e706d6a2b3221a6c0d910f
+    .agents/skills/hallmark/references/macrostructures/03-marquee-hero.md: sha256:2b7c35860086da6232cb3725c059bead9a31a91872d464266ce6e07a5a75f755
+    .agents/skills/hallmark/references/macrostructures/04-stat-led.md: sha256:a6930b4ba6377c8ef5fcb7af6bf4393cd924292cf03871a37636dd4b77de22b7
+    .agents/skills/hallmark/references/macrostructures/05-workbench.md: sha256:0cbe92772c7b2ffd9b24b9e446b1e1cd9ed22930b39030ef5a6e9cba5512d31f
+    .agents/skills/hallmark/references/macrostructures/06-conversational-faq.md: sha256:373473bed23d055164edc04b16344fcd3861c1ab39ff73f3c75dc1719663d488
+    .agents/skills/hallmark/references/macrostructures/07-manifesto.md: sha256:dc1327bad300179c1b233d02d20137776dc98c9affcfd3942b9f3f796ca67b93
+    .agents/skills/hallmark/references/macrostructures/08-photographic.md: sha256:e5c77bb6ca6d82616c9c63bb6e68ee17c6af7bbca935f9ff29481294d7d1f74c
+    .agents/skills/hallmark/references/macrostructures/09-quote-led.md: sha256:39069a564d9ebd76daf26f46ec7776828dc45fc6a72ae712b3bf7a4fd012f650
+    .agents/skills/hallmark/references/macrostructures/10-specimen.md: sha256:7f23cead7f91c2ee2335eb2c87fb0aa1e7826f4573748d549756523085ed6ad4
+    .agents/skills/hallmark/references/macrostructures/11-catalogue.md: sha256:99ff614600f18cfc80dfa3b9a2158dbea3b3674f76f40b70e721b9255796c265
+    .agents/skills/hallmark/references/macrostructures/12-letter.md: sha256:6f3ad86e87223bd9b6b1267e27532811efbb60f50606e7f72c8525d2cc01d709
+    .agents/skills/hallmark/references/macrostructures/13-index-first.md: sha256:25c832844a1b5e6ce17a335ac98e81d98d9e3372f514d83dc26ac299cc077865
+    .agents/skills/hallmark/references/macrostructures/14-narrative-workflow.md: sha256:e604a1106131fe3a65721066a304922e757a78c997c197227840931079c780fd
+    .agents/skills/hallmark/references/macrostructures/15-split-studio.md: sha256:400effa4de50d5f2fabd88be37447aa845deb3b67810ed4f2b995df458c852e4
+    .agents/skills/hallmark/references/macrostructures/16-feature-stack.md: sha256:a389fae7fe39550352bdf1ce68cdaa3965a434fa1154f67d3c276e550d1d165a
+    .agents/skills/hallmark/references/macrostructures/17-type-specimen.md: sha256:a1487fde891f73bf34a2ca38a631a2cb5c71d3a7b2ccd940114354e291ea8034
+    .agents/skills/hallmark/references/macrostructures/18-portfolio-grid.md: sha256:af5d0f34a7ef7b81d6f4c8c845497ae553d44f418526d7e503346c9243b034e3
+    .agents/skills/hallmark/references/macrostructures/19-map-diagram.md: sha256:5a576f25f4c8d58c14f574e3413560118343df9a9669db80c6c452daf509c3c3
+    .agents/skills/hallmark/references/macrostructures/20-ecosystem-index.md: sha256:fe206580a39ffc4b3534f3a7414155aa626fe16b82b608a0b8b415c1510f17ad
+    .agents/skills/hallmark/references/macrostructures/21-component-playground.md: sha256:ad3cbdbe9181e9472cb7b7fffbbe35021dc9b5b99ea86adc026f34d6b2c2f01f
+    .agents/skills/hallmark/references/microinteractions.md: sha256:613ca56c2c16e40aeb594af21fabd651732d9de63c848aee51113602525f6e64
+    .agents/skills/hallmark/references/motion.md: sha256:330d056810315f65819579f8207afe402703a9192bc76a2009558a59b7c84ccf
+    .agents/skills/hallmark/references/preview-examples.md: sha256:df61c24c9a67457ef7369ec5f20575095326df72ffe6534c8fa9730581ebf7d9
+    .agents/skills/hallmark/references/responsive.md: sha256:2bf18d72af704ca5dd3c220359a4c77c718efa19c40f62d9bff61ac4a90209b0
+    .agents/skills/hallmark/references/slop-test.md: sha256:6eb49fc64ca54929d2c1600e2a6014268f1a7593787c0ed3f6ecb4ac8390ad86
+    .agents/skills/hallmark/references/structure.md: sha256:ca5c0296ae428f8c4c5214407d431bbda5c453f98f2e7abdec03d644271af32b
+    .agents/skills/hallmark/references/study.md: sha256:021fe4d001b38ee87414c1bb69321d2e44b67df8ede76ecec225c41a634aab20
+    .agents/skills/hallmark/references/themes/carnival.md: sha256:119a9c803eac74958e5df6151da8a2575a1cc2d061a619bdb7f32cf972308ee2
+    .agents/skills/hallmark/references/themes/cobalt.md: sha256:13be92af729e6b82d1b1e51aa078f7c007e2900c8f0798b2c0fd2c0eeac7019e
+    .agents/skills/hallmark/references/themes/hum.md: sha256:bbdd1e89a32d6b15e99493ba9497816a0915bd4e9bf150b95868db597c20e1d5
+    .agents/skills/hallmark/references/themes/lumen.md: sha256:d5459478d3aa1ea6330c221dfe011b717a70dbb036f597403b3a6b3cf82dd53b
+    .agents/skills/hallmark/references/typography.md: sha256:94d7b2d2b138bd8687e09dc3dd618eaafff500b0497a6d69cb4c29b764e94b9c
+    .agents/skills/hallmark/references/verbs/audit.md: sha256:0a5b484453f1697a8675a7020df9159d0b4ce22f059b873501bfd82c26d6a31a
+    .agents/skills/hallmark/references/verbs/redesign.md: sha256:c2830f3b7d68e9622f55d376048a5a454c5ef59d309a211e716d1142e86acbdf
+  content_hash: sha256:dee470e28bacb873cbb6194a856de888ee9ed906d3735ecf77398d7a5413471e
 - repo_url: anthropics/skills
   name: skills
   host: github.com
@@ -411,10 +635,10 @@ dependencies:
     .agents/skills/nothing-design/references/tokens.md: sha256:39afb46a2012dc6454ca3c4081e1b27e959b6780efc6abed18dcaeeff9320e5e
   content_hash: sha256:bd835bf84356f346fe0adffe9b388bd45eb77eb2b50d83defde371e1d4861b34
 - repo_url: emilkowalski/skill
-  name: skill
+  name: emil-design-eng
   host: github.com
-  resolved_commit: 1274a0584c4fe9e94304a4e29094cefe5eb51dbe
-  version: unknown
+  resolved_commit: 6bf24434f7730ad169077756cf9c7cd7bd675fc6
+  version: 1.0.0
   virtual_path: skills/emil-design-eng
   is_virtual: true
   package_type: claude_skill
@@ -485,8 +709,8 @@ dependencies:
 - repo_url: ogulcancelik/herdr
   name: herdr
   host: github.com
-  resolved_commit: b708f85e7d17d8109bef70ea3f595cea0ae40c46
-  version: unknown
+  resolved_commit: a0678a38b9426b011f66e1b88ff7aaa9bf877104
+  version: 1.0.0
   package_type: claude_skill
   deployed_files:
   - .agents/skills/herdr
@@ -549,6 +773,7 @@ dependencies:
   - .agents/skills/herdr/docs/next/website/src/content/docs/agents.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/cli-reference.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/concepts.mdx
+  - .agents/skills/herdr/docs/next/website/src/content/docs/config-reference.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/configuration.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/how-to-work.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/index.mdx
@@ -558,6 +783,7 @@ dependencies:
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/agents.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/cli-reference.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/concepts.mdx
+  - .agents/skills/herdr/docs/next/website/src/content/docs/ja/config-reference.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/configuration.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/how-to-work.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/index.mdx
@@ -570,6 +796,7 @@ dependencies:
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/quick-start.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/session-state.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/socket-api.mdx
+  - .agents/skills/herdr/docs/next/website/src/content/docs/ja/troubleshooting.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/ja/windows-beta.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/keyboard.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/marketplace.mdx
@@ -578,11 +805,13 @@ dependencies:
   - .agents/skills/herdr/docs/next/website/src/content/docs/quick-start.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/session-state.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/socket-api.mdx
+  - .agents/skills/herdr/docs/next/website/src/content/docs/troubleshooting.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/windows-beta.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/agent-skill.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/agents.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/cli-reference.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/concepts.mdx
+  - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/config-reference.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/configuration.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/how-to-work.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/index.mdx
@@ -595,11 +824,14 @@ dependencies:
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/quick-start.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/session-state.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/socket-api.mdx
+  - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/troubleshooting.mdx
   - .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/windows-beta.mdx
+  - .agents/skills/herdr/docs/next/website/src/data/config-reference.json
   - .agents/skills/herdr/flake.lock
   - .agents/skills/herdr/flake.nix
   - .agents/skills/herdr/justfile
   - .agents/skills/herdr/nix/package.nix
+  - .agents/skills/herdr/rust-toolchain.toml
   - .agents/skills/herdr/scripts/__init__.py
   - .agents/skills/herdr/scripts/agent_detection_manifest_check.py
   - .agents/skills/herdr/scripts/build_vendored_libghostty_vt.sh
@@ -607,6 +839,7 @@ dependencies:
   - .agents/skills/herdr/scripts/capture_key_matrix.py
   - .agents/skills/herdr/scripts/capture_keys.py
   - .agents/skills/herdr/scripts/changelog.py
+  - .agents/skills/herdr/scripts/config_reference_check.py
   - .agents/skills/herdr/scripts/conventional_commits.py
   - .agents/skills/herdr/scripts/docs_translation_parity.py
   - .agents/skills/herdr/scripts/preview.py
@@ -614,6 +847,7 @@ dependencies:
   - .agents/skills/herdr/scripts/smoke_live_handoff_sessions.sh
   - .agents/skills/herdr/scripts/test_agent_detection_manifest_check.py
   - .agents/skills/herdr/scripts/test_changelog.py
+  - .agents/skills/herdr/scripts/test_config_reference_check.py
   - .agents/skills/herdr/scripts/test_docs_translation_parity.py
   - .agents/skills/herdr/scripts/test_preview.py
   - .agents/skills/herdr/scripts/test_vendor_libghostty_vt.py
@@ -640,6 +874,7 @@ dependencies:
   - .agents/skills/herdr/src/api/schema/workspaces.rs
   - .agents/skills/herdr/src/api/schema/worktrees.rs
   - .agents/skills/herdr/src/api/server.rs
+  - .agents/skills/herdr/src/api/server/pane_graphics_stream.rs
   - .agents/skills/herdr/src/api/status.rs
   - .agents/skills/herdr/src/api/subscriptions.rs
   - .agents/skills/herdr/src/api/wait.rs
@@ -651,6 +886,7 @@ dependencies:
   - .agents/skills/herdr/src/app/api/env.rs
   - .agents/skills/herdr/src/app/api/integrations.rs
   - .agents/skills/herdr/src/app/api/layouts.rs
+  - .agents/skills/herdr/src/app/api/pane_graphics.rs
   - .agents/skills/herdr/src/app/api/panes.rs
   - .agents/skills/herdr/src/app/api/plugins/context.rs
   - .agents/skills/herdr/src/app/api/plugins/env.rs
@@ -679,11 +915,13 @@ dependencies:
   - .agents/skills/herdr/src/app/input/sidebar.rs
   - .agents/skills/herdr/src/app/input/terminal.rs
   - .agents/skills/herdr/src/app/mod.rs
+  - .agents/skills/herdr/src/app/popup.rs
   - .agents/skills/herdr/src/app/runtime.rs
   - .agents/skills/herdr/src/app/runtime_mutations.rs
   - .agents/skills/herdr/src/app/session.rs
   - .agents/skills/herdr/src/app/state.rs
   - .agents/skills/herdr/src/app/terminal_targets.rs
+  - .agents/skills/herdr/src/app/terminal_titles.rs
   - .agents/skills/herdr/src/app/theme_sync.rs
   - .agents/skills/herdr/src/app/worktrees.rs
   - .agents/skills/herdr/src/build_info.rs
@@ -710,6 +948,7 @@ dependencies:
   - .agents/skills/herdr/src/config/io.rs
   - .agents/skills/herdr/src/config/keybinds.rs
   - .agents/skills/herdr/src/config/model.rs
+  - .agents/skills/herdr/src/config/sidebar.rs
   - .agents/skills/herdr/src/config/sound.rs
   - .agents/skills/herdr/src/config/theme.rs
   - .agents/skills/herdr/src/detect/manifest.rs
@@ -730,6 +969,7 @@ dependencies:
   - .agents/skills/herdr/src/detect/manifests/kilo.toml
   - .agents/skills/herdr/src/detect/manifests/kimi.toml
   - .agents/skills/herdr/src/detect/manifests/kiro.toml
+  - .agents/skills/herdr/src/detect/manifests/maki.toml
   - .agents/skills/herdr/src/detect/manifests/opencode.toml
   - .agents/skills/herdr/src/detect/manifests/pi.toml
   - .agents/skills/herdr/src/detect/manifests/qodercli.toml
@@ -780,6 +1020,7 @@ dependencies:
   - .agents/skills/herdr/src/layout.rs
   - .agents/skills/herdr/src/logging.rs
   - .agents/skills/herdr/src/main.rs
+  - .agents/skills/herdr/src/metadata_tokens.rs
   - .agents/skills/herdr/src/pane.rs
   - .agents/skills/herdr/src/pane/agent_detection.rs
   - .agents/skills/herdr/src/pane/cursor.rs
@@ -802,6 +1043,7 @@ dependencies:
   - .agents/skills/herdr/src/platform/windows.rs
   - .agents/skills/herdr/src/plugin_command.rs
   - .agents/skills/herdr/src/plugin_paths.rs
+  - .agents/skills/herdr/src/popup_size.rs
   - .agents/skills/herdr/src/product_announcements.rs
   - .agents/skills/herdr/src/protocol/mod.rs
   - .agents/skills/herdr/src/protocol/render_ansi.rs
@@ -825,6 +1067,8 @@ dependencies:
   - .agents/skills/herdr/src/server/clipboard_image.rs
   - .agents/skills/herdr/src/server/handoff.rs
   - .agents/skills/herdr/src/server/headless.rs
+  - .agents/skills/herdr/src/server/headless/pane_graphics.rs
+  - .agents/skills/herdr/src/server/headless/tests/pane_graphics.rs
   - .agents/skills/herdr/src/server/keybindings.rs
   - .agents/skills/herdr/src/server/mod.rs
   - .agents/skills/herdr/src/server/notifications.rs
@@ -839,6 +1083,7 @@ dependencies:
   - .agents/skills/herdr/src/terminal/runtime.rs
   - .agents/skills/herdr/src/terminal/runtime_registry.rs
   - .agents/skills/herdr/src/terminal/state.rs
+  - .agents/skills/herdr/src/terminal/title.rs
   - .agents/skills/herdr/src/terminal_modes.rs
   - .agents/skills/herdr/src/terminal_notify.rs
   - .agents/skills/herdr/src/terminal_theme.rs
@@ -854,6 +1099,7 @@ dependencies:
   - .agents/skills/herdr/src/ui/scrollbar.rs
   - .agents/skills/herdr/src/ui/settings.rs
   - .agents/skills/herdr/src/ui/sidebar.rs
+  - .agents/skills/herdr/src/ui/sidebar/tokens.rs
   - .agents/skills/herdr/src/ui/status.rs
   - .agents/skills/herdr/src/ui/tabs.rs
   - .agents/skills/herdr/src/ui/text.rs
@@ -2139,6 +2385,7 @@ dependencies:
   - .agents/skills/herdr/website/agent-detection/kilo.toml
   - .agents/skills/herdr/website/agent-detection/kimi.toml
   - .agents/skills/herdr/website/agent-detection/kiro.toml
+  - .agents/skills/herdr/website/agent-detection/maki.toml
   - .agents/skills/herdr/website/agent-detection/opencode.toml
   - .agents/skills/herdr/website/agent-detection/pi.toml
   - .agents/skills/herdr/website/agent-detection/qodercli.toml
@@ -2209,8 +2456,11 @@ dependencies:
   - .agents/skills/herdr/website/scripts/prepare-docs.mjs
   - .agents/skills/herdr/website/src/components/AuthorCard.astro
   - .agents/skills/herdr/website/src/components/Banner.astro
+  - .agents/skills/herdr/website/src/components/ConfigReference.astro
+  - .agents/skills/herdr/website/src/components/Head.astro
   - .agents/skills/herdr/website/src/components/Header.astro
   - .agents/skills/herdr/website/src/components/MarketingLayout.astro
+  - .agents/skills/herdr/website/src/components/Search.astro
   - .agents/skills/herdr/website/src/components/Sidebar.astro
   - .agents/skills/herdr/website/src/components/SiteTitle.astro
   - .agents/skills/herdr/website/src/content.config.ts
@@ -2221,6 +2471,7 @@ dependencies:
   - .agents/skills/herdr/website/src/content/docs/agents.mdx
   - .agents/skills/herdr/website/src/content/docs/cli-reference.mdx
   - .agents/skills/herdr/website/src/content/docs/concepts.mdx
+  - .agents/skills/herdr/website/src/content/docs/config-reference.mdx
   - .agents/skills/herdr/website/src/content/docs/configuration.mdx
   - .agents/skills/herdr/website/src/content/docs/how-to-work.mdx
   - .agents/skills/herdr/website/src/content/docs/index.mdx
@@ -2230,6 +2481,7 @@ dependencies:
   - .agents/skills/herdr/website/src/content/docs/ja/agents.mdx
   - .agents/skills/herdr/website/src/content/docs/ja/cli-reference.mdx
   - .agents/skills/herdr/website/src/content/docs/ja/concepts.mdx
+  - .agents/skills/herdr/website/src/content/docs/ja/config-reference.mdx
   - .agents/skills/herdr/website/src/content/docs/ja/configuration.mdx
   - .agents/skills/herdr/website/src/content/docs/ja/how-to-work.mdx
   - .agents/skills/herdr/website/src/content/docs/ja/index.mdx
@@ -2242,6 +2494,7 @@ dependencies:
   - .agents/skills/herdr/website/src/content/docs/ja/quick-start.mdx
   - .agents/skills/herdr/website/src/content/docs/ja/session-state.mdx
   - .agents/skills/herdr/website/src/content/docs/ja/socket-api.mdx
+  - .agents/skills/herdr/website/src/content/docs/ja/troubleshooting.mdx
   - .agents/skills/herdr/website/src/content/docs/ja/windows-beta.mdx
   - .agents/skills/herdr/website/src/content/docs/keyboard.mdx
   - .agents/skills/herdr/website/src/content/docs/marketplace.mdx
@@ -2250,11 +2503,13 @@ dependencies:
   - .agents/skills/herdr/website/src/content/docs/quick-start.mdx
   - .agents/skills/herdr/website/src/content/docs/session-state.mdx
   - .agents/skills/herdr/website/src/content/docs/socket-api.mdx
+  - .agents/skills/herdr/website/src/content/docs/troubleshooting.mdx
   - .agents/skills/herdr/website/src/content/docs/windows-beta.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/agent-skill.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/agents.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/cli-reference.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/concepts.mdx
+  - .agents/skills/herdr/website/src/content/docs/zh-cn/config-reference.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/configuration.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/how-to-work.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/index.mdx
@@ -2267,8 +2522,12 @@ dependencies:
   - .agents/skills/herdr/website/src/content/docs/zh-cn/quick-start.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/session-state.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/socket-api.mdx
+  - .agents/skills/herdr/website/src/content/docs/zh-cn/troubleshooting.mdx
   - .agents/skills/herdr/website/src/content/docs/zh-cn/windows-beta.mdx
+  - .agents/skills/herdr/website/src/data/config-reference.json
   - .agents/skills/herdr/website/src/data/plugins-fixture.json
+  - .agents/skills/herdr/website/src/docs-path.test.ts
+  - .agents/skills/herdr/website/src/docs-path.ts
   - .agents/skills/herdr/website/src/pages/blog/[slug].astro
   - .agents/skills/herdr/website/src/pages/blog/index.astro
   - .agents/skills/herdr/website/src/pages/compare.astro
@@ -2288,7 +2547,7 @@ dependencies:
     .agents/skills/herdr/.codex/skills/triage/SKILL.md: sha256:53e4df8ff73e471591c41b3296c2df549d485da6e37f895996ff0bd93a6230b4
     .agents/skills/herdr/.githooks/commit-msg: sha256:b980ec5cccaf0456fc6aa3cf8ea39628d2267078880b9320037ffe7a2d081509
     .agents/skills/herdr/.githooks/pre-commit: sha256:124ea7f764cb61e3f936289ff5b116c03c1ef34913bf3bd983bfe5dc4aa64400
-    .agents/skills/herdr/.github/APPROVED_CONTRIBUTORS: sha256:0c04e626816eb8d5f643ba8c932724984fa6fd856f8f496b0c36120faa0e48f3
+    .agents/skills/herdr/.github/APPROVED_CONTRIBUTORS: sha256:c2cd49e7b5c0ba6ad549f33ed9fad72d990710c0039b33563e84d0d647b24979
     .agents/skills/herdr/.github/DISCUSSION_TEMPLATE/ideas.yml: sha256:ca365bb01ac8e44e6e38c8e9c5d6c9c153189c0386c4f8c11687691f1377b3c0
     .agents/skills/herdr/.github/DISCUSSION_TEMPLATE/q-a.yml: sha256:1eb3650343a14a1ccf849a542e6d99315a857c0cae2721fbaadb58f10d73d7a7
     .agents/skills/herdr/.github/FUNDING.yml: sha256:898fd354d48639ef27435fb4460f008fff13067673c3b1833716d1f713eb7a30
@@ -2298,14 +2557,14 @@ dependencies:
     .agents/skills/herdr/.github/dependabot.yml: sha256:f4a2bbb949bcc9cb2498c31b03e65faeed16450660f84f1b4927ac4e359ce7d1
     .agents/skills/herdr/.github/workflows/approve-contributor.yml: sha256:a7248213be3b1b56b4dd682668e1bde8619c90d9be77d85fd510a9aa7b19ad8b
     .agents/skills/herdr/.github/workflows/approve-merged-contributor.yml: sha256:e801d0097b0796e664e728bdb13b795540a9f90e4c88d5a86dafbc74fb746044
-    .agents/skills/herdr/.github/workflows/build-artifacts-manual.yml: sha256:e71dea2bc5d23dc92c6d045dcae48550ca6a8630366589021514986e18d628d3
-    .agents/skills/herdr/.github/workflows/ci.yml: sha256:8d67953c70c7f09e76f936fb9d7c7037de50671bc528ec247632e5cb34f02ca7
+    .agents/skills/herdr/.github/workflows/build-artifacts-manual.yml: sha256:d99963e94ee6fa059ef22fd832c92eeb03f7cdf01273f4ab6a29bad2a70d9c55
+    .agents/skills/herdr/.github/workflows/ci.yml: sha256:1fd9833f2411778e9adec75ca69b76711f821ccfd49c601cf88d1abf40abf14b
     .agents/skills/herdr/.github/workflows/issue-gate.yml: sha256:ce5ea680d354aa6f9c5347bddae1b4a8c10699e464470f6a4be43e4b1304ad9d
     .agents/skills/herdr/.github/workflows/label-next-release-issues.yml: sha256:86062342fb221e7c2f4b49e0c232944474c5793344a9b265d4ba8b58aa32075d
     .agents/skills/herdr/.github/workflows/nix.yml: sha256:8460bc6fb601cd54089d14a9ce0f9f84a767b66bff18e657dd5925427b9decc6
     .agents/skills/herdr/.github/workflows/pr-gate.yml: sha256:1b7b34a7f048b932b717f7fd52ae894a4fb5f857cc132ffd010e15f14bb7c078
-    .agents/skills/herdr/.github/workflows/preview.yml: sha256:263f765810f7f5f38c2ca44f727e4e15f9ed68f5b05d3dfbc98da9b008499837
-    .agents/skills/herdr/.github/workflows/release.yml: sha256:6c5adb207fcf1e5aff1b530f681d68721eb0011d5096ec7309789a7f0995ea56
+    .agents/skills/herdr/.github/workflows/preview.yml: sha256:7b9a3911b8c2399c11b5121d882216bc6f61d52c0d39cfc9c9d105a7ebf4fa24
+    .agents/skills/herdr/.github/workflows/release.yml: sha256:ac385790cb14d50685645d44cad7a01dd161605dbdaf69bbed35dffe0fe6c533
     .agents/skills/herdr/.gitignore: sha256:9de2e3229040a1f66a1bf3d518256e9e8e5f8cc4d405247d90187adbdf549be8
     .agents/skills/herdr/.pi/extensions/github-issues-autocomplete/index.ts: sha256:d9344549a956c0bf0e4aa31736a7caf7c9ef94b2dc69e3a6f4ce27fa8544a914
     .agents/skills/herdr/.pi/extensions/github-issues-autocomplete/package.json: sha256:667aa96f7337e1397e1fe47091f7a3e05fb8473cd00b0027f52375a1ab19a9f3
@@ -2319,10 +2578,10 @@ dependencies:
     .agents/skills/herdr/CLAUDE.md: sha256:697f721fa934dc206d2d16b441dd4f6ed9616f50883cba3252cebf99dcc54ff5
     .agents/skills/herdr/CONTRIBUTING.md: sha256:3f14dfab24f40435c0a2b91811b9df0c64082f3ad7466e817013b8ac7a9584ce
     .agents/skills/herdr/Cargo.lock: sha256:9a8e06220c7b5089ad9a5cc65c465582e234c18492ecb939f46c697ccbb4cd33
-    .agents/skills/herdr/Cargo.toml: sha256:2f2df931b703c1fd53d0ab0916f312081eee7fd6bf2c46581a81e42f6a86ecd0
+    .agents/skills/herdr/Cargo.toml: sha256:fe25d80e1d3180a006622626757602f57e26b0f410f58adf57e24a04bbd7c478
     .agents/skills/herdr/LICENSE: sha256:a7fa24f74382fb3e4d320a608533a7c2999dbc0f780f1f734c8b891b31f0d9bd
     .agents/skills/herdr/README.md: sha256:ee58f111deabc39a2477c4a6f983b721f9f301bad2420e09be7dc1d49a786286
-    .agents/skills/herdr/SKILL.md: sha256:75826452ca09623a7309c0a0d9bd6b29b24c55cf100632fc83bd69a685241f17
+    .agents/skills/herdr/SKILL.md: sha256:04b5f99c3c3178d8a7d194be2fbe99796852a8fbd7739346213d15242723ebb9
     .agents/skills/herdr/SPONSORS.md: sha256:a257b22f8f506b4bd7526c8cd496b28e74a2e9b8b8a374837b664e68395c23ca
     .agents/skills/herdr/assets/logo.png: sha256:56fc2db845c16eb521022549890fbe239659957caee1f4fc718a634d7a66cf0a
     .agents/skills/herdr/assets/logo.svg: sha256:f4a8400d515fcf50112a952a5b48f5fa6e6b02b4dcb0b483ca92be39f7d7f7a1
@@ -2334,65 +2593,73 @@ dependencies:
     .agents/skills/herdr/assets/sponsors/terminal-trove.svg: sha256:c9ede5ac7b4ed087de90aab7c31ceab3faacdb711684a21d85970c8d4c57cf34
     .agents/skills/herdr/build.rs: sha256:addbc081ff640860a5937c0c774c7f8dc7acda88be43660d3cdc4823b4df465c
     .agents/skills/herdr/clippy.toml: sha256:e4f9673d78df48050c341c6fae8f7b24510c6abd91f8267a335a449219b949a1
-    .agents/skills/herdr/docs/next/CHANGELOG.md: sha256:bf5c4a03925fef04560f189703bd60c3ce77db864b39a0f629a3d6d53f96b1e4
-    .agents/skills/herdr/docs/next/README.md: sha256:c35b4268c17779d76fb3c167dbf23078ec3ad1728e55a475235363b7f032fc23
-    .agents/skills/herdr/docs/next/api/herdr-api.schema.json: sha256:7d1eede56d8009fe5b1b2f76e9cedf50b730124cec821fdc3b68ca07cd545f83
+    .agents/skills/herdr/docs/next/CHANGELOG.md: sha256:7e179697963fb01151c4ac2434ff33db8e2737255679767a0547da70d61519eb
+    .agents/skills/herdr/docs/next/README.md: sha256:88ba32cd0d8dfafcddb05a960f57d47017cc68969122278697956f480b5e7552
+    .agents/skills/herdr/docs/next/api/herdr-api.schema.json: sha256:4c138114dfdb8ed9ddb906fcd117967ca7fac0c10251abf238452c52b766d49c
     .agents/skills/herdr/docs/next/product-announcement.json: sha256:38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed
     .agents/skills/herdr/docs/next/website/src/content/docs/agent-skill.mdx: sha256:7fba00cb14002b86fab9e0f433825c1afc3a2e3e43f5e0a94ad37e75ae1cd690
-    .agents/skills/herdr/docs/next/website/src/content/docs/agents.mdx: sha256:2ab4fee1be68e4dbaad12a4c149389b1fa8841903c7e1e7e402b1d91754a096c
-    .agents/skills/herdr/docs/next/website/src/content/docs/cli-reference.mdx: sha256:b76247f7aca8adadd2342ef76e46ccd2e5d4980ff82332123a5428b9f8b6c243
+    .agents/skills/herdr/docs/next/website/src/content/docs/agents.mdx: sha256:5981fecb3cfba3b827fdc26e4351c5706afc59e3be53d418f3414507755781f6
+    .agents/skills/herdr/docs/next/website/src/content/docs/cli-reference.mdx: sha256:3dd06491c6b757eaa95903a219356e5c2e1d19c5c85caf2470e64687624f5de2
     .agents/skills/herdr/docs/next/website/src/content/docs/concepts.mdx: sha256:34b9070442b54b685051c28523792192c915360799918702df713bc47c01e03c
-    .agents/skills/herdr/docs/next/website/src/content/docs/configuration.mdx: sha256:ccc9e4e295d0edba57c5241f5ab0d36523dc5d209e078853e7ce6f5f4ceb0477
+    .agents/skills/herdr/docs/next/website/src/content/docs/config-reference.mdx: sha256:3c63214777ab3be97279477298860dd2b69b8be52bf92eda5113b80fcbc4a6c0
+    .agents/skills/herdr/docs/next/website/src/content/docs/configuration.mdx: sha256:84d37c6af18dbdd6056a01b4a2034f1b6a74eb3846ad6ee0acb2ed949181a83d
     .agents/skills/herdr/docs/next/website/src/content/docs/how-to-work.mdx: sha256:d242be300a85ad5bb81697bcef9bad60fe400fb09768bc1f029063b6e4998005
     .agents/skills/herdr/docs/next/website/src/content/docs/index.mdx: sha256:c2f8114b56eb89271276f32ac421268e5f2f6efff31b67b81402e493cc229ad4
-    .agents/skills/herdr/docs/next/website/src/content/docs/install.mdx: sha256:54c1c3e6ed0b0416d9ca1505e079f8ba0807f212de5332a2cf459a12588d736e
-    .agents/skills/herdr/docs/next/website/src/content/docs/integrations.mdx: sha256:121ee7c36d6a77df89c6a342c8bf2ee5741001beb8b9c341211f999e2e262360
+    .agents/skills/herdr/docs/next/website/src/content/docs/install.mdx: sha256:ec2f219d021f3567eefef24c7e5633a5d100a636a1c41e83b5c67ef702ab622d
+    .agents/skills/herdr/docs/next/website/src/content/docs/integrations.mdx: sha256:7f8576b1861147e5ba4bd2affdfa0638640782c0e53fc25eeca175d6cfbccae1
     .agents/skills/herdr/docs/next/website/src/content/docs/ja/agent-skill.mdx: sha256:bb9e204e9e70ef0a9983beccac1e90a56685ce01c0b84d4f4ef16e65506aabae
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/agents.mdx: sha256:4f59cfc94c46ee017174d5e9f027da7dd378528816d707c0fb46584227c046da
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/cli-reference.mdx: sha256:e37b7a2d476b8a9e6c470e8b51f535976f4cea3ada2996c11801deed34c8aa10
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/agents.mdx: sha256:cde8eac54e85c66993266a99e9f49118d5624c54f2209252782c616a17fe21a2
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/cli-reference.mdx: sha256:8e716341ffdc2a6afe010756a8c5bd8d060ee1bb8b42a4dc5665b604049f604a
     .agents/skills/herdr/docs/next/website/src/content/docs/ja/concepts.mdx: sha256:ef98317644451e325d17615a35ad6222e12abab16167b476f154ca42827458e3
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/configuration.mdx: sha256:b12de3364691f92a9dee2d6609001f6b7fddd3622ddbf87d1fd65413ebc97eb5
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/config-reference.mdx: sha256:542e3e8be77154d9b1a9f3ff88be280d90ffaf3c42142678e90d0fe68f72b82a
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/configuration.mdx: sha256:138c52e4c670805f54b90759f4dc52f1d7b456c2adfa7292037daab79aff67ba
     .agents/skills/herdr/docs/next/website/src/content/docs/ja/how-to-work.mdx: sha256:2eaa0e36521bae842cc144f68c5e9437b60d6a30c58644441c3420a763fc6869
     .agents/skills/herdr/docs/next/website/src/content/docs/ja/index.mdx: sha256:eb6062e21f9ccf481ab30190d515dcc00d8efc270f92a033d10c27af06081202
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/install.mdx: sha256:7a7aa771d04eb1a942a5d4c5801e0933bfa0d63398b9083e5b582a3db89083af
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/integrations.mdx: sha256:a9f07c99d8f298968674227e8a71108ca930879c55b46a82dfdfcb5cb6f56f9a
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/keyboard.mdx: sha256:590e0d675b7c438dc8f8c9508a8736f71b189d7d41dffeb72d1ee1efddc23fc9
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/install.mdx: sha256:e65eef8d37e451026c0b80be39e601998534a510e83d21283bcac53999692ea0
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/integrations.mdx: sha256:50645613377c857ea840d5291bf7719910864b42c5f043931eb68de7e3ff782d
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/keyboard.mdx: sha256:7bbd579d8efa5ecfd58b349125c5a06ef7b1597d7ca42613b5d2c82ea0e42f66
     .agents/skills/herdr/docs/next/website/src/content/docs/ja/marketplace.mdx: sha256:d19d097680635b7d11ffc6600c713c0afc4be987ada6346165e458dc5e4a9273
     .agents/skills/herdr/docs/next/website/src/content/docs/ja/persistence-remote.mdx: sha256:145f64d5cc6b1f37b78de3097e4599febeb4446749726df13740cf03b25bdab2
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/plugins.mdx: sha256:52ff013d630ae5ad71079bb344f23cecd3a3e0aa0946926cfa968bbecdfb0cd4
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/plugins.mdx: sha256:881b4624803e31f7749fcc1b972ac9768dd6a8db1159d4cd7721c7d07162cbde
     .agents/skills/herdr/docs/next/website/src/content/docs/ja/quick-start.mdx: sha256:971804de7f81f5bc630f07ce3e49c6797f478302a7516391e4187b4aa6c35d08
     .agents/skills/herdr/docs/next/website/src/content/docs/ja/session-state.mdx: sha256:c795c0780d4cba95fe9b0dd6af6269e299ee85463a1d8d8ed97f28180c6e037b
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/socket-api.mdx: sha256:a061e237067220e7599efbb9f583f2c40c5f7672a76148c2953d4b34abdd1bc4
-    .agents/skills/herdr/docs/next/website/src/content/docs/ja/windows-beta.mdx: sha256:0bd0f2e1f3555d3f11f701609558e09cd2198165482c84811d6287be251388c2
-    .agents/skills/herdr/docs/next/website/src/content/docs/keyboard.mdx: sha256:d1b0c7a52d7bb499242dfbe812ccbf9d3402022f776711ccd30d179d69c8f4e6
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/socket-api.mdx: sha256:edbfbef5896ae8cc168fc0edd7f7ec14d1aa9aaa757d1befa1be5271183a34a7
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/troubleshooting.mdx: sha256:0d203a051b612331e3cae8062cbd75248954ada4c2243648b0e91513a72c5f03
+    .agents/skills/herdr/docs/next/website/src/content/docs/ja/windows-beta.mdx: sha256:0a2ec54a9bde4e125f3fc882c3d847466f2b0d6aa863a492b5a8a49534c053a0
+    .agents/skills/herdr/docs/next/website/src/content/docs/keyboard.mdx: sha256:38cdb276a3ffe3e341c5e62178b0fff50a7bf2413c3206222612531ee10183f8
     .agents/skills/herdr/docs/next/website/src/content/docs/marketplace.mdx: sha256:00db81b952e16e397bb37a931ed5ecee92e88e6fe4095ffbfdff474b17eac086
     .agents/skills/herdr/docs/next/website/src/content/docs/persistence-remote.mdx: sha256:3276d94d35828f3673a2576d8fe28b1c388184d46b7755f6f84e1b2da05f7ddf
-    .agents/skills/herdr/docs/next/website/src/content/docs/plugins.mdx: sha256:1c43f97e1495b041a096e14b4235f9dd254a484f9dd60260c7b0a663c12be5b0
+    .agents/skills/herdr/docs/next/website/src/content/docs/plugins.mdx: sha256:699a8da8efdd0832e584d2640fa1060253f3f72b5b7780b1397524ceb86ba8b8
     .agents/skills/herdr/docs/next/website/src/content/docs/quick-start.mdx: sha256:7e8a3c9c9688a94f9256222079937f187d70ba396e8e414a433e970440c3b52d
     .agents/skills/herdr/docs/next/website/src/content/docs/session-state.mdx: sha256:c4629739c175430b6383e122fc7423c15853d3d14fabb738182c383dac7170a4
-    .agents/skills/herdr/docs/next/website/src/content/docs/socket-api.mdx: sha256:ff2e24eb7a229f48892a777feb29af1aa99279ea35209e6059cbf9fc1bfe60a4
-    .agents/skills/herdr/docs/next/website/src/content/docs/windows-beta.mdx: sha256:5213ae6da9913c1ea9a62cb12ee153567c2d9ae110d2831b56013d68fc7e2b5a
+    .agents/skills/herdr/docs/next/website/src/content/docs/socket-api.mdx: sha256:e639ede69655c5195bec5b9e3c5cb19346e47396f0db00be3d1cab7e41fc70c6
+    .agents/skills/herdr/docs/next/website/src/content/docs/troubleshooting.mdx: sha256:8c1b0400f5fb5f6b69c95ecac05014ac6bda66e9fb455c07c93c62594e5a1747
+    .agents/skills/herdr/docs/next/website/src/content/docs/windows-beta.mdx: sha256:7332fa79b0aab50b54c5afe435af54e131f65e6fb17b8e8aa939ef505b6fb27d
     .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/agent-skill.mdx: sha256:ae54bfba479ecf2eb5604b933fc6bf1c26e07b330ba5b8d1d50bb146ea70c584
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/agents.mdx: sha256:0e77844758e195ea3b7bac42bd87ddbb11b06beb7044311f82c147272f937e30
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/cli-reference.mdx: sha256:3007ea5fa80cc4496e01b97714c0c2c3b2345c67cdf4115bbffed35a8004caf3
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/agents.mdx: sha256:81e506b2c5730456dc92174354ef7581304da1a4ec6ea35fa0de1e0212dcabfa
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/cli-reference.mdx: sha256:12398986008ed702024dbaa13b41b450262ca2e40996630cab0e1761e28b8745
     .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/concepts.mdx: sha256:689bbb0bf78793c04889966993b67ba344742f2eee171b0f8869ed44e1c10045
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/configuration.mdx: sha256:4ee464ce84568cc9e4a3ec879fe523e990f8c506b36ffe14216fda656a3c83bc
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/config-reference.mdx: sha256:996c78df890c37eff763863d578663956d883800f3985465e235fea6d655a679
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/configuration.mdx: sha256:1908ba8bc61c37616b97ba137a502796d2588a776c2e8bb1221a07aa892053de
     .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/how-to-work.mdx: sha256:df0cd232ac3d0baa31892950d3791d611d08059f56eb5ee4f71c2cfe5c2dd091
     .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/index.mdx: sha256:63b7a2a4ae6c68a4328594262a98917aa2ace809f66b700b98d78e4bfbc928cf
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/install.mdx: sha256:948f3a443f045ed355a1732b81bd850237bd9bf49185bdae542485294a1d6908
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/integrations.mdx: sha256:8167c2f4cbff00a568084be78df78849aa2da4740516317f96fbb7f8ae7b6fd6
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/keyboard.mdx: sha256:5f905ba968004125bcfb7d75dd20f67dced06d0b14209213635ed1b24f3bbde9
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/install.mdx: sha256:9f894ee8572020a206442e076de7d1881d62c213770717418c2658f2c43c2d84
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/integrations.mdx: sha256:15171d0fd19d8e277bf5248e2b43815c7ca60b789fa0ded73a12b1e025cc5df5
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/keyboard.mdx: sha256:350cc82abc5f0594b0e1335fb352b12cc5d201931277f83d4300378e376ad55e
     .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/marketplace.mdx: sha256:ad36300a59eb8a8f68df16165c9b8d7d5331e6c9b298b2b485498eae36330cb4
     .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/persistence-remote.mdx: sha256:ac77d68b06f9a20f69e58cb881f6201aa24ee557c918809f77724e969a8394dc
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/plugins.mdx: sha256:f1ea82c7c0be7866997bff9b6e21fd32ef90292733b9a003f72f2d8751d4c80b
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/plugins.mdx: sha256:68890dbd1e839bc5f48d38120cb5f09bbbde1ce02391ed790a6bb7684a8c3c1e
     .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/quick-start.mdx: sha256:35b74ccea145bb2d4be7256efa119c00fefee3cc6b95bc3b21c102b881771c7d
     .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/session-state.mdx: sha256:ed0a77b195f1c6ceba6eaef685648050d594cb9f731d5846fd333e272e130e6c
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/socket-api.mdx: sha256:2bfe62ffc9284f14ec61556dc68f983b657c45717be3e2c87e2417b390cd2694
-    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/windows-beta.mdx: sha256:70ce4afb3d79437a9213ba7b321d57a77122c1affdf840b2701f7bed45ddcd00
-    .agents/skills/herdr/flake.lock: sha256:11e832153245878645bc8dac27447aa295d9287164b3d035d93fa9293dc03778
-    .agents/skills/herdr/flake.nix: sha256:f7ac1548f7dba27a573ea86c448f1c7369fc8800c1596c48eb11d83c3f5be11b
-    .agents/skills/herdr/justfile: sha256:ea0a9194d148e8cb86d81601b129f12286acdabcabee770036a9924cf3fe34f8
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/socket-api.mdx: sha256:a72d110f50c28a3fc156b747e688ed743dcbeeccd2bf81ed45f746d34e740a6f
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/troubleshooting.mdx: sha256:cdc3f0376684d84944a819268184c4759cd4d55ff0fb5ab0a1152f7e1b8f7c91
+    .agents/skills/herdr/docs/next/website/src/content/docs/zh-cn/windows-beta.mdx: sha256:aff2b4c173ddd1a8e3255659d5a1a6b3af0d766798cb80baf6317c9864e7313c
+    .agents/skills/herdr/docs/next/website/src/data/config-reference.json: sha256:04250049991be91b440931a37e4207d8efe16d62b06bf9b7235ea5ac3141fd4d
+    .agents/skills/herdr/flake.lock: sha256:3ff98e6998067633d15aac1a18592e49331f3f80568ea11581422cb40e9938d2
+    .agents/skills/herdr/flake.nix: sha256:e29db77e06d72a7889471236fb364922ee6338435c592fe600345ce0e23d6c6a
+    .agents/skills/herdr/justfile: sha256:820f87370fa70d1c62d4e039347639a1f713da164bf12049faf43ac1e9aca081
     .agents/skills/herdr/nix/package.nix: sha256:88e2e29ec0c2c88fa90257750909d51e7ce129c19b5daab92cae051d7114a3e2
+    .agents/skills/herdr/rust-toolchain.toml: sha256:0d9298c075817aba62477d23dcda3534cd836b5d5cf1960bd2de54df675ceffd
     .agents/skills/herdr/scripts/__init__.py: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     .agents/skills/herdr/scripts/agent_detection_manifest_check.py: sha256:8d543c22ff0a0621a04c141e604bd8e71715500f279c6e5bc353cfec86ef8bbe
     .agents/skills/herdr/scripts/build_vendored_libghostty_vt.sh: sha256:3be6f1ca773cb5cfa867192929199d03096835b5c698e087b8c726271fa9114f
@@ -2400,15 +2667,17 @@ dependencies:
     .agents/skills/herdr/scripts/capture_key_matrix.py: sha256:bbc04ce6bf46a41c0331c2c32ee8105090b1df9102ff713cafcebfb0ec80e58c
     .agents/skills/herdr/scripts/capture_keys.py: sha256:0b76f60bf42cbfb6033a91baeb0e463912c02874f7b9e79ebd197877dbf52ac7
     .agents/skills/herdr/scripts/changelog.py: sha256:8977d3f7d850c311a983cb95df776d976d81d9d0e80474b4d1e8e64080ec141f
+    .agents/skills/herdr/scripts/config_reference_check.py: sha256:ad7b43d7d8cfe21b1949648cf0e40c86bef9c0c2588394f86859e4f6320b9e11
     .agents/skills/herdr/scripts/conventional_commits.py: sha256:269dec422b72dfd6365c038bc945ee71e5a1927cc5825cfd7eda2a9a136f1501
     .agents/skills/herdr/scripts/docs_translation_parity.py: sha256:dd7a067cd3fe87434ab18a5f83868f902ac3957146c67ad2b89498a511738ae6
     .agents/skills/herdr/scripts/preview.py: sha256:8b3050f346aa41033b8cf27e547868e46a50ebfb324a31d918cf26a53954bef2
-    .agents/skills/herdr/scripts/seed_navigator_demo.sh: sha256:05c609e6943ec85f561dd0de58a79511540924d6a96b5ae3149b6acd4fa61134
+    .agents/skills/herdr/scripts/seed_navigator_demo.sh: sha256:dcb8501d8c4c2f89a0995c83f54cde2badef742f75af80755867c99b9b714e08
     .agents/skills/herdr/scripts/smoke_live_handoff_sessions.sh: sha256:9046bc39f0d4e2a2e02ead7363563bc8c541c9ba2be6f5cccd17a8ee6604faf6
     .agents/skills/herdr/scripts/test_agent_detection_manifest_check.py: sha256:2a2a662f7f7c8aef855946db6064b0fefb09e154d6ba5302e7ea589e389adb3e
     .agents/skills/herdr/scripts/test_changelog.py: sha256:7aee4beac5273b93bc124ee5996448373e3e9927d9ee4796c475abbb001d4dd8
+    .agents/skills/herdr/scripts/test_config_reference_check.py: sha256:7e2c6e14a8a97989593127421d6690238d42c214d4a2e74d6a195f4199e59ce7
     .agents/skills/herdr/scripts/test_docs_translation_parity.py: sha256:84d5dbf4ede61430150e23c862418b4d7f4f11d2524a394ba79d23f9a15467dd
-    .agents/skills/herdr/scripts/test_preview.py: sha256:3d2eebbf813a32c2f738952a9cd3708e8b3f8c37b2cd3ea73720ef3141290b3e
+    .agents/skills/herdr/scripts/test_preview.py: sha256:5c5117d8f059a521f9999a4a4b8a60761f54e55e1748f6ca1eaa351ee931535a
     .agents/skills/herdr/scripts/test_vendor_libghostty_vt.py: sha256:fcabc74daecf697281d3e9a49f2fea08eab387ab9036a4d212e72a518a42d78d
     .agents/skills/herdr/scripts/test_vendor_portable_pty.py: sha256:930b075a0b70d33eb5b0beacb3897cd293ba876bfb75d4ee75e2731e837cd8d2
     .agents/skills/herdr/scripts/vendor_libghostty_vt.py: sha256:49ad340d5758a1b44eb3366a8462fcdfdadeb6701fb5811c8d989683a6e81fde
@@ -2417,102 +2686,107 @@ dependencies:
     .agents/skills/herdr/src/agent_resume.rs: sha256:6c1d4f8261d9b341a60b552741ece173e76b4480fbb6e24934acc138956220d5
     .agents/skills/herdr/src/api/client.rs: sha256:634a1b6f928fd9540e0bcb586cc8608ddee49a97bb95d5d3af268d86c8910208
     .agents/skills/herdr/src/api/event_hub.rs: sha256:70f4f97e546766d721e1b177035f1b106c587338ddb1f744a467596f3eb5be50
-    .agents/skills/herdr/src/api/mod.rs: sha256:c4496b7c8564fcd451db586ce73b136ae938a658d90f6eeb7f2e9723ef3d7583
-    .agents/skills/herdr/src/api/schema.rs: sha256:4f485fd22b31dba8791df463f440b7ea082dd666150c6bf638771e2bdf197d4b
-    .agents/skills/herdr/src/api/schema/agents.rs: sha256:60a190e4ea1ec2eb2cffefc74f08d1adc288ccb40cdb4da392b9fb3de7e74efd
-    .agents/skills/herdr/src/api/schema/common.rs: sha256:1475ed77caed8780632d41345e7e151667f1be40e618b0e02594e09bf40e3b68
-    .agents/skills/herdr/src/api/schema/events.rs: sha256:1fd26734c6cbfd36f2c5dc006393ff57a38378f3dd5c99e3f7e76fa512c3e0ce
+    .agents/skills/herdr/src/api/mod.rs: sha256:65484df041522ca13d0c02070e00b7639ef293712c70ba27b853a0500a1c21d6
+    .agents/skills/herdr/src/api/schema.rs: sha256:1e644c2df4d478fd7f5bb743a6a55fadb8fa3fdf589c59f10b2c5de8c382c8d4
+    .agents/skills/herdr/src/api/schema/agents.rs: sha256:f04f334823972cd49e19f62d8e7fe19d5c2ca5f59e496a911b4dfdd705d0d056
+    .agents/skills/herdr/src/api/schema/common.rs: sha256:f7636811197b50d8051e7ba633523d35e4aee199641a575257596d7973885885
+    .agents/skills/herdr/src/api/schema/events.rs: sha256:8f3396777d1a8c958d7faf4d63752a315a94a9acf05352c6e7f5fea19d196422
     .agents/skills/herdr/src/api/schema/integrations.rs: sha256:ab537c3ecafced5ffdd433382e5701bcd7424c2f7063667d8b2d6ec679e23c11
-    .agents/skills/herdr/src/api/schema/panes.rs: sha256:56d315da82d6d82ac4b82182f20f271b16b0689bcfd664d5a3ec38b7e315ad58
-    .agents/skills/herdr/src/api/schema/plugins.rs: sha256:21416faf648042499359d376efba15e2adc91579c2ebe9ee6148bc194b0e1c78
-    .agents/skills/herdr/src/api/schema/response.rs: sha256:7ea287b7255a13bde0ffbadb520e0aa8141940675c138964d184e69f34b21200
+    .agents/skills/herdr/src/api/schema/panes.rs: sha256:0f932899f2f81bb07db9efa4b96b8f0cff101e648157a37a1482aabb324ca687
+    .agents/skills/herdr/src/api/schema/plugins.rs: sha256:c6260b24bdd51d02144ff5553522a4399265a2b768178af4e8e648f9892b3a45
+    .agents/skills/herdr/src/api/schema/response.rs: sha256:15416bf94aae7a14160f013b2bdee18d86ffb819c79470625b6abd733d27adc2
     .agents/skills/herdr/src/api/schema/server.rs: sha256:b5f77380946b639e7f34eaa7fad562a21b11e5c9652a329a40fedb5f4ff33edd
     .agents/skills/herdr/src/api/schema/session.rs: sha256:0b9c325613c9f214f7d74277b8f5ccdbf3e02c0af80f53fc9ec9d94f22b8367d
     .agents/skills/herdr/src/api/schema/tabs.rs: sha256:0b6bf6d2afe6419c835082e39fac3470b832a12a7ba22e5723d3702ac4e5d810
-    .agents/skills/herdr/src/api/schema/tests.rs: sha256:02da78066059e9997ca0544af60096020e1fe8e50592fad91468f793cd6bef29
-    .agents/skills/herdr/src/api/schema/workspaces.rs: sha256:94d047b9d155d0e563ccbf2f5d6e36c242ccae5e86b6840e5a19b06d8ce3e98b
+    .agents/skills/herdr/src/api/schema/tests.rs: sha256:b92361c883d7899a258da6f973cb91d6f8b957bbd7102b4544cc3aa1db48549d
+    .agents/skills/herdr/src/api/schema/workspaces.rs: sha256:6987f0ee9186b0167eb7c7d96de03a4cf9a407e9602e674983b03dc68a39ad7f
     .agents/skills/herdr/src/api/schema/worktrees.rs: sha256:106e37fcc44a6be2bb34f68922c19d7e50f84c27ab0a707d33d39e9e9e777736
-    .agents/skills/herdr/src/api/server.rs: sha256:10d3a8ec73cb2b1f12d92a32bb92d4b523100726a0eb2b9dd1e9a72f9c8c6745
+    .agents/skills/herdr/src/api/server.rs: sha256:97f725acf4879392ab780953a2edda1bf2d51de6505f5301860c9677d40a2309
+    .agents/skills/herdr/src/api/server/pane_graphics_stream.rs: sha256:ff0047ac20fc117dcd063ba4f5fce5c4ed48513941d5d835e55b8170abda8763
     .agents/skills/herdr/src/api/status.rs: sha256:ac666d9a7f541884bf8e330bf8ea477099d178b982341909b23aa7a2f1fd7e09
-    .agents/skills/herdr/src/api/subscriptions.rs: sha256:fbe2e706d3b8421d736cd051bacd25c0937bf91e29f5ea3d260d99a43517291f
-    .agents/skills/herdr/src/api/wait.rs: sha256:83bfaf8ddab7e3da63ec924faa31a78f3601efe42cef86697faba3a4aa8b6b13
-    .agents/skills/herdr/src/app/actions.rs: sha256:c69efe4950d585f4537b4f9e5cf983f395f035b997d3f64ae5c14936ce3ac6eb
+    .agents/skills/herdr/src/api/subscriptions.rs: sha256:875685796a532392b7fb43ac08754fcc0c95054094f0b800e4346fc4726e12ad
+    .agents/skills/herdr/src/api/wait.rs: sha256:8b555b6503fcd6cc62365bf0c8bd2940a95ba8d415e43093f2a1649674c991bf
+    .agents/skills/herdr/src/app/actions.rs: sha256:4f866ee9d6d5139c2b7554c898a6eef2a0d7ee5d0c46a893ebc322e3b1fc7b9d
     .agents/skills/herdr/src/app/agent_resume.rs: sha256:a04bf1e11de1895a250300b080d2f76f04c591b11012f5a8576cb9af3f4b3894
-    .agents/skills/herdr/src/app/agents.rs: sha256:03f8f7e861a2d4815afd9e32448596934c9ae612be7927505e35441efc8fcb41
-    .agents/skills/herdr/src/app/api.rs: sha256:15b0d81f0eb045a797f843ddb33232f3ef52537bc849e27a6aedb204606696d0
+    .agents/skills/herdr/src/app/agents.rs: sha256:96700c6772d04bf1886425f19d75609f7d40c348b4c9a29478c4528e36869d48
+    .agents/skills/herdr/src/app/api.rs: sha256:691bcb50905dde9a992341a8434fbdf17f1b5ad2ee4375a9d875e392a666142d
     .agents/skills/herdr/src/app/api/agents.rs: sha256:663b1b67b94b67c740a873b6fbe295e7fe6bebba1b701b1b59d5e9181b69e0d2
     .agents/skills/herdr/src/app/api/env.rs: sha256:f1c4a2b10c75be7416c4bc69ad406c35b01629411a5e11b4c7acdbdcdbbf0c63
     .agents/skills/herdr/src/app/api/integrations.rs: sha256:fc35fa5cd5c8a6f70ad5bfa52a304baa6de341d58ceb825e97a0582779523319
-    .agents/skills/herdr/src/app/api/layouts.rs: sha256:654bff6aa09bf59dfdedbe6dc4ff481908098805f8363db5861f4b654026c762
-    .agents/skills/herdr/src/app/api/panes.rs: sha256:5679c8d813074b2eb977cd8b0abeacd26362034829a4fc2edef3dda16ce4da0f
-    .agents/skills/herdr/src/app/api/plugins/context.rs: sha256:ad3ff0a21ff9bbf684a891417e0cbdebac683544c961122732908eebf3fa9708
+    .agents/skills/herdr/src/app/api/layouts.rs: sha256:317e36e442cc982b8320dceb21c1420b9d5f0e8f945e744091c0d0015357291f
+    .agents/skills/herdr/src/app/api/pane_graphics.rs: sha256:0c2941ec409138558489524946d04f2cffba045d1a46144170c7c4916f5e1bc8
+    .agents/skills/herdr/src/app/api/panes.rs: sha256:792b28fe1caa9c39ac91d4cc4ee8769053ed6e686988c7dd0bf0841e35581b8e
+    .agents/skills/herdr/src/app/api/plugins/context.rs: sha256:253f53233f2b0497b8d6ec989458e0d6882b54c6e2285f81a36f72b88095359f
     .agents/skills/herdr/src/app/api/plugins/env.rs: sha256:bf1fdf8f5773eb6fc8079ccea17b48eeff9a2fa749781c15c157dcd425e7eafc
-    .agents/skills/herdr/src/app/api/plugins/manifest.rs: sha256:a402c08b864e5442060bb314f1cc99fbdeef4c5a8d63cef352817f1b30d33bab
-    .agents/skills/herdr/src/app/api/plugins/mod.rs: sha256:fb37d8237df8a751c59bd95c24bbd453ec51a3524aa97c5384e37d32b474369c
-    .agents/skills/herdr/src/app/api/plugins/panes.rs: sha256:a191aa175e971ddf606ab210e960efa708ce4d82b9da08558537918abd9f641b
+    .agents/skills/herdr/src/app/api/plugins/manifest.rs: sha256:09ba718a77c32aa147350ba49e22cfac31ff38475b0adea7560137048e082e00
+    .agents/skills/herdr/src/app/api/plugins/mod.rs: sha256:866bd4913364ce0f085e2861f8b04af4e49e11d6871c53ed6a1a9e69ad49d465
+    .agents/skills/herdr/src/app/api/plugins/panes.rs: sha256:b1bb4a2e2d806424698b8a5dc9833718a78316009e2e941c7f3117b2b1935a00
     .agents/skills/herdr/src/app/api/plugins/runtime.rs: sha256:8baa2bc4faece6e6e4a66059c218ec02bd74aa1753010b7fd8ac030bb0188874
     .agents/skills/herdr/src/app/api/responses.rs: sha256:730c4c8dce98f1164a6cd372bb8c18674ba8f6aedf10c251092de10100eda4e8
     .agents/skills/herdr/src/app/api/session.rs: sha256:9318192a332f9c8661449924c0c8a9ea3d7aac0b1ba09f3cafc6321816186c4b
-    .agents/skills/herdr/src/app/api/tabs.rs: sha256:d84e790410f7cadf3454bf15b2e0313c48a619a48b2ac191ebac0f0267b40acb
-    .agents/skills/herdr/src/app/api/workspaces.rs: sha256:f6e822ada4899d8169e7564c2e9ee7cdf4830a35a24242fcc1ebc39b9a2f5ee1
+    .agents/skills/herdr/src/app/api/tabs.rs: sha256:41292d07fbff0a9f7b42ba071a88081cb357de8de210a262b6aef882df28efa8
+    .agents/skills/herdr/src/app/api/workspaces.rs: sha256:5dbb12cc619b7e4cb975dbae3125897f4798a9ece77a8959bbf9a0f79d40a916
     .agents/skills/herdr/src/app/api/worktrees.rs: sha256:21e035b1bb0be3321ef172a63ba0cdef7fd8aa6480045080d959b6e744a52a07
     .agents/skills/herdr/src/app/api/worktrees/deferred.rs: sha256:4b9f0fc3a0d0c39409ca20bbd3a37f0da8173317356ce334f7f8d70255766e2f
-    .agents/skills/herdr/src/app/api_helpers.rs: sha256:f59fb4cd6b7870bf9db5d595b20418f915e45808daa63f9b2a73ae7b567c8882
+    .agents/skills/herdr/src/app/api_helpers.rs: sha256:fc1b7568e14212ca3f5ab83f0a86e641a4d4e4d3da8703e66248f3ef2693d456
     .agents/skills/herdr/src/app/config_io.rs: sha256:308003a624833eef621cc17748b72dcf2ef0ce7b04064cf941cc699732b3d8af
-    .agents/skills/herdr/src/app/creation.rs: sha256:07509a19fc617df7a98203b7b01e06d95a6c5a4f20e3df20ddecc58bdce74211
+    .agents/skills/herdr/src/app/creation.rs: sha256:fa7fb61436a597e5f7f1f7d97ee48ffb261270456e55ae5e409d3a78593952b5
     .agents/skills/herdr/src/app/ids.rs: sha256:844905a427bc4c628366bd72d86dcc387fbb8b1e62cdea996faa3c7c6fa7eb3c
-    .agents/skills/herdr/src/app/input/copy_mode.rs: sha256:babbef11944298feec3da08c5e4c0db81eedf8e752fe4be78ffbdc28859ecd8f
-    .agents/skills/herdr/src/app/input/mod.rs: sha256:89b370f3c55679d07be99f15b9e7387b45a1ac81a3a82c7c4e6f3d0233645749
+    .agents/skills/herdr/src/app/input/copy_mode.rs: sha256:1ac41f541739d731698ad5674578f99cc8d9b1bd5bafbfcbf6f544f1eecfbfac
+    .agents/skills/herdr/src/app/input/mod.rs: sha256:094125a34fc835d705b73255c8947dac20ff1e6545fb8893df6cb2624036ded2
     .agents/skills/herdr/src/app/input/modal.rs: sha256:510b407746103f7c851fb4dfc7d34ecb4e0e2f2d6cb4ae2605f6877095d98218
-    .agents/skills/herdr/src/app/input/mouse.rs: sha256:7425781de8a3b564170f9fb315ee18e140e6151adedf020b6a9c1bd74190446a
-    .agents/skills/herdr/src/app/input/navigate.rs: sha256:592e1fbe898a483d85619d111d31088b273bcacc6177159ae1a13544f55d1872
+    .agents/skills/herdr/src/app/input/mouse.rs: sha256:16f7c411cabd2d9705821426dcd95ab79883e67edb0fb1bf2ebaeae660e105b6
+    .agents/skills/herdr/src/app/input/navigate.rs: sha256:ef3f1aac6dbc37f1d48319b9a225460e32f3b91fdb50a6a4af97e0283bc66751
     .agents/skills/herdr/src/app/input/overlays.rs: sha256:41861b0c2d77f33f3a110321ded6c50ec675757ba9f543977117e3d38d899b28
     .agents/skills/herdr/src/app/input/selection.rs: sha256:a2339f9686799f33be5819561979d8725c88bb524221fdb1e2665388e4ccf773
     .agents/skills/herdr/src/app/input/settings.rs: sha256:bea0f3a7aecfe194bc124e72602ac66751f9857f888077aaf9a9bf2b47311408
-    .agents/skills/herdr/src/app/input/sidebar.rs: sha256:250b01041bb5398376950dc8b5f5f0f3f16506a48e15e5ceed1926ad48bcde43
-    .agents/skills/herdr/src/app/input/terminal.rs: sha256:adf1a067a09a245e9c2d294ae4bb4a831876542d01a5af2ab08939b5b11238be
-    .agents/skills/herdr/src/app/mod.rs: sha256:6e924345338f21c623fcaa5bb974efbf14566e49a22eb046f1b365a7d8260ba9
-    .agents/skills/herdr/src/app/runtime.rs: sha256:8788b70ac38d4655fa76d77acaf3cc17baa8676c27784353d1d1ef1a611e6117
+    .agents/skills/herdr/src/app/input/sidebar.rs: sha256:dfb93f39b09f64df78702c712488e2d16b5636217067c435812688ae0600fc16
+    .agents/skills/herdr/src/app/input/terminal.rs: sha256:adc142f4b00a701de0698af5a2a4aae22e195ad77383b7cbbcebe6b220acd245
+    .agents/skills/herdr/src/app/mod.rs: sha256:912ae10c317822156962f1bc93ec94748a54af2cd98583a6de4ab231a89cdcdb
+    .agents/skills/herdr/src/app/popup.rs: sha256:2890e22bec140071eb41a39f457b3900c32d9273df5fca54afcecfd448caa579
+    .agents/skills/herdr/src/app/runtime.rs: sha256:17b4d913c9265c2532af542e1114d29c8afd691859fb022aadd1255eb3316b1e
     .agents/skills/herdr/src/app/runtime_mutations.rs: sha256:3cfa8a651fe716ad8566a7fef2738b9a5a60148b71ef63060591312a141ad6dd
     .agents/skills/herdr/src/app/session.rs: sha256:75ba8ecfc455a9f003048dd3c0d4f5fd4f2bbb7d8e5700ad81a86b27c7fb9b7c
-    .agents/skills/herdr/src/app/state.rs: sha256:66a20590ae09b6f0032c00d25bca7ba2e95e82dfe0968b0c7bccb11460051e58
+    .agents/skills/herdr/src/app/state.rs: sha256:1c55b0be6e107d46f2128fecc7212fd5a9f1e76960414867b01cf6075778e16d
     .agents/skills/herdr/src/app/terminal_targets.rs: sha256:e0dd466772a5be330833be03ef2a0a6b6bf6c7697608a6d057ee4027879d46d8
+    .agents/skills/herdr/src/app/terminal_titles.rs: sha256:18670d88cb28abf3ac0f2851bf77e689d03b6e32b8ebd8f36fc409d609440fa4
     .agents/skills/herdr/src/app/theme_sync.rs: sha256:346e2a432e56e4e3ba91afcd782d06a6d1dd7a29fa2b86d64511ab2eeee1f5dd
     .agents/skills/herdr/src/app/worktrees.rs: sha256:34fa9d09845077b55343fd8dca8712e5eeffd51d90034e9a90a9e1e428ded601
     .agents/skills/herdr/src/build_info.rs: sha256:eb798d916ad856c8bb5f8a64cfab36d6d5109150b1cf3160750530e63b3e8581
     .agents/skills/herdr/src/checksum.rs: sha256:0671d5f18b635c22232da071faa045ed255c4de4264eea6d6241a1ce5f747309
-    .agents/skills/herdr/src/cli.rs: sha256:efc9e6c6a84757a7f9aac3aa21c55638de42c6b4cf898ae8c9fc31c7175b7968
+    .agents/skills/herdr/src/cli.rs: sha256:0f16fd37ecb5dd4e40af56b57ebe79becfdeb6a8cee72ed9d147f69e4d18a6a9
     .agents/skills/herdr/src/cli/agent.rs: sha256:34c43b602af12db8fc399782967218ae244cdc38a53a61d5988d99a1dc36b8d5
     .agents/skills/herdr/src/cli/api.rs: sha256:8e01cfd17c631019501b55f532bd6e37ba3a7b089e26281f6972ff23d13ac8b4
     .agents/skills/herdr/src/cli/completion.rs: sha256:b9da50b4027f8d06ac4b4c28a8d76f1a15fd3da85360b5a0a091213d576c843f
     .agents/skills/herdr/src/cli/integration.rs: sha256:d3f2e7ab63a96e3419cff4e95454520073b9e71dde042fc7d936cae370b75df6
     .agents/skills/herdr/src/cli/notification.rs: sha256:734a14576f45f7e27981237e4f1b07f08cd5c4deddf67490821b3ee805e7d5ab
-    .agents/skills/herdr/src/cli/pane.rs: sha256:125674c0fd8086aed22ce36113a21581591059bb387cda5af15a85cbcce475a3
-    .agents/skills/herdr/src/cli/plugin.rs: sha256:ac901b78379faac4aeb6fc0027c8a71d45c226ccb3857c66a8d2d36924e8c9d4
+    .agents/skills/herdr/src/cli/pane.rs: sha256:d8cfe1767c57f8e6754cdda72ed901f929714ecfd61eb883781392c4729a9f45
+    .agents/skills/herdr/src/cli/plugin.rs: sha256:7ba7bd1183d98deaa945e29aab9a76236f65624f92895550b2b76b64b05566f2
     .agents/skills/herdr/src/cli/runtime.rs: sha256:d4859075d89f586166d35a993a18d455f42ab12ae0302e86c8ffd0cf01c7c41b
     .agents/skills/herdr/src/cli/server.rs: sha256:c4e8f975c94a0bf4acf115d102bb82ef69a77f844bb1ea02bda937c3260acf48
-    .agents/skills/herdr/src/cli/spec.rs: sha256:17180ba2e957e116c83df3367b52e93062be87e1555e34961abbda78e43fae1c
+    .agents/skills/herdr/src/cli/spec.rs: sha256:44cd23e100e7f5533c7e28222182ba63a92ed010319e14fceb641160992817a4
     .agents/skills/herdr/src/cli/status.rs: sha256:4c873b74de65fcd6c4e2f303e49edb129e9c7dad0bbfa1e04d75cdaf5499763b
     .agents/skills/herdr/src/cli/tab.rs: sha256:6931472552378195f96b7341cc8bf74377cfd90069c298e464ff750069e64049
-    .agents/skills/herdr/src/cli/workspace.rs: sha256:c8d510f98f767ec746a638a8d4bb07e66c4df9fe86cfaf5bab89a741d25758a9
+    .agents/skills/herdr/src/cli/workspace.rs: sha256:21c31658452ff16f4b281fc8d2f8595e36cb3df73a2df911ef0e347d0fec5035
     .agents/skills/herdr/src/cli/worktree.rs: sha256:178a8ad2cf42e24f034dc0b61208977c22222a7b19d13cd1a93148dd56c2b6ed
-    .agents/skills/herdr/src/client/input.rs: sha256:ea84b4fc0209c5992171926663ee0c6565b8ccf1013dfba9bd198ac48a67dc68
+    .agents/skills/herdr/src/client/input.rs: sha256:356ec137fbfccde05c4d2f99315f1e3479f8dcac7cbd952c9a2c39919e74c92d
     .agents/skills/herdr/src/client/input/windows_vti.rs: sha256:7b2063c3699fa52188364bf7dade216c4f66b04b260b4c1f0915906c0bcfb88e
-    .agents/skills/herdr/src/client/mod.rs: sha256:0314bed0e0a9ad686d3ac4b3af2be56722c1ed1c8dbf656614273cda60f192d6
-    .agents/skills/herdr/src/config.rs: sha256:e9cef77b8c558a7df3e0739ddeb61763f5a9246c89db88e6c1ad20c8c81cc2b5
-    .agents/skills/herdr/src/config/io.rs: sha256:8c2affb71e264d28eaf49f48fdb30581114813de239ce16804d82d23347ba76f
-    .agents/skills/herdr/src/config/keybinds.rs: sha256:2e51d1f4b43dc4821b2aa904a1cbdc393f7db33bd60d55814c66db192185715c
-    .agents/skills/herdr/src/config/model.rs: sha256:0660f2f5aa3e7224de424f23ad5915f5314be59ffc8407b07e81e50103cc4f53
-    .agents/skills/herdr/src/config/sound.rs: sha256:59b8fd6cf159e6a174dd6aa5ae7e4028cba77d22e8e61ec86055d41d25bbd451
+    .agents/skills/herdr/src/client/mod.rs: sha256:6db2f65469c956e2251f977295d1a621ae9814c4faa848d896c7f60ed2a1e0bb
+    .agents/skills/herdr/src/config.rs: sha256:8175155bc6e6021920e8e452c8c2cab5eb52a7dbf2f952127966f169da0de70e
+    .agents/skills/herdr/src/config/io.rs: sha256:10efd5960f63b0ce1d7161e0699b91d18ed7557fcc8c92635e06eb4eb2b552ee
+    .agents/skills/herdr/src/config/keybinds.rs: sha256:d14d84e442ada184994f9116319bad88c2e7df61bf9e4554c2eac12ec2c0521e
+    .agents/skills/herdr/src/config/model.rs: sha256:5f057804e8daee1a997537008b003835b100f48940043c5088b13a63e64c2a95
+    .agents/skills/herdr/src/config/sidebar.rs: sha256:24b7c9eac881027d6823e1acaeca2376ef8fd99fe1572d45554b8fa8f27dd6e7
+    .agents/skills/herdr/src/config/sound.rs: sha256:c67575c5d877ee8b53b6f9c3acc206d65965aef68c06e8b693e4539bbc504f37
     .agents/skills/herdr/src/config/theme.rs: sha256:0b28e6622a4d1210d88d475f6dd58f52064a3fc2d2733a5dcec32053788cfd8f
-    .agents/skills/herdr/src/detect/manifest.rs: sha256:0e1bb8239a08477a7a6403a5daebc39db2ee0804991a02322f12cdc5ff6eb46e
-    .agents/skills/herdr/src/detect/manifest/tests.rs: sha256:69d1fa1931687da4ddc04a48a99ba86aa0a9427d223d9cf5e92b90a3c5da017c
-    .agents/skills/herdr/src/detect/manifest_update.rs: sha256:4e4ce474684d0f90d52688498bd61151eb1f99cb7da7b955eaab1a447f8b1f7f
-    .agents/skills/herdr/src/detect/manifests/amp.toml: sha256:dcf8e872958bfc9eacd2148b1da55b42c520f1c448a23e29edc54228385b9375
+    .agents/skills/herdr/src/detect/manifest.rs: sha256:fd5bbd9ea00504620c6fb31b7f60f8b34961a8b6c3440563f5514ed45f2cd6bf
+    .agents/skills/herdr/src/detect/manifest/tests.rs: sha256:28b0a6ee76c37125efc1e07581f206dfc425601417527a6d8485f359a4c9b3d7
+    .agents/skills/herdr/src/detect/manifest_update.rs: sha256:2c7010ce6a72c1ebde4189860e8c90455c2bd108d97c6c54e66e223fae34270d
+    .agents/skills/herdr/src/detect/manifests/amp.toml: sha256:b5806b0dd21e2f5e752d0eac7f084d5ce2e3f275638cfd1234c42cc88152dc8c
     .agents/skills/herdr/src/detect/manifests/antigravity.toml: sha256:11300b853130d037eb2c57d9c4b897893cc1f0a876e12eb54ff1b216177db9d7
-    .agents/skills/herdr/src/detect/manifests/claude.toml: sha256:b92eb1578b9786cc80a43def7910918bca5c2faf2f1d56a35648dcba699fa1b9
+    .agents/skills/herdr/src/detect/manifests/claude.toml: sha256:d7b3e653a6d84024d1cca5b35bfa8a1d59afd9ce6bbfe06275d38315f18c2dc8
     .agents/skills/herdr/src/detect/manifests/cline.toml: sha256:577e2f1bd115a6ed3b5c38c661af175386fcdba269f7cd7447bf16d7c72521f0
-    .agents/skills/herdr/src/detect/manifests/codex.toml: sha256:6dec0a3c6889f2129e5cc2d5535ea8f58d6932a2400100fe3352d8e79b7822f1
+    .agents/skills/herdr/src/detect/manifests/codex.toml: sha256:15185e026d31fdaea05509c95bdc1dbcf1475009ebac240267f5d22997d8cb18
     .agents/skills/herdr/src/detect/manifests/cursor.toml: sha256:24a15842170c785e9c79fb31a4157e8077194d487cefe18289ed0f1b9cd82238
     .agents/skills/herdr/src/detect/manifests/devin.toml: sha256:250c9cea1d60bdb965dc6056f3066b785e941d60242756fbaca73b57ca6b0f85
     .agents/skills/herdr/src/detect/manifests/droid.toml: sha256:d37e7c464177c0e8f3edce8d4fabc4bcc7a1874edf2c4c87a2f927888cf69ce9
@@ -2523,18 +2797,19 @@ dependencies:
     .agents/skills/herdr/src/detect/manifests/kilo.toml: sha256:70f0ba4e58bc141fe69d7024013f973cd16e8616393079318914d70afeefef3b
     .agents/skills/herdr/src/detect/manifests/kimi.toml: sha256:ede08c0d2d5024f7606dc0a1b2f7a9c6a0ebb99f3b6c58ca6757049856d06e05
     .agents/skills/herdr/src/detect/manifests/kiro.toml: sha256:8f3fa7c99f6bfa5a6710f5f039ea875ee9d06e94e03143ca1c4d8f373d96a4fc
+    .agents/skills/herdr/src/detect/manifests/maki.toml: sha256:3b392170ee3082051266509f575a4640bde8d693b2f37ecf52157a641bc75b28
     .agents/skills/herdr/src/detect/manifests/opencode.toml: sha256:faa82aed2d76ad856528caae04232894594b74cc903aed3e522b3e725c5f2c95
     .agents/skills/herdr/src/detect/manifests/pi.toml: sha256:d852f52d637040fad207a395928dc190d99d24b6c72d6e1b7fbbf4487a416e40
     .agents/skills/herdr/src/detect/manifests/qodercli.toml: sha256:2089f70fc78c6576fd7128a00f4e7eedb85be81bde9ed73301b3b88000048961
-    .agents/skills/herdr/src/detect/mod.rs: sha256:cf52265eaecb9441d1e22624975732bd70806a59144b03dfd9a6f27ddb310b66
-    .agents/skills/herdr/src/events.rs: sha256:647ee81de859a78076afaac0f98ce2dc8d9a441f14f45d35ec4ede762309028d
+    .agents/skills/herdr/src/detect/mod.rs: sha256:37489ce100c34612b66bc2d394b1a42b74afe7ea39f9d145bfacd5f28efd07c0
+    .agents/skills/herdr/src/events.rs: sha256:0203880c9997869fb12759f7c0ca5835ef435ccb5961f3dc258dd6fc86b4a451
     .agents/skills/herdr/src/ghostty/bindings.rs: sha256:89a96310b94d2dfd679467ed6de8ef3fd3444cb2edba8f80f7cbc229d70c19b2
-    .agents/skills/herdr/src/ghostty/mod.rs: sha256:60c5f92276ece72376e970e98b73af8b9d9c2acb46d9dcf03412d55b7c2c7c97
-    .agents/skills/herdr/src/handoff_runtime.rs: sha256:0f488cfa6c8602e0dbf8c0b561b0073ae622da8406f4a45edb484e40d3cb2bba
+    .agents/skills/herdr/src/ghostty/mod.rs: sha256:27a3bcbfc02e4911e4a11b2f3da0e0730870af70518dd2fd4342cd54a8dccaee
+    .agents/skills/herdr/src/handoff_runtime.rs: sha256:952fb647add635a128685d489c1bbbfac6fdc8e5826088e9c4598c5602b7ad22
     .agents/skills/herdr/src/input/encode.rs: sha256:04d69f3651c8514ad06954eca5fc3bf43c4e134f3fdfc2de2ee7597a694ba82a
     .agents/skills/herdr/src/input/mod.rs: sha256:c9d7fc106742ecacc4a3b78937b168db915c142163cadd4973dde4175ac67cb8
     .agents/skills/herdr/src/input/model.rs: sha256:37e98e19e4a435a095990ff25e9b341abf277d37e5d7e39296733a0d644a9e77
-    .agents/skills/herdr/src/input/parse.rs: sha256:6237ef601943a2125048c5f6530e1de3b1ead918230e3f7827ebbe25a00a744c
+    .agents/skills/herdr/src/input/parse.rs: sha256:a36bf2d9da1503fd54d3d01e508a95e1be45d79b508dfe82ee677f55a16b4150
     .agents/skills/herdr/src/integration/actions.rs: sha256:33d00a11a321bd127af332b6545897771db913725653690610040f54bd50bb87
     .agents/skills/herdr/src/integration/assets/claude/herdr-agent-state.ps1: sha256:acf8fe79572cb1713ac2f332d591caa50491a803c0a57804192aeaf1882eb8df
     .agents/skills/herdr/src/integration/assets/claude/herdr-agent-state.sh: sha256:ffd5a76b7c62f5313040fc1e98fa010ff19a7aa85dd9fe6f325b9729d5f01b46
@@ -2546,55 +2821,57 @@ dependencies:
     .agents/skills/herdr/src/integration/assets/devin/herdr-agent-state.sh: sha256:29ee8f4c216dd07b08d45a2549ae1d3cbe0d593e6f0af987eb6983cca64cc6af
     .agents/skills/herdr/src/integration/assets/droid/herdr-agent-state.ps1: sha256:7e5830aa40be4d9b100b8127f249115810771de5dc67690da3809fd6366c7929
     .agents/skills/herdr/src/integration/assets/droid/herdr-agent-state.sh: sha256:4db16c1ec086e262f810e59ae3a622a8babdf6104ed6ea0841605a80ec1df348
-    .agents/skills/herdr/src/integration/assets/herdr-agent-state.test.ts: sha256:15ba430154161f6d1cb55fda275cb4c739c98988f2b94211b8cc632429e1abb3
+    .agents/skills/herdr/src/integration/assets/herdr-agent-state.test.ts: sha256:27377d24649332c5a345c76bb578a5ea08267f36fcc55fe9e6831bdb7738a869
     .agents/skills/herdr/src/integration/assets/hermes/__init__.py: sha256:97af1be8908c42a335bc377c17ad567284ea35880a22911e25b5b62cfde1bbe1
     .agents/skills/herdr/src/integration/assets/hermes/plugin.yaml: sha256:e1c775a6d6ccad2f8e6e0566a0aa61aeef9b8141f59d8a742a77c6951a261170
     .agents/skills/herdr/src/integration/assets/kilo/herdr-agent-state.js: sha256:0a0bf2b4e22f57749e14ed014e916e128b4596698d80bc2747ac008f71ccabd6
     .agents/skills/herdr/src/integration/assets/kimi/herdr-agent-state.ps1: sha256:7bd87ade437625dbbe72070395900be04e917d9f29fb17bc7786e3c3d8a02032
     .agents/skills/herdr/src/integration/assets/kimi/herdr-agent-state.sh: sha256:acd2c2179075c45f2ae63c31435bfb840165410adbd33c6f1957ff2f0caec3f1
     .agents/skills/herdr/src/integration/assets/mastracode/herdr-agent-state.sh: sha256:db9466026f082f992e244ba6e535d4532b09e41268bb669aed2b0f1c3d6a22df
-    .agents/skills/herdr/src/integration/assets/omp/herdr-agent-state.ts: sha256:182bf74d12bde56f63be0a00cb4d5a930baa4195879876f814ed411d5ebc9ac3
+    .agents/skills/herdr/src/integration/assets/omp/herdr-agent-state.ts: sha256:4d19edf120fa3a2e33ef5064ca1dfd46a8afe55f20eb6cd826689b2a345a55e4
     .agents/skills/herdr/src/integration/assets/opencode/herdr-agent-state.js: sha256:7d7c8ae01fa17b150f5dacbd1dbda7e742c4934cbc288bbae0633193c58b7fa2
-    .agents/skills/herdr/src/integration/assets/pi/herdr-agent-state.ts: sha256:f55e5898c8aabddb7bf47fa390a35de35280e12192d6df2b5340c35d3f37e96f
+    .agents/skills/herdr/src/integration/assets/pi/herdr-agent-state.ts: sha256:256b38fbe0067fb51bde5c275def7eabe3ba2aa0c6e5070572f814c12d2f27ce
     .agents/skills/herdr/src/integration/assets/qodercli/herdr-agent-state.ps1: sha256:8d5962b893619db0bb185419d42beb21706a8f8d401799b825622bd96604d22c
     .agents/skills/herdr/src/integration/assets/qodercli/herdr-agent-state.sh: sha256:00c3e48d9a146badbc69af8668d486dc32bdc403ac07394f20443e66e82cce3e
     .agents/skills/herdr/src/integration/command.rs: sha256:0cd3d6318edcc020d53d18de84e80bcfd0d620dd8fa106c56512459e8736a305
     .agents/skills/herdr/src/integration/config_edit.rs: sha256:82165601a927e4c4b718ab9b5b2f2aafed03f13bd21f82da002a59559e39cbfe
     .agents/skills/herdr/src/integration/env.rs: sha256:d81019ddf8fa9d30b93173afeb3e8c1496a59c5206a10e52837335ff4c64de9f
     .agents/skills/herdr/src/integration/file_ops.rs: sha256:e8c8e5e18a94edea3d19486a588984c702baaa08fba126266d0a221fbbaf0fca
-    .agents/skills/herdr/src/integration/mod.rs: sha256:7206491c97612c1d116cb98c558dc6bab1015b60cb5f75e512525cdf638b383b
+    .agents/skills/herdr/src/integration/mod.rs: sha256:543d50d9e80a024d5a6ed08fe3da7050cca3eff62d448d6be7b7793572bab3a0
     .agents/skills/herdr/src/integration/registry.rs: sha256:bc301e69f01e6e09a49353b407121936aeb2eb5516692cc9cb4a986081df8e0f
     .agents/skills/herdr/src/integration/targets.rs: sha256:ed38a8676d10366a39a57add05fe3cb18500f25d17e3c4da1c0a54e21e3fd3dc
-    .agents/skills/herdr/src/integration/tests.rs: sha256:65fc77302219f4944cf7717f92b979084d9b7b794f8e95f563b613980fcaa16a
+    .agents/skills/herdr/src/integration/tests.rs: sha256:473fdbfb0cb230279b93d22835f7fdba6525c91a543ead08911d7d69dd9dbdf5
     .agents/skills/herdr/src/integration/types.rs: sha256:4dfd67bd92036e99b19752df9f7b50f3f2ce0002c1bbf05a53c34dec8ecc1d18
     .agents/skills/herdr/src/integration/version.rs: sha256:7df6a612eecbb889219c9c975f135b1eb92083e981e73db693634367890c172c
-    .agents/skills/herdr/src/ipc.rs: sha256:dd7c7ed453572bf7f201174c34543933f9c6d27be4e57e7e4bfb7b0b892f8ac5
-    .agents/skills/herdr/src/kitty_graphics.rs: sha256:dd89d777821311ad3a710e1938981dfd61b4b4a6ae6c94dff2518e5176525e21
+    .agents/skills/herdr/src/ipc.rs: sha256:3d47dc248702c54188187c9e9c7e9c5fa75bf5b8739c5d1b51feb85006cfb84d
+    .agents/skills/herdr/src/kitty_graphics.rs: sha256:a95ee5e03027407435fea2589ab02b228e44d788d6f2abfa09513133a98fb513
     .agents/skills/herdr/src/layout.rs: sha256:8222a5aa0ba984d8431b39d0d6415876fb7b7238b3b062860ebcc9145a488777
     .agents/skills/herdr/src/logging.rs: sha256:2bb5a38f58fd7394925ef48f069835fdcc4666a313234115dc8cb726f124f3fd
-    .agents/skills/herdr/src/main.rs: sha256:907a5f6bddc1c9716fd39f648a1f5e4806e4b11dcb181f66821a8ba7b43cb5b4
-    .agents/skills/herdr/src/pane.rs: sha256:463946de7ccaa3c914f714ae3dc89a2e162244b24d654de9a73dd0f766f1a6be
+    .agents/skills/herdr/src/main.rs: sha256:8c44e9d4fecc5f2bff8d3b9c4554e35c518e8a3349546050e1e155333e049e59
+    .agents/skills/herdr/src/metadata_tokens.rs: sha256:7a1253274c5cae1ff4987d78041c0e3595e763a52d3a11ce7eaebf06723e39bd
+    .agents/skills/herdr/src/pane.rs: sha256:94ca4d1dab2bf064efbe27122cdabdf5ec435b5d9c35ea4f69fe439d3e847bcd
     .agents/skills/herdr/src/pane/agent_detection.rs: sha256:996ea1d0be5c7f9a27bdf3640a646ea1ad9f4bdb5afa4a00215c7ec413692f60
     .agents/skills/herdr/src/pane/cursor.rs: sha256:822687d544029eaaaac3d3db8c1b6bf9924ebf52cd9979e03a080c017c61f779
     .agents/skills/herdr/src/pane/input.rs: sha256:dbc141f01f1e8acd6e76bd9678aa5399d3dd27488bb645c8e99e9b98e8870173
     .agents/skills/herdr/src/pane/kitty_keyboard.rs: sha256:4222899faccec9a61bd63a8f5ed5c36da2580a22ee275d08571c0597936353ff
-    .agents/skills/herdr/src/pane/osc.rs: sha256:becf33d755e9c29050f062339d524059d5c238bbf44111d71debc6f2ec44c101
+    .agents/skills/herdr/src/pane/osc.rs: sha256:3553a72987dd0edce0154a32415e0316e2d37eb1bfa822d46069e8dc69be32c2
     .agents/skills/herdr/src/pane/state.rs: sha256:81a90d9c3320344327332f89ea2b83f1b7825bce5e1e027475e731cadbbe439f
-    .agents/skills/herdr/src/pane/terminal.rs: sha256:486df9d32e06fabcafabe2e8adc37af6770990d5da74a115490c28ca0f655072
+    .agents/skills/herdr/src/pane/terminal.rs: sha256:59ab58d4f917884f8764824e74220ea06a5d382dafb433bcc11691ad3ddf0ab2
     .agents/skills/herdr/src/pane/terminal/windows_recent_fallback.rs: sha256:b5fcb765c57ca51fd1c9399ac3d307e451a9f89f416b122513f781d21cdd3ae1
     .agents/skills/herdr/src/pane/xtgettcap.rs: sha256:2da2dbf4f31a622670c8d8aca0a1e706eaaddcd78ae0a5593b0d659cbe3db328
     .agents/skills/herdr/src/persist.rs: sha256:153644f4b7b22adfaba64b36b7d6a507c4429f7c151f8e0c78d89c965d6b1f06
     .agents/skills/herdr/src/persist/io.rs: sha256:92aae2426b194f29ae2a7486f38665c17c059aa569e09660f9f3cf85bfae6af4
     .agents/skills/herdr/src/persist/plugin_registry.rs: sha256:bdaca806e88fcb549a7383b6774f3fc56d42de952fa8814723fefa6c5f3e32cb
-    .agents/skills/herdr/src/persist/restore.rs: sha256:c1b0c6f8dd5bf3adbf34311f6a1f2fadf45cde3ef2a6fd229f63305f58228b78
-    .agents/skills/herdr/src/persist/snapshot.rs: sha256:611990b880378be1cf4ae1c532883928a1bac829f5e5602638b6e95ca8d20d4f
-    .agents/skills/herdr/src/platform/fallback.rs: sha256:9d1ac633adf7917a80f6c65602c807d7b5aee68140d1213a669b7de541156393
-    .agents/skills/herdr/src/platform/linux.rs: sha256:bda6291dce8921121f2e50bc2fcdd5ffdaefc5b2cc828f1a2ce596ef20017db3
-    .agents/skills/herdr/src/platform/macos.rs: sha256:a1c9f40a5bf7de6f26e3787d01a3b1abd9d800986ca7f6cb868812ccc2ed07f5
+    .agents/skills/herdr/src/persist/restore.rs: sha256:31f4972782ef036429a63e7421aa6c3e57a705d5fcce9bbcc4c1ce645714ebec
+    .agents/skills/herdr/src/persist/snapshot.rs: sha256:ed04cd152cca213f69dda68447adcae9dc79d97cc2bc90e79f093a301338d62f
+    .agents/skills/herdr/src/platform/fallback.rs: sha256:9a14218c1a9f28f5eaeec651a6b217475bbfb1ed9bccee4ec47889c2c6302fd5
+    .agents/skills/herdr/src/platform/linux.rs: sha256:81189891cc3b3ed8d348fd9f1f6a9024d8e74c1b335f55ff88efc91603ca62ce
+    .agents/skills/herdr/src/platform/macos.rs: sha256:7dbe614fa5212b90cb06adbcc5d84a3df76d8a059c73c8d120f0a178651a12f5
     .agents/skills/herdr/src/platform/mod.rs: sha256:4d62abe5fb469ce20b84fc1f9e6ce7e066351f8e81a1a197f5735b318442f602
-    .agents/skills/herdr/src/platform/windows.rs: sha256:13a4b45b4c1a5bc795db76cce145749d88a6d1b3fbd973654c080bab30762b3d
+    .agents/skills/herdr/src/platform/windows.rs: sha256:145f86df0dec90f94d7633cea150a6d62750a73380e4fccd9604a7863b491335
     .agents/skills/herdr/src/plugin_command.rs: sha256:19bcc08525f0dee7da04de4a4666f2adc6ead7b4b5cbb8c533f2f4f3dbef28c3
     .agents/skills/herdr/src/plugin_paths.rs: sha256:97483a84413e24d24e2862d501ff685cf1a6d35a2b6e7c6b302f98f597c2d3ce
+    .agents/skills/herdr/src/popup_size.rs: sha256:8c4faa4a4a49cf02d3efa632784047697e78dabf436ec102442a3005a7afcda0
     .agents/skills/herdr/src/product_announcements.rs: sha256:00c2e7a82f280a92855d8755ffeb52c33c91688d1bdfb40c111ba31bb161fc82
     .agents/skills/herdr/src/protocol/mod.rs: sha256:92a805e0773ed705f2ca220eb2a99c748a7b7a794fc3e035a4c837738a09a066
     .agents/skills/herdr/src/protocol/render_ansi.rs: sha256:0bb0d7527daf352cf617088c1985a215c4a9dc0dc12b855a0c93ce8f8e6af84a
@@ -2605,68 +2882,72 @@ dependencies:
     .agents/skills/herdr/src/pty/backend/unix.rs: sha256:c2e84032cef60a82012c30ca3c0a2fdbafb68cbb973f2bbf5d7bcd0fae2c16a8
     .agents/skills/herdr/src/pty/fd.rs: sha256:2447a8f0091b2cb27b04476c38f0e528dbd7b62a28c5dd6b0717e31b420c2128
     .agents/skills/herdr/src/pty/mod.rs: sha256:3e423583253595cd492f492a4b7af68ba78f88517141cf8a4b5f8c3079e7d930
-    .agents/skills/herdr/src/raw_input.rs: sha256:8140a6e65eb1f35f1f0d5c83126ce406c21986f54a207ae131927cfd1f356b33
+    .agents/skills/herdr/src/raw_input.rs: sha256:a139263e0c1087d72accc761c23f1e1bab831639d1ff55c9bd024ae5dd41726c
     .agents/skills/herdr/src/release_notes.rs: sha256:935c7b8f31d924bd5ba2d29183e9658dc05fa8cec0f217291687956d9f7fb048
     .agents/skills/herdr/src/remote.rs: sha256:638a1ba7258ba101a67ec0d23dbd013bc62206354f4734ec0f5f62fb3c65c4a8
-    .agents/skills/herdr/src/remote/unix.rs: sha256:77cad517170398b612ef82b7e963bd01aa51b9c9f55ccae7c991b2e865fc3bd3
+    .agents/skills/herdr/src/remote/unix.rs: sha256:d057fa48dd8ebfc96f9840448bd24ca74f9e9b5b57347610b7aa8069918b5a15
     .agents/skills/herdr/src/render_prof.rs: sha256:2a74ae0f9eedf5a136ca212b11d8be1ca32970d1f78973866616e7cd261ade58
     .agents/skills/herdr/src/selection.rs: sha256:ad99364fdcb10525fb9288e007b93c83a7ed2b46de7d1c8224b26c31e9ece146
     .agents/skills/herdr/src/server/autodetect.rs: sha256:03384a28d12bdbe0e8abd21de508aaa4336ae874315a5a06c6bdeda0adc12b47
     .agents/skills/herdr/src/server/client_accept.rs: sha256:9c94222ed232818bed636b538d426d53a22a24ed3e5526d5c1856914cb384aa3
     .agents/skills/herdr/src/server/client_transport.rs: sha256:8f5b41cb590415ed50bbb4266d201ea4de975d3881be1713fd98e979794861ce
-    .agents/skills/herdr/src/server/clients.rs: sha256:e964690f21700abcead16d40197636117b51a23ebdd84fd684b7a5caec573900
+    .agents/skills/herdr/src/server/clients.rs: sha256:7e6041b04e7796a9917cdb1c5c4e64898260c63804f0c49b07437f59071cebdc
     .agents/skills/herdr/src/server/clipboard_image.rs: sha256:e227c8e5c87a6660ba7cc1841b86fc6a2d4d330f78feeb61b089cbf33ed3e74c
-    .agents/skills/herdr/src/server/handoff.rs: sha256:301d6669394a07d6e3c246f9d04932b7b28dc000890fdfb2eb57ba153caf1a3d
-    .agents/skills/herdr/src/server/headless.rs: sha256:a8883102878e450deea35895a0e9b9f6c5136ceed18eefa80e57144861846bd6
+    .agents/skills/herdr/src/server/handoff.rs: sha256:018262369af7d0c051176b113ebf18a0e3e50343bf23886017eaf79379d6736d
+    .agents/skills/herdr/src/server/headless.rs: sha256:8636c71a60fc124c01bc00b42b1acdc4108d7070e8472a16c0d3a4b7710a1997
+    .agents/skills/herdr/src/server/headless/pane_graphics.rs: sha256:7c834d56b0f96e975730f01f1782b7d23070586c1e2714b575d267cc7881d3b7
+    .agents/skills/herdr/src/server/headless/tests/pane_graphics.rs: sha256:978999e67fcd17deee5aae81dd37f40e3e5c7a65848a4f53d94d4672ead4b534
     .agents/skills/herdr/src/server/keybindings.rs: sha256:1946532e0fd53366c4b66c25f388fb5e9f2e6b2eaad42b8b6ebd45b82c56c3cf
     .agents/skills/herdr/src/server/mod.rs: sha256:a7e3374894b2e609601098e99188d159eaa004563b0f48e919204706d31f5df9
     .agents/skills/herdr/src/server/notifications.rs: sha256:484d9d303a56ff4ef3646e4b285187d31035713bcf59a309fc39434872ec631f
-    .agents/skills/herdr/src/server/render_stream.rs: sha256:d03500cac165d3452969a13df9ac4f8983a21acd17411adb1778e60934fff12a
+    .agents/skills/herdr/src/server/render_stream.rs: sha256:b6b17d4f976083086b6ae45ab091e3018653e1d505689158dd7fe872be5220cb
     .agents/skills/herdr/src/server/socket_paths.rs: sha256:e87e6a9872841be59f22d0655f9ee00ec1c53c522a91d781e6fe81543c3a053d
     .agents/skills/herdr/src/server/terminal_attach.rs: sha256:384a672d42cdf33702527d7a531d9408f46bc75f69aeea4792761f75cb2c88be
-    .agents/skills/herdr/src/session.rs: sha256:bfc59ea496d5417e80611c2e906736d7fe46ef869eb704090188001b9fa639cc
+    .agents/skills/herdr/src/session.rs: sha256:3e00d617307466271bb12c4deb9dc94175a8c7e112f3b444d4566ad7991aa38e
     .agents/skills/herdr/src/sound.rs: sha256:3afddb81e6f25285477d6dd339026564e9e93b9a04e34c210fabec99a8f46af7
     .agents/skills/herdr/src/terminal/id.rs: sha256:032803f57718cf8c5e7cb2c59bd0f55f09bf6f4af9fa5943f1d6b625ea88873e
-    .agents/skills/herdr/src/terminal/metadata.rs: sha256:8b6d4690647934d6931f7c1ac91bb20fd0523907fa3fc1b76e08865154f2def6
-    .agents/skills/herdr/src/terminal/mod.rs: sha256:cdfb591fe152c0a58490f6a59ebb74dcc151477af4a4af583afdaae5aa6eeb83
-    .agents/skills/herdr/src/terminal/runtime.rs: sha256:5e5b83f315c5ea21a3a88ad0697bcbb76ad8c841140dc2734832028a59c7c7f8
+    .agents/skills/herdr/src/terminal/metadata.rs: sha256:963dc5bdedcec3f04c2fe4b4e05050dfb0cae7452f455d94592a2df5cb388a42
+    .agents/skills/herdr/src/terminal/mod.rs: sha256:c8e3f9cb09abfa31e5c82b29b27f16d62a6f37d03d234f2b69f5b81edeb25e52
+    .agents/skills/herdr/src/terminal/runtime.rs: sha256:998c36582eb222771e27b2f2366af70ab138773035ffc00eeeb98caccb0996cd
     .agents/skills/herdr/src/terminal/runtime_registry.rs: sha256:94d364a24385fe81f2f510c39667f599ed925fddfee7930570e743ce577133af
-    .agents/skills/herdr/src/terminal/state.rs: sha256:861618b88cbe725b3fb8b6779b279c782f424dcacdfe0c8b6b5797fb984e31ea
+    .agents/skills/herdr/src/terminal/state.rs: sha256:5ec6c21334be03840347621c480848a6b125561ae937b3ffa7898083a4b6bfc1
+    .agents/skills/herdr/src/terminal/title.rs: sha256:d97404c8db72740f7fe20316cd94b36a30b4d6a6f75f2b9f1b698c470641b6b5
     .agents/skills/herdr/src/terminal_modes.rs: sha256:f5a469fe5c24ee787cf5221480f8239165229634c9898c0ee7c43810454241cf
     .agents/skills/herdr/src/terminal_notify.rs: sha256:1d2cf5be16c2c0e2a20f81fefd3fb77e7adf3624846910b883cc61b6fb4fa469
     .agents/skills/herdr/src/terminal_theme.rs: sha256:16e20c781791d353ffefe25e203e4cfbfd348b2c5421ab1942379a01498e79e0
-    .agents/skills/herdr/src/ui.rs: sha256:42857a0310778d85676450f2e751d75e83ddf746c4ed0a2f014bed7c4ebc0e31
+    .agents/skills/herdr/src/ui.rs: sha256:18c745940065b5ca502aaa161c50879a4f8e16f12aef5371e3e41cf9f0fc9eee
     .agents/skills/herdr/src/ui/dialogs.rs: sha256:058485455ed199f5833520f34f18331428bea91dab77164103c549096128e820
     .agents/skills/herdr/src/ui/keybind_help.rs: sha256:5e9adca6b0d29908ccbd05dfe28e5bbb3a478ade2c0b818e4a7a7f4e3e089835
-    .agents/skills/herdr/src/ui/menus.rs: sha256:3655c4e544cfad25215c579434b6293b18f20204498506e30a4f77c38b23165e
-    .agents/skills/herdr/src/ui/mobile.rs: sha256:dddb85683a178d61df2452bca8959c5f631c34691ecba8a5100dfd6726068f1e
-    .agents/skills/herdr/src/ui/navigator.rs: sha256:d736c50abcc97cbbfb8b727439cfc8403baa2efa5d48635e68876332a6a67110
+    .agents/skills/herdr/src/ui/menus.rs: sha256:498ae042be859d9f325f169fafb422975ef79bcfe5b18e492e7fb0df07867874
+    .agents/skills/herdr/src/ui/mobile.rs: sha256:d106316044ffc5c8415a8b795024ebc309e40b98f6f3273871da36df7190deb6
+    .agents/skills/herdr/src/ui/navigator.rs: sha256:e5ba809fcf4a3e74b36f3d6beac0297673f699038a0bfb6a5ac39a572ad5b15f
     .agents/skills/herdr/src/ui/onboarding.rs: sha256:391dfcebb6fdf58e3968b5dd92c3ec062ca07e1f764b7b406d93f84f084ad225
-    .agents/skills/herdr/src/ui/panes.rs: sha256:8c989b020c0ece91ecedae48fb8f24d3bd693dfb2091f32ac7f985c0f5efa73f
+    .agents/skills/herdr/src/ui/panes.rs: sha256:3cf4b22fdd708cf61b61e60a6db80558d769ad9cf1ee8909f7f72ea7426bf530
     .agents/skills/herdr/src/ui/release_notes.rs: sha256:49a6d5f8479df00a546b955b65e962ea75bcf2535a9b71812aaff3015e0fe413
     .agents/skills/herdr/src/ui/scrollbar.rs: sha256:cebdb86e0952f69359dadeabd87720d48a8bd19f43568e8f4ee140f5f2f88fde
     .agents/skills/herdr/src/ui/settings.rs: sha256:412c36af4dc5753b4fbfd600f6aa254de43459ce8c6661d4c146ada6e657697a
-    .agents/skills/herdr/src/ui/sidebar.rs: sha256:09068b0b74183ac2383ddf16f7dfea87c861dc2cfb02ef3eafbda33804cce1bc
-    .agents/skills/herdr/src/ui/status.rs: sha256:5469db1c819a257b6ab49307d63e98c0d5c99b6283fa33a920359734153fa04c
+    .agents/skills/herdr/src/ui/sidebar.rs: sha256:529c7ee27f9466d02d2d73858263c15d5c41656d13c403c021456b22b60f3a1f
+    .agents/skills/herdr/src/ui/sidebar/tokens.rs: sha256:37a7c5d07e615206315564420d9ed5827f93138e2fb4100ae512464946eecbdb
+    .agents/skills/herdr/src/ui/status.rs: sha256:f01b4462d0e7173feddd0d26ab229ba21d2223373a65bac7d58843796bd1adfe
     .agents/skills/herdr/src/ui/tabs.rs: sha256:4b31adc8cbca4fe493a0f93f39e05ce275f7116a186801a29498af77d0fa648a
     .agents/skills/herdr/src/ui/text.rs: sha256:7c959b6380cf0c1ffb6db81d8f24b5cbc8be249e162803bf6aedcdc7c2d6a3c9
     .agents/skills/herdr/src/ui/widgets.rs: sha256:fd4646a37dd4a3c104ce6003ca69f107fa2ad11cbac6152a1e261552296a56c6
     .agents/skills/herdr/src/update.rs: sha256:30d3f0e0b99743ae4dc42b3f46aa87b2ae2007058e50b04c631e5a6ad9a03805
-    .agents/skills/herdr/src/workspace.rs: sha256:fbe4491363b6caa7e587aa3eefba300e26c1db61a9ca2d1bc821f47cf90cb5ab
-    .agents/skills/herdr/src/workspace/aggregate.rs: sha256:e6d688b54f6b9d6ab937adc96935fe8f61e0a784e87657a423db82839a61fd5f
+    .agents/skills/herdr/src/workspace.rs: sha256:e969918372fa3eb46b537044a9623816c48911a0a41f701b66a43b218d7707cd
+    .agents/skills/herdr/src/workspace/aggregate.rs: sha256:f748a89e417b3e5eb010bb3085b7c0c54a90655d5e14b00ef6fdc906a9411d33
     .agents/skills/herdr/src/workspace/git/config.rs: sha256:f1a908b6d99ae75ef03c2a5971c49e7249e57023147b2555a5f5761ac53490aa
     .agents/skills/herdr/src/workspace/git/config_tests.rs: sha256:e348eb26c41b3642b2e3503da312a5454f69934c7a08d199c2666fc0af6d1611
     .agents/skills/herdr/src/workspace/git/discovery.rs: sha256:dad234512e099b52fa07c600732caeb261a669abaacc4b21d6450176aa8050f0
     .agents/skills/herdr/src/workspace/git/mod.rs: sha256:88dea6033ab9eee8f28b63544c933b029cd249c34e3d93a77de0889b54db5ab2
     .agents/skills/herdr/src/workspace/git/status.rs: sha256:fa24d2d6fd5f80ddb6734fb0d906ea31c2959ce2d009166ea9160445bf90efb5
     .agents/skills/herdr/src/workspace/git/test_support.rs: sha256:8c539063b12e2202d690f5d251ad435ed321f5cf6eaa19cfb5e9b8c1c3c9833b
-    .agents/skills/herdr/src/workspace/tab.rs: sha256:5e281276faa02432be29bba550d812f4f06cb1850ef85ceaf3f8fc20eecb9973
+    .agents/skills/herdr/src/workspace/tab.rs: sha256:d02b65e8bbb6e2231f2a7a1747d287fae1be18a17011b02f981e20931b350819
     .agents/skills/herdr/src/worktree.rs: sha256:35bb88a4df84575b1eda2981e56c31239be620aee04a5fd817b0bcddc8e45127
-    .agents/skills/herdr/tests/api_ping.rs: sha256:611a60ea4a6a895960ca6cef31d559aa2a3226ff5604e552ae3181e15a5429ce
+    .agents/skills/herdr/tests/api_ping.rs: sha256:39c0e7da529f142d5f4140afc3d9a92c4bc3d144460d484e4b8338b2b03a9a11
     .agents/skills/herdr/tests/auto_detect.rs: sha256:a459dbc6eedc43f00cfb75788fdb301728df0c49b5a5f0df4548c1200aca240e
-    .agents/skills/herdr/tests/cli_wrapper.rs: sha256:ae622b83a7d3f0501fb24474c28ddc50a56a659c119693fd79980e6ee403865b
-    .agents/skills/herdr/tests/client_mode.rs: sha256:d98233ea2c9c2b44752aa8eedce3e63e93f49e2b1dc0e258f184e99c32d9a86d
-    .agents/skills/herdr/tests/cross_area.rs: sha256:2b4e83e85d867257ebad528e362d1ac5f4e0f803ad54a57541eab00fe7e2ac83
+    .agents/skills/herdr/tests/cli_wrapper.rs: sha256:f78a03558a6b685562594dbd3a252f6c1ece0fbfb15f5b704714b347a22704cf
+    .agents/skills/herdr/tests/client_mode.rs: sha256:8b7bc32f5c3d92201323ae97f5b77f5a2d28dd48276bfad88961f3f5373cf8c5
+    .agents/skills/herdr/tests/cross_area.rs: sha256:cfeae5c4e5ef3e6ec580bfe780e6a9119140bfb2b0f4d4f29e83ff1a2a92c3c3
     .agents/skills/herdr/tests/detach_reattach.rs: sha256:2ed844592caeef7572296be7d64740a3ee4a0414b2531b377b4a865abb5e4234
     .agents/skills/herdr/tests/fixtures/keyboard_protocol_corpus.tsv: sha256:1ef151b407200ccde780445c97b203d183787f24777366ea95af6e36a362fb53
     .agents/skills/herdr/tests/fixtures/linux_terminal_variants.tsv: sha256:fd6d13221ea5b2a5aaf3fd1df8994c281ff6262c3b545af326f145bb3d4d4313
@@ -2675,7 +2956,7 @@ dependencies:
     .agents/skills/herdr/tests/fixtures/session/current-herdr-dev-session.json: sha256:cf3f6e284cf78a625135e055f394ba7bfe0f18c6248d0d7390630f857b4229f0
     .agents/skills/herdr/tests/fixtures/session/current-herdr-session.json: sha256:ac0d9e2c48ede9280b0e50143ecd05121bacc125db25fee1d13a53c41b3998c4
     .agents/skills/herdr/tests/fixtures/session/legacy-pre-tabs-v2.json: sha256:d963675b3c37c18ac056592f4c250f771060d25fadc46c6a6bddbe47a3da722c
-    .agents/skills/herdr/tests/live_handoff.rs: sha256:d6de80659941843829666e9ab7d9275310e3ef753fe70197329afb190c5a7b1d
+    .agents/skills/herdr/tests/live_handoff.rs: sha256:8577dc6d3ad319d46c780f6451238b8add894c4ea532218730fb3bf77e3319f9
     .agents/skills/herdr/tests/multi_client.rs: sha256:3e709894ea4dc334cbeb1a04b695bdfaa553c6c5c08f5bdcc12971ff61beed06
     .agents/skills/herdr/tests/server_headless.rs: sha256:d64e475cac0bea81a32b9d85223e35c85c5a8185e1f0bfb3a33f335a90d6f047
     .agents/skills/herdr/tests/support/mod.rs: sha256:010d9811dc734898ad098af6fe83c5968c23b6b2ab25111ebc2d7952892d2b2c
@@ -3912,15 +4193,15 @@ dependencies:
     .agents/skills/herdr/vendor/portable-pty/src/win/mod.rs: sha256:c983e63d15800f73ac05105a69ec2b53fea482c066ea5559682bd024561f999a
     .agents/skills/herdr/vendor/portable-pty/src/win/procthreadattr.rs: sha256:0483a5b43794181f02b20175ba15dc4e913663208d94e4a48aa9cc2cd77fdb1c
     .agents/skills/herdr/vendor/portable-pty/src/win/psuedocon.rs: sha256:cdb57ad7c43864b9e12c6f7b5078f63afd305e2f2e5bb367558aa50c95466ce1
-    .agents/skills/herdr/website/.gitignore: sha256:f7d14706dfca29707a3ddc6c22becbdaf2aee35b2fccf67f892e1b063e3c57e4
+    .agents/skills/herdr/website/.gitignore: sha256:a4e5f49d02843768056d902feeb05a3938762f22da4b4450631834eadc1212e6
     .agents/skills/herdr/website/README.md: sha256:d36287c41db78887491ff9572623595132021b85738c5607eb45449dba0b2b25
     .agents/skills/herdr/website/_headers: sha256:eebf537dc4d2b9b06c94e85b1775928db62b386c555661084ecaa91efb097d23
     .agents/skills/herdr/website/_redirects: sha256:320b2340884ae54d48b0a59716b15a25375bdb61cfe5bff569be6bce4032f8c3
-    .agents/skills/herdr/website/agent-detection/amp.toml: sha256:dcf8e872958bfc9eacd2148b1da55b42c520f1c448a23e29edc54228385b9375
+    .agents/skills/herdr/website/agent-detection/amp.toml: sha256:b5806b0dd21e2f5e752d0eac7f084d5ce2e3f275638cfd1234c42cc88152dc8c
     .agents/skills/herdr/website/agent-detection/antigravity.toml: sha256:11300b853130d037eb2c57d9c4b897893cc1f0a876e12eb54ff1b216177db9d7
-    .agents/skills/herdr/website/agent-detection/claude.toml: sha256:b92eb1578b9786cc80a43def7910918bca5c2faf2f1d56a35648dcba699fa1b9
+    .agents/skills/herdr/website/agent-detection/claude.toml: sha256:d7b3e653a6d84024d1cca5b35bfa8a1d59afd9ce6bbfe06275d38315f18c2dc8
     .agents/skills/herdr/website/agent-detection/cline.toml: sha256:577e2f1bd115a6ed3b5c38c661af175386fcdba269f7cd7447bf16d7c72521f0
-    .agents/skills/herdr/website/agent-detection/codex.toml: sha256:6dec0a3c6889f2129e5cc2d5535ea8f58d6932a2400100fe3352d8e79b7822f1
+    .agents/skills/herdr/website/agent-detection/codex.toml: sha256:15185e026d31fdaea05509c95bdc1dbcf1475009ebac240267f5d22997d8cb18
     .agents/skills/herdr/website/agent-detection/cursor.toml: sha256:24a15842170c785e9c79fb31a4157e8077194d487cefe18289ed0f1b9cd82238
     .agents/skills/herdr/website/agent-detection/devin.toml: sha256:250c9cea1d60bdb965dc6056f3066b785e941d60242756fbaca73b57ca6b0f85
     .agents/skills/herdr/website/agent-detection/droid.toml: sha256:d37e7c464177c0e8f3edce8d4fabc4bcc7a1874edf2c4c87a2f927888cf69ce9
@@ -3928,10 +4209,11 @@ dependencies:
     .agents/skills/herdr/website/agent-detection/github-copilot.toml: sha256:4e41288eecc180b9f5c31a5453c0015558b80d2be78382bec109d5b40a7818d9
     .agents/skills/herdr/website/agent-detection/grok.toml: sha256:ea27dbb712a1cbde5398f1985fa7b68f40575d9e727ba1afb71417889de9a6b4
     .agents/skills/herdr/website/agent-detection/hermes.toml: sha256:d1f5ebddb4a9ed34d73614dd4d191e634d6be340c45950ef287b45d4ca39ec3a
-    .agents/skills/herdr/website/agent-detection/index.toml: sha256:0626a5965df701155763ba5d3eeaaaad5bae9444c08e07412ff7aed68d4c7bcf
+    .agents/skills/herdr/website/agent-detection/index.toml: sha256:482ae8dc876125fbbe8d2397332d910cf347cc3f89611182cc6d73ec0e38ad15
     .agents/skills/herdr/website/agent-detection/kilo.toml: sha256:70f0ba4e58bc141fe69d7024013f973cd16e8616393079318914d70afeefef3b
     .agents/skills/herdr/website/agent-detection/kimi.toml: sha256:ede08c0d2d5024f7606dc0a1b2f7a9c6a0ebb99f3b6c58ca6757049856d06e05
     .agents/skills/herdr/website/agent-detection/kiro.toml: sha256:8f3fa7c99f6bfa5a6710f5f039ea875ee9d06e94e03143ca1c4d8f373d96a4fc
+    .agents/skills/herdr/website/agent-detection/maki.toml: sha256:3b392170ee3082051266509f575a4640bde8d693b2f37ecf52157a641bc75b28
     .agents/skills/herdr/website/agent-detection/opencode.toml: sha256:faa82aed2d76ad856528caae04232894594b74cc903aed3e522b3e725c5f2c95
     .agents/skills/herdr/website/agent-detection/pi.toml: sha256:d852f52d637040fad207a395928dc190d99d24b6c72d6e1b7fbbf4487a416e40
     .agents/skills/herdr/website/agent-detection/qodercli.toml: sha256:2089f70fc78c6576fd7128a00f4e7eedb85be81bde9ed73301b3b88000048961
@@ -3977,7 +4259,7 @@ dependencies:
     .agents/skills/herdr/website/assets/favicon.svg: sha256:f4a8400d515fcf50112a952a5b48f5fa6e6b02b4dcb0b483ca92be39f7d7f7a1
     .agents/skills/herdr/website/assets/hero-session.png: sha256:d8260186da67b1b65a998d16c947dbbfbba6575a79a5364ebd967e3302ecd71d
     .agents/skills/herdr/website/assets/jbm-OFL.txt: sha256:a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697
-    .agents/skills/herdr/website/assets/jbm.woff2: sha256:83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be
+    .agents/skills/herdr/website/assets/jbm.woff2: sha256:1fc266ecab6201ab47de344923a909c7f1f22186e0b73c3d646ce702b5a2ee30
     .agents/skills/herdr/website/assets/logo.png: sha256:56fc2db845c16eb521022549890fbe239659957caee1f4fc718a634d7a66cf0a
     .agents/skills/herdr/website/assets/logo.svg: sha256:f4a8400d515fcf50112a952a5b48f5fa6e6b02b4dcb0b483ca92be39f7d7f7a1
     .agents/skills/herdr/website/assets/mobile-agent-session-v2.jpeg: sha256:1ff5affd49c6d51b55f7f5e508f530fae82e25e3a248c32b1f7e67e9b5971fd4
@@ -3989,24 +4271,27 @@ dependencies:
     .agents/skills/herdr/website/assets/sidebar-agents-v2.png: sha256:3cf50870aa1a91763d00b92d1d043b246e597e69cae61d88985f85b9ffc91de3
     .agents/skills/herdr/website/assets/sidebar-workspaces-v2.png: sha256:2c6e5ee286a1ec1286358f44e8892733d431da201186b89c0698c457273fb185
     .agents/skills/herdr/website/assets/terminal-panes.png: sha256:96556a6555ae0d7b2efc4c4e4bc94e16234b1ca002e29668ecdec2aaaca19251
-    .agents/skills/herdr/website/astro.config.mjs: sha256:e7941824989285662b2c5d4d294c2ad2cdf8e24d577ea71409e7d9c8c961fb79
+    .agents/skills/herdr/website/astro.config.mjs: sha256:36da19e669c57b50082e6f35861244427cabecfa7ded904b71c9a87de3116502
     .agents/skills/herdr/website/bun.lock: sha256:560d1823ed4a7d3c364bc4e214e84369b8f3388bf2bb376ecd6f414c6a2e404e
-    .agents/skills/herdr/website/css/style.css: sha256:93d7d174e29866677c5c49ea10715ec4699e362bc997f14e8e726ff1b6941e79
-    .agents/skills/herdr/website/index.html: sha256:1c2d220564ddfac8c3b5ade4fc502d121d6dae5469d7d82e17b6558607a7008d
-    .agents/skills/herdr/website/install.ps1: sha256:81b5c96d7ea74093d3074814055d14a5cd7c537bcc6790f771674f81d10a5a0b
+    .agents/skills/herdr/website/css/style.css: sha256:db4c76a8af11bcc3447f968ac2f5a564cec20eb13d51c7914ad1d3919e1dbe7f
+    .agents/skills/herdr/website/index.html: sha256:3ea854c06cf8a96b5d7f8593b420613d887b7885073fce0117c00344c341ba76
+    .agents/skills/herdr/website/install.ps1: sha256:b6cf6d56d0c9e76c4b3e6f66f95e407c048cb19422321933dc9dd1c4364e4a2d
     .agents/skills/herdr/website/install.sh: sha256:57c35622122f672ac311cbd7784be6af60912910287229492679033162b4604c
     .agents/skills/herdr/website/latest.json: sha256:a924e67e03900d5996ac2f6e247f49ee571f123387b8e5e83970d4bc4ed6f5d1
-    .agents/skills/herdr/website/package.json: sha256:9048bdd0349f265f4177930d33993f9f76778759d38e8b7c81c0053ff66c4e8b
+    .agents/skills/herdr/website/package.json: sha256:c29bfff5b2b30a07dab41424bac0df335ea7517d86cb82669186ade0c24acb38
     .agents/skills/herdr/website/preview.json: sha256:146082c283b5bd92410b67773f5a7836619103adc5597dbfcddd36e8444c2895
     .agents/skills/herdr/website/robots.txt: sha256:9756dce736ce28a7c15ce76a4d51706318c5cd39f096e5c92400b1081d6e2d64
-    .agents/skills/herdr/website/scripts/prepare-docs.mjs: sha256:a428903b52759e949856ef7dbc2b0b3de3be29e9def871d5b98d4f4a730a1185
+    .agents/skills/herdr/website/scripts/prepare-docs.mjs: sha256:816eaf024f8f3de734c7751c841e4286577341dce79929f17612257e172e039e
     .agents/skills/herdr/website/src/components/AuthorCard.astro: sha256:ac90fc301ba80a90a82e4371000a534c9ebaca1c2b0002eef8628ae163fc5d4a
     .agents/skills/herdr/website/src/components/Banner.astro: sha256:9b59e98e032278c37fcc29220324c87bb2fd2feb0e92c29ed05752b5646a0bd5
+    .agents/skills/herdr/website/src/components/ConfigReference.astro: sha256:07d1a2d30bd9aedcb221b2ffdcb0468948ad87e30061ccc60e0f0dd5654d6061
+    .agents/skills/herdr/website/src/components/Head.astro: sha256:6aec35b320b2463d909508b86a95213ff225ad53a7e3697451b5acb5eca2fdd7
     .agents/skills/herdr/website/src/components/Header.astro: sha256:1c2813f908e1b47b35382f0a2abfa6e69beaec504079a81a58d638744a6836e3
     .agents/skills/herdr/website/src/components/MarketingLayout.astro: sha256:a256bcfe569eb0463f387cbd4ed5ce88cf0c1ceeb33aa2d9e27ead506ed707c2
+    .agents/skills/herdr/website/src/components/Search.astro: sha256:d5f951e15a9f17ae0403ee04ae41f1dc03c72d88bb5ae7e7cc7602fe7c3ad633
     .agents/skills/herdr/website/src/components/Sidebar.astro: sha256:00ece12def932890546f8696b5749927a3cc5e8a4fbd64b5cb39d8e54715519c
     .agents/skills/herdr/website/src/components/SiteTitle.astro: sha256:25cba4a5b6fc1eb488c5b935e5c74614575058257a15ea7a8bd3b43e7a0488fa
-    .agents/skills/herdr/website/src/content.config.ts: sha256:587f3859537bddb9b6f84f48b78962be360256c2333dc11e72eb67020052e374
+    .agents/skills/herdr/website/src/content.config.ts: sha256:10e7c2404e65c11912932b8f7361b4cea8c69b061b593c726c85a660cf5ddc7e
     .agents/skills/herdr/website/src/content/blog/coding-agents-are-becoming-runtimes.md: sha256:7f220ec68e3bf94ce4f33f34c5f536fc0c8c8ed97aa7c2559322f469dd3685cd
     .agents/skills/herdr/website/src/content/blog/herdr-0-6-3.md: sha256:b0ad7bcb309dfa27c5102ddf97b6a318b70404cdbbaa8806002dc7318fd7b8ab
     .agents/skills/herdr/website/src/content/blog/live-updates-without-killing-your-terminal-processes.md: sha256:c9c0bb66f5281495cfa041c2d2502fc48866d308338fbd9d05adbc98b979bae4
@@ -4014,7 +4299,8 @@ dependencies:
     .agents/skills/herdr/website/src/content/docs/agents.mdx: sha256:2ab4fee1be68e4dbaad12a4c149389b1fa8841903c7e1e7e402b1d91754a096c
     .agents/skills/herdr/website/src/content/docs/cli-reference.mdx: sha256:b76247f7aca8adadd2342ef76e46ccd2e5d4980ff82332123a5428b9f8b6c243
     .agents/skills/herdr/website/src/content/docs/concepts.mdx: sha256:34b9070442b54b685051c28523792192c915360799918702df713bc47c01e03c
-    .agents/skills/herdr/website/src/content/docs/configuration.mdx: sha256:ccc9e4e295d0edba57c5241f5ab0d36523dc5d209e078853e7ce6f5f4ceb0477
+    .agents/skills/herdr/website/src/content/docs/config-reference.mdx: sha256:3c63214777ab3be97279477298860dd2b69b8be52bf92eda5113b80fcbc4a6c0
+    .agents/skills/herdr/website/src/content/docs/configuration.mdx: sha256:d87af7462324243599b72e24b97adf83199a046946a77c89c439086c9953478b
     .agents/skills/herdr/website/src/content/docs/how-to-work.mdx: sha256:d242be300a85ad5bb81697bcef9bad60fe400fb09768bc1f029063b6e4998005
     .agents/skills/herdr/website/src/content/docs/index.mdx: sha256:c2f8114b56eb89271276f32ac421268e5f2f6efff31b67b81402e493cc229ad4
     .agents/skills/herdr/website/src/content/docs/install.mdx: sha256:54c1c3e6ed0b0416d9ca1505e079f8ba0807f212de5332a2cf459a12588d736e
@@ -4023,7 +4309,8 @@ dependencies:
     .agents/skills/herdr/website/src/content/docs/ja/agents.mdx: sha256:4f59cfc94c46ee017174d5e9f027da7dd378528816d707c0fb46584227c046da
     .agents/skills/herdr/website/src/content/docs/ja/cli-reference.mdx: sha256:e37b7a2d476b8a9e6c470e8b51f535976f4cea3ada2996c11801deed34c8aa10
     .agents/skills/herdr/website/src/content/docs/ja/concepts.mdx: sha256:ef98317644451e325d17615a35ad6222e12abab16167b476f154ca42827458e3
-    .agents/skills/herdr/website/src/content/docs/ja/configuration.mdx: sha256:b12de3364691f92a9dee2d6609001f6b7fddd3622ddbf87d1fd65413ebc97eb5
+    .agents/skills/herdr/website/src/content/docs/ja/config-reference.mdx: sha256:542e3e8be77154d9b1a9f3ff88be280d90ffaf3c42142678e90d0fe68f72b82a
+    .agents/skills/herdr/website/src/content/docs/ja/configuration.mdx: sha256:b225b3522b3aabacb038930ec0865618d11df0ccc5a1389728b0a0650ee31fa2
     .agents/skills/herdr/website/src/content/docs/ja/how-to-work.mdx: sha256:2eaa0e36521bae842cc144f68c5e9437b60d6a30c58644441c3420a763fc6869
     .agents/skills/herdr/website/src/content/docs/ja/index.mdx: sha256:eb6062e21f9ccf481ab30190d515dcc00d8efc270f92a033d10c27af06081202
     .agents/skills/herdr/website/src/content/docs/ja/install.mdx: sha256:7a7aa771d04eb1a942a5d4c5801e0933bfa0d63398b9083e5b582a3db89083af
@@ -4035,6 +4322,7 @@ dependencies:
     .agents/skills/herdr/website/src/content/docs/ja/quick-start.mdx: sha256:971804de7f81f5bc630f07ce3e49c6797f478302a7516391e4187b4aa6c35d08
     .agents/skills/herdr/website/src/content/docs/ja/session-state.mdx: sha256:c795c0780d4cba95fe9b0dd6af6269e299ee85463a1d8d8ed97f28180c6e037b
     .agents/skills/herdr/website/src/content/docs/ja/socket-api.mdx: sha256:a061e237067220e7599efbb9f583f2c40c5f7672a76148c2953d4b34abdd1bc4
+    .agents/skills/herdr/website/src/content/docs/ja/troubleshooting.mdx: sha256:07bce97c203593c1bd648b505d2c2badfc1132a39c3f8daf69896b856b09e4f4
     .agents/skills/herdr/website/src/content/docs/ja/windows-beta.mdx: sha256:0bd0f2e1f3555d3f11f701609558e09cd2198165482c84811d6287be251388c2
     .agents/skills/herdr/website/src/content/docs/keyboard.mdx: sha256:d1b0c7a52d7bb499242dfbe812ccbf9d3402022f776711ccd30d179d69c8f4e6
     .agents/skills/herdr/website/src/content/docs/marketplace.mdx: sha256:00db81b952e16e397bb37a931ed5ecee92e88e6fe4095ffbfdff474b17eac086
@@ -4043,12 +4331,14 @@ dependencies:
     .agents/skills/herdr/website/src/content/docs/quick-start.mdx: sha256:7e8a3c9c9688a94f9256222079937f187d70ba396e8e414a433e970440c3b52d
     .agents/skills/herdr/website/src/content/docs/session-state.mdx: sha256:c4629739c175430b6383e122fc7423c15853d3d14fabb738182c383dac7170a4
     .agents/skills/herdr/website/src/content/docs/socket-api.mdx: sha256:ff2e24eb7a229f48892a777feb29af1aa99279ea35209e6059cbf9fc1bfe60a4
+    .agents/skills/herdr/website/src/content/docs/troubleshooting.mdx: sha256:26e1ff0d01b1d0024d4a02460e0e7a2da4a154d8e32fbc98688622b3ea89946f
     .agents/skills/herdr/website/src/content/docs/windows-beta.mdx: sha256:5213ae6da9913c1ea9a62cb12ee153567c2d9ae110d2831b56013d68fc7e2b5a
     .agents/skills/herdr/website/src/content/docs/zh-cn/agent-skill.mdx: sha256:ae54bfba479ecf2eb5604b933fc6bf1c26e07b330ba5b8d1d50bb146ea70c584
     .agents/skills/herdr/website/src/content/docs/zh-cn/agents.mdx: sha256:0e77844758e195ea3b7bac42bd87ddbb11b06beb7044311f82c147272f937e30
     .agents/skills/herdr/website/src/content/docs/zh-cn/cli-reference.mdx: sha256:3007ea5fa80cc4496e01b97714c0c2c3b2345c67cdf4115bbffed35a8004caf3
     .agents/skills/herdr/website/src/content/docs/zh-cn/concepts.mdx: sha256:689bbb0bf78793c04889966993b67ba344742f2eee171b0f8869ed44e1c10045
-    .agents/skills/herdr/website/src/content/docs/zh-cn/configuration.mdx: sha256:4ee464ce84568cc9e4a3ec879fe523e990f8c506b36ffe14216fda656a3c83bc
+    .agents/skills/herdr/website/src/content/docs/zh-cn/config-reference.mdx: sha256:996c78df890c37eff763863d578663956d883800f3985465e235fea6d655a679
+    .agents/skills/herdr/website/src/content/docs/zh-cn/configuration.mdx: sha256:e2a59d0afdc177ff0086cd6b693a7c9fafe58f461f4892a020a42e171f26d4d6
     .agents/skills/herdr/website/src/content/docs/zh-cn/how-to-work.mdx: sha256:df0cd232ac3d0baa31892950d3791d611d08059f56eb5ee4f71c2cfe5c2dd091
     .agents/skills/herdr/website/src/content/docs/zh-cn/index.mdx: sha256:63b7a2a4ae6c68a4328594262a98917aa2ace809f66b700b98d78e4bfbc928cf
     .agents/skills/herdr/website/src/content/docs/zh-cn/install.mdx: sha256:948f3a443f045ed355a1732b81bd850237bd9bf49185bdae542485294a1d6908
@@ -4060,8 +4350,12 @@ dependencies:
     .agents/skills/herdr/website/src/content/docs/zh-cn/quick-start.mdx: sha256:35b74ccea145bb2d4be7256efa119c00fefee3cc6b95bc3b21c102b881771c7d
     .agents/skills/herdr/website/src/content/docs/zh-cn/session-state.mdx: sha256:ed0a77b195f1c6ceba6eaef685648050d594cb9f731d5846fd333e272e130e6c
     .agents/skills/herdr/website/src/content/docs/zh-cn/socket-api.mdx: sha256:2bfe62ffc9284f14ec61556dc68f983b657c45717be3e2c87e2417b390cd2694
+    .agents/skills/herdr/website/src/content/docs/zh-cn/troubleshooting.mdx: sha256:d6a82e574f99f80256f953eb616ae42853f2be9ecf26371325d8a903c7d68b6c
     .agents/skills/herdr/website/src/content/docs/zh-cn/windows-beta.mdx: sha256:70ce4afb3d79437a9213ba7b321d57a77122c1affdf840b2701f7bed45ddcd00
+    .agents/skills/herdr/website/src/data/config-reference.json: sha256:df34812856bc678e7ca88e26d56ed492b192893486eb1522cb0d3dbf1495888f
     .agents/skills/herdr/website/src/data/plugins-fixture.json: sha256:df5b6ea54c4208825f5031aef8dd2e6a632728973b91ddae325bff9a79cc6b18
+    .agents/skills/herdr/website/src/docs-path.test.ts: sha256:2608593419e90be31b8047a931c6ea29920719b0115d7d54124a862801909b1f
+    .agents/skills/herdr/website/src/docs-path.ts: sha256:b795a300e53ebee7cb01b10a209e81b746c20d129879456092e82cef90d57531
     .agents/skills/herdr/website/src/pages/blog/[slug].astro: sha256:7f366433ab287525d45edc2577482f3b94a3c4c16a87ac237177eb6119180890
     .agents/skills/herdr/website/src/pages/blog/index.astro: sha256:0666af7614154753c940174ca65fa9468fb76f3403815f6c4b9ca08c98738771
     .agents/skills/herdr/website/src/pages/compare.astro: sha256:814a866b758e1bd3aa2362e26b217ce5baeb14650e4c998cfd76c1b2b9c13988
@@ -4075,7 +4369,7 @@ dependencies:
     .agents/skills/herdr/workers/plugin-marketplace/src/index.test.ts: sha256:3e1efb73df6625e0eaad8e43b2d5ee988c341b597162beaa099f68ef4207c90f
     .agents/skills/herdr/workers/plugin-marketplace/src/index.ts: sha256:2c0ccf514bc18dfc9ecac6c524ec861d1c802230cc002a3c3beeeec0302f1af0
     .agents/skills/herdr/workers/plugin-marketplace/wrangler.toml: sha256:12bb49d4f355ec3aa2e53448611a3ed7903d41483605dd165ddef7b9532c538e
-  content_hash: sha256:00f7142a9297a085769edfab663416789633cfaf35f3b27937653b32c909e980
+  content_hash: sha256:947f29da1841c679ee5fb438c8bb59bfbe722de2fcc1460087c728d398cf82f8
 - repo_url: openai/skills
   name: skills
   host: github.com
@@ -4127,8 +4421,8 @@ dependencies:
 - repo_url: openclaw/acpx
   name: acpx
   host: github.com
-  resolved_commit: 6a24a546d2349cbe71ed032d52d07cab611e320c
-  version: unknown
+  resolved_commit: a518ea909eb91296b0d05c76345f1c8403ba830b
+  version: 1.0.0
   virtual_path: skills/acpx
   is_virtual: true
   package_type: claude_skill
@@ -4139,10 +4433,10 @@ dependencies:
     .agents/skills/acpx/SKILL.md: sha256:7ca752f8a015a0841df1dccabe983c348bafa8ca1ed8b632c7a81356184d6e4c
   content_hash: sha256:161686918fb684f31091400b07c0e909e139407a9acdc6cf2cc5106f4b3d339d
 - repo_url: sveltejs/ai-tools
-  name: ai-tools
+  name: svelte-core-bestpractices
   host: github.com
-  resolved_commit: 8a7763868a3639413d5cad0ac89790007b7d96ad
-  version: unknown
+  resolved_commit: 35b6a5a51ccfcfb228a317a8f8261dd91012d30b
+  version: 1.0.0
   virtual_path: tools/skills/svelte-core-bestpractices
   is_virtual: true
   package_type: claude_skill
@@ -4173,8 +4467,8 @@ dependencies:
 - repo_url: vercel-labs/agent-browser
   name: agent-browser
   host: github.com
-  resolved_commit: afae698a51242166170b6fe4809dd57fe9f75798
-  version: unknown
+  resolved_commit: 3591f0f4b719c94bcb9aec83ebe811c5dd7f587a
+  version: 1.0.0
   virtual_path: skills/agent-browser
   is_virtual: true
   package_type: claude_skill
@@ -4199,10 +4493,10 @@ dependencies:
     .agents/skills/web-design-guidelines/SKILL.md: sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f
   content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
 - repo_url: vercel-labs/skills
-  name: skills
+  name: find-skills
   host: github.com
-  resolved_commit: 4ce6d48ac44c8b637db87b2102fea3baca719df1
-  version: unknown
+  resolved_commit: 5527c09adc367612b0bffd9c80e3bc28a6b01b6d
+  version: 1.0.0
   virtual_path: skills/find-skills
   is_virtual: true
   package_type: claude_skill
@@ -4210,8 +4504,8 @@ dependencies:
   - .agents/skills/find-skills
   - .agents/skills/find-skills/SKILL.md
   deployed_file_hashes:
-    .agents/skills/find-skills/SKILL.md: sha256:deddc03b4b5f50755b97fcdb737a786676992ef7e9be614d2cd2c71e0320bebf
-  content_hash: sha256:1c27b1774a4ec17ad4556a72e3c0168beab3af0183b2c1b8aa9e320af3ff41ce
+    .agents/skills/find-skills/SKILL.md: sha256:c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f
+  content_hash: sha256:913b9d37d0d54047dd65222bb8c67b2bf04e3cb87dcad1729068d7a8b2c8c396
 - repo_url: vuejs-ai/skills
   name: skills
   host: github.com
@@ -4270,98 +4564,3 @@ dependencies:
     .agents/skills/vue-best-practices/references/state-management.md: sha256:9e98a1c6d9009c0c8ef7228b6b3bcf10d30be6b713ffcef448ab7db3b419a851
     .agents/skills/vue-best-practices/references/updated-hook-performance.md: sha256:ded08ce93f9b23082538846f84e8d159d84af757c27b2c6b43a9283df803a32b
   content_hash: sha256:90980085ec288dd0a3326fc09af639a5e88cff74c15c77db84398fd42797a770
-local_deployed_files:
-- .agents/skills/article-review
-- .agents/skills/article-review/README.md
-- .agents/skills/article-review/SKILL.md
-- .agents/skills/article-review/agents/openai.yaml
-- .agents/skills/article-review/references/report-template.md
-- .agents/skills/article-review/references/review-rubric.md
-- .agents/skills/askmeplan
-- .agents/skills/askmeplan/SKILL.md
-- .agents/skills/ast-grep
-- .agents/skills/ast-grep/SKILL.md
-- .agents/skills/ast-grep/references/command-cookbook.md
-- .agents/skills/ast-grep/references/rule-authoring.md
-- .agents/skills/before-commit
-- .agents/skills/before-commit/SKILL.md
-- .agents/skills/code-search
-- .agents/skills/code-search/SKILL.md
-- .agents/skills/code-search/references/funnel-playbook.md
-- .agents/skills/coding-style
-- .agents/skills/coding-style/SKILL.md
-- .agents/skills/empirical-prompt-tuning
-- .agents/skills/empirical-prompt-tuning/SKILL.md
-- .agents/skills/golang-best-practices
-- .agents/skills/golang-best-practices/SKILL.md
-- .agents/skills/golang-best-practices/dist/golang-best-practices.skill
-- .agents/skills/golang-best-practices/references/code-style.md
-- .agents/skills/golang-best-practices/references/concurrency.md
-- .agents/skills/golang-best-practices/references/error-handling.md
-- .agents/skills/golang-best-practices/references/modernize.md
-- .agents/skills/golang-best-practices/references/performance.md
-- .agents/skills/golang-best-practices/references/project-layout.md
-- .agents/skills/golang-best-practices/references/security.md
-- .agents/skills/golang-best-practices/references/testing.md
-- .agents/skills/japanese-tech-writing
-- .agents/skills/japanese-tech-writing/SKILL.md
-- .agents/skills/refactoring-code
-- .agents/skills/refactoring-code/SKILL.md
-- .agents/skills/refactoring-code/evals/evals.json
-- .agents/skills/refactoring-code/references/examples.md
-- .agents/skills/refactoring-code/references/legacy-safety-net.md
-- .agents/skills/refactoring-code/references/refactor-playbook.md
-- .agents/skills/subagent-orchestration
-- .agents/skills/subagent-orchestration/SKILL.md
-- .agents/skills/typescript-best-practices
-- .agents/skills/typescript-best-practices/SKILL.md
-- .agents/skills/typescript-best-practices/references/config-baseline.md
-- .agents/skills/typescript-best-practices/references/type-safety-patterns.md
-- .agents/skills/typescript-recommend-tools
-- .agents/skills/typescript-recommend-tools/SKILL.md
-- .agents/skills/typescript-recommend-tools/references/default-stacks.md
-- .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md
-- .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md
-- .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md
-- .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md
-local_deployed_file_hashes:
-  .agents/skills/article-review/README.md: sha256:fc0221ba8a1b22e90e4ec415f0e4f5d97375dac847e9f6a455c74b914a869c90
-  .agents/skills/article-review/SKILL.md: sha256:a86cc756a084ce7c6b520e9b65446cb05b93f3502ab5ae5563f19ecb70d2fee9
-  .agents/skills/article-review/agents/openai.yaml: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
-  .agents/skills/article-review/references/report-template.md: sha256:60c5656b28571ac85c746d0450fa05bcde3fc3d9d4c0117b61aed93f2affd97e
-  .agents/skills/article-review/references/review-rubric.md: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
-  .agents/skills/askmeplan/SKILL.md: sha256:c17d88581e637adda8b768f8d57799e99071fda3b1979602df117071220587ab
-  .agents/skills/ast-grep/SKILL.md: sha256:46cb345c660e6275384e99529c053704aeb51bf94d45e51a9846fe897f707d7f
-  .agents/skills/ast-grep/references/command-cookbook.md: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
-  .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
-  .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
-  .agents/skills/code-search/SKILL.md: sha256:daa06d50c3611eb1aed8fb01c31f75447c52225304b386920cb715d5ae5f81b2
-  .agents/skills/code-search/references/funnel-playbook.md: sha256:470109bbc4c9ba3a287dbf544e302912f07bc99a24534efadf231cd2015308fa
-  .agents/skills/coding-style/SKILL.md: sha256:dcebc9bbb93860e454ad00f8fa13094dd057832c242035494fe49ae6b4ff419d
-  .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
-  .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
-  .agents/skills/golang-best-practices/dist/golang-best-practices.skill: sha256:81c910efff41c82348eb1b3aef17f392e3744225f134c9519df010cba17e59d7
-  .agents/skills/golang-best-practices/references/code-style.md: sha256:46fb9140517d8bd1cc73042e4484c5a01f9ef2c867f62f425c58627b0ecdf99c
-  .agents/skills/golang-best-practices/references/concurrency.md: sha256:a29eb23cb630e5dbbd5be1e6e55b8bad8632f823caf6a442b3f5c506c2ce8d41
-  .agents/skills/golang-best-practices/references/error-handling.md: sha256:81a6517cb07c7968b1e2a827d63939af0b976cb2eecd726ec1d5c8bfb2e808c5
-  .agents/skills/golang-best-practices/references/modernize.md: sha256:5bbc66567f58076b836fdf7d5a27935508139d51d983ff75d930d4e3d5294425
-  .agents/skills/golang-best-practices/references/performance.md: sha256:4f8845b8c67eb99a8c2324f5429121271c75abd79e102fdd30dda4834918db60
-  .agents/skills/golang-best-practices/references/project-layout.md: sha256:376101b3f098290daaabaf235e24a9cf41f4afbe5f42dc68df8cf1e2d6e44584
-  .agents/skills/golang-best-practices/references/security.md: sha256:691e69477a8122037251b7a9b2f09b983a9e358aeab932841a49659facfa9f66
-  .agents/skills/golang-best-practices/references/testing.md: sha256:b9cd30a2ea2d760b48b8ae929d7c8e75131814505fbee6fc049d364706e73b18
-  .agents/skills/japanese-tech-writing/SKILL.md: sha256:1f2ecac39b4dd1aad33cb6d09ccf10d66cfe35e73e6541c02ee4399004531b15
-  .agents/skills/refactoring-code/SKILL.md: sha256:ebc352404701d2289496f04fe361dfbb8a1253ce9c6921f49564a9b883c9529a
-  .agents/skills/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
-  .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
-  .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:c6e7bec0c3b67ea8235430c748ea72f501df0ee1cf61028e93e753ec850248f6
-  .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
-  .agents/skills/subagent-orchestration/SKILL.md: sha256:1b38f16ad547e6dff6c917a3ff9cd92a3cba00773c9309e09afb31b222f993ad
-  .agents/skills/typescript-best-practices/SKILL.md: sha256:34d0c5317e8e5a350fd0c1f850461f28c5f1d57fbb8d094c44274156cdb7179b
-  .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
-  .agents/skills/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
-  .agents/skills/typescript-recommend-tools/SKILL.md: sha256:e3d8dbd53a6334aba25f29a90887d2b167466bde8fa518022124a6abe680c736
-  .agents/skills/typescript-recommend-tools/references/default-stacks.md: sha256:6496414b6b4f302f18f01b207123386a69c81f4c9b876b1d1aa796f6752b9a8e
-  .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md: sha256:3e98227275ea67495c289e1b873f376490c8bf636d4a7e42556b116627473d9f
-  .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
-  .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:166fd16e619259499bf8af9ead9442f11a63bead32375e9108bbf0f8e652a86c
-  .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md: sha256:b29ff2099c526d1d88e3e5ca2ba55ee95daacf0b911a26a5332d2924c70359e4
