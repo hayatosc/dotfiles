@@ -3467,17 +3467,7 @@ checksum = "sha256:79a0ade7fc854f62c1aaef48424d9d979e8c2fcd039189d24db82b84cd146
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.7.1/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/471358573"
 
-[tools.cloudflared."platforms.linux-x64-baseline"]
-checksum = "sha256:79a0ade7fc854f62c1aaef48424d9d979e8c2fcd039189d24db82b84cd146be1"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.7.1/cloudflared-linux-amd64"
-url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/471358573"
-
 [tools.cloudflared."platforms.linux-x64-musl"]
-checksum = "sha256:79a0ade7fc854f62c1aaef48424d9d979e8c2fcd039189d24db82b84cd146be1"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.7.1/cloudflared-linux-amd64"
-url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/471358573"
-
-[tools.cloudflared."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:79a0ade7fc854f62c1aaef48424d9d979e8c2fcd039189d24db82b84cd146be1"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.7.1/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/471358573"
@@ -3492,17 +3482,7 @@ checksum = "sha256:05871d772745b0f8398c7be89113a0b178474936ff20638b3b07c0e7262f7
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.7.1/cloudflared-darwin-amd64.tgz"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/471358953"
 
-[tools.cloudflared."platforms.macos-x64-baseline"]
-checksum = "sha256:05871d772745b0f8398c7be89113a0b178474936ff20638b3b07c0e7262f717e"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.7.1/cloudflared-darwin-amd64.tgz"
-url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/471358953"
-
 [tools.cloudflared."platforms.windows-x64"]
-checksum = "sha256:ccb0756de288d3c2c076d19764ca53e0849a10f2dd9c23f8656ac42bdeb45001"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.7.1/cloudflared-windows-amd64.exe"
-url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/471359059"
-
-[tools.cloudflared."platforms.windows-x64-baseline"]
 checksum = "sha256:ccb0756de288d3c2c076d19764ca53e0849a10f2dd9c23f8656ac42bdeb45001"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.7.1/cloudflared-windows-amd64.exe"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/471359059"
