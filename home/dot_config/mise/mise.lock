@@ -3056,9 +3056,9 @@ checksum = "sha256:256818df74531014639af4cd0791a2a2d238bef74b593db92baeb3c881d89
 url = "https://conda.anaconda.org/conda-forge/win-64/svt-av1-4.0.1-hac47afa_0.conda"
 checksum = "sha256:4d77eec06ee4c5de38d330fb7dfd6dac2f867ec007123acb901be9942e12c08a"
 
-[conda-packages.windows-x64."tk-8.6.13-h6ed50ae_3"]
-url = "https://conda.anaconda.org/conda-forge/win-64/tk-8.6.13-h6ed50ae_3.conda"
-checksum = "sha256:0e79810fae28f3b69fe7391b0d43f5474d6bd91d451d5f2bde02f55ae481d5e3"
+[conda-packages.windows-x64."tk-8.6.13-h967ab96_3"]
+url = "https://conda.anaconda.org/conda-forge/win-64/tk-8.6.13-h967ab96_3.conda"
+checksum = "sha256:13fa29257d43f8e630a1e591ed77fae9bbbb236b011432f01e2034cf36e6bf03"
 
 [conda-packages.windows-x64.tzdata-2025c-hc9c84f9_1]
 url = "https://conda.anaconda.org/conda-forge/noarch/tzdata-2025c-hc9c84f9_1.conda"
@@ -4166,7 +4166,7 @@ conda_deps = [
     "zstd-1.5.7-h534d264_6",
     "libmpdec-4.0.0-hfd05255_1",
     "libsqlite-3.53.3-hf5d6505_0",
-    "tk-8.6.13-h6ed50ae_3",
+    "tk-8.6.13-h967ab96_3",
     "tzdata-2025c-hc9c84f9_1",
 ]
 
