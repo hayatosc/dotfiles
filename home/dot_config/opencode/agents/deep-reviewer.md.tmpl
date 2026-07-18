@@ -1,0 +1,11 @@
+---
+description: {{ template "agent_deep_reviewer_description" . -}}
+mode: subagent
+model: opencode-go/glm-5.2
+temperature: 0.1
+tools:
+  write: false
+  edit: false
+  bash: false
+---
+{{ template "agent_deep_reviewer_prompt" . -}}

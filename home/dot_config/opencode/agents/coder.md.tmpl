@@ -1,0 +1,11 @@
+---
+description: {{ template "agent_coder_description" . -}}
+mode: subagent
+model: opencode-go/deepseek-v4-pro
+temperature: 0.2
+tools:
+  write: true
+  edit: true
+  bash: true
+---
+{{ template "agent_coder_prompt" . -}}

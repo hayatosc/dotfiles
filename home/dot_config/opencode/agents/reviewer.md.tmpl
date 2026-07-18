@@ -1,0 +1,11 @@
+---
+description: {{ template "agent_reviewer_description" . -}}
+mode: subagent
+model: opencode-go/deepseek-v4-pro
+temperature: 0.1
+tools:
+  write: false
+  edit: false
+  bash: false
+---
+{{ template "agent_reviewer_prompt" . -}}
