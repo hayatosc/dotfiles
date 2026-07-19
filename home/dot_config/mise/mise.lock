@@ -5297,17 +5297,7 @@ checksum = "sha256:8e033bc78c8e192dee9510e951f6c9e154289b7198d22c924ed1d0a951b0d
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.63.1/lazygit_0.63.1_linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/477867706"
 
-[tools.lazygit."platforms.linux-x64-baseline"]
-checksum = "sha256:8e033bc78c8e192dee9510e951f6c9e154289b7198d22c924ed1d0a951b0dac1"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.63.1/lazygit_0.63.1_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/477867706"
-
 [tools.lazygit."platforms.linux-x64-musl"]
-checksum = "sha256:8e033bc78c8e192dee9510e951f6c9e154289b7198d22c924ed1d0a951b0dac1"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.63.1/lazygit_0.63.1_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/477867706"
-
-[tools.lazygit."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:8e033bc78c8e192dee9510e951f6c9e154289b7198d22c924ed1d0a951b0dac1"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.63.1/lazygit_0.63.1_linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/477867706"
@@ -5322,17 +5312,7 @@ checksum = "sha256:5cc02389cc189b1146aa330615f0c547996395ca7661e56f946670947e803
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.63.1/lazygit_0.63.1_darwin_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/477867703"
 
-[tools.lazygit."platforms.macos-x64-baseline"]
-checksum = "sha256:5cc02389cc189b1146aa330615f0c547996395ca7661e56f946670947e803006"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.63.1/lazygit_0.63.1_darwin_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/477867703"
-
 [tools.lazygit."platforms.windows-x64"]
-checksum = "sha256:230721fb5f0d5c0e91555bd4bd76f5213477b116027f1c0fe222b70d49f58ea0"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.63.1/lazygit_0.63.1_windows_x86_64.zip"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/477867700"
-
-[tools.lazygit."platforms.windows-x64-baseline"]
 checksum = "sha256:230721fb5f0d5c0e91555bd4bd76f5213477b116027f1c0fe222b70d49f58ea0"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.63.1/lazygit_0.63.1_windows_x86_64.zip"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/477867700"
