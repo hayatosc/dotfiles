@@ -45,6 +45,10 @@ Phrase the job as the subagent's own work. Never forward the user's delegation p
 | **Antigravity** | `TypeName` | `TypeName: "self"` or `TypeName: "research"` |
 | **Codex** | `agent_role` | `agent_role = "coder"` |
 | **Claude Code** | `subagent_type` | `subagent_type = "reviewer"` |
+| **OpenCode** | `subagent_type` | `subagent_type: "@explorer"` or `subagent_type: "@coder"` |
+
+> [!IMPORTANT]
+> When spawning a subagent in **OpenCode**, you must prefix the agent name with `@` (e.g., `@explorer`, `@coder`) in the `subagent_type` parameter. Omitting the `@` prefix will result in an "Unknown agent type" error.
 
 ### Available custom agent roles
 `coder` · `reviewer` · `explorer` · `deep-reviewer`
