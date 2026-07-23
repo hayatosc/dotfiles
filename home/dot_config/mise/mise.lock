@@ -4629,43 +4629,43 @@ url = "https://github.com/mizchi/actrun/releases/download/v0.29.0/actrun-macos-a
 url_api = "https://api.github.com/repos/mizchi/actrun/releases/assets/385521186"
 
 [[tools."github:steipete/gogcli"]]
-version = "0.32.0"
+version = "0.34.1"
 backend = "github:steipete/gogcli"
 
 [tools."github:steipete/gogcli"."platforms.linux-arm64"]
-checksum = "sha256:d1eefeda5547b9f1dd6c804d4573e2873cfd62a38f92d25057e18f0af8ce7e93"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.32.0/gogcli_0.32.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/465677374"
+checksum = "sha256:8510db6492c27f7704bf60af276f34ede81b67d88b6ffcf953153da841eaa3ed"
+url = "https://github.com/openclaw/gogcli/releases/download/v0.34.1/gogcli_0.34.1_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/479592257"
 
 [tools."github:steipete/gogcli"."platforms.linux-arm64-musl"]
-checksum = "sha256:d1eefeda5547b9f1dd6c804d4573e2873cfd62a38f92d25057e18f0af8ce7e93"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.32.0/gogcli_0.32.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/465677374"
+checksum = "sha256:8510db6492c27f7704bf60af276f34ede81b67d88b6ffcf953153da841eaa3ed"
+url = "https://github.com/openclaw/gogcli/releases/download/v0.34.1/gogcli_0.34.1_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/479592257"
 
 [tools."github:steipete/gogcli"."platforms.linux-x64"]
-checksum = "sha256:342b3084a85eeb521e58d2e1904f5d4abfceec1505cea7b56557f577f6510ea4"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.32.0/gogcli_0.32.0_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/465677372"
+checksum = "sha256:a5b4be2ea635d4c830972dec1f3a90b0ca17f9c25e7a6353d1e068d8505ea983"
+url = "https://github.com/openclaw/gogcli/releases/download/v0.34.1/gogcli_0.34.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/479592258"
 
 [tools."github:steipete/gogcli"."platforms.linux-x64-musl"]
-checksum = "sha256:342b3084a85eeb521e58d2e1904f5d4abfceec1505cea7b56557f577f6510ea4"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.32.0/gogcli_0.32.0_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/465677372"
+checksum = "sha256:a5b4be2ea635d4c830972dec1f3a90b0ca17f9c25e7a6353d1e068d8505ea983"
+url = "https://github.com/openclaw/gogcli/releases/download/v0.34.1/gogcli_0.34.1_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/479592258"
 
 [tools."github:steipete/gogcli"."platforms.macos-arm64"]
-checksum = "sha256:72c7c928c88ba9162613e6c15593098f29e1195a50f27dd87949fb377cf245a5"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.32.0/gogcli_0.32.0_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/465677320"
+checksum = "sha256:90ab9104d543d16ac5367d405dc61b886003a118ce7eaddd0dd73c0363141449"
+url = "https://github.com/openclaw/gogcli/releases/download/v0.34.1/gogcli_0.34.1_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/479592326"
 
 [tools."github:steipete/gogcli"."platforms.macos-x64"]
-checksum = "sha256:3bfdaab971ab9b28e3274336a16eafb03b2bea57bf6f48af447744856c79a849"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.32.0/gogcli_0.32.0_darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/465677325"
+checksum = "sha256:14ae529f1ca9404252c5606689cd1e40a02b7357ca60f6491d9c85937342d3d4"
+url = "https://github.com/openclaw/gogcli/releases/download/v0.34.1/gogcli_0.34.1_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/479592318"
 
 [tools."github:steipete/gogcli"."platforms.windows-x64"]
-checksum = "sha256:fb2e396047138f970366bd45cde59d2f890cd207c14b473e1ed768b07de797e3"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.32.0/gogcli_0.32.0_windows_amd64.zip"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/465677371"
+checksum = "sha256:55e4667578ce833a30010f3903114561d5694ee0e38858c6df7ef947cbefbd02"
+url = "https://github.com/openclaw/gogcli/releases/download/v0.34.1/gogcli_0.34.1_windows_amd64.zip"
+url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/479592307"
 
 [[tools.go]]
 version = "1.26.5"
