@@ -36,9 +36,9 @@ checksum = "sha256:69f70048a1a915be7b8ad5d2cbb7bf020baa989b5506e45a676ef4ef5106c
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h4777abc_9.conda"
 checksum = "sha256:b3495077889dde6bb370938e7db82be545c73e8589696ad0843a32221520ad4c"
 
-[conda-packages.linux-arm64."ca-certificates-2026.6.17-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
-checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
+[conda-packages.linux-arm64."ca-certificates-2026.7.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-hbd8a1cb_0.conda"
+checksum = "sha256:0a0544cf95f64394fe4959286f5c71f5444ad58feb0602e53becb27448d24da6"
 
 [conda-packages.linux-arm64."cairo-1.18.4-h0b6afd8_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/cairo-1.18.4-h0b6afd8_1.conda"
@@ -76,9 +76,9 @@ checksum = "sha256:00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b
 url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda"
 checksum = "sha256:2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14"
 
-[conda-packages.linux-arm64."fontconfig-2.18.1-hba86a56_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/fontconfig-2.18.1-hba86a56_0.conda"
-checksum = "sha256:2ccfd118269d363a5506161c4a0d96da46d2f01beecc74e0540a54b4737d0e45"
+[conda-packages.linux-arm64."fontconfig-2.18.2-hba86a56_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/fontconfig-2.18.2-hba86a56_0.conda"
+checksum = "sha256:12e49d4bcc7b57ebcb51e199921604ec6218c6a09d345449b2bc7772fe5061b7"
 
 [conda-packages.linux-arm64.fonts-conda-ecosystem-1-0]
 url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2"
@@ -712,9 +712,9 @@ checksum = "sha256:69f70048a1a915be7b8ad5d2cbb7bf020baa989b5506e45a676ef4ef5106c
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/bzip2-1.0.8-h4777abc_9.conda"
 checksum = "sha256:b3495077889dde6bb370938e7db82be545c73e8589696ad0843a32221520ad4c"
 
-[conda-packages.linux-arm64-musl."ca-certificates-2026.6.17-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
-checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
+[conda-packages.linux-arm64-musl."ca-certificates-2026.7.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-hbd8a1cb_0.conda"
+checksum = "sha256:0a0544cf95f64394fe4959286f5c71f5444ad58feb0602e53becb27448d24da6"
 
 [conda-packages.linux-arm64-musl."cairo-1.18.4-h0b6afd8_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/cairo-1.18.4-h0b6afd8_1.conda"
@@ -752,9 +752,9 @@ checksum = "sha256:00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b
 url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda"
 checksum = "sha256:2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14"
 
-[conda-packages.linux-arm64-musl."fontconfig-2.18.1-hba86a56_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/fontconfig-2.18.1-hba86a56_0.conda"
-checksum = "sha256:2ccfd118269d363a5506161c4a0d96da46d2f01beecc74e0540a54b4737d0e45"
+[conda-packages.linux-arm64-musl."fontconfig-2.18.2-hba86a56_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/fontconfig-2.18.2-hba86a56_0.conda"
+checksum = "sha256:12e49d4bcc7b57ebcb51e199921604ec6218c6a09d345449b2bc7772fe5061b7"
 
 [conda-packages.linux-arm64-musl.fonts-conda-ecosystem-1-0]
 url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2"
@@ -1388,9 +1388,9 @@ checksum = "sha256:df682395d05050cd1222740a42a551281210726a67447e5258968dd558543
 url = "https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_9.conda"
 checksum = "sha256:0b75d45f0bba3e95dc693336fa51f40ea28c980131fec438afb7ce6118ed05f6"
 
-[conda-packages.linux-x64."ca-certificates-2026.6.17-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
-checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
+[conda-packages.linux-x64."ca-certificates-2026.7.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-hbd8a1cb_0.conda"
+checksum = "sha256:0a0544cf95f64394fe4959286f5c71f5444ad58feb0602e53becb27448d24da6"
 
 [conda-packages.linux-x64."cairo-1.18.4-he90730b_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.4-he90730b_1.conda"
@@ -1428,9 +1428,9 @@ checksum = "sha256:00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b
 url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda"
 checksum = "sha256:2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14"
 
-[conda-packages.linux-x64."fontconfig-2.18.1-h27c8c51_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.18.1-h27c8c51_0.conda"
-checksum = "sha256:2e50bdcebdf70a865b81f2456bbc586386451ec601c60f2b6cd22b8c40a2d384"
+[conda-packages.linux-x64."fontconfig-2.18.2-h27c8c51_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.18.2-h27c8c51_0.conda"
+checksum = "sha256:d77a47bc2b340b997c680241751e581672d1d0377a680eaf0b19026f013f56b7"
 
 [conda-packages.linux-x64.fonts-conda-ecosystem-1-0]
 url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2"
@@ -2104,9 +2104,9 @@ checksum = "sha256:df682395d05050cd1222740a42a551281210726a67447e5258968dd558543
 url = "https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-hda65f42_9.conda"
 checksum = "sha256:0b75d45f0bba3e95dc693336fa51f40ea28c980131fec438afb7ce6118ed05f6"
 
-[conda-packages.linux-x64-musl."ca-certificates-2026.6.17-hbd8a1cb_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
-checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
+[conda-packages.linux-x64-musl."ca-certificates-2026.7.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-hbd8a1cb_0.conda"
+checksum = "sha256:0a0544cf95f64394fe4959286f5c71f5444ad58feb0602e53becb27448d24da6"
 
 [conda-packages.linux-x64-musl."cairo-1.18.4-he90730b_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.4-he90730b_1.conda"
@@ -2144,9 +2144,9 @@ checksum = "sha256:00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b
 url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda"
 checksum = "sha256:2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14"
 
-[conda-packages.linux-x64-musl."fontconfig-2.18.1-h27c8c51_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.18.1-h27c8c51_0.conda"
-checksum = "sha256:2e50bdcebdf70a865b81f2456bbc586386451ec601c60f2b6cd22b8c40a2d384"
+[conda-packages.linux-x64-musl."fontconfig-2.18.2-h27c8c51_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.18.2-h27c8c51_0.conda"
+checksum = "sha256:d77a47bc2b340b997c680241751e581672d1d0377a680eaf0b19026f013f56b7"
 
 [conda-packages.linux-x64-musl.fonts-conda-ecosystem-1-0]
 url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2"
@@ -2792,9 +2792,9 @@ checksum = "sha256:3033fa8953f7f0c1bb5b89b5af77253badc14a89ba94d743dde3c9159e10f
 url = "https://conda.anaconda.org/conda-forge/win-64/bzip2-1.0.8-h0ad9c76_9.conda"
 checksum = "sha256:76dfb71df5e8d1c4eded2dbb5ba15bb8fb2e2b0fe42d94145d5eed4c75c35902"
 
-[conda-packages.windows-x64."ca-certificates-2026.6.17-h4c7d964_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-h4c7d964_0.conda"
-checksum = "sha256:7f458e4a82514d7bebbfef23d92817794a16aaf1c748a15f04870d4fb49aeab2"
+[conda-packages.windows-x64."ca-certificates-2026.7.22-h4c7d964_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-h4c7d964_0.conda"
+checksum = "sha256:95e8e74062a5fe5f870ac8c90302b6e89945165fdaed7810606e84ddee6aac12"
 
 [conda-packages.windows-x64."cairo-1.18.4-h477c42c_1"]
 url = "https://conda.anaconda.org/conda-forge/win-64/cairo-1.18.4-h477c42c_1.conda"
@@ -2820,9 +2820,9 @@ checksum = "sha256:00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b
 url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda"
 checksum = "sha256:2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14"
 
-[conda-packages.windows-x64."fontconfig-2.18.1-hd47e2ca_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/fontconfig-2.18.1-hd47e2ca_0.conda"
-checksum = "sha256:9217184c4a8e82101b0e512b059ae3ff67e3913133b9031edad89ab5341284e4"
+[conda-packages.windows-x64."fontconfig-2.18.2-hd47e2ca_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/fontconfig-2.18.2-hd47e2ca_0.conda"
+checksum = "sha256:3263ba9ad9e78a927964c76e0b2b4c745d279394928f4d381272b771ec816235"
 
 [conda-packages.windows-x64.fonts-conda-ecosystem-1-0]
 url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2"
@@ -3562,7 +3562,6 @@ conda_deps = [
     "liblzma-5.8.3-he30d5cf_0",
     "libass-0.17.4-hcfe818d_0",
     "fonts-conda-ecosystem-1-0",
-    "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "libabseil-20260107.1-cxx17_h6983b43_0",
@@ -3571,6 +3570,8 @@ conda_deps = [
     "libplacebo-7.360.1-h07e46df_0",
     "alsa-lib-1.2.16.1-he30d5cf_0",
     "aom-3.14.1-pl5321h8fffa31_1",
+    "fontconfig-2.18.2-hba86a56_0",
+    "libuuid-2.42.2-h1022ec0_0",
     "gmp-6.3.0-h0a1ffab_2",
     "harfbuzz-14.2.1-h8af1aa0_1",
     "libharfbuzz-devel-14.2.1-h3a99ef3_1",
@@ -3599,7 +3600,6 @@ conda_deps = [
     "libxml2-16-2.15.3-h79dcc73_0",
     "openssl-3.6.3-h546c87b_0",
     "pulseaudio-client-17.0-hcf98165_3",
-    "libuuid-2.42.2-h1022ec0_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "fribidi-1.0.16-he30d5cf_0",
@@ -3625,7 +3625,7 @@ conda_deps = [
     "xorg-libxau-1.0.12-he30d5cf_1",
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
     "icu-78.3-hcab7f73_1",
-    "ca-certificates-2026.6.17-hbd8a1cb_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-h70963c4_1",
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
@@ -3695,7 +3695,6 @@ conda_deps = [
     "liblzma-5.8.3-he30d5cf_0",
     "libass-0.17.4-hcfe818d_0",
     "fonts-conda-ecosystem-1-0",
-    "fontconfig-2.18.1-hba86a56_0",
     "dav1d-1.2.1-h31becfc_0",
     "xorg-libxrandr-1.5.5-he30d5cf_0",
     "libabseil-20260107.1-cxx17_h6983b43_0",
@@ -3704,6 +3703,8 @@ conda_deps = [
     "libplacebo-7.360.1-h07e46df_0",
     "alsa-lib-1.2.16.1-he30d5cf_0",
     "aom-3.14.1-pl5321h8fffa31_1",
+    "fontconfig-2.18.2-hba86a56_0",
+    "libuuid-2.42.2-h1022ec0_0",
     "gmp-6.3.0-h0a1ffab_2",
     "harfbuzz-14.2.1-h8af1aa0_1",
     "libharfbuzz-devel-14.2.1-h3a99ef3_1",
@@ -3732,7 +3733,6 @@ conda_deps = [
     "libxml2-16-2.15.3-h79dcc73_0",
     "openssl-3.6.3-h546c87b_0",
     "pulseaudio-client-17.0-hcf98165_3",
-    "libuuid-2.42.2-h1022ec0_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "fribidi-1.0.16-he30d5cf_0",
@@ -3758,7 +3758,7 @@ conda_deps = [
     "xorg-libxau-1.0.12-he30d5cf_1",
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
     "icu-78.3-hcab7f73_1",
-    "ca-certificates-2026.6.17-hbd8a1cb_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-h70963c4_1",
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
@@ -3820,13 +3820,14 @@ conda_deps = [
     "libfreetype-2.14.3-ha770c72_0",
     "libass-0.17.4-h96ad9f0_0",
     "fonts-conda-ecosystem-1-0",
-    "fontconfig-2.18.1-h27c8c51_0",
     "dav1d-1.2.1-hd590300_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxrender-0.9.12-hb9d3cd8_0",
     "libplacebo-7.360.1-h9eeb4b2_0",
     "alsa-lib-1.2.16.1-hb03c661_0",
     "aom-3.14.1-pl5321h039972f_1",
+    "fontconfig-2.18.2-h27c8c51_0",
+    "libuuid-2.42.2-h5347b49_0",
     "gmp-6.3.0-hac33072_2",
     "harfbuzz-14.2.1-ha770c72_1",
     "libharfbuzz-devel-14.2.1-h17a8019_1",
@@ -3874,7 +3875,6 @@ conda_deps = [
     "openssl-3.6.3-h35e630c_0",
     "pulseaudio-client-17.0-h9a6aba3_3",
     "x265-3.5-h924138e_3",
-    "libuuid-2.42.2-h5347b49_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "fribidi-1.0.16-hb03c661_0",
@@ -3908,7 +3908,7 @@ conda_deps = [
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
     "icu-78.3-h33c6efd_1",
-    "ca-certificates-2026.6.17-hbd8a1cb_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
@@ -3963,13 +3963,14 @@ conda_deps = [
     "libfreetype-2.14.3-ha770c72_0",
     "libass-0.17.4-h96ad9f0_0",
     "fonts-conda-ecosystem-1-0",
-    "fontconfig-2.18.1-h27c8c51_0",
     "dav1d-1.2.1-hd590300_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxrender-0.9.12-hb9d3cd8_0",
     "libplacebo-7.360.1-h9eeb4b2_0",
     "alsa-lib-1.2.16.1-hb03c661_0",
     "aom-3.14.1-pl5321h039972f_1",
+    "fontconfig-2.18.2-h27c8c51_0",
+    "libuuid-2.42.2-h5347b49_0",
     "gmp-6.3.0-hac33072_2",
     "harfbuzz-14.2.1-ha770c72_1",
     "libharfbuzz-devel-14.2.1-h17a8019_1",
@@ -4017,7 +4018,6 @@ conda_deps = [
     "openssl-3.6.3-h35e630c_0",
     "pulseaudio-client-17.0-h9a6aba3_3",
     "x265-3.5-h924138e_3",
-    "libuuid-2.42.2-h5347b49_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "fribidi-1.0.16-hb03c661_0",
@@ -4051,7 +4051,7 @@ conda_deps = [
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
     "icu-78.3-h33c6efd_1",
-    "ca-certificates-2026.6.17-hbd8a1cb_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-h24cb091_1",
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
@@ -4100,9 +4100,9 @@ conda_deps = [
     "libopus-1.6.1-h6a83c73_0",
     "liblzma-5.8.3-hfd05255_0",
     "fonts-conda-ecosystem-1-0",
-    "fontconfig-2.18.1-hd47e2ca_0",
     "dav1d-1.2.1-hcfcfb64_0",
     "aom-3.14.1-pl5321h06fc181_1",
+    "fontconfig-2.18.2-hd47e2ca_0",
     "harfbuzz-14.2.1-h57928b3_1",
     "libharfbuzz-devel-14.2.1-h03b5201_1",
     "libpng-1.6.58-h7351971_0",
@@ -4146,7 +4146,7 @@ conda_deps = [
     "fribidi-1.0.16-hfd05255_0",
     "libogg-1.3.5-h2466b09_1",
     "icu-78.3-h637d24d_1",
-    "ca-certificates-2026.6.17-h4c7d964_0",
+    "ca-certificates-2026.7.22-h4c7d964_0",
     "sdl3-3.4.12-h5112557_0",
     "libusb-1.0.29-h1839187_0",
     "glslang-16.3.0-h294ba9c_0",
@@ -4571,43 +4571,43 @@ url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112583"
 
 [[tools."github:microsoft/apm"]]
-version = "0.25.0"
+version = "0.26.0"
 backend = "github:microsoft/apm"
 
 [tools."github:microsoft/apm"."platforms.linux-arm64"]
-checksum = "sha256:962d0d463544bdba42f2c99e8daa12eef2abd15d52e18bfbbad07fb13e573305"
-url = "https://github.com/microsoft/apm/releases/download/v0.25.0/apm-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/474401606"
+checksum = "sha256:c4d6b5ab6d9bdca3c3c324db7ce8d1c4faf7b317f45a55a50ae2571eaa506d25"
+url = "https://github.com/microsoft/apm/releases/download/v0.26.0/apm-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/481831784"
 
 [tools."github:microsoft/apm"."platforms.linux-arm64-musl"]
-checksum = "sha256:962d0d463544bdba42f2c99e8daa12eef2abd15d52e18bfbbad07fb13e573305"
-url = "https://github.com/microsoft/apm/releases/download/v0.25.0/apm-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/474401606"
+checksum = "sha256:c4d6b5ab6d9bdca3c3c324db7ce8d1c4faf7b317f45a55a50ae2571eaa506d25"
+url = "https://github.com/microsoft/apm/releases/download/v0.26.0/apm-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/481831784"
 
 [tools."github:microsoft/apm"."platforms.linux-x64"]
-checksum = "sha256:7a4281ef915e9609f8841eced19285bf2dcf702862302171f7e893c30e1b3244"
-url = "https://github.com/microsoft/apm/releases/download/v0.25.0/apm-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/474401602"
+checksum = "sha256:3afba455c5283852ba4c392f668be7c27b65bc4a0fa60a8b53a4626c52628431"
+url = "https://github.com/microsoft/apm/releases/download/v0.26.0/apm-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/481831780"
 
 [tools."github:microsoft/apm"."platforms.linux-x64-musl"]
-checksum = "sha256:7a4281ef915e9609f8841eced19285bf2dcf702862302171f7e893c30e1b3244"
-url = "https://github.com/microsoft/apm/releases/download/v0.25.0/apm-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/474401602"
+checksum = "sha256:3afba455c5283852ba4c392f668be7c27b65bc4a0fa60a8b53a4626c52628431"
+url = "https://github.com/microsoft/apm/releases/download/v0.26.0/apm-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/481831780"
 
 [tools."github:microsoft/apm"."platforms.macos-arm64"]
-checksum = "sha256:8b46963bf881d1369c1ee30f6099fba54d13379a8860ec190cdcaf50cf4586a9"
-url = "https://github.com/microsoft/apm/releases/download/v0.25.0/apm-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/474401603"
+checksum = "sha256:febddd0a8beb4be7b411e708ed746937a14482d5e0935eb776b7f35e320654df"
+url = "https://github.com/microsoft/apm/releases/download/v0.26.0/apm-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/481831785"
 
 [tools."github:microsoft/apm"."platforms.macos-x64"]
-checksum = "sha256:8b1c43543113550e49939c7970429e19881d6347c90c44185eb55ea73d0eca73"
-url = "https://github.com/microsoft/apm/releases/download/v0.25.0/apm-darwin-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/474401604"
+checksum = "sha256:6cc47251bbefabe36224bcc5370c1ef08405d4fd15900b42e11ba672ae29483f"
+url = "https://github.com/microsoft/apm/releases/download/v0.26.0/apm-darwin-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/481831787"
 
 [tools."github:microsoft/apm"."platforms.windows-x64"]
-checksum = "sha256:1d9b3b44ffe031c331f4dfe33694bbb80d10d16165ca053110b96dbeb7365943"
-url = "https://github.com/microsoft/apm/releases/download/v0.25.0/apm-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/474401605"
+checksum = "sha256:1b74a90c7ee6373ab2926addd110c1dbc5934a9675e5f436cac4d04f46cce2f5"
+url = "https://github.com/microsoft/apm/releases/download/v0.26.0/apm-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/481831786"
 
 [[tools."github:mizchi/actrun"]]
 version = "0.29.0"
@@ -4763,7 +4763,8 @@ conda_deps = [
     "libwebp-1.6.0-h05a2d3e_0",
     "bzip2-1.0.8-h4777abc_9",
     "fftw-3.3.11-nompi_h66d8d02_100",
-    "fontconfig-2.18.1-hba86a56_0",
+    "fontconfig-2.18.2-hba86a56_0",
+    "libuuid-2.42.2-h1022ec0_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "giflib-5.2.2-h5dd31e5_1",
@@ -4798,7 +4799,6 @@ conda_deps = [
     "libgfortran-15.2.0-he9431aa_19",
     "libgfortran5-15.2.0-h1b7bec0_19",
     "libexpat-2.8.1-hfae3067_1",
-    "libuuid-2.42.2-h1022ec0_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -4862,7 +4862,7 @@ conda_deps = [
     "openssl-3.6.3-h546c87b_0",
     "ncurses-6.6-hf8d1292_0",
     "xkeyboard-config-2.48-h80f16a2_0",
-    "ca-certificates-2026.6.17-hbd8a1cb_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
 ]
 
@@ -4885,7 +4885,8 @@ conda_deps = [
     "libwebp-1.6.0-h05a2d3e_0",
     "bzip2-1.0.8-h4777abc_9",
     "fftw-3.3.11-nompi_h66d8d02_100",
-    "fontconfig-2.18.1-hba86a56_0",
+    "fontconfig-2.18.2-hba86a56_0",
+    "libuuid-2.42.2-h1022ec0_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "giflib-5.2.2-h5dd31e5_1",
@@ -4920,7 +4921,6 @@ conda_deps = [
     "libgfortran-15.2.0-he9431aa_19",
     "libgfortran5-15.2.0-h1b7bec0_19",
     "libexpat-2.8.1-hfae3067_1",
-    "libuuid-2.42.2-h1022ec0_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -4984,7 +4984,7 @@ conda_deps = [
     "openssl-3.6.3-h546c87b_0",
     "ncurses-6.6-hf8d1292_0",
     "xkeyboard-config-2.48-h80f16a2_0",
-    "ca-certificates-2026.6.17-hbd8a1cb_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
 ]
 
@@ -5004,13 +5004,12 @@ conda_deps = [
     "libxcb-1.17.0-h8a09558_0",
     "zlib-1.3.2-h25fd6f3_2",
     "libwebp-1.6.0-h9635ea4_0",
-    "fontconfig-2.18.1-h27c8c51_0",
-    "libfreetype6-2.14.3-h73754d4_0",
-    "libfreetype-2.14.3-ha770c72_0",
-    "freetype-2.14.3-ha770c72_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "giflib-5.2.2-ha257d8a_1",
+    "libfreetype-2.14.3-ha770c72_0",
+    "libfreetype6-2.14.3-h73754d4_0",
+    "freetype-2.14.3-ha770c72_0",
     "libheif-1.19.7-gpl_hc18d805_100",
     "libde265-1.0.15-h00ab1b0_0",
     "dav1d-1.2.1-hd590300_0",
@@ -5026,6 +5025,8 @@ conda_deps = [
     "fribidi-1.0.16-hb03c661_0",
     "bzip2-1.0.8-hda65f42_9",
     "fftw-3.3.11-nompi_h3b011a4_100",
+    "fontconfig-2.18.2-h27c8c51_0",
+    "libuuid-2.42.2-h5347b49_0",
     "ghostscript-10.07.1-hecca717_0",
     "jbig-2.1-h7f98852_2003",
     "libgcc-15.2.0-he0feb66_19",
@@ -5042,7 +5043,6 @@ conda_deps = [
     "libgfortran-15.2.0-h69a702a_19",
     "libgfortran5-15.2.0-h68bc16d_19",
     "libexpat-2.8.1-hecca717_1",
-    "libuuid-2.42.2-h5347b49_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -5106,7 +5106,7 @@ conda_deps = [
     "xkeyboard-config-2.48-h280c20c_0",
     "openssl-3.6.3-h35e630c_0",
     "ncurses-6.6-hdb14827_0",
-    "ca-certificates-2026.6.17-hbd8a1cb_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
 ]
 
@@ -5126,13 +5126,12 @@ conda_deps = [
     "libxcb-1.17.0-h8a09558_0",
     "zlib-1.3.2-h25fd6f3_2",
     "libwebp-1.6.0-h9635ea4_0",
-    "fontconfig-2.18.1-h27c8c51_0",
-    "libfreetype6-2.14.3-h73754d4_0",
-    "libfreetype-2.14.3-ha770c72_0",
-    "freetype-2.14.3-ha770c72_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "giflib-5.2.2-ha257d8a_1",
+    "libfreetype-2.14.3-ha770c72_0",
+    "libfreetype6-2.14.3-h73754d4_0",
+    "freetype-2.14.3-ha770c72_0",
     "libheif-1.19.7-gpl_hc18d805_100",
     "libde265-1.0.15-h00ab1b0_0",
     "dav1d-1.2.1-hd590300_0",
@@ -5148,6 +5147,8 @@ conda_deps = [
     "fribidi-1.0.16-hb03c661_0",
     "bzip2-1.0.8-hda65f42_9",
     "fftw-3.3.11-nompi_h3b011a4_100",
+    "fontconfig-2.18.2-h27c8c51_0",
+    "libuuid-2.42.2-h5347b49_0",
     "ghostscript-10.07.1-hecca717_0",
     "jbig-2.1-h7f98852_2003",
     "libgcc-15.2.0-he0feb66_19",
@@ -5164,7 +5165,6 @@ conda_deps = [
     "libgfortran-15.2.0-h69a702a_19",
     "libgfortran5-15.2.0-h68bc16d_19",
     "libexpat-2.8.1-hecca717_1",
-    "libuuid-2.42.2-h5347b49_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -5228,7 +5228,7 @@ conda_deps = [
     "xkeyboard-config-2.48-h280c20c_0",
     "openssl-3.6.3-h35e630c_0",
     "ncurses-6.6-hdb14827_0",
-    "ca-certificates-2026.6.17-hbd8a1cb_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
 ]
 
