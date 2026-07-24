@@ -9,8 +9,15 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
-    "opencode-queue"
+    "opencode-goal-plugin"
   ],
+  "command": {
+    "goal": {
+      "description": "Set a session-scoped goal and auto-continue until complete.",
+      "template": "$ARGUMENTS",
+      "agent": "build"
+    }
+  },
   "provider": {
     "bailian-token-plan-personal": {
       "npm": "@ai-sdk/anthropic",
