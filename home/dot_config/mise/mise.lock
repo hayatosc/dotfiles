@@ -3028,9 +3028,9 @@ checksum = "sha256:3e9e02174edf02cb4bcdd75668ad7b74b8061791a3bc8bdb8a52ae336761b
 url = "https://conda.anaconda.org/conda-forge/win-64/pixman-0.46.4-h5112557_2.conda"
 checksum = "sha256:f37fb21952bd4297f8c7d78e2f256647da2b4ad4e1df097d49ebff8a40275cab"
 
-[conda-packages.windows-x64."python-3.14.6-h4b44e0e_100_cp314"]
-url = "https://conda.anaconda.org/conda-forge/win-64/python-3.14.6-h4b44e0e_100_cp314.conda"
-checksum = "sha256:f1acb89cb1a6bec9a94ae9f8e7411839de009cd64d3ac6a6aec4f3d8a481099a"
+[conda-packages.windows-x64."python-3.14.6-h4b44e0e_101_cp314"]
+url = "https://conda.anaconda.org/conda-forge/win-64/python-3.14.6-h4b44e0e_101_cp314.conda"
+checksum = "sha256:3a9ae901cd853d507d97aa8b72af4b9a572a3f92dcc5bad8a1318f77ff4e0e64"
 
 [conda-packages.windows-x64."python_abi-3.14-8_cp314"]
 url = "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.14-8_cp314.conda"
@@ -4160,12 +4160,12 @@ conda_deps = [
     "libtiff-4.7.2-h8f73337_0",
     "libdeflate-1.25-h51727cc_0",
     "lerc-4.1.0-hd936e49_0",
-    "python-3.14.6-h4b44e0e_100_cp314",
+    "python-3.14.6-h4b44e0e_101_cp314",
     "python_abi-3.14-8_cp314",
+    "libsqlite-3.53.3-hf5d6505_0",
     "packaging-26.2-pyhc364b38_0",
     "zstd-1.5.7-h534d264_6",
     "libmpdec-4.0.0-hfd05255_1",
-    "libsqlite-3.53.3-hf5d6505_0",
     "tk-8.6.13-h967ab96_3",
     "tzdata-2026c-h151e31d_0",
 ]
@@ -4189,17 +4189,7 @@ checksum = "sha256:8f9bb5f7e364c267265d1e24ac2aea69ed559ddb956719c6db12a353de6c5
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.73/copilot-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/484054996"
 
-[tools.copilot."platforms.linux-x64-baseline"]
-checksum = "sha256:8f9bb5f7e364c267265d1e24ac2aea69ed559ddb956719c6db12a353de6c5970"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.73/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/484054996"
-
 [tools.copilot."platforms.linux-x64-musl"]
-checksum = "sha256:8f9bb5f7e364c267265d1e24ac2aea69ed559ddb956719c6db12a353de6c5970"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.73/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/484054996"
-
-[tools.copilot."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:8f9bb5f7e364c267265d1e24ac2aea69ed559ddb956719c6db12a353de6c5970"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.73/copilot-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/484054996"
@@ -4214,17 +4204,7 @@ checksum = "sha256:91f9420cd903e35a235407fa87901493625267f502dd3e5d2eab1882b0a8c
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.73/copilot-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/484054947"
 
-[tools.copilot."platforms.macos-x64-baseline"]
-checksum = "sha256:91f9420cd903e35a235407fa87901493625267f502dd3e5d2eab1882b0a8c658"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.73/copilot-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/484054947"
-
 [tools.copilot."platforms.windows-x64"]
-checksum = "sha256:a60699797c819d38669ac751eb9ad401f3bd416423c6936dc5fad2f6f158f09e"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.73/copilot-win32-x64.zip"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/484054949"
-
-[tools.copilot."platforms.windows-x64-baseline"]
 checksum = "sha256:a60699797c819d38669ac751eb9ad401f3bd416423c6936dc5fad2f6f158f09e"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.73/copilot-win32-x64.zip"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/484054949"
