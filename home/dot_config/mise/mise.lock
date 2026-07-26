@@ -2968,9 +2968,9 @@ checksum = "sha256:218913aeee391460bd0e341b834dbd9c6fa6ae0a4276c0c300266cc99a816
 url = "https://conda.anaconda.org/conda-forge/win-64/librsvg-2.62.3-h15cfe45_0.conda"
 checksum = "sha256:6f678be6074b79fe754660d16857a6edba73dd197ad92086250dc38c11b179ab"
 
-[conda-packages.windows-x64."libsqlite-3.53.3-hf5d6505_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libsqlite-3.53.3-hf5d6505_0.conda"
-checksum = "sha256:692dfb73a22c873656d5e393b8f1e2b019a3c8a6486c97cb6900552e64e38c25"
+[conda-packages.windows-x64."libsqlite-3.53.4-hf5d6505_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libsqlite-3.53.4-hf5d6505_0.conda"
+checksum = "sha256:62e1c45ec71ab2e5deeeb0e47e7df6a609991e91d46348f16df50c68fee145c8"
 
 [conda-packages.windows-x64."libtiff-4.7.2-h8f73337_0"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libtiff-4.7.2-h8f73337_0.conda"
@@ -3427,26 +3427,26 @@ checksum = "sha256:538f9c846355d9e847b2671bc00c47da4229a0befb24df3282b739770f3b4
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.14/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.217"
+version = "2.1.218"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.217/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.218/linux-arm64/claude"
 
 [tools.claude."platforms.linux-arm64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.217/linux-arm64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.218/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.217/linux-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.218/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.217/linux-x64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.218/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.217/darwin-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.218/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.217/darwin-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.218/darwin-x64/claude"
 
 [[tools.cloudflared]]
 version = "2026.7.2"
@@ -4162,10 +4162,10 @@ conda_deps = [
     "lerc-4.1.0-hd936e49_0",
     "python-3.14.6-h4b44e0e_101_cp314",
     "python_abi-3.14-8_cp314",
-    "libsqlite-3.53.3-hf5d6505_0",
     "packaging-26.2-pyhc364b38_0",
     "zstd-1.5.7-h534d264_6",
     "libmpdec-4.0.0-hfd05255_1",
+    "libsqlite-3.53.4-hf5d6505_0",
     "tk-8.6.13-h967ab96_3",
     "tzdata-2026c-h151e31d_0",
 ]
