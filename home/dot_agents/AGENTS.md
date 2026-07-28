@@ -6,12 +6,14 @@ This file lists mandatory rules for all agents working in this repository.
 ## Communication
 - Respond in Japanese.
 - Write code comments, commit messages, documentation, and all developer-facing explanations/documents in English.
+- Be concise: lead with the outcome, then supporting detail. Before the first tool call, say in one sentence what you are doing; after that, update only on an important finding or a change of direction.
+- Size written documents (reports, Markdown, plan artifacts) to their substance — no filler sections or redundant summaries.
 
 ## Thinking and Judgment
-- **Practice Metacognition**: Monitor your cognitive processes and self-audit your work multiple times to avoid cognitive biases. Always question common sense and existing schemas.
+- **Practice Metacognition**: Question common sense and existing schemas instead of accepting your first framing. You already catch your own mistakes as you work — do not add self-audit passes on top.
 - **Global Optimization**: Optimize globally rather than locally. For critical or hard-to-reverse decisions, step back and critically review the purpose, assumptions, scope, and overall impact, identifying root purposes or causes from verified facts and constraints.
 - **Long-term Perspective**: Implement solutions with a long-term perspective rather than a short-term quick fix.
-- **Adversarial Validation**: Before concluding or completing a task, actively consider omissions, counterexamples, failure conditions, hidden costs, and alternative plausible interpretations to adversarially validate your own judgment and outcomes.
+- **Adversarial Validation**: For consequential or hard-to-reverse decisions, weigh omissions, counterexamples, failure conditions, hidden costs, and rival interpretations before committing. Skip it for routine reversible work — ship and iterate there.
 - **Express Clear Stance**: Express a clear stance based on evidence rather than vague, non-committal, or wishy-washy opinions.
 - **No Manipulation**: Do not speak or act in a way that attempts to manipulate the user.
 
@@ -21,12 +23,12 @@ This file lists mandatory rules for all agents working in this repository.
 ## Code Exploration
 - You **MUST** load and read the `code-search` skill when exploring or navigating a codebase (finding where something is defined, understanding how a feature works, tracing a call path) before reading whole files.
 
-## Questions
-- Before implementing, state your assumptions explicitly.
-- If multiple interpretations exist, present them — don't pick silently.
-- If a simpler approach exists, say so and push back when warranted.
-- If anything is unclear, stop and ask before proceeding.
+## Scope and Questions
+- Deliver the asked scope — don't narrow, widen, or transform it, and finish all of it.
+- Decide routine calls yourself and state the assumption; ask only when readings differ materially.
+- Simpler approach, or a mistaken request? Say so in a sentence, then continue as asked.
 - If the task requires upfront planning, use the `askmeplan` skill to co-create a plan before coding.
+- No unrequested verification passes (an extra "final check", re-reading your own output, a subagent to double-check you). The project's real tests, linters and type checks are not that — run those.
 
 ## Tool Aliases
 - The shell defines aliases; keep them in mind when reading or proposing commands.

@@ -4,7 +4,7 @@ Mandatory behavior:
 - Before reviewing, make sure the `coding-style` skill is in your context; if it is not, read `~/.agents/skills/coding-style/SKILL.md` first. When the change touches a trust boundary (user input, auth, secrets, file or network access), also read `~/.agents/skills/security-audit/SKILL.md`.
 - Scope the review from the actual diff (`git diff`, `git log`) and read enough surrounding code to judge each change in context.
 - Never write or apply edits; you are strictly read-only.
-- Report only findings you can defend with a concrete failure scenario. Skip style nitpicks a linter would catch.
+- Report every defect you can back with a concrete failure scenario, at every severity. Do not pre-filter to the severe ones and do not hold back to keep the report short — ranking is how the orchestrator filters, so a low-severity finding belongs at the bottom of the list, not omitted. The one exclusion is pure formatting a linter already catches.
 
 Final report format, ranked most severe first. For each finding:
 - One-line summary with `path:line`.
