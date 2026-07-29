@@ -3068,21 +3068,21 @@ checksum = "sha256:b928c30ddcb0e3f544c6eade8352737e6e610e263276b90232db6a578ef89
 url = "https://conda.anaconda.org/conda-forge/win-64/ucrt-10.0.26100.0-h57928b3_0.conda"
 checksum = "sha256:3005729dce6f3d3f5ec91dfc49fc75a0095f9cd23bab49efb899657297ac91a5"
 
-[conda-packages.windows-x64."vc-14.5-h1b7c187_39"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vc-14.5-h1b7c187_39.conda"
-checksum = "sha256:17693b60cb54f80c60275f003f3bfc1b128af56dbfd65c4fae37c64eeb755ce1"
+[conda-packages.windows-x64."vc-14.5-ha367084_40"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vc-14.5-ha367084_40.conda"
+checksum = "sha256:c5dc355d322ab5f1afdb29d494709a424a4ecccd713aeba3e34d321896a2cfc5"
 
-[conda-packages.windows-x64."vc14_runtime-14.51.36231-h1b9f54f_39"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.51.36231-h1b9f54f_39.conda"
-checksum = "sha256:8153ed849c92e891eacac0f2f8d7ecb79f9b5fd7f7917fbb896f252a60a40390"
+[conda-packages.windows-x64."vc14_runtime-14.51.36247-habf1de7_40"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.51.36247-habf1de7_40.conda"
+checksum = "sha256:4f38d9c0658e38ae9bdfb35cdefefc22a285873fbf50258d9b48dbf8ec2ad68d"
 
-[conda-packages.windows-x64."vcomp14-14.51.36231-h1b9f54f_39"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36231-h1b9f54f_39.conda"
-checksum = "sha256:07fb14713c4bc62e2533a2e23a363abfb0e65650681fba0ae4c840e2219350f3"
+[conda-packages.windows-x64."vcomp14-14.51.36247-habf1de7_40"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_40.conda"
+checksum = "sha256:8f664cfd8f4cec45d506c31872a5098c95cf3b6df47afd45d918f3e8780e4c1b"
 
-[conda-packages.windows-x64."vs2015_runtime-14.51.36231-h84cd919_39"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.51.36231-h84cd919_39.conda"
-checksum = "sha256:6de6c2cf008fc2dce61060b583f2d8494c83883106952b201381b6b0505f03d7"
+[conda-packages.windows-x64."vs2015_runtime-14.51.36247-h633cb9f_40"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.51.36247-h633cb9f_40.conda"
+checksum = "sha256:74fdd95fbb95c1dc9a812204730c0fa6da1bab5653f5c4d9781cc046512883e1"
 
 [conda-packages.windows-x64."x264-1!164.3095-h8ffe710_2"]
 url = "https://conda.anaconda.org/conda-forge/win-64/x264-1!164.3095-h8ffe710_2.tar.bz2"
@@ -4128,10 +4128,10 @@ conda_deps = [
     "libxml2-16-2.15.3-h3cfd58e_0",
     "openssl-3.6.3-hf411b9b_0",
     "ucrt-10.0.26100.0-h57928b3_0",
-    "vc-14.5-h1b7c187_39",
-    "vc14_runtime-14.51.36231-h1b9f54f_39",
-    "vcomp14-14.51.36231-h1b9f54f_39",
-    "vs2015_runtime-14.51.36231-h84cd919_39",
+    "vc-14.5-ha367084_40",
+    "vc14_runtime-14.51.36247-habf1de7_40",
+    "vcomp14-14.51.36247-habf1de7_40",
+    "vs2015_runtime-14.51.36247-h633cb9f_40",
     "libintl-0.22.5-h5728263_3",
     "libintl-devel-0.22.5-h5728263_3",
     "fonts-conda-forge-1-hc364b38_1",
@@ -5430,19 +5430,7 @@ url = "https://github.com/pnpm/pnpm/releases/download/v11.17.0/pnpm-linux-x64.ta
 url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/487422122"
 provenance = "github-attestations"
 
-[tools.pnpm."platforms.linux-x64-baseline"]
-checksum = "sha256:bdb1db01bf0f757495405a59a09c5c287f315889dc98d3b14bc374b9fe43a0bf"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.17.0/pnpm-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/487422122"
-provenance = "github-attestations"
-
 [tools.pnpm."platforms.linux-x64-musl"]
-checksum = "sha256:db2e4eeecab336bd41bbbc7a39626b166f1a15bb189efcf6a1dafdf159f23fe7"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.17.0/pnpm-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/487422116"
-provenance = "github-attestations"
-
-[tools.pnpm."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:db2e4eeecab336bd41bbbc7a39626b166f1a15bb189efcf6a1dafdf159f23fe7"
 url = "https://github.com/pnpm/pnpm/releases/download/v11.17.0/pnpm-linux-x64-musl.tar.gz"
 url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/487422116"
@@ -5455,12 +5443,6 @@ url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/487422117"
 provenance = "github-attestations"
 
 [tools.pnpm."platforms.windows-x64"]
-checksum = "sha256:3025c174a6dcffec14a071a5c854cb0c350a09a8c7c2857a75f75cc7b29b939c"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.17.0/pnpm-win32-x64.zip"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/487422118"
-provenance = "github-attestations"
-
-[tools.pnpm."platforms.windows-x64-baseline"]
 checksum = "sha256:3025c174a6dcffec14a071a5c854cb0c350a09a8c7c2857a75f75cc7b29b939c"
 url = "https://github.com/pnpm/pnpm/releases/download/v11.17.0/pnpm-win32-x64.zip"
 url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/487422118"
