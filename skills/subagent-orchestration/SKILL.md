@@ -112,7 +112,7 @@ Override only when you have a concrete, stated reason this specific task exceeds
 ### Available custom agent roles
 `coder` · `reviewer` · `explorer` · `deep-reviewer`
 
-These roles exist only where the harness's agent configuration defines them. If the harness is not in the table above, or it rejects the role name (e.g. "unknown agent type"), fall back to the harness's default/general agent type and note the substitution in your report — do not retry the same rejected role.
+These roles exist where the harness's agent configuration defines them (such as Codex's native `CollabAgent` feature or Antigravity/OpenCode agent definitions). If the harness is not in the table above, or it rejects the role name (e.g. "unknown agent type"), fall back to the harness's default/general agent type and note the substitution in your report — do not retry the same rejected role.
 
 ## Communicating with running subagents
 
