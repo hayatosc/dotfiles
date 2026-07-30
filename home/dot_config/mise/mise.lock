@@ -1872,9 +1872,9 @@ checksum = "sha256:3bc5551720c58591f6ea1146f7d1539c734ed1c40e7b9f5cb8cb7e900c509
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-devel-2.15.3-h49c6c72_0.conda"
 checksum = "sha256:adada9c781ea51faea3e3adcd6883dc294ff2fa044c7f4e199430a11862dfa40"
 
-[conda-packages.linux-x64."libzlib-1.3.2-h25fd6f3_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_2.conda"
-checksum = "sha256:55044c403570f0dc26e6364de4dc5368e5f3fc7ff103e867c487e2b5ab2bcda9"
+[conda-packages.linux-x64."libzlib-1.3.2-h25fd6f3_3"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_3.conda"
+checksum = "sha256:eb8a0db0aa570124f7d2a93d7c7f596e3390df5e047818d873baad32985fc736"
 
 [conda-packages.linux-x64."mpg123-1.32.9-hc50e24c_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/mpg123-1.32.9-hc50e24c_0.conda"
@@ -2060,9 +2060,9 @@ checksum = "sha256:64db17baaf36fa03ed8fae105e2e671a7383e22df4077486646f7dbf12842
 url = "https://conda.anaconda.org/conda-forge/linux-64/xorg-xorgproto-2025.1-hb03c661_0.conda"
 checksum = "sha256:7a8c64938428c2bfd016359f9cb3c44f94acc256c6167dbdade9f2a1f5ca7a36"
 
-[conda-packages.linux-x64."zlib-1.3.2-h25fd6f3_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/zlib-1.3.2-h25fd6f3_2.conda"
-checksum = "sha256:245c9ee8d688e23661b95e3c6dd7272ca936fabc03d423cdb3cdee1bbcf9f2f2"
+[conda-packages.linux-x64."zlib-1.3.2-h25fd6f3_3"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/zlib-1.3.2-h25fd6f3_3.conda"
+checksum = "sha256:16080a1c7724f7d25727cdc23c7658e0cec2db52448c1dc0c33467ee2c6e1c62"
 
 [conda-packages.linux-x64."zstd-1.5.7-hb78ec9c_6"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_6.conda"
@@ -2588,9 +2588,9 @@ checksum = "sha256:3bc5551720c58591f6ea1146f7d1539c734ed1c40e7b9f5cb8cb7e900c509
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-devel-2.15.3-h49c6c72_0.conda"
 checksum = "sha256:adada9c781ea51faea3e3adcd6883dc294ff2fa044c7f4e199430a11862dfa40"
 
-[conda-packages.linux-x64-musl."libzlib-1.3.2-h25fd6f3_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_2.conda"
-checksum = "sha256:55044c403570f0dc26e6364de4dc5368e5f3fc7ff103e867c487e2b5ab2bcda9"
+[conda-packages.linux-x64-musl."libzlib-1.3.2-h25fd6f3_3"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_3.conda"
+checksum = "sha256:eb8a0db0aa570124f7d2a93d7c7f596e3390df5e047818d873baad32985fc736"
 
 [conda-packages.linux-x64-musl."mpg123-1.32.9-hc50e24c_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/mpg123-1.32.9-hc50e24c_0.conda"
@@ -2776,9 +2776,9 @@ checksum = "sha256:64db17baaf36fa03ed8fae105e2e671a7383e22df4077486646f7dbf12842
 url = "https://conda.anaconda.org/conda-forge/linux-64/xorg-xorgproto-2025.1-hb03c661_0.conda"
 checksum = "sha256:7a8c64938428c2bfd016359f9cb3c44f94acc256c6167dbdade9f2a1f5ca7a36"
 
-[conda-packages.linux-x64-musl."zlib-1.3.2-h25fd6f3_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/zlib-1.3.2-h25fd6f3_2.conda"
-checksum = "sha256:245c9ee8d688e23661b95e3c6dd7272ca936fabc03d423cdb3cdee1bbcf9f2f2"
+[conda-packages.linux-x64-musl."zlib-1.3.2-h25fd6f3_3"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/zlib-1.3.2-h25fd6f3_3.conda"
+checksum = "sha256:16080a1c7724f7d25727cdc23c7658e0cec2db52448c1dc0c33467ee2c6e1c62"
 
 [conda-packages.linux-x64-musl."zstd-1.5.7-hb78ec9c_6"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_6.conda"
@@ -3068,21 +3068,21 @@ checksum = "sha256:b928c30ddcb0e3f544c6eade8352737e6e610e263276b90232db6a578ef89
 url = "https://conda.anaconda.org/conda-forge/win-64/ucrt-10.0.26100.0-h57928b3_0.conda"
 checksum = "sha256:3005729dce6f3d3f5ec91dfc49fc75a0095f9cd23bab49efb899657297ac91a5"
 
-[conda-packages.windows-x64."vc-14.5-ha367084_40"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vc-14.5-ha367084_40.conda"
-checksum = "sha256:c5dc355d322ab5f1afdb29d494709a424a4ecccd713aeba3e34d321896a2cfc5"
+[conda-packages.windows-x64."vc-14.5-ha367084_41"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vc-14.5-ha367084_41.conda"
+checksum = "sha256:35444c55a92e2f7f7ba26bc70f81e56e52344f7d064c0fd4b40a46a58517b79c"
 
-[conda-packages.windows-x64."vc14_runtime-14.51.36247-habf1de7_40"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.51.36247-habf1de7_40.conda"
-checksum = "sha256:4f38d9c0658e38ae9bdfb35cdefefc22a285873fbf50258d9b48dbf8ec2ad68d"
+[conda-packages.windows-x64."vc14_runtime-14.51.36247-habf1de7_41"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.51.36247-habf1de7_41.conda"
+checksum = "sha256:4e4cb599cdc41bf2109d1464c127b5bcbddf548ce3e322e612afb691338b48f8"
 
-[conda-packages.windows-x64."vcomp14-14.51.36247-habf1de7_40"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_40.conda"
-checksum = "sha256:8f664cfd8f4cec45d506c31872a5098c95cf3b6df47afd45d918f3e8780e4c1b"
+[conda-packages.windows-x64."vcomp14-14.51.36247-habf1de7_41"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda"
+checksum = "sha256:731e043390c9457299484d39e427221fc868a9249540a498a5a4f6456c7744d1"
 
-[conda-packages.windows-x64."vs2015_runtime-14.51.36247-h633cb9f_40"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.51.36247-h633cb9f_40.conda"
-checksum = "sha256:74fdd95fbb95c1dc9a812204730c0fa6da1bab5653f5c4d9781cc046512883e1"
+[conda-packages.windows-x64."vs2015_runtime-14.51.36247-h633cb9f_41"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.51.36247-h633cb9f_41.conda"
+checksum = "sha256:ee0ae67c96b80b9fdb50c3f617c6329dbcdf1562d0267604f6c0e24f494431d6"
 
 [conda-packages.windows-x64."x264-1!164.3095-h8ffe710_2"]
 url = "https://conda.anaconda.org/conda-forge/win-64/x264-1!164.3095-h8ffe710_2.tar.bz2"
@@ -3807,7 +3807,6 @@ conda_deps = [
     "svt-av1-4.0.1-hecca717_0",
     "shaderc-2026.2-h718be3e_0",
     "sdl2-2.32.56-h54a6638_0",
-    "libzlib-1.3.2-h25fd6f3_2",
     "libxcb-1.17.0-h8a09558_0",
     "libwebp-base-1.6.0-hd42ef1d_0",
     "libvpx-1.15.2-hecca717_0",
@@ -3861,6 +3860,7 @@ conda_deps = [
     "libvulkan-loader-1.4.357.0-h5279c79_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxrender-0.9.12-hb9d3cd8_0",
+    "libzlib-1.3.2-h25fd6f3_3",
     "openh264-2.6.0-h65dd3cf_1",
     "x264-1!164.3095-h166bdaf_2",
     "bzip2-1.0.8-hda65f42_9",
@@ -3950,7 +3950,6 @@ conda_deps = [
     "svt-av1-4.0.1-hecca717_0",
     "shaderc-2026.2-h718be3e_0",
     "sdl2-2.32.56-h54a6638_0",
-    "libzlib-1.3.2-h25fd6f3_2",
     "libxcb-1.17.0-h8a09558_0",
     "libwebp-base-1.6.0-hd42ef1d_0",
     "libvpx-1.15.2-hecca717_0",
@@ -4004,6 +4003,7 @@ conda_deps = [
     "libvulkan-loader-1.4.357.0-h5279c79_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
     "xorg-libxrender-0.9.12-hb9d3cd8_0",
+    "libzlib-1.3.2-h25fd6f3_3",
     "openh264-2.6.0-h65dd3cf_1",
     "x264-1!164.3095-h166bdaf_2",
     "bzip2-1.0.8-hda65f42_9",
@@ -4128,10 +4128,10 @@ conda_deps = [
     "libxml2-16-2.15.3-h3cfd58e_0",
     "openssl-3.6.3-hf411b9b_0",
     "ucrt-10.0.26100.0-h57928b3_0",
-    "vc-14.5-ha367084_40",
-    "vc14_runtime-14.51.36247-habf1de7_40",
-    "vcomp14-14.51.36247-habf1de7_40",
-    "vs2015_runtime-14.51.36247-h633cb9f_40",
+    "vc-14.5-ha367084_41",
+    "vc14_runtime-14.51.36247-habf1de7_41",
+    "vcomp14-14.51.36247-habf1de7_41",
+    "vs2015_runtime-14.51.36247-h633cb9f_41",
     "libintl-0.22.5-h5728263_3",
     "libintl-devel-0.22.5-h5728263_3",
     "fonts-conda-forge-1-hc364b38_1",
@@ -4709,33 +4709,33 @@ backend = "aqua:ogulcancelik/herdr"
 
 [tools.herdr."platforms.linux-arm64"]
 checksum = "sha256:32e763a1499a6b694b1d708e4f062b743be1da9f34fcfa4d212d6db6fe09a8b9"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/484992543"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992543"
 
 [tools.herdr."platforms.linux-arm64-musl"]
 checksum = "sha256:32e763a1499a6b694b1d708e4f062b743be1da9f34fcfa4d212d6db6fe09a8b9"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/484992543"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992543"
 
 [tools.herdr."platforms.linux-x64"]
 checksum = "sha256:3dc83288073e4c2d3c679a30e7be97bcca9141c6fd17dbbb9219142e95c59253"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/484992544"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992544"
 
 [tools.herdr."platforms.linux-x64-musl"]
 checksum = "sha256:3dc83288073e4c2d3c679a30e7be97bcca9141c6fd17dbbb9219142e95c59253"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/484992544"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992544"
 
 [tools.herdr."platforms.macos-arm64"]
 checksum = "sha256:37350546b0012555943b92eaf962665de4e264395baeb44227b8015e8ff5b0d6"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/484992542"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992542"
 
 [tools.herdr."platforms.macos-x64"]
 checksum = "sha256:3fe50c4a63dc8102306b1322178628ddb3655cd3ae56d784f094153408d69e62"
-url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/ogulcancelik/herdr/releases/assets/484992541"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-macos-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992541"
 
 [[tools.imagemagick]]
 version = "7.1.2_18"
@@ -4997,12 +4997,10 @@ conda_deps = [
     "xorg-libxext-1.3.7-hb03c661_0",
     "xorg-libx11-1.8.13-he1eb515_0",
     "openjpeg-2.5.4-h55fea9a_0",
-    "libzlib-1.3.2-h25fd6f3_2",
     "libwebp-base-1.6.0-hd42ef1d_0",
     "graphviz-14.1.2-h8b86629_0",
     "fonts-conda-ecosystem-1-0",
     "libxcb-1.17.0-h8a09558_0",
-    "zlib-1.3.2-h25fd6f3_2",
     "libwebp-1.6.0-h9635ea4_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
@@ -5020,6 +5018,8 @@ conda_deps = [
     "librsvg-2.62.3-h4c96295_0",
     "libtiff-4.7.2-h9d88235_0",
     "libdeflate-1.25-h17f619e_0",
+    "libzlib-1.3.2-h25fd6f3_3",
+    "zlib-1.3.2-h25fd6f3_3",
     "pango-1.58.0-hda50119_0",
     "libpng-1.6.58-h421ea60_0",
     "libharfbuzz-14.2.1-h17a8019_1",
@@ -5119,12 +5119,10 @@ conda_deps = [
     "xorg-libxext-1.3.7-hb03c661_0",
     "xorg-libx11-1.8.13-he1eb515_0",
     "openjpeg-2.5.4-h55fea9a_0",
-    "libzlib-1.3.2-h25fd6f3_2",
     "libwebp-base-1.6.0-hd42ef1d_0",
     "graphviz-14.1.2-h8b86629_0",
     "fonts-conda-ecosystem-1-0",
     "libxcb-1.17.0-h8a09558_0",
-    "zlib-1.3.2-h25fd6f3_2",
     "libwebp-1.6.0-h9635ea4_0",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
@@ -5142,6 +5140,8 @@ conda_deps = [
     "librsvg-2.62.3-h4c96295_0",
     "libtiff-4.7.2-h9d88235_0",
     "libdeflate-1.25-h17f619e_0",
+    "libzlib-1.3.2-h25fd6f3_3",
+    "zlib-1.3.2-h25fd6f3_3",
     "pango-1.58.0-hda50119_0",
     "libpng-1.6.58-h421ea60_0",
     "libharfbuzz-14.2.1-h17a8019_1",
@@ -5573,17 +5573,7 @@ checksum = "sha256:3c3316cfc068e372432b415faeab73d46f8047750d488dd94d01d8d9f016a
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.44.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/490347169"
 
-[tools.rtk."platforms.linux-x64-baseline"]
-checksum = "sha256:3c3316cfc068e372432b415faeab73d46f8047750d488dd94d01d8d9f016a2a1"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.44.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/490347169"
-
 [tools.rtk."platforms.linux-x64-musl"]
-checksum = "sha256:3c3316cfc068e372432b415faeab73d46f8047750d488dd94d01d8d9f016a2a1"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.44.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/490347169"
-
-[tools.rtk."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:3c3316cfc068e372432b415faeab73d46f8047750d488dd94d01d8d9f016a2a1"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.44.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/490347169"
@@ -5598,17 +5588,7 @@ checksum = "sha256:027e940d2e9928ea44290577163570bf2540b54c4698d23e3ba170bb34ffe
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.44.0/rtk-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/490347168"
 
-[tools.rtk."platforms.macos-x64-baseline"]
-checksum = "sha256:027e940d2e9928ea44290577163570bf2540b54c4698d23e3ba170bb34ffeffc"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.44.0/rtk-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/490347168"
-
 [tools.rtk."platforms.windows-x64"]
-checksum = "sha256:f5824278f7f668a8638a6b0ec6286fd31190165b1f2bc7b031d53cb2dfa6ead5"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.44.0/rtk-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/490347170"
-
-[tools.rtk."platforms.windows-x64-baseline"]
 checksum = "sha256:f5824278f7f668a8638a6b0ec6286fd31190165b1f2bc7b031d53cb2dfa6ead5"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.44.0/rtk-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/490347170"
