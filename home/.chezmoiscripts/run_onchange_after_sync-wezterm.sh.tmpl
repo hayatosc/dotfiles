@@ -1,0 +1,32 @@
+#!/bin/bash
+# wezterm.lua hash: {{ include "dot_wezterm.lua" | sha256sum }}
+
+# Check if running inside WSL
+if grep -qi microsoft /proc/version 2>/dev/null || [ -n "$WSL_DISTRO_NAME" ]; then
+    WIN_USERPROFILE=""
+
+    if command -v wslvar >/dev/null 2>&1; then
+        WIN_USERPROFILE=$(wslvar USERPROFILE 2>/dev/null)
+    elif command -v cmd.exe >/dev/null 2>&1; then
+        WIN_RAW=$(cmd.exe /c "echo %USERPROFILE%" 2>/dev/null | tr -d '\r')
+        if [ -n "$WIN_RAW" ]; then
+            WIN_USERPROFILE=$(wslpath -u "$WIN_RAW" 2>/dev/null)
+        fi
+    fi
+
+    # Fallback to /mnt/c/Users/$USER or /mnt/c/Users/hayat if USER profile directory exists
+    if [ -z "$WIN_USERPROFILE" ] || [ ! -d "$WIN_USERPROFILE" ]; then
+        if [ -d "/mnt/c/Users/hayat" ]; then
+            WIN_USERPROFILE="/mnt/c/Users/hayat"
+        elif [ -d "/mnt/c/Users/$USER" ]; then
+            WIN_USERPROFILE="/mnt/c/Users/$USER"
+        fi
+    fi
+
+    if [ -n "$WIN_USERPROFILE" ] && [ -d "$WIN_USERPROFILE" ]; then
+        cp -f "$HOME/.wezterm.lua" "$WIN_USERPROFILE/.wezterm.lua"
+        echo "[chezmoi] Synced .wezterm.lua to Windows USERPROFILE: $WIN_USERPROFILE/.wezterm.lua"
+    else
+        echo "[chezmoi] Failed to resolve Windows USERPROFILE" >&2
+    fi
+fi
