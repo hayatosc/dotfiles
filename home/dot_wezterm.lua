@@ -87,8 +87,29 @@ config.window_decorations = 'INTEGRATED_BUTTONS'
 config.default_cursor_style = 'BlinkingUnderline'
 config.enable_scroll_bar = true
 
+-- Background opacity and OS-specific background blur settings
+config.window_background_opacity = 0.80
+
+local triple = wezterm.target_triple:lower()
+if triple:find('darwin') or triple:find('apple') then
+  config.macos_window_background_blur = 20
+elseif triple:find('windows') then
+  config.win32_system_backdrop = 'Acrylic'
+elseif triple:find('linux') then
+  config.kde_wayland_background_blur = true
+end
+
 config.use_ime = true
 config.color_scheme = 'Tokyo Night Storm (Gogh)'
+config.colors = {
+  tab_bar = {
+    active_tab = {
+      bg_color = '#e0af68',
+      fg_color = '#1a1b26',
+      intensity = 'Bold',
+    },
+  },
+}
 config.font_size = 12
 config.font = wezterm.font_with_fallback {
   {
