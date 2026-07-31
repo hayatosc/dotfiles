@@ -9,20 +9,29 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
-if wezterm.target_triple:find('windows') then
-  config.default_domain = 'WSL:Ubuntu'
-end
+local triple = wezterm.target_triple:lower()
+local is_windows = triple:find('windows') ~= nil
+local is_macos = triple:find('darwin') ~= nil or triple:find('apple') ~= nil
+local is_linux = triple:find('linux') ~= nil
 
--- 無視対象プロセス判定 (wslhost, wsl, conhost 等を除外)
+-- ---------------------------------------------------------------------------
+-- Tab bar helpers
+-- ---------------------------------------------------------------------------
+
+-- On Windows the pane runs wsl.exe, so the process tree is full of wrapper
+-- processes (wsl.exe, wslhost.exe, conhost.exe, init) rather than the shell.
 local function is_ignored_process(name)
   if not name or name == '' then
     return true
   end
-  local lower = name:lower()
-  if lower:find('wsl') or lower:find('conhost') or lower:find('openconsole') or lower:find('init') then
-    return true
+  if not is_windows then
+    return false
   end
-  return false
+  local lower = name:lower()
+  return lower:find('wsl') ~= nil
+    or lower == 'conhost'
+    or lower == 'openconsole'
+    or lower == 'init'
 end
 
 local function clean_proc_name(name)
@@ -57,7 +66,7 @@ local function find_valid_process(proc_info)
   return nil
 end
 
--- タブ内で実際に動作しているアクティブなプロセス名を取得する関数
+-- Resolve the process actually running in the tab
 local function get_active_process_name(tab)
   local pane_info = (tab and tab.active_pane) or tab
   if not pane_info then
@@ -72,7 +81,7 @@ local function get_active_process_name(tab)
 
   local proc_name = ''
 
-  -- 1. mux_pane:get_foreground_process_info() から探す
+  -- 1. mux_pane:get_foreground_process_info()
   if mux_pane and mux_pane.get_foreground_process_info then
     local info = mux_pane:get_foreground_process_info()
     local valid_proc = find_valid_process(info)
@@ -81,7 +90,7 @@ local function get_active_process_name(tab)
     end
   end
 
-  -- 2. mux_pane:get_foreground_process_name() から探す
+  -- 2. mux_pane:get_foreground_process_name()
   if (proc_name == '' or is_ignored_process(proc_name)) and mux_pane and mux_pane.get_foreground_process_name then
     local fg = mux_pane:get_foreground_process_name()
     if fg then
@@ -92,7 +101,7 @@ local function get_active_process_name(tab)
     end
   end
 
-  -- 3. pane_info.title / mux_pane:get_title() から探す
+  -- 3. pane_info.title / mux_pane:get_title() (OSC 2 reported by the shell)
   if proc_name == '' or is_ignored_process(proc_name) then
     local title = (mux_pane and mux_pane.get_title and mux_pane:get_title()) or pane_info.title or ''
     if title ~= '' and not is_ignored_process(title) then
@@ -112,7 +121,7 @@ local function get_active_process_name(tab)
     end
   end
 
-  -- 4. 最終フォールバック
+  -- 4. Final fallback
   if proc_name == '' or is_ignored_process(proc_name) then
     proc_name = 'zsh'
   end
@@ -120,44 +129,88 @@ local function get_active_process_name(tab)
   return proc_name
 end
 
--- プロセス名に応じたアイコンのマッピング
 local process_icons = {
-  zsh = '',
-  bash = '',
-  fish = '',
-  sh = '',
-  cmd = '',
+  zsh = '',
+  bash = '',
+  fish = '',
+  sh = '',
+  cmd = '',
   powershell = '󰨊',
   pwsh = '󰨊',
-  nvim = '',
-  vim = '',
-  vi = '',
-  git = '',
-  node = '',
-  npm = '',
-  npx = '',
-  yarn = '',
-  pnpm = '',
-  bun = '',
-  python = '',
-  python3 = '',
-  cargo = '',
-  go = '',
-  docker = '',
+  nvim = '',
+  vim = '',
+  vi = '',
+  git = '',
+  node = '',
+  npm = '',
+  npx = '',
+  yarn = '',
+  pnpm = '',
+  bun = '',
+  python = '',
+  python3 = '',
+  cargo = '',
+  go = '',
+  docker = '',
   sudo = '󰌋',
   ssh = '󰣀',
-  tmux = '',
+  tmux = '',
   yazi = '󰇥',
-  lazygit = '',
+  lazygit = '',
 }
 
 local function get_active_process_name_with_icon(tab)
   local proc_name = get_active_process_name(tab)
-  local icon = process_icons[proc_name:lower()] or ''
+  local icon = process_icons[proc_name:lower()] or ''
   return string.format('%s %s', icon, proc_name)
 end
 
--- tabline.wez 設定 (画面下部配置 & アクティブプロセス表示)
+-- Working directory of the tab, reported by the shell via OSC 7
+local function get_cwd(tab)
+  local pane = (tab and tab.active_pane) or tab
+  if not pane then
+    return ''
+  end
+
+  local cwd_url = pane.current_working_dir
+  if not cwd_url then
+    return ''
+  end
+
+  local path = cwd_url.file_path
+  if not path or path == '' then
+    return ''
+  end
+
+  -- Percent-decode (%20 -> space, etc.)
+  path = path:gsub('%%(%x%x)', function(hex)
+    return string.char(tonumber(hex, 16))
+  end)
+
+  -- UNC paths (//wsl$/Ubuntu/... , //wsl.localhost/Ubuntu/...) -> absolute WSL path
+  path = path:gsub('^//wsl%$.-/', '/'):gsub('^//wsl%.localhost/.-/', '/')
+
+  -- Windows drive paths (/C:/Users/... -> /mnt/c/Users/...)
+  path = path:gsub('^/([A-Za-z]):/', function(drive)
+    return '/mnt/' .. drive:lower() .. '/'
+  end)
+
+  -- /home/<user> -> ~
+  local user = os.getenv('USER') or os.getenv('LOGNAME')
+  if user and user ~= '' then
+    path = path:gsub('^/home/' .. user, '~')
+  else
+    path = path:gsub('^/home/[^/]+', '~')
+  end
+
+  -- Drop the trailing slash (except for the root '/')
+  if #path > 1 and path:sub(-1) == '/' then
+    path = path:sub(1, -2)
+  end
+
+  return string.format('󰉋 %s', path)
+end
+
 tabline.setup({
   options = {
     tab_bar_at_bottom = true,
@@ -166,35 +219,32 @@ tabline.setup({
     tab_active = {
       'index',
       get_active_process_name_with_icon,
+      get_cwd,
       { 'zoomed', padding = 0 },
     },
     tab_inactive = {
       'index',
       get_active_process_name_with_icon,
+      get_cwd,
     },
   },
 })
 
--- OS標準のタイトルバー & ウィンドウ枠
-config.window_decorations = 'TITLE | RESIZE'
-config.tab_bar_at_bottom = true
+-- ---------------------------------------------------------------------------
+-- Domain
+-- ---------------------------------------------------------------------------
 
-config.default_cursor_style = 'BlinkingUnderline'
-config.enable_scroll_bar = true
-
--- Background opacity and OS-specific background blur settings
-config.window_background_opacity = 0.85
-
-local triple = wezterm.target_triple:lower()
-if triple:find('darwin') or triple:find('apple') then
-  config.macos_window_background_blur = 20
-elseif triple:find('windows') then
-  config.win32_system_backdrop = 'Acrylic'
-elseif triple:find('linux') then
-  config.kde_wayland_background_blur = true
+if is_windows then
+  -- The default WSL domains already start in the Linux home directory; new tabs
+  -- inherit the cwd of the current pane, which requires the shell to report it
+  -- via OSC 7 (see ~/.config/zsh/rc.d/91-osc7-cwd.zsh).
+  config.default_domain = 'WSL:Ubuntu'
 end
 
-config.use_ime = true
+-- ---------------------------------------------------------------------------
+-- Appearance
+-- ---------------------------------------------------------------------------
+
 config.color_scheme = 'Tokyo Night Storm (Gogh)'
 config.font_size = 12
 config.font = wezterm.font_with_fallback {
@@ -209,20 +259,40 @@ config.font = wezterm.font_with_fallback {
   'Noto Color Emoji',
 }
 
+config.tab_bar_at_bottom = true
+config.default_cursor_style = 'BlinkingUnderline'
+config.enable_scroll_bar = true
+
+-- Background opacity and OS-specific background blur settings
+config.window_background_opacity = 0.85
+if is_macos then
+  config.macos_window_background_blur = 20
+elseif is_windows then
+  config.win32_system_backdrop = 'Acrylic'
+elseif is_linux then
+  config.kde_wayland_background_blur = true
+end
+
+-- ---------------------------------------------------------------------------
+-- Window
+-- ---------------------------------------------------------------------------
+
 config.initial_rows = 36
 config.initial_cols = 120
-
--- ウィンドウを閉じる際の確認ダイアログを無効化
 config.window_close_confirmation = 'NeverPrompt'
 
+-- ---------------------------------------------------------------------------
+-- Input
+-- ---------------------------------------------------------------------------
+
+config.use_ime = true
 config.keys = {
   { key = 'v', mods = 'CTRL', action = act.PasteFrom 'Clipboard' },
 }
 
--- tabline.wez の設定を config に適用
 tabline.apply_to_config(config)
 
--- OS標準のタイトルバー & ウィンドウ枠を適用
+-- Keep the OS title bar and window frame, overriding what tabline applies
 config.window_decorations = 'TITLE | RESIZE'
 
 return config
