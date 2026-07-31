@@ -162,7 +162,10 @@ local process_icons = {
 local function get_active_process_name_with_icon(tab)
   local proc_name = get_active_process_name(tab)
   local icon = process_icons[proc_name:lower()] or ''
-  return string.format('%s %s', icon, proc_name)
+  if icon ~= '' then
+    return string.format('%s %s', icon, proc_name)
+  end
+  return proc_name
 end
 
 -- Working directory of the tab, reported by the shell via OSC 7
@@ -208,7 +211,7 @@ local function get_cwd(tab)
     path = path:sub(1, -2)
   end
 
-  return string.format('󰉋 %s', path)
+  return string.format(' 󰉋 %s', path)
 end
 
 tabline.setup({
