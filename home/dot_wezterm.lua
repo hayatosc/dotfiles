@@ -1,6 +1,8 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
 
+local tabline = wezterm.plugin.require 'https://github.com/michaelbrusegard/tabline.wez'
+
 local config = {}
 
 if wezterm.config_builder then
@@ -11,84 +13,177 @@ if wezterm.target_triple:find('windows') then
   config.default_domain = 'WSL:Ubuntu'
 end
 
--- OS/Linuxディストリビューションとアイコンのマッピング
-local distro_icons = {
-  ubuntu = '',
-  debian = '',
-  fedora = '',
-  arch = '',
-  alpine = '',
-  centos = '',
-  rhel = '',
-  nixos = '',
-  gentoo = '',
-  kali = '',
-  manjaro = '',
-  mint = '',
-  macos = '',
-  darwin = '',
-  windows = '',
-  linux = '',
-}
-
--- OS/ディストリビューション情報とアイコンを取得
-local function get_os_info(tab)
-  local pane = tab.active_pane
-  local title = tab.tab_title
-  if not title or #title == 0 then
-    title = pane.title or ''
+-- 無視対象プロセス判定 (wslhost, wsl, conhost 等を除外)
+local function is_ignored_process(name)
+  if not name or name == '' then
+    return true
   end
-
-  local domain = pane.domain_name or ''
-  local os_name = ''
-
-  -- 1. WSLドメインから判別 (例: WSL:Ubuntu, WSL:Fedora)
-  if domain:find('WSL:') then
-    os_name = domain:gsub('WSL:', '')
-  -- 2. プロセス名が wslhost / wsl.exe の場合
-  elseif title:find('wslhost') or title:find('wsl%.exe') then
-    os_name = 'Ubuntu'
+  local lower = name:lower()
+  if lower:find('wsl') or lower:find('conhost') or lower:find('openconsole') or lower:find('init') then
+    return true
   end
-
-  -- 3. target_triple から判定
-  if os_name == '' then
-    local triple = wezterm.target_triple:lower()
-    if triple:find('windows') then
-      os_name = 'Windows'
-    elseif triple:find('darwin') or triple:find('apple') then
-      os_name = 'macOS'
-    elseif triple:find('linux') then
-      os_name = 'Linux'
-    else
-      os_name = title ~= '' and title or 'Terminal'
-    end
-  end
-
-  -- アイコンの検索
-  local key = os_name:lower()
-  local icon = ''
-  for k, v in pairs(distro_icons) do
-    if key:find(k) then
-      icon = v
-      break
-    end
-  end
-
-  return icon, os_name
+  return false
 end
 
--- タブタイトル表示のカスタマイズ（OSアイコン + OS名のみ表示）
-wezterm.on('format-tab-title', function(tab, tabs, panes, config, hover, max_width)
-  local icon, name = get_os_info(tab)
-  return string.format(' %d: %s %s ', tab.tab_index + 1, icon, name)
-end)
+local function clean_proc_name(name)
+  if not name or name == '' then
+    return ''
+  end
+  local clean = name:gsub('.*[/\\]', ''):gsub('%.[eE][xX][eE]$', '')
+  return clean
+end
 
-config.window_decorations = 'INTEGRATED_BUTTONS'
+local function find_valid_process(proc_info)
+  if not proc_info then
+    return nil
+  end
+
+  if proc_info.children and #proc_info.children > 0 then
+    for i = #proc_info.children, 1, -1 do
+      local found = find_valid_process(proc_info.children[i])
+      if found then
+        return found
+      end
+    end
+  end
+
+  if proc_info.name then
+    local cleaned = clean_proc_name(proc_info.name)
+    if not is_ignored_process(cleaned) then
+      return cleaned
+    end
+  end
+
+  return nil
+end
+
+-- タブ内で実際に動作しているアクティブなプロセス名を取得する関数
+local function get_active_process_name(tab)
+  local pane_info = (tab and tab.active_pane) or tab
+  if not pane_info then
+    return 'zsh'
+  end
+
+  local pane_id = pane_info.pane_id
+  local mux_pane = nil
+  if pane_id and wezterm.mux then
+    mux_pane = wezterm.mux.get_pane(pane_id)
+  end
+
+  local proc_name = ''
+
+  -- 1. mux_pane:get_foreground_process_info() から探す
+  if mux_pane and mux_pane.get_foreground_process_info then
+    local info = mux_pane:get_foreground_process_info()
+    local valid_proc = find_valid_process(info)
+    if valid_proc and valid_proc ~= '' then
+      proc_name = valid_proc
+    end
+  end
+
+  -- 2. mux_pane:get_foreground_process_name() から探す
+  if (proc_name == '' or is_ignored_process(proc_name)) and mux_pane and mux_pane.get_foreground_process_name then
+    local fg = mux_pane:get_foreground_process_name()
+    if fg then
+      local cleaned = clean_proc_name(fg)
+      if not is_ignored_process(cleaned) then
+        proc_name = cleaned
+      end
+    end
+  end
+
+  -- 3. pane_info.title / mux_pane:get_title() から探す
+  if proc_name == '' or is_ignored_process(proc_name) then
+    local title = (mux_pane and mux_pane.get_title and mux_pane:get_title()) or pane_info.title or ''
+    if title ~= '' and not is_ignored_process(title) then
+      local first_word = title:match('^(%S+)')
+      if first_word then
+        local cleaned = clean_proc_name(first_word)
+        if not is_ignored_process(cleaned) then
+          proc_name = cleaned
+        end
+      end
+      if (proc_name == '' or is_ignored_process(proc_name)) and not is_ignored_process(title) then
+        local cleaned = clean_proc_name(title)
+        if not is_ignored_process(cleaned) then
+          proc_name = cleaned
+        end
+      end
+    end
+  end
+
+  -- 4. 最終フォールバック
+  if proc_name == '' or is_ignored_process(proc_name) then
+    proc_name = 'zsh'
+  end
+
+  return proc_name
+end
+
+-- プロセス名に応じたアイコンのマッピング
+local process_icons = {
+  zsh = '',
+  bash = '',
+  fish = '',
+  sh = '',
+  cmd = '',
+  powershell = '󰨊',
+  pwsh = '󰨊',
+  nvim = '',
+  vim = '',
+  vi = '',
+  git = '',
+  node = '',
+  npm = '',
+  npx = '',
+  yarn = '',
+  pnpm = '',
+  bun = '',
+  python = '',
+  python3 = '',
+  cargo = '',
+  go = '',
+  docker = '',
+  sudo = '󰌋',
+  ssh = '󰣀',
+  tmux = '',
+  yazi = '󰇥',
+  lazygit = '',
+}
+
+local function get_active_process_name_with_icon(tab)
+  local proc_name = get_active_process_name(tab)
+  local icon = process_icons[proc_name:lower()] or ''
+  return string.format('%s %s', icon, proc_name)
+end
+
+-- tabline.wez 設定 (画面下部配置 & アクティブプロセス表示)
+tabline.setup({
+  options = {
+    tab_bar_at_bottom = true,
+  },
+  sections = {
+    tab_active = {
+      'index',
+      get_active_process_name_with_icon,
+      { 'zoomed', padding = 0 },
+    },
+    tab_inactive = {
+      'index',
+      get_active_process_name_with_icon,
+    },
+  },
+})
+
+-- OS標準のタイトルバー & ウィンドウ枠
+config.window_decorations = 'TITLE | RESIZE'
+config.tab_bar_at_bottom = true
+
 config.default_cursor_style = 'BlinkingUnderline'
 config.enable_scroll_bar = true
 
 -- Background opacity and OS-specific background blur settings
-config.window_background_opacity = 0.80
+config.window_background_opacity = 0.85
 
 local triple = wezterm.target_triple:lower()
 if triple:find('darwin') or triple:find('apple') then
@@ -101,15 +196,6 @@ end
 
 config.use_ime = true
 config.color_scheme = 'Tokyo Night Storm (Gogh)'
-config.colors = {
-  tab_bar = {
-    active_tab = {
-      bg_color = '#e0af68',
-      fg_color = '#1a1b26',
-      intensity = 'Bold',
-    },
-  },
-}
 config.font_size = 12
 config.font = wezterm.font_with_fallback {
   {
@@ -126,8 +212,17 @@ config.font = wezterm.font_with_fallback {
 config.initial_rows = 36
 config.initial_cols = 120
 
+-- ウィンドウを閉じる際の確認ダイアログを無効化
+config.window_close_confirmation = 'NeverPrompt'
+
 config.keys = {
   { key = 'v', mods = 'CTRL', action = act.PasteFrom 'Clipboard' },
 }
+
+-- tabline.wez の設定を config に適用
+tabline.apply_to_config(config)
+
+-- OS標準のタイトルバー & ウィンドウ枠を適用
+config.window_decorations = 'TITLE | RESIZE'
 
 return config
