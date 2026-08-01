@@ -5430,19 +5430,7 @@ url = "https://github.com/pnpm/pnpm/releases/download/v11.18.0/pnpm-linux-x64.ta
 url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/493764737"
 provenance = "github-attestations"
 
-[tools.pnpm."platforms.linux-x64-baseline"]
-checksum = "sha256:f4e62794c56f7a1ad01097f94b90ca95680080aa2e83ebc3d0a751fb8aa8e4ad"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.18.0/pnpm-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/493764737"
-provenance = "github-attestations"
-
 [tools.pnpm."platforms.linux-x64-musl"]
-checksum = "sha256:3e138eb305247bc98b4e70bb759a9da09b32e8cdebc0e3c598e44dc0e98c89c5"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.18.0/pnpm-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/493764739"
-provenance = "github-attestations"
-
-[tools.pnpm."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:3e138eb305247bc98b4e70bb759a9da09b32e8cdebc0e3c598e44dc0e98c89c5"
 url = "https://github.com/pnpm/pnpm/releases/download/v11.18.0/pnpm-linux-x64-musl.tar.gz"
 url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/493764739"
@@ -5455,12 +5443,6 @@ url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/493764741"
 provenance = "github-attestations"
 
 [tools.pnpm."platforms.windows-x64"]
-checksum = "sha256:16cc9dbbf86f723936eb9aa5dd37f9d13bdb2068fc7319162236c86746706249"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.18.0/pnpm-win32-x64.zip"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/493764734"
-provenance = "github-attestations"
-
-[tools.pnpm."platforms.windows-x64-baseline"]
 checksum = "sha256:16cc9dbbf86f723936eb9aa5dd37f9d13bdb2068fc7319162236c86746706249"
 url = "https://github.com/pnpm/pnpm/releases/download/v11.18.0/pnpm-win32-x64.zip"
 url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/493764734"
