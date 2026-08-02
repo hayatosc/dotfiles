@@ -564,9 +564,9 @@ checksum = "sha256:487c021f4f10ae963e9192c9bbc0d3bba8f11cb3a2bb91fd351e4ea3e1ebc
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/snappy-1.2.2-he774c54_1.conda"
 checksum = "sha256:a8a79c53852fb07286407907402caa5a96b6e22b518c4f010be40647f9ee3726"
 
-[conda-packages.linux-arm64."spirv-tools-2026.2-hfefdfc9_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/spirv-tools-2026.2-hfefdfc9_2.conda"
-checksum = "sha256:5cbf3a28c5d0abba28c19342b38be552a35fd55d57dc96805c4d14d1ac4d4775"
+[conda-packages.linux-arm64."spirv-tools-2026.2-hfefdfc9_3"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/spirv-tools-2026.2-hfefdfc9_3.conda"
+checksum = "sha256:3da6ea86777d73cf161f6a4cb6193c197107a2374e1ea99f2e522df8c963738d"
 
 [conda-packages.linux-arm64."svt-av1-4.0.1-hfae3067_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/svt-av1-4.0.1-hfae3067_0.conda"
@@ -1240,9 +1240,9 @@ checksum = "sha256:487c021f4f10ae963e9192c9bbc0d3bba8f11cb3a2bb91fd351e4ea3e1ebc
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/snappy-1.2.2-he774c54_1.conda"
 checksum = "sha256:a8a79c53852fb07286407907402caa5a96b6e22b518c4f010be40647f9ee3726"
 
-[conda-packages.linux-arm64-musl."spirv-tools-2026.2-hfefdfc9_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/spirv-tools-2026.2-hfefdfc9_2.conda"
-checksum = "sha256:5cbf3a28c5d0abba28c19342b38be552a35fd55d57dc96805c4d14d1ac4d4775"
+[conda-packages.linux-arm64-musl."spirv-tools-2026.2-hfefdfc9_3"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/spirv-tools-2026.2-hfefdfc9_3.conda"
+checksum = "sha256:3da6ea86777d73cf161f6a4cb6193c197107a2374e1ea99f2e522df8c963738d"
 
 [conda-packages.linux-arm64-musl."svt-av1-4.0.1-hfae3067_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/svt-av1-4.0.1-hfae3067_0.conda"
@@ -1952,9 +1952,9 @@ checksum = "sha256:c6e3280867e54c97996a4fedda0ab72c92d48d1d69258bddf910130df72c1
 url = "https://conda.anaconda.org/conda-forge/linux-64/snappy-1.2.2-h03e3b7b_1.conda"
 checksum = "sha256:48f3f6a76c34b2cfe80de9ce7f2283ecb55d5ed47367ba91e8bb8104e12b8f11"
 
-[conda-packages.linux-x64."spirv-tools-2026.2-hb700be7_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/spirv-tools-2026.2-hb700be7_2.conda"
-checksum = "sha256:730abaa9600a6c930eebce24eaea6d5b76f1fa7a34c8cebc46a1836183ae719d"
+[conda-packages.linux-x64."spirv-tools-2026.2-hb700be7_3"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/spirv-tools-2026.2-hb700be7_3.conda"
+checksum = "sha256:94e64d435ca9649b74188c0072033193fda5a2b1f7603ee9d136130e5cd15e9c"
 
 [conda-packages.linux-x64."svt-av1-4.0.1-hecca717_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/svt-av1-4.0.1-hecca717_0.conda"
@@ -2668,9 +2668,9 @@ checksum = "sha256:c6e3280867e54c97996a4fedda0ab72c92d48d1d69258bddf910130df72c1
 url = "https://conda.anaconda.org/conda-forge/linux-64/snappy-1.2.2-h03e3b7b_1.conda"
 checksum = "sha256:48f3f6a76c34b2cfe80de9ce7f2283ecb55d5ed47367ba91e8bb8104e12b8f11"
 
-[conda-packages.linux-x64-musl."spirv-tools-2026.2-hb700be7_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/spirv-tools-2026.2-hb700be7_2.conda"
-checksum = "sha256:730abaa9600a6c930eebce24eaea6d5b76f1fa7a34c8cebc46a1836183ae719d"
+[conda-packages.linux-x64-musl."spirv-tools-2026.2-hb700be7_3"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/spirv-tools-2026.2-hb700be7_3.conda"
+checksum = "sha256:94e64d435ca9649b74188c0072033193fda5a2b1f7603ee9d136130e5cd15e9c"
 
 [conda-packages.linux-x64-musl."svt-av1-4.0.1-hecca717_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/svt-av1-4.0.1-hecca717_0.conda"
@@ -3048,9 +3048,9 @@ checksum = "sha256:cd70a95559fdcaa9809d7c697b1d2e283c2d61eb184f91f7b03f8c2291e20
 url = "https://conda.anaconda.org/conda-forge/win-64/shaderc-2026.2-h8fa7867_0.conda"
 checksum = "sha256:3a4edc274c947d34258af01886d9ca301098fe037dacd91ccd5f5291dda5ca0b"
 
-[conda-packages.windows-x64."spirv-tools-2026.2-h49e36cd_2"]
-url = "https://conda.anaconda.org/conda-forge/win-64/spirv-tools-2026.2-h49e36cd_2.conda"
-checksum = "sha256:8080ed4211c8341bdff504eff397e9fd145c6d5951ae5d32ca70f1b2ff77f304"
+[conda-packages.windows-x64."spirv-tools-2026.2-h49e36cd_3"]
+url = "https://conda.anaconda.org/conda-forge/win-64/spirv-tools-2026.2-h49e36cd_3.conda"
+checksum = "sha256:793ff76f8211eb6af0ea342a32cd6584f212fee99dd8923a64613f55720a4a26"
 
 [conda-packages.windows-x64."svt-av1-4.0.1-hac47afa_0"]
 url = "https://conda.anaconda.org/conda-forge/win-64/svt-av1-4.0.1-hac47afa_0.conda"
@@ -3648,7 +3648,7 @@ conda_deps = [
     "libglvnd-1.7.0-hd24410f_3",
     "libegl-1.7.0-hd24410f_3",
     "glslang-16.3.0-h124e036_0",
-    "spirv-tools-2026.2-hfefdfc9_2",
+    "spirv-tools-2026.2-hfefdfc9_3",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -3781,7 +3781,7 @@ conda_deps = [
     "libglvnd-1.7.0-hd24410f_3",
     "libegl-1.7.0-hd24410f_3",
     "glslang-16.3.0-h124e036_0",
-    "spirv-tools-2026.2-hfefdfc9_2",
+    "spirv-tools-2026.2-hfefdfc9_3",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -3923,7 +3923,7 @@ conda_deps = [
     "libusb-1.0.29-h73b1eb8_0",
     "liburing-2.14-hb700be7_0",
     "glslang-16.3.0-h96af755_0",
-    "spirv-tools-2026.2-hb700be7_2",
+    "spirv-tools-2026.2-hb700be7_3",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -4066,7 +4066,7 @@ conda_deps = [
     "libusb-1.0.29-h73b1eb8_0",
     "liburing-2.14-hb700be7_0",
     "glslang-16.3.0-h96af755_0",
-    "spirv-tools-2026.2-hb700be7_2",
+    "spirv-tools-2026.2-hb700be7_3",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -4150,7 +4150,7 @@ conda_deps = [
     "sdl3-3.4.12-h5112557_0",
     "libusb-1.0.29-h1839187_0",
     "glslang-16.3.0-h294ba9c_0",
-    "spirv-tools-2026.2-h49e36cd_2",
+    "spirv-tools-2026.2-h49e36cd_3",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -5388,17 +5388,7 @@ checksum = "sha256:6b1113da704253fb4da12b41e4236acecb9f2b62949c945f6eeacaa15111b
 url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/495455789"
 
-[tools.opencode."platforms.linux-x64-baseline"]
-checksum = "sha256:6b1113da704253fb4da12b41e4236acecb9f2b62949c945f6eeacaa15111b976"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/495455789"
-
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:9ba337873804891254d4dad37cb4cc06465006ddeebb1c1f55f2eedb1e775f7e"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/495455846"
-
-[tools.opencode."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:9ba337873804891254d4dad37cb4cc06465006ddeebb1c1f55f2eedb1e775f7e"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-linux-x64-musl.tar.gz"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/495455846"
@@ -5413,17 +5403,7 @@ checksum = "sha256:b2d9e161b3c6f398ab8a21a129455550c7b79b68579bb542dbc986f10b084
 url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-darwin-x64.zip"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/495455685"
 
-[tools.opencode."platforms.macos-x64-baseline"]
-checksum = "sha256:b2d9e161b3c6f398ab8a21a129455550c7b79b68579bb542dbc986f10b084ae4"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-darwin-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/495455685"
-
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:b1d85ce5211bfefbc2b4940a19e1639fc75cb87ff82eb79806ffb84b01dd1482"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-windows-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/495459170"
-
-[tools.opencode."platforms.windows-x64-baseline"]
 checksum = "sha256:b1d85ce5211bfefbc2b4940a19e1639fc75cb87ff82eb79806ffb84b01dd1482"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.18.10/opencode-windows-x64.zip"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/495459170"
