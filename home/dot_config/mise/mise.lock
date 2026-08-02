@@ -4705,7 +4705,7 @@ backend = "go:golang.org/x/tools/gopls"
 
 [[tools.herdr]]
 version = "v0.7.5"
-backend = "aqua:ogulcancelik/herdr"
+backend = "aqua:herdrdev/herdr"
 
 [tools.herdr."platforms.linux-arm64"]
 checksum = "sha256:32e763a1499a6b694b1d708e4f062b743be1da9f34fcfa4d212d6db6fe09a8b9"
@@ -5354,7 +5354,7 @@ checksum = "sha256:ec56b84a7551893ab2324ebdfdc4ab974a63b4781162600b68a1293cc3e53
 url = "https://nodejs.org/dist/v24.18.1/node-v24.18.1-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
-version = "0.2.114"
+version = "0.2.115"
 backend = "npm:@xai-official/grok"
 
 [[tools."npm:acpx"]]
