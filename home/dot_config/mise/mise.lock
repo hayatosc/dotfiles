@@ -3321,19 +3321,7 @@ url = "https://github.com/jdx/aube/releases/download/v1.36.0/aube-v1.36.0-x86_64
 url_api = "https://api.github.com/repos/jdx/aube/releases/assets/494405804"
 provenance = "github-attestations"
 
-[tools.aube."platforms.linux-x64-baseline"]
-checksum = "sha256:0eb721d9ff37e24bf035f9a7cb62107593f59bd740393b2eee5b36a50e7759fb"
-url = "https://github.com/jdx/aube/releases/download/v1.36.0/aube-v1.36.0-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/494405804"
-provenance = "github-attestations"
-
 [tools.aube."platforms.linux-x64-musl"]
-checksum = "sha256:7c34b0a4adad24d36e01cc52350c5c3ae7ed8fb598596d1a7656c0e6b80e6c31"
-url = "https://github.com/jdx/aube/releases/download/v1.36.0/aube-v1.36.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/494402660"
-provenance = "github-attestations"
-
-[tools.aube."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:7c34b0a4adad24d36e01cc52350c5c3ae7ed8fb598596d1a7656c0e6b80e6c31"
 url = "https://github.com/jdx/aube/releases/download/v1.36.0/aube-v1.36.0-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/jdx/aube/releases/assets/494402660"
@@ -3346,12 +3334,6 @@ url_api = "https://api.github.com/repos/jdx/aube/releases/assets/494475875"
 provenance = "github-attestations"
 
 [tools.aube."platforms.windows-x64"]
-checksum = "sha256:60ba3fddbea53405411700ced508071eefc98143479e87ce02ae1bc278b768ad"
-url = "https://github.com/jdx/aube/releases/download/v1.36.0/aube-v1.36.0-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/494410751"
-provenance = "github-attestations"
-
-[tools.aube."platforms.windows-x64-baseline"]
 checksum = "sha256:60ba3fddbea53405411700ced508071eefc98143479e87ce02ae1bc278b768ad"
 url = "https://github.com/jdx/aube/releases/download/v1.36.0/aube-v1.36.0-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/jdx/aube/releases/assets/494410751"
