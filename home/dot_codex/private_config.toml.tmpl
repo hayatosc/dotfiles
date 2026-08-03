@@ -14,13 +14,14 @@
       "approvals_reviewer" "auto_review"
       "approval_policy" "on-request"
       "features" (dict
+        "default_mode_request_user_input" true
         "guardian_approval" true
         "multi_agent_v2" (dict
           "enabled" true
           "hide_spawn_agent_metadata" false
           "tool_namespace" "agents"
-          "min_wait_timeout_ms" 300000
-          "default_wait_timeout_ms" 300000
+          "min_wait_timeout_ms" 600000
+          "default_wait_timeout_ms" 600000
           "max_wait_timeout_ms" 3600000
         )
       )
