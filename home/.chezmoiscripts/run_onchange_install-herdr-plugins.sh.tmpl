@@ -25,7 +25,7 @@ PLUGINS=(
 
 for plugin in "${PLUGINS[@]}"; do
     echo "Installing ${plugin}..."
-    mise exec herdr -- herdr plugin install "${plugin}" --yes
+    mise exec -- herdr plugin install "${plugin}" --yes
 done
 
 

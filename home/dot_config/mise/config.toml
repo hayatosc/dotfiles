@@ -56,13 +56,16 @@ yarn = "4.17.1"
 yazi = { version = "26.5.6", postinstall = "ya pkg install" }
 zig = "0.16.0"
 zoxide = "0.10.0"
-herdr = "v0.7.5"
+"github:herdrdev/herdr" = "v0.7.5"
 
 [settings]
 experimental = true
 lockfile = true
 minimum_release_age = "3d"
 aqua.registry_cache_ttl = "1d"
+
+[env]
+AUBE_ALLOWED_UNPOPULAR_PACKAGES = "acpx,portless"
 
 [hooks]
 postinstall = ""

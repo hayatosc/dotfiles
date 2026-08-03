@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-07-30T17:02:13.721001+00:00'
+generated_at: '2026-08-03T06:36:40.569243+00:00'
 apm_version: 0.26.0
 dependencies:
 - repo_url: anthropics/skills
@@ -708,7 +708,7 @@ dependencies:
   name: herdr
   host: github.com
   resolved_commit: ac47b9e67912c82dac17388e5541d969a7372c23
-  version: 0.0.0
+  version: unknown
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/herdr
