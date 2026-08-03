@@ -3125,43 +3125,43 @@ url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x8
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/471228877"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.1.8"
+version = "1.1.9"
 backend = "aqua:google-antigravity/antigravity-cli"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:e75cebb03fce0fcad7d3bb682eb84c356a3c50ff8fb3dc4a89d2051f34fca0ab"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.8/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/492103209"
+checksum = "sha256:deeb815d07a656074482b2e428ffd9794a2fffbf5df2056e9bf75936b85ebb49"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.9/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/496273925"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:e75cebb03fce0fcad7d3bb682eb84c356a3c50ff8fb3dc4a89d2051f34fca0ab"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.8/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/492103209"
+checksum = "sha256:deeb815d07a656074482b2e428ffd9794a2fffbf5df2056e9bf75936b85ebb49"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.9/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/496273925"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:e92e6215532b3ce84455e341944067753ad90f6d24cebcec8002ce137e5162ce"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.8/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/492103256"
+checksum = "sha256:467809635ef00660497607111547e80a0a863c6e8fce43b507cd1ba6bf6ddd66"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.9/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/496273972"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:e92e6215532b3ce84455e341944067753ad90f6d24cebcec8002ce137e5162ce"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.8/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/492103256"
+checksum = "sha256:467809635ef00660497607111547e80a0a863c6e8fce43b507cd1ba6bf6ddd66"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.9/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/496273972"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:622d85db88bcfbf060aa4cbeaadcf2a287420f31236c1efb287409a949ccab25"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.8/agy_cli_mac_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/492103289"
+checksum = "sha256:bbc42c75f6e603fd35a70f353f2963e74bb4ea261f89e4256f5f60a78f95bb84"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.9/agy_cli_mac_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/496273998"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:76afe4622132596f68557ef4531ec2e2dcd40e8025f6fb4435a273ce2eec0027"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.8/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/492103341"
+checksum = "sha256:8daa903f5135072b3921dbac90f449cb8a778102b03853e8691146665cad06bd"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.9/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/496274049"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:e234c850e3d835d278bb9b4aa202c34d53e399eeebc3d9d1a575576896cdecee"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.8/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/492103425"
+checksum = "sha256:e9c152fbe2839211d712c31c0da54b27eb398550d20bf5ac6b8973b7846ab2c7"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.9/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/496274086"
 
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.29.0"
@@ -3490,11 +3490,6 @@ url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/4
 [[tools.codex]]
 version = "0.144.1"
 backend = "aqua:openai/codex"
-
-[tools.codex."platforms.linux-arm64"]
-checksum = "sha256:218ab48bdda98dde3e10df184cc0c4eb92c4372d9ca924ef1aa5fc81b4f6a38e"
-url = "https://github.com/openai/codex/releases/download/rust-v0.144.1/codex-package-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/471838376"
 
 [tools.codex."platforms.linux-arm64-musl"]
 checksum = "sha256:218ab48bdda98dde3e10df184cc0c4eb92c4372d9ca924ef1aa5fc81b4f6a38e"
@@ -4570,6 +4565,40 @@ checksum = "sha256:c8ad79b81c299cc865fcfc2bec9f2287eae53b6956055b7e38eb98dd08b22
 url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_windows_amd64.zip"
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112583"
 
+[[tools."github:herdrdev/herdr"]]
+version = "0.7.5"
+backend = "github:herdrdev/herdr"
+
+[tools."github:herdrdev/herdr"."platforms.linux-arm64"]
+checksum = "sha256:32e763a1499a6b694b1d708e4f062b743be1da9f34fcfa4d212d6db6fe09a8b9"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992543"
+
+[tools."github:herdrdev/herdr"."platforms.linux-arm64-musl"]
+checksum = "sha256:32e763a1499a6b694b1d708e4f062b743be1da9f34fcfa4d212d6db6fe09a8b9"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992543"
+
+[tools."github:herdrdev/herdr"."platforms.linux-x64"]
+checksum = "sha256:3dc83288073e4c2d3c679a30e7be97bcca9141c6fd17dbbb9219142e95c59253"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992544"
+
+[tools."github:herdrdev/herdr"."platforms.linux-x64-musl"]
+checksum = "sha256:3dc83288073e4c2d3c679a30e7be97bcca9141c6fd17dbbb9219142e95c59253"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992544"
+
+[tools."github:herdrdev/herdr"."platforms.macos-arm64"]
+checksum = "sha256:37350546b0012555943b92eaf962665de4e264395baeb44227b8015e8ff5b0d6"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992542"
+
+[tools."github:herdrdev/herdr"."platforms.macos-x64"]
+checksum = "sha256:3fe50c4a63dc8102306b1322178628ddb3655cd3ae56d784f094153408d69e62"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-macos-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992541"
+
 [[tools."github:microsoft/apm"]]
 version = "0.26.0"
 backend = "github:microsoft/apm"
@@ -4702,40 +4731,6 @@ url = "https://dl.google.com/go/go1.26.5.windows-amd64.zip"
 [[tools."go:golang.org/x/tools/gopls"]]
 version = "0.23.0"
 backend = "go:golang.org/x/tools/gopls"
-
-[[tools.herdr]]
-version = "v0.7.5"
-backend = "aqua:herdrdev/herdr"
-
-[tools.herdr."platforms.linux-arm64"]
-checksum = "sha256:32e763a1499a6b694b1d708e4f062b743be1da9f34fcfa4d212d6db6fe09a8b9"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992543"
-
-[tools.herdr."platforms.linux-arm64-musl"]
-checksum = "sha256:32e763a1499a6b694b1d708e4f062b743be1da9f34fcfa4d212d6db6fe09a8b9"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992543"
-
-[tools.herdr."platforms.linux-x64"]
-checksum = "sha256:3dc83288073e4c2d3c679a30e7be97bcca9141c6fd17dbbb9219142e95c59253"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992544"
-
-[tools.herdr."platforms.linux-x64-musl"]
-checksum = "sha256:3dc83288073e4c2d3c679a30e7be97bcca9141c6fd17dbbb9219142e95c59253"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992544"
-
-[tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:37350546b0012555943b92eaf962665de4e264395baeb44227b8015e8ff5b0d6"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992542"
-
-[tools.herdr."platforms.macos-x64"]
-checksum = "sha256:3fe50c4a63dc8102306b1322178628ddb3655cd3ae56d784f094153408d69e62"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.7.5/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/484992541"
 
 [[tools.imagemagick]]
 version = "7.1.2_18"
