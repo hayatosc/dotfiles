@@ -392,9 +392,9 @@ checksum = "sha256:6613215bea89b3787cff16490227394f723dd793efcf9d1b4a35290a21cb8
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libopus-1.6.1-h80f16a2_0.conda"
 checksum = "sha256:059214f037fa5e51080f5aced39466993b2311a01d871086bd6d2a59bfbf59b5"
 
-[conda-packages.linux-arm64."libpciaccess-0.19-he30d5cf_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libpciaccess-0.19-he30d5cf_0.conda"
-checksum = "sha256:5d26d751b7cc4b66e28ed1ae75900956600aaa5c5d874d5a8cf106d3aff834d3"
+[conda-packages.linux-arm64."libpciaccess-0.19-he30d5cf_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libpciaccess-0.19-he30d5cf_1.conda"
+checksum = "sha256:2161dacebeb075187f20ba35529297e7d4f6d456a89c4474062782436dbe3735"
 
 [conda-packages.linux-arm64."libplacebo-7.360.1-h07e46df_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libplacebo-7.360.1-h07e46df_0.conda"
@@ -1068,9 +1068,9 @@ checksum = "sha256:6613215bea89b3787cff16490227394f723dd793efcf9d1b4a35290a21cb8
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libopus-1.6.1-h80f16a2_0.conda"
 checksum = "sha256:059214f037fa5e51080f5aced39466993b2311a01d871086bd6d2a59bfbf59b5"
 
-[conda-packages.linux-arm64-musl."libpciaccess-0.19-he30d5cf_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libpciaccess-0.19-he30d5cf_0.conda"
-checksum = "sha256:5d26d751b7cc4b66e28ed1ae75900956600aaa5c5d874d5a8cf106d3aff834d3"
+[conda-packages.linux-arm64-musl."libpciaccess-0.19-he30d5cf_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libpciaccess-0.19-he30d5cf_1.conda"
+checksum = "sha256:2161dacebeb075187f20ba35529297e7d4f6d456a89c4474062782436dbe3735"
 
 [conda-packages.linux-arm64-musl."libplacebo-7.360.1-h07e46df_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libplacebo-7.360.1-h07e46df_0.conda"
@@ -1764,9 +1764,9 @@ checksum = "sha256:5a2c5cabb91a241f624b7c99973664dea39013a4189a3700ff5f57e0901e0
 url = "https://conda.anaconda.org/conda-forge/linux-64/libopus-1.6.1-h280c20c_0.conda"
 checksum = "sha256:f1061a26213b9653bbb8372bfa3f291787ca091a9a3060a10df4d5297aad74fd"
 
-[conda-packages.linux-x64."libpciaccess-0.19-hb03c661_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libpciaccess-0.19-hb03c661_0.conda"
-checksum = "sha256:f41721636a7c2e51bc2c642e1127955ab9c81145470714fdaac44d4d09e4af41"
+[conda-packages.linux-x64."libpciaccess-0.19-hb03c661_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libpciaccess-0.19-hb03c661_1.conda"
+checksum = "sha256:addc80c69d362a9e6c40305c493139a8e9ee504b2f45a6687dbdaa9da3c6183c"
 
 [conda-packages.linux-x64."libplacebo-7.360.1-h9eeb4b2_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libplacebo-7.360.1-h9eeb4b2_0.conda"
@@ -2480,9 +2480,9 @@ checksum = "sha256:5a2c5cabb91a241f624b7c99973664dea39013a4189a3700ff5f57e0901e0
 url = "https://conda.anaconda.org/conda-forge/linux-64/libopus-1.6.1-h280c20c_0.conda"
 checksum = "sha256:f1061a26213b9653bbb8372bfa3f291787ca091a9a3060a10df4d5297aad74fd"
 
-[conda-packages.linux-x64-musl."libpciaccess-0.19-hb03c661_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libpciaccess-0.19-hb03c661_0.conda"
-checksum = "sha256:f41721636a7c2e51bc2c642e1127955ab9c81145470714fdaac44d4d09e4af41"
+[conda-packages.linux-x64-musl."libpciaccess-0.19-hb03c661_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libpciaccess-0.19-hb03c661_1.conda"
+checksum = "sha256:addc80c69d362a9e6c40305c493139a8e9ee504b2f45a6687dbdaa9da3c6183c"
 
 [conda-packages.linux-x64-musl."libplacebo-7.360.1-h9eeb4b2_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libplacebo-7.360.1-h9eeb4b2_0.conda"
@@ -3643,7 +3643,6 @@ conda_deps = [
     "xorg-libxext-1.3.7-he30d5cf_0",
     "xorg-libxi-1.8.3-he30d5cf_0",
     "wayland-1.26.0-h4f8a99f_0",
-    "libpciaccess-0.19-he30d5cf_0",
     "libgl-1.7.0-hd24410f_3",
     "libglx-1.7.0-hd24410f_3",
     "libglvnd-1.7.0-hd24410f_3",
@@ -3664,6 +3663,7 @@ conda_deps = [
     "lerc-4.2.0-h52b7260_0",
     "libdeflate-1.25-hfa851ae_1",
     "xkeyboard-config-2.48-h80f16a2_0",
+    "libpciaccess-0.19-he30d5cf_1",
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-arm64-musl"]
@@ -3776,7 +3776,6 @@ conda_deps = [
     "xorg-libxext-1.3.7-he30d5cf_0",
     "xorg-libxi-1.8.3-he30d5cf_0",
     "wayland-1.26.0-h4f8a99f_0",
-    "libpciaccess-0.19-he30d5cf_0",
     "libgl-1.7.0-hd24410f_3",
     "libglx-1.7.0-hd24410f_3",
     "libglvnd-1.7.0-hd24410f_3",
@@ -3797,6 +3796,7 @@ conda_deps = [
     "lerc-4.2.0-h52b7260_0",
     "libdeflate-1.25-hfa851ae_1",
     "xkeyboard-config-2.48-h80f16a2_0",
+    "libpciaccess-0.19-he30d5cf_1",
 ]
 
 [tools."conda:ffmpeg"."platforms.linux-x64"]
@@ -3854,7 +3854,6 @@ conda_deps = [
     "xorg-libxfixes-6.0.2-hb03c661_0",
     "xorg-libxext-1.3.7-hb03c661_0",
     "libdrm-2.4.127-hb03c661_0",
-    "libpciaccess-0.19-hb03c661_0",
     "libvorbis-1.3.7-h54a6638_2",
     "libvulkan-loader-1.4.357.0-h5279c79_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
@@ -3933,6 +3932,7 @@ conda_deps = [
     "opencl-headers-2025.06.13-hecca717_0",
     "libjpeg-turbo-3.2.0-hb03c661_1",
     "libtiff-4.7.2-h9d88235_0",
+    "libpciaccess-0.19-hb03c661_1",
     "libflac-1.5.0-he200343_1",
     "zstd-1.5.7-hb78ec9c_6",
     "libudev1-261.1-h6f4a2f1_0",
@@ -3997,7 +3997,6 @@ conda_deps = [
     "xorg-libxfixes-6.0.2-hb03c661_0",
     "xorg-libxext-1.3.7-hb03c661_0",
     "libdrm-2.4.127-hb03c661_0",
-    "libpciaccess-0.19-hb03c661_0",
     "libvorbis-1.3.7-h54a6638_2",
     "libvulkan-loader-1.4.357.0-h5279c79_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
@@ -4076,6 +4075,7 @@ conda_deps = [
     "opencl-headers-2025.06.13-hecca717_0",
     "libjpeg-turbo-3.2.0-hb03c661_1",
     "libtiff-4.7.2-h9d88235_0",
+    "libpciaccess-0.19-hb03c661_1",
     "libflac-1.5.0-he200343_1",
     "zstd-1.5.7-hb78ec9c_6",
     "libudev1-261.1-h6f4a2f1_0",
@@ -4511,17 +4511,7 @@ checksum = "sha256:57ba23ea8836a0ba07a9908d097a763d3f85aa021259b13bb24dbfa071765
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.26.0/octoscope_0.26.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/496264606"
 
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-baseline"]
-checksum = "sha256:57ba23ea8836a0ba07a9908d097a763d3f85aa021259b13bb24dbfa071765634"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.26.0/octoscope_0.26.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/496264606"
-
 [tools."github:gfazioli/octoscope"."platforms.linux-x64-musl"]
-checksum = "sha256:57ba23ea8836a0ba07a9908d097a763d3f85aa021259b13bb24dbfa071765634"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.26.0/octoscope_0.26.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/496264606"
-
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:57ba23ea8836a0ba07a9908d097a763d3f85aa021259b13bb24dbfa071765634"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.26.0/octoscope_0.26.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/496264606"
@@ -4536,17 +4526,7 @@ checksum = "sha256:3ddb9ffbef589ea0e509865734e0c2d0a233f135fbb4640b8508dd53b16d4
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.26.0/octoscope_0.26.0_macOS_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/496264605"
 
-[tools."github:gfazioli/octoscope"."platforms.macos-x64-baseline"]
-checksum = "sha256:3ddb9ffbef589ea0e509865734e0c2d0a233f135fbb4640b8508dd53b16d4402"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.26.0/octoscope_0.26.0_macOS_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/496264605"
-
 [tools."github:gfazioli/octoscope"."platforms.windows-x64"]
-checksum = "sha256:ac18dccaa44a5134a903746627b520e0adfb3cd299194ba2b67a16088c41d8c7"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.26.0/octoscope_0.26.0_Windows_x86_64.zip"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/496264607"
-
-[tools."github:gfazioli/octoscope"."platforms.windows-x64-baseline"]
 checksum = "sha256:ac18dccaa44a5134a903746627b520e0adfb3cd299194ba2b67a16088c41d8c7"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.26.0/octoscope_0.26.0_Windows_x86_64.zip"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/496264607"
@@ -4866,7 +4846,6 @@ conda_deps = [
     "at-spi2-core-2.40.3-h1f2db35_0",
     "dbus-1.16.2-h70963c4_1",
     "libdrm-2.4.127-he30d5cf_0",
-    "libpciaccess-0.19-he30d5cf_0",
     "xorg-libxxf86vm-1.1.7-he30d5cf_0",
     "libegl-1.7.0-hd24410f_3",
     "libglvnd-1.7.0-hd24410f_3",
@@ -4884,6 +4863,7 @@ conda_deps = [
     "xkeyboard-config-2.48-h80f16a2_0",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
+    "libpciaccess-0.19-he30d5cf_1",
 ]
 
 [tools.imagemagick."platforms.linux-arm64-musl"]
@@ -4988,7 +4968,6 @@ conda_deps = [
     "at-spi2-core-2.40.3-h1f2db35_0",
     "dbus-1.16.2-h70963c4_1",
     "libdrm-2.4.127-he30d5cf_0",
-    "libpciaccess-0.19-he30d5cf_0",
     "xorg-libxxf86vm-1.1.7-he30d5cf_0",
     "libegl-1.7.0-hd24410f_3",
     "libglvnd-1.7.0-hd24410f_3",
@@ -5006,6 +4985,7 @@ conda_deps = [
     "xkeyboard-config-2.48-h80f16a2_0",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
+    "libpciaccess-0.19-he30d5cf_1",
 ]
 
 [tools.imagemagick."platforms.linux-x64"]
@@ -5110,7 +5090,6 @@ conda_deps = [
     "at-spi2-core-2.40.3-h0630a04_0",
     "dbus-1.16.2-h24cb091_1",
     "libdrm-2.4.127-hb03c661_0",
-    "libpciaccess-0.19-hb03c661_0",
     "xorg-libxxf86vm-1.1.7-hb03c661_0",
     "libegl-1.7.0-ha4b6fd6_3",
     "libglvnd-1.7.0-ha4b6fd6_3",
@@ -5128,6 +5107,7 @@ conda_deps = [
     "ncurses-6.6-hdb14827_0",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
+    "libpciaccess-0.19-hb03c661_1",
 ]
 
 [tools.imagemagick."platforms.linux-x64-musl"]
@@ -5232,7 +5212,6 @@ conda_deps = [
     "at-spi2-core-2.40.3-h0630a04_0",
     "dbus-1.16.2-h24cb091_1",
     "libdrm-2.4.127-hb03c661_0",
-    "libpciaccess-0.19-hb03c661_0",
     "xorg-libxxf86vm-1.1.7-hb03c661_0",
     "libegl-1.7.0-ha4b6fd6_3",
     "libglvnd-1.7.0-ha4b6fd6_3",
@@ -5250,6 +5229,7 @@ conda_deps = [
     "ncurses-6.6-hdb14827_0",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
+    "libpciaccess-0.19-hb03c661_1",
 ]
 
 [[tools.jq]]
