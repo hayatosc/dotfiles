@@ -196,9 +196,9 @@ checksum = "sha256:494365e8f58799ea95a6e82334ef696e9c2120aecd6626121694b30a15033
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libbrotlienc-1.2.0-he30d5cf_1.conda"
 checksum = "sha256:f998c03257b9aa1f7464446af2cf424862f0e54258a2a588309853e45ae771df"
 
-[conda-packages.linux-arm64."libcap-2.78-hf9559e3_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libcap-2.78-hf9559e3_0.conda"
-checksum = "sha256:14b6654d942be7a68496d4e52d6aa4e217cf82005a42c20d1880eb473e34eb3a"
+[conda-packages.linux-arm64."libcap-2.78-hfcc8634_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libcap-2.78-hfcc8634_1.conda"
+checksum = "sha256:6487e7644d062e18d389c11a9a3183e5a71c2652d05fdd88dbd063ad09f7ad4b"
 
 [conda-packages.linux-arm64."libcups-2.3.3-h4f2b762_6"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libcups-2.3.3-h4f2b762_6.conda"
@@ -216,9 +216,9 @@ checksum = "sha256:4cb3da1d4ce7540604219d2a016253777da66c1a710c41557bc708aae7f54
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-hf71c8f5_0.conda"
 checksum = "sha256:d12c0db93410085c827587352f05b24ba56ac786285752a4b2aba59309b09832"
 
-[conda-packages.linux-arm64."libdrm-2.4.127-he30d5cf_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdrm-2.4.127-he30d5cf_0.conda"
-checksum = "sha256:2a941ffcd6b09380344c2cb5b198d2743ce4fc30ec9a5c8c83e53368d8015aef"
+[conda-packages.linux-arm64."libdrm-2.4.127-he30d5cf_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdrm-2.4.127-he30d5cf_1.conda"
+checksum = "sha256:b6972581eae43c9adc8ee7b3b923efe43e66cb4f3bc9b448a93047ccd60dcae1"
 
 [conda-packages.linux-arm64."libedit-3.1.20250104-pl5321h976ea20_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libedit-3.1.20250104-pl5321h976ea20_0.conda"
@@ -872,9 +872,9 @@ checksum = "sha256:494365e8f58799ea95a6e82334ef696e9c2120aecd6626121694b30a15033
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libbrotlienc-1.2.0-he30d5cf_1.conda"
 checksum = "sha256:f998c03257b9aa1f7464446af2cf424862f0e54258a2a588309853e45ae771df"
 
-[conda-packages.linux-arm64-musl."libcap-2.78-hf9559e3_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libcap-2.78-hf9559e3_0.conda"
-checksum = "sha256:14b6654d942be7a68496d4e52d6aa4e217cf82005a42c20d1880eb473e34eb3a"
+[conda-packages.linux-arm64-musl."libcap-2.78-hfcc8634_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libcap-2.78-hfcc8634_1.conda"
+checksum = "sha256:6487e7644d062e18d389c11a9a3183e5a71c2652d05fdd88dbd063ad09f7ad4b"
 
 [conda-packages.linux-arm64-musl."libcups-2.3.3-h4f2b762_6"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libcups-2.3.3-h4f2b762_6.conda"
@@ -892,9 +892,9 @@ checksum = "sha256:4cb3da1d4ce7540604219d2a016253777da66c1a710c41557bc708aae7f54
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-hf71c8f5_0.conda"
 checksum = "sha256:d12c0db93410085c827587352f05b24ba56ac786285752a4b2aba59309b09832"
 
-[conda-packages.linux-arm64-musl."libdrm-2.4.127-he30d5cf_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdrm-2.4.127-he30d5cf_0.conda"
-checksum = "sha256:2a941ffcd6b09380344c2cb5b198d2743ce4fc30ec9a5c8c83e53368d8015aef"
+[conda-packages.linux-arm64-musl."libdrm-2.4.127-he30d5cf_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdrm-2.4.127-he30d5cf_1.conda"
+checksum = "sha256:b6972581eae43c9adc8ee7b3b923efe43e66cb4f3bc9b448a93047ccd60dcae1"
 
 [conda-packages.linux-arm64-musl."libedit-3.1.20250104-pl5321h976ea20_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libedit-3.1.20250104-pl5321h976ea20_0.conda"
@@ -1560,9 +1560,9 @@ checksum = "sha256:12fff21d38f98bc446d82baa890e01fd82e3b750378fedc720ff93522ffb7
 url = "https://conda.anaconda.org/conda-forge/linux-64/libbrotlienc-1.2.0-hb03c661_1.conda"
 checksum = "sha256:a0c15c79997820bbd3fbc8ecf146f4fe0eca36cc60b62b63ac6cf78857f1dd0d"
 
-[conda-packages.linux-x64."libcap-2.78-hd0affe5_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libcap-2.78-hd0affe5_0.conda"
-checksum = "sha256:cc8c9fc6ddf0fbd3d1275b558ae9abad6cda23bced268732e2da21a87bb358cd"
+[conda-packages.linux-x64."libcap-2.78-h084b8d7_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libcap-2.78-h084b8d7_1.conda"
+checksum = "sha256:8cb25174d6b6fac95d31e86cfe41faffc8ee9dacbf2bfd22e6c23377e8f338c1"
 
 [conda-packages.linux-x64."libcups-2.3.3-h7a8fb5f_6"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libcups-2.3.3-h7a8fb5f_6.conda"
@@ -1580,9 +1580,9 @@ checksum = "sha256:82e134c8a08b1eed9a2ed8ab578b89aa1730dcde3dea8dd87645ed0637878
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-ha23c83e_0.conda"
 checksum = "sha256:cea351b57c30d70e288b53ea69a1dcf6b750992f5d7717a7fc364072fa1209e7"
 
-[conda-packages.linux-x64."libdrm-2.4.127-hb03c661_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libdrm-2.4.127-hb03c661_0.conda"
-checksum = "sha256:7d3187c11b7ae66c5595a8afd5a7ce352a490527fdf6614cab129bc7f2c16ba3"
+[conda-packages.linux-x64."libdrm-2.4.127-hb03c661_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libdrm-2.4.127-hb03c661_1.conda"
+checksum = "sha256:b4e74db8ed1d5f8b6c9edf9582953c063650d677b299e90585d00f127644eb87"
 
 [conda-packages.linux-x64."libedit-3.1.20250104-pl5321h7949ede_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libedit-3.1.20250104-pl5321h7949ede_0.conda"
@@ -2276,9 +2276,9 @@ checksum = "sha256:12fff21d38f98bc446d82baa890e01fd82e3b750378fedc720ff93522ffb7
 url = "https://conda.anaconda.org/conda-forge/linux-64/libbrotlienc-1.2.0-hb03c661_1.conda"
 checksum = "sha256:a0c15c79997820bbd3fbc8ecf146f4fe0eca36cc60b62b63ac6cf78857f1dd0d"
 
-[conda-packages.linux-x64-musl."libcap-2.78-hd0affe5_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libcap-2.78-hd0affe5_0.conda"
-checksum = "sha256:cc8c9fc6ddf0fbd3d1275b558ae9abad6cda23bced268732e2da21a87bb358cd"
+[conda-packages.linux-x64-musl."libcap-2.78-h084b8d7_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libcap-2.78-h084b8d7_1.conda"
+checksum = "sha256:8cb25174d6b6fac95d31e86cfe41faffc8ee9dacbf2bfd22e6c23377e8f338c1"
 
 [conda-packages.linux-x64-musl."libcups-2.3.3-h7a8fb5f_6"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libcups-2.3.3-h7a8fb5f_6.conda"
@@ -2296,9 +2296,9 @@ checksum = "sha256:82e134c8a08b1eed9a2ed8ab578b89aa1730dcde3dea8dd87645ed0637878
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-ha23c83e_0.conda"
 checksum = "sha256:cea351b57c30d70e288b53ea69a1dcf6b750992f5d7717a7fc364072fa1209e7"
 
-[conda-packages.linux-x64-musl."libdrm-2.4.127-hb03c661_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libdrm-2.4.127-hb03c661_0.conda"
-checksum = "sha256:7d3187c11b7ae66c5595a8afd5a7ce352a490527fdf6614cab129bc7f2c16ba3"
+[conda-packages.linux-x64-musl."libdrm-2.4.127-hb03c661_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libdrm-2.4.127-hb03c661_1.conda"
+checksum = "sha256:b4e74db8ed1d5f8b6c9edf9582953c063650d677b299e90585d00f127644eb87"
 
 [conda-packages.linux-x64-musl."libedit-3.1.20250104-pl5321h7949ede_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libedit-3.1.20250104-pl5321h7949ede_0.conda"
@@ -3630,10 +3630,8 @@ conda_deps = [
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
     "libsystemd0-261.1-hb290c7d_0",
-    "libcap-2.78-hf9559e3_0",
     "sdl3-3.4.14-had2c13b_0",
     "libusb-1.0.29-h06eaf92_0",
-    "libdrm-2.4.127-he30d5cf_0",
     "libunwind-1.8.3-h6470e1d_0",
     "xorg-libxcursor-1.2.3-h86ecc28_0",
     "liburing-2.14-hfefdfc9_0",
@@ -3657,7 +3655,9 @@ conda_deps = [
     "libjpeg-turbo-3.2.0-he30d5cf_1",
     "libtiff-4.7.2-hdb009f0_0",
     "libflac-1.5.0-he9c94f4_1",
+    "libcap-2.78-hfcc8634_1",
     "zstd-1.5.7-h85ac4a6_6",
+    "libdrm-2.4.127-he30d5cf_1",
     "xorg-libxtst-1.2.5-h57736b2_3",
     "libudev1-261.1-hb290c7d_0",
     "lerc-4.2.0-h52b7260_0",
@@ -3763,10 +3763,8 @@ conda_deps = [
     "libsndfile-1.2.2-h30591a0_2",
     "mpg123-1.32.9-h65af167_0",
     "libsystemd0-261.1-hb290c7d_0",
-    "libcap-2.78-hf9559e3_0",
     "sdl3-3.4.14-had2c13b_0",
     "libusb-1.0.29-h06eaf92_0",
-    "libdrm-2.4.127-he30d5cf_0",
     "libunwind-1.8.3-h6470e1d_0",
     "xorg-libxcursor-1.2.3-h86ecc28_0",
     "liburing-2.14-hfefdfc9_0",
@@ -3790,7 +3788,9 @@ conda_deps = [
     "libjpeg-turbo-3.2.0-he30d5cf_1",
     "libtiff-4.7.2-hdb009f0_0",
     "libflac-1.5.0-he9c94f4_1",
+    "libcap-2.78-hfcc8634_1",
     "zstd-1.5.7-h85ac4a6_6",
+    "libdrm-2.4.127-he30d5cf_1",
     "xorg-libxtst-1.2.5-h57736b2_3",
     "libudev1-261.1-hb290c7d_0",
     "lerc-4.2.0-h52b7260_0",
@@ -3853,7 +3853,6 @@ conda_deps = [
     "libva-2.24.1-he1eb515_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
     "xorg-libxext-1.3.7-hb03c661_0",
-    "libdrm-2.4.127-hb03c661_0",
     "libvorbis-1.3.7-h54a6638_2",
     "libvulkan-loader-1.4.357.0-h5279c79_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
@@ -3894,6 +3893,7 @@ conda_deps = [
     "xorg-libice-1.1.2-hb9d3cd8_0",
     "gdk-pixbuf-2.44.7-h2b0a6b4_0",
     "pango-1.58.0-hda50119_0",
+    "libdrm-2.4.127-hb03c661_1",
     "wayland-1.26.0-hd6090a7_0",
     "libegl-1.7.0-ha4b6fd6_3",
     "libglvnd-1.7.0-ha4b6fd6_3",
@@ -3912,7 +3912,6 @@ conda_deps = [
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
     "libsystemd0-261.1-h6f4a2f1_0",
-    "libcap-2.78-hd0affe5_0",
     "sdl3-3.4.14-hdeec2a5_0",
     "libxkbcommon-1.13.2-hca5e8e5_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
@@ -3934,6 +3933,7 @@ conda_deps = [
     "libtiff-4.7.2-h9d88235_0",
     "libpciaccess-0.19-hb03c661_1",
     "libflac-1.5.0-he200343_1",
+    "libcap-2.78-h084b8d7_1",
     "zstd-1.5.7-hb78ec9c_6",
     "libudev1-261.1-h6f4a2f1_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
@@ -3996,7 +3996,6 @@ conda_deps = [
     "libva-2.24.1-he1eb515_0",
     "xorg-libxfixes-6.0.2-hb03c661_0",
     "xorg-libxext-1.3.7-hb03c661_0",
-    "libdrm-2.4.127-hb03c661_0",
     "libvorbis-1.3.7-h54a6638_2",
     "libvulkan-loader-1.4.357.0-h5279c79_0",
     "xorg-libxrandr-1.5.5-hb03c661_0",
@@ -4037,6 +4036,7 @@ conda_deps = [
     "xorg-libice-1.1.2-hb9d3cd8_0",
     "gdk-pixbuf-2.44.7-h2b0a6b4_0",
     "pango-1.58.0-hda50119_0",
+    "libdrm-2.4.127-hb03c661_1",
     "wayland-1.26.0-hd6090a7_0",
     "libegl-1.7.0-ha4b6fd6_3",
     "libglvnd-1.7.0-ha4b6fd6_3",
@@ -4055,7 +4055,6 @@ conda_deps = [
     "libsndfile-1.2.2-hc7d488a_2",
     "mpg123-1.32.9-hc50e24c_0",
     "libsystemd0-261.1-h6f4a2f1_0",
-    "libcap-2.78-hd0affe5_0",
     "sdl3-3.4.14-hdeec2a5_0",
     "libxkbcommon-1.13.2-hca5e8e5_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
@@ -4077,6 +4076,7 @@ conda_deps = [
     "libtiff-4.7.2-h9d88235_0",
     "libpciaccess-0.19-hb03c661_1",
     "libflac-1.5.0-he200343_1",
+    "libcap-2.78-h084b8d7_1",
     "zstd-1.5.7-hb78ec9c_6",
     "libudev1-261.1-h6f4a2f1_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
@@ -4623,17 +4623,7 @@ checksum = "sha256:be2d8a97ca8816636117ec26da85482d647ae3353213ea022fb1130c2dd3d
 url = "https://github.com/microsoft/apm/releases/download/v0.27.0/apm-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/499236711"
 
-[tools."github:microsoft/apm"."platforms.linux-x64-baseline"]
-checksum = "sha256:be2d8a97ca8816636117ec26da85482d647ae3353213ea022fb1130c2dd3d3b0"
-url = "https://github.com/microsoft/apm/releases/download/v0.27.0/apm-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/499236711"
-
 [tools."github:microsoft/apm"."platforms.linux-x64-musl"]
-checksum = "sha256:be2d8a97ca8816636117ec26da85482d647ae3353213ea022fb1130c2dd3d3b0"
-url = "https://github.com/microsoft/apm/releases/download/v0.27.0/apm-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/499236711"
-
-[tools."github:microsoft/apm"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:be2d8a97ca8816636117ec26da85482d647ae3353213ea022fb1130c2dd3d3b0"
 url = "https://github.com/microsoft/apm/releases/download/v0.27.0/apm-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/499236711"
@@ -4648,17 +4638,7 @@ checksum = "sha256:846b30055d96cbc6fa0fcf451f50d13f632b540ffdff344873a025bba607e
 url = "https://github.com/microsoft/apm/releases/download/v0.27.0/apm-darwin-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/499236712"
 
-[tools."github:microsoft/apm"."platforms.macos-x64-baseline"]
-checksum = "sha256:846b30055d96cbc6fa0fcf451f50d13f632b540ffdff344873a025bba607e25a"
-url = "https://github.com/microsoft/apm/releases/download/v0.27.0/apm-darwin-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/499236712"
-
 [tools."github:microsoft/apm"."platforms.windows-x64"]
-checksum = "sha256:1a7703864babee7deaab3d13b4fe50b51ea5c1ae2edb2dae46fbbab5a6cead9d"
-url = "https://github.com/microsoft/apm/releases/download/v0.27.0/apm-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/499236717"
-
-[tools."github:microsoft/apm"."platforms.windows-x64-baseline"]
 checksum = "sha256:1a7703864babee7deaab3d13b4fe50b51ea5c1ae2edb2dae46fbbab5a6cead9d"
 url = "https://github.com/microsoft/apm/releases/download/v0.27.0/apm-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/microsoft/apm/releases/assets/499236717"
@@ -4865,8 +4845,7 @@ conda_deps = [
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
     "at-spi2-core-2.40.3-h1f2db35_0",
     "dbus-1.16.2-h70963c4_1",
-    "libdrm-2.4.127-he30d5cf_0",
-    "xorg-libxxf86vm-1.1.7-he30d5cf_0",
+    "libdrm-2.4.127-he30d5cf_1",
     "libegl-1.7.0-hd24410f_3",
     "libglvnd-1.7.0-hd24410f_3",
     "libegl-devel-1.7.0-hd24410f_3",
@@ -4875,6 +4854,7 @@ conda_deps = [
     "libgl-1.7.0-hd24410f_3",
     "libglx-devel-1.7.0-hd24410f_3",
     "xorg-xorgproto-2025.1-he30d5cf_0",
+    "xorg-libxxf86vm-1.1.7-he30d5cf_0",
     "krb5-1.22.2-h2fb54aa_1",
     "libedit-3.1.20250104-pl5321h976ea20_0",
     "keyutils-1.6.3-h86ecc28_0",
@@ -4987,8 +4967,7 @@ conda_deps = [
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
     "at-spi2-core-2.40.3-h1f2db35_0",
     "dbus-1.16.2-h70963c4_1",
-    "libdrm-2.4.127-he30d5cf_0",
-    "xorg-libxxf86vm-1.1.7-he30d5cf_0",
+    "libdrm-2.4.127-he30d5cf_1",
     "libegl-1.7.0-hd24410f_3",
     "libglvnd-1.7.0-hd24410f_3",
     "libegl-devel-1.7.0-hd24410f_3",
@@ -4997,6 +4976,7 @@ conda_deps = [
     "libgl-1.7.0-hd24410f_3",
     "libglx-devel-1.7.0-hd24410f_3",
     "xorg-xorgproto-2025.1-he30d5cf_0",
+    "xorg-libxxf86vm-1.1.7-he30d5cf_0",
     "krb5-1.22.2-h2fb54aa_1",
     "libedit-3.1.20250104-pl5321h976ea20_0",
     "keyutils-1.6.3-h86ecc28_0",
@@ -5109,8 +5089,8 @@ conda_deps = [
     "xorg-libxdmcp-1.1.5-hb03c661_1",
     "at-spi2-core-2.40.3-h0630a04_0",
     "dbus-1.16.2-h24cb091_1",
-    "libdrm-2.4.127-hb03c661_0",
     "xorg-libxxf86vm-1.1.7-hb03c661_0",
+    "libdrm-2.4.127-hb03c661_1",
     "libegl-1.7.0-ha4b6fd6_3",
     "libglvnd-1.7.0-ha4b6fd6_3",
     "libegl-devel-1.7.0-ha4b6fd6_3",
@@ -5231,8 +5211,8 @@ conda_deps = [
     "xorg-libxdmcp-1.1.5-hb03c661_1",
     "at-spi2-core-2.40.3-h0630a04_0",
     "dbus-1.16.2-h24cb091_1",
-    "libdrm-2.4.127-hb03c661_0",
     "xorg-libxxf86vm-1.1.7-hb03c661_0",
+    "libdrm-2.4.127-hb03c661_1",
     "libegl-1.7.0-ha4b6fd6_3",
     "libglvnd-1.7.0-ha4b6fd6_3",
     "libegl-devel-1.7.0-ha4b6fd6_3",
