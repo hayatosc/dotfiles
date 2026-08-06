@@ -36,12 +36,21 @@ When choosing between libraries, research before committing. Prefer the standard
 
 ## Design
 
-### Reuse first
+### Reuse and leverage existing dependencies
 
 - Before writing any new function, type, or utility, search the existing codebase for similar implementations. Reuse them via import / source / require. Do not re-implement.
+- Lean on the dependencies already in the project before writing your own implementation or adding packages. Do not assume a library lacks a capability without checking its documentation and types.
+- Prefer established, well-maintained libraries when they reduce overall complexity or improve reliability. Do not reimplement common functionality without a clear reason.
+
+### Layered growth and modularity
+
+- Grow the system in layers. Start from the smallest version that works end-to-end, and add each new capability on top of a product that already works. Never trade a working product for unfinished complexity.
+- Keep components modular and concerns clearly separated.
+- Make architectural decisions for the long term. Do not accept a stopgap that only works for now and is meant to be replaced later.
 
 ### Keep it small
 
+- Choose the simplest implementation that fully meets current requirements. Avoid speculative abstractions, configuration, and indirection.
 - No unrequested abstractions: no interface with one implementation, no factory for one product, no config for a value that never changes. During refactoring, extract an interface or function only when there is a concrete, immediate consumer — not for hypothetical future use.
 - No boilerplate, no scaffolding "for later" — later can scaffold for itself.
 - No error handling for impossible or internal-only scenarios.

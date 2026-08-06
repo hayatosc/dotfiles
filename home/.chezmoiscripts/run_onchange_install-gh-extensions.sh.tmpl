@@ -1,0 +1,25 @@
+#!/bin/bash
+# gh: {{ lookPath "gh" }}
+set -euo pipefail
+
+if ! command -v gh >/dev/null 2>&1; then
+    echo "gh is not installed. Skipping gh extensions installation."
+    exit 0
+fi
+
+# List of gh extensions to manage
+# chezmoi will re-run this script if the list changes:
+# {{ list "github/gh-stack" | join " " | sha256sum }}
+
+EXTENSIONS=(
+    "github/gh-stack"
+)
+
+for ext in "${EXTENSIONS[@]}"; do
+    if gh extension list | grep -q "${ext}"; then
+        echo "gh extension ${ext} is already installed."
+    else
+        echo "Installing gh extension ${ext}..."
+        gh extension install "${ext}"
+    fi
+done

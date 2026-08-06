@@ -4,6 +4,10 @@
 	signingkey = /home/hayato/.ssh/id_ed25519.pub
 [push]
 	default = current
+[remote]
+	pushDefault = origin
+[rerere]
+	enabled = true
 [pull]
 	ff = only
 	rebase = false

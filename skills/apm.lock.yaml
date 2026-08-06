@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-08-04T13:39:05.039665+00:00'
+generated_at: '2026-08-06T07:16:20.619169+00:00'
 apm_version: 0.26.0
 dependencies:
 - repo_url: anthropics/skills
@@ -123,7 +123,7 @@ dependencies:
 - repo_url: emilkowalski/skill
   name: emil-design-eng
   host: github.com
-  resolved_commit: da80201b64de7d608a6dc5f723797ce6c65b692b
+  resolved_commit: de33dbed000212b54400a33767d1e4d03654db2a
   version: unknown
   virtual_path: skills/emil-design-eng
   is_virtual: true
@@ -134,6 +134,26 @@ dependencies:
   deployed_file_hashes:
     .agents/skills/emil-design-eng/SKILL.md: sha256:e71de849347050c2c573c1cf24d742d5a13459557ecffa6e562f08006f46b5b7
   content_hash: sha256:41b0a4dc1a27164fe297845a6c6850a39e9242c42c9be999967fcee9df2c5974
+- repo_url: github/gh-stack
+  name: gh-stack
+  host: github.com
+  resolved_commit: 14fc42ed9b6c376a53b2f999f138d3bd26dac546
+  version: unknown
+  virtual_path: skills/gh-stack
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/gh-stack
+  - .agents/skills/gh-stack/SKILL.md
+  - .agents/skills/gh-stack/references/commands.md
+  - .agents/skills/gh-stack/references/stack-design.md
+  - .agents/skills/gh-stack/references/troubleshooting.md
+  deployed_file_hashes:
+    .agents/skills/gh-stack/SKILL.md: sha256:1ff5a23a7f66a3f5853ef411e48ae66ebe0b47d98d248a3a41ee0de8e237a796
+    .agents/skills/gh-stack/references/commands.md: sha256:362bca643fa84aae90627c4d1797c2343aaf5427713e6aa8572e04454c555fa9
+    .agents/skills/gh-stack/references/stack-design.md: sha256:4a61e3065ce61a5d129a30f5dcbebe73bfde250e34c382277facdc31d2c4e5ce
+    .agents/skills/gh-stack/references/troubleshooting.md: sha256:fe1958036e663c7471a0d3efdf1fefe47ee65e06713b13a96e3db95becccdc47
+  content_hash: sha256:0d9f11ad344eda3becb92d0d195a08491a5ab2ba72a3890ff1e9db6c3de25f27
 - repo_url: googlechrome/modern-web-guidance
   name: modern-web-guidance
   host: github.com
@@ -487,7 +507,7 @@ dependencies:
 - repo_url: nutlope/hallmark
   name: hallmark
   host: github.com
-  resolved_commit: aeb42fb354ff4efa36ab475773a082315a3af2ce
+  resolved_commit: 0a0f706bc0289fef76a07fb854a6a5b031c57901
   version: unknown
   virtual_path: skills/hallmark
   is_virtual: true
@@ -601,7 +621,7 @@ dependencies:
   - .agents/skills/hallmark/references/verbs/audit.md
   - .agents/skills/hallmark/references/verbs/redesign.md
   deployed_file_hashes:
-    .agents/skills/hallmark/SKILL.md: sha256:5437b73a1a829210681ca21fa09b7276a5978875f960d3998846e0dc333e9343
+    .agents/skills/hallmark/SKILL.md: sha256:3afa4aa628e22e2e03c35ea01a57e8c18a16ed8ff4cf33c3da2d3da2018c64a3
     .agents/skills/hallmark/references/anti-patterns.md: sha256:a36eb346ad59cafaa26119ed1e7c0bbb8aca6637209ee110eb630dd1a9307070
     .agents/skills/hallmark/references/assets.md: sha256:60929b3dc2258b69caf3012d99d174e1ad73da9645263db81a9b271cd6fd7d61
     .agents/skills/hallmark/references/color.md: sha256:31c470d16ceb17ccce290cbdd00b9e9a88f2094df8eaaefb67c86ec1e1cdb876
@@ -671,7 +691,7 @@ dependencies:
     .agents/skills/hallmark/references/imagery-kit.md: sha256:39d71df8dd6186b27f174fd8ab8ffd379553be3917cff50810c72365f6d6cb53
     .agents/skills/hallmark/references/interaction-and-states.md: sha256:e816eb2d067ba9f6f288a3831549da95624a05f432ed2a50f54136f27dd2d67f
     .agents/skills/hallmark/references/layout-and-space.md: sha256:987f3a45f5dbe81547117a77987bcedf5376608a6412067e04337047e0c7c839
-    .agents/skills/hallmark/references/macrostructures.md: sha256:a9024133c43e9ef388c331b5bc2f60de3d4a8c22b07b2d277bbafde941b24ea2
+    .agents/skills/hallmark/references/macrostructures.md: sha256:a6f19a17073aca18a6ff7a8fc8c3c5f711865e01c6d97de609771b47fe8394bc
     .agents/skills/hallmark/references/macrostructures/01-bento-grid.md: sha256:aa268415862188414f8db94715e20ae7d29df3dc7c494083683378705f3f8493
     .agents/skills/hallmark/references/macrostructures/02-long-document.md: sha256:8ca81106396f2bd00eb9ef5d5d1f00c3aab0500394e706d6a2b3221a6c0d910f
     .agents/skills/hallmark/references/macrostructures/03-marquee-hero.md: sha256:2b7c35860086da6232cb3725c059bead9a31a91872d464266ce6e07a5a75f755
@@ -707,12 +727,12 @@ dependencies:
     .agents/skills/hallmark/references/typography.md: sha256:94d7b2d2b138bd8687e09dc3dd618eaafff500b0497a6d69cb4c29b764e94b9c
     .agents/skills/hallmark/references/verbs/audit.md: sha256:0a5b484453f1697a8675a7020df9159d0b4ce22f059b873501bfd82c26d6a31a
     .agents/skills/hallmark/references/verbs/redesign.md: sha256:c2830f3b7d68e9622f55d376048a5a454c5ef59d309a211e716d1142e86acbdf
-  content_hash: sha256:dee470e28bacb873cbb6194a856de888ee9ed906d3735ecf77398d7a5413471e
+  content_hash: sha256:3e2da1af591c3f434b6e81aff38bf6fba654f51b3646b38195adfb85b260aa09
 - repo_url: ogulcancelik/herdr
   name: herdr
   host: github.com
-  resolved_commit: 4473e391962c68d59bd980fa98a44f3397d9931d
-  version: 0.0.0
+  resolved_commit: fc824b99aba9389ffda75f19b3a4aee0ff6ca8b5
+  version: unknown
   package_type: skill_bundle
   deployed_files:
   - .agents/skills/herdr
@@ -791,7 +811,7 @@ dependencies:
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png: sha256:be922a8d500b6b6ddc85c45ec3f093a93b37530feb63c743192c28b8cc6ceba4
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png: sha256:541e4e830c92eb7a38a3f6c295de5ce04810dd37cb421e833faec833e50a90f5
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
-  content_hash: sha256:6d4d41c7498bf400f5b340404483be0f3ddfa327e3cb40db55da92a53d083224
+  content_hash: sha256:511fee53fb01430f266378073c3f7a795fac45a153c1787592808acb40233377
 - repo_url: openai/skills
   name: gh-address-comments
   host: github.com
@@ -889,7 +909,7 @@ dependencies:
 - repo_url: vercel-labs/agent-browser
   name: agent-browser
   host: github.com
-  resolved_commit: 01c1147da66940c034a5ccea497447e52c2f6dfe
+  resolved_commit: acbc22bdc5d4f6c5a88d97d4a4745d3c5eb0591f
   version: unknown
   virtual_path: skills/agent-browser
   is_virtual: true
@@ -917,7 +937,7 @@ dependencies:
 - repo_url: vercel-labs/skills
   name: find-skills
   host: github.com
-  resolved_commit: 1164afa5f0e21ebd01e6fc11249759353f494ad1
+  resolved_commit: a4d243c3d4f86cdf9385dd1b6a0733f6937e70b5
   version: unknown
   virtual_path: skills/find-skills
   is_virtual: true
@@ -1214,6 +1234,51 @@ deployments:
   content_hash: sha256:9459e5b03f86785d184a83e5cd8d621b832e918ec04158a2962d867785812c6c
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/gh-stack
+  runtime: null
+  scope: project
+  owners:
+  - github/gh-stack/skills/gh-stack
+  active_owner: github/gh-stack/skills/gh-stack
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/gh-stack/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - github/gh-stack/skills/gh-stack
+  active_owner: github/gh-stack/skills/gh-stack
+  content_hash: sha256:1ff5a23a7f66a3f5853ef411e48ae66ebe0b47d98d248a3a41ee0de8e237a796
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/gh-stack/references/commands.md
+  runtime: null
+  scope: project
+  owners:
+  - github/gh-stack/skills/gh-stack
+  active_owner: github/gh-stack/skills/gh-stack
+  content_hash: sha256:362bca643fa84aae90627c4d1797c2343aaf5427713e6aa8572e04454c555fa9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/gh-stack/references/stack-design.md
+  runtime: null
+  scope: project
+  owners:
+  - github/gh-stack/skills/gh-stack
+  active_owner: github/gh-stack/skills/gh-stack
+  content_hash: sha256:4a61e3065ce61a5d129a30f5dcbebe73bfde250e34c382277facdc31d2c4e5ce
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/gh-stack/references/troubleshooting.md
+  runtime: null
+  scope: project
+  owners:
+  - github/gh-stack/skills/gh-stack
+  active_owner: github/gh-stack/skills/gh-stack
+  content_hash: sha256:fe1958036e663c7471a0d3efdf1fefe47ee65e06713b13a96e3db95becccdc47
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/hallmark
   runtime: null
   scope: project
@@ -1229,7 +1294,7 @@ deployments:
   owners:
   - nutlope/hallmark/skills/hallmark
   active_owner: nutlope/hallmark/skills/hallmark
-  content_hash: sha256:5437b73a1a829210681ca21fa09b7276a5978875f960d3998846e0dc333e9343
+  content_hash: sha256:3afa4aa628e22e2e03c35ea01a57e8c18a16ed8ff4cf33c3da2d3da2018c64a3
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/hallmark/references/anti-patterns.md
@@ -1859,7 +1924,7 @@ deployments:
   owners:
   - nutlope/hallmark/skills/hallmark
   active_owner: nutlope/hallmark/skills/hallmark
-  content_hash: sha256:a9024133c43e9ef388c331b5bc2f60de3d4a8c22b07b2d277bbafde941b24ea2
+  content_hash: sha256:a6f19a17073aca18a6ff7a8fc8c3c5f711865e01c6d97de609771b47fe8394bc
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/hallmark/references/macrostructures/01-bento-grid.md
@@ -2193,330 +2258,6 @@ deployments:
   - ogulcancelik/herdr
   active_owner: ogulcancelik/herdr
   content_hash: sha256:0786182f02ebf92708e09d82d79e4614d1a9c30bfc337643cc2af1d0fb9db29f
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:a6cacacdfc1722c5b19dde819d590180c7b5bd06d0cdeb1a0e27fb3d86443081
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:976297d3be8c886a2e1b272b21c3787d468ed3ca55cccd34642d6b7ea1324646
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:6f88ccff99f49fb39715922d3dc7f8caead0d5124e98de4acafcbd35a02079a7
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:c4d2dc32c2380fbac9f4dafbe82a797b631193f1caf49ae834e1b7e6b3b03ae3
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:ecef1b0819039ae42ef81693ce36bfdbc656677bbd2b47378ae4ce8490c167eb
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:446804ab6101272fc55fea43e4bb1a49cfb94efb410e592d31fbebd43c2c6cd2
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:282eb8a3622659c73f16d914148de88b05ef8226832a877e73474f3096a3a927
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:c1d93b902c02520a347ad3256708c192291af5ed1f55998e537271cc0385a17f
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:448e4037e2b90591e31b0bab91d83e28a89cca6f48a59740231954a12a6b0234
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:3ed1a062ed64aa7a9f028c754404f5fe7fda8be267b57af273a358ad075c97f5
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:320fd524855e5b9472743de71390c4b4dde54d39c6c8a0cb5c7f32935a601eed
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:b19d798ba26a973784e4e9a618c5eec8f5224240743f6c1e705aa5add029e631
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:b673237cc25425fd64974f63e49bf526f90b28c41bd4f22159ff677109be679c
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:7ba36ba0f771f11b1d252a2175dd9d1aa6295196caf5a4cd3f69981aecd4caac
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:f1ddb2a2d92f3c7763dd2ec84fc66ea73e094c556177c33f48b0e41c96dc51de
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:ad6fd453b201e0a51ba882753d4024b8b84f9d45aa131e2e2d83f37cfdcf1e7e
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:063c32ee48c624984d882a1b92da03c40e52f67f92fcf1ff0c77ba615d1e0945
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:ff9422e0e47c7ff7d7cc2d06035d0f2cd952ac76a0c4eb8b8b42dd7289045cc9
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:5f89dddf4c1a8b847a6b414579fdd43b9fcb075bcf42d7b1339362ad71aac831
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:fec0c945b9429da21b888fca8d7db5ef5842f75ee8c5a0bada7c079b5ad20624
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:08271ee187c501b69765d1517bccb93a32b97973871b3ac523e7a99327868d8c
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:1ece1c4bb31cb6566d6ff25ec276e3977571a8af3c7880fa0289173c5178d580
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:04b9472d9855580824711b12c4ea924019850aa7cb7d1e8c627033510aa5418e
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:ebdb5a16ffbb6b2fb55ab60b9fab65df48c0bdccb66373559ea9447bacab1a25
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:c9048f2d9df9643369a8a2f0d3df8c1041dc71ba2f27d952a688e7ca27e37038
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:554ee4f8c078c501ecef05cc101afb77ba256036b21fe046989bd0f83bf5632b
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:8ffff0d00b9aa338ffc4ce92aaf2e68049f7ef5b410a50957dc40f20d570e7b3
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:cdffec58defb54aeb664162485409e3ad28a210f4ae928b8c6cbeedbd717e3bc
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:1cdcfdbdc9027ded0923b1ef2fef842774d30ffe94349395e958d4663c20c8bf
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:dca71110feade278ef71c80db90da569ab5265427b9ccb1d40a92bacbfce4866
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:9b37370d657f727800393fccc44088d179cb4b56e14581babfe136fe4aa53692
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:354d640a65c85f5edbf7eacabb41a034c3a8791f0dde0499f7cfdb8ac86c8b5f
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-11x21+2.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:bfe86f21d3778556d34151f2f06dcd54725804d23b797c9249eed192fd498024
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:be922a8d500b6b6ddc85c45ec3f093a93b37530feb63c743192c28b8cc6ceba4
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:541e4e830c92eb7a38a3f6c295de5ce04810dd37cb421e833faec833e50a90f5
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png
-  runtime: null
-  scope: project
-  owners:
-  - ogulcancelik/herdr
-  active_owner: ogulcancelik/herdr
-  content_hash: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance
@@ -4793,7 +4534,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:dcebc9bbb93860e454ad00f8fa13094dd057832c242035494fe49ae6b4ff419d
+  content_hash: sha256:e8c396ac8f0f95ffda2f880e7f2d87ddbe52d7a3ea0db61d94bcc07a1a6be365
 - kind: project-relative
   target: agents
   value: .agents/skills/cognitive-rhythm-writing
@@ -4929,6 +4670,330 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:b9cd30a2ea2d760b48b8ae929d7c8e75131814505fbee6fc049d364706e73b18
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:a6cacacdfc1722c5b19dde819d590180c7b5bd06d0cdeb1a0e27fb3d86443081
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:976297d3be8c886a2e1b272b21c3787d468ed3ca55cccd34642d6b7ea1324646
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:6f88ccff99f49fb39715922d3dc7f8caead0d5124e98de4acafcbd35a02079a7
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:c4d2dc32c2380fbac9f4dafbe82a797b631193f1caf49ae834e1b7e6b3b03ae3
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:ecef1b0819039ae42ef81693ce36bfdbc656677bbd2b47378ae4ce8490c167eb
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:446804ab6101272fc55fea43e4bb1a49cfb94efb410e592d31fbebd43c2c6cd2
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:282eb8a3622659c73f16d914148de88b05ef8226832a877e73474f3096a3a927
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:c1d93b902c02520a347ad3256708c192291af5ed1f55998e537271cc0385a17f
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:448e4037e2b90591e31b0bab91d83e28a89cca6f48a59740231954a12a6b0234
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:3ed1a062ed64aa7a9f028c754404f5fe7fda8be267b57af273a358ad075c97f5
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:320fd524855e5b9472743de71390c4b4dde54d39c6c8a0cb5c7f32935a601eed
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:b19d798ba26a973784e4e9a618c5eec8f5224240743f6c1e705aa5add029e631
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:b673237cc25425fd64974f63e49bf526f90b28c41bd4f22159ff677109be679c
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:7ba36ba0f771f11b1d252a2175dd9d1aa6295196caf5a4cd3f69981aecd4caac
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:f1ddb2a2d92f3c7763dd2ec84fc66ea73e094c556177c33f48b0e41c96dc51de
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:ad6fd453b201e0a51ba882753d4024b8b84f9d45aa131e2e2d83f37cfdcf1e7e
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:063c32ee48c624984d882a1b92da03c40e52f67f92fcf1ff0c77ba615d1e0945
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:ff9422e0e47c7ff7d7cc2d06035d0f2cd952ac76a0c4eb8b8b42dd7289045cc9
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:5f89dddf4c1a8b847a6b414579fdd43b9fcb075bcf42d7b1339362ad71aac831
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:fec0c945b9429da21b888fca8d7db5ef5842f75ee8c5a0bada7c079b5ad20624
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:08271ee187c501b69765d1517bccb93a32b97973871b3ac523e7a99327868d8c
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:1ece1c4bb31cb6566d6ff25ec276e3977571a8af3c7880fa0289173c5178d580
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:04b9472d9855580824711b12c4ea924019850aa7cb7d1e8c627033510aa5418e
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:ebdb5a16ffbb6b2fb55ab60b9fab65df48c0bdccb66373559ea9447bacab1a25
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:c9048f2d9df9643369a8a2f0d3df8c1041dc71ba2f27d952a688e7ca27e37038
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:554ee4f8c078c501ecef05cc101afb77ba256036b21fe046989bd0f83bf5632b
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:8ffff0d00b9aa338ffc4ce92aaf2e68049f7ef5b410a50957dc40f20d570e7b3
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:cdffec58defb54aeb664162485409e3ad28a210f4ae928b8c6cbeedbd717e3bc
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:1cdcfdbdc9027ded0923b1ef2fef842774d30ffe94349395e958d4663c20c8bf
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:dca71110feade278ef71c80db90da569ab5265427b9ccb1d40a92bacbfce4866
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:9b37370d657f727800393fccc44088d179cb4b56e14581babfe136fe4aa53692
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:354d640a65c85f5edbf7eacabb41a034c3a8791f0dde0499f7cfdb8ac86c8b5f
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:bfe86f21d3778556d34151f2f06dcd54725804d23b797c9249eed192fd498024
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:be922a8d500b6b6ddc85c45ec3f093a93b37530feb63c743192c28b8cc6ceba4
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:541e4e830c92eb7a38a3f6c295de5ce04810dd37cb421e833faec833e50a90f5
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
 - kind: project-relative
   target: agents
   value: .agents/skills/hono-best-practices
@@ -5227,7 +5292,7 @@ local_deployed_file_hashes:
   .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
   .agents/skills/code-search/SKILL.md: sha256:daa06d50c3611eb1aed8fb01c31f75447c52225304b386920cb715d5ae5f81b2
   .agents/skills/code-search/references/funnel-playbook.md: sha256:470109bbc4c9ba3a287dbf544e302912f07bc99a24534efadf231cd2015308fa
-  .agents/skills/coding-style/SKILL.md: sha256:dcebc9bbb93860e454ad00f8fa13094dd057832c242035494fe49ae6b4ff419d
+  .agents/skills/coding-style/SKILL.md: sha256:e8c396ac8f0f95ffda2f880e7f2d87ddbe52d7a3ea0db61d94bcc07a1a6be365
   .agents/skills/cognitive-rhythm-writing/SKILL.md: sha256:35d6448e9cd8d1abc749ac89364b130ac676058a75f42db22d578e3340f312a4
   .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
   .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
