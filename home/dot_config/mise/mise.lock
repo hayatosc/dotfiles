@@ -4189,17 +4189,7 @@ checksum = "sha256:8935cbe2916b0b1cb724aaa81fdda29e2ec20b2ea76f1d2708fb788e47acf
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.78/copilot-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/500655354"
 
-[tools.copilot."platforms.linux-x64-baseline"]
-checksum = "sha256:8935cbe2916b0b1cb724aaa81fdda29e2ec20b2ea76f1d2708fb788e47acfad9"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.78/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/500655354"
-
 [tools.copilot."platforms.linux-x64-musl"]
-checksum = "sha256:8935cbe2916b0b1cb724aaa81fdda29e2ec20b2ea76f1d2708fb788e47acfad9"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.78/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/500655354"
-
-[tools.copilot."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:8935cbe2916b0b1cb724aaa81fdda29e2ec20b2ea76f1d2708fb788e47acfad9"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.78/copilot-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/500655354"
@@ -4214,17 +4204,7 @@ checksum = "sha256:511777831011ff3c20becd66b996657ec6dc1b7e4faa6c30bd60cbac4078b
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.78/copilot-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/500655290"
 
-[tools.copilot."platforms.macos-x64-baseline"]
-checksum = "sha256:511777831011ff3c20becd66b996657ec6dc1b7e4faa6c30bd60cbac4078b7a1"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.78/copilot-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/500655290"
-
 [tools.copilot."platforms.windows-x64"]
-checksum = "sha256:fd54bb8d245b05f04dfaff68d6259604e6717add5949f41f83f7f4bf2bc6fbe5"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.78/copilot-win32-x64.zip"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/500655288"
-
-[tools.copilot."platforms.windows-x64-baseline"]
 checksum = "sha256:fd54bb8d245b05f04dfaff68d6259604e6717add5949f41f83f7f4bf2bc6fbe5"
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.78/copilot-win32-x64.zip"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/500655288"
