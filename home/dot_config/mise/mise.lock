@@ -3639,7 +3639,6 @@ conda_deps = [
     "xorg-libxfixes-6.0.2-he30d5cf_0",
     "xorg-libxext-1.3.7-he30d5cf_0",
     "xorg-libxi-1.8.3-he30d5cf_0",
-    "wayland-1.26.0-h4f8a99f_0",
     "libgl-1.7.0-hd24410f_3",
     "libglx-1.7.0-hd24410f_3",
     "libglvnd-1.7.0-hd24410f_3",
@@ -3652,6 +3651,7 @@ conda_deps = [
     "graphite2-1.3.15-h7ac5ae9_1",
     "pixman-0.46.4-h7ac5ae9_3",
     "libffi-3.5.2-h376a255_0",
+    "wayland-1.26.0-h4f8a99f_0",
     "libjpeg-turbo-3.2.0-he30d5cf_1",
     "libtiff-4.7.2-hdb009f0_0",
     "libflac-1.5.0-he9c94f4_1",
@@ -3772,7 +3772,6 @@ conda_deps = [
     "xorg-libxfixes-6.0.2-he30d5cf_0",
     "xorg-libxext-1.3.7-he30d5cf_0",
     "xorg-libxi-1.8.3-he30d5cf_0",
-    "wayland-1.26.0-h4f8a99f_0",
     "libgl-1.7.0-hd24410f_3",
     "libglx-1.7.0-hd24410f_3",
     "libglvnd-1.7.0-hd24410f_3",
@@ -3785,6 +3784,7 @@ conda_deps = [
     "graphite2-1.3.15-h7ac5ae9_1",
     "pixman-0.46.4-h7ac5ae9_3",
     "libffi-3.5.2-h376a255_0",
+    "wayland-1.26.0-h4f8a99f_0",
     "libjpeg-turbo-3.2.0-he30d5cf_1",
     "libtiff-4.7.2-hdb009f0_0",
     "libflac-1.5.0-he9c94f4_1",
@@ -4511,17 +4511,7 @@ checksum = "sha256:b7e2f57cf3a0e28899a1745356b5f64d33ec2cb91784d387aff5f34fdf02d
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.27.0/octoscope_0.27.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/499760853"
 
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-baseline"]
-checksum = "sha256:b7e2f57cf3a0e28899a1745356b5f64d33ec2cb91784d387aff5f34fdf02d7e1"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.27.0/octoscope_0.27.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/499760853"
-
 [tools."github:gfazioli/octoscope"."platforms.linux-x64-musl"]
-checksum = "sha256:b7e2f57cf3a0e28899a1745356b5f64d33ec2cb91784d387aff5f34fdf02d7e1"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.27.0/octoscope_0.27.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/499760853"
-
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:b7e2f57cf3a0e28899a1745356b5f64d33ec2cb91784d387aff5f34fdf02d7e1"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.27.0/octoscope_0.27.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/499760853"
@@ -4536,17 +4526,7 @@ checksum = "sha256:63bca9a691224912a0dcff909415b16e184f819088564e5ac01a53f5dc7fa
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.27.0/octoscope_0.27.0_macOS_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/499760859"
 
-[tools."github:gfazioli/octoscope"."platforms.macos-x64-baseline"]
-checksum = "sha256:63bca9a691224912a0dcff909415b16e184f819088564e5ac01a53f5dc7fabc5"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.27.0/octoscope_0.27.0_macOS_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/499760859"
-
 [tools."github:gfazioli/octoscope"."platforms.windows-x64"]
-checksum = "sha256:7821612a05c7d4b7fc966e5c4f764d03933a84e3fdf7d4bf6ad6bf5834aee36c"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.27.0/octoscope_0.27.0_Windows_x86_64.zip"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/499760850"
-
-[tools."github:gfazioli/octoscope"."platforms.windows-x64-baseline"]
 checksum = "sha256:7821612a05c7d4b7fc966e5c4f764d03933a84e3fdf7d4bf6ad6bf5834aee36c"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.27.0/octoscope_0.27.0_Windows_x86_64.zip"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/499760850"
