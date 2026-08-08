@@ -4511,17 +4511,7 @@ checksum = "sha256:fc8acc8c58f1ab603194bde0225f4b6c981765909a5b0b5820215bb7b9e9b
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.28.0/octoscope_0.28.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/502573748"
 
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-baseline"]
-checksum = "sha256:fc8acc8c58f1ab603194bde0225f4b6c981765909a5b0b5820215bb7b9e9b1a6"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.28.0/octoscope_0.28.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/502573748"
-
 [tools."github:gfazioli/octoscope"."platforms.linux-x64-musl"]
-checksum = "sha256:fc8acc8c58f1ab603194bde0225f4b6c981765909a5b0b5820215bb7b9e9b1a6"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.28.0/octoscope_0.28.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/502573748"
-
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:fc8acc8c58f1ab603194bde0225f4b6c981765909a5b0b5820215bb7b9e9b1a6"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.28.0/octoscope_0.28.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/502573748"
@@ -4536,17 +4526,7 @@ checksum = "sha256:c3d04fdc7ef01520d6be9d0bc88d13c23d1580e4b7ca44b46cdf00f40a221
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.28.0/octoscope_0.28.0_macOS_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/502573745"
 
-[tools."github:gfazioli/octoscope"."platforms.macos-x64-baseline"]
-checksum = "sha256:c3d04fdc7ef01520d6be9d0bc88d13c23d1580e4b7ca44b46cdf00f40a221bfb"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.28.0/octoscope_0.28.0_macOS_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/502573745"
-
 [tools."github:gfazioli/octoscope"."platforms.windows-x64"]
-checksum = "sha256:3a96d1c5a04a10eb061d15197fadca50c8779301fe5b3dce7804be73c07d2755"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.28.0/octoscope_0.28.0_Windows_x86_64.zip"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/502573764"
-
-[tools."github:gfazioli/octoscope"."platforms.windows-x64-baseline"]
 checksum = "sha256:3a96d1c5a04a10eb061d15197fadca50c8779301fe5b3dce7804be73c07d2755"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.28.0/octoscope_0.28.0_Windows_x86_64.zip"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/502573764"
