@@ -500,9 +500,9 @@ checksum = "sha256:76efa6cc9d7e6f5ee3bbca0939f64054af2bdfb3c3632531f8e633cf6c2ea
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/mpg123-1.32.9-h2b27223_0.conda"
 checksum = "sha256:ba1db90daae7e13aa3974a298ad4f215acb1202505e0b945e76178cb5af6d76e"
 
-[conda-packages.linux-arm64."ncurses-6.6-hf8d1292_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ncurses-6.6-hf8d1292_0.conda"
-checksum = "sha256:369db85c5cd8d99dde364ce70725d76511d9c8199e5b820c740414091bf5bcca"
+[conda-packages.linux-arm64."ncurses-6.6-h2b6f883_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ncurses-6.6-h2b6f883_1.conda"
+checksum = "sha256:d69a04914139627f0a6bfd19412d6c7f1e37edc896af84a6011e07e8bc1e69fa"
 
 [conda-packages.linux-arm64."openh264-2.6.0-h663e864_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/openh264-2.6.0-h663e864_1.conda"
@@ -528,9 +528,9 @@ checksum = "sha256:04df2cee95feba440387f33f878e9f655521e69f4be33a0cd637f07d3d81f
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pixman-0.46.4-h7ac5ae9_3.conda"
 checksum = "sha256:ed718d35c744ceef33063b5686f27b4b8d30d4065485e24efafb248658ee83b5"
 
-[conda-packages.linux-arm64."pkg-config-0.29.2-he30d5cf_1010"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pkg-config-0.29.2-he30d5cf_1010.conda"
-checksum = "sha256:62532872cbacda9dce6910ca5035a4046bc867bfd14d17160286b3942522aa2e"
+[conda-packages.linux-arm64."pkg-config-0.29.2-h36a561e_1011"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pkg-config-0.29.2-h36a561e_1011.conda"
+checksum = "sha256:91cf73940417d96fe2c0dc8b4681cdf0e877a12a6eab1cf2ecba1a72699de075"
 
 [conda-packages.linux-arm64."pthread-stubs-0.4-he30d5cf_1003"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pthread-stubs-0.4-he30d5cf_1003.conda"
@@ -1176,9 +1176,9 @@ checksum = "sha256:76efa6cc9d7e6f5ee3bbca0939f64054af2bdfb3c3632531f8e633cf6c2ea
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/mpg123-1.32.9-h2b27223_0.conda"
 checksum = "sha256:ba1db90daae7e13aa3974a298ad4f215acb1202505e0b945e76178cb5af6d76e"
 
-[conda-packages.linux-arm64-musl."ncurses-6.6-hf8d1292_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ncurses-6.6-hf8d1292_0.conda"
-checksum = "sha256:369db85c5cd8d99dde364ce70725d76511d9c8199e5b820c740414091bf5bcca"
+[conda-packages.linux-arm64-musl."ncurses-6.6-h2b6f883_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ncurses-6.6-h2b6f883_1.conda"
+checksum = "sha256:d69a04914139627f0a6bfd19412d6c7f1e37edc896af84a6011e07e8bc1e69fa"
 
 [conda-packages.linux-arm64-musl."openh264-2.6.0-h663e864_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/openh264-2.6.0-h663e864_1.conda"
@@ -1204,9 +1204,9 @@ checksum = "sha256:04df2cee95feba440387f33f878e9f655521e69f4be33a0cd637f07d3d81f
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pixman-0.46.4-h7ac5ae9_3.conda"
 checksum = "sha256:ed718d35c744ceef33063b5686f27b4b8d30d4065485e24efafb248658ee83b5"
 
-[conda-packages.linux-arm64-musl."pkg-config-0.29.2-he30d5cf_1010"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pkg-config-0.29.2-he30d5cf_1010.conda"
-checksum = "sha256:62532872cbacda9dce6910ca5035a4046bc867bfd14d17160286b3942522aa2e"
+[conda-packages.linux-arm64-musl."pkg-config-0.29.2-h36a561e_1011"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pkg-config-0.29.2-h36a561e_1011.conda"
+checksum = "sha256:91cf73940417d96fe2c0dc8b4681cdf0e877a12a6eab1cf2ecba1a72699de075"
 
 [conda-packages.linux-arm64-musl."pthread-stubs-0.4-he30d5cf_1003"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pthread-stubs-0.4-he30d5cf_1003.conda"
@@ -1880,9 +1880,9 @@ checksum = "sha256:eb8a0db0aa570124f7d2a93d7c7f596e3390df5e047818d873baad32985fc
 url = "https://conda.anaconda.org/conda-forge/linux-64/mpg123-1.32.9-h8142553_0.conda"
 checksum = "sha256:72393d525761389d0225534d20f4cd917e255704f337f84939b74464d9bc6acb"
 
-[conda-packages.linux-x64."ncurses-6.6-hdb14827_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.6-hdb14827_0.conda"
-checksum = "sha256:fc89f74bbe362fb29fa3c037697a89bec140b346a2469a90f7936d1d7ea4d8a3"
+[conda-packages.linux-x64."ncurses-6.6-hdb14827_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.6-hdb14827_1.conda"
+checksum = "sha256:5d46557214ed184381dafe835b7c94a474a1c3b307a08a250b1ea4779b44ffb3"
 
 [conda-packages.linux-x64."ocl-icd-2.3.4-hb03c661_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/ocl-icd-2.3.4-hb03c661_1.conda"
@@ -1916,9 +1916,9 @@ checksum = "sha256:5e6f7d161356fefd981948bea5139c5aa0436767751a6930cb1ca801ebb11
 url = "https://conda.anaconda.org/conda-forge/linux-64/pixman-0.46.4-h54a6638_3.conda"
 checksum = "sha256:829d8288764282de5a9f7b9169acb75cc7dc0b6c3fe2535cfe87dea3436bbc5d"
 
-[conda-packages.linux-x64."pkg-config-0.29.2-hb03c661_1010"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/pkg-config-0.29.2-hb03c661_1010.conda"
-checksum = "sha256:74c49c3e903a5891b04b2c7cd8594e2d14a8c19b4911a6fb221ab9e5c64d1093"
+[conda-packages.linux-x64."pkg-config-0.29.2-h7c397b8_1011"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/pkg-config-0.29.2-h7c397b8_1011.conda"
+checksum = "sha256:ff8d0023722ef5600850074a9bbf418be4d2ec78edbf4d5db45d9f0331f248e4"
 
 [conda-packages.linux-x64."pthread-stubs-0.4-hb03c661_1003"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/pthread-stubs-0.4-hb03c661_1003.conda"
@@ -2596,9 +2596,9 @@ checksum = "sha256:eb8a0db0aa570124f7d2a93d7c7f596e3390df5e047818d873baad32985fc
 url = "https://conda.anaconda.org/conda-forge/linux-64/mpg123-1.32.9-h8142553_0.conda"
 checksum = "sha256:72393d525761389d0225534d20f4cd917e255704f337f84939b74464d9bc6acb"
 
-[conda-packages.linux-x64-musl."ncurses-6.6-hdb14827_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.6-hdb14827_0.conda"
-checksum = "sha256:fc89f74bbe362fb29fa3c037697a89bec140b346a2469a90f7936d1d7ea4d8a3"
+[conda-packages.linux-x64-musl."ncurses-6.6-hdb14827_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.6-hdb14827_1.conda"
+checksum = "sha256:5d46557214ed184381dafe835b7c94a474a1c3b307a08a250b1ea4779b44ffb3"
 
 [conda-packages.linux-x64-musl."ocl-icd-2.3.4-hb03c661_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/ocl-icd-2.3.4-hb03c661_1.conda"
@@ -2632,9 +2632,9 @@ checksum = "sha256:5e6f7d161356fefd981948bea5139c5aa0436767751a6930cb1ca801ebb11
 url = "https://conda.anaconda.org/conda-forge/linux-64/pixman-0.46.4-h54a6638_3.conda"
 checksum = "sha256:829d8288764282de5a9f7b9169acb75cc7dc0b6c3fe2535cfe87dea3436bbc5d"
 
-[conda-packages.linux-x64-musl."pkg-config-0.29.2-hb03c661_1010"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/pkg-config-0.29.2-hb03c661_1010.conda"
-checksum = "sha256:74c49c3e903a5891b04b2c7cd8594e2d14a8c19b4911a6fb221ab9e5c64d1093"
+[conda-packages.linux-x64-musl."pkg-config-0.29.2-h7c397b8_1011"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/pkg-config-0.29.2-h7c397b8_1011.conda"
+checksum = "sha256:ff8d0023722ef5600850074a9bbf418be4d2ec78edbf4d5db45d9f0331f248e4"
 
 [conda-packages.linux-x64-musl."pthread-stubs-0.4-hb03c661_1003"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/pthread-stubs-0.4-hb03c661_1003.conda"
@@ -4794,7 +4794,7 @@ conda_deps = [
     "libxml2-devel-2.15.3-h869d058_0",
     "pango-1.58.2-h8547ced_0",
     "libharfbuzz-14.3.0-h3a99ef3_0",
-    "pkg-config-0.29.2-he30d5cf_1010",
+    "pkg-config-0.29.2-h36a561e_1011",
     "libgfortran-16.1.0-he9431aa_1",
     "libgfortran5-16.1.0-h47adacf_1",
     "libexpat-2.8.1-hfae3067_1",
@@ -4859,7 +4859,7 @@ conda_deps = [
     "libedit-3.1.20250104-pl5321h976ea20_0",
     "keyutils-1.6.3-h86ecc28_0",
     "openssl-3.6.3-h546c87b_1",
-    "ncurses-6.6-hf8d1292_0",
+    "ncurses-6.6-h2b6f883_1",
     "xkeyboard-config-2.48-h80f16a2_0",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
@@ -4916,7 +4916,7 @@ conda_deps = [
     "libxml2-devel-2.15.3-h869d058_0",
     "pango-1.58.2-h8547ced_0",
     "libharfbuzz-14.3.0-h3a99ef3_0",
-    "pkg-config-0.29.2-he30d5cf_1010",
+    "pkg-config-0.29.2-h36a561e_1011",
     "libgfortran-16.1.0-he9431aa_1",
     "libgfortran5-16.1.0-h47adacf_1",
     "libexpat-2.8.1-hfae3067_1",
@@ -4981,7 +4981,7 @@ conda_deps = [
     "libedit-3.1.20250104-pl5321h976ea20_0",
     "keyutils-1.6.3-h86ecc28_0",
     "openssl-3.6.3-h546c87b_1",
-    "ncurses-6.6-hf8d1292_0",
+    "ncurses-6.6-h2b6f883_1",
     "xkeyboard-config-2.48-h80f16a2_0",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-h57736b2_3",
@@ -5037,7 +5037,7 @@ conda_deps = [
     "libxml2-devel-2.15.3-h49c6c72_0",
     "pango-1.58.2-hda50119_0",
     "libharfbuzz-14.3.0-h17a8019_0",
-    "pkg-config-0.29.2-hb03c661_1010",
+    "pkg-config-0.29.2-h7c397b8_1011",
     "libgfortran-16.1.0-h69a702a_1",
     "libgfortran5-16.1.0-h79bb938_1",
     "libexpat-2.8.1-hecca717_1",
@@ -5104,7 +5104,7 @@ conda_deps = [
     "keyutils-1.6.3-hb9d3cd8_0",
     "xkeyboard-config-2.48-h280c20c_0",
     "openssl-3.6.3-h35e630c_1",
-    "ncurses-6.6-hdb14827_0",
+    "ncurses-6.6-hdb14827_1",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
     "libpciaccess-0.19-hb03c661_1",
@@ -5159,7 +5159,7 @@ conda_deps = [
     "libxml2-devel-2.15.3-h49c6c72_0",
     "pango-1.58.2-hda50119_0",
     "libharfbuzz-14.3.0-h17a8019_0",
-    "pkg-config-0.29.2-hb03c661_1010",
+    "pkg-config-0.29.2-h7c397b8_1011",
     "libgfortran-16.1.0-h69a702a_1",
     "libgfortran5-16.1.0-h79bb938_1",
     "libexpat-2.8.1-hecca717_1",
@@ -5226,7 +5226,7 @@ conda_deps = [
     "keyutils-1.6.3-hb9d3cd8_0",
     "xkeyboard-config-2.48-h280c20c_0",
     "openssl-3.6.3-h35e630c_1",
-    "ncurses-6.6-hdb14827_0",
+    "ncurses-6.6-hdb14827_1",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
     "libpciaccess-0.19-hb03c661_1",
@@ -5370,43 +5370,43 @@ version = "5.3.0"
 backend = "npm:typescript-language-server"
 
 [[tools.opencode]]
-version = "1.18.14"
+version = "1.18.15"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:27ede7aa2080002459d8c970a40016bbef49cd13bb467302777da67467f1602d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.14/opencode-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/503045908"
+checksum = "sha256:500611819ff88916b185649990505a9be76ad13ca5bb4b9323e5abdd39b1c6fb"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/504765741"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:3bdf6a9e66a4008780e3b00a3040c4d958d44f85ba64722ff8470075a9812557"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.14/opencode-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/503045933"
+checksum = "sha256:134d46c15c184ed9d5fce7c93423b4040dcdc8547f23fc425e6a7b51e166e18a"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/504765653"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:f23980ba2aebfbfa53948e55e213d3f2a53740fd7326553828e89ad27e970572"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.14/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/503046045"
+checksum = "sha256:d842e0e8c622c672a481b7dc6f0329009b64db96b2ba6041e56f4f93f0293b1c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/504765645"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:2ef42702c08c1f9baedb5f4618aaa6d8fd9ac09614e577df06731e7f3da3ba84"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.14/opencode-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/503045905"
+checksum = "sha256:229db770e17f4e493bff8e516b2f191f4ea3430b35f5e6f458c94f4ce7edc01f"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/504765636"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:ad8125bb649086eb9210a87bbd27ac453a526e2432aebd4d3c9853e2d42e3291"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.14/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/503045781"
+checksum = "sha256:bd60b57cb9fe0494a5352c807424d36d6d7853cf6dbddb97065c7ccd3c5d391c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/504765572"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:78b2e99a9094ce7a4fb38416990d2b9b23e5f99a9992a37b04fb861f24c48925"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.14/opencode-darwin-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/503045779"
+checksum = "sha256:e97e8185e7b7942f6e14f51b8727dbe023b54772e075bc16fead813680455d17"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-darwin-x64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/504765570"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:437501f14cd35655e97b1c6bb5cb8f4128172eaeaaf8de55750537b0f1c989e0"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.18.14/opencode-windows-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/503049596"
+checksum = "sha256:a80785874978ccbb93b7bfe4345f5aed41696f5ae76c109cd6dbbb934dbe795d"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.15/opencode-windows-x64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/504769917"
 
 [[tools.pnpm]]
 version = "11.20.0"
