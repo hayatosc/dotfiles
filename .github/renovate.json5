@@ -28,4 +28,28 @@
       automerge: true,
     },
   ],
+  customManagers: [
+    {
+      customType: "regex",
+      fileMatch: ["^home/dot_config/mise/config\\.toml$"],
+      matchStrings: [
+        "moonbit\\s*=\\s*\"(?<currentValue>[^\"]+)\"",
+      ],
+      depNameTemplate: "moonbit",
+      datasourceTemplate: "github-releases",
+      packageNameTemplate: "moonbitlang/moonbit-compiler",
+      extractVersionTemplate: "^v?(?<version>.+)$",
+    },
+    {
+      customType: "regex",
+      fileMatch: ["^home/dot_config/mise/config\\.toml$"],
+      matchStrings: [
+        "cursor-agent\\s*=\\s*\"(?<currentValue>[^\"]+)\"",
+      ],
+      depNameTemplate: "cursor-agent",
+      datasourceTemplate: "html",
+      packageNameTemplate: "https://cursor.com/install",
+      extractVersionTemplate: "downloads\\.cursor\\.com/lab/(?<version>[^/]+)/",
+    },
+  ],
 }
