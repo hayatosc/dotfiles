@@ -18,6 +18,12 @@ key = "prefix+g"
 type = "pane"
 command = "lazygit"
 
+[[keys.command]]
+key = "prefix+f"
+type = "plugin_action"
+command = "herdr-navigator.open"
+description = "jump to anything"
+
 [ui.sound]
 enabled = false
 
