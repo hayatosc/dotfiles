@@ -31,7 +31,7 @@
   customManagers: [
     {
       customType: "regex",
-      fileMatch: ["^home/dot_config/mise/config\\.toml$"],
+      managerFilePatterns: ["^home/dot_config/mise/config\\.toml$"],
       matchStrings: [
         "moonbit\\s*=\\s*\"(?<currentValue>[^\"]+)\"",
       ],
@@ -42,7 +42,7 @@
     },
     {
       customType: "regex",
-      fileMatch: ["^home/dot_config/mise/config\\.toml$"],
+      managerFilePatterns: ["^home/dot_config/mise/config\\.toml$"],
       matchStrings: [
         "cursor-agent\\s*=\\s*\"(?<currentValue>[^\"]+)\"",
       ],
