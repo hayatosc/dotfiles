@@ -12,7 +12,14 @@ fi
 # login shells that never reach .zshrc) and via a precmd hook registered *after*
 # mise's, since mise re-prepends its dirs on every prompt.
 if [ -d "$HOME/.local/bin" ]; then
-    _mise_local_bin_first() { path=("$HOME/.local/bin" ${path:#$HOME/.local/bin}) }
+    _mise_local_bin_first() {
+        local mise_py=(${(M)path:#*mise/installs/python*})
+        if (( ${#mise_py} )); then
+            path=("$HOME/.local/bin" $mise_py ${path:#$HOME/.local/bin})
+        else
+            path=("$HOME/.local/bin" ${path:#$HOME/.local/bin})
+        fi
+    }
     _mise_local_bin_first
     autoload -Uz add-zsh-hook && add-zsh-hook precmd _mise_local_bin_first
 fi

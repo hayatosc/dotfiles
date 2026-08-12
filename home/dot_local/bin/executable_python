@@ -19,8 +19,10 @@
 
 python_cmd="$(basename "$0")"
 
-# Remove ~/.local/bin from PATH to avoid infinite recursion when calling the underlying python
+# Remove ~/.local/bin and non-Python tool dirs (e.g. imagemagick) from PATH to avoid infinite recursion
+# and prevent spurious bundled Python binaries from being picked up as system Python.
 PATH=$(echo "$PATH" | sed -e "s|:$HOME/.local/bin:|:|g" -e "s|^$HOME/.local/bin:||" -e "s|:$HOME/.local/bin$||")
+PATH=$(echo "$PATH" | sed -e "s|:[^:]*/imagemagick/[^:]*/bin:|:|g" -e "s|^[^:]*/imagemagick/[^:]*/bin:||" -e "s|:[^:]*/imagemagick/[^:]*/bin$||")
 export PATH
 
 if [ "${PYTHON_UV:-1}" = "0" ] || ! command -v uv >/dev/null 2>&1; then
