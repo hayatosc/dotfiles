@@ -32,3 +32,7 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(git wt --init zsh)"
 
+# Windowsのデフォルトブラウザで開くための設定 (Windows default browser setup for WSL)
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
+  export BROWSER='/mnt/c/Windows/System32/rundll32.exe url.dll,FileProtocolHandler'
+fi

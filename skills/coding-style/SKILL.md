@@ -1,93 +1,64 @@
 ---
 name: coding-style
-description: >
-  Coding style guidelines, design principles, and code change discipline.
-  Covers The Ladder (dependency decision framework), YAGNI, minimal code
-  philosophy, code change rules (touch only what's needed, match existing
-  style), error handling strategy, and non-negotiable safety guards
-  (trust-boundary validation, data-loss handling, security, accessibility).
-  Loaded automatically before any code writing task via AGENTS.md rule.
-  Use whenever the user asks to write code, review code, refactor, add
-  a feature, fix a bug, or plan an implementation — even if they don't
-  mention "coding style" explicitly.
+description: Language-agnostic coding style, design principles, minimal code philosophy, The Ladder, code change rules, and safety guards. Loaded before writing or reviewing code.
 ---
 
 # Coding Style
 
-Lazy means efficient, not careless. The best code is the code never written.
-
-This skill sets language-agnostic policy. Language-specific skills (e.g., typescript-best-practices, golang-best-practices) provide idiomatic detail within the same philosophy. When a language skill's recommendation conflicts with this policy, this skill takes precedence — except for language-idiomatic patterns (e.g., Go's explicit error propagation), where the language skill's judgment is respected.
+Language-agnostic policy. Language skills provide idiomatic detail within this philosophy; this policy takes precedence except for language-idiomatic conventions (e.g., Go explicit error handling).
 
 ## The Ladder
 
 Before writing any code, stop at the first rung that holds:
 
-1. **Does this need to exist at all?** — Speculative need = skip it, say so in one line. (YAGNI) This holds even when the user explicitly asks for speculative infrastructure "for later": ship the concrete part, and push back on the speculative part in one line instead of building a minimal version of it.
-2. **Stdlib does it?** — Use it.
-3. **Native platform feature covers it?** — `<input type="date">` over a picker lib, CSS over JS, DB constraint over app code.
-4. **Already-installed dependency solves it?** — Use it. Never add a new one for what a few lines can do.
-5. **Can it be one line?** — One line.
-6. **Only then:** — the minimum code that works.
+1. **Needs to exist?** — Skip speculative needs (YAGNI). If asked for future-proofing, ship concrete parts and push back on speculative ones in one line.
+2. **Stdlib covers it?** — Use standard library.
+3. **Native platform feature?** — e.g. HTML5 inputs over picker libs, CSS over JS, DB constraints over app code.
+4. **Existing dependency?** — Use installed packages; never add dependencies for what a few lines can do.
+5. **One-liner?** — Keep it one line.
+6. **Otherwise** — Minimum working code.
 
-Two rungs work → take the higher one and move on.
-The first lazy solution that works is the right one.
-
-When choosing between libraries, research before committing. Prefer the standard library; if an external dependency is unavoidable, verify it's maintained, small, and doesn't duplicate what's already installed.
+Prefer higher rungs. Verify external dependencies are maintained, lightweight, and non-redundant.
 
 ## Design
 
-### Reuse and leverage existing dependencies
+### Reuse & Existing Dependencies
+- Search codebase before creating new utilities/types; reuse existing code.
+- Check installed library documentation/types before writing custom implementations or adding packages.
 
-- Before writing any new function, type, or utility, search the existing codebase for similar implementations. Reuse them via import / source / require. Do not re-implement.
-- Lean on the dependencies already in the project before writing your own implementation or adding packages. Do not assume a library lacks a capability without checking its documentation and types.
-- Prefer established, well-maintained libraries when they reduce overall complexity or improve reliability. Do not reimplement common functionality without a clear reason.
+### Modularity & Layered Growth
+- Grow in working layers: start with the smallest working end-to-end version.
+- Separate concerns cleanly.
+- Build for the long term; reject temporary stopgaps.
 
-### Layered growth and modularity
+### Keep It Small
+- Simplest working implementation; avoid premature abstractions (no single-implementation interfaces, single-product factories, or static configs).
+- Extract abstractions only when immediate consumers exist.
+- No unused boilerplate, scaffolding, or error handling for impossible/internal states.
+- Shortest working diff wins. Boring over clever.
+- Between equal stdlib options, pick the robust one for edge cases.
 
-- Grow the system in layers. Start from the smallest version that works end-to-end, and add each new capability on top of a product that already works. Never trade a working product for unfinished complexity.
-- Keep components modular and concerns clearly separated.
-- Make architectural decisions for the long term. Do not accept a stopgap that only works for now and is meant to be replaced later.
-
-### Keep it small
-
-- Choose the simplest implementation that fully meets current requirements. Avoid speculative abstractions, configuration, and indirection.
-- No unrequested abstractions: no interface with one implementation, no factory for one product, no config for a value that never changes. During refactoring, extract an interface or function only when there is a concrete, immediate consumer — not for hypothetical future use.
-- No boilerplate, no scaffolding "for later" — later can scaffold for itself.
-- No error handling for impossible or internal-only scenarios.
-- If a solution is 200 lines but could be 50, rewrite it.
-- Deletion over addition. Boring over clever — clever is what someone decodes at 3am.
-- Minimize new files. Shortest working diff wins. (In large projects, follow the existing module structure rather than forcing everything into one file.)
-- Two stdlib options, same size? Take the one that's correct on edge cases. Lazy means writing less code, not picking the flimsier algorithm.
-
-### No backward compatibility by default
-
-Backward compatibility, compatibility layers, aliases, silent fallbacks, and ad-hoc alternate paths are not added unless explicitly requested. When making a breaking change, erase all historical traces cleanly — modify the codebase as if the new way was always the way. The goal is a codebase that reads as if the old design never existed, not one that carries archaeological layers of past decisions.
-
-Fail fast: if something cannot safely continue, raise a clear error. Do not silently swallow failures or provide default-value fallbacks (e.g., `os.getenv("KEY")` with a default instead of erroring on a missing required value).
+### No Backward Compatibility by Default
+- No compatibility layers, aliases, or silent fallbacks unless requested. Erase old code completely on breaking changes.
+- Fail fast: raise explicit errors on missing required values or failures; never swallow errors or fall back silently.
 
 ## Code Changes
-
-- Touch only what the task requires; don't improve adjacent code or formatting.
-- Match existing style, even if you'd do it differently.
-- If you notice unrelated dead code, mention it — don't delete it.
-- Remove only imports/variables/functions that YOUR changes made unused.
-- Complex request? Ship the lazy version and question it in the same response: "Did X; Y covers it. Need full X? Say so." Never stall on an answer you can default.
-- Mark deliberate simplifications with a short comment explaining the intent, so simple reads as intent, not ignorance. When a shortcut has a known ceiling, the comment names the ceiling and the upgrade path.
-
+- Touch only what the task requires; do not refactor adjacent code or formatting.
+- Match existing style.
+- Mention unrelated dead code without deleting it.
+- Remove only imports/definitions made unused by your changes.
+- Complex request? Ship the minimal version and state default assumptions concisely.
+- Add brief comments for deliberate shortcuts (state reason, ceiling, and upgrade path):
 ```
 // deliberate: O(n²) scan — switch to index if list exceeds ~1000 items
 // deliberate: global lock — replace with per-key lock if contention shows up
 ```
 
 ## Debugging
+- Same error twice? Step back, research 3–5 candidate solutions, and pick the best. Never repeat failed attempts blindly.
 
-- Don't fight errors: if you encounter the same error twice, step back and research. Find 3-5 possible approaches, pick the most efficient one, and implement it. Repeating the same failed attempt is wasted motion.
-
-## Safety Guards
-
-These are never on the chopping block, no matter how minimal the solution:
-
-- **Trust-boundary validation** — validate all input crossing a trust boundary.
-- **Data-loss handling** — protect against silent data corruption or loss.
-- **Security** — authentication, authorization, injection prevention, secrets management.
-- **Accessibility** — when building UI: semantic HTML, ARIA attributes, keyboard navigation.
+## Safety Guards (Non-Negotiable)
+- **Trust-boundary validation**: Validate all input crossing a trust boundary.
+- **Data loss**: Guard against corruption or silent data loss.
+- **Security**: Auth, authz, injection prevention, secret safety.
+- **Accessibility**: Semantic HTML, ARIA, keyboard navigation.

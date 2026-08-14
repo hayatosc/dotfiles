@@ -1,6 +1,6 @@
 lockfile_version: '1'
-generated_at: '2026-08-06T07:16:20.619169+00:00'
-apm_version: 0.26.0
+generated_at: '2026-08-14T07:54:08.356027+00:00'
+apm_version: 0.28.0
 dependencies:
 - repo_url: anthropics/skills
   name: frontend-design
@@ -155,6 +155,7 @@ dependencies:
     .agents/skills/gh-stack/references/troubleshooting.md: sha256:fe1958036e663c7471a0d3efdf1fefe47ee65e06713b13a96e3db95becccdc47
   content_hash: sha256:0d9f11ad344eda3becb92d0d195a08491a5ab2ba72a3890ff1e9db6c3de25f27
 - repo_url: googlechrome/modern-web-guidance
+  materialization_repo_url: GoogleChrome/modern-web-guidance
   name: modern-web-guidance
   host: github.com
   resolved_commit: 684ab9d7c6b78fc2cd5677912d874397cb2e5dfa
@@ -447,6 +448,7 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:78b80afc94fcdc0177345d7cbd0abb83660f309a400266ff408325142db41b2c
   content_hash: sha256:51a75c401a1d9c9721e37334b3b01f2c26bf5f68270a9d210d2f8b4460a5e835
 - repo_url: ikora128/stop-ai-slop-jp
+  materialization_repo_url: iKora128/stop-ai-slop-jp
   name: stop-ai-slop-jp
   host: github.com
   resolved_commit: e09d32796f253a62693885757cea484c275d06f2
@@ -505,6 +507,7 @@ dependencies:
     .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
   content_hash: sha256:0c9305cd298f674f58ea7dd977cf0d1d72509d344ab5224c68a316a53a875a3e
 - repo_url: nutlope/hallmark
+  materialization_repo_url: Nutlope/hallmark
   name: hallmark
   host: github.com
   resolved_commit: 0a0f706bc0289fef76a07fb854a6a5b031c57901
@@ -4507,7 +4510,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:daa06d50c3611eb1aed8fb01c31f75447c52225304b386920cb715d5ae5f81b2
+  content_hash: sha256:a5c4332b32d1c6391370f7ceda8ae4f68a197b54cc57380f1b0668fb750dc603
 - kind: project-relative
   target: agents
   value: .agents/skills/code-search/references/funnel-playbook.md
@@ -4534,7 +4537,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:e8c396ac8f0f95ffda2f880e7f2d87ddbe52d7a3ea0db61d94bcc07a1a6be365
+  content_hash: sha256:4777f8a19319bab4e9b2b6d434715f9760ea0285c7eb9a4ff5c94594db8d8334
 - kind: project-relative
   target: agents
   value: .agents/skills/cognitive-rhythm-writing
@@ -5290,9 +5293,9 @@ local_deployed_file_hashes:
   .agents/skills/ast-grep/references/command-cookbook.md: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
   .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
-  .agents/skills/code-search/SKILL.md: sha256:daa06d50c3611eb1aed8fb01c31f75447c52225304b386920cb715d5ae5f81b2
+  .agents/skills/code-search/SKILL.md: sha256:a5c4332b32d1c6391370f7ceda8ae4f68a197b54cc57380f1b0668fb750dc603
   .agents/skills/code-search/references/funnel-playbook.md: sha256:470109bbc4c9ba3a287dbf544e302912f07bc99a24534efadf231cd2015308fa
-  .agents/skills/coding-style/SKILL.md: sha256:e8c396ac8f0f95ffda2f880e7f2d87ddbe52d7a3ea0db61d94bcc07a1a6be365
+  .agents/skills/coding-style/SKILL.md: sha256:4777f8a19319bab4e9b2b6d434715f9760ea0285c7eb9a4ff5c94594db8d8334
   .agents/skills/cognitive-rhythm-writing/SKILL.md: sha256:35d6448e9cd8d1abc749ac89364b130ac676058a75f42db22d578e3340f312a4
   .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
   .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7

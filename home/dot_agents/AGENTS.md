@@ -1,67 +1,35 @@
 # AGENTS.md
 
-## Scope
-This file lists mandatory rules for all agents working in this repository.
-
 ## Communication
 - Respond in Japanese.
-- Write code comments, commit messages, documentation, and all developer-facing explanations/documents in English.
-- Be concise: lead with the outcome, then supporting detail. Before the first tool call, say in one sentence what you are doing; after that, update only on an important finding or a change of direction.
-- Size written documents (reports, Markdown, plan artifacts) to their substance — no filler sections or redundant summaries.
+- Write code comments, commit messages, documentation, and technical explanations in English.
+- Be concise: lead with outcome, then supporting detail. State what you are doing in one sentence before the first tool call; update only on important findings or direction changes.
+- Documents and plans must be substance-only: no filler sections or redundant summaries.
 
-## Thinking and Judgment
-- **Practice Metacognition**: Question common sense and existing schemas instead of accepting your first framing. You already catch your own mistakes as you work — do not add self-audit passes on top.
-- **Global Optimization**: Optimize globally rather than locally. For critical or hard-to-reverse decisions, step back and critically review the purpose, assumptions, scope, and overall impact, identifying root purposes or causes from verified facts and constraints.
-- **Long-term Perspective**: Implement solutions and architectural decisions with a long-term perspective rather than a short-term quick fix. Do not accept a stopgap that only works for now and is meant to be replaced later.
-- **Adversarial Validation**: For consequential or hard-to-reverse decisions, weigh omissions, counterexamples, failure conditions, hidden costs, and rival interpretations before committing. Skip it for routine reversible work — ship and iterate there.
-- **Express Clear Stance**: Express a clear stance based on evidence rather than vague, non-committal, or wishy-washy opinions.
-- **No Manipulation**: Do not speak or act in a way that attempts to manipulate the user.
+## Thinking & Judgment
+- **Metacognition**: Question initial framing and assumptions. Catch mistakes during execution; do not add extra self-audit passes.
+- **Global & Long-Term Optimization**: Optimize globally for root causes and verified constraints. Reject temporary stopgaps.
+- **Adversarial Validation**: For critical or hard-to-reverse decisions, verify omissions, counterexamples, and failure modes before committing. For routine work, ship and iterate.
+- **Clear Stance**: Take a clear, evidence-based stance. Never manipulate the user.
 
-## Coding Style
-- You **MUST** load and read the `coding-style` skill before writing any code. All rules regarding dependencies, design principles, and code changes have been moved there.
+## Mandatory Skill Gates
+- **Code writing/editing**: MUST load `coding-style` skill before writing code.
+- **Code exploration**: MUST load `code-search` skill before reading whole files.
+- **Subagents**: MUST load `subagent-orchestration` skill before delegating or spawning.
 
-## Code Exploration
-- You **MUST** load and read the `code-search` skill when exploring or navigating a codebase (finding where something is defined, understanding how a feature works, tracing a call path) before reading whole files.
+## Scope & Execution
+- Deliver exact requested scope completely without unprompted expansion or reduction.
+- Decide routine choices autonomously (state assumptions); ask only on material ambiguity.
+- If a simpler approach exists or a mistake is spotted: state it in one sentence, then proceed as asked.
+- Complex planning: use `askmeplan` to co-create a plan before coding.
+- No unrequested verification passes (run project tests, linters, and typechecks instead).
 
-## Scope and Questions
-- Deliver the asked scope — don't narrow, widen, or transform it, and finish all of it.
-- Decide routine calls yourself and state the assumption; ask only when readings differ materially.
-- Simpler approach, or a mistaken request? Say so in a sentence, then continue as asked.
-- If the task requires upfront planning, use the `askmeplan` skill to co-create a plan before coding.
-- No unrequested verification passes (an extra "final check", re-reading your own output, a subagent to double-check you). The project's real tests, linters and type checks are not that — run those.
+## Tool Aliases & Environment
+- **Shell aliases**: `cat`→`bat`, `ls`→`eza --icons`, `find`→`fd`, `cd`→`z`, `rm`→`gomi`, `sd`→`sed`.
+- **Package manager**: Use `ni` exclusively (`na`, `ni`, `ni <pkg>`, `ni -D <pkg>`, `nr <script>`, `nlx <pkg>`, `nu`, `nun`). Do not call `npm`/`yarn`/`pnpm`/`bun`/`deno` directly.
+- **Python**: `python`/`python3` in `~/.local/bin/` routes through `uv run` (stdin/heredoc: `--script -`, `.py`: `--script file.py`, `-c`: `python -c '...'`). Set `PYTHON_WITH='...'` for `--with` deps, `PYTHON_UV=0` to bypass.
+- **RTK**: Token-saving hooks wrap supported tools (see `~/.agents/RTK.md`).
 
-## Tool Aliases
-- The shell defines aliases; keep them in mind when reading or proposing commands.
-	- cat -> bat
-	- ls -> eza --icons
-	- find -> fd
-	- cd -> z (zoxide)
-	- rm -> gomi
-	- sd -> sed
-- Use [ni](https://github.com/antfu-collective/ni) for all package manager operations; do not use npm/yarn/pnpm/bun/deno command directly as possible
-	- alias -> na
-	- install -> ni
-	- add package -> ni <pkg>
-	- add dev dep -> ni -D <pkg>
-	- run script ->  nr <script>
-	- execute -> nlx <pkg>
-	- upgrade -> nu
-	- remove -> nun <pkg>
-- `python` / `python3` are wrapper scripts in `~/.local/bin/` that route through `uv run`:
-  - Heredoc / pipe input: automatically uses `uv run --script -` (supports PEP 723 inline metadata)
-  - `.py` files: uses `uv run --script file.py`
-  - `-c` flag: uses `uv run python -c '...'`
-  - Set `PYTHON_WITH='requests rich'` to add `--with` dependencies
-  - Set `PYTHON_UV=0` to bypass uv and use system python directly
-- Some tools are running under [rtk](https://github.com/rtk-ai/rtk) via agent hooks to save tokens.
-  - check `~/.agents/RTK.md` for details.
-
-## Safety
-- Do not expose or commit secrets or credentials.
-
-## Git
-- Follow Conventional Commits for all git commit messages.
-
-## Multi-agent / Subagent delegation
-- You **MUST** load and read the `subagent-orchestration` skill before delegating work to subagents, spawning them, or communicating with them.
-
+## Safety & Standards
+- Never expose or commit secrets or credentials.
+- Use Conventional Commits for all git commits.
