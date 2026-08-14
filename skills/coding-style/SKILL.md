@@ -1,64 +1,49 @@
 ---
 name: coding-style
-description: Language-agnostic coding style, design principles, minimal code philosophy, The Ladder, code change rules, and safety guards. Loaded before writing or reviewing code.
+description: Language-agnostic coding style, minimal code philosophy, The Ladder, code change rules, and safety guards. Loaded before writing or reviewing code.
 ---
 
 # Coding Style
 
-Language-agnostic policy. Language skills provide idiomatic detail within this philosophy; this policy takes precedence except for language-idiomatic conventions (e.g., Go explicit error handling).
+Language-agnostic policy. Language skills take precedence for language-specific idiomatic conventions.
 
 ## The Ladder
 
-Before writing any code, stop at the first rung that holds:
+Before writing any code, stop at the first rung that satisfies the requirement. The ladder is a reflex that runs *after* understanding the problem (tracing flows and grepping callers):
 
-1. **Needs to exist?** — Skip speculative needs (YAGNI). If asked for future-proofing, ship concrete parts and push back on speculative ones in one line.
-2. **Stdlib covers it?** — Use standard library.
-3. **Native platform feature?** — e.g. HTML5 inputs over picker libs, CSS over JS, DB constraints over app code.
-4. **Existing dependency?** — Use installed packages; never add dependencies for what a few lines can do.
-5. **One-liner?** — Keep it one line.
-6. **Otherwise** — Minimum working code.
+1. **Needs to exist at all? (YAGNI)** — Skip speculative requirements.
+2. **Already in this codebase?** — Search the repository to reuse existing helpers, types, or patterns before creating new ones.
+3. **Stdlib covers it?** — Use standard library features over custom code.
+4. **Native platform feature?** — Prefer platform built-ins (`<input type="date">`, CSS, DB constraints) over wrapper libraries.
+5. **Existing dependency?** — Use installed packages; never add new dependencies for what a few lines can accomplish.
+6. **Can it be a one-liner?** — Keep simple logic to a single line.
+7. **Only then: minimum working code** — Write the simplest implementation that correctly solves the task.
 
-Prefer higher rungs. Verify external dependencies are maintained, lightweight, and non-redundant.
+## Over-Engineering & Bloat Prevention
 
-## Design
+- **Avoid Premature Abstractions**: Do not create single-implementation interfaces, single-product factories, delegating wrappers, or static configs nobody changes.
+- **Platform Native First**: Prefer built-in language/runtime/DB features over third-party packages or custom code.
+- **Shortest Working Diff Wins**: Prefer boring over clever code. Never sacrifice correctness, input validation, or security for line-count brevity (no unsafe code-golfing).
 
-### Reuse & Existing Dependencies
-- Search codebase before creating new utilities/types; reuse existing code.
-- Check installed library documentation/types before writing custom implementations or adding packages.
+## Code Changes & Bug Fixing
 
-### Modularity & Layered Growth
-- Grow in working layers: start with the smallest working end-to-end version.
-- Separate concerns cleanly.
-- Build for the long term; reject temporary stopgaps.
+- **Root-Cause Fixes**: Fix bugs at the shared root-cause function. Grep all callers before editing; a single guard at the shared root is cleaner than scattering symptom guards across callers.
+- **No Compatibility Layers**: Erase old code completely on breaking changes unless backward compatibility is explicitly requested. Fail fast with clear errors.
+- **Deliberate Shortcut Comments**: Mark intentional simplifications or known ceilings with a `deliberate:` or `shortcut:` comment naming the limit and upgrade path:
+  ```
+  // deliberate: O(n²) scan — switch to index if list exceeds ~1000 items
+  ```
+- **Smallest Runnable Check**: Non-trivial logic should leave ONE minimal runnable check (`assert`-based self-check or small test file). Avoid heavy test frameworks unless requested.
 
-### Keep It Small
-- Simplest working implementation; avoid premature abstractions (no single-implementation interfaces, single-product factories, or static configs).
-- Extract abstractions only when immediate consumers exist.
-- No unused boilerplate, scaffolding, or error handling for impossible/internal states.
-- Shortest working diff wins. Boring over clever.
-- Between equal stdlib options, pick the robust one for edge cases.
+## Output Format
 
-### No Backward Compatibility by Default
-- No compatibility layers, aliases, or silent fallbacks unless requested. Erase old code completely on breaking changes.
-- Fail fast: raise explicit errors on missing required values or failures; never swallow errors or fall back silently.
-
-## Code Changes
-- Touch only what the task requires; do not refactor adjacent code or formatting.
-- Match existing style.
-- Mention unrelated dead code without deleting it.
-- Remove only imports/definitions made unused by your changes.
-- Complex request? Ship the minimal version and state default assumptions concisely.
-- Add brief comments for deliberate shortcuts (state reason, ceiling, and upgrade path):
-```
-// deliberate: O(n²) scan — switch to index if list exceeds ~1000 items
-// deliberate: global lock — replace with per-key lock if contention shows up
-```
-
-## Debugging
-- Same error twice? Step back, research 3–5 candidate solutions, and pick the best. Never repeat failed attempts blindly.
+Code first, followed by at most 3 short lines explaining what was skipped and when to add it:
+`[code] → skipped: [X], add when [Y].`
 
 ## Safety Guards (Non-Negotiable)
-- **Trust-boundary validation**: Validate all input crossing a trust boundary.
-- **Data loss**: Guard against corruption or silent data loss.
-- **Security**: Auth, authz, injection prevention, secret safety.
-- **Accessibility**: Semantic HTML, ARIA, keyboard navigation.
+
+Never simplify away:
+- Input validation at trust boundaries
+- Error handling preventing data corruption
+- Security controls (authentication, authorization, secret safety)
+- Basic accessibility (semantic HTML, keyboard navigation)

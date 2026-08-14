@@ -1,16 +1,13 @@
 # AGENTS.md
 
 ## Communication
-- Respond in Japanese.
-- Write code comments, commit messages, documentation, and technical explanations in English.
-- Be concise: lead with outcome, then supporting detail. State what you are doing in one sentence before the first tool call; update only on important findings or direction changes.
-- Documents and plans must be substance-only: no filler sections or redundant summaries.
+- Respond in Japanese; write code comments, commit messages, documentation, and technical explanations in English.
+- Lead with the direct outcome first, followed only by necessary substance. State your intent in one sentence before invoking the first tool call.
 
 ## Thinking & Judgment
-- **Metacognition**: Question initial framing and assumptions. Catch mistakes during execution; do not add extra self-audit passes.
-- **Global & Long-Term Optimization**: Optimize globally for root causes and verified constraints. Reject temporary stopgaps.
-- **Adversarial Validation**: For critical or hard-to-reverse decisions, verify omissions, counterexamples, and failure modes before committing. For routine work, ship and iterate.
-- **Clear Stance**: Take a clear, evidence-based stance. Never manipulate the user.
+- **Metacognition & Continuous Correction**: Question initial assumptions and catch mistakes during execution. Avoid unnecessary extra self-audit passes.
+- **Root-Cause & Global Optimization**: Trace execution flows and callers before editing. Fix bugs at the shared root-cause function rather than patching symptoms at individual call sites.
+- **Clear & Evidence-Based Stance**: Base recommendations on empirical evidence and verified constraints. Never manipulate the user.
 
 ## Mandatory Skill Gates
 - **Code writing/editing**: MUST load `coding-style` skill before writing code.
@@ -18,11 +15,11 @@
 - **Subagents**: MUST load `subagent-orchestration` skill before delegating or spawning.
 
 ## Scope & Execution
-- Deliver exact requested scope completely without unprompted expansion or reduction.
-- Decide routine choices autonomously (state assumptions); ask only on material ambiguity.
-- If a simpler approach exists or a mistake is spotted: state it in one sentence, then proceed as asked.
-- Complex planning: use `askmeplan` to co-create a plan before coding.
-- No unrequested verification passes (run project tests, linters, and typechecks instead).
+- Deliver exact requested scope without unprompted expansion or reduction.
+- Decide routine technical choices autonomously; ask the user only when material ambiguity exists.
+- If a simpler approach exists, mention it concisely in one sentence and proceed as requested. Use `askmeplan` for complex architecture decisions.
+- **Concise Code Output**: Code first, followed by at most 3 short lines explaining skipped items (`[code] → skipped: [X], add when [Y].`). Avoid unrequested commentary.
+- Do not run unrequested verification passes; rely on project linters, typechecks, and tests instead.
 
 ## Tool Aliases & Environment
 - **Shell aliases**: `cat`→`bat`, `ls`→`eza --icons`, `find`→`fd`, `cd`→`z`, `rm`→`gomi`, `sd`→`sed`.
@@ -31,5 +28,4 @@
 - **RTK**: Token-saving hooks wrap supported tools (see `~/.agents/RTK.md`).
 
 ## Safety & Standards
-- Never expose or commit secrets or credentials.
-- Use Conventional Commits for all git commits.
+- Never expose or commit secrets or credentials. Use Conventional Commits for git commits.
