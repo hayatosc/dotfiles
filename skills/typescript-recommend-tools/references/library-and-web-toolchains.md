@@ -45,7 +45,7 @@ pnpm add -D typescript tsdown vitest oxlint oxlint-tsgolint oxfmt
 }
 ```
 
-For libraries and packages, prefer `tsdown --watch` over `tsx` during development so the build output and watch behavior stay aligned with the actual packaging tool.
+For libraries and packages, prefer `tsdown --watch` over `oxc-node` (`oxnode`) during development so the build output and watch behavior stay aligned with the actual packaging tool.
 
 ### Monorepo note
 
@@ -74,15 +74,15 @@ pnpm create hono@latest my-app
 ### Add the remaining core tools
 
 ```bash
-ni -D typescript tsx vite vitest oxlint oxlint-tsgolint oxfmt
+ni -D typescript @oxc-node/cli vite vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 ```bash
-bun add -d typescript tsx vite vitest oxlint oxlint-tsgolint oxfmt
+bun add -d typescript @oxc-node/cli vite vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 ```bash
-pnpm add -D typescript tsx vite vitest oxlint oxlint-tsgolint oxfmt
+pnpm add -D typescript @oxc-node/cli vite vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 If the project is API-only and does not build browser assets, drop `Vite` from this stack and keep `Hono` plus the shared testing and linting tools.
@@ -105,7 +105,7 @@ If the deployment target is Cloudflare Workers, Deno Deploy, or another edge run
 }
 ```
 
-Use `vite dev` whenever the project already includes Vite. If the Hono project is API-only and does not use Vite, a simple `tsx watch` loop is an acceptable fallback.
+Use `vite dev` whenever the project already includes Vite. If the Hono project is API-only and does not use Vite, a simple `oxnode --watch` loop is an acceptable fallback.
 
 ### Recommended scripts for Bun-targeted Hono
 

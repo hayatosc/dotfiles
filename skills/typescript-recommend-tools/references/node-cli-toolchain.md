@@ -11,7 +11,7 @@ If the environment standardizes on `ni`, use it as the default command surface.
 ### `ni`
 
 ```bash
-ni -D typescript tsx vitest oxlint oxlint-tsgolint oxfmt
+ni -D typescript @oxc-node/cli vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 `ni` will route to the repository's chosen package manager. If the user explicitly wants the underlying command, use one of the following:
@@ -19,13 +19,13 @@ ni -D typescript tsx vitest oxlint oxlint-tsgolint oxfmt
 ### `bun`
 
 ```bash
-bun add -d typescript tsx vitest oxlint oxlint-tsgolint oxfmt
+bun add -d typescript @oxc-node/cli vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 ### `pnpm`
 
 ```bash
-pnpm add -D typescript tsx vitest oxlint oxlint-tsgolint oxfmt
+pnpm add -D typescript @oxc-node/cli vitest oxlint oxlint-tsgolint oxfmt
 ```
 
 ## Recommended scripts
@@ -33,8 +33,8 @@ pnpm add -D typescript tsx vitest oxlint oxlint-tsgolint oxfmt
 ```json
 {
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "start": "tsx src/index.ts",
+    "dev": "oxnode --watch src/index.ts",
+    "start": "oxnode src/index.ts",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint .",
     "lint:types": "oxlint --type-aware .",
@@ -45,11 +45,13 @@ pnpm add -D typescript tsx vitest oxlint oxlint-tsgolint oxfmt
 }
 ```
 
-Treat this `tsx` loop as the default fallback for plain Node and CLI projects. If the repository already has a stronger tool-owned dev loop, use that instead.
+Treat this `oxnode` loop as the default fallback for plain Node and CLI projects. If the repository already has a stronger tool-owned dev loop, use that instead.
+
+Alternatively, if you prefer using the standard `node` command directly, install `@oxc-node/core` and run via the register hook: `node --import @oxc-node/core/register src/index.ts`.
 
 ## Bun runtime exception
 
-If the user is intentionally standardizing on the Bun runtime, replace the `tsx` runtime scripts with Bun-native commands and keep the rest of the stack unchanged.
+If the user is intentionally standardizing on the Bun runtime, replace the `oxnode` runtime scripts with Bun-native commands and keep the rest of the stack unchanged.
 
 ```json
 {

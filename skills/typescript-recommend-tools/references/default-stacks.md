@@ -4,9 +4,9 @@ Use this file when the user wants a quick recommendation without a long comparis
 
 | Project shape | Primary tools | Notes |
 | --- | --- | --- |
-| Node / CLI | `tsc`, `tsx`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | Use `tsx` only when there is no tool-specific dev loop. Prefer `bun run` on Bun-native runtimes. |
+| Node / CLI | `tsc`, `oxc-node` (`@oxc-node/cli`), `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | Use `oxnode` only when there is no tool-specific dev loop. Prefer `bun run` on Bun-native runtimes. |
 | Library / package | `tsc`, `tsdown`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | Prefer `tsdown --watch` for development. |
-| Web app / web API | `tsc`, `Hono`, `Vite`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | Use `Hono` for the web framework and `Vite` when browser assets exist. Prefer `vite dev` over `tsx` in Vite-based projects. |
+| Web app / web API | `tsc`, `Hono`, `Vite`, `Vitest`, `oxlint`, `oxlint --type-aware`, `oxfmt` | Use `Hono` for the web framework and `Vite` when browser assets exist. Prefer `vite dev` over `oxnode` in Vite-based projects. |
 
 ## Shared Defaults
 
