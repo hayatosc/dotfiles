@@ -6,6 +6,8 @@ elif [ -x "$HOME/.local/bin/mise" ]; then
     eval "$("$HOME/.local/bin/mise" activate zsh)"
 fi
 
+typeset -U path PATH
+
 # `mise activate` prepends managed tool bin dirs to PATH (including its own
 # python), which shadows the python/python3 wrappers in ~/.local/bin. Re-prepend
 # ~/.local/bin so the wrappers win. Do it both immediately (covers non-interactive
@@ -13,9 +15,9 @@ fi
 # mise's, since mise re-prepends its dirs on every prompt.
 if [ -d "$HOME/.local/bin" ]; then
     _mise_local_bin_first() {
-        local mise_py=(${(M)path:#*mise/installs/python*})
+        local -a mise_py=(${(M)path:#*mise/installs/python*})
         if (( ${#mise_py} )); then
-            path=("$HOME/.local/bin" $mise_py ${path:#$HOME/.local/bin})
+            path=("$HOME/.local/bin" $mise_py ${path:#($HOME/.local/bin|*mise/installs/python*)})
         else
             path=("$HOME/.local/bin" ${path:#$HOME/.local/bin})
         fi

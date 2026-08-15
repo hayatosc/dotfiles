@@ -1,5 +1,7 @@
 # ~/.zshenv: minimal environment for all zsh shells.
 
+typeset -U path PATH
+
 if [ -d "$HOME/bin" ]; then
     case ":$PATH:" in
         *":$HOME/bin:"*) ;;
