@@ -1,6 +1,7 @@
 function PLUGIN:PostInstall(ctx)
     local root_path = ctx.rootPath
-    local version = ctx.runtimeVersion or "latest"
+    local sdk_info = ctx.sdkInfo and (ctx.sdkInfo["cursor-agent"] or ctx.sdkInfo[PLUGIN.name])
+    local version = (sdk_info and sdk_info.version) or ctx.version or "latest"
 
     if version == "latest" then
         local handle = io.popen("curl -fsSL https://cursor.com/install 2>/dev/null | grep -oP '(?<=downloads\\.cursor\\.com/lab/)[^/]+' | head -1")
