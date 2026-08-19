@@ -41,4 +41,5 @@ jobs:
           fi
           echo "変更されたツールをインストールして検証します:"
           echo "$specs"
-          mise install --locked
+          mapfile -t tools < <(printf '%s\n' "$specs" | sed 's/@[^@]*$//')
+          mise install --locked "${tools[@]}"
