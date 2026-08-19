@@ -5107,6 +5107,123 @@ deployments:
   content_hash: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
 - kind: project-relative
   target: agents
+  value: .agents/skills/rust-best-practices
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6b946c9fa5b994eff8568bf743185b0c3712c5f745fe640844c77ad571da7909
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/evals/evals.json
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:dcbbe8c255b6b5f37b7308a93a1a29121428a9d2d3fa5609511885e782187bdf
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/api-design.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:951b359cad126654841a9269630fb1bf9b5191ac607f982a84b7d915bb7081e8
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/cargo-tooling.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:3a7bb6238c90d4d1313fb73b2d2a3a5ab1ca40456ba44497785f3420d5659c4f
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/community-practice.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5fafb6f1013651d98b09b288ecbc5221fbf89110b6e469309028ed234f1581b2
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/concurrency-async.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6e4fc71a655cb2ff30fc6ea79c3573a71513101b05885b5e9967bfccc5f01254
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/core-idioms.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:8aa88fc7122d2774e34cbdf247cae967d68c5756d805878f1b9bcaf7ddbac6aa
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:83e59ee0b09f0db07c9f1de93bebbb71fc790476b3b2a8dcafdcead9ab6df4f1
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/performance.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:65f04e8ad2239c056eef672e0a373e2d535476d716b34412e2a11db60a184666
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/stumbling-blocks.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:3c44ed75fe4eb0ce7a41ac3ec0f492c7f2f32091cc0b8c2017053d16ccc56b85
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2b3db42aab6381856ba65ef353672281f4d0da5af020200b778641fae08b3d02
+- kind: project-relative
+  target: agents
+  value: .agents/skills/rust-best-practices/references/unsafe-security.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
+- kind: project-relative
+  target: agents
   value: .agents/skills/subagent-orchestration
   runtime: null
   scope: project
@@ -5269,6 +5386,19 @@ local_deployed_files:
 - .agents/skills/refactoring-code/references/examples.md
 - .agents/skills/refactoring-code/references/legacy-safety-net.md
 - .agents/skills/refactoring-code/references/refactor-playbook.md
+- .agents/skills/rust-best-practices
+- .agents/skills/rust-best-practices/SKILL.md
+- .agents/skills/rust-best-practices/evals/evals.json
+- .agents/skills/rust-best-practices/references/api-design.md
+- .agents/skills/rust-best-practices/references/cargo-tooling.md
+- .agents/skills/rust-best-practices/references/community-practice.md
+- .agents/skills/rust-best-practices/references/concurrency-async.md
+- .agents/skills/rust-best-practices/references/core-idioms.md
+- .agents/skills/rust-best-practices/references/error-handling.md
+- .agents/skills/rust-best-practices/references/performance.md
+- .agents/skills/rust-best-practices/references/stumbling-blocks.md
+- .agents/skills/rust-best-practices/references/testing.md
+- .agents/skills/rust-best-practices/references/unsafe-security.md
 - .agents/skills/subagent-orchestration
 - .agents/skills/subagent-orchestration/SKILL.md
 - .agents/skills/typescript-best-practices
@@ -5317,6 +5447,18 @@ local_deployed_file_hashes:
   .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
   .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:c6e7bec0c3b67ea8235430c748ea72f501df0ee1cf61028e93e753ec850248f6
   .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
+  .agents/skills/rust-best-practices/SKILL.md: sha256:6b946c9fa5b994eff8568bf743185b0c3712c5f745fe640844c77ad571da7909
+  .agents/skills/rust-best-practices/evals/evals.json: sha256:dcbbe8c255b6b5f37b7308a93a1a29121428a9d2d3fa5609511885e782187bdf
+  .agents/skills/rust-best-practices/references/api-design.md: sha256:951b359cad126654841a9269630fb1bf9b5191ac607f982a84b7d915bb7081e8
+  .agents/skills/rust-best-practices/references/cargo-tooling.md: sha256:3a7bb6238c90d4d1313fb73b2d2a3a5ab1ca40456ba44497785f3420d5659c4f
+  .agents/skills/rust-best-practices/references/community-practice.md: sha256:5fafb6f1013651d98b09b288ecbc5221fbf89110b6e469309028ed234f1581b2
+  .agents/skills/rust-best-practices/references/concurrency-async.md: sha256:6e4fc71a655cb2ff30fc6ea79c3573a71513101b05885b5e9967bfccc5f01254
+  .agents/skills/rust-best-practices/references/core-idioms.md: sha256:8aa88fc7122d2774e34cbdf247cae967d68c5756d805878f1b9bcaf7ddbac6aa
+  .agents/skills/rust-best-practices/references/error-handling.md: sha256:83e59ee0b09f0db07c9f1de93bebbb71fc790476b3b2a8dcafdcead9ab6df4f1
+  .agents/skills/rust-best-practices/references/performance.md: sha256:65f04e8ad2239c056eef672e0a373e2d535476d716b34412e2a11db60a184666
+  .agents/skills/rust-best-practices/references/stumbling-blocks.md: sha256:3c44ed75fe4eb0ce7a41ac3ec0f492c7f2f32091cc0b8c2017053d16ccc56b85
+  .agents/skills/rust-best-practices/references/testing.md: sha256:2b3db42aab6381856ba65ef353672281f4d0da5af020200b778641fae08b3d02
+  .agents/skills/rust-best-practices/references/unsafe-security.md: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
   .agents/skills/subagent-orchestration/SKILL.md: sha256:9f4cab5976ca017da321570ab889676b0d897d47892b0c9350698a5889d5da4b
   .agents/skills/typescript-best-practices/SKILL.md: sha256:34d0c5317e8e5a350fd0c1f850461f28c5f1d57fbb8d094c44274156cdb7179b
   .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
