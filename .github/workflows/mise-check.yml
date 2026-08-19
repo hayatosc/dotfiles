@@ -41,4 +41,4 @@ jobs:
           fi
           echo "変更されたツールをインストールして検証します:"
           echo "$specs"
-          mise install $specs
+          mise install --locked
