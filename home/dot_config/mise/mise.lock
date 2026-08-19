@@ -3040,21 +3040,21 @@ checksum = "sha256:19ce8bd320414cb6b9889ecbf48a3ded848b0d1068b76ff6bea099bd7387d
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libfreetype6-2.14.3-h2ed5691_2.conda"
 checksum = "sha256:d9b203d6484ad491b5b5f33d49a9d7a91189d776a9adae53d2b63af18ec11e6a"
 
-[conda-packages.macos-arm64."libgcc-16.1.0-h3cf6597_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgcc-16.1.0-h3cf6597_1.conda"
-checksum = "sha256:fdd1502babb50b802d090496586231f56236d7a6fc042a4e1ac2dee48da8366b"
+[conda-packages.macos-arm64."libgcc-16.1.0-h3cf6597_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgcc-16.1.0-h3cf6597_2.conda"
+checksum = "sha256:72ad51807f267a409ed4ef82b701b23e8dc13989a873c0b9ae4995ca41365a12"
 
 [conda-packages.macos-arm64."libgd-2.3.3-h05bcc79_12"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgd-2.3.3-h05bcc79_12.conda"
 checksum = "sha256:269edce527e204a80d3d05673301e0207efcd0dbeebc036a118ceb52690d6341"
 
-[conda-packages.macos-arm64."libgfortran-16.1.0-h07b0088_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran-16.1.0-h07b0088_1.conda"
-checksum = "sha256:d7c6dd601dbbde495ab213a76d690b2fec19455d26c595ec0257cfde3e80166b"
+[conda-packages.macos-arm64."libgfortran-16.1.0-h07b0088_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran-16.1.0-h07b0088_2.conda"
+checksum = "sha256:31d471423a1d09727778756e0846c2ec928d2cf38d3801be35d5c2487808549c"
 
-[conda-packages.macos-arm64."libgfortran5-16.1.0-h32cdfcc_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran5-16.1.0-h32cdfcc_1.conda"
-checksum = "sha256:3e8cb79a421e0c350566717febdba9079574cbbe204591b4fd4b4081ea89cb92"
+[conda-packages.macos-arm64."libgfortran5-16.1.0-h32cdfcc_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran5-16.1.0-h32cdfcc_2.conda"
+checksum = "sha256:a55a80209042b8d052cca044ba0a65b100af4f757bdb2eec249d5813b8e456e6"
 
 [conda-packages.macos-arm64."libglib-2.88.3-ha531971_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libglib-2.88.3-ha531971_1.conda"
@@ -4200,9 +4200,9 @@ checksum = "sha256:cad8b94c2b00264a15d469eed6dc53aac1c59c6d46f27ad1d91bfaf227cf1
 url = "https://conda.anaconda.org/conda-forge/win-64/pthread-stubs-0.4-hba3369d_1003.conda"
 checksum = "sha256:5546927a2e337d2903d6cdb028fb33723cdbcc45bf9abe1770fbde2c4ea8bce6"
 
-[conda-packages.windows-x64."python-3.14.6-h53f6dd8_102_cp314"]
-url = "https://conda.anaconda.org/conda-forge/win-64/python-3.14.6-h53f6dd8_102_cp314.conda"
-checksum = "sha256:9faac11f2b7813585f428310df3768e2a465205d76c3829f8ccbd05e6b98764f"
+[conda-packages.windows-x64."python-3.14.7-h53f6dd8_100_cp314"]
+url = "https://conda.anaconda.org/conda-forge/win-64/python-3.14.7-h53f6dd8_100_cp314.conda"
+checksum = "sha256:01cd1d39e5a24f029df0a8db0878dd442d552a82f584e18fd2ed366bc881633f"
 
 [conda-packages.windows-x64."python_abi-3.14-8_cp314"]
 url = "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.14-8_cp314.conda"
@@ -4639,43 +4639,43 @@ checksum = "sha256:538f9c846355d9e847b2671bc00c47da4229a0befb24df3282b739770f3b4
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.14/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.227"
+version = "2.1.233"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:e998df163821c7c2be66139f0b5411e26928b9bc18326edb95576b7bc94168b3"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246732"
+checksum = "sha256:b5ca70610eadee40a82c6fa74f5f873eb70d5fde94bdc67df1c51416eb45e72b"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.233/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/514776713"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:ff698ec9a027fefca54ddecdb2b190ff0a2df49ad216559e35dd53707aaa476f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246725"
+checksum = "sha256:33a2e2183848677a87553931236cee8e8a4656d03bfd6ad9fbc34df00f3cdf2d"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.233/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/514776715"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:ee91648d1c54b978594d43ac1b2c4a83083215c6f609a437cd9cb4da3811ee55"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246774"
+checksum = "sha256:23eec49e0453a3a7b9d933228cb09639fc0bcd962039258d8e4cde72fa5b8741"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.233/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/514776844"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:af5def3e1cb7ace2de3114c0003a728fb5ec92d1402aa793cb7a552bb5882474"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246721"
+checksum = "sha256:91b3f3a8d1c011f3bebd2ddff2dfea53ffab7c57cc2400961173e298e90be3eb"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.233/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/514776711"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:e030ca0636f72b89e65dc918ea860960a60a7a63632e68550b9fd5b0af8dabab"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246724"
+checksum = "sha256:5dce92ccd93173fead018f2a8262189da88c7d6fffbaa666b7a81a6b05f72afe"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.233/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/514776720"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:7126f4f4e211f349ab00315430557dbdb1f2dab58fff9691351d9d9597ecbe65"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246722"
+checksum = "sha256:84a820ad17e08eaef497dfd8cd282b86b7a59dbedd18f2780aa7e82ef8b9373a"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.233/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/514776716"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:5010518cf76386384754e16a196e72daa91fddd8fccd4c576bca07a45167260f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246778"
+checksum = "sha256:f435123fcfc637598a9d70332bc1244a58cb5bc471897e21508ed3e6b8db84ae"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.233/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/514776856"
 
 [[tools.cloudflared]]
 version = "2026.7.3"
@@ -5575,7 +5575,7 @@ conda_deps = [
     "pixman-0.46.4-h5112557_3",
     "libjpeg-turbo-3.2.0-hfd05255_1",
     "fribidi-1.0.16-hfd05255_1",
-    "python-3.14.6-h53f6dd8_102_cp314",
+    "python-3.14.7-h53f6dd8_100_cp314",
     "python_abi-3.14-8_cp314",
     "packaging-26.3-pyhc364b38_0",
     "lerc-4.2.0-hd936e49_0",
@@ -6759,8 +6759,8 @@ conda_deps = [
     "openexr-3.4.14-he09da85_0",
     "openjph-0.31.0-h2a4d681_0",
     "pango-1.58.2-hf80efc4_0",
-    "libgfortran-16.1.0-h07b0088_1",
-    "libgfortran5-16.1.0-h32cdfcc_1",
+    "libgfortran-16.1.0-h07b0088_2",
+    "libgfortran5-16.1.0-h32cdfcc_2",
     "llvm-openmp-22.1.8-hc7d1edf_0",
     "libexpat-2.8.1-hf6b4638_1",
     "font-ttf-ubuntu-0.83-h77eed37_3",
@@ -6797,7 +6797,7 @@ conda_deps = [
     "libxcb-1.17.0-hbffa61f_1",
     "xorg-libice-1.1.2-h1a92334_0",
     "xorg-libsm-1.2.6-h1a92334_1",
-    "libgcc-16.1.0-h3cf6597_1",
+    "libgcc-16.1.0-h3cf6597_2",
     "hicolor-icon-theme-0.17-hce30654_3",
     "pixman-0.46.4-h784d473_3",
     "atk-1.0-2.38.0-hd03087b_2",
@@ -6992,7 +6992,7 @@ conda_deps = [
     "freeglut-3.2.2-hac47afa_4",
     "ca-certificates-2026.7.22-h4c7d964_0",
     "graphite2-1.3.15-h5112557_1",
-    "python-3.14.6-h53f6dd8_102_cp314",
+    "python-3.14.7-h53f6dd8_100_cp314",
     "python_abi-3.14-8_cp314",
     "packaging-26.3-pyhc364b38_0",
     "libgcc-16.1.0-h110b43a_1",
