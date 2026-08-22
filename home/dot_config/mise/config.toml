@@ -54,7 +54,7 @@ tmux = "3.6b"
 ttyd = "1.7.7"
 uv = "0.12.5"
 yarn = "4.18.0"
-yazi = { version = "26.5.6", postinstall = "ya pkg install" }
+yazi = { version = "26.8.15", postinstall = "ya pkg install" }
 zig = "0.16.0"
 zoxide = "0.10.0"
 "github:herdrdev/herdr" = "v0.8.0"
