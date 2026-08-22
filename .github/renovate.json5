@@ -3,7 +3,14 @@
   extends: ["config:recommended"],
   mode: "full",
   minimumReleaseAge: "3 days",
-  platformAutomerge: false,
+  // GitHub native auto-merge を使う。required check (mise install check) が
+  // 通り次第即マージされるため、Renovate 自身の評価タイミング (ブランチが
+  // base より最新かつ CI green の瞬間を run の間に拾う必要がある) に依存せず、
+  // main 更新頻度が高くても PR が滞留しない。
+  platformAutomerge: true,
+  // 毎 run 全ブランチが rebase されるリポジトリでは同時オープン数が大きいと
+  // rebase 波と API 消費が増大するだけなので、公式推奨の下限側に絞る。
+  prConcurrentLimit: 5,
   // mise.lock は専用 workflow が hayatosc-dotfiles-bot[bot] 名義で追加 commit する。
   // この bot commit を「人間の手編集」とみなすと Renovate の rebase/automerge が止まるため、
   // Renovate PR 上では無視させる。

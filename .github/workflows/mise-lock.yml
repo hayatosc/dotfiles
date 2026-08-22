@@ -14,6 +14,7 @@ on:
       - home/dot_config/mise/config.toml
       - .github/workflows/mise-lock.yml
       - .github/scripts/commit-via-graphql.ts
+      - .github/scripts/validate-mise-lock.ts
 
 permissions:
   contents: write
@@ -58,5 +59,16 @@ jobs:
           FILES: home/dot_config/mise/mise.lock
           MESSAGE: "chore(mise): update mise.lock"
           REGENERATE_CMD: |
-            ( cd home/dot_config/mise && rm -f mise.lock && mise lock )
+            set -o pipefail
+            cd home/dot_config/mise
+            rm -f mise.lock
+            mise lock 2>&1 | tee /tmp/mise-lock.log || exit 1
+            # mise は解決に一部失敗しても exit 0 のため、レート制限等の警告が
+            # ある場合は壊れた lockfile をコミットさせないために落とす。
+            grep -qiE 'rate limit exceeded|client error \(403|failed to fetch' /tmp/mise-lock.log && {
+              echo "incomplete resolution detected; refusing to commit" >&2
+              exit 1
+            }
+            cd - >/dev/null
+            mise exec bun -- bun .github/scripts/validate-mise-lock.ts home/dot_config/mise/mise.lock
         run: mise exec bun -- bun .github/scripts/commit-via-graphql.ts
