@@ -14,6 +14,13 @@ on:
 permissions:
   contents: read
 
+# Renovate が短時間に rebase を繰り返すと古い head の run が積み上がり、
+# 無駄な GitHub API 消費 (rate limit 圧迫) と緑判定の遅延の原因になるため、
+# 同一ブランチの古い run はキャンセルする。
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   install:
     runs-on: ubuntu-latest

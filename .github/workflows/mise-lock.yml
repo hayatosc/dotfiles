@@ -19,8 +19,13 @@ permissions:
   contents: write
   pull-requests: write
 
+# ブランチごとではなく全体で直列化する。並列に走ると各ジョブが mise の
+# バージョン解決で GitHub API を大量消費し、App installation のレート制限
+# (5000/h) を数分で使い切って後続の lock 再生成 / install check が連鎖的に
+# 失敗するため (2026-08-22 に実際に発生)。lock ジョブは短時間なので
+# 直列でも十分に速い。
 concurrency:
-  group: mise-lock-${{ github.ref_name }}
+  group: mise-lock
   cancel-in-progress: false
 
 jobs:
