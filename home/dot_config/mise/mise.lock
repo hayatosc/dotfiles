@@ -3339,17 +3339,7 @@ checksum = "sha256:7742953b7835b457e9102f1357a493913657dfd147435584f609d58356ec0
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.16/agy_cli_linux_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/521740158"
 
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-baseline"]
-checksum = "sha256:7742953b7835b457e9102f1357a493913657dfd147435584f609d58356ec085a"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.16/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/521740158"
-
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:7742953b7835b457e9102f1357a493913657dfd147435584f609d58356ec085a"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.16/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/521740158"
-
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:7742953b7835b457e9102f1357a493913657dfd147435584f609d58356ec085a"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.16/agy_cli_linux_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/521740158"
@@ -3364,17 +3354,7 @@ checksum = "sha256:79e699fb0a556704b608a69fe3ecd8a1fbe7af0480c3a1f81e25d63b1b5a2
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.16/agy_cli_mac_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/521740156"
 
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64-baseline"]
-checksum = "sha256:79e699fb0a556704b608a69fe3ecd8a1fbe7af0480c3a1f81e25d63b1b5a22f5"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.16/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/521740156"
-
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:188eb97496ab75ea15f3b55bdcfe899107789f0babe8db0c0585bda313f986e6"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.16/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/521740157"
-
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64-baseline"]
 checksum = "sha256:188eb97496ab75ea15f3b55bdcfe899107789f0babe8db0c0585bda313f986e6"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.16/agy_cli_windows_x64.zip"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/521740157"
@@ -4772,21 +4752,8 @@ checksum = "sha256:976150a14d490c94b243ea2e1a7eb2dfb67f12e36b182db90936f6728e6ae
 url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-linux-x86_64"
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169107"
 provenance = "github-attestations"
-provenance_verified = true
-
-[tools."github:herdrdev/herdr"."platforms.linux-x64-baseline"]
-checksum = "sha256:976150a14d490c94b243ea2e1a7eb2dfb67f12e36b182db90936f6728e6aecf4"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169107"
-provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.linux-x64-musl"]
-checksum = "sha256:976150a14d490c94b243ea2e1a7eb2dfb67f12e36b182db90936f6728e6aecf4"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169107"
-provenance = "github-attestations"
-
-[tools."github:herdrdev/herdr"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:976150a14d490c94b243ea2e1a7eb2dfb67f12e36b182db90936f6728e6aecf4"
 url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-linux-x86_64"
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169107"
@@ -4804,19 +4771,7 @@ url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-macos-x8
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169110"
 provenance = "github-attestations"
 
-[tools."github:herdrdev/herdr"."platforms.macos-x64-baseline"]
-checksum = "sha256:ab50262c8190cd7aa9056d249d255c08c328c3e8716de9cfa29db4f131b8e2c1"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169110"
-provenance = "github-attestations"
-
 [tools."github:herdrdev/herdr"."platforms.windows-x64"]
-checksum = "sha256:0ab3d0fe1434d55757997542b978c771d642987bb15a7130f4160f0db38821d5"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169109"
-provenance = "github-attestations"
-
-[tools."github:herdrdev/herdr"."platforms.windows-x64-baseline"]
 checksum = "sha256:0ab3d0fe1434d55757997542b978c771d642987bb15a7130f4160f0db38821d5"
 url = "https://github.com/herdrdev/herdr/releases/download/v0.8.2/herdr-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/521169109"
@@ -4938,17 +4893,7 @@ checksum = "sha256:c330be3341ef6f6cb106e4fb32c1d60754a08e1a7641143a7a6a4d9e9448f
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316336"
 
-[tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-baseline"]
-checksum = "sha256:c330be3341ef6f6cb106e4fb32c1d60754a08e1a7641143a7a6a4d9e9448f617"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316336"
-
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl"]
-checksum = "sha256:c330be3341ef6f6cb106e4fb32c1d60754a08e1a7641143a7a6a4d9e9448f617"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316336"
-
-[tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:c330be3341ef6f6cb106e4fb32c1d60754a08e1a7641143a7a6a4d9e9448f617"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316336"
@@ -5698,17 +5643,7 @@ checksum = "sha256:f8ea237c41f194cd799b48505518bfdaae4edf5a2ad6bd3d898e939785ee4
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894209"
 
-[tools.lazygit."platforms.linux-x64-baseline"]
-checksum = "sha256:f8ea237c41f194cd799b48505518bfdaae4edf5a2ad6bd3d898e939785ee4532"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894209"
-
 [tools.lazygit."platforms.linux-x64-musl"]
-checksum = "sha256:f8ea237c41f194cd799b48505518bfdaae4edf5a2ad6bd3d898e939785ee4532"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894209"
-
-[tools.lazygit."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:f8ea237c41f194cd799b48505518bfdaae4edf5a2ad6bd3d898e939785ee4532"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894209"
@@ -5723,17 +5658,7 @@ checksum = "sha256:f727fdf2efa46f78d102639eafe085cef437928da1e9ec79ec8e203b8a12f
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_darwin_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894192"
 
-[tools.lazygit."platforms.macos-x64-baseline"]
-checksum = "sha256:f727fdf2efa46f78d102639eafe085cef437928da1e9ec79ec8e203b8a12f2a2"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_darwin_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894192"
-
 [tools.lazygit."platforms.windows-x64"]
-checksum = "sha256:de8eca2cf2e75857882d313bf9dfc706a7aae893951ab29df706c99b525661ae"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_windows_x86_64.zip"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894165"
-
-[tools.lazygit."platforms.windows-x64-baseline"]
 checksum = "sha256:de8eca2cf2e75857882d313bf9dfc706a7aae893951ab29df706c99b525661ae"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_windows_x86_64.zip"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894165"
