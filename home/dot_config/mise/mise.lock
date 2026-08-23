@@ -4900,33 +4900,43 @@ url = "https://github.com/openclaw/gogcli/releases/download/v0.37.0/gogcli_0.37.
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/514864902"
 
 [[tools."github:zenbu-labs/terminal-browser"]]
-version = "0.5.7"
+version = "0.5.8"
 backend = "github:zenbu-labs/terminal-browser"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64"]
-checksum = "sha256:27a06784ce75ad6d484a825ecd8bd94979d7003ba1789bd6a5e7bd3e6b6220e4"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.7/terminal-browser-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/520052103"
+checksum = "sha256:9ffe7fc1f2a309ed0be48c2f35fba534f38163d64c22c0c7dc539949d4f19e71"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316335"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64-musl"]
-checksum = "sha256:27a06784ce75ad6d484a825ecd8bd94979d7003ba1789bd6a5e7bd3e6b6220e4"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.7/terminal-browser-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/520052103"
+checksum = "sha256:9ffe7fc1f2a309ed0be48c2f35fba534f38163d64c22c0c7dc539949d4f19e71"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316335"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64"]
-checksum = "sha256:22d1080401c4bf61e4855bc41706686a108e17a73a4db5b3fb837193f0ec642f"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.7/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/520052098"
+checksum = "sha256:c330be3341ef6f6cb106e4fb32c1d60754a08e1a7641143a7a6a4d9e9448f617"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316336"
+
+[tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-baseline"]
+checksum = "sha256:c330be3341ef6f6cb106e4fb32c1d60754a08e1a7641143a7a6a4d9e9448f617"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316336"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl"]
-checksum = "sha256:22d1080401c4bf61e4855bc41706686a108e17a73a4db5b3fb837193f0ec642f"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.7/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/520052098"
+checksum = "sha256:c330be3341ef6f6cb106e4fb32c1d60754a08e1a7641143a7a6a4d9e9448f617"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316336"
+
+[tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:c330be3341ef6f6cb106e4fb32c1d60754a08e1a7641143a7a6a4d9e9448f617"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316336"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-arm64"]
-checksum = "sha256:cde0d22604d5b804cf9003a395742fa845e5588273c1ef6977c6ff3a4c64f38d"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.7/terminal-browser-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/520052099"
+checksum = "sha256:7bf70a1ba372c4153dd39a8776fb0ecb2d7660a9cd824f6fdbb8e5535800a72c"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.5.8/terminal-browser-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/521316337"
 
 [[tools.go]]
 version = "1.26.6"
