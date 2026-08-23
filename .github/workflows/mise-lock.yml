@@ -53,7 +53,7 @@ jobs:
           # 新しめの mise は lock 解決時に platform entry を大量に skip する
           # (2026.8.10 では 666 中 315 のみ書き込み)。lockfile 生成を決定論的に
           # 保つため、完全解決を確認済みの版に固定する。
-          version: 2026.8.9
+          version: 2026.8.10
 
       - name: Regenerate and commit mise.lock via GraphQL
         env:
