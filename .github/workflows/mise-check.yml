@@ -33,7 +33,7 @@ jobs:
         with:
           install: false
           # lockfile を生成する mise-lock.yml と同じ版を使い、挙動を一致させる。
-          version: 2026.7.5
+          version: 2026.8.9
 
       - name: Install changed tools
         env:
