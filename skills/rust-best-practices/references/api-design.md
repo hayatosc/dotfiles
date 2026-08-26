@@ -88,11 +88,25 @@ Feature gates are public API topology. A downstream graph may enable any union.
 - Document whether a feature affects public items, MSRV, platform support, or safety/crypto backend.
 - Test representative unions, not just each feature alone.
 
+## Documentation as API Contract
+
+Treat doc comments (`///` and `//!`) as primary interface specifications:
+
+- Provide a concise 1-line summary before the first blank line for search and module index previews.
+- Use intra-doc links ([`Type`], [`function()`]) to hyperlink domain concepts across docs.
+- Include runnable `# Examples` using `?` error propagation rather than `unwrap()`.
+- Explicitly document preconditions and failure contracts with `# Errors`, `# Panics`, and `# Safety` headers.
+- Enforce public documentation with `#![warn(missing_docs)]` and `#![warn(rustdoc::missing_crate_level_docs)]`.
+
+Read [documentation.md](documentation.md) for detailed doc comment structure, hidden setup lines (`#`), and doc test attributes (`should_panic`, `no_run`, `compile_fail`).
+
 ## Sources
 
 - [Cargo Book: SemVer compatibility](https://doc.rust-lang.org/cargo/reference/semver.html)
 - [Rust API Guidelines: future proofing](https://rust-lang.github.io/api-guidelines/future-proofing.html)
 - [Rust API Guidelines: flexibility](https://rust-lang.github.io/api-guidelines/flexibility.html)
+- [Rust API Guidelines: documentation](https://rust-lang.github.io/api-guidelines/documentation.html)
+- [The Rustdoc Book](https://doc.rust-lang.org/rustdoc/)
 - [Cargo Book: features](https://doc.rust-lang.org/cargo/reference/features.html)
 - [Rust Reference: type layout](https://doc.rust-lang.org/reference/type-layout.html)
 - [Rust Reference: dyn compatibility](https://doc.rust-lang.org/reference/items/traits.html#dyn-compatibility)

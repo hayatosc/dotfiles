@@ -16,11 +16,11 @@ Apply this skill to decisions where multiple Rust designs compile but differ in 
    - invariant and trust boundary;
    - owner and lifetime of each resource;
    - failure, cancellation, and cleanup semantics;
-   - public API, MSRV, feature, layout, and trait commitments;
+   - public API, MSRV, feature, layout, documentation, and trait commitments;
    - measured performance constraint.
 3. Separate reversible choices from commitments. A private allocation strategy is reversible; a public trait implementation, error variant, feature, auto-trait result, layout, or callback contract may not be.
 4. Compare viable designs by proof burden and failure mode, not line count. Prefer the weakest mechanism that expresses the contract: scoped ownership before shared ownership, safe abstraction before unsafe, concrete type before dynamic dispatch, and private policy before public commitment.
-5. Test the disputed contract directly. Compilation alone does not establish cancellation safety, panic safety, feature composability, FFI validity, or unsafe soundness.
+5. Test the disputed contract directly. Compilation alone does not establish cancellation safety, panic safety, feature composability, FFI validity, doc-test execution, or unsafe soundness.
 
 ## Evidence Discipline
 
@@ -54,6 +54,7 @@ Read only the references needed for the decision:
 - Community field lessons, disputed heuristics, and lessons from other Rust agent skills: [community-practice.md](references/community-practice.md)
 - Ownership topology, self-reference, lifetimes, pinning, and trait coherence: [core-idioms.md](references/core-idioms.md)
 - Public API evolution, traits, dynamic dispatch, errors, and SemVer: [api-design.md](references/api-design.md)
+- Documentation comments, intra-doc links, doc tests, section standards, and lint enforcement: [documentation.md](references/documentation.md)
 - Failure taxonomy, partial effects, retries, cleanup, and panic boundaries: [error-handling.md](references/error-handling.md)
 - Task ownership, cancellation, backpressure, locks, and blocking work: [concurrency-async.md](references/concurrency-async.md)
 - Risk-directed testing, model checking, fuzzing, and unsafe verification: [testing.md](references/testing.md)
@@ -65,7 +66,7 @@ Read only the references needed for the decision:
 
 1. Soundness, validity, aliasing, provenance, data races, ABI, and unwind boundaries.
 2. Lost work, partial effects, cancellation, cleanup, deadlocks, and resource lifetime.
-3. Public compatibility: downstream implementations, inference, feature combinations, MSRV, layout, and auto traits.
+3. Public compatibility and contracts: downstream implementations, inference, doc comments (`///`/`//!`) with `# Safety`/`# Errors`/`# Panics`, intra-doc links, runnable doc tests using `?`, feature combinations, MSRV, layout, and auto traits.
 4. Ownership topology and operability: backpressure, observability, shutdown, and error context.
 5. Measured performance and compile-cost tradeoffs.
 

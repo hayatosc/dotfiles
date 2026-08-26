@@ -26,6 +26,7 @@ Use this map before applying a local workaround. The visible compiler error is o
 | Make the whole subsystem generic “for zero cost” | Dispatch preference is spreading type and code-generation cost | Keep a thin generic edge and concrete/dynamic inner boundary when compile time or binary size matters; measure the hot call | Assuming `dyn Trait` is always slow or generics are free |
 | `repr(C)` appears to make FFI safe | Layout is only one part of the foreign contract | Specify ABI, valid values, ownership, allocator, unwinding, callback re-entry, threading, and versioning | Passing Rust references, enums, trait objects, or unwinding behavior across FFI by layout guess |
 | Copy a recommended lint/dependency/runtime template wholesale | A teaching scaffold is being mistaken for project evidence | Derive choices from MSRV, targets, threat model, workload, and existing policy | Blanket `pedantic`, `tokio/full`, global allocator changes, or universal timeouts without cost/behavior review |
+| Out-of-date doc examples or missing failure contracts | Documentation is treated as static comments rather than tested API contracts | Use `cargo test --doc` with hidden setup `#`, `?` error handling, intra-doc links, and explicit `# Errors`/`# Panics`/`# Safety` sections | Writing unchecked pseudocode in doc comments or using `unwrap()` that models unidiomatic error handling for users |
 
 ## Diagnostic Questions
 
@@ -43,6 +44,7 @@ Before editing, answer the smallest relevant set:
 
 - [Rust error E0502: conflicting borrows](https://doc.rust-lang.org/error_codes/E0502.html)
 - [Rust error E0038: dyn compatibility](https://doc.rust-lang.org/error_codes/E0038.html)
+- [The Rustdoc Book: How to write documentation](https://doc.rust-lang.org/rustdoc/how-to-write-documentation.html)
 - [Async Book: `Send` approximation](https://rust-lang.github.io/async-book/07_workarounds/03_send_approximation.html)
 - [The `Pin` module](https://doc.rust-lang.org/std/pin/)
 - [Rust Reference: implementation coherence](https://doc.rust-lang.org/reference/items/implementations.html)

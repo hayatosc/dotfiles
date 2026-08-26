@@ -7,6 +7,7 @@ Choose evidence from the failure mode. More tests of ordinary examples do not co
 | Claim | Strongest practical evidence |
 | --- | --- |
 | Public API remains source-compatible | Downstream fixture crates and a SemVer checker, plus manual behavioral review |
+| Public code examples remain correct and runnable | `cargo test --doc` with hidden setup `#`, `?` error handling, and `compile_fail`/`should_panic` attributes |
 | Feature graph composes | Build/test default, none, all, and selected unions from downstream workspace positions |
 | Parser preserves invariants for arbitrary input | Property tests plus coverage-guided fuzzing and resource limits |
 | Unsafe wrapper is sound | Written proof, adversarial safe callers, Miri, fuzzing, sanitizers where applicable |
@@ -81,11 +82,21 @@ Keep small downstream crates that exercise:
 
 Tooling can detect many signature changes but not retry semantics, panic behavior, performance, layout relied on through FFI, or operational shutdown contracts. Review those manually.
 
+## Doc Tests as Contract Verification
+
+Treat doc tests (`cargo test --doc`) as continuous verification that public code examples remain synchronized with implementation changes:
+
+- Test copy-pasteable caller code paths with `?` error propagation rather than `unwrap()`.
+- Use `#` prefix to conceal setup boilerplate (such as `fn main() -> Result<...>` or mock helpers) while keeping the example compilable.
+- Use `should_panic` to test panicking boundary conditions and `compile_fail` to assert that invalid patterns are rejected at compile time.
+- See [documentation.md](documentation.md) for full doc test rules and code block attributes.
+
 ## Sources
 
 - [Miri](https://github.com/rust-lang/miri)
 - [Rust Fuzz Book](https://rust-fuzz.github.io/book/)
 - [Loom](https://docs.rs/loom/latest/loom/)
+- [The Rustdoc Book: Documentation tests](https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html)
 - [Rust Unstable Book: sanitizers](https://doc.rust-lang.org/unstable-book/compiler-flags/sanitizer.html)
 - [Cargo Book: features](https://doc.rust-lang.org/cargo/reference/features.html)
 - [Cargo Book: SemVer compatibility](https://doc.rust-lang.org/cargo/reference/semver.html)

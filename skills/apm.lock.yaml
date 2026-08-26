@@ -4492,7 +4492,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
+  content_hash: sha256:9e8c19f4449fb92f1cda143aefc7f7c2e9414b91a3bb1c9df97ff759286e744e
 - kind: project-relative
   target: agents
   value: .agents/skills/code-search
@@ -4510,7 +4510,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:a5c4332b32d1c6391370f7ceda8ae4f68a197b54cc57380f1b0668fb750dc603
+  content_hash: sha256:fd071c8465798fe1061622e75c15f0f6dc7ea60f99a1cec7901765db6d8ec0a7
 - kind: project-relative
   target: agents
   value: .agents/skills/code-search/references/funnel-playbook.md
@@ -4519,7 +4519,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:470109bbc4c9ba3a287dbf544e302912f07bc99a24534efadf231cd2015308fa
+  content_hash: sha256:8217bc263beb5a286726101eed753a4f25f1a138806cc0e697f18af5d81fea9a
 - kind: project-relative
   target: agents
   value: .agents/skills/coding-style
@@ -4537,7 +4537,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:4777f8a19319bab4e9b2b6d434715f9760ea0285c7eb9a4ff5c94594db8d8334
+  content_hash: sha256:ca8e6ddad01433b6f41d24625cb7a4aa73fa2c1efb3ba71e6fa17aac0d331238
 - kind: project-relative
   target: agents
   value: .agents/skills/cognitive-rhythm-writing
@@ -5068,7 +5068,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:ebc352404701d2289496f04fe361dfbb8a1253ce9c6921f49564a9b883c9529a
+  content_hash: sha256:616f6cde862751b5a6cb57bae98e5d856d58449353a804e1c3d8a53fefd9cd27
 - kind: project-relative
   target: agents
   value: .agents/skills/refactoring-code/evals/evals.json
@@ -5104,7 +5104,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
+  content_hash: sha256:c2c56039f4128e24b1ccfb32b9a75ab4e1ff8aabe4a227d4306d750429d49a95
 - kind: project-relative
   target: agents
   value: .agents/skills/rust-best-practices
@@ -5122,7 +5122,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:6b946c9fa5b994eff8568bf743185b0c3712c5f745fe640844c77ad571da7909
+  content_hash: sha256:9b09bf29de58ba27bd2c1451f5644f271da871d0b30a259a65fb4cd6285cb1bb
 - kind: project-relative
   target: agents
   value: .agents/skills/rust-best-practices/evals/evals.json
@@ -5140,7 +5140,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:951b359cad126654841a9269630fb1bf9b5191ac607f982a84b7d915bb7081e8
+  content_hash: sha256:9630d25c0836a8edf956e924d335b8e32bac68e219c659d80a07f1b8a2ad2b9b
 - kind: project-relative
   target: agents
   value: .agents/skills/rust-best-practices/references/cargo-tooling.md
@@ -5179,6 +5179,15 @@ deployments:
   content_hash: sha256:8aa88fc7122d2774e34cbdf247cae967d68c5756d805878f1b9bcaf7ddbac6aa
 - kind: project-relative
   target: agents
+  value: .agents/skills/rust-best-practices/references/documentation.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b7b0dcba4b5de220e1e9b558d0d80dc05ca0e042dadb6695968f360954e50efd
+- kind: project-relative
+  target: agents
   value: .agents/skills/rust-best-practices/references/error-handling.md
   runtime: null
   scope: project
@@ -5203,7 +5212,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:3c44ed75fe4eb0ce7a41ac3ec0f492c7f2f32091cc0b8c2017053d16ccc56b85
+  content_hash: sha256:2c17d9eccc11f14a96457d28d487b446884b93302bf94ea6e16e664909431216
 - kind: project-relative
   target: agents
   value: .agents/skills/rust-best-practices/references/testing.md
@@ -5212,7 +5221,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:2b3db42aab6381856ba65ef353672281f4d0da5af020200b778641fae08b3d02
+  content_hash: sha256:a2566946f55cd4847e2e48246e4571a59c21a0d278227aa8344d8ccd16578d9e
 - kind: project-relative
   target: agents
   value: .agents/skills/rust-best-practices/references/unsafe-security.md
@@ -5293,7 +5302,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:e3d8dbd53a6334aba25f29a90887d2b167466bde8fa518022124a6abe680c736
+  content_hash: sha256:3f3382ffe6c4560d1e04b3b386c44c10f8e867575d48bab9802757b5c729240c
 - kind: project-relative
   target: agents
   value: .agents/skills/typescript-recommend-tools/references/default-stacks.md
@@ -5302,7 +5311,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:6496414b6b4f302f18f01b207123386a69c81f4c9b876b1d1aa796f6752b9a8e
+  content_hash: sha256:e3ecfbada8a87ef32a7ca1106a21609908cc196cd57a8cba6544595500457f25
 - kind: project-relative
   target: agents
   value: .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md
@@ -5311,7 +5320,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:3e98227275ea67495c289e1b873f376490c8bf636d4a7e42556b116627473d9f
+  content_hash: sha256:b93b8fbf761616f59f5e9cb1f569bee0ab9e0bf83d695603e12284536757f24b
 - kind: project-relative
   target: agents
   value: .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md
@@ -5329,7 +5338,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:166fd16e619259499bf8af9ead9442f11a63bead32375e9108bbf0f8e652a86c
+  content_hash: sha256:5d7ec45eb3f2b65ff895b8e7c880751b56a9d838c84512136292337ac793042f
 - kind: project-relative
   target: agents
   value: .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md
@@ -5338,7 +5347,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:b29ff2099c526d1d88e3e5ca2ba55ee95daacf0b911a26a5332d2924c70359e4
+  content_hash: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
 local_deployed_files:
 - .agents/skills/article-review
 - .agents/skills/article-review/README.md
@@ -5394,6 +5403,7 @@ local_deployed_files:
 - .agents/skills/rust-best-practices/references/community-practice.md
 - .agents/skills/rust-best-practices/references/concurrency-async.md
 - .agents/skills/rust-best-practices/references/core-idioms.md
+- .agents/skills/rust-best-practices/references/documentation.md
 - .agents/skills/rust-best-practices/references/error-handling.md
 - .agents/skills/rust-best-practices/references/performance.md
 - .agents/skills/rust-best-practices/references/stumbling-blocks.md
@@ -5422,10 +5432,10 @@ local_deployed_file_hashes:
   .agents/skills/ast-grep/SKILL.md: sha256:46cb345c660e6275384e99529c053704aeb51bf94d45e51a9846fe897f707d7f
   .agents/skills/ast-grep/references/command-cookbook.md: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
-  .agents/skills/before-commit/SKILL.md: sha256:2929d702503ead584bd54f75e7a9dce5eb6b3466d2747b0e63bcf3e40e99e452
-  .agents/skills/code-search/SKILL.md: sha256:a5c4332b32d1c6391370f7ceda8ae4f68a197b54cc57380f1b0668fb750dc603
-  .agents/skills/code-search/references/funnel-playbook.md: sha256:470109bbc4c9ba3a287dbf544e302912f07bc99a24534efadf231cd2015308fa
-  .agents/skills/coding-style/SKILL.md: sha256:4777f8a19319bab4e9b2b6d434715f9760ea0285c7eb9a4ff5c94594db8d8334
+  .agents/skills/before-commit/SKILL.md: sha256:9e8c19f4449fb92f1cda143aefc7f7c2e9414b91a3bb1c9df97ff759286e744e
+  .agents/skills/code-search/SKILL.md: sha256:fd071c8465798fe1061622e75c15f0f6dc7ea60f99a1cec7901765db6d8ec0a7
+  .agents/skills/code-search/references/funnel-playbook.md: sha256:8217bc263beb5a286726101eed753a4f25f1a138806cc0e697f18af5d81fea9a
+  .agents/skills/coding-style/SKILL.md: sha256:ca8e6ddad01433b6f41d24625cb7a4aa73fa2c1efb3ba71e6fa17aac0d331238
   .agents/skills/cognitive-rhythm-writing/SKILL.md: sha256:35d6448e9cd8d1abc749ac89364b130ac676058a75f42db22d578e3340f312a4
   .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
   .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
@@ -5442,30 +5452,31 @@ local_deployed_file_hashes:
   .agents/skills/hono-best-practices/references/rpc-patterns.md: sha256:c8a971e98a4ed46f23f9211ffe8e0f0831498238d75a6066af91f89c3cd9b69f
   .agents/skills/hono-best-practices/references/validation-patterns.md: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
   .agents/skills/japanese-tech-writing/SKILL.md: sha256:0891b88c7d3ccbe27037e556483b9c0618d90d314ee107fd5764ba8e331bc29d
-  .agents/skills/refactoring-code/SKILL.md: sha256:ebc352404701d2289496f04fe361dfbb8a1253ce9c6921f49564a9b883c9529a
+  .agents/skills/refactoring-code/SKILL.md: sha256:616f6cde862751b5a6cb57bae98e5d856d58449353a804e1c3d8a53fefd9cd27
   .agents/skills/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
   .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
   .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:c6e7bec0c3b67ea8235430c748ea72f501df0ee1cf61028e93e753ec850248f6
-  .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:7b295f1f5567eceee6a2d54a3d73c8f78a905bf345e91c18b9cc702daf77811f
-  .agents/skills/rust-best-practices/SKILL.md: sha256:6b946c9fa5b994eff8568bf743185b0c3712c5f745fe640844c77ad571da7909
+  .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:c2c56039f4128e24b1ccfb32b9a75ab4e1ff8aabe4a227d4306d750429d49a95
+  .agents/skills/rust-best-practices/SKILL.md: sha256:9b09bf29de58ba27bd2c1451f5644f271da871d0b30a259a65fb4cd6285cb1bb
   .agents/skills/rust-best-practices/evals/evals.json: sha256:dcbbe8c255b6b5f37b7308a93a1a29121428a9d2d3fa5609511885e782187bdf
-  .agents/skills/rust-best-practices/references/api-design.md: sha256:951b359cad126654841a9269630fb1bf9b5191ac607f982a84b7d915bb7081e8
+  .agents/skills/rust-best-practices/references/api-design.md: sha256:9630d25c0836a8edf956e924d335b8e32bac68e219c659d80a07f1b8a2ad2b9b
   .agents/skills/rust-best-practices/references/cargo-tooling.md: sha256:3a7bb6238c90d4d1313fb73b2d2a3a5ab1ca40456ba44497785f3420d5659c4f
   .agents/skills/rust-best-practices/references/community-practice.md: sha256:5fafb6f1013651d98b09b288ecbc5221fbf89110b6e469309028ed234f1581b2
   .agents/skills/rust-best-practices/references/concurrency-async.md: sha256:6e4fc71a655cb2ff30fc6ea79c3573a71513101b05885b5e9967bfccc5f01254
   .agents/skills/rust-best-practices/references/core-idioms.md: sha256:8aa88fc7122d2774e34cbdf247cae967d68c5756d805878f1b9bcaf7ddbac6aa
+  .agents/skills/rust-best-practices/references/documentation.md: sha256:b7b0dcba4b5de220e1e9b558d0d80dc05ca0e042dadb6695968f360954e50efd
   .agents/skills/rust-best-practices/references/error-handling.md: sha256:83e59ee0b09f0db07c9f1de93bebbb71fc790476b3b2a8dcafdcead9ab6df4f1
   .agents/skills/rust-best-practices/references/performance.md: sha256:65f04e8ad2239c056eef672e0a373e2d535476d716b34412e2a11db60a184666
-  .agents/skills/rust-best-practices/references/stumbling-blocks.md: sha256:3c44ed75fe4eb0ce7a41ac3ec0f492c7f2f32091cc0b8c2017053d16ccc56b85
-  .agents/skills/rust-best-practices/references/testing.md: sha256:2b3db42aab6381856ba65ef353672281f4d0da5af020200b778641fae08b3d02
+  .agents/skills/rust-best-practices/references/stumbling-blocks.md: sha256:2c17d9eccc11f14a96457d28d487b446884b93302bf94ea6e16e664909431216
+  .agents/skills/rust-best-practices/references/testing.md: sha256:a2566946f55cd4847e2e48246e4571a59c21a0d278227aa8344d8ccd16578d9e
   .agents/skills/rust-best-practices/references/unsafe-security.md: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
   .agents/skills/subagent-orchestration/SKILL.md: sha256:9f4cab5976ca017da321570ab889676b0d897d47892b0c9350698a5889d5da4b
   .agents/skills/typescript-best-practices/SKILL.md: sha256:34d0c5317e8e5a350fd0c1f850461f28c5f1d57fbb8d094c44274156cdb7179b
   .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
   .agents/skills/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
-  .agents/skills/typescript-recommend-tools/SKILL.md: sha256:e3d8dbd53a6334aba25f29a90887d2b167466bde8fa518022124a6abe680c736
-  .agents/skills/typescript-recommend-tools/references/default-stacks.md: sha256:6496414b6b4f302f18f01b207123386a69c81f4c9b876b1d1aa796f6752b9a8e
-  .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md: sha256:3e98227275ea67495c289e1b873f376490c8bf636d4a7e42556b116627473d9f
+  .agents/skills/typescript-recommend-tools/SKILL.md: sha256:3f3382ffe6c4560d1e04b3b386c44c10f8e867575d48bab9802757b5c729240c
+  .agents/skills/typescript-recommend-tools/references/default-stacks.md: sha256:e3ecfbada8a87ef32a7ca1106a21609908cc196cd57a8cba6544595500457f25
+  .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md: sha256:b93b8fbf761616f59f5e9cb1f569bee0ab9e0bf83d695603e12284536757f24b
   .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
-  .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:166fd16e619259499bf8af9ead9442f11a63bead32375e9108bbf0f8e652a86c
-  .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md: sha256:b29ff2099c526d1d88e3e5ca2ba55ee95daacf0b911a26a5332d2924c70359e4
+  .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:5d7ec45eb3f2b65ff895b8e7c880751b56a9d838c84512136292337ac793042f
+  .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
