@@ -1,11 +1,11 @@
 lockfile_version: '1'
-generated_at: '2026-08-14T07:54:08.356027+00:00'
+generated_at: '2026-08-28T03:30:55.129224+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: anthropics/skills
   name: frontend-design
   host: github.com
-  resolved_commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+  resolved_commit: 3b3fad96af16a10759d930941b4520ba0c40edae
   version: unknown
   virtual_path: skills/frontend-design
   is_virtual: true
@@ -19,9 +19,133 @@ dependencies:
     .agents/skills/frontend-design/SKILL.md: sha256:1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd
   content_hash: sha256:4eabc66183767153e404b39d1b839b1c37f2d82d86f0a0d7e880a579d8d62336
 - repo_url: anthropics/skills
+  name: pptx
+  host: github.com
+  resolved_commit: 3b3fad96af16a10759d930941b4520ba0c40edae
+  version: unknown
+  virtual_path: skills/pptx
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/pptx
+  - .agents/skills/pptx/LICENSE.txt
+  - .agents/skills/pptx/SKILL.md
+  - .agents/skills/pptx/scripts/__init__.py
+  - .agents/skills/pptx/scripts/add_slide.py
+  - .agents/skills/pptx/scripts/clean.py
+  - .agents/skills/pptx/scripts/office/helpers/__init__.py
+  - .agents/skills/pptx/scripts/office/helpers/pptx_chart.py
+  - .agents/skills/pptx/scripts/office/helpers/pptx_slide.py
+  - .agents/skills/pptx/scripts/office/helpers/pptx_theme.py
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd
+  - .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd
+  - .agents/skills/pptx/scripts/office/schemas/mce/mc.xsd
+  - .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2010.xsd
+  - .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2012.xsd
+  - .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2018.xsd
+  - .agents/skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd
+  - .agents/skills/pptx/scripts/office/schemas/microsoft/wml-cid-2016.xsd
+  - .agents/skills/pptx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd
+  - .agents/skills/pptx/scripts/office/schemas/microsoft/wml-symex-2015.xsd
+  - .agents/skills/pptx/scripts/office/soffice.py
+  - .agents/skills/pptx/scripts/office/validate.py
+  - .agents/skills/pptx/scripts/office/validators/__init__.py
+  - .agents/skills/pptx/scripts/office/validators/base.py
+  - .agents/skills/pptx/scripts/office/validators/docx.py
+  - .agents/skills/pptx/scripts/office/validators/pptx.py
+  - .agents/skills/pptx/scripts/office/validators/redlining.py
+  - .agents/skills/pptx/scripts/thumbnail.py
+  deployed_file_hashes:
+    .agents/skills/pptx/LICENSE.txt: sha256:79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa
+    .agents/skills/pptx/SKILL.md: sha256:a7ff03e2c85b636f55232a6b1555f5dd90216b7a1a359ab289d8364e6acbc6a0
+    .agents/skills/pptx/scripts/__init__.py: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    .agents/skills/pptx/scripts/add_slide.py: sha256:3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9
+    .agents/skills/pptx/scripts/clean.py: sha256:5c808cd4dff7e02661ef3c68b5917f4e25097cc6610c92a3a7df4a6366a5c3c1
+    .agents/skills/pptx/scripts/office/helpers/__init__.py: sha256:678e42456d9e10923c8b9a93691cdd993de3433448a184fa72a0c31f4ae086d5
+    .agents/skills/pptx/scripts/office/helpers/pptx_chart.py: sha256:47ac266f7d39d11ede6bb0d1f3a19d801394fd2964636f1b48beb701f1832964
+    .agents/skills/pptx/scripts/office/helpers/pptx_slide.py: sha256:7b9f69b4a5bd6a2d9eabf9e0e3e796d7a421373145f6a8cd11f60b7ba2d6a5d0
+    .agents/skills/pptx/scripts/office/helpers/pptx_theme.py: sha256:ebb54c56e9c13807f5f98f0cae22d47cdd0162da8525eaa664e3f2c8c8d6bb03
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd: sha256:41b93bd8857cc68b1e43be2806a872d736a9bdd6566900062d8fdb57d7bbb354
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd: sha256:3fd0586f2637b98bb9886f0e0b67d89e1cc987c2d158cc7deb5f5b9890ced412
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd: sha256:29b254ee0d10414a8504b5a08149c7baec35a60d5ff607d6b3f492aa36815f40
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd: sha256:5cb76dabd8b97d1e9308a1700b90c20139be4d50792d21a7f09789f5cccd6026
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd: sha256:5375417f0f5394b8dd1a7035b9679151f19a6b65df309dec10cfb4a420cb00e9
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd: sha256:5d389d42befbebd91945d620242347caecd3367f9a3a7cf8d97949507ae1f53c
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd: sha256:b4532b6d258832953fbb3ee4c711f4fe25d3faf46a10644b2505f17010d01e88
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd: sha256:bdad416b096b61d37b71603b2c949484f9070c830bdaeba93bf35e15c8900614
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd: sha256:d173c3e5d61e42e2e3a97226c632fd2ab7cc481fc4e492365b87024ab546daff
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd: sha256:3c6709101c6aaa82888df5d8795c33f9e857196790eb320d9194e64be2b6bdd8
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd: sha256:0b364451dc36a48dd6dae0f3b6ada05fd9b71e5208211f8ee5537d7e51a587e2
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd: sha256:e2abacbb9a55ce1365f8961bc1b1395bbc811e512b111000d8c333f98458dece
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd: sha256:0ef4bb354ff44b923564c4ddbdda5987919d220225129ec94614a618ceafc281
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd: sha256:0d103b99a4a8652f8871552a69d42d2a3760ac6a5e3ef02d979c4273257ff6a4
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd: sha256:9c085407751b9061c1f996f6c39ce58451be22a8d334f09175f0e89e42736285
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd: sha256:bc92e36ccd233722d4c5869bec71ddc7b12e2df56059942cce5a39065cc9c368
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd: sha256:7b5b7413e2c895b1e148e82e292a117d53c7ec65b0696c992edca57b61b4a74b
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd: sha256:3213ef1631606250f5010b42cad7ef716f7c59426367798e33c374c0ec391d3a
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd: sha256:12264f3c03d738311cd9237d212f1c07479e70f0cbe1ae725d29b36539aef637
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd: sha256:beffeed56945c22a77440122c8bdc426f3fcbe7f3b12ea0976c770d1f8d54578
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd: sha256:f5ee623b08b6a66935e5aced2f5d8ad0fc71bf9e8e833cd490150c0fa94b8763
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd: sha256:585bedc1313b40888dcc544cb74cd939a105ee674f3b1d3aa1cc6d34f70ff155
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd: sha256:133c9f64a5c5d573b78d0a474122b22506d8eadb5e063f67cdbbb8fa2f161d0e
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd: sha256:6bdeb169c3717eb01108853bd9fc5a3750fb1fa5b82abbdd854d49855a40f519
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd: sha256:475dcae1e7d1ea46232db6f8481040c15e53a52a3c256831d3df204212b0e831
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd: sha256:c2dd9f61f892deae6acd8d20771ea79b12018af25f3bf8d06639c8542d218cfd
+    .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd: sha256:a539aa2fb154fa50e0f5cc97e6ad7cbc66f8ec3e3746f61ec6a8b0d5d15ecdf2
+    .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd: sha256:9e0b7209fc69ab11987900404540969976000c5ebe4d4f58c43dc3842886bf3a
+    .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd: sha256:451958454e8588dfc7cd945981ada142ca06ff3307937f5700df059c2b307fa8
+    .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd: sha256:6de111e11403f7cd49027400755bae0ea1cabef2815f09bd40a24f0017613b24
+    .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd: sha256:f565adfef5a502044abc3a9153e157edc25af78304d335994afb958874b15e26
+    .agents/skills/pptx/scripts/office/schemas/mce/mc.xsd: sha256:3a37e461ecf5a8670fdec34029703401f8728ab9c96ec1739a6ae58d55212413
+    .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2010.xsd: sha256:568b26ee156cb9549aa439ca2158965f77b7c1602b7e0316f40ac6cf586e35f2
+    .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2012.xsd: sha256:0fa75578a000439a7988ba0c59fdc69f774bbd416cbacc14d07125b3f686cb74
+    .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2018.xsd: sha256:be0ff793a22dd31384650c3a4da14c2fa8062751c2e97b0e5ee852bda13c60ad
+    .agents/skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd: sha256:fddc2b880cabb9005aebbc7e783e53c19fec1c03df7d0e2f2076a33a0fdfd081
+    .agents/skills/pptx/scripts/office/schemas/microsoft/wml-cid-2016.xsd: sha256:127ca209fa73d7cb708449cb355c871867948a96e4a74f7bf5811ef62d17991d
+    .agents/skills/pptx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd: sha256:842e7163409c8d74f4d7088a8bc99500d80bc75332681a0980055b08f374a604
+    .agents/skills/pptx/scripts/office/schemas/microsoft/wml-symex-2015.xsd: sha256:16f6f8072249f431370723c2cd8974672e0d9c897e00e97dd918079df934871b
+    .agents/skills/pptx/scripts/office/soffice.py: sha256:df2c8d7249c132a4512d744482e4b5ed0ecbe885f0bcfb1295e7e6a7ced0432c
+    .agents/skills/pptx/scripts/office/validate.py: sha256:346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e
+    .agents/skills/pptx/scripts/office/validators/__init__.py: sha256:83e0f035c5abea238d3f2c3968afbd511ed022b527b7c9cb60a9434cc34ff987
+    .agents/skills/pptx/scripts/office/validators/base.py: sha256:f818ea28c793ba42960fa4498265e2632a62c86f7b5d6aff6fa89dacc02d59ea
+    .agents/skills/pptx/scripts/office/validators/docx.py: sha256:93d3444c0ef3f043d21a2285c46d2cda478426b930dc33dcf3b11265935517b5
+    .agents/skills/pptx/scripts/office/validators/pptx.py: sha256:17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299
+    .agents/skills/pptx/scripts/office/validators/redlining.py: sha256:ed50d0885eee4b9c387f546b059bcaed64086815880a5167336244f93e305123
+    .agents/skills/pptx/scripts/thumbnail.py: sha256:94ef83a84346aa2d63913de0d42bb2fe902ccdc17bfac6130096ca758381793c
+  content_hash: sha256:cd5f211f026c6e1a6ff75b7c3b5ceb978e76a6e6af3e785d777b9dc427167862
+- repo_url: anthropics/skills
   name: skill-creator
   host: github.com
-  resolved_commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+  resolved_commit: 3b3fad96af16a10759d930941b4520ba0c40edae
   version: unknown
   virtual_path: skills/skill-creator
   is_virtual: true
@@ -123,7 +247,7 @@ dependencies:
 - repo_url: emilkowalski/skill
   name: emil-design-eng
   host: github.com
-  resolved_commit: de33dbed000212b54400a33767d1e4d03654db2a
+  resolved_commit: d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7
   version: unknown
   virtual_path: skills/emil-design-eng
   is_virtual: true
@@ -137,7 +261,7 @@ dependencies:
 - repo_url: github/gh-stack
   name: gh-stack
   host: github.com
-  resolved_commit: 14fc42ed9b6c376a53b2f999f138d3bd26dac546
+  resolved_commit: 2bd699a544a09cb5c45a013d03416e0894b0454e
   version: unknown
   virtual_path: skills/gh-stack
   is_virtual: true
@@ -149,16 +273,16 @@ dependencies:
   - .agents/skills/gh-stack/references/stack-design.md
   - .agents/skills/gh-stack/references/troubleshooting.md
   deployed_file_hashes:
-    .agents/skills/gh-stack/SKILL.md: sha256:1ff5a23a7f66a3f5853ef411e48ae66ebe0b47d98d248a3a41ee0de8e237a796
-    .agents/skills/gh-stack/references/commands.md: sha256:362bca643fa84aae90627c4d1797c2343aaf5427713e6aa8572e04454c555fa9
+    .agents/skills/gh-stack/SKILL.md: sha256:5d966fc1ff92014db49d6689f41f70ddf1af40879f9dc8a12bb75b82d7850c25
+    .agents/skills/gh-stack/references/commands.md: sha256:31049425b8db652e80fa6994d5289f20169f57d7af0a0651fa72c3f25e8fe7c7
     .agents/skills/gh-stack/references/stack-design.md: sha256:4a61e3065ce61a5d129a30f5dcbebe73bfde250e34c382277facdc31d2c4e5ce
     .agents/skills/gh-stack/references/troubleshooting.md: sha256:fe1958036e663c7471a0d3efdf1fefe47ee65e06713b13a96e3db95becccdc47
-  content_hash: sha256:0d9f11ad344eda3becb92d0d195a08491a5ab2ba72a3890ff1e9db6c3de25f27
+  content_hash: sha256:39b7803bf32b4ef195de76fa2d4730ac5dfc686d3d6654f93a162873febef0b1
 - repo_url: googlechrome/modern-web-guidance
   materialization_repo_url: GoogleChrome/modern-web-guidance
   name: modern-web-guidance
   host: github.com
-  resolved_commit: 684ab9d7c6b78fc2cd5677912d874397cb2e5dfa
+  resolved_commit: 457c381def89ce6213a171238f92eea63e9eaeb2
   version: unknown
   virtual_path: skills/modern-web-guidance
   is_virtual: true
@@ -188,6 +312,7 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/css/reduce-style-repetition.md
   - .agents/skills/modern-web-guidance/guides/css/size-aware-styling.md
   - .agents/skills/modern-web-guidance/guides/css/style-parent-with-has.md
+  - .agents/skills/modern-web-guidance/guides/css/usage-aware-component-variations.md
   - .agents/skills/modern-web-guidance/guides/forms/animated-select-picker.md
   - .agents/skills/modern-web-guidance/guides/forms/autofill-address-form.md
   - .agents/skills/modern-web-guidance/guides/forms/autofill-highlight-inputs.md
@@ -253,6 +378,7 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/ui-atoms/scroll-progress-indicator.md
   - .agents/skills/modern-web-guidance/guides/ui-atoms/scrollability-affordance-hints.md
   - .agents/skills/modern-web-guidance/guides/ui-atoms/shrinking-header-on-scroll.md
+  - .agents/skills/modern-web-guidance/guides/ui-atoms/state-aware-sticky-headers.md
   - .agents/skills/modern-web-guidance/guides/ui-behaviors/anchor-positioning-tab-underline.md
   - .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-element-entry-exit.md
   - .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-to-from-top-layer.md
@@ -310,25 +436,26 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/accessibility/accessibility.md: sha256:cba525364b8c122336186d914b59508a4b21f2247ed93fd7c5fab952d7231c11
     .agents/skills/modern-web-guidance/guides/accessibility/accessible-error-announcement.md: sha256:5e2ee36ebef9da9fa732bbaffe2171a22905b93911b8939f4eb03981594a2ef2
     .agents/skills/modern-web-guidance/guides/built-in-ai/language-detection.md: sha256:30818bb72894aa4984d1d72b23aeecc314ed59b88581d5c4d141a55bc9b4cf30
-    .agents/skills/modern-web-guidance/guides/built-in-ai/language-model.md: sha256:d3dcfe5247b7afe74d6a34f94e049b0d08c579bec8760e29d37cfb7167cf52e2
-    .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md: sha256:d3dcfe5247b7afe74d6a34f94e049b0d08c579bec8760e29d37cfb7167cf52e2
+    .agents/skills/modern-web-guidance/guides/built-in-ai/language-model.md: sha256:5b8848267f34e6361ec251dd9fcce27f12f116487ba6493d3c077857aed31eca
+    .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md: sha256:5b8848267f34e6361ec251dd9fcce27f12f116487ba6493d3c077857aed31eca
     .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md: sha256:7922ab19ccac7e68262007dd8d96812d6d455aa643cb1edb3fc9f25a4cece2a7
-    .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md: sha256:8e379baae33e0c34799cc93f1dc6c8929ed6f9f4891d9b1c0b6f0c62d5124b14
+    .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md: sha256:1a9e48f318b5f5c3254f9d1ecdda8d961129ece58087edd05f20dd9fccce01b1
     .agents/skills/modern-web-guidance/guides/css-layout/usage-aware-component-variations.md: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
     .agents/skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md: sha256:785a8b2e26a3e1e2d06cc773334fffe6497533b24d89dc3a90efceac09c029cd
     .agents/skills/modern-web-guidance/guides/css/calculate-with-intrinsic-sizes.md: sha256:45733897f683ddd0959c5285c7039150527d9eea4a0673ac3c56f93d73332f76
-    .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md: sha256:8dcb6d2a5089fe7983ad3fa40b87d80a33a0e1cf78e7079d810a28c821fe2948
-    .agents/skills/modern-web-guidance/guides/css/content-based-styling.md: sha256:35759c095a2e5245d2fcad14a4478264825513a42215c2186233eccbd639d100
+    .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md: sha256:bdc9101a217a7fd29fbd70f0e97f3887d7b797179ee58027ce57f8d9fce0f1ce
+    .agents/skills/modern-web-guidance/guides/css/content-based-styling.md: sha256:d271ea9f68c10bcb46f5dd123a08a48e4cc45005ba1b0d8c0953c7500b88956e
     .agents/skills/modern-web-guidance/guides/css/css-layout.md: sha256:ff1d632ba2af9dfafb14f49e8e65539769bd3d837b5dc307071367b602ab95b2
     .agents/skills/modern-web-guidance/guides/css/css.md: sha256:8a23dbec80bb90c3c025fba8bfde1bcbfa04b5ecd6f0d43f71db3e6a0ec598c1
     .agents/skills/modern-web-guidance/guides/css/design-token-reactivity.md: sha256:3bac11e6aa58f2b6902bd827a4bdf200b941d2b89d2e1f8813c67c694694e8b8
-    .agents/skills/modern-web-guidance/guides/css/dynamic-sibling-styling.md: sha256:cb70beee2f130bc9dbd98685a54d0cfd05c62f109b596ccfe86f8828907eed08
+    .agents/skills/modern-web-guidance/guides/css/dynamic-sibling-styling.md: sha256:d40bfca05b8d043fe769fe855f4c1b43dc8b693f4944d225d5ee4d3b6db419b0
     .agents/skills/modern-web-guidance/guides/css/fluid-scaling.md: sha256:59b7c060a0363924397cf52213c61a60bce97a1c252517c8623e5dc2ebd5ddcd
     .agents/skills/modern-web-guidance/guides/css/individual-transform-properties.md: sha256:adc19c640a5e3070192a3d01761cb07e6cf464b4c6c18149116f8f7314b5c86a
     .agents/skills/modern-web-guidance/guides/css/overflow-clipping-control.md: sha256:11a29817d15a7f66020e58c1d7e86cfc7ccb6f5af9b573cb18f925a4fcf272d4
     .agents/skills/modern-web-guidance/guides/css/reduce-style-repetition.md: sha256:22555756086c65ae722899dfc0ada13dafdc41573c618e149ff168caad8ae34a
     .agents/skills/modern-web-guidance/guides/css/size-aware-styling.md: sha256:555b7ad29591b5545ac0085da8b94f45b6b59cf87e2512d5460076d62d4ae69a
     .agents/skills/modern-web-guidance/guides/css/style-parent-with-has.md: sha256:42443aaca14192daeed4390471431b4118216437877325f55f9bb818a951f32b
+    .agents/skills/modern-web-guidance/guides/css/usage-aware-component-variations.md: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
     .agents/skills/modern-web-guidance/guides/forms/animated-select-picker.md: sha256:a6d0b70c535d04136f1cecf942520198ce6f438c45b5214a04f0ba7873e3f4a0
     .agents/skills/modern-web-guidance/guides/forms/autofill-address-form.md: sha256:4635ca2463c2a37c7988acd552681854d7d9fea758d15d12964274a5c4aee52f
     .agents/skills/modern-web-guidance/guides/forms/autofill-highlight-inputs.md: sha256:661b8ff3f54e04b866e703b36f0cfed1f92356d7a4e7e436ba1f7e1cecfce7b4
@@ -338,7 +465,7 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/forms/brand-consistent-forms.md: sha256:640a6525637fed28040a481ffd02a0ea98e81b2cbc06e1989386fc0150883617
     .agents/skills/modern-web-guidance/guides/forms/branded-select-styling.md: sha256:683cdd9a4da1ddd578e3b15b51649dc772fe540787838a7298150e7faea0111e
     .agents/skills/modern-web-guidance/guides/forms/custom-select-picker-layouts.md: sha256:1b3810e7a569df9e13e06cb46e4b196539ce174d05f559c7d3c23c367607c156
-    .agents/skills/modern-web-guidance/guides/forms/form-fields-automatically-fit-contents.md: sha256:64f1d1d122ce82fbf23aa70caa6fcfc0a5103e62d56eb8c1c08a3e3d357f14cb
+    .agents/skills/modern-web-guidance/guides/forms/form-fields-automatically-fit-contents.md: sha256:db49abc8e994f407a2bd3c5da0ea187de2a644a4cf95a03889af7d2b165580e6
     .agents/skills/modern-web-guidance/guides/forms/forms.md: sha256:aedfc0e82cb3c97eb0a3785d56b87748bb9c50ebb62b9fdd80aa6f0b128ec091
     .agents/skills/modern-web-guidance/guides/forms/required-field-feedback.md: sha256:6e5cab4e43105ba39ad13800d6df434b95c0f8ae163e799f4ef8f38cd59bb69e
     .agents/skills/modern-web-guidance/guides/forms/rich-media-picker.md: sha256:3d1be9161c9561ee29c36c8f81af3330e1448d8f60a7815a4eb1b1cc5f8d44fa
@@ -394,6 +521,7 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/ui-atoms/scroll-progress-indicator.md: sha256:5221cab35adfd624654221f34fb29b06f089a7d8ae092b3be78f67675540babf
     .agents/skills/modern-web-guidance/guides/ui-atoms/scrollability-affordance-hints.md: sha256:22842290248cc8f6ebd0fd838f3d94d8bd96f0b899b708f7bff2a4e12ed826e9
     .agents/skills/modern-web-guidance/guides/ui-atoms/shrinking-header-on-scroll.md: sha256:a97e48d9a9289fa73f21300f1ae364d995da7288f50de6a74e98c381244d147b
+    .agents/skills/modern-web-guidance/guides/ui-atoms/state-aware-sticky-headers.md: sha256:69bc9e11ae75b6bc4e3a5d36ba23a5e849cc5dc6825e690f557d325d3fc62c4b
     .agents/skills/modern-web-guidance/guides/ui-behaviors/anchor-positioning-tab-underline.md: sha256:596d9391a2e9cb99af1da77ae4c9acc9616ed0735f2a57d848a4bfa68b55ac52
     .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-element-entry-exit.md: sha256:75e717d68c94ad4d61e51a9b1cb624904b63a4b43bc81f2e7434c39378b70a08
     .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-to-from-top-layer.md: sha256:b569402558edfd65b49a294b3e40bc43594ebd94cf023518044cc4a564c30032
@@ -403,17 +531,17 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/ui-behaviors/custom-button-actions.md: sha256:f06d1d08117b2e2a9faff1f610d88b0df8db02b8130fcd407873584bacec20af
     .agents/skills/modern-web-guidance/guides/ui-behaviors/declarative-dialog-popover-control.md: sha256:27c0d7135bfcb9674ca20573166b7726ab5e050e38da91436a39507e3024faf2
     .agents/skills/modern-web-guidance/guides/ui-behaviors/directional-navigation-transitions.md: sha256:f308e3d9bdd060c2b5f17a08c5270e12c75e7f487bad159d5df56f57b14a0b7a
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/dynamic-sibling-animations.md: sha256:98493ff7e5ebbb01c580a7c306d20933a5aa19b28d8b1a1c289cc3476bb09532
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/dynamic-sibling-animations.md: sha256:dbd14a1dfbcc48607cac65e37586a8fbaf46040c3d7de83fdb50810eaa6c67df
     .agents/skills/modern-web-guidance/guides/ui-behaviors/group-element-transitions.md: sha256:5b140ac01a0d4382206c0ff2645be60eb7c26a3172a66e0fa097d5409b71a486
     .agents/skills/modern-web-guidance/guides/ui-behaviors/highlight-text-ranges.md: sha256:fac1a8aba8c9581a4b7d37ec6fbd61d925fb28bb0d77314c6c3612713f449d4e
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/interactive-content-reveal.md: sha256:f3168013cce36885a4f22652fdb4877bc91ce8a43238bacf1dd686e075ca10b5
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-action-previews.md: sha256:52072dcb60cc3cfb60ea81a719294bc6e7e5b815fa0a4357338a43812949f27f
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-tooltips.md: sha256:e3c9525841b38e748086c0a5a2b74664dd199f91d8f6a088b8f7146a8b05b3fc
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/interactive-content-reveal.md: sha256:967397ff4d38cd79d1ec457ab86a4c6999ad6124829a53281cd08752025aaee7
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-action-previews.md: sha256:b9e1d1de239c10d654a21dd0ee4b5d5bc7e84f3b6798ffbb2d5f84d6704201ff
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-tooltips.md: sha256:7a1d12274e8d48379e9d3c4a65db40f4d9a4ec7bcf028a457a51ef0fe130b32c
     .agents/skills/modern-web-guidance/guides/ui-behaviors/light-dismiss-a-dialog.md: sha256:fd4551c66be7cd3e738e634d1007022f499296a85fd8d6aeb3f54af2ef5758e5
     .agents/skills/modern-web-guidance/guides/ui-behaviors/move-dom-element-without-losing-state.md: sha256:acefb9f4ff932f863680f5697e5a50047663c2faee198c0e2bc8d6dcb0c8e6f7
     .agents/skills/modern-web-guidance/guides/ui-behaviors/parallax-scroll-effects.md: sha256:081ae662fddca6287f41c09f8b75f080ce700b1a8f2a626b816935cc7190e729
     .agents/skills/modern-web-guidance/guides/ui-behaviors/persistent-top-layer-ui.md: sha256:1b2d37d385c81e08a18e53faabf1d8edbf0ac0e1401d83de1c6dafa897a1c21d
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/physics-based-easing.md: sha256:58406665775a501143177a94ce9550175104d0be0d90beaab6fe0a0611318a5c
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/physics-based-easing.md: sha256:bde1b573fe705216ad840b1a8e7a9b2360405d0a7cd6e920bd8b085d9a1c6857
     .agents/skills/modern-web-guidance/guides/ui-behaviors/platform-controls-dismiss-dialog.md: sha256:25b18cb2d2901109e9a53c9d4a580bfa584fd4f48b999c985d5bf410d2585683
     .agents/skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md: sha256:a7ed8055ea00003017cd965588f87921915054a83e35915ac60dee1d89e452a1
     .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-entry-exit-effects.md: sha256:f41013965318de41cf35b2c607340ce0f0cef2a13d5722204385e7a103cd93ec
@@ -429,7 +557,7 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/ui-components/stack-drill-down.md: sha256:5a161583757ea9a64349fc9efd4d627990545ce99955a2740e5c15c8e128147b
     .agents/skills/modern-web-guidance/guides/visual-design/adapt-scrollbar-to-contrast-preferences.md: sha256:afa06625e02f48d7d844edb2ea4b24b022412ce69760e1c9176ff8c6d7dbaed9
     .agents/skills/modern-web-guidance/guides/visual-design/apply-webgl-shaders.md: sha256:9fb56e26cb6bfa5159c062172ccbfc6c84033bbd3d013bb1f5990ec7dbec6faf
-    .agents/skills/modern-web-guidance/guides/visual-design/complex-shapes.md: sha256:cf290a56fb11fd128836305a5d7967d3bdf17ccd8b28b2589c5c1020b573720f
+    .agents/skills/modern-web-guidance/guides/visual-design/complex-shapes.md: sha256:78d1b2bb6bc1d58c6077c87a2d4a7a4d28508496c0516013cfdf96bf28a31265
     .agents/skills/modern-web-guidance/guides/visual-design/customize-scrollbar-color-and-thickness.md: sha256:8b73513c3fedc839dafd4ddb9b0ba15c350deaef739e4b6158008006661a86f7
     .agents/skills/modern-web-guidance/guides/visual-design/dark-mode.md: sha256:cb14030bf581478475c357e735c7092623e30524df89a90ebd2f23fdb025c149
     .agents/skills/modern-web-guidance/guides/visual-design/export-html-media-from-canvas.md: sha256:21fcd33f60be01f02415cb8b9627b302406fe6b6919c4d936ce659c88bd5d87f
@@ -438,15 +566,15 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/visual-design/interactive-content-in-3d-scenes.md: sha256:c9b6586607dc6d215de19fa1fea4292a05b4619ef7f78c184bfd36d0fff04e7f
     .agents/skills/modern-web-guidance/guides/visual-design/precise-text-alignment.md: sha256:1d84c9915c6992c2331fc04cbbf48437b86dd085942d9515ef46ffa242fe4bb7
     .agents/skills/modern-web-guidance/guides/visual-design/prevent-text-wrapping.md: sha256:8ad8c7e088705bdafd823bef4f0e087e5a1d0a6185fa7e2eedff2b0f2ce9dbb4
-    .agents/skills/modern-web-guidance/guides/visual-design/shaped-cutouts.md: sha256:ceedfd90d3fa74b588eb7089245608647a90c99d39be25ddfaa47067d2600204
-    .agents/skills/modern-web-guidance/guides/visual-design/soft-edge-content-fade.md: sha256:4f0dfdc0a27d714fcac44f8c2cc8b107dd20122febdcddd527715441ca919202
+    .agents/skills/modern-web-guidance/guides/visual-design/shaped-cutouts.md: sha256:917a4dad961f9796e01a64c88539ac1db1cc26f8644a69e09608ee81dcc8facf
+    .agents/skills/modern-web-guidance/guides/visual-design/soft-edge-content-fade.md: sha256:2464fb28fa39c539bf68e96056f2f129b0fd5d3cb38181b03746cf5f25565f4f
     .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-font-fallbacks.md: sha256:e2e9e362c976e4289509afdc8068fb986e76b07fc59576b67d92e8e4c645c77a
     .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-mixed-fonts.md: sha256:c5770035287d0999fec3cf10d247c530d0d34c64739ccf4fc037475814d118a6
-    .agents/skills/modern-web-guidance/guides/visual-design/visually-texture-content.md: sha256:54dacc485416bb4091df9af7662754b253f5a5ef802dd36cb6fd0eec72bcb4c3
+    .agents/skills/modern-web-guidance/guides/visual-design/visually-texture-content.md: sha256:bd591a56705519c22dc4b9a54ab14f20336ce691bb39e4ccc1264edbb222da80
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md: sha256:c9210a53221ae230c3820b94b75f4b7b21196d9b0b6b0979b789866c2f2a8396
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:7b26edd8a70d0c33a1eef465edc4abc6391ce0d8f94c41acbed5a2487a558745
     .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:78b80afc94fcdc0177345d7cbd0abb83660f309a400266ff408325142db41b2c
-  content_hash: sha256:51a75c401a1d9c9721e37334b3b01f2c26bf5f68270a9d210d2f8b4460a5e835
+  content_hash: sha256:07775fbfaed98fcf50795256434f646da296311bc10dd54f2de29075eca9095b
 - repo_url: ikora128/stop-ai-slop-jp
   materialization_repo_url: iKora128/stop-ai-slop-jp
   name: stop-ai-slop-jp
@@ -479,7 +607,7 @@ dependencies:
 - repo_url: moonbitlang/skills
   name: moonbit-agent-guide
   host: github.com
-  resolved_commit: 5caf81c57cb2ae45654b8f99c5c8f68c812beb91
+  resolved_commit: 0d956f0ecd0b09ce16a0c341780998473d251db4
   version: unknown
   virtual_path: skills/moonbit-agent-guide
   is_virtual: true
@@ -499,18 +627,18 @@ dependencies:
     .agents/skills/moonbit-agent-guide/.gitignore: sha256:0d85bcad78281a70f6540deb184a1b9398e34acaa5ff6dd3f544d6b21b6f92ca
     .agents/skills/moonbit-agent-guide/LICENSE: sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
     .agents/skills/moonbit-agent-guide/README.md: sha256:eb1b649a7203ed9e2b3dd774d1c144343f74d605fa3eda7d733216445b9b6ee6
-    .agents/skills/moonbit-agent-guide/SKILL.mbt.md: sha256:2b394e4f4af4f3a3d8415a19a81dc9db9234425ebb1b87780bb3decd9a323ac3
-    .agents/skills/moonbit-agent-guide/SKILL.md: sha256:2b394e4f4af4f3a3d8415a19a81dc9db9234425ebb1b87780bb3decd9a323ac3
+    .agents/skills/moonbit-agent-guide/SKILL.mbt.md: sha256:3ae06bb3d68d1859e9d61ae0cc88af36edaf312b747f882bf205e34a424c4aaa
+    .agents/skills/moonbit-agent-guide/SKILL.md: sha256:3ae06bb3d68d1859e9d61ae0cc88af36edaf312b747f882bf205e34a424c4aaa
     .agents/skills/moonbit-agent-guide/ide.md: sha256:56fa73e1b8d472bf5b72e444c862bc54b3311fa2d5c78b853a6557c872289c70
     .agents/skills/moonbit-agent-guide/references/advanced-moonbit-build.md: sha256:a7d71b0738b814414edc5cfcbeff66931870da4d515f7aa864e6e51a3e8ed708
     .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.mbt.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
     .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
-  content_hash: sha256:0c9305cd298f674f58ea7dd977cf0d1d72509d344ab5224c68a316a53a875a3e
+  content_hash: sha256:68bcf18038dced6fff0d99abb57ff8e8a82c38c8216385b921e363a278e3bbf6
 - repo_url: nutlope/hallmark
   materialization_repo_url: Nutlope/hallmark
   name: hallmark
   host: github.com
-  resolved_commit: 0a0f706bc0289fef76a07fb854a6a5b031c57901
+  resolved_commit: 13ac0ec7e148655948100b6396439e481361d690
   version: unknown
   virtual_path: skills/hallmark
   is_virtual: true
@@ -618,13 +746,14 @@ dependencies:
   - .agents/skills/hallmark/references/study.md
   - .agents/skills/hallmark/references/themes/carnival.md
   - .agents/skills/hallmark/references/themes/cobalt.md
+  - .agents/skills/hallmark/references/themes/grid.md
   - .agents/skills/hallmark/references/themes/hum.md
   - .agents/skills/hallmark/references/themes/lumen.md
   - .agents/skills/hallmark/references/typography.md
   - .agents/skills/hallmark/references/verbs/audit.md
   - .agents/skills/hallmark/references/verbs/redesign.md
   deployed_file_hashes:
-    .agents/skills/hallmark/SKILL.md: sha256:3afa4aa628e22e2e03c35ea01a57e8c18a16ed8ff4cf33c3da2d3da2018c64a3
+    .agents/skills/hallmark/SKILL.md: sha256:59469635bbbd21acddbc664d95e8d97147f454b2d8f4a0a89c7d2c5afbe67577
     .agents/skills/hallmark/references/anti-patterns.md: sha256:a36eb346ad59cafaa26119ed1e7c0bbb8aca6637209ee110eb630dd1a9307070
     .agents/skills/hallmark/references/assets.md: sha256:60929b3dc2258b69caf3012d99d174e1ad73da9645263db81a9b271cd6fd7d61
     .agents/skills/hallmark/references/color.md: sha256:31c470d16ceb17ccce290cbdd00b9e9a88f2094df8eaaefb67c86ec1e1cdb876
@@ -682,7 +811,7 @@ dependencies:
     .agents/skills/hallmark/references/contract.md: sha256:2923a056b95da63d04100ac56bc8cdff6bc0a717ac3e5da5cef69eb5feb4619c
     .agents/skills/hallmark/references/copy.md: sha256:703cdbf81fbef6f71d90596a32041d2a33a46fb71ba07ccf5ede6b4b1471d347
     .agents/skills/hallmark/references/custom-craft.md: sha256:417ff74cd83e1fea50c41948c53e18365269b880806ef4f31d9e0ebda0f99246
-    .agents/skills/hallmark/references/custom-theme.md: sha256:a5026a0b00f69180ba9c24acec6e717bae0fb6e01daf998e8e900c57958a9eea
+    .agents/skills/hallmark/references/custom-theme.md: sha256:da0fb051689bf9d100e50e67209566623c1fbe72e09b943248c458985c39e780
     .agents/skills/hallmark/references/design-md.md: sha256:a9368b64dd9b6e53e8c707830ce28fd8601d3195a81647ea46b6995aa3556b3c
     .agents/skills/hallmark/references/export-formats.md: sha256:de0a73d9bec7a31abbd0cbbf1ecd51c2e440f1f3fdc08f476a343959ca6c22f3
     .agents/skills/hallmark/references/floating-nav.md: sha256:c8c80f6560700bf6ee6baf28b81ec1539e9ff920d885624707de5fe8803c25d1
@@ -725,16 +854,17 @@ dependencies:
     .agents/skills/hallmark/references/study.md: sha256:021fe4d001b38ee87414c1bb69321d2e44b67df8ede76ecec225c41a634aab20
     .agents/skills/hallmark/references/themes/carnival.md: sha256:119a9c803eac74958e5df6151da8a2575a1cc2d061a619bdb7f32cf972308ee2
     .agents/skills/hallmark/references/themes/cobalt.md: sha256:13be92af729e6b82d1b1e51aa078f7c007e2900c8f0798b2c0fd2c0eeac7019e
+    .agents/skills/hallmark/references/themes/grid.md: sha256:e68e8b97f62d613dc94a03afd346b9e12de8ffcc65dc8633c4c223c92875c7da
     .agents/skills/hallmark/references/themes/hum.md: sha256:bbdd1e89a32d6b15e99493ba9497816a0915bd4e9bf150b95868db597c20e1d5
     .agents/skills/hallmark/references/themes/lumen.md: sha256:d5459478d3aa1ea6330c221dfe011b717a70dbb036f597403b3a6b3cf82dd53b
     .agents/skills/hallmark/references/typography.md: sha256:94d7b2d2b138bd8687e09dc3dd618eaafff500b0497a6d69cb4c29b764e94b9c
     .agents/skills/hallmark/references/verbs/audit.md: sha256:0a5b484453f1697a8675a7020df9159d0b4ce22f059b873501bfd82c26d6a31a
     .agents/skills/hallmark/references/verbs/redesign.md: sha256:c2830f3b7d68e9622f55d376048a5a454c5ef59d309a211e716d1142e86acbdf
-  content_hash: sha256:3e2da1af591c3f434b6e81aff38bf6fba654f51b3646b38195adfb85b260aa09
+  content_hash: sha256:03db480820f0c9f2d9d1f4c48e5c2d15c2625c7e5916e7500ab7d660d9cc41c5
 - repo_url: ogulcancelik/herdr
   name: herdr
   host: github.com
-  resolved_commit: fc824b99aba9389ffda75f19b3a4aee0ff6ca8b5
+  resolved_commit: 7b675f42af35508eab66ac42fe1598628597a893
   version: unknown
   package_type: skill_bundle
   deployed_files:
@@ -777,7 +907,7 @@ dependencies:
   - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png
   - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png
   deployed_file_hashes:
-    .agents/skills/herdr/SKILL.md: sha256:0786182f02ebf92708e09d82d79e4614d1a9c30bfc337643cc2af1d0fb9db29f
+    .agents/skills/herdr/SKILL.md: sha256:237ad2ab2d8123e2bb37956d3a41eed141f2d22a7c36e415b7876c0397679099
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png: sha256:a6cacacdfc1722c5b19dde819d590180c7b5bd06d0cdeb1a0e27fb3d86443081
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-12x24+3.png: sha256:976297d3be8c886a2e1b272b21c3787d468ed3ca55cccd34642d6b7ea1324646
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-18x36+4.png: sha256:6f88ccff99f49fb39715922d3dc7f8caead0d5124e98de4acafcbd35a02079a7
@@ -814,7 +944,7 @@ dependencies:
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png: sha256:be922a8d500b6b6ddc85c45ec3f093a93b37530feb63c743192c28b8cc6ceba4
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png: sha256:541e4e830c92eb7a38a3f6c295de5ce04810dd37cb421e833faec833e50a90f5
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
-  content_hash: sha256:511fee53fb01430f266378073c3f7a795fac45a153c1787592808acb40233377
+  content_hash: sha256:0f6e97bdb3c5f86e0ebd63ce9b86fd72277ca2930e0097463a3b425d5b8308bb
 - repo_url: openai/skills
   name: gh-address-comments
   host: github.com
@@ -866,7 +996,7 @@ dependencies:
 - repo_url: openclaw/acpx
   name: acpx
   host: github.com
-  resolved_commit: 035062a9210ba0ba351a6cba3bf126dc2d70fd89
+  resolved_commit: d4c16ab32154f388a3f28645065e797fcd951813
   version: unknown
   virtual_path: skills/acpx
   is_virtual: true
@@ -880,7 +1010,7 @@ dependencies:
 - repo_url: sveltejs/ai-tools
   name: svelte-core-bestpractices
   host: github.com
-  resolved_commit: 64689540226112c04c153217c64f584a1d15c643
+  resolved_commit: 7e98403e699a6abcf18cb85fded8ffed4ead0eab
   version: unknown
   virtual_path: tools/skills/svelte-core-bestpractices
   is_virtual: true
@@ -912,7 +1042,7 @@ dependencies:
 - repo_url: vercel-labs/agent-browser
   name: agent-browser
   host: github.com
-  resolved_commit: acbc22bdc5d4f6c5a88d97d4a4745d3c5eb0591f
+  resolved_commit: fbd046c23a2c1156891bda294aaaee715c23b3f1
   version: unknown
   virtual_path: skills/agent-browser
   is_virtual: true
@@ -921,12 +1051,12 @@ dependencies:
   - .agents/skills/agent-browser
   - .agents/skills/agent-browser/SKILL.md
   deployed_file_hashes:
-    .agents/skills/agent-browser/SKILL.md: sha256:243eeaa5e9a42bb12d94d6af29a51b2c956546a16b1862282db1e5bd27315f8a
-  content_hash: sha256:548a1f92c7ff55081c65ec1577ff5136beb1d0f58252d448d5bd43f05fefc703
+    .agents/skills/agent-browser/SKILL.md: sha256:3a7520e64de2dfaa516b6721c001e84e06e3c06a187b82af029ae721540ebfac
+  content_hash: sha256:dd491d53824ad9286ec950aee667098446332429a6d41fe28b4ba11f1959264c
 - repo_url: vercel-labs/agent-skills
   name: web-design-guidelines
   host: github.com
-  resolved_commit: 7c180d9044c9ae2b442b567aad4e42a28dd5ed62
+  resolved_commit: 20e89cc4bb256eb7b1fcbdc68f7175284709a847
   version: unknown
   virtual_path: skills/web-design-guidelines
   is_virtual: true
@@ -940,7 +1070,7 @@ dependencies:
 - repo_url: vercel-labs/skills
   name: find-skills
   host: github.com
-  resolved_commit: a4d243c3d4f86cdf9385dd1b6a0733f6937e70b5
+  resolved_commit: 435076e78988e1e6ec40d00b0b1d76bdbbc5419a
   version: unknown
   virtual_path: skills/find-skills
   is_virtual: true
@@ -1045,7 +1175,7 @@ deployments:
   owners:
   - vercel-labs/agent-browser/skills/agent-browser
   active_owner: vercel-labs/agent-browser/skills/agent-browser
-  content_hash: sha256:243eeaa5e9a42bb12d94d6af29a51b2c956546a16b1862282db1e5bd27315f8a
+  content_hash: sha256:3a7520e64de2dfaa516b6721c001e84e06e3c06a187b82af029ae721540ebfac
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/emil-design-eng
@@ -1252,7 +1382,7 @@ deployments:
   owners:
   - github/gh-stack/skills/gh-stack
   active_owner: github/gh-stack/skills/gh-stack
-  content_hash: sha256:1ff5a23a7f66a3f5853ef411e48ae66ebe0b47d98d248a3a41ee0de8e237a796
+  content_hash: sha256:5d966fc1ff92014db49d6689f41f70ddf1af40879f9dc8a12bb75b82d7850c25
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/gh-stack/references/commands.md
@@ -1261,7 +1391,7 @@ deployments:
   owners:
   - github/gh-stack/skills/gh-stack
   active_owner: github/gh-stack/skills/gh-stack
-  content_hash: sha256:362bca643fa84aae90627c4d1797c2343aaf5427713e6aa8572e04454c555fa9
+  content_hash: sha256:31049425b8db652e80fa6994d5289f20169f57d7af0a0651fa72c3f25e8fe7c7
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/gh-stack/references/stack-design.md
@@ -1297,7 +1427,7 @@ deployments:
   owners:
   - nutlope/hallmark/skills/hallmark
   active_owner: nutlope/hallmark/skills/hallmark
-  content_hash: sha256:3afa4aa628e22e2e03c35ea01a57e8c18a16ed8ff4cf33c3da2d3da2018c64a3
+  content_hash: sha256:59469635bbbd21acddbc664d95e8d97147f454b2d8f4a0a89c7d2c5afbe67577
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/hallmark/references/anti-patterns.md
@@ -1819,7 +1949,7 @@ deployments:
   owners:
   - nutlope/hallmark/skills/hallmark
   active_owner: nutlope/hallmark/skills/hallmark
-  content_hash: sha256:a5026a0b00f69180ba9c24acec6e717bae0fb6e01daf998e8e900c57958a9eea
+  content_hash: sha256:da0fb051689bf9d100e50e67209566623c1fbe72e09b943248c458985c39e780
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/hallmark/references/design-md.md
@@ -2200,6 +2330,15 @@ deployments:
   content_hash: sha256:13be92af729e6b82d1b1e51aa078f7c007e2900c8f0798b2c0fd2c0eeac7019e
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/hallmark/references/themes/grid.md
+  runtime: null
+  scope: project
+  owners:
+  - nutlope/hallmark/skills/hallmark
+  active_owner: nutlope/hallmark/skills/hallmark
+  content_hash: sha256:e68e8b97f62d613dc94a03afd346b9e12de8ffcc65dc8633c4c223c92875c7da
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/hallmark/references/themes/hum.md
   runtime: null
   scope: project
@@ -2260,7 +2399,7 @@ deployments:
   owners:
   - ogulcancelik/herdr
   active_owner: ogulcancelik/herdr
-  content_hash: sha256:0786182f02ebf92708e09d82d79e4614d1a9c30bfc337643cc2af1d0fb9db29f
+  content_hash: sha256:237ad2ab2d8123e2bb37956d3a41eed141f2d22a7c36e415b7876c0397679099
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance
@@ -2314,7 +2453,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:d3dcfe5247b7afe74d6a34f94e049b0d08c579bec8760e29d37cfb7167cf52e2
+  content_hash: sha256:5b8848267f34e6361ec251dd9fcce27f12f116487ba6493d3c077857aed31eca
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md
@@ -2323,7 +2462,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:d3dcfe5247b7afe74d6a34f94e049b0d08c579bec8760e29d37cfb7167cf52e2
+  content_hash: sha256:5b8848267f34e6361ec251dd9fcce27f12f116487ba6493d3c077857aed31eca
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md
@@ -2341,16 +2480,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:8e379baae33e0c34799cc93f1dc6c8929ed6f9f4891d9b1c0b6f0c62d5124b14
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/modern-web-guidance/guides/css-layout/usage-aware-component-variations.md
-  runtime: null
-  scope: project
-  owners:
-  - googlechrome/modern-web-guidance/skills/modern-web-guidance
-  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
+  content_hash: sha256:1a9e48f318b5f5c3254f9d1ecdda8d961129ece58087edd05f20dd9fccce01b1
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md
@@ -2377,7 +2507,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:8dcb6d2a5089fe7983ad3fa40b87d80a33a0e1cf78e7079d810a28c821fe2948
+  content_hash: sha256:bdc9101a217a7fd29fbd70f0e97f3887d7b797179ee58027ce57f8d9fce0f1ce
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/content-based-styling.md
@@ -2386,7 +2516,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:35759c095a2e5245d2fcad14a4478264825513a42215c2186233eccbd639d100
+  content_hash: sha256:d271ea9f68c10bcb46f5dd123a08a48e4cc45005ba1b0d8c0953c7500b88956e
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/css-layout.md
@@ -2422,7 +2552,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:cb70beee2f130bc9dbd98685a54d0cfd05c62f109b596ccfe86f8828907eed08
+  content_hash: sha256:d40bfca05b8d043fe769fe855f4c1b43dc8b693f4944d225d5ee4d3b6db419b0
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/fluid-scaling.md
@@ -2477,6 +2607,15 @@ deployments:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
   content_hash: sha256:42443aaca14192daeed4390471431b4118216437877325f55f9bb818a951f32b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/modern-web-guidance/guides/css/usage-aware-component-variations.md
+  runtime: null
+  scope: project
+  owners:
+  - googlechrome/modern-web-guidance/skills/modern-web-guidance
+  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
+  content_hash: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/forms/animated-select-picker.md
@@ -2566,7 +2705,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:64f1d1d122ce82fbf23aa70caa6fcfc0a5103e62d56eb8c1c08a3e3d357f14cb
+  content_hash: sha256:db49abc8e994f407a2bd3c5da0ea187de2a644a4cf95a03889af7d2b165580e6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/forms/forms.md
@@ -3064,6 +3203,15 @@ deployments:
   content_hash: sha256:a97e48d9a9289fa73f21300f1ae364d995da7288f50de6a74e98c381244d147b
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/modern-web-guidance/guides/ui-atoms/state-aware-sticky-headers.md
+  runtime: null
+  scope: project
+  owners:
+  - googlechrome/modern-web-guidance/skills/modern-web-guidance
+  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
+  content_hash: sha256:69bc9e11ae75b6bc4e3a5d36ba23a5e849cc5dc6825e690f557d325d3fc62c4b
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/anchor-positioning-tab-underline.md
   runtime: null
   scope: project
@@ -3151,7 +3299,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:98493ff7e5ebbb01c580a7c306d20933a5aa19b28d8b1a1c289cc3476bb09532
+  content_hash: sha256:dbd14a1dfbcc48607cac65e37586a8fbaf46040c3d7de83fdb50810eaa6c67df
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/group-element-transitions.md
@@ -3178,7 +3326,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:f3168013cce36885a4f22652fdb4877bc91ce8a43238bacf1dd686e075ca10b5
+  content_hash: sha256:967397ff4d38cd79d1ec457ab86a4c6999ad6124829a53281cd08752025aaee7
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-action-previews.md
@@ -3187,7 +3335,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:52072dcb60cc3cfb60ea81a719294bc6e7e5b815fa0a4357338a43812949f27f
+  content_hash: sha256:b9e1d1de239c10d654a21dd0ee4b5d5bc7e84f3b6798ffbb2d5f84d6704201ff
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-tooltips.md
@@ -3196,7 +3344,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:e3c9525841b38e748086c0a5a2b74664dd199f91d8f6a088b8f7146a8b05b3fc
+  content_hash: sha256:7a1d12274e8d48379e9d3c4a65db40f4d9a4ec7bcf028a457a51ef0fe130b32c
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/light-dismiss-a-dialog.md
@@ -3241,7 +3389,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:58406665775a501143177a94ce9550175104d0be0d90beaab6fe0a0611318a5c
+  content_hash: sha256:bde1b573fe705216ad840b1a8e7a9b2360405d0a7cd6e920bd8b085d9a1c6857
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/platform-controls-dismiss-dialog.md
@@ -3385,7 +3533,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:cf290a56fb11fd128836305a5d7967d3bdf17ccd8b28b2589c5c1020b573720f
+  content_hash: sha256:78d1b2bb6bc1d58c6077c87a2d4a7a4d28508496c0516013cfdf96bf28a31265
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/customize-scrollbar-color-and-thickness.md
@@ -3466,7 +3614,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:ceedfd90d3fa74b588eb7089245608647a90c99d39be25ddfaa47067d2600204
+  content_hash: sha256:917a4dad961f9796e01a64c88539ac1db1cc26f8644a69e09608ee81dcc8facf
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/soft-edge-content-fade.md
@@ -3475,7 +3623,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:4f0dfdc0a27d714fcac44f8c2cc8b107dd20122febdcddd527715441ca919202
+  content_hash: sha256:2464fb28fa39c539bf68e96056f2f129b0fd5d3cb38181b03746cf5f25565f4f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-font-fallbacks.md
@@ -3502,7 +3650,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:54dacc485416bb4091df9af7662754b253f5a5ef802dd36cb6fd0eec72bcb4c3
+  content_hash: sha256:bd591a56705519c22dc4b9a54ab14f20336ce691bb39e4ccc1264edbb222da80
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md
@@ -3574,7 +3722,7 @@ deployments:
   owners:
   - moonbitlang/skills/skills/moonbit-agent-guide
   active_owner: moonbitlang/skills/skills/moonbit-agent-guide
-  content_hash: sha256:2b394e4f4af4f3a3d8415a19a81dc9db9234425ebb1b87780bb3decd9a323ac3
+  content_hash: sha256:3ae06bb3d68d1859e9d61ae0cc88af36edaf312b747f882bf205e34a424c4aaa
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/moonbit-agent-guide/SKILL.md
@@ -3583,7 +3731,7 @@ deployments:
   owners:
   - moonbitlang/skills/skills/moonbit-agent-guide
   active_owner: moonbitlang/skills/skills/moonbit-agent-guide
-  content_hash: sha256:2b394e4f4af4f3a3d8415a19a81dc9db9234425ebb1b87780bb3decd9a323ac3
+  content_hash: sha256:3ae06bb3d68d1859e9d61ae0cc88af36edaf312b747f882bf205e34a424c4aaa
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/moonbit-agent-guide/ide.md
@@ -3665,6 +3813,519 @@ deployments:
   - dominikmartn/nothing-design-skill/nothing-design
   active_owner: dominikmartn/nothing-design-skill/nothing-design
   content_hash: sha256:39afb46a2012dc6454ca3c4081e1b27e959b6780efc6abed18dcaeeff9320e5e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/LICENSE.txt
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:a7ff03e2c85b636f55232a6b1555f5dd90216b7a1a359ab289d8364e6acbc6a0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/__init__.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/add_slide.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/clean.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:5c808cd4dff7e02661ef3c68b5917f4e25097cc6610c92a3a7df4a6366a5c3c1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/helpers/__init__.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:678e42456d9e10923c8b9a93691cdd993de3433448a184fa72a0c31f4ae086d5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/helpers/pptx_chart.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:47ac266f7d39d11ede6bb0d1f3a19d801394fd2964636f1b48beb701f1832964
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/helpers/pptx_slide.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:7b9f69b4a5bd6a2d9eabf9e0e3e796d7a421373145f6a8cd11f60b7ba2d6a5d0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/helpers/pptx_theme.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:ebb54c56e9c13807f5f98f0cae22d47cdd0162da8525eaa664e3f2c8c8d6bb03
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:41b93bd8857cc68b1e43be2806a872d736a9bdd6566900062d8fdb57d7bbb354
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:3fd0586f2637b98bb9886f0e0b67d89e1cc987c2d158cc7deb5f5b9890ced412
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:29b254ee0d10414a8504b5a08149c7baec35a60d5ff607d6b3f492aa36815f40
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:5cb76dabd8b97d1e9308a1700b90c20139be4d50792d21a7f09789f5cccd6026
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:5375417f0f5394b8dd1a7035b9679151f19a6b65df309dec10cfb4a420cb00e9
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:5d389d42befbebd91945d620242347caecd3367f9a3a7cf8d97949507ae1f53c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:b4532b6d258832953fbb3ee4c711f4fe25d3faf46a10644b2505f17010d01e88
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:bdad416b096b61d37b71603b2c949484f9070c830bdaeba93bf35e15c8900614
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:d173c3e5d61e42e2e3a97226c632fd2ab7cc481fc4e492365b87024ab546daff
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:3c6709101c6aaa82888df5d8795c33f9e857196790eb320d9194e64be2b6bdd8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:0b364451dc36a48dd6dae0f3b6ada05fd9b71e5208211f8ee5537d7e51a587e2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:e2abacbb9a55ce1365f8961bc1b1395bbc811e512b111000d8c333f98458dece
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:0ef4bb354ff44b923564c4ddbdda5987919d220225129ec94614a618ceafc281
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:0d103b99a4a8652f8871552a69d42d2a3760ac6a5e3ef02d979c4273257ff6a4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:9c085407751b9061c1f996f6c39ce58451be22a8d334f09175f0e89e42736285
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:bc92e36ccd233722d4c5869bec71ddc7b12e2df56059942cce5a39065cc9c368
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:7b5b7413e2c895b1e148e82e292a117d53c7ec65b0696c992edca57b61b4a74b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:3213ef1631606250f5010b42cad7ef716f7c59426367798e33c374c0ec391d3a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:12264f3c03d738311cd9237d212f1c07479e70f0cbe1ae725d29b36539aef637
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:beffeed56945c22a77440122c8bdc426f3fcbe7f3b12ea0976c770d1f8d54578
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:f5ee623b08b6a66935e5aced2f5d8ad0fc71bf9e8e833cd490150c0fa94b8763
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:585bedc1313b40888dcc544cb74cd939a105ee674f3b1d3aa1cc6d34f70ff155
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:133c9f64a5c5d573b78d0a474122b22506d8eadb5e063f67cdbbb8fa2f161d0e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:6bdeb169c3717eb01108853bd9fc5a3750fb1fa5b82abbdd854d49855a40f519
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:475dcae1e7d1ea46232db6f8481040c15e53a52a3c256831d3df204212b0e831
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:c2dd9f61f892deae6acd8d20771ea79b12018af25f3bf8d06639c8542d218cfd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:a539aa2fb154fa50e0f5cc97e6ad7cbc66f8ec3e3746f61ec6a8b0d5d15ecdf2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:9e0b7209fc69ab11987900404540969976000c5ebe4d4f58c43dc3842886bf3a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:451958454e8588dfc7cd945981ada142ca06ff3307937f5700df059c2b307fa8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:6de111e11403f7cd49027400755bae0ea1cabef2815f09bd40a24f0017613b24
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:f565adfef5a502044abc3a9153e157edc25af78304d335994afb958874b15e26
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/mce/mc.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:3a37e461ecf5a8670fdec34029703401f8728ab9c96ec1739a6ae58d55212413
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2010.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:568b26ee156cb9549aa439ca2158965f77b7c1602b7e0316f40ac6cf586e35f2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2012.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:0fa75578a000439a7988ba0c59fdc69f774bbd416cbacc14d07125b3f686cb74
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/microsoft/wml-2018.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:be0ff793a22dd31384650c3a4da14c2fa8062751c2e97b0e5ee852bda13c60ad
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/microsoft/wml-cex-2018.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:fddc2b880cabb9005aebbc7e783e53c19fec1c03df7d0e2f2076a33a0fdfd081
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/microsoft/wml-cid-2016.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:127ca209fa73d7cb708449cb355c871867948a96e4a74f7bf5811ef62d17991d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:842e7163409c8d74f4d7088a8bc99500d80bc75332681a0980055b08f374a604
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/schemas/microsoft/wml-symex-2015.xsd
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:16f6f8072249f431370723c2cd8974672e0d9c897e00e97dd918079df934871b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/soffice.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:df2c8d7249c132a4512d744482e4b5ed0ecbe885f0bcfb1295e7e6a7ced0432c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/validate.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/validators/__init__.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:83e0f035c5abea238d3f2c3968afbd511ed022b527b7c9cb60a9434cc34ff987
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/validators/base.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:f818ea28c793ba42960fa4498265e2632a62c86f7b5d6aff6fa89dacc02d59ea
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/validators/docx.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:93d3444c0ef3f043d21a2285c46d2cda478426b930dc33dcf3b11265935517b5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/validators/pptx.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/office/validators/redlining.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:ed50d0885eee4b9c387f546b059bcaed64086815880a5167336244f93e305123
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/pptx/scripts/thumbnail.py
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/skills/skills/pptx
+  active_owner: anthropics/skills/skills/pptx
+  content_hash: sha256:94ef83a84346aa2d63913de0d42bb2fe902ccdc17bfac6130096ca758381793c
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit
@@ -5051,6 +5712,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:0891b88c7d3ccbe27037e556483b9c0618d90d314ee107fd5764ba8e331bc29d
+- kind: project-relative
+  target: agents
+  value: .agents/skills/modern-web-guidance/guides/css-layout/usage-aware-component-variations.md
+  runtime: null
+  scope: project
+  owners:
+  - googlechrome/modern-web-guidance/skills/modern-web-guidance
+  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
+  content_hash: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
 - kind: project-relative
   target: agents
   value: .agents/skills/refactoring-code
