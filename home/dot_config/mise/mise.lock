@@ -3756,7 +3756,7 @@ url = "https://github.com/cloudflare/cloudflared/releases/download/2026.8.2/clou
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/514390329"
 
 [[tools.codex]]
-version = "0.144.1"
+version = "0.149.1"
 backend = "npm:@openai/codex"
 
 [[tools."conda:ffmpeg"]]
