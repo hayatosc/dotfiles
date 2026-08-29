@@ -34,6 +34,11 @@
       matchUpdateTypes: ["minor", "patch"],
       automerge: true,
     },
+    {
+      // openai/codex tags use 'rust-v*' prefix (e.g. rust-v0.150.1)
+      matchDepNames: ["openai/codex", "aqua:openai/codex", "codex"],
+      extractVersion: "^rust-v?(?<version>.+)$",
+    },
   ],
   customManagers: [
     {
