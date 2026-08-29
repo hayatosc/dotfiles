@@ -46,6 +46,9 @@ jobs:
           fi
           echo "変更されたツールをインストールして検証します:"
           echo "$specs"
+          # aube は npm: バックエンド等の前提となるため一律で事前インストールする
+          mise install aube
+
           mapfile -t tools < <(printf '%s\n' "$specs" | sed 's/@[^@]*$//')
           if ! mise install --locked "${tools[@]}"; then
             # vfox: 等のバックエンドは lockfile URL を生成できず locked モードが
