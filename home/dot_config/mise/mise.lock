@@ -7247,10 +7247,25 @@ version = "0.34.0"
 backend = "npm:agent-browser"
 specifiers = ["0.34.0"]
 
+[[tools."npm:bash-language-server"]]
+version = "5.6.0"
+backend = "npm:bash-language-server"
+specifiers = ["5.6.0"]
+
 [[tools."npm:typescript-language-server"]]
 version = "5.3.0"
 backend = "npm:typescript-language-server"
 specifiers = ["5.3.0"]
+
+[[tools."npm:vscode-langservers-extracted"]]
+version = "4.10.0"
+backend = "npm:vscode-langservers-extracted"
+specifiers = ["4.10.0"]
+
+[[tools."npm:yaml-language-server"]]
+version = "1.24.0"
+backend = "npm:yaml-language-server"
+specifiers = ["1.24.0"]
 
 [[tools.opencode]]
 version = "1.18.23"
@@ -7598,6 +7613,55 @@ checksum = "sha256:690021e22f2bf2c57d5867dc0fababe5e55e714c26942bd909ffddb6c5df4
 url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/starship/starship/releases/assets/460374615"
 
+[[tools.taplo]]
+version = "0.10.0"
+backend = "aqua:tamasfe/taplo"
+specifiers = ["0.10.0"]
+
+[tools.taplo."platforms.linux-arm64"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-aarch64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322597"
+
+[tools.taplo."platforms.linux-arm64-musl"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-aarch64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322597"
+
+[tools.taplo."platforms.linux-x64"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322600"
+
+[tools.taplo."platforms.linux-x64-baseline"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322600"
+
+[tools.taplo."platforms.linux-x64-musl"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322600"
+
+[tools.taplo."platforms.linux-x64-musl-baseline"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322600"
+
+[tools.taplo."platforms.macos-arm64"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-darwin-aarch64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323110"
+
+[tools.taplo."platforms.macos-x64"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-darwin-x86_64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323116"
+
+[tools.taplo."platforms.macos-x64-baseline"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-darwin-x86_64.gz"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323116"
+
+[tools.taplo."platforms.windows-x64"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323062"
+
+[tools.taplo."platforms.windows-x64-baseline"]
+url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323062"
+
 [[tools.tmux]]
 version = "3.6b"
 backend = "aqua:tmux/tmux-builds"
@@ -7657,6 +7721,77 @@ url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377628"
 [tools.ttyd."platforms.windows-x64"]
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.win32.exe"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377630"
+
+[[tools.ty]]
+version = "0.0.75"
+backend = "aqua:astral-sh/ty"
+specifiers = ["0.0.75"]
+
+[tools.ty."platforms.linux-arm64"]
+checksum = "sha256:03fec985b267d06210c5f4c8535f7f9167f1899f05702b843f3ce2cf9e5416bd"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302005"
+provenance = "github-attestations"
+
+[tools.ty."platforms.linux-arm64-musl"]
+checksum = "sha256:1e44393d9e3f029808a3b1af33729db1b01b9d90808bed821604d390df2f58b4"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302010"
+provenance = "github-attestations"
+
+[tools.ty."platforms.linux-x64"]
+checksum = "sha256:988e9c701708cb8474ffa276e99c8b720cda229df54250eabdf4f169ea220804"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302119"
+provenance = "github-attestations"
+
+[tools.ty."platforms.linux-x64-baseline"]
+checksum = "sha256:988e9c701708cb8474ffa276e99c8b720cda229df54250eabdf4f169ea220804"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302119"
+provenance = "github-attestations"
+
+[tools.ty."platforms.linux-x64-musl"]
+checksum = "sha256:3a2e99afb590e82f424dc1d1436b25e56caf91d1c69702090d4ad596880fec47"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302127"
+provenance = "github-attestations"
+
+[tools.ty."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:3a2e99afb590e82f424dc1d1436b25e56caf91d1c69702090d4ad596880fec47"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302127"
+provenance = "github-attestations"
+
+[tools.ty."platforms.macos-arm64"]
+checksum = "sha256:7ceb90dc5c60097640d10cb8330bf1ebef7833273b4afdf91e8670f49294cbe6"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531301989"
+provenance = "github-attestations"
+
+[tools.ty."platforms.macos-x64"]
+checksum = "sha256:e3df3cc012ef75b3c8aca49b93783fa32bb15b3a8237ba7b3b63d32cac7ead8a"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302090"
+provenance = "github-attestations"
+
+[tools.ty."platforms.macos-x64-baseline"]
+checksum = "sha256:e3df3cc012ef75b3c8aca49b93783fa32bb15b3a8237ba7b3b63d32cac7ead8a"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302090"
+provenance = "github-attestations"
+
+[tools.ty."platforms.windows-x64"]
+checksum = "sha256:86270571c5b97563332da0fbcfe46e5e722beef58ac6271011e4ef6bb365d880"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302110"
+provenance = "github-attestations"
+
+[tools.ty."platforms.windows-x64-baseline"]
+checksum = "sha256:86270571c5b97563332da0fbcfe46e5e722beef58ac6271011e4ef6bb365d880"
+url = "https://github.com/astral-sh/ty/releases/download/0.0.75/ty-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/astral-sh/ty/releases/assets/531302110"
+provenance = "github-attestations"
 
 [[tools.uv]]
 version = "0.12.5"
