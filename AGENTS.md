@@ -9,7 +9,7 @@ This repository contains the **dotfiles**, managed using **chezmoi**.
 ### Directory Structure
 
 - `home/`: The source directory representing the user's home folder (`~`). Chezmoi templates and files are defined here:
-  - `home/dot_config/` -> `~/.config/` (contains configs for `yazi`, `zsh`, `cage`, `sheldon`, `starship.toml`, `mise`, `tmux`, `micro`, `opencode`)
+  - `home/dot_config/` -> `~/.config/` (contains configs for `yazi`, `zsh`, `cage`, `sheldon`, `starship.toml`, `mise`, `tmux`, `helix`, `opencode`)
   - `home/dot_zshrc`, `home/dot_zshenv`, `home/dot_zprofile`, `home/dot_profile` -> Zsh / shell configurations
   - `home/dot_agents/` -> `~/.agents/` (cross-harness agent rules only; skills are managed separately under `skills/`)
   - `home/dot_claude/` -> `~/.claude/` (Claude-specific configurations)

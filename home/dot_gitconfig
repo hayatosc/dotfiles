@@ -17,7 +17,7 @@
 	ui = true
 [core]
     pager = delta
-    editor = micro
+    editor = hx
 [interactive]
     diffFilter = delta --color-only
 [delta]

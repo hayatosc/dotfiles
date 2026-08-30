@@ -3,7 +3,7 @@ show_hidden = true
 
 [opener]
 edit = [
-        { run = 'micro "$@"', block = true, for = "unix" },
+        { run = 'hx -- %s', block = true, for = "unix" },
 ]
 
 [preview]

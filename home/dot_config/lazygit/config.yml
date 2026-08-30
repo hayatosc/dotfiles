@@ -1,0 +1,6 @@
+os:
+  edit: "hx -- {{filename}}"
+  editAtLine: "hx +{{line}} -- {{filename}}"
+  editAtLineAndWait: "hx +{{line}} -- {{filename}}"
+  editInTerminal: true
+  openDirInEditor: "hx -- {{dir}}"

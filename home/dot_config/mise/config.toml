@@ -1,8 +1,8 @@
 [tools]
 "aqua:eza-community/eza" = "0.23.5"
 "aqua:google-antigravity/antigravity-cli" = "1.1.22"
+"aqua:helix-editor/helix" = "25.07.1"
 "aqua:k1LoW/git-wt" = "0.29.1"
-"aqua:micro-editor/micro" = "2.0.15"
 "aqua:rossmacarthur/sheldon" = "0.8.5"
 ast-grep = "0.45.2"
 aube = "v1.41.0"
@@ -68,6 +68,8 @@ aqua.registry_cache_ttl = "1d"
 
 [env]
 AUBE_ALLOWED_UNPOPULAR_PACKAGES = "acpx,portless"
+EDITOR = "hx"
+VISUAL = "hx"
 
 [hooks]
 postinstall = ""

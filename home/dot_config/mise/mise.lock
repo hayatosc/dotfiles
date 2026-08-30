@@ -4383,6 +4383,66 @@ checksum = "sha256:248bf34ba1f7dcbdb797a42dfaa8645196cd187e3fccbfd4bb61cfbda19dc
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.22/agy_cli_windows_x64.zip"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/531720662"
 
+[[tools."aqua:helix-editor/helix"]]
+version = "25.07.1"
+backend = "aqua:helix-editor/helix"
+specifiers = ["25.07.1"]
+
+[tools."aqua:helix-editor/helix"."platforms.linux-arm64"]
+checksum = "sha256:ce23fa8d395e633e3e54c052012f11965d91d8d5c2bfa659685f50430b4f8175"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-aarch64-linux.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144408"
+
+[tools."aqua:helix-editor/helix"."platforms.linux-arm64-musl"]
+checksum = "sha256:ce23fa8d395e633e3e54c052012f11965d91d8d5c2bfa659685f50430b4f8175"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-aarch64-linux.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144408"
+
+[tools."aqua:helix-editor/helix"."platforms.linux-x64"]
+checksum = "sha256:3f08e63ecd388fff657ad39722f88bb03dcf326f1f2da2700d99e1dc40ab2e8b"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144380"
+
+[tools."aqua:helix-editor/helix"."platforms.linux-x64-baseline"]
+checksum = "sha256:3f08e63ecd388fff657ad39722f88bb03dcf326f1f2da2700d99e1dc40ab2e8b"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144380"
+
+[tools."aqua:helix-editor/helix"."platforms.linux-x64-musl"]
+checksum = "sha256:3f08e63ecd388fff657ad39722f88bb03dcf326f1f2da2700d99e1dc40ab2e8b"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144380"
+
+[tools."aqua:helix-editor/helix"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:3f08e63ecd388fff657ad39722f88bb03dcf326f1f2da2700d99e1dc40ab2e8b"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144380"
+
+[tools."aqua:helix-editor/helix"."platforms.macos-arm64"]
+checksum = "sha256:00b1651b4fdbbe0a2ae981c8e76b858bd26a7c33f5b3583f3b6bb9137d54f1ff"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-aarch64-macos.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144403"
+
+[tools."aqua:helix-editor/helix"."platforms.macos-x64"]
+checksum = "sha256:84dc32d617d28d32f4aa21e3aafac47bd715d1154aeb977697d4d60b887b7103"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-macos.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144378"
+
+[tools."aqua:helix-editor/helix"."platforms.macos-x64-baseline"]
+checksum = "sha256:84dc32d617d28d32f4aa21e3aafac47bd715d1154aeb977697d4d60b887b7103"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-macos.tar.xz"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144378"
+
+[tools."aqua:helix-editor/helix"."platforms.windows-x64"]
+checksum = "sha256:5c8325ced8bacd8418d62706f669e96d9c3578a9237526e34d546900cbc049b6"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-windows.zip"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144377"
+
+[tools."aqua:helix-editor/helix"."platforms.windows-x64-baseline"]
+checksum = "sha256:5c8325ced8bacd8418d62706f669e96d9c3578a9237526e34d546900cbc049b6"
+url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-windows.zip"
+url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144377"
+
 [[tools."aqua:k1LoW/git-wt"]]
 version = "0.29.1"
 backend = "aqua:k1LoW/git-wt"
@@ -4422,46 +4482,6 @@ url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764447"
 checksum = "sha256:54c22befa874dcdadb0f14bceb6faecd6b47b25cb90f5bad42776f8f4d7dfb24"
 url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.1/git-wt_v0.29.1_windows_amd64.tar.gz"
 url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764446"
-
-[[tools."aqua:micro-editor/micro"]]
-version = "2.0.15"
-backend = "aqua:micro-editor/micro"
-specifiers = ["2.0.15"]
-
-[tools."aqua:micro-editor/micro"."platforms.linux-arm64"]
-checksum = "sha256:5ca127857bf5500be3879f1a70b27556e737a49da04a1be5334de9e8e8781ad9"
-url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/micro-editor/micro/releases/assets/334842990"
-
-[tools."aqua:micro-editor/micro"."platforms.linux-arm64-musl"]
-checksum = "sha256:5ca127857bf5500be3879f1a70b27556e737a49da04a1be5334de9e8e8781ad9"
-url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/micro-editor/micro/releases/assets/334842990"
-
-[tools."aqua:micro-editor/micro"."platforms.linux-x64"]
-checksum = "sha256:267d238eac1e26ed053d13d4d48bd421b87f9eb538b604f0b2f74a85598b6cc2"
-url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-linux64-static.tar.gz"
-url_api = "https://api.github.com/repos/micro-editor/micro/releases/assets/334842982"
-
-[tools."aqua:micro-editor/micro"."platforms.linux-x64-musl"]
-checksum = "sha256:267d238eac1e26ed053d13d4d48bd421b87f9eb538b604f0b2f74a85598b6cc2"
-url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-linux64-static.tar.gz"
-url_api = "https://api.github.com/repos/micro-editor/micro/releases/assets/334842982"
-
-[tools."aqua:micro-editor/micro"."platforms.macos-arm64"]
-checksum = "sha256:2ff285cc49f2ac3f7a6e9110e2dabd3c848b73eed56a8396d627c0af80a34624"
-url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-macos-arm64.tar.gz"
-url_api = "https://api.github.com/repos/micro-editor/micro/releases/assets/334842985"
-
-[tools."aqua:micro-editor/micro"."platforms.macos-x64"]
-checksum = "sha256:d765b9bdd6478c4f5a3cbd5a93ebe7bab2b9cec30b5350016975cf1045855cee"
-url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-osx.tar.gz"
-url_api = "https://api.github.com/repos/micro-editor/micro/releases/assets/334842967"
-
-[tools."aqua:micro-editor/micro"."platforms.windows-x64"]
-checksum = "sha256:90635c53c11aa2a0d997f5e3ed43528877740725500207640b29551cef18479b"
-url = "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-win64.zip"
-url_api = "https://api.github.com/repos/micro-editor/micro/releases/assets/334842961"
 
 [[tools."aqua:rossmacarthur/sheldon"]]
 version = "0.8.5"
