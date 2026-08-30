@@ -4674,44 +4674,64 @@ checksum = "sha256:b929c54a9badb104a16dedd23aab6152c86793ae653d4e6b13983ffd0c882
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.0/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.247"
+version = "2.1.248"
 backend = "aqua:anthropics/claude-code"
-specifiers = ["2.1.247"]
+specifiers = ["2.1.248"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:4ef57315cff1d3cbfb2ef5e28f9e8560bafc76149b6798c227ec431f2e9018ad"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137920"
+checksum = "sha256:ec6423ef338c68b25962cde11d075625afcdd4e46d118f6d423d3c0534ea2df6"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835527"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:cf0f31058173cbfa962a1aba1ac31d49975c87458b1514e258bc55c017fe7efe"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137919"
+checksum = "sha256:26dedd7f78b036bdf6b62059a4beebc0e10a7ac38c44993c04290dd6d6efdf67"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835529"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:148632dc7eb82cc79e634e8decaa041f586f018d6e6e23648231986798737b15"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137989"
+checksum = "sha256:9baff38eabf5d7a5d57917c312a00654953ed3ece87680bda090c8743ffaa619"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835610"
+
+[tools.claude."platforms.linux-x64-baseline"]
+checksum = "sha256:9baff38eabf5d7a5d57917c312a00654953ed3ece87680bda090c8743ffaa619"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835610"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:c7d74dd6bc9dc6911ea0ac877c48839ee31a9a432c98ddc33403ad4d3a48a845"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137922"
+checksum = "sha256:184fd0d61eb7c621c1ae73b92ae824b954a1d20e5af71860b4cad282958fb9c6"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835526"
+
+[tools.claude."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:184fd0d61eb7c621c1ae73b92ae824b954a1d20e5af71860b4cad282958fb9c6"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835526"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:77709dc499a57c3106831162fed02f7c520897bb061cfd1b4d06110f8ab871ce"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137921"
+checksum = "sha256:73775e892ac428b4575b618156de173778c3df9afc4c2cc64dbb746e69beed93"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835528"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:b51cf8ffdde4bd3f9ab3a4b9b1f1176ca3120c66a7a5fbccce6e5c88f0d9a049"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137924"
+checksum = "sha256:613f8a84de540e060bd87bc08afd93530d42f896d3df99ef234fa98bd7ca2269"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835530"
+
+[tools.claude."platforms.macos-x64-baseline"]
+checksum = "sha256:613f8a84de540e060bd87bc08afd93530d42f896d3df99ef234fa98bd7ca2269"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835530"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:fc4f2ff5bc4af613f92174a2b9051a52a9c2c557ab45796a248d6811044ef808"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531138005"
+checksum = "sha256:5bba85c731819dafe092813364e99fe0db57eab16660c98e11b5ee9882a3585c"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835615"
+
+[tools.claude."platforms.windows-x64-baseline"]
+checksum = "sha256:5bba85c731819dafe092813364e99fe0db57eab16660c98e11b5ee9882a3585c"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.248/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/532835615"
 
 [[tools.cloudflared]]
 version = "2026.8.2"
