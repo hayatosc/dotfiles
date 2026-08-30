@@ -2834,9 +2834,9 @@ checksum = "sha256:051c6088bf2381840fcf8764737b829cc6c5f793718d2417d097d6e3b153e
 url = "https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_7.conda"
 checksum = "sha256:47d682b9f6d6ec9eb1a6e6c3e75ea6273e899e78fb7fc59f81d39745009fbc60"
 
-[conda-packages.macos-arm64."_openmp_mutex-4.5-7_kmp_llvm"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/_openmp_mutex-4.5-7_kmp_llvm.conda"
-checksum = "sha256:7acaa2e0782cad032bdaf756b536874346ac1375745fb250e9bdd6a48a7ab3cd"
+[conda-packages.macos-arm64."_openmp_mutex-4.5-8_kmp_llvm"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/_openmp_mutex-4.5-8_kmp_llvm.conda"
+checksum = "sha256:c7c98ce74f6a7ff25aaa4706d06fa41d63a333add4d697b73aa4d8d2d7ad7651"
 
 [conda-packages.macos-arm64."adwaita-icon-theme-49.0-unix_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
@@ -3342,9 +3342,9 @@ checksum = "sha256:cf896717611de9608a000664b7020bb56d2ac1298b2222c356756f7f76c5e
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.7-hf451053_7.conda"
 checksum = "sha256:da867f5092eb0cb746d353694f0098031fd9817a4ce7d5743121209ae0f406ca"
 
-[conda-packages.macos-x64."_openmp_mutex-4.5-7_kmp_llvm"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/_openmp_mutex-4.5-7_kmp_llvm.conda"
-checksum = "sha256:30006902a9274de8abdad5a9f02ef7c8bb3d69a503486af0c1faee30b023e5b7"
+[conda-packages.macos-x64."_openmp_mutex-4.5-8_kmp_llvm"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/_openmp_mutex-4.5-8_kmp_llvm.conda"
+checksum = "sha256:09ba32614a1512b729e3cb608b0714c24654f37b5d0f8239bdb77d7be0ede4f7"
 
 [conda-packages.macos-x64."adwaita-icon-theme-49.0-unix_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
@@ -4673,17 +4673,7 @@ checksum = "sha256:148632dc7eb82cc79e634e8decaa041f586f018d6e6e23648231986798737
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137989"
 
-[tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:148632dc7eb82cc79e634e8decaa041f586f018d6e6e23648231986798737b15"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137989"
-
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:c7d74dd6bc9dc6911ea0ac877c48839ee31a9a432c98ddc33403ad4d3a48a845"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137922"
-
-[tools.claude."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:c7d74dd6bc9dc6911ea0ac877c48839ee31a9a432c98ddc33403ad4d3a48a845"
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-linux-x64-musl.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137922"
@@ -4698,17 +4688,7 @@ checksum = "sha256:b51cf8ffdde4bd3f9ab3a4b9b1f1176ca3120c66a7a5fbccce6e5c88f0d9a
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137924"
 
-[tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:b51cf8ffdde4bd3f9ab3a4b9b1f1176ca3120c66a7a5fbccce6e5c88f0d9a049"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531137924"
-
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:fc4f2ff5bc4af613f92174a2b9051a52a9c2c557ab45796a248d6811044ef808"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531138005"
-
-[tools.claude."platforms.windows-x64-baseline"]
 checksum = "sha256:fc4f2ff5bc4af613f92174a2b9051a52a9c2c557ab45796a248d6811044ef808"
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.247/claude-win32-x64.zip"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/531138005"
@@ -6879,7 +6859,7 @@ conda_deps = [
     "pthread-stubs-0.4-h84a0fba_1003",
     "xorg-libxau-1.0.12-h84a0fba_2",
     "xorg-libxdmcp-1.1.5-h84a0fba_2",
-    "_openmp_mutex-4.5-7_kmp_llvm",
+    "_openmp_mutex-4.5-8_kmp_llvm",
 ]
 
 [tools.imagemagick."platforms.macos-x64"]
@@ -6975,7 +6955,7 @@ conda_deps = [
     "xorg-libxau-1.0.12-ha1e9b39_2",
     "xorg-libxdmcp-1.1.5-ha1e9b39_2",
     "pthread-stubs-0.4-ha1e9b39_1003",
-    "_openmp_mutex-4.5-7_kmp_llvm",
+    "_openmp_mutex-4.5-8_kmp_llvm",
 ]
 
 [tools.imagemagick."platforms.windows-x64"]
