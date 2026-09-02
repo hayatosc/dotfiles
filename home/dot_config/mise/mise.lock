@@ -154,9 +154,9 @@ checksum = "sha256:54d921defd947adb58a90e10203d3bfe6c1f209f5f1a1ad2c6a9f7617f2fb
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/imath-3.2.2-h92288e7_0.conda"
 checksum = "sha256:fba00c8ef8bd59748515c34670c437905708228ee099f39fa2b1fed5693334b3"
 
-[conda-packages.linux-arm64."jasper-4.2.9-h850eeee_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/jasper-4.2.9-h850eeee_1.conda"
-checksum = "sha256:8302f891a44816125e8b7e92e7525ee00886269266a18de4be976f5f02af9d6f"
+[conda-packages.linux-arm64."jasper-4.2.9-h8d4df48_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/jasper-4.2.9-h8d4df48_2.conda"
+checksum = "sha256:472495512858fd28c66917412ed794a780e9b3a334eb233af512896a2485a4d3"
 
 [conda-packages.linux-arm64."keyutils-1.6.3-h5bc82ec_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/keyutils-1.6.3-h5bc82ec_1.conda"
@@ -846,9 +846,9 @@ checksum = "sha256:54d921defd947adb58a90e10203d3bfe6c1f209f5f1a1ad2c6a9f7617f2fb
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/imath-3.2.2-h92288e7_0.conda"
 checksum = "sha256:fba00c8ef8bd59748515c34670c437905708228ee099f39fa2b1fed5693334b3"
 
-[conda-packages.linux-arm64-musl."jasper-4.2.9-h850eeee_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/jasper-4.2.9-h850eeee_1.conda"
-checksum = "sha256:8302f891a44816125e8b7e92e7525ee00886269266a18de4be976f5f02af9d6f"
+[conda-packages.linux-arm64-musl."jasper-4.2.9-h8d4df48_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/jasper-4.2.9-h8d4df48_2.conda"
+checksum = "sha256:472495512858fd28c66917412ed794a780e9b3a334eb233af512896a2485a4d3"
 
 [conda-packages.linux-arm64-musl."keyutils-1.6.3-h5bc82ec_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/keyutils-1.6.3-h5bc82ec_1.conda"
@@ -1546,9 +1546,9 @@ checksum = "sha256:bc231d69eb6663db0e09738fb916c5e5507147cf1ac60f364f964004e0b29
 url = "https://conda.anaconda.org/conda-forge/linux-64/intel-media-driver-26.1.6-hecca717_0.conda"
 checksum = "sha256:7cbd7fda22db70c64af64c9173434a4ede58e4f220bda52a044e469aa94c65cb"
 
-[conda-packages.linux-x64."jasper-4.2.9-h1588d4d_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/jasper-4.2.9-h1588d4d_1.conda"
-checksum = "sha256:a6a9858eadb4c794b56a1c954c1d4f4b57d96c9fb87092dd46f5bff9b0697b35"
+[conda-packages.linux-x64."jasper-4.2.9-hd038ad9_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/jasper-4.2.9-hd038ad9_2.conda"
+checksum = "sha256:a7b36f828a4d85171e61b3153997b5513f766d02501b2b596129edb0e8896d04"
 
 [conda-packages.linux-x64."keyutils-1.6.3-h7cc23a3_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/keyutils-1.6.3-h7cc23a3_1.conda"
@@ -2278,9 +2278,9 @@ checksum = "sha256:bc231d69eb6663db0e09738fb916c5e5507147cf1ac60f364f964004e0b29
 url = "https://conda.anaconda.org/conda-forge/linux-64/intel-media-driver-26.1.6-hecca717_0.conda"
 checksum = "sha256:7cbd7fda22db70c64af64c9173434a4ede58e4f220bda52a044e469aa94c65cb"
 
-[conda-packages.linux-x64-musl."jasper-4.2.9-h1588d4d_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/jasper-4.2.9-h1588d4d_1.conda"
-checksum = "sha256:a6a9858eadb4c794b56a1c954c1d4f4b57d96c9fb87092dd46f5bff9b0697b35"
+[conda-packages.linux-x64-musl."jasper-4.2.9-hd038ad9_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/jasper-4.2.9-hd038ad9_2.conda"
+checksum = "sha256:a7b36f828a4d85171e61b3153997b5513f766d02501b2b596129edb0e8896d04"
 
 [conda-packages.linux-x64-musl."keyutils-1.6.3-h7cc23a3_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/keyutils-1.6.3-h7cc23a3_1.conda"
@@ -2986,9 +2986,9 @@ checksum = "sha256:6cdb5dee54c72e56ab189fb3ad33cb28533553d42590e7e831160248f4416
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/imath-3.2.2-h13e8271_0.conda"
 checksum = "sha256:18986a94213497b9e60880fbbb71c54ac4f34adf948373d8298af8316fab17fc"
 
-[conda-packages.macos-arm64."jasper-4.2.9-h7543a42_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/jasper-4.2.9-h7543a42_1.conda"
-checksum = "sha256:58bfd15b7426f99ca2b1854535d4ede1ca2a35be4f8c43c5e34b6ffdcfd7a5c8"
+[conda-packages.macos-arm64."jasper-4.2.9-hc111fee_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/jasper-4.2.9-hc111fee_2.conda"
+checksum = "sha256:b717ed9222e06ee94304aee16c0b205bc40db10b379b04326944cf481cea09a6"
 
 [conda-packages.macos-arm64."lame-3.100-h1a8c8d9_1003"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/lame-3.100-h1a8c8d9_1003.tar.bz2"
@@ -3498,9 +3498,9 @@ checksum = "sha256:3abd86f3441f143b6b3203c92ae0d88dd8396a8857940af468f1fab854cda
 url = "https://conda.anaconda.org/conda-forge/osx-64/imath-3.2.2-h6337977_0.conda"
 checksum = "sha256:d1fb13e40349261077c9fbd91c848513cf3e130ced9141496329f0f31d5e54d1"
 
-[conda-packages.macos-x64."jasper-4.2.9-hbeb4536_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/jasper-4.2.9-hbeb4536_1.conda"
-checksum = "sha256:dc013823ea75791ec93889455bf64680db4f756111f9ea791f4336f002973dd2"
+[conda-packages.macos-x64."jasper-4.2.9-h36fbcc0_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/jasper-4.2.9-h36fbcc0_2.conda"
+checksum = "sha256:ba567162a0168ea81d717795b6cc7e02472beb683f32e0c808b71fed839c5b26"
 
 [conda-packages.macos-x64."lame-3.100-hb7f2c08_1003"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/lame-3.100-hb7f2c08_1003.tar.bz2"
@@ -3998,9 +3998,9 @@ checksum = "sha256:75c549b55b673e15de8785a8e5dd85bca7eb612eee0ff4dc8d7bdaa15eacb
 url = "https://conda.anaconda.org/conda-forge/win-64/imath-3.2.2-h1608b31_0.conda"
 checksum = "sha256:2aa57a5ed668ab34cc061b61082e3cee893d2e45ebc33f9432d13f7f292a990e"
 
-[conda-packages.windows-x64."jasper-4.2.9-h8ad263b_1"]
-url = "https://conda.anaconda.org/conda-forge/win-64/jasper-4.2.9-h8ad263b_1.conda"
-checksum = "sha256:aed571899460d314013fff76c6c1bb8e908788667f382f319e0daf920b85d103"
+[conda-packages.windows-x64."jasper-4.2.9-h1339676_2"]
+url = "https://conda.anaconda.org/conda-forge/win-64/jasper-4.2.9-h1339676_2.conda"
+checksum = "sha256:f22e46c48963ffeeba896cfe0da39c79af42a9d0fcc54539448e38f175e77b63"
 
 [conda-packages.windows-x64."jbig-2.1-h8d14728_2003"]
 url = "https://conda.anaconda.org/conda-forge/win-64/jbig-2.1-h8d14728_2003.tar.bz2"
@@ -4242,9 +4242,9 @@ checksum = "sha256:5546927a2e337d2903d6cdb028fb33723cdbcc45bf9abe1770fbde2c4ea8b
 url = "https://conda.anaconda.org/conda-forge/win-64/python-3.14.7-h53f6dd8_104_cp314.conda"
 checksum = "sha256:70c04a977ba943691cc9ff9c7cbe4326b3e9bd27a5a040184ca892192d6e3143"
 
-[conda-packages.windows-x64."python_abi-3.14-8_cp314"]
-url = "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.14-8_cp314.conda"
-checksum = "sha256:ad6d2e9ac39751cc0529dd1566a26751a0bf2542adb0c232533d32e176e21db5"
+[conda-packages.windows-x64."python_abi-3.14-9_cp314"]
+url = "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.14-9_cp314.conda"
+checksum = "sha256:e7f8e965bbfb98e08feb2365cacdad8bb218fa5b5a0a2752f747287f425f213c"
 
 [conda-packages.windows-x64."rav1e-0.8.1-h007690e_0"]
 url = "https://conda.anaconda.org/conda-forge/win-64/rav1e-0.8.1-h007690e_0.conda"
@@ -5628,7 +5628,6 @@ conda_deps = [
     "lerc-4.2.0-hd936e49_0",
     "fribidi-1.0.16-hfd05255_1",
     "python-3.14.7-h53f6dd8_104_cp314",
-    "python_abi-3.14-8_cp314",
     "libpython-3.14.7-h4f90d01_104_cp314",
     "packaging-26.3-pyhc364b38_0",
     "libdeflate-1.25-h1a1d4e4_1",
@@ -5637,47 +5636,48 @@ conda_deps = [
     "tzdata-2026c-h151e31d_0",
     "libmpdec-4.0.0-hfd05255_2",
     "libsqlite-3.53.4-hf5d6505_1",
+    "python_abi-3.14-9_cp314",
 ]
 
 [[tools.copilot]]
-version = "v1.0.81"
+version = "v1.0.82"
 backend = "aqua:github/copilot-cli"
-specifiers = ["v1.0.81"]
+specifiers = ["v1.0.82"]
 
 [tools.copilot."platforms.linux-arm64"]
-checksum = "sha256:f0e621e6793b14e04c0f651cd46d818a5bf0bf54d74c9566c9424744b41a279c"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.81/copilot-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/532619535"
+checksum = "sha256:86c4c77a91b1ff5dd7313cbea9f861699a2cdceb4696f3864f3f0584e9684e0f"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.82/copilot-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/535878784"
 
 [tools.copilot."platforms.linux-arm64-musl"]
-checksum = "sha256:f0e621e6793b14e04c0f651cd46d818a5bf0bf54d74c9566c9424744b41a279c"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.81/copilot-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/532619535"
+checksum = "sha256:86c4c77a91b1ff5dd7313cbea9f861699a2cdceb4696f3864f3f0584e9684e0f"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.82/copilot-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/535878784"
 
 [tools.copilot."platforms.linux-x64"]
-checksum = "sha256:3082c4a27aa683def52e48397c02606dc7f8267dcef1c93949f3f58de4a5cde3"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.81/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/532619693"
+checksum = "sha256:37fa67686a9e4ed8d46dcd6a9c80ab524dea840ecaa0a3f7edf8d09f961b97a9"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.82/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/535878879"
 
 [tools.copilot."platforms.linux-x64-musl"]
-checksum = "sha256:3082c4a27aa683def52e48397c02606dc7f8267dcef1c93949f3f58de4a5cde3"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.81/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/532619693"
+checksum = "sha256:37fa67686a9e4ed8d46dcd6a9c80ab524dea840ecaa0a3f7edf8d09f961b97a9"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.82/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/535878879"
 
 [tools.copilot."platforms.macos-arm64"]
-checksum = "sha256:568b0d6fe88d573c171ab95887d33276802dda2c5ca3cee7d0fe438df2343be4"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.81/copilot-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/532619533"
+checksum = "sha256:c03bfc58c4402ec31d09ca11c379e1c17e95c3441f48009d721bf556fcc2c42e"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.82/copilot-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/535878783"
 
 [tools.copilot."platforms.macos-x64"]
-checksum = "sha256:269b2b42a4c3059c260063ca4ded9920132f5b9ad270a531ab80e569917c46a5"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.81/copilot-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/532619532"
+checksum = "sha256:512cbd527e510664be8854ddfee3f3215f890a2f548b0477e9dd544b54abbd8c"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.82/copilot-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/535878782"
 
 [tools.copilot."platforms.windows-x64"]
-checksum = "sha256:666cf161d1cb7d248c60de78d0f8ad8ed374e9602be728c9a965ec83cb1628ec"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.81/copilot-win32-x64.zip"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/532619536"
+checksum = "sha256:dec18634ab7cc62a8c6829b1a25e6dd84a22e941a9b9f75ef88e3ec2a718b78f"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.82/copilot-win32-x64.zip"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/535878786"
 
 [[tools.delta]]
 version = "0.19.2"
@@ -6352,7 +6352,7 @@ conda_deps = [
     "libbrotlicommon-1.2.0-h384ecca_3",
     "libbrotlidec-1.2.0-h011f0d3_3",
     "libhwy-1.4.0-h996897a_1",
-    "jasper-4.2.9-h850eeee_1",
+    "jasper-4.2.9-h8d4df48_2",
     "harfbuzz-14.4.0-h8af1aa0_0",
     "libharfbuzz-devel-14.4.0-h8f7ccb3_0",
     "libharfbuzz-14.4.0-h8f7ccb3_0",
@@ -6377,6 +6377,7 @@ conda_deps = [
     "libcups-2.3.3-h4f2b762_6",
     "wayland-1.26.0-h637a836_2",
     "svt-av1-4.2.0-h4154aff_1",
+    "libglu-9.0.3-h5ad3122_1",
     "freeglut-3.2.2-hddf9bb5_4",
     "xorg-libxxf86vm-1.1.7-he30d5cf_0",
     "libgl-1.7.0-hd24410f_5",
@@ -6385,9 +6386,8 @@ conda_deps = [
     "libgl-devel-1.7.0-hd24410f_5",
     "libglx-devel-1.7.0-hd24410f_5",
     "libegl-devel-1.7.0-hd24410f_5",
-    "libegl-1.7.0-hd24410f_5",
-    "libglu-9.0.3-h5ad3122_1",
     "libopengl-1.7.0-hd24410f_5",
+    "libegl-1.7.0-hd24410f_5",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "graphite2-1.3.15-h7ac5ae9_1",
     "pthread-stubs-0.4-he30d5cf_1003",
@@ -6484,7 +6484,7 @@ conda_deps = [
     "libbrotlicommon-1.2.0-h384ecca_3",
     "libbrotlidec-1.2.0-h011f0d3_3",
     "libhwy-1.4.0-h996897a_1",
-    "jasper-4.2.9-h850eeee_1",
+    "jasper-4.2.9-h8d4df48_2",
     "harfbuzz-14.4.0-h8af1aa0_0",
     "libharfbuzz-devel-14.4.0-h8f7ccb3_0",
     "libharfbuzz-14.4.0-h8f7ccb3_0",
@@ -6509,6 +6509,7 @@ conda_deps = [
     "libcups-2.3.3-h4f2b762_6",
     "wayland-1.26.0-h637a836_2",
     "svt-av1-4.2.0-h4154aff_1",
+    "libglu-9.0.3-h5ad3122_1",
     "freeglut-3.2.2-hddf9bb5_4",
     "xorg-libxxf86vm-1.1.7-he30d5cf_0",
     "libgl-1.7.0-hd24410f_5",
@@ -6517,9 +6518,8 @@ conda_deps = [
     "libgl-devel-1.7.0-hd24410f_5",
     "libglx-devel-1.7.0-hd24410f_5",
     "libegl-devel-1.7.0-hd24410f_5",
-    "libegl-1.7.0-hd24410f_5",
-    "libglu-9.0.3-h5ad3122_1",
     "libopengl-1.7.0-hd24410f_5",
+    "libegl-1.7.0-hd24410f_5",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "graphite2-1.3.15-h7ac5ae9_1",
     "pthread-stubs-0.4-he30d5cf_1003",
@@ -6616,7 +6616,7 @@ conda_deps = [
     "libbrotlienc-1.2.0-h018ffa1_3",
     "libbrotlicommon-1.2.0-h39a168f_3",
     "libbrotlidec-1.2.0-ha411449_3",
-    "jasper-4.2.9-h1588d4d_1",
+    "jasper-4.2.9-hd038ad9_2",
     "harfbuzz-14.4.0-ha770c72_0",
     "libharfbuzz-devel-14.4.0-h23af247_0",
     "libharfbuzz-14.4.0-h23af247_0",
@@ -6748,7 +6748,7 @@ conda_deps = [
     "libbrotlienc-1.2.0-h018ffa1_3",
     "libbrotlicommon-1.2.0-h39a168f_3",
     "libbrotlidec-1.2.0-ha411449_3",
-    "jasper-4.2.9-h1588d4d_1",
+    "jasper-4.2.9-hd038ad9_2",
     "harfbuzz-14.4.0-ha770c72_0",
     "libharfbuzz-devel-14.4.0-h23af247_0",
     "libharfbuzz-14.4.0-h23af247_0",
@@ -6872,7 +6872,7 @@ conda_deps = [
     "libbrotlienc-1.2.0-h2ddc9cb_3",
     "libbrotlicommon-1.2.0-h1dcdb26_3",
     "libbrotlidec-1.2.0-h5295a6a_3",
-    "jasper-4.2.9-h7543a42_1",
+    "jasper-4.2.9-hc111fee_2",
     "harfbuzz-14.4.0-hce30654_0",
     "libharfbuzz-devel-14.4.0-hcda0f7c_0",
     "libharfbuzz-14.4.0-hcda0f7c_0",
@@ -6969,7 +6969,7 @@ conda_deps = [
     "libbrotlienc-1.2.0-h3d41943_3",
     "libbrotlicommon-1.2.0-he0616a4_3",
     "libbrotlidec-1.2.0-h4a2f56c_3",
-    "jasper-4.2.9-hbeb4536_1",
+    "jasper-4.2.9-h36fbcc0_2",
     "harfbuzz-14.4.0-h694c41f_0",
     "libharfbuzz-devel-14.4.0-h2974713_0",
     "libharfbuzz-14.4.0-h2974713_0",
@@ -7062,7 +7062,7 @@ conda_deps = [
     "libbrotlienc-1.2.0-he2a975b_3",
     "libbrotlicommon-1.2.0-hf02afa3_3",
     "libbrotlidec-1.2.0-h84f9c24_3",
-    "jasper-4.2.9-h8ad263b_1",
+    "jasper-4.2.9-h1339676_2",
     "gdk-pixbuf-2.44.8-h1f5b9c4_1",
     "harfbuzz-14.4.0-h57928b3_0",
     "libharfbuzz-devel-14.4.0-h03b5201_0",
@@ -7085,7 +7085,6 @@ conda_deps = [
     "ca-certificates-2026.7.22-h4c7d964_0",
     "graphite2-1.3.15-h5112557_1",
     "python-3.14.7-h53f6dd8_104_cp314",
-    "python_abi-3.14-8_cp314",
     "libpython-3.14.7-h4f90d01_104_cp314",
     "packaging-26.3-pyhc364b38_0",
     "libgcc-16.2.0-h110b43a_4",
@@ -7097,6 +7096,7 @@ conda_deps = [
     "tzdata-2026c-h151e31d_0",
     "libmpdec-4.0.0-hfd05255_2",
     "libsqlite-3.53.4-hf5d6505_1",
+    "python_abi-3.14-9_cp314",
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-16.2.0-h8ee18e1_4",
     "libxcb-1.17.0-h874e120_2",
@@ -7359,38 +7359,38 @@ backend = "core:python"
 specifiers = ["3.14.7"]
 
 [tools.python."platforms.linux-arm64"]
-checksum = "sha256:7f0b801b0ba2c74531cd2e66ee898569cdf1f323a24383576f2a6761001e01f1"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260825/cpython-3.14.7+20260825-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
+checksum = "sha256:8a0798baa8a2c27b5751d590aced543eaa85e20b3f73d93c1af049688acdc9c5"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.linux-arm64-musl"]
-checksum = "sha256:8f58d8a42e8c6af84d43ba1c9e74e56ce2354b66ec44721b289f5a6c57811fc2"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260825/cpython-3.14.7+20260825-aarch64-unknown-linux-musl-install_only_stripped.tar.gz"
+checksum = "sha256:701c31d72187242302922a29f3bc6023ceb68b6b68fb8d4ed7568d1e6ef34548"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-aarch64-unknown-linux-musl-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.linux-x64"]
-checksum = "sha256:a0f39e822fd3b96a2605f30f954acf9a2cdf91faa1385a13e24bc407a41e05ea"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260825/cpython-3.14.7+20260825-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
+checksum = "sha256:3959f92825141e04adf44982d3a83ee57af0877e893b0796e04c1468749d9b04"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.linux-x64-musl"]
-checksum = "sha256:22374158b61f9415135614fb7ebdba498a84849921bb5ad025809e925d8bb428"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260825/cpython-3.14.7+20260825-x86_64-unknown-linux-musl-install_only_stripped.tar.gz"
+checksum = "sha256:c773f8a7357c0d1a29e208a14bc16386731ca9c0d2e51f1b6741967fb0632cdc"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-x86_64-unknown-linux-musl-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.macos-arm64"]
-checksum = "sha256:17ecb3d29c49765856370cbb47d948a24ec518be40f607362c1bbb3ebbc5c442"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260825/cpython-3.14.7+20260825-aarch64-apple-darwin-install_only_stripped.tar.gz"
+checksum = "sha256:4632cb1a6edad9e73d3c81b6d2e69131637d995173e3e85005df14102b0592ba"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-aarch64-apple-darwin-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.macos-x64"]
-checksum = "sha256:1b1e977f6d4fb887c7fa662a8e33f18dfdc9b9cdfaf5cdb003f13b3317947848"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260825/cpython-3.14.7+20260825-x86_64-apple-darwin-install_only_stripped.tar.gz"
+checksum = "sha256:7e151a7c9028855b61a7d6e78381f2020a1ef185281399f3b1aafc5e1c9a1a64"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-x86_64-apple-darwin-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.windows-x64"]
-checksum = "sha256:dec3faa3445d9efc4979e6c74a839be0d1039877367db32ee9c5f6bc91fae3c8"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260825/cpython-3.14.7+20260825-x86_64-pc-windows-msvc-install_only_stripped.tar.gz"
+checksum = "sha256:ca3c33ca924dfcab3b74205a7a58a88b0255135c53f95497b26b5e60700fd66d"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-x86_64-pc-windows-msvc-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [[tools.resvg]]
