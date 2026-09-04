@@ -70,6 +70,7 @@ experimental = true
 lockfile = true
 minimum_release_age = "3d"
 aqua.registry_cache_ttl = "1d"
+fetch_remote_versions_timeout = "30s"
 
 [env]
 AUBE_ALLOWED_UNPOPULAR_PACKAGES = "acpx,portless"

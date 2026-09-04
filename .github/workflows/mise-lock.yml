@@ -58,6 +58,9 @@ jobs:
       - name: Regenerate and commit mise.lock via GraphQL
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          MISE_GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          MISE_FETCH_REMOTE_VERSIONS_TIMEOUT: 30s
           REPO: ${{ github.repository }}
           BRANCH: ${{ github.ref_name }}
           FILES: home/dot_config/mise/mise.lock
@@ -69,7 +72,7 @@ jobs:
             mise lock 2>&1 | tee /tmp/mise-lock.log || exit 1
             # mise は解決に一部失敗しても exit 0 のため、レート制限等の警告が
             # ある場合は壊れた lockfile をコミットさせないために落とす。
-            grep -qiE 'rate limit exceeded|client error \(403|failed to fetch' /tmp/mise-lock.log && {
+            grep -qiE 'rate limit exceeded|client error \(403' /tmp/mise-lock.log && {
               echo "incomplete resolution detected; refusing to commit" >&2
               exit 1
             }

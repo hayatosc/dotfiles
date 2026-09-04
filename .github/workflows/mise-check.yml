@@ -24,6 +24,9 @@ jobs:
       # chezmoi のソースパスにある mise 設定を global config として使わせる
       MISE_GLOBAL_CONFIG_FILE: ${{ github.workspace }}/home/dot_config/mise/config.toml
       MISE_EXPERIMENTAL: "1"
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      MISE_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      MISE_FETCH_REMOTE_VERSIONS_TIMEOUT: 30s
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -46,8 +49,8 @@ jobs:
           fi
           echo "変更されたツールをインストールして検証します:"
           echo "$specs"
-          # aube は npm: バックエンド等の前提となるため一律で事前インストールする
-          mise install aube
+          # aube と node は npm: バックエンド等の前提となるため一律で事前インストールする
+          mise install aube node
 
           mapfile -t tools < <(printf '%s\n' "$specs" | sed 's/@[^@]*$//')
           if ! mise install --locked "${tools[@]}"; then
