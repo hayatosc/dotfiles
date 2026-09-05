@@ -1,11 +1,11 @@
 ---
 name: coding-style
-description: Language-agnostic coding style, minimal code philosophy, The Ladder, code change rules, and safety guards. Loaded before writing or reviewing code.
+description: Language-agnostic coding style, minimal code philosophy, readability principles, The Ladder, code change rules, and safety guards. Loaded before writing or reviewing code.
 ---
 
 # Coding Style
 
-Language-agnostic policy. Language skills take precedence for language-specific idiomatic conventions.
+Language-agnostic policy. Optimize code so others understand it in the shortest possible time. Language skills take precedence for language-specific idiomatic conventions.
 
 ## The Ladder
 
@@ -18,6 +18,22 @@ Before writing any code, stop at the first rung that satisfies the requirement. 
 5. **Existing dependency?** — Use installed packages; never add new dependencies for what a few lines can accomplish.
 6. **Can it be a one-liner?** — Keep simple logic to a single line.
 7. **Only then: minimum working code** — Write the simplest implementation that correctly solves the task.
+
+## Readability & Clarity
+
+- **Naming Precision**:
+  - Suffix units (`delay_ms`, `size_bytes`) and critical qualifiers (`plaintext_password`, `raw_html` vs `escaped_html`).
+  - Use unambiguous verbs and boundary names (distinguish `truncate` vs `remove`; use `first`/`last` [inclusive], `begin`/`end` [inclusive/exclusive], `min`/`max` [limits]).
+- **High-Signal Comments**:
+  - Never state the obvious. If code is messy, improve the code instead of adding comments.
+  - Document *why*, not *what*: design rationale / director's commentary, constant tuning intent (`// deliberate: 50ms debounce`), and subtle traps/gotchas.
+- **Decompose Expressions & Control Flow**:
+  - Break compound logic into explanatory variables or apply De Morgan's laws to simplify/unnest negations (e.g. `!(a || b)` -> `!a && !b`).
+  - Eliminate control-flow flags (e.g. `let done = false`) in favor of early `return`, `break`, or `continue`.
+  - Narrow variable scope; eliminate useless intermediate variables.
+- **Isolate Sub-problems & One Task at a Time**:
+  - Extract pure utility / lower-level tasks out of main business logic.
+  - Do one thing per function/block; separate distinct operations into logical paragraphs.
 
 ## Over-Engineering & Bloat Prevention
 

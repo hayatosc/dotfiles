@@ -1,10 +1,13 @@
 # Refactor Playbook
 
+Adhere to `coding-style` for all naming, comment, and expression rules.
+
 ## Structural Moves
 
-- **Rename**: Match current role. Do not bundle with structural edits.
-- **Extract**: Move sub-purposes or pure logic into named helpers.
+- **Rename**: Align names with current role and `coding-style` (units, qualifiers, bounds). Do not bundle with structural edits.
+- **Extract**: Move sub-problems, pure utility logic, or multi-task phases into named helpers.
 - **Split**: Separate phases (parse, validate, execute, format) or uncouple file-history-only dependencies.
+- **Decompose Flow**: Remove boolean state/loop flags via early returns/breaks.
 - **Move**: Move logic toward data owner. Finish renames/extractions first.
 - **Isolate Side Effects**: Push I/O & state mutations to edges; keep decision logic pure.
 - **Remove Duplication**: Unify genuine duplication (same rule/evolution path). Do NOT unify accidental similarity.
@@ -18,7 +21,8 @@
 
 ## Code Smells & Actions
 
-- Giant function -> Split by phase.
+- Giant function / Multi-tasking -> Split by phase or extract sub-problems.
+- Complex conditionals / flags -> Apply `coding-style` (explanatory variables, De Morgan's, early returns).
 - Entangled I/O -> Isolate side effects.
 - 1-impl interface -> Inline.
 - Delegating wrapper -> Delete & direct call.

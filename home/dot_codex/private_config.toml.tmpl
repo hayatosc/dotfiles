@@ -8,7 +8,7 @@
 {{- end -}}
 {{- $_ := unset $current "agents" -}}
 {{- $shared := dict
-      "model" "gpt-5.6-sol"
+      "model" "gpt-6-astra"
       "model_reasoning_effort" "high"
       "plan_mode_reasoning_effort" "high"
       "approvals_reviewer" "auto_review"
@@ -16,6 +16,9 @@
       "features" (dict
         "default_mode_request_user_input" true
         "guardian_approval" true
+        "context_management" (dict
+          "experimental_mode" true
+        )
         "multi_agent_v2" (dict
           "enabled" true
           "hide_spawn_agent_metadata" false

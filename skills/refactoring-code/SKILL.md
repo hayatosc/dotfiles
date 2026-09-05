@@ -5,15 +5,20 @@ description: Behavior-preserving refactoring and de-engineering in small verifie
 
 # Refactoring Code
 
-Execute behavior-preserving refactors in small, verified steps. The goal is to make the code cleaner and simpler without introducing regression bugs.
+Execute behavior-preserving refactors in small, verified steps without introducing regression bugs.
+
+> Always adhere to the `coding-style` skill for readability, naming precision, comment quality, expression decomposition, and minimal code rules.
 
 ## Workflow
 
 1. **Inspect Repository Constraints**: Read current tests, build scripts, and architecture before editing. Reuse existing verification paths.
 2. **Define the Refactor Contract**: Fix the goal, non-goals, and observable public behavior. Do not mix feature work with refactoring.
 3. **Establish a Safety Net**: Rely on existing automated tests or the smallest runnable check. If safety coverage is weak or brittle, reduce scope.
-4. **Slice the Work Incrementally**: Execute one structural intention per step (rename, extract, split, move). Search the codebase to reuse existing helpers before adding new ones.
-5. **De-engineering & Simplification**: Eliminate premature abstractions (single-implementation interfaces/factories, delegating wrappers, unused configs). Replace custom code with standard library or native platform features. Categorize changes using tags: `delete:`, `stdlib:`, `native:`, `yagni:`, `shrink:`. Aim for `net: -<N> lines`.
+4. **Slice the Work Incrementally**: Execute one structural intention per step (rename, extract, split, move). Search codebase to reuse existing helpers before adding new ones.
+5. **Apply `coding-style` & De-engineering**:
+   - Align with `coding-style` (simplify flow, isolate sub-problems, eliminate control flags/intermediates).
+   - Eliminate premature abstractions (single-impl interfaces/factories, delegating wrappers, unused configs).
+   - Replace custom code with stdlib or native platform features. Categorize changes using tags: `delete:`, `stdlib:`, `native:`, `yagni:`, `shrink:`, `simplify:`. Aim for `net: -<N> lines`.
 6. **Verify Incrementally**: Run relevant verification after each slice. Stop when the code is materially simpler.
 
 ## Output Pattern
