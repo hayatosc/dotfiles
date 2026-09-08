@@ -11541,9 +11541,9 @@ url = "https://github.com/rtk-ai/rtk/releases/download/v0.45.0/rtk-x86_64-pc-win
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/504971578"
 
 [[tools.rust]]
-version = "1.98.0"
+version = "1.98.1"
 backend = "core:rust"
-specifiers = ["1.98.0"]
+specifiers = ["1.98.1"]
 
 [[tools.rust-analyzer]]
 version = "2026-05-25"
