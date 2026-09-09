@@ -4699,17 +4699,7 @@ checksum = "sha256:7f1444a22ba7c0949b728a19511ed8e47d218ab23b32dbb0a557fe9798ad7
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595199"
 
-[tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:7f1444a22ba7c0949b728a19511ed8e47d218ab23b32dbb0a557fe9798ad7ce6"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595199"
-
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:9a96f0e03cea5ebbb3af9b70cde7dc145ed33c7912735cbeee1f923f55de0585"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595141"
-
-[tools.claude."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:9a96f0e03cea5ebbb3af9b70cde7dc145ed33c7912735cbeee1f923f55de0585"
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-linux-x64-musl.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595141"
@@ -4724,17 +4714,7 @@ checksum = "sha256:459314a8bd2116f69cbd78caaa7c2d03f966a3aeaa7ffb6327f1f5f9e7d3b
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595142"
 
-[tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:459314a8bd2116f69cbd78caaa7c2d03f966a3aeaa7ffb6327f1f5f9e7d3b83a"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595142"
-
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:7b19749afc1f2298e5015f8ff2a5944c649f393c8b09f7bbc61544c209b8dc3c"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595222"
-
-[tools.claude."platforms.windows-x64-baseline"]
 checksum = "sha256:7b19749afc1f2298e5015f8ff2a5944c649f393c8b09f7bbc61544c209b8dc3c"
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-win32-x64.zip"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595222"
