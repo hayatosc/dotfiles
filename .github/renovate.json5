@@ -63,5 +63,16 @@
       packageNameTemplate: "https://cursor.com/install",
       extractVersionTemplate: "downloads\\.cursor\\.com/lab/(?<version>[^/]+)/",
     },
+    {
+      customType: "regex",
+      managerFilePatterns: ["^home/dot_config/mise/config\\.toml$"],
+      matchStrings: [
+        '\\[tools\\."http:moshi"\\]\\s*\\n\\s*version\\s*=\\s*"(?<currentValue>[^"]+)"',
+      ],
+      depNameTemplate: "moshi",
+      datasourceTemplate: "github-releases",
+      packageNameTemplate: "rjyo/homebrew-moshi",
+      extractVersionTemplate: "^v?(?<version>.+)$",
+    },
   ],
 }

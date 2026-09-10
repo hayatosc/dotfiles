@@ -14,27 +14,36 @@ if (!base) {
   process.exit(1);
 }
 
-// config.toml の [tools] テーブルを { key -> version } に解析する。
+// config.toml の [tools] および [tools."..."] テーブルを { key -> version } に解析する。
 function parseTools(content: string): Map<string, string> {
   const tools = new Map<string, string>();
-  let inTools = false;
+  let currentSection = "";
   for (const raw of content.split("\n")) {
     const line = raw.trim();
     if (line.startsWith("[")) {
-      inTools = line === "[tools]";
+      currentSection = line;
       continue;
     }
-    if (!inTools || line === "" || line.startsWith("#")) continue;
+    if (line === "" || line.startsWith("#")) continue;
 
-    const m = line.match(/^(?:"([^"]+)"|([A-Za-z0-9_.\/-]+))\s*=\s*(.+)$/);
-    if (!m) continue;
-    const key = m[1] ?? m[2];
+    if (currentSection === "[tools]") {
+      const m = line.match(/^(?:"([^"]+)"|([A-Za-z0-9_.\/-]+))\s*=\s*(.+)$/);
+      if (!m) continue;
+      const key = m[1] ?? m[2];
 
-    // 文字列値 (node = "24.16.0") かインラインテーブル (yazi = { version = "..." }) の両対応
-    const value = m[3];
-    const version =
-      value.match(/^"([^"]+)"/)?.[1] ?? value.match(/version\s*=\s*"([^"]+)"/)?.[1];
-    if (key && version) tools.set(key, version);
+      // 文字列値 (node = "24.16.0") かインラインテーブル (yazi = { version = "..." }) の両対応
+      const value = m[3];
+      const version =
+        value.match(/^"([^"]+)"/)?.[1] ?? value.match(/version\s*=\s*"([^"]+)"/)?.[1];
+      if (key && version) tools.set(key, version);
+    } else {
+      const sectionMatch = currentSection.match(/^\[tools\."([^"]+)"\]$/);
+      if (sectionMatch) {
+        const key = sectionMatch[1];
+        const m = line.match(/^version\s*=\s*"([^"]+)"/);
+        if (m) tools.set(key, m[1]);
+      }
+    }
   }
   return tools;
 }
