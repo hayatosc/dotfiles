@@ -1,7 +1,7 @@
 {{- $moshiBin := "" -}}
 {{- $moshiHookSymlink := joinPath .chezmoi.homeDir ".local/bin/moshi-hook" -}}
 {{- if stat $moshiHookSymlink -}}
-{{-   $moshiBin = output "readlink" "-f" $moshiHookSymlink | trim -}}
+{{-   $moshiBin = $moshiHookSymlink -}}
 {{- end -}}
 {{- if not $moshiBin -}}
 {{-   $moshiBin = "moshi-hook" -}}
