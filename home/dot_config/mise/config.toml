@@ -67,7 +67,7 @@ sd = "1.1.0"
 
 [tools."http:moshi"]
 version = "0.3.21"
-postinstall = "ln -sfn $MISE_TOOL_INSTALL_PATH/moshi-hook $MISE_TOOL_INSTALL_PATH/moshi"
+postinstall = "ln -sfn $MISE_TOOL_INSTALL_PATH/moshi-hook $MISE_TOOL_INSTALL_PATH/moshi && ln -sfn $MISE_TOOL_INSTALL_PATH $(dirname $MISE_TOOL_INSTALL_PATH)/latest"
 version_list_url = "https://cdn.getmoshi.app/hook/latest/version.txt"
 version_regex = 'v?(\d+\.\d+\.\d+)'
 checksum_url = "https://cdn.getmoshi.app/hook/v{{ version }}/checksums.txt"
@@ -77,8 +77,6 @@ linux-x64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Lin
 linux-arm64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Linux_arm64.tar.gz" }
 macos-x64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Darwin_x86_64.tar.gz" }
 macos-arm64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Darwin_arm64.tar.gz" }
-windows-x64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Windows_x86_64.zip" }
-windows-arm64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Windows_arm64.zip" }
 
 [settings]
 experimental = true

@@ -1,0 +1,40 @@
+{{- $moshiBin := "" -}}
+{{- $moshiHookSymlink := joinPath .chezmoi.homeDir ".local/bin/moshi-hook" -}}
+{{- if stat $moshiHookSymlink -}}
+{{-   $moshiBin = output "readlink" "-f" $moshiHookSymlink | trim -}}
+{{- end -}}
+{{- if not $moshiBin -}}
+{{-   $moshiBin = "moshi-hook" -}}
+{{- end -}}
+{
+  "moshi-hook": {
+    "PreInvocation": [
+      {
+        "command": "'{{ $moshiBin }}' antigravity-hook PreInvocation",
+        "timeout": 5,
+        "type": "command"
+      }
+    ],
+    "Stop": [
+      {
+        "command": "'{{ $moshiBin }}' antigravity-hook Stop",
+        "timeout": 5,
+        "type": "command"
+      }
+    ],
+    "enabled": true
+  },
+  "rtk-hook": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "{{ .chezmoi.homeDir }}/.gemini/hooks/rtk-hook-antigravity.ts",
+            "type": "command"
+          }
+        ],
+        "matcher": "run_command"
+      }
+    ]
+  }
+}

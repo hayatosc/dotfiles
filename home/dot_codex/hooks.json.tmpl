@@ -1,10 +1,18 @@
+{{- $moshiBin := "" -}}
+{{- $moshiHookSymlink := joinPath .chezmoi.homeDir ".local/bin/moshi-hook" -}}
+{{- if stat $moshiHookSymlink -}}
+{{-   $moshiBin = output "readlink" "-f" $moshiHookSymlink | trim -}}
+{{- end -}}
+{{- if not $moshiBin -}}
+{{-   $moshiBin = "moshi-hook" -}}
+{{- end -}}
 {
   "hooks": {
     "PermissionRequest": [
       {
         "hooks": [
           {
-            "command": "'/home/hayato/.local/share/mise/http-tarballs/1ccb25f762439e1e8b6c098c13b8c460a92f26c6fc71f2b956c9e1010e26cc96/moshi-hook' codex-hook",
+            "command": "'{{ $moshiBin }}' codex-hook",
             "type": "command"
           }
         ]
@@ -26,7 +34,7 @@
       {
         "hooks": [
           {
-            "command": "'/home/hayato/.local/share/mise/http-tarballs/1ccb25f762439e1e8b6c098c13b8c460a92f26c6fc71f2b956c9e1010e26cc96/moshi-hook' codex-hook",
+            "command": "'{{ $moshiBin }}' codex-hook",
             "type": "command"
           }
         ]
@@ -36,7 +44,7 @@
       {
         "hooks": [
           {
-            "command": "'/home/hayato/.local/share/mise/http-tarballs/1ccb25f762439e1e8b6c098c13b8c460a92f26c6fc71f2b956c9e1010e26cc96/moshi-hook' codex-hook",
+            "command": "'{{ $moshiBin }}' codex-hook",
             "type": "command"
           }
         ]
@@ -46,7 +54,7 @@
       {
         "hooks": [
           {
-            "command": "'/home/hayato/.local/share/mise/http-tarballs/1ccb25f762439e1e8b6c098c13b8c460a92f26c6fc71f2b956c9e1010e26cc96/moshi-hook' codex-hook",
+            "command": "'{{ $moshiBin }}' codex-hook",
             "type": "command"
           }
         ]

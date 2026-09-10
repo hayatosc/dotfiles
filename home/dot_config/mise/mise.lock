@@ -6285,10 +6285,6 @@ url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Darwin_arm64.tar.gz"
 checksum = "sha256:5a2883944e4e13584e4e5c6269e9d1b248a3f8e4437ded9d522dc3daa2c85ba6"
 url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Darwin_x86_64.tar.gz"
 
-[tools."http:moshi"."platforms.windows-x64"]
-checksum = "sha256:5550cb321a8003f1cf57bdb52f5dc26a67c12dee77a41068e98f805be4a31f7c"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Windows_x86_64.zip"
-
 [[tools.imagemagick]]
 version = "7.1.2_25"
 backend = "conda:imagemagick"
