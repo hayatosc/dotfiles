@@ -1,0 +1,176 @@
+{{- $moshiBin := "" -}}
+{{- $moshiHookSymlink := joinPath .chezmoi.homeDir ".local/bin/moshi-hook" -}}
+{{- if stat $moshiHookSymlink -}}
+{{-   $moshiBin = $moshiHookSymlink -}}
+{{- end -}}
+{{- if not $moshiBin -}}
+{{-   $moshiBin = "moshi-hook" -}}
+{{- end -}}
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "effortLevel": "high",
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ],
+        "matcher": "permission_prompt"
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "async": false,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ],
+        "matcher": "AskUserQuestion"
+      },
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ],
+        "matcher": "ExitPlanMode"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "rtk hook claude",
+            "type": "command"
+          }
+        ],
+        "matcher": "Bash"
+      },
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ],
+        "matcher": "AskUserQuestion"
+      },
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ],
+        "matcher": "ExitPlanMode"
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "async": true,
+            "command": "'{{ $moshiBin }}' claude-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  },
+  "mcpServers": {
+    "claude_ai_Context7": {
+      "disabled": true
+    },
+    "claude_ai_Gmail": {
+      "disabled": true
+    },
+    "claude_ai_Google_Calendar": {
+      "disabled": true
+    },
+    "claude_ai_Notion": {
+      "disabled": true
+    }
+  },
+  "model": "opus",
+  "permissions": {
+    "allow": [],
+    "defaultMode": "auto",
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Bash(sudo *)",
+      "Bash(chmod 777 *)",
+      "Bash(npm install -g *)",
+      "Bash(git config *)",
+      "Bash(gh repo delete:*)"
+    ]
+  },
+  "skipAutoPermissionPrompt": true,
+  "skipDangerousModePermissionPrompt": true,
+  "statusLine": {
+    "command": "bun run ~/.claude/scripts/statusline.ts",
+    "type": "command"
+  },
+  "tui": "fullscreen"
+}

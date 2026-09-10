@@ -1,0 +1,64 @@
+{{- $moshiBin := "" -}}
+{{- $moshiHookSymlink := joinPath .chezmoi.homeDir ".local/bin/moshi-hook" -}}
+{{- if stat $moshiHookSymlink -}}
+{{-   $moshiBin = $moshiHookSymlink -}}
+{{- end -}}
+{{- if not $moshiBin -}}
+{{-   $moshiBin = "moshi-hook" -}}
+{{- end -}}
+{
+  "hooks": {
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "command": "'{{ $moshiBin }}' codex-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "/bin/bash ~/.codex/hooks/rtk-codex.sh",
+            "timeout": 5,
+            "type": "command"
+          }
+        ],
+        "matcher": "(Bash|exec|exec_command)"
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "'{{ $moshiBin }}' codex-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "'{{ $moshiBin }}' codex-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "command": "'{{ $moshiBin }}' codex-hook",
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  }
+}
