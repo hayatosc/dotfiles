@@ -17,7 +17,7 @@
 ## Scope & Execution
 - Deliver exact requested scope without unprompted expansion or reduction.
 - Decide routine technical choices autonomously; ask the user only when material ambiguity exists.
-- If a simpler approach exists, mention it concisely in one sentence and proceed as requested. Use `askmeplan` for complex architecture decisions.
+- If a simpler approach exists, mention it concisely in one sentence and proceed as requested. Use `goalplan` when the user explicitly asks for a `/goal` plan; it co-creates the `/goal` contract and PLAN.md.
 - **Concise Code Output**: Code first, followed by at most 3 short lines explaining skipped items (`[code] → skipped: [X], add when [Y].`). Avoid unrequested commentary.
 - Do not run unrequested verification passes; rely on project linters, typechecks, and tests instead.
 

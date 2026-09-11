@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><!-- タイトル：何を説明するページか --></title>
+<style>
+@@DADS_CSS@@ /* replaced by the build command in SKILL.md step 3 */
+</style>
+</head>
+<body>
+<a class="dads-skip-link" href="#main">本文へ移動</a>
+
+<header class="dads-header">
+  <div class="dads-header__inner">
+    <p class="dads-header__title"><!-- タイトル --></p>
+    <p class="dads-header__meta"><!-- 元資料: PLAN.md ・ 生成日: YYYY-MM-DD --></p>
+  </div>
+</header>
+
+<div class="dads-layout">
+  <nav class="dads-toc" aria-label="目次">
+    <p class="dads-toc__title">目次</p>
+    <ol>
+      <li><a href="#summary">概要</a></li>
+      <li><a href="#section-1">セクション 1</a></li>
+      <li><a href="#section-2">セクション 2</a></li>
+      <li><a href="#risks">リスクと未確定事項</a></li>
+    </ol>
+  </nav>
+
+  <main id="main" class="dads-prose">
+    <h1><!-- タイトル --></h1>
+    <p class="dads-lead"><!-- TL;DR：読み手が5秒で全体像をつかめる1段落 --></p>
+
+    <section aria-labelledby="summary">
+      <h2 id="summary">概要</h2>
+      <p><!-- 何を説明するのか、なぜ重要か --></p>
+    </section>
+
+    <section aria-labelledby="section-1">
+      <h2 id="section-1"><!-- セクション見出し --></h2>
+      <p><!-- 本文 --></p>
+
+      <!-- 図：インライン SVG。図形にラベルを付け、色だけに意味を持たせない -->
+      <figure>
+        <svg class="dads-diagram" viewBox="0 0 720 240" role="img" aria-labelledby="fig1-title fig1-desc">
+          <title id="fig1-title"><!-- 図のタイトル --></title>
+          <desc id="fig1-desc"><!-- 図の内容を文章で説明 --></desc>
+          <!-- rect / text / path などで構成 -->
+        </svg>
+        <figcaption><!-- 図の説明と出典 --></figcaption>
+      </figure>
+
+      <!-- 表：caption と th scope を必ず付ける -->
+      <div class="dads-table">
+        <table>
+          <caption><!-- 表のキャプション --></caption>
+          <thead>
+            <tr><th scope="col">項目</th><th scope="col">内容</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">例</th><td>値</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 注意書き：色とアイコンとラベルを併用する -->
+      <div class="dads-callout dads-callout--warning">
+        <span class="dads-callout__title">注意</span>
+        <p><!-- 補足や制約 --></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="section-2">
+      <h2 id="section-2"><!-- セクション見出し --></h2>
+      <p><!-- 本文 --></p>
+
+      <details class="dads-details">
+        <summary><!-- 折りたたむ詳細の見出し --></summary>
+        <p><!-- 詳細 --></p>
+      </details>
+    </section>
+
+    <section aria-labelledby="risks">
+      <h2 id="risks">リスクと未確定事項</h2>
+      <ul>
+        <li><!-- リスク・前提・未確定事項 --></li>
+      </ul>
+    </section>
+
+    <footer class="dads-footer">
+      <p><!-- 出典・元ファイルへのリンク -->。このページは
+        <a href="https://design.digital.go.jp/dads/">デジタル庁デザインシステム</a>
+        に基づいて <code>html-artifacts</code> で生成。</p>
+    </footer>
+  </main>
+</div>
+
+<script>
+/* タブ（必要な場合のみ）。ARIA パターン＋矢印キー対応。 */
+document.querySelectorAll('[role="tablist"]').forEach(function (list) {
+  var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
+  function select(tab, moveFocus) {
+    tabs.forEach(function (t) {
+      var selected = t === tab;
+      t.setAttribute('aria-selected', String(selected));
+      t.tabIndex = selected ? 0 : -1;
+      var panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !selected;
+    });
+    if (moveFocus) tab.focus();
+  }
+  list.addEventListener('keydown', function (e) {
+    var i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    var next = null;
+    if (e.key === 'ArrowRight') next = (i + 1) % tabs.length;
+    if (e.key === 'ArrowLeft') next = (i - 1 + tabs.length) % tabs.length;
+    if (e.key === 'Home') next = 0;
+    if (e.key === 'End') next = tabs.length - 1;
+    if (next !== null) { e.preventDefault(); select(tabs[next], true); }
+  });
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () { select(t, false); });
+    var panel = document.getElementById(t.getAttribute('aria-controls'));
+    if (panel) panel.hidden = t.getAttribute('aria-selected') !== 'true';
+  });
+});
+</script>
+</body>
+</html>

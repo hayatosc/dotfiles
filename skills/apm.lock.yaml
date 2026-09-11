@@ -1,11 +1,11 @@
 lockfile_version: '1'
-generated_at: '2026-09-05T14:04:26.497490+00:00'
+generated_at: '2026-09-11T04:17:25.865397+00:00'
 apm_version: 0.28.0
 dependencies:
 - repo_url: anthropics/skills
   name: frontend-design
   host: github.com
-  resolved_commit: 3b3fad96af16a10759d930941b4520ba0c40edae
+  resolved_commit: 34040c9c568585f6929bedeaad110ad08f079624
   version: unknown
   virtual_path: skills/frontend-design
   is_virtual: true
@@ -16,12 +16,12 @@ dependencies:
   - .agents/skills/frontend-design/SKILL.md
   deployed_file_hashes:
     .agents/skills/frontend-design/LICENSE.txt: sha256:0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594
-    .agents/skills/frontend-design/SKILL.md: sha256:1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd
-  content_hash: sha256:4eabc66183767153e404b39d1b839b1c37f2d82d86f0a0d7e880a579d8d62336
+    .agents/skills/frontend-design/SKILL.md: sha256:d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3
+  content_hash: sha256:89496d5dd00f4810205f351759594fc2742bf8eea85a2f2b2d1de59f4bd91576
 - repo_url: anthropics/skills
   name: pptx
   host: github.com
-  resolved_commit: 3b3fad96af16a10759d930941b4520ba0c40edae
+  resolved_commit: 34040c9c568585f6929bedeaad110ad08f079624
   version: unknown
   virtual_path: skills/pptx
   is_virtual: true
@@ -145,7 +145,7 @@ dependencies:
 - repo_url: anthropics/skills
   name: skill-creator
   host: github.com
-  resolved_commit: 3b3fad96af16a10759d930941b4520ba0c40edae
+  resolved_commit: 34040c9c568585f6929bedeaad110ad08f079624
   version: unknown
   virtual_path: skills/skill-creator
   is_virtual: true
@@ -193,7 +193,7 @@ dependencies:
 - repo_url: cloudflare/security-audit-skill
   name: security-audit
   host: github.com
-  resolved_commit: 8bac42001ddd90a4dcd8d5a5045199283a8eba75
+  resolved_commit: d24bc269171a9171fac58493e0ffba511d571a4a
   version: unknown
   virtual_path: skills/security-audit
   is_virtual: true
@@ -203,27 +203,45 @@ dependencies:
   - .agents/skills/security-audit/AI-AND-LLM.md
   - .agents/skills/security-audit/ATTACK-CLASSES.md
   - .agents/skills/security-audit/CLIENT-SIDE.md
+  - .agents/skills/security-audit/CLOUD-AND-DEPLOYMENT.md
+  - .agents/skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md
+  - .agents/skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md
   - .agents/skills/security-audit/HUNTING.md
   - .agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md
+  - .agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md
   - .agents/skills/security-audit/RECONNAISSANCE.md
+  - .agents/skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md
   - .agents/skills/security-audit/SKILL.md
+  - .agents/skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md
   - .agents/skills/security-audit/VALIDATION-AND-REPORTING.md
   - .agents/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md
   - .agents/skills/security-audit/report-schema.json
+  - .agents/skills/security-audit/validate-coverage-ledger.cjs
+  - .agents/skills/security-audit/validate-coverage-ledger.test.cjs
   - .agents/skills/security-audit/validate-findings.cjs
+  - .agents/skills/security-audit/validate-findings.test.cjs
   deployed_file_hashes:
-    .agents/skills/security-audit/AI-AND-LLM.md: sha256:e3f1f732de2bdd469023a6ac591849a1285abe9b0d12de11fb7d9fd13f6c108e
-    .agents/skills/security-audit/ATTACK-CLASSES.md: sha256:f3fab5e6a113553f357e3586f488b9c7e047d48c2ee5443c77724ec1d1d5fdb0
-    .agents/skills/security-audit/CLIENT-SIDE.md: sha256:14a0bef183b95e62de4945b886fbfd677c53c68d77f8fdf4c7e2d42e9815f883
-    .agents/skills/security-audit/HUNTING.md: sha256:735caebbc3bfed31d2c9fbbf61f383060305774708e0d0ac38050a7eac7ac679
-    .agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md: sha256:8e1f8e8d9029941083fd5739fec493de7f2699a13fec23d0d0a9a3aae85f7e55
-    .agents/skills/security-audit/RECONNAISSANCE.md: sha256:89e2f899107335467716f06bc0bb175e87ccfb662dd9878b9a0f155d8005343f
-    .agents/skills/security-audit/SKILL.md: sha256:928503b4eb74321199fe2f8a8a38ea0f52b7902f49fe6bdfed118fa7a7cada1d
-    .agents/skills/security-audit/VALIDATION-AND-REPORTING.md: sha256:049dea0289689c66fd913aafa7d6d6df3d5b38d5d9d8e571825ba58f4308c2bd
-    .agents/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md: sha256:b8f9a0e29ad6685a3d96cf42a538be7012c4a18925a4871a475291aae497ed04
-    .agents/skills/security-audit/report-schema.json: sha256:05c24d50f3314b025dbfb28dfee550d9dec9775602d51fc5c891013a3ab8b273
-    .agents/skills/security-audit/validate-findings.cjs: sha256:36d445209703d838c320c6366935f6476823e96e6b76d99a64f3aaf9beb51f2e
-  content_hash: sha256:c692c7443030869df339078a05ccae5342852ba711b7018564385c6f4dbf50c3
+    .agents/skills/security-audit/AI-AND-LLM.md: sha256:7335a95c43554eadefcf03ece639291bb0e038c398a179299e3887ffe06bd2ef
+    .agents/skills/security-audit/ATTACK-CLASSES.md: sha256:3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83
+    .agents/skills/security-audit/CLIENT-SIDE.md: sha256:613f6b98f86083e045525c5b60154ffdab122bac35f1e05eb17488e6e453370c
+    .agents/skills/security-audit/CLOUD-AND-DEPLOYMENT.md: sha256:3c80f3088be22345e07b057c056d6ed99fe2b0304f794398964f7ccd5a496ca3
+    .agents/skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md: sha256:307dcb3e24d292715c4a041190e7bb135646a37eb6187619ae01d000a634a4ad
+    .agents/skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md: sha256:58eae8ee0ca6a46611c501ec5a3ab47fdff88dd7db0d8d74789bbf8bb19d8cb2
+    .agents/skills/security-audit/HUNTING.md: sha256:cb5b571eab3758e655860e97054ab4d6906e0e8dc2b340287fad7693fa58d489
+    .agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md: sha256:7c8b0dccfb35315cca2455509674d49632b2fe37e1f3aac16c1a496a7e9924a7
+    .agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md: sha256:8b73816fa5b3697c9c40977f0c836b40f01d6e81929ff2720fe83ce089e9a619
+    .agents/skills/security-audit/RECONNAISSANCE.md: sha256:02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2
+    .agents/skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md: sha256:4326fab5c92a0b4c420a70196254040105cd794026562130b59bf1a6db3e4baa
+    .agents/skills/security-audit/SKILL.md: sha256:20dcfe14ff1afa9584c0181eb409880a9a7fdc1a3f75abc951b277cd798af056
+    .agents/skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md: sha256:f372e919940e335468ba1ae09f99026c3986a345f7fe26f8068f132e199f52a5
+    .agents/skills/security-audit/VALIDATION-AND-REPORTING.md: sha256:b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449
+    .agents/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md: sha256:4f3066dffa23c5635859187be9b96c32f2aff29a688186b91ff0c63e47d62b5c
+    .agents/skills/security-audit/report-schema.json: sha256:6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519
+    .agents/skills/security-audit/validate-coverage-ledger.cjs: sha256:2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8
+    .agents/skills/security-audit/validate-coverage-ledger.test.cjs: sha256:cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648
+    .agents/skills/security-audit/validate-findings.cjs: sha256:e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283
+    .agents/skills/security-audit/validate-findings.test.cjs: sha256:b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b
+  content_hash: sha256:fd9fdfc80242e86638314bca3def1d036ba91d25e8b10abef2ffc9d8589f1696
 - repo_url: dominikmartn/nothing-design-skill
   name: nothing-design
   host: github.com
@@ -282,7 +300,7 @@ dependencies:
   materialization_repo_url: GoogleChrome/modern-web-guidance
   name: modern-web-guidance
   host: github.com
-  resolved_commit: 457c381def89ce6213a171238f92eea63e9eaeb2
+  resolved_commit: bfd8c8dded770f3ba07a518e28991a32df40f902
   version: unknown
   virtual_path: skills/modern-web-guidance
   is_virtual: true
@@ -324,6 +342,7 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/forms/custom-select-picker-layouts.md
   - .agents/skills/modern-web-guidance/guides/forms/form-fields-automatically-fit-contents.md
   - .agents/skills/modern-web-guidance/guides/forms/forms.md
+  - .agents/skills/modern-web-guidance/guides/forms/ime-safe-enter-submit.md
   - .agents/skills/modern-web-guidance/guides/forms/required-field-feedback.md
   - .agents/skills/modern-web-guidance/guides/forms/rich-media-picker.md
   - .agents/skills/modern-web-guidance/guides/forms/select-menu-interaction.md
@@ -411,6 +430,9 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/ui-components/navigation-drawer.md
   - .agents/skills/modern-web-guidance/guides/ui-components/persistent-app-tours.md
   - .agents/skills/modern-web-guidance/guides/ui-components/persistent-toast-notifications.md
+  - .agents/skills/modern-web-guidance/guides/ui-components/progress-ring.md
+  - .agents/skills/modern-web-guidance/guides/ui-components/scrollspy.md
+  - .agents/skills/modern-web-guidance/guides/ui-components/spinner.md
   - .agents/skills/modern-web-guidance/guides/ui-components/stack-drill-down.md
   - .agents/skills/modern-web-guidance/guides/visual-design/adapt-scrollbar-to-contrast-preferences.md
   - .agents/skills/modern-web-guidance/guides/visual-design/apply-webgl-shaders.md
@@ -432,46 +454,47 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md
   - .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md
   deployed_file_hashes:
-    .agents/skills/modern-web-guidance/SKILL.md: sha256:0e7aae3cc355b04b1cc286721267e82d5f3aa40e3d75abc7b1c20c17cf85df18
+    .agents/skills/modern-web-guidance/SKILL.md: sha256:0d22fb5b550d0c5d2e6d3d944dfbff14f80ebe25cb7e9a325991203170245f2a
     .agents/skills/modern-web-guidance/guides/accessibility/accessibility.md: sha256:cba525364b8c122336186d914b59508a4b21f2247ed93fd7c5fab952d7231c11
-    .agents/skills/modern-web-guidance/guides/accessibility/accessible-error-announcement.md: sha256:5e2ee36ebef9da9fa732bbaffe2171a22905b93911b8939f4eb03981594a2ef2
-    .agents/skills/modern-web-guidance/guides/built-in-ai/language-detection.md: sha256:30818bb72894aa4984d1d72b23aeecc314ed59b88581d5c4d141a55bc9b4cf30
-    .agents/skills/modern-web-guidance/guides/built-in-ai/language-model.md: sha256:5b8848267f34e6361ec251dd9fcce27f12f116487ba6493d3c077857aed31eca
-    .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md: sha256:5b8848267f34e6361ec251dd9fcce27f12f116487ba6493d3c077857aed31eca
-    .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md: sha256:7922ab19ccac7e68262007dd8d96812d6d455aa643cb1edb3fc9f25a4cece2a7
-    .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md: sha256:1a9e48f318b5f5c3254f9d1ecdda8d961129ece58087edd05f20dd9fccce01b1
+    .agents/skills/modern-web-guidance/guides/accessibility/accessible-error-announcement.md: sha256:a2e0e7b61b47eb9a4bd774c8c5f4cf08e888a67ee99fdb1247c19a378e9fb069
+    .agents/skills/modern-web-guidance/guides/built-in-ai/language-detection.md: sha256:8d76828c0b855d68c8d314e1930e9dd57bd7205c1576ec515d736b03a92a392b
+    .agents/skills/modern-web-guidance/guides/built-in-ai/language-model.md: sha256:e590079b811fb42fc032257bb1a1c3b38b8c9d5a10720887431adb5465004eb6
+    .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md: sha256:e590079b811fb42fc032257bb1a1c3b38b8c9d5a10720887431adb5465004eb6
+    .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md: sha256:252c17be27d048b93e75250263dfbeb11167c8291f6a74f5d2ba9abf6f7b7bd9
+    .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md: sha256:ec3690c2c6aae76e0377fde26c7d64849ba7e99664edf83aca33e6cf51b232f7
     .agents/skills/modern-web-guidance/guides/css-layout/usage-aware-component-variations.md: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
-    .agents/skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md: sha256:785a8b2e26a3e1e2d06cc773334fffe6497533b24d89dc3a90efceac09c029cd
-    .agents/skills/modern-web-guidance/guides/css/calculate-with-intrinsic-sizes.md: sha256:45733897f683ddd0959c5285c7039150527d9eea4a0673ac3c56f93d73332f76
-    .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md: sha256:bdc9101a217a7fd29fbd70f0e97f3887d7b797179ee58027ce57f8d9fce0f1ce
-    .agents/skills/modern-web-guidance/guides/css/content-based-styling.md: sha256:d271ea9f68c10bcb46f5dd123a08a48e4cc45005ba1b0d8c0953c7500b88956e
-    .agents/skills/modern-web-guidance/guides/css/css-layout.md: sha256:ff1d632ba2af9dfafb14f49e8e65539769bd3d837b5dc307071367b602ab95b2
+    .agents/skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md: sha256:c582698153a7f4747c66154f32d3082444171a222ff79b73b2aed5ce9dcd5ddd
+    .agents/skills/modern-web-guidance/guides/css/calculate-with-intrinsic-sizes.md: sha256:9f82ae938a142fff3ce808476e83d833b3e9265afd0e21e9281bf21d807bf97b
+    .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md: sha256:1461c9f33a3becfa92d0d694067f5bb60de1e582780e910e79cb6ed7e1f01c85
+    .agents/skills/modern-web-guidance/guides/css/content-based-styling.md: sha256:e2f89c713bf0959898ff9d3d83f606a69b248abf572da25f47ba68db02aac3e1
+    .agents/skills/modern-web-guidance/guides/css/css-layout.md: sha256:738d1cc3db7ab22aa136eaf149452d987c3efa3f25433072d8ae1cd7186ac666
     .agents/skills/modern-web-guidance/guides/css/css.md: sha256:8a23dbec80bb90c3c025fba8bfde1bcbfa04b5ecd6f0d43f71db3e6a0ec598c1
-    .agents/skills/modern-web-guidance/guides/css/design-token-reactivity.md: sha256:3bac11e6aa58f2b6902bd827a4bdf200b941d2b89d2e1f8813c67c694694e8b8
+    .agents/skills/modern-web-guidance/guides/css/design-token-reactivity.md: sha256:b01a7c7f3acbe3dac8ecb0e5f46301cc4ca13a6e5cb25d93ca96a59a798fa906
     .agents/skills/modern-web-guidance/guides/css/dynamic-sibling-styling.md: sha256:d40bfca05b8d043fe769fe855f4c1b43dc8b693f4944d225d5ee4d3b6db419b0
-    .agents/skills/modern-web-guidance/guides/css/fluid-scaling.md: sha256:59b7c060a0363924397cf52213c61a60bce97a1c252517c8623e5dc2ebd5ddcd
-    .agents/skills/modern-web-guidance/guides/css/individual-transform-properties.md: sha256:adc19c640a5e3070192a3d01761cb07e6cf464b4c6c18149116f8f7314b5c86a
-    .agents/skills/modern-web-guidance/guides/css/overflow-clipping-control.md: sha256:11a29817d15a7f66020e58c1d7e86cfc7ccb6f5af9b573cb18f925a4fcf272d4
+    .agents/skills/modern-web-guidance/guides/css/fluid-scaling.md: sha256:7df6d7ec344e9a0acefb74d96b6b9674b3b4a84ec50f5525734ac0133e452b5f
+    .agents/skills/modern-web-guidance/guides/css/individual-transform-properties.md: sha256:5dea4d563fe07b39b820feda8683fa25bfa7948a1c6d1ce9de417fb050e2d374
+    .agents/skills/modern-web-guidance/guides/css/overflow-clipping-control.md: sha256:ae09ef01f03b405c4dd4c4ed7c1c4a7dd29a4be7033bdc61f88080f00f44740a
     .agents/skills/modern-web-guidance/guides/css/reduce-style-repetition.md: sha256:22555756086c65ae722899dfc0ada13dafdc41573c618e149ff168caad8ae34a
-    .agents/skills/modern-web-guidance/guides/css/size-aware-styling.md: sha256:555b7ad29591b5545ac0085da8b94f45b6b59cf87e2512d5460076d62d4ae69a
-    .agents/skills/modern-web-guidance/guides/css/style-parent-with-has.md: sha256:42443aaca14192daeed4390471431b4118216437877325f55f9bb818a951f32b
+    .agents/skills/modern-web-guidance/guides/css/size-aware-styling.md: sha256:3c9b9f48d053441535615243503b1822bdbe80a79dd5acee09875d7272299fac
+    .agents/skills/modern-web-guidance/guides/css/style-parent-with-has.md: sha256:1daa831051199af73a360c3812aefed36268e1582740aeef75cbd994f0acef74
     .agents/skills/modern-web-guidance/guides/css/usage-aware-component-variations.md: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
     .agents/skills/modern-web-guidance/guides/forms/animated-select-picker.md: sha256:a6d0b70c535d04136f1cecf942520198ce6f438c45b5214a04f0ba7873e3f4a0
     .agents/skills/modern-web-guidance/guides/forms/autofill-address-form.md: sha256:4635ca2463c2a37c7988acd552681854d7d9fea758d15d12964274a5c4aee52f
     .agents/skills/modern-web-guidance/guides/forms/autofill-highlight-inputs.md: sha256:661b8ff3f54e04b866e703b36f0cfed1f92356d7a4e7e436ba1f7e1cecfce7b4
-    .agents/skills/modern-web-guidance/guides/forms/autofill-payment-form.md: sha256:392e50f182fac5162d401f8b5e34e5b75465e14e0a85e6ffd2ea71958c53d2f9
-    .agents/skills/modern-web-guidance/guides/forms/autofill-sign-in-form.md: sha256:1d92a581574c1b99911c7fc8c4e046726e85704215f404aa88b9da78ddd290b3
-    .agents/skills/modern-web-guidance/guides/forms/autofill-sign-up-form.md: sha256:74a5a92794cb1635cb7817a8b001c039d6af2d0aba899d05b280dcfb5b3f4f58
+    .agents/skills/modern-web-guidance/guides/forms/autofill-payment-form.md: sha256:cc48632a71eabf46b466b9fa6b64ae3dfc79f48215355c737764b06f79db4e5d
+    .agents/skills/modern-web-guidance/guides/forms/autofill-sign-in-form.md: sha256:bc746d3d596e8fed9351e14adb3b679b8bb47055b32f8a6aac4888028788a833
+    .agents/skills/modern-web-guidance/guides/forms/autofill-sign-up-form.md: sha256:582d26cbf9df1de76ecc9dda43608675ddb3919fe163cb57a589ee6150b075f2
     .agents/skills/modern-web-guidance/guides/forms/brand-consistent-forms.md: sha256:640a6525637fed28040a481ffd02a0ea98e81b2cbc06e1989386fc0150883617
     .agents/skills/modern-web-guidance/guides/forms/branded-select-styling.md: sha256:683cdd9a4da1ddd578e3b15b51649dc772fe540787838a7298150e7faea0111e
     .agents/skills/modern-web-guidance/guides/forms/custom-select-picker-layouts.md: sha256:1b3810e7a569df9e13e06cb46e4b196539ce174d05f559c7d3c23c367607c156
-    .agents/skills/modern-web-guidance/guides/forms/form-fields-automatically-fit-contents.md: sha256:db49abc8e994f407a2bd3c5da0ea187de2a644a4cf95a03889af7d2b165580e6
-    .agents/skills/modern-web-guidance/guides/forms/forms.md: sha256:aedfc0e82cb3c97eb0a3785d56b87748bb9c50ebb62b9fdd80aa6f0b128ec091
+    .agents/skills/modern-web-guidance/guides/forms/form-fields-automatically-fit-contents.md: sha256:34f5d124e79b3c438a3ae8541e9974186c628f03ece91a588d19506d1865b502
+    .agents/skills/modern-web-guidance/guides/forms/forms.md: sha256:73ed375f9d72fe6333695a6e1c6e510be5b3fbd9487cd7d0d86be440331019ee
+    .agents/skills/modern-web-guidance/guides/forms/ime-safe-enter-submit.md: sha256:949776ebc9ca5207bd10345884d22f6c150eb7e5a7add174dd5a3e8724a89bd5
     .agents/skills/modern-web-guidance/guides/forms/required-field-feedback.md: sha256:6e5cab4e43105ba39ad13800d6df434b95c0f8ae163e799f4ef8f38cd59bb69e
     .agents/skills/modern-web-guidance/guides/forms/rich-media-picker.md: sha256:3d1be9161c9561ee29c36c8f81af3330e1448d8f60a7815a4eb1b1cc5f8d44fa
-    .agents/skills/modern-web-guidance/guides/forms/select-menu-interaction.md: sha256:4756813c60ac587fe30103efe3d618c6cf7d6a9b888a84a968a792bab03ff0f3
+    .agents/skills/modern-web-guidance/guides/forms/select-menu-interaction.md: sha256:b588c522099f9015228932cb4673d951f8196ec6f6527990d512a372f4b7e7d5
     .agents/skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md: sha256:a3699bb30041af3142858c9ec4066932e865410f2777873684ce8ad1a188cc3f
-    .agents/skills/modern-web-guidance/guides/html/html.md: sha256:60f60889747f3071722ebb8da08f35a5f2f1489011c377c8a55b320aa31f22da
+    .agents/skills/modern-web-guidance/guides/html/html.md: sha256:87ca3f2b6535c06f96857ed5ca1b577d8ccaa8168348a10e878c5693d8633621
     .agents/skills/modern-web-guidance/guides/js/calculate-event-differentials.md: sha256:831b206770b705b2d072050149a63a4036f3b19b2817ab46bf1331b5ea3035e1
     .agents/skills/modern-web-guidance/guides/js/capture-location-agnostic-data.md: sha256:b4c60d575d4ec775744d1c9da1e138cf82b0f6bc68ae222e248b50b6ecc51988
     .agents/skills/modern-web-guidance/guides/js/coordinate-global-events.md: sha256:11a845d354ac112a874666561eeb34e669048072ed334108a43cdf38b2267ec6
@@ -481,100 +504,103 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/js/stabilize-reactive-state.md: sha256:d00cb877441ab105fd66fbae2ad7e139250bb7e5e31ba2104eeb45c8f24ed8da
     .agents/skills/modern-web-guidance/guides/js/support-global-calendar-systems.md: sha256:ec389be8fa12890eee6e84f41fd4af409fe1237585f16c1531ad35da60b3b508
     .agents/skills/modern-web-guidance/guides/performance/batch-analytics-events.md: sha256:42e0ec8135e8e6c8547161148ed99f57a7c50d531e8197ac7c74bc54a4640175
-    .agents/skills/modern-web-guidance/guides/performance/break-up-long-tasks.md: sha256:f68b925a8bc439c58ba3dc131124258dfc2264eb80616ae17c6530db77cd493e
+    .agents/skills/modern-web-guidance/guides/performance/break-up-long-tasks.md: sha256:4a9032b12809fc848cc5045d6ca2c3bad371d326a4fd72c0a4a9a7307583c619
     .agents/skills/modern-web-guidance/guides/performance/calculate-total-foreground-time.md: sha256:d0c29d8924bb1da00b8febf6694fb14bece0bfd1abcf732aec1be5cefea6ea94
-    .agents/skills/modern-web-guidance/guides/performance/conditional-async-dependencies.md: sha256:1fe64d5bd74039220de9a50fe057ce5d4e8a3954a309cefde30e5dfd216b3640
+    .agents/skills/modern-web-guidance/guides/performance/conditional-async-dependencies.md: sha256:707d50e841179c90df87028cc0a66e7db9b7d4fd7f4c5b0043e76398f8e0cdd3
     .agents/skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md: sha256:99f4e9b7b376b7be9c9acd22c04ec66d8bb8b50677a31d212c394d84f74adae9
     .agents/skills/modern-web-guidance/guides/performance/defer-work-until-scroll-ends.md: sha256:3e69a3fb9e3e8a748bec61392e013839c690322424ea8e84a42b6e1cf178f758
-    .agents/skills/modern-web-guidance/guides/performance/deliver-optimized-decorative-images.md: sha256:0d480274ccb5649172d01e9c2e433fdb5059dd0f7b6297856b6182158e1a03c5
+    .agents/skills/modern-web-guidance/guides/performance/deliver-optimized-decorative-images.md: sha256:5537b241966ff8a8e9ce99232ed715d887aad8db72965ca77965a328ebc41ab1
     .agents/skills/modern-web-guidance/guides/performance/deprioritize-background-fetches.md: sha256:14836fc6fc94567c2451ef427c11c381a71b1d348ae57f23b4082eceb9773b12
-    .agents/skills/modern-web-guidance/guides/performance/detect-initial-visibility-state.md: sha256:0bad03c06a041d1c70b3f25f03866debdc215952579b1736655cb10c359fe62a
+    .agents/skills/modern-web-guidance/guides/performance/detect-initial-visibility-state.md: sha256:9aaf498f3f67c32b82a5057fe6f0ac153786738fbe467e9c783f2361f56eb8fe
     .agents/skills/modern-web-guidance/guides/performance/efficient-background-processing.md: sha256:585dc8e70e7f302e8c250407e36505ad5bd47cea8750717887844f7a79ab9f9a
     .agents/skills/modern-web-guidance/guides/performance/faster-spa-view-transitions.md: sha256:e1b353e06c9ec52bae90f41150ffa5ce1d3f2f3f18e23141ecde79e550973a97
     .agents/skills/modern-web-guidance/guides/performance/flicker-free-client-side-ab-testing.md: sha256:22b9e88076030dba35e63b4007a7fef59abb85b65ca6b01800fa1d36580ba7fa
     .agents/skills/modern-web-guidance/guides/performance/full-session-analytics.md: sha256:24872a06076e961b0db74916441d538db87801f1fc0bded10135fc919b1a29b8
     .agents/skills/modern-web-guidance/guides/performance/identify-heavy-scripts.md: sha256:8206670b5caaee2e9fedbe495ca7b832acb2327eab30a79ecadbb888ba8fc2b2
     .agents/skills/modern-web-guidance/guides/performance/identify-inp-causes.md: sha256:bbf6b3708a59c56f02f9063fb41e09dd52197c8dfd67ee37c6575635c7391f88
-    .agents/skills/modern-web-guidance/guides/performance/improve-next-page-load-performance.md: sha256:658a82e15246136dd9b7ce5a55b38100d01e87f471730a27fd4db1d77fd9eaf2
+    .agents/skills/modern-web-guidance/guides/performance/improve-next-page-load-performance.md: sha256:bd4c92ee1d2a581858fbb30d517f2acaacd1add78ca10d8a88a231417ba7008f
     .agents/skills/modern-web-guidance/guides/performance/interactions-in-complex-layouts.md: sha256:32519cb50656ec3188565cf934826f483c1f1ef3075547dc04414f1908deafc3
     .agents/skills/modern-web-guidance/guides/performance/optimize-image-priority.md: sha256:4f1345b87b2e96b3e97185082cd1f38b8fc06f5a2e98f5c66062aa88ed00bc46
     .agents/skills/modern-web-guidance/guides/performance/optimize-preload-priority.md: sha256:5239d1bb2718a2698a5288b069018af1cf40385c2a2d997e7ab9d7b49c892bf1
     .agents/skills/modern-web-guidance/guides/performance/optimize-script-priority.md: sha256:a3b6af33195d56febe9ca9490af06e420b0d3c62f37d9cf3594f89233d5ab41a
-    .agents/skills/modern-web-guidance/guides/performance/performance.md: sha256:9f8ae5a5509f0f5fcbc4c3144e193df4de090c6fabee2ff4b89a64a89bb49540
-    .agents/skills/modern-web-guidance/guides/performance/resolution-optimized-pseudo-elements.md: sha256:c2b314ab5762f947703f48404711fd9c73bce837c8d29b9b971ebafe74c18fa1
-    .agents/skills/modern-web-guidance/guides/performance/schedule-tasks-by-priority.md: sha256:21f602d099585c6d12d7d156bb30c46d3e1426f6a1de90455b330d6c0bc8e369
+    .agents/skills/modern-web-guidance/guides/performance/performance.md: sha256:2f22c7d1482189d1f3f68f96dc5bb6c01c459338938bdabf4549d77003afa76f
+    .agents/skills/modern-web-guidance/guides/performance/resolution-optimized-pseudo-elements.md: sha256:05375d370b54f814e07ce0232f0909ee2a937e03d1a53f7004620dc9e9916fb8
+    .agents/skills/modern-web-guidance/guides/performance/schedule-tasks-by-priority.md: sha256:f9e05d222cd89f7612fa2d98042f62cecb406be527c642a1ef55afa5125f0366
     .agents/skills/modern-web-guidance/guides/performance/sequence-distributed-events.md: sha256:77ef181ced3afc8db506a2a04e566d8fa6d512704089a5c78e89ebc7f462a129
     .agents/skills/modern-web-guidance/guides/privacy/privacy.md: sha256:0abfb8bbaa1766cd9a986cdf925b05dda21fd7b0d5cf46d52335572cc481e28d
-    .agents/skills/modern-web-guidance/guides/security/passkey-authentication.md: sha256:288cab4f4c850827b31cfea7a5b9d10d47e688aad116910a95898d560900fb2e
+    .agents/skills/modern-web-guidance/guides/security/passkey-authentication.md: sha256:fc35318553f11e84d2a7105ca3fd26eed01878a680d4f9d1341a392fc8054edc
     .agents/skills/modern-web-guidance/guides/security/passkey-conditional-create.md: sha256:aa62394296c239422778684aa7234ada63b94dbb4d8b0291fb5b243854ef5b4d
-    .agents/skills/modern-web-guidance/guides/security/passkey-management.md: sha256:f9c6ea2290b4275f7659ff78a030ca874421aae24563e5edad185d7bd338e7cb
-    .agents/skills/modern-web-guidance/guides/security/passkey-reauthentication.md: sha256:8b68611a6bf18a183ae8c5bed430266da6671d667af26fbe7c4ae5ff58894f65
-    .agents/skills/modern-web-guidance/guides/security/passkey-registration.md: sha256:98a4df5b0744687bd5ee9933c7df9bf26a5a1ebaec8c997cea3663de481d5e92
-    .agents/skills/modern-web-guidance/guides/security/passkeys.md: sha256:8ff7aaed460b7563d09b1fcd94497790c22e46224868a0da3bb9be41ce98dfba
+    .agents/skills/modern-web-guidance/guides/security/passkey-management.md: sha256:ff6e4dd4267f7e25114b11ca326df85b6268924696ca7af9d851a5e82c87d107
+    .agents/skills/modern-web-guidance/guides/security/passkey-reauthentication.md: sha256:ccdeb78dc5e3cb73d8f0f9373c2f7e0aeef9489fd56dfa740859182afff69778
+    .agents/skills/modern-web-guidance/guides/security/passkey-registration.md: sha256:3d388f38336e2bb7927034107237640700dab91d6eb0b87363e519624899b447
+    .agents/skills/modern-web-guidance/guides/security/passkeys.md: sha256:ff4ce1015e4572f74cfdd34d2cfd38b70d05d5b9f23fb72b8f0ab8ade0a3551f
     .agents/skills/modern-web-guidance/guides/security/security.md: sha256:39dee469938960946b45af3d19ed7a4a361d281f41046a028b63ca0b9fe09b9c
     .agents/skills/modern-web-guidance/guides/ui-atoms/carousel-slide-effects.md: sha256:8e6c8109a078dd5616b9d6c79044f1f38576c63fd7b1d43d990797cf95a7f34e
     .agents/skills/modern-web-guidance/guides/ui-atoms/component-specific-light-dark-theme.md: sha256:4076c0a3918b9d59034c03670ac5296dfe36106091d383c47cd1f96f41a248ca
-    .agents/skills/modern-web-guidance/guides/ui-atoms/position-aware-tooltips.md: sha256:0fb926f29e40ac8c89a6f25f5400bc927ddd5f250fac3b22c8eb76b3aaf03dd1
+    .agents/skills/modern-web-guidance/guides/ui-atoms/position-aware-tooltips.md: sha256:43f45151d6f6faf7fe8edf5c3655d390ee27a05e24fbbba8be7d2c02e6287349
     .agents/skills/modern-web-guidance/guides/ui-atoms/pull-to-reveal.md: sha256:5ff57863a7f9201671f0cf86da9f063d334ccaeaacd85ef4f875f66e85fc0510
-    .agents/skills/modern-web-guidance/guides/ui-atoms/resilient-context-menus-and-nested-dropdowns.md: sha256:2291d88030896e6335a838e6d7af3ec24f6a77d04b2667ef33f7578ccea351cd
-    .agents/skills/modern-web-guidance/guides/ui-atoms/scroll-position-aware-elements.md: sha256:419beaadd335e253de0cae7e2365fc328b2f6f047c0d7864973149be8e8fdf7e
+    .agents/skills/modern-web-guidance/guides/ui-atoms/resilient-context-menus-and-nested-dropdowns.md: sha256:44bf43ed55e203de6c6460fa12fe71c0d544d715df915ad773546aab12aabe59
+    .agents/skills/modern-web-guidance/guides/ui-atoms/scroll-position-aware-elements.md: sha256:f4c01952462b54133286f6e4219f23d80872d3471a58b8dde638207f6c20d62f
     .agents/skills/modern-web-guidance/guides/ui-atoms/scroll-progress-indicator.md: sha256:5221cab35adfd624654221f34fb29b06f089a7d8ae092b3be78f67675540babf
-    .agents/skills/modern-web-guidance/guides/ui-atoms/scrollability-affordance-hints.md: sha256:22842290248cc8f6ebd0fd838f3d94d8bd96f0b899b708f7bff2a4e12ed826e9
+    .agents/skills/modern-web-guidance/guides/ui-atoms/scrollability-affordance-hints.md: sha256:06678336b23fd934f8e18f00868f9e88cf7ab2ba73586d2b0d3a4a2a825b5efd
     .agents/skills/modern-web-guidance/guides/ui-atoms/shrinking-header-on-scroll.md: sha256:a97e48d9a9289fa73f21300f1ae364d995da7288f50de6a74e98c381244d147b
     .agents/skills/modern-web-guidance/guides/ui-atoms/state-aware-sticky-headers.md: sha256:69bc9e11ae75b6bc4e3a5d36ba23a5e849cc5dc6825e690f557d325d3fc62c4b
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/anchor-positioning-tab-underline.md: sha256:596d9391a2e9cb99af1da77ae4c9acc9616ed0735f2a57d848a4bfa68b55ac52
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-element-entry-exit.md: sha256:75e717d68c94ad4d61e51a9b1cb624904b63a4b43bc81f2e7434c39378b70a08
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-to-from-top-layer.md: sha256:b569402558edfd65b49a294b3e40bc43594ebd94cf023518044cc4a564c30032
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/carousel-snap-highlights.md: sha256:efd069ae8d95174ca4347592179396f3844862b9cbb4c0e4e19d8198faa14180
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/anchor-positioning-tab-underline.md: sha256:f3fbde1fddfc8bd5242726f0ad93e96efcc7c88c5b88a399630c592014fc5898
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-element-entry-exit.md: sha256:4a600fce08457fa7e6ef4548bca8a165477c6269e1592a41185c7cb8179ce72c
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-to-from-top-layer.md: sha256:989feb0fbfce0db216e5cc5950c74d5340241a8d38c87df7c196da86bd34f927
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/carousel-snap-highlights.md: sha256:0451f4dbd40f98a1d8a5068bbea3ab03fe297f2e8ee0c6c7e98dcce0134586f0
     .agents/skills/modern-web-guidance/guides/ui-behaviors/consistent-cross-document-transitions.md: sha256:4d1742785801c6e49756234abad7728f3a30bf4319c5e5f3f7f5057b3b90f8eb
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/cross-document-transitions.md: sha256:b59ae459d1f436dfaac1533eb463194f8a10866e392b76f125f5068663cea47b
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/cross-document-transitions.md: sha256:c76f2c9f40ee3a800c3c15d8b6683dee7041187ec139499c654d1f62b1e80423
     .agents/skills/modern-web-guidance/guides/ui-behaviors/custom-button-actions.md: sha256:f06d1d08117b2e2a9faff1f610d88b0df8db02b8130fcd407873584bacec20af
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/declarative-dialog-popover-control.md: sha256:27c0d7135bfcb9674ca20573166b7726ab5e050e38da91436a39507e3024faf2
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/directional-navigation-transitions.md: sha256:f308e3d9bdd060c2b5f17a08c5270e12c75e7f487bad159d5df56f57b14a0b7a
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/declarative-dialog-popover-control.md: sha256:318d005b9142d1c607bee93691927d744fc4983bf11c13d9a043e1c8a141421d
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/directional-navigation-transitions.md: sha256:503f12b13ef03af4ad1a51f62b2f1bee045679191f38c023ccc7c82e3da3ea44
     .agents/skills/modern-web-guidance/guides/ui-behaviors/dynamic-sibling-animations.md: sha256:dbd14a1dfbcc48607cac65e37586a8fbaf46040c3d7de83fdb50810eaa6c67df
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/group-element-transitions.md: sha256:5b140ac01a0d4382206c0ff2645be60eb7c26a3172a66e0fa097d5409b71a486
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/highlight-text-ranges.md: sha256:fac1a8aba8c9581a4b7d37ec6fbd61d925fb28bb0d77314c6c3612713f449d4e
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/interactive-content-reveal.md: sha256:967397ff4d38cd79d1ec457ab86a4c6999ad6124829a53281cd08752025aaee7
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-action-previews.md: sha256:b9e1d1de239c10d654a21dd0ee4b5d5bc7e84f3b6798ffbb2d5f84d6704201ff
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/group-element-transitions.md: sha256:5f26df1b777a28bd88c1a3794dfb5c4dbc0d6eceb8500efafa0b264ee3932a43
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/highlight-text-ranges.md: sha256:0af66c1bee36d9b1fa254feca75b7b3d4ca477b4340b1ad95d36fe3a52d3ac16
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/interactive-content-reveal.md: sha256:6dccf43443e6f1fc7eced7565ced180ce36ac2c0ccc73b4e96a35886179afc68
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-action-previews.md: sha256:49d37d435ca8c27a46d22c75363936230a43ec849237ace289a872c31e9893e1
     .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-tooltips.md: sha256:7a1d12274e8d48379e9d3c4a65db40f4d9a4ec7bcf028a457a51ef0fe130b32c
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/light-dismiss-a-dialog.md: sha256:fd4551c66be7cd3e738e634d1007022f499296a85fd8d6aeb3f54af2ef5758e5
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/move-dom-element-without-losing-state.md: sha256:acefb9f4ff932f863680f5697e5a50047663c2faee198c0e2bc8d6dcb0c8e6f7
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/light-dismiss-a-dialog.md: sha256:bfee31fb9178dd1545e49c4f2dfa8565bc44ffe2bb7fc2b9461e698df8c41e11
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/move-dom-element-without-losing-state.md: sha256:f7732d64e28d5c8cf90c9d56e75a41430e3639022478a8278485344b3ba6fcf3
     .agents/skills/modern-web-guidance/guides/ui-behaviors/parallax-scroll-effects.md: sha256:081ae662fddca6287f41c09f8b75f080ce700b1a8f2a626b816935cc7190e729
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/persistent-top-layer-ui.md: sha256:1b2d37d385c81e08a18e53faabf1d8edbf0ac0e1401d83de1c6dafa897a1c21d
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/physics-based-easing.md: sha256:bde1b573fe705216ad840b1a8e7a9b2360405d0a7cd6e920bd8b085d9a1c6857
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/platform-controls-dismiss-dialog.md: sha256:25b18cb2d2901109e9a53c9d4a580bfa584fd4f48b999c985d5bf410d2585683
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/persistent-top-layer-ui.md: sha256:fa3dadd7bcc938a452b59845cbc334c0df7347ebb539cca118f59dbe71b640f4
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/physics-based-easing.md: sha256:b1bbe494a75fdf31e36af25d7f37b7af01250394e2b317c3f0f8b517ef51f040
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/platform-controls-dismiss-dialog.md: sha256:59ac84105ca79e0c00609e3119997b2053565f81e57fec8a646955939efafed8
     .agents/skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md: sha256:a7ed8055ea00003017cd965588f87921915054a83e35915ac60dee1d89e452a1
     .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-entry-exit-effects.md: sha256:f41013965318de41cf35b2c607340ce0f0cef2a13d5722204385e7a103cd93ec
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-snap-realtime-feedback.md: sha256:eb77ff1361af47628c3dcfabd33abfc7b1090b70bf41f9d27d408357ab4c9e3d
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-snap-state-sync.md: sha256:f6a2fa331dee6c71c3a1fb3629a1406d711a6adcfb0d183a934f212e06e5c210
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-snap-realtime-feedback.md: sha256:795fceba3424426a23b7482f2bcde59a6314cfeb5ea71ac847a109f297922a2a
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-snap-state-sync.md: sha256:9bf86b7661a387b788afeaca9a13387cebd1ab62634f1b335884a12a04aa6cec
     .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-target-on-load.md: sha256:e7d8dcaf71be2a46cf633916efac4a2ae2aa483269538032ad0c46fc6e8ade19
     .agents/skills/modern-web-guidance/guides/ui-behaviors/scrollytelling.md: sha256:16076be601b69c1b9f315f04ef5ffe0728653bcde4280ca4e9f5aca7eec10e0a
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/search-hidden-content.md: sha256:205ecf0efd7b701afc6cb9d053cdff9aaf1dbc511f3d6b700327f3912efc8f23
-    .agents/skills/modern-web-guidance/guides/ui-behaviors/swipe-to-remove.md: sha256:4eabd7286aac3148752bc6cbda289e5d58e6bc4b964044e502dc7ce9aa8cbca3
-    .agents/skills/modern-web-guidance/guides/ui-components/navigation-drawer.md: sha256:3ea2be575010e668024a49a84ad5bf2d71642c5d8b5308b46dc3208cc03889d7
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/search-hidden-content.md: sha256:4f5d3bce39670d06baaba7acc6739106268a11e6d4774f1cd43ad0a28f1be941
+    .agents/skills/modern-web-guidance/guides/ui-behaviors/swipe-to-remove.md: sha256:cf67af64724ed97e197463c75520f2f3fb04681627ca5e4918556742d417b1f8
+    .agents/skills/modern-web-guidance/guides/ui-components/navigation-drawer.md: sha256:b033746b07a1e42f78d52885096821118614f8580051f9d73be5624b3cb70448
     .agents/skills/modern-web-guidance/guides/ui-components/persistent-app-tours.md: sha256:1fe79fcbc5ef7d5e8ae4e8a856000b7a0f93903b58e3cc192a0e08ec55808288
     .agents/skills/modern-web-guidance/guides/ui-components/persistent-toast-notifications.md: sha256:68ba2f3e284d181ba5b9ffa17bef8e97efe7368245a2d81fe05bf12dce1c0b3f
-    .agents/skills/modern-web-guidance/guides/ui-components/stack-drill-down.md: sha256:5a161583757ea9a64349fc9efd4d627990545ce99955a2740e5c15c8e128147b
+    .agents/skills/modern-web-guidance/guides/ui-components/progress-ring.md: sha256:3a5db7de594a827a7141b423acbc64dde99bd08be49a5999a7279ee79d8d705c
+    .agents/skills/modern-web-guidance/guides/ui-components/scrollspy.md: sha256:08110934d24039860834b903ff6381069fd1e924921b3104f4afc4d4686cf73b
+    .agents/skills/modern-web-guidance/guides/ui-components/spinner.md: sha256:c186f8827ca8eff95451228cf19f074d0ab7f3694c781103b1becb9b04b82774
+    .agents/skills/modern-web-guidance/guides/ui-components/stack-drill-down.md: sha256:ca65d2c51d1db9218ec0224df509d3e2381b7301377d8f5f68c1d4b6982b3b23
     .agents/skills/modern-web-guidance/guides/visual-design/adapt-scrollbar-to-contrast-preferences.md: sha256:afa06625e02f48d7d844edb2ea4b24b022412ce69760e1c9176ff8c6d7dbaed9
     .agents/skills/modern-web-guidance/guides/visual-design/apply-webgl-shaders.md: sha256:9fb56e26cb6bfa5159c062172ccbfc6c84033bbd3d013bb1f5990ec7dbec6faf
-    .agents/skills/modern-web-guidance/guides/visual-design/complex-shapes.md: sha256:78d1b2bb6bc1d58c6077c87a2d4a7a4d28508496c0516013cfdf96bf28a31265
+    .agents/skills/modern-web-guidance/guides/visual-design/complex-shapes.md: sha256:dad784ec45a78656fe6eb3f4be32132f50d6517dd25b087ece2b7b9dcaa6de36
     .agents/skills/modern-web-guidance/guides/visual-design/customize-scrollbar-color-and-thickness.md: sha256:8b73513c3fedc839dafd4ddb9b0ba15c350deaef739e4b6158008006661a86f7
     .agents/skills/modern-web-guidance/guides/visual-design/dark-mode.md: sha256:cb14030bf581478475c357e735c7092623e30524df89a90ebd2f23fdb025c149
     .agents/skills/modern-web-guidance/guides/visual-design/export-html-media-from-canvas.md: sha256:21fcd33f60be01f02415cb8b9627b302406fe6b6919c4d936ce659c88bd5d87f
     .agents/skills/modern-web-guidance/guides/visual-design/expose-canvas-content-to-browser-features.md: sha256:fdabca71aa9967472466593cb6f3c180cb11502c6695923eefcdffd58b505003
-    .agents/skills/modern-web-guidance/guides/visual-design/improve-text-layout-and-legibility.md: sha256:2c374438292e20752462465a2a470a7b1618291cec554c334a4cd86bcfd63753
+    .agents/skills/modern-web-guidance/guides/visual-design/improve-text-layout-and-legibility.md: sha256:3211a975c450d6a036742dd3b3405dc7aa339aba8e12d5de0a5469bcc8a30f93
     .agents/skills/modern-web-guidance/guides/visual-design/interactive-content-in-3d-scenes.md: sha256:c9b6586607dc6d215de19fa1fea4292a05b4619ef7f78c184bfd36d0fff04e7f
     .agents/skills/modern-web-guidance/guides/visual-design/precise-text-alignment.md: sha256:1d84c9915c6992c2331fc04cbbf48437b86dd085942d9515ef46ffa242fe4bb7
     .agents/skills/modern-web-guidance/guides/visual-design/prevent-text-wrapping.md: sha256:8ad8c7e088705bdafd823bef4f0e087e5a1d0a6185fa7e2eedff2b0f2ce9dbb4
-    .agents/skills/modern-web-guidance/guides/visual-design/shaped-cutouts.md: sha256:917a4dad961f9796e01a64c88539ac1db1cc26f8644a69e09608ee81dcc8facf
-    .agents/skills/modern-web-guidance/guides/visual-design/soft-edge-content-fade.md: sha256:2464fb28fa39c539bf68e96056f2f129b0fd5d3cb38181b03746cf5f25565f4f
-    .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-font-fallbacks.md: sha256:e2e9e362c976e4289509afdc8068fb986e76b07fc59576b67d92e8e4c645c77a
-    .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-mixed-fonts.md: sha256:c5770035287d0999fec3cf10d247c530d0d34c64739ccf4fc037475814d118a6
-    .agents/skills/modern-web-guidance/guides/visual-design/visually-texture-content.md: sha256:bd591a56705519c22dc4b9a54ab14f20336ce691bb39e4ccc1264edbb222da80
-    .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md: sha256:c9210a53221ae230c3820b94b75f4b7b21196d9b0b6b0979b789866c2f2a8396
-    .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:7b26edd8a70d0c33a1eef465edc4abc6391ce0d8f94c41acbed5a2487a558745
+    .agents/skills/modern-web-guidance/guides/visual-design/shaped-cutouts.md: sha256:03ee8ec12f4c0d5da09ac68af344ef39582cd519133b8ea1d461c9903c53bbb0
+    .agents/skills/modern-web-guidance/guides/visual-design/soft-edge-content-fade.md: sha256:f9a4607b1e34c271afe47085bea7d0d6fdc00a85fa7b93bb123cd4a99286b17b
+    .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-font-fallbacks.md: sha256:5abff774ec3f29204e47fa64c29923a7ecaf33968ed8df4d644ccccf85f0369e
+    .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-mixed-fonts.md: sha256:be0e8769f8da79e5ba7758354fbd5ddbda4996fe9240bb25808fbfab1bb36f1e
+    .agents/skills/modern-web-guidance/guides/visual-design/visually-texture-content.md: sha256:a13ac0070201b345c0db6364823b2aa6704017f5fe0d466f3b308b171710d62c
+    .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md: sha256:80f4a505998d5bf292f72d47a9392d7df46fa21b5f62d2813993e4f2e02d696f
+    .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:f9d896c1a06a413570e99291ef0e085a09bc56bfe754fce858a1a2680c8fc3a5
     .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:78b80afc94fcdc0177345d7cbd0abb83660f309a400266ff408325142db41b2c
-  content_hash: sha256:07775fbfaed98fcf50795256434f646da296311bc10dd54f2de29075eca9095b
+  content_hash: sha256:3c64ad4db7184718e9f5217af22a728a5a272e4a0ab887d5c6038cddf51815f5
 - repo_url: ikora128/stop-ai-slop-jp
   materialization_repo_url: iKora128/stop-ai-slop-jp
   name: stop-ai-slop-jp
@@ -607,7 +633,7 @@ dependencies:
 - repo_url: moonbitlang/skills
   name: moonbit-agent-guide
   host: github.com
-  resolved_commit: 0d956f0ecd0b09ce16a0c341780998473d251db4
+  resolved_commit: 607f93a413cac702e75d946aa53c81b40edbcb50
   version: unknown
   virtual_path: skills/moonbit-agent-guide
   is_virtual: true
@@ -627,13 +653,13 @@ dependencies:
     .agents/skills/moonbit-agent-guide/.gitignore: sha256:0d85bcad78281a70f6540deb184a1b9398e34acaa5ff6dd3f544d6b21b6f92ca
     .agents/skills/moonbit-agent-guide/LICENSE: sha256:cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
     .agents/skills/moonbit-agent-guide/README.md: sha256:eb1b649a7203ed9e2b3dd774d1c144343f74d605fa3eda7d733216445b9b6ee6
-    .agents/skills/moonbit-agent-guide/SKILL.mbt.md: sha256:3ae06bb3d68d1859e9d61ae0cc88af36edaf312b747f882bf205e34a424c4aaa
-    .agents/skills/moonbit-agent-guide/SKILL.md: sha256:3ae06bb3d68d1859e9d61ae0cc88af36edaf312b747f882bf205e34a424c4aaa
+    .agents/skills/moonbit-agent-guide/SKILL.mbt.md: sha256:ac4718173b33a39c7840fde4a4aeb0a0fa3ff893979799466915c961cd32d890
+    .agents/skills/moonbit-agent-guide/SKILL.md: sha256:ac4718173b33a39c7840fde4a4aeb0a0fa3ff893979799466915c961cd32d890
     .agents/skills/moonbit-agent-guide/ide.md: sha256:56fa73e1b8d472bf5b72e444c862bc54b3311fa2d5c78b853a6557c872289c70
     .agents/skills/moonbit-agent-guide/references/advanced-moonbit-build.md: sha256:a7d71b0738b814414edc5cfcbeff66931870da4d515f7aa864e6e51a3e8ed708
     .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.mbt.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
     .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
-  content_hash: sha256:68bcf18038dced6fff0d99abb57ff8e8a82c38c8216385b921e363a278e3bbf6
+  content_hash: sha256:d3e24e095d1a72b58f59216592132c09c28b40cb2a6b48cf04be2b573b51ee26
 - repo_url: nutlope/hallmark
   materialization_repo_url: Nutlope/hallmark
   name: hallmark
@@ -864,7 +890,7 @@ dependencies:
 - repo_url: ogulcancelik/herdr
   name: herdr
   host: github.com
-  resolved_commit: 7b675f42af35508eab66ac42fe1598628597a893
+  resolved_commit: 61ca85d5895bb530b59da85beeccdd767f4720d2
   version: unknown
   package_type: skill_bundle
   deployed_files:
@@ -907,7 +933,7 @@ dependencies:
   - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png
   - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png
   deployed_file_hashes:
-    .agents/skills/herdr/SKILL.md: sha256:237ad2ab2d8123e2bb37956d3a41eed141f2d22a7c36e415b7876c0397679099
+    .agents/skills/herdr/SKILL.md: sha256:25a68bc36d9309048db89e7d168f2e04d1689d734c5d72cc3688bf4ff9db1e9f
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png: sha256:a6cacacdfc1722c5b19dde819d590180c7b5bd06d0cdeb1a0e27fb3d86443081
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-12x24+3.png: sha256:976297d3be8c886a2e1b272b21c3787d468ed3ca55cccd34642d6b7ea1324646
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-18x36+4.png: sha256:6f88ccff99f49fb39715922d3dc7f8caead0d5124e98de4acafcbd35a02079a7
@@ -944,7 +970,7 @@ dependencies:
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png: sha256:be922a8d500b6b6ddc85c45ec3f093a93b37530feb63c743192c28b8cc6ceba4
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png: sha256:541e4e830c92eb7a38a3f6c295de5ce04810dd37cb421e833faec833e50a90f5
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
-  content_hash: sha256:0f6e97bdb3c5f86e0ebd63ce9b86fd72277ca2930e0097463a3b425d5b8308bb
+  content_hash: sha256:70e39d26d9ccb8cfe803ccb80ae8398f2ea9782e4c767bfadbdc1db276813a30
 - repo_url: openai/skills
   name: gh-address-comments
   host: github.com
@@ -996,7 +1022,7 @@ dependencies:
 - repo_url: openclaw/acpx
   name: acpx
   host: github.com
-  resolved_commit: d4c16ab32154f388a3f28645065e797fcd951813
+  resolved_commit: 8100a58788884f050f07a32fa4d8b2215334950a
   version: unknown
   virtual_path: skills/acpx
   is_virtual: true
@@ -1005,12 +1031,12 @@ dependencies:
   - .agents/skills/acpx
   - .agents/skills/acpx/SKILL.md
   deployed_file_hashes:
-    .agents/skills/acpx/SKILL.md: sha256:052a6edce37074b41a3998df4094d7e43cea1e5125d515668d1ccb73036984e9
-  content_hash: sha256:991f4e37230f484fd8f0c6e281b05df2ed332809414641fe18a1c82b782e31ab
+    .agents/skills/acpx/SKILL.md: sha256:b6d4050b4576254e54f2fccdd6369eb9b670a9ca707341c498bc76e948e93f93
+  content_hash: sha256:af6dbada0e6afda66fe5722fb5a9ec55d9881caad484d96cf5909b4be5d19b48
 - repo_url: sveltejs/ai-tools
   name: svelte-core-bestpractices
   host: github.com
-  resolved_commit: 7e98403e699a6abcf18cb85fded8ffed4ead0eab
+  resolved_commit: e7d93fcc168b5f4b3fec57c22f49a36d57e8ee1a
   version: unknown
   virtual_path: tools/skills/svelte-core-bestpractices
   is_virtual: true
@@ -1042,7 +1068,7 @@ dependencies:
 - repo_url: vercel-labs/agent-browser
   name: agent-browser
   host: github.com
-  resolved_commit: fbd046c23a2c1156891bda294aaaee715c23b3f1
+  resolved_commit: 8c15ff9f71ae60c7e99e66afe1e2d4b9bf414fe2
   version: unknown
   virtual_path: skills/agent-browser
   is_virtual: true
@@ -1056,7 +1082,7 @@ dependencies:
 - repo_url: vercel-labs/agent-skills
   name: web-design-guidelines
   host: github.com
-  resolved_commit: 20e89cc4bb256eb7b1fcbdc68f7175284709a847
+  resolved_commit: 063bee94c3f4df8453406c830b0a7df0f2860278
   version: unknown
   virtual_path: skills/web-design-guidelines
   is_virtual: true
@@ -1070,7 +1096,7 @@ dependencies:
 - repo_url: vercel-labs/skills
   name: find-skills
   host: github.com
-  resolved_commit: 435076e78988e1e6ec40d00b0b1d76bdbbc5419a
+  resolved_commit: 80feb48868972d518436f26711509bc78595b5cb
   version: unknown
   virtual_path: skills/find-skills
   is_virtual: true
@@ -1142,7 +1168,7 @@ dependencies:
 - repo_url: warpdotdev/common-skills
   name: skill-doctor
   host: github.com
-  resolved_commit: 0254cbe9b73f1171028ce82b9825d232791bab8b
+  resolved_commit: b811c24365ae505bfc9646458957b886e29110b5
   version: unknown
   virtual_path: .agents/skills/skill-doctor
   is_virtual: true
@@ -1166,15 +1192,15 @@ dependencies:
     .agents/skills/skill-doctor/assets/pierre-diffs.js: sha256:317d05eb4d97faab47dabb029b074bece64b457dbe17b06490315fcc173d3525
     .agents/skills/skill-doctor/assets/warp-pixel-icon.svg: sha256:cbf3e7d8bffb3133e323e09f85906e6be4ccda285b490ab366d174c7ce291848
     .agents/skills/skill-doctor/references/skill-improvements.md: sha256:ec7ac264ec719380e8473a331abba5689aaf89c1e5eb6b0bf1e3198603af7d11
-    .agents/skills/skill-doctor/references/supported-harnesses.md: sha256:a0237538ea615b02b9e643abef036edd9100d05613b782e3412f4add96b6040f
+    .agents/skills/skill-doctor/references/supported-harnesses.md: sha256:481234de3e77913678c575702973b8854241e71a85fcfaf5bef61627cf25729d
     .agents/skills/skill-doctor/scorers/code-quality.md: sha256:8d53db1c0a708519444dd2a9295f0dd52054cda7ee4fcb7cbcc5b1fa615ac798
     .agents/skills/skill-doctor/scorers/efficiency.md: sha256:35332dc761e31f0086568bbae529005f98358359a288a86d20bf7e921aae298e
-    .agents/skills/skill-doctor/scripts/collect_sessions.py: sha256:2fd0232ce47a42aa626e3b9e39d76dd5cab20c294240ed2d5b0111fef5612662
+    .agents/skills/skill-doctor/scripts/collect_sessions.py: sha256:4b5d420994682a330ef9528151a6c561774a55f085371cdebd3dc1c98029f2f6
     .agents/skills/skill-doctor/scripts/render_report.py: sha256:c20a3c7d8651a2ec25c0b6fc15d75c42a083e794475054904898851ccf6efef9
-    .agents/skills/skill-doctor/scripts/test_collect_sessions.py: sha256:9f46c49f7d7cf7f1b19a36b7f473f25386502e82a353a60d85925a771ca039cf
+    .agents/skills/skill-doctor/scripts/test_collect_sessions.py: sha256:3a5fed31a3768b0895bb6df13bf547f36ced9344308d7185467050eca855fbc3
     .agents/skills/skill-doctor/scripts/test_render_report.py: sha256:4f366a3a1cea0ffba5bcec1fd066dcb7e30418c28bf889adad025f15f4789606
     .agents/skills/skill-doctor/scripts/warp_decoder.py: sha256:afc99fe98306c1a0dd537ef63a23ec891ff7e9f7146410e6a5e4cda86f3fdf83
-  content_hash: sha256:4413347cf66f228094fe1295af942178b8c0e509fff74a374c2318bc0b763bb9
+  content_hash: sha256:0b285dc1eb6edf8bb534a73efb6da1cf7ae9ca670699ede4d79b85a7969220fb
 deployments:
 - kind: project-relative
   target: agent-skills
@@ -1193,7 +1219,7 @@ deployments:
   owners:
   - openclaw/acpx/skills/acpx
   active_owner: openclaw/acpx/skills/acpx
-  content_hash: sha256:052a6edce37074b41a3998df4094d7e43cea1e5125d515668d1ccb73036984e9
+  content_hash: sha256:b6d4050b4576254e54f2fccdd6369eb9b670a9ca707341c498bc76e948e93f93
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/agent-browser
@@ -1274,7 +1300,7 @@ deployments:
   owners:
   - anthropics/skills/skills/frontend-design
   active_owner: anthropics/skills/skills/frontend-design
-  content_hash: sha256:1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd
+  content_hash: sha256:d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/gh-address-comments
@@ -2435,7 +2461,7 @@ deployments:
   owners:
   - ogulcancelik/herdr
   active_owner: ogulcancelik/herdr
-  content_hash: sha256:237ad2ab2d8123e2bb37956d3a41eed141f2d22a7c36e415b7876c0397679099
+  content_hash: sha256:25a68bc36d9309048db89e7d168f2e04d1689d734c5d72cc3688bf4ff9db1e9f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance
@@ -2453,7 +2479,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:0e7aae3cc355b04b1cc286721267e82d5f3aa40e3d75abc7b1c20c17cf85df18
+  content_hash: sha256:0d22fb5b550d0c5d2e6d3d944dfbff14f80ebe25cb7e9a325991203170245f2a
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/accessibility/accessibility.md
@@ -2471,7 +2497,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:5e2ee36ebef9da9fa732bbaffe2171a22905b93911b8939f4eb03981594a2ef2
+  content_hash: sha256:a2e0e7b61b47eb9a4bd774c8c5f4cf08e888a67ee99fdb1247c19a378e9fb069
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/built-in-ai/language-detection.md
@@ -2480,7 +2506,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:30818bb72894aa4984d1d72b23aeecc314ed59b88581d5c4d141a55bc9b4cf30
+  content_hash: sha256:8d76828c0b855d68c8d314e1930e9dd57bd7205c1576ec515d736b03a92a392b
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/built-in-ai/language-model.md
@@ -2489,7 +2515,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:5b8848267f34e6361ec251dd9fcce27f12f116487ba6493d3c077857aed31eca
+  content_hash: sha256:e590079b811fb42fc032257bb1a1c3b38b8c9d5a10720887431adb5465004eb6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md
@@ -2498,7 +2524,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:5b8848267f34e6361ec251dd9fcce27f12f116487ba6493d3c077857aed31eca
+  content_hash: sha256:e590079b811fb42fc032257bb1a1c3b38b8c9d5a10720887431adb5465004eb6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md
@@ -2507,7 +2533,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:7922ab19ccac7e68262007dd8d96812d6d455aa643cb1edb3fc9f25a4cece2a7
+  content_hash: sha256:252c17be27d048b93e75250263dfbeb11167c8291f6a74f5d2ba9abf6f7b7bd9
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md
@@ -2516,7 +2542,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:1a9e48f318b5f5c3254f9d1ecdda8d961129ece58087edd05f20dd9fccce01b1
+  content_hash: sha256:ec3690c2c6aae76e0377fde26c7d64849ba7e99664edf83aca33e6cf51b232f7
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md
@@ -2525,7 +2551,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:785a8b2e26a3e1e2d06cc773334fffe6497533b24d89dc3a90efceac09c029cd
+  content_hash: sha256:c582698153a7f4747c66154f32d3082444171a222ff79b73b2aed5ce9dcd5ddd
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/calculate-with-intrinsic-sizes.md
@@ -2534,7 +2560,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:45733897f683ddd0959c5285c7039150527d9eea4a0673ac3c56f93d73332f76
+  content_hash: sha256:9f82ae938a142fff3ce808476e83d833b3e9265afd0e21e9281bf21d807bf97b
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md
@@ -2543,7 +2569,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:bdc9101a217a7fd29fbd70f0e97f3887d7b797179ee58027ce57f8d9fce0f1ce
+  content_hash: sha256:1461c9f33a3becfa92d0d694067f5bb60de1e582780e910e79cb6ed7e1f01c85
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/content-based-styling.md
@@ -2552,7 +2578,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:d271ea9f68c10bcb46f5dd123a08a48e4cc45005ba1b0d8c0953c7500b88956e
+  content_hash: sha256:e2f89c713bf0959898ff9d3d83f606a69b248abf572da25f47ba68db02aac3e1
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/css-layout.md
@@ -2561,7 +2587,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:ff1d632ba2af9dfafb14f49e8e65539769bd3d837b5dc307071367b602ab95b2
+  content_hash: sha256:738d1cc3db7ab22aa136eaf149452d987c3efa3f25433072d8ae1cd7186ac666
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/css.md
@@ -2579,7 +2605,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:3bac11e6aa58f2b6902bd827a4bdf200b941d2b89d2e1f8813c67c694694e8b8
+  content_hash: sha256:b01a7c7f3acbe3dac8ecb0e5f46301cc4ca13a6e5cb25d93ca96a59a798fa906
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/dynamic-sibling-styling.md
@@ -2597,7 +2623,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:59b7c060a0363924397cf52213c61a60bce97a1c252517c8623e5dc2ebd5ddcd
+  content_hash: sha256:7df6d7ec344e9a0acefb74d96b6b9674b3b4a84ec50f5525734ac0133e452b5f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/individual-transform-properties.md
@@ -2606,7 +2632,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:adc19c640a5e3070192a3d01761cb07e6cf464b4c6c18149116f8f7314b5c86a
+  content_hash: sha256:5dea4d563fe07b39b820feda8683fa25bfa7948a1c6d1ce9de417fb050e2d374
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/overflow-clipping-control.md
@@ -2615,7 +2641,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:11a29817d15a7f66020e58c1d7e86cfc7ccb6f5af9b573cb18f925a4fcf272d4
+  content_hash: sha256:ae09ef01f03b405c4dd4c4ed7c1c4a7dd29a4be7033bdc61f88080f00f44740a
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/reduce-style-repetition.md
@@ -2633,7 +2659,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:555b7ad29591b5545ac0085da8b94f45b6b59cf87e2512d5460076d62d4ae69a
+  content_hash: sha256:3c9b9f48d053441535615243503b1822bdbe80a79dd5acee09875d7272299fac
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/style-parent-with-has.md
@@ -2642,7 +2668,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:42443aaca14192daeed4390471431b4118216437877325f55f9bb818a951f32b
+  content_hash: sha256:1daa831051199af73a360c3812aefed36268e1582740aeef75cbd994f0acef74
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/css/usage-aware-component-variations.md
@@ -2687,7 +2713,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:392e50f182fac5162d401f8b5e34e5b75465e14e0a85e6ffd2ea71958c53d2f9
+  content_hash: sha256:cc48632a71eabf46b466b9fa6b64ae3dfc79f48215355c737764b06f79db4e5d
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/forms/autofill-sign-in-form.md
@@ -2696,7 +2722,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:1d92a581574c1b99911c7fc8c4e046726e85704215f404aa88b9da78ddd290b3
+  content_hash: sha256:bc746d3d596e8fed9351e14adb3b679b8bb47055b32f8a6aac4888028788a833
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/forms/autofill-sign-up-form.md
@@ -2705,7 +2731,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:74a5a92794cb1635cb7817a8b001c039d6af2d0aba899d05b280dcfb5b3f4f58
+  content_hash: sha256:582d26cbf9df1de76ecc9dda43608675ddb3919fe163cb57a589ee6150b075f2
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/forms/brand-consistent-forms.md
@@ -2741,7 +2767,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:db49abc8e994f407a2bd3c5da0ea187de2a644a4cf95a03889af7d2b165580e6
+  content_hash: sha256:34f5d124e79b3c438a3ae8541e9974186c628f03ece91a588d19506d1865b502
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/forms/forms.md
@@ -2750,7 +2776,16 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:aedfc0e82cb3c97eb0a3785d56b87748bb9c50ebb62b9fdd80aa6f0b128ec091
+  content_hash: sha256:73ed375f9d72fe6333695a6e1c6e510be5b3fbd9487cd7d0d86be440331019ee
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/modern-web-guidance/guides/forms/ime-safe-enter-submit.md
+  runtime: null
+  scope: project
+  owners:
+  - googlechrome/modern-web-guidance/skills/modern-web-guidance
+  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
+  content_hash: sha256:949776ebc9ca5207bd10345884d22f6c150eb7e5a7add174dd5a3e8724a89bd5
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/forms/required-field-feedback.md
@@ -2777,7 +2812,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:4756813c60ac587fe30103efe3d618c6cf7d6a9b888a84a968a792bab03ff0f3
+  content_hash: sha256:b588c522099f9015228932cb4673d951f8196ec6f6527990d512a372f4b7e7d5
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md
@@ -2795,7 +2830,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:60f60889747f3071722ebb8da08f35a5f2f1489011c377c8a55b320aa31f22da
+  content_hash: sha256:87ca3f2b6535c06f96857ed5ca1b577d8ccaa8168348a10e878c5693d8633621
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/js/calculate-event-differentials.md
@@ -2885,7 +2920,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:f68b925a8bc439c58ba3dc131124258dfc2264eb80616ae17c6530db77cd493e
+  content_hash: sha256:4a9032b12809fc848cc5045d6ca2c3bad371d326a4fd72c0a4a9a7307583c619
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/performance/calculate-total-foreground-time.md
@@ -2903,7 +2938,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:1fe64d5bd74039220de9a50fe057ce5d4e8a3954a309cefde30e5dfd216b3640
+  content_hash: sha256:707d50e841179c90df87028cc0a66e7db9b7d4fd7f4c5b0043e76398f8e0cdd3
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md
@@ -2930,7 +2965,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:0d480274ccb5649172d01e9c2e433fdb5059dd0f7b6297856b6182158e1a03c5
+  content_hash: sha256:5537b241966ff8a8e9ce99232ed715d887aad8db72965ca77965a328ebc41ab1
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/performance/deprioritize-background-fetches.md
@@ -2948,7 +2983,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:0bad03c06a041d1c70b3f25f03866debdc215952579b1736655cb10c359fe62a
+  content_hash: sha256:9aaf498f3f67c32b82a5057fe6f0ac153786738fbe467e9c783f2361f56eb8fe
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/performance/efficient-background-processing.md
@@ -3011,7 +3046,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:658a82e15246136dd9b7ce5a55b38100d01e87f471730a27fd4db1d77fd9eaf2
+  content_hash: sha256:bd4c92ee1d2a581858fbb30d517f2acaacd1add78ca10d8a88a231417ba7008f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/performance/interactions-in-complex-layouts.md
@@ -3056,7 +3091,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:9f8ae5a5509f0f5fcbc4c3144e193df4de090c6fabee2ff4b89a64a89bb49540
+  content_hash: sha256:2f22c7d1482189d1f3f68f96dc5bb6c01c459338938bdabf4549d77003afa76f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/performance/resolution-optimized-pseudo-elements.md
@@ -3065,7 +3100,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:c2b314ab5762f947703f48404711fd9c73bce837c8d29b9b971ebafe74c18fa1
+  content_hash: sha256:05375d370b54f814e07ce0232f0909ee2a937e03d1a53f7004620dc9e9916fb8
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/performance/schedule-tasks-by-priority.md
@@ -3074,7 +3109,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:21f602d099585c6d12d7d156bb30c46d3e1426f6a1de90455b330d6c0bc8e369
+  content_hash: sha256:f9e05d222cd89f7612fa2d98042f62cecb406be527c642a1ef55afa5125f0366
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/performance/sequence-distributed-events.md
@@ -3101,7 +3136,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:288cab4f4c850827b31cfea7a5b9d10d47e688aad116910a95898d560900fb2e
+  content_hash: sha256:fc35318553f11e84d2a7105ca3fd26eed01878a680d4f9d1341a392fc8054edc
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/security/passkey-conditional-create.md
@@ -3119,7 +3154,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:f9c6ea2290b4275f7659ff78a030ca874421aae24563e5edad185d7bd338e7cb
+  content_hash: sha256:ff6e4dd4267f7e25114b11ca326df85b6268924696ca7af9d851a5e82c87d107
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/security/passkey-reauthentication.md
@@ -3128,7 +3163,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:8b68611a6bf18a183ae8c5bed430266da6671d667af26fbe7c4ae5ff58894f65
+  content_hash: sha256:ccdeb78dc5e3cb73d8f0f9373c2f7e0aeef9489fd56dfa740859182afff69778
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/security/passkey-registration.md
@@ -3137,7 +3172,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:98a4df5b0744687bd5ee9933c7df9bf26a5a1ebaec8c997cea3663de481d5e92
+  content_hash: sha256:3d388f38336e2bb7927034107237640700dab91d6eb0b87363e519624899b447
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/security/passkeys.md
@@ -3146,7 +3181,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:8ff7aaed460b7563d09b1fcd94497790c22e46224868a0da3bb9be41ce98dfba
+  content_hash: sha256:ff4ce1015e4572f74cfdd34d2cfd38b70d05d5b9f23fb72b8f0ab8ade0a3551f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/security/security.md
@@ -3182,7 +3217,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:0fb926f29e40ac8c89a6f25f5400bc927ddd5f250fac3b22c8eb76b3aaf03dd1
+  content_hash: sha256:43f45151d6f6faf7fe8edf5c3655d390ee27a05e24fbbba8be7d2c02e6287349
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-atoms/pull-to-reveal.md
@@ -3200,7 +3235,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:2291d88030896e6335a838e6d7af3ec24f6a77d04b2667ef33f7578ccea351cd
+  content_hash: sha256:44bf43ed55e203de6c6460fa12fe71c0d544d715df915ad773546aab12aabe59
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-atoms/scroll-position-aware-elements.md
@@ -3209,7 +3244,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:419beaadd335e253de0cae7e2365fc328b2f6f047c0d7864973149be8e8fdf7e
+  content_hash: sha256:f4c01952462b54133286f6e4219f23d80872d3471a58b8dde638207f6c20d62f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-atoms/scroll-progress-indicator.md
@@ -3227,7 +3262,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:22842290248cc8f6ebd0fd838f3d94d8bd96f0b899b708f7bff2a4e12ed826e9
+  content_hash: sha256:06678336b23fd934f8e18f00868f9e88cf7ab2ba73586d2b0d3a4a2a825b5efd
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-atoms/shrinking-header-on-scroll.md
@@ -3254,7 +3289,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:596d9391a2e9cb99af1da77ae4c9acc9616ed0735f2a57d848a4bfa68b55ac52
+  content_hash: sha256:f3fbde1fddfc8bd5242726f0ad93e96efcc7c88c5b88a399630c592014fc5898
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-element-entry-exit.md
@@ -3263,7 +3298,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:75e717d68c94ad4d61e51a9b1cb624904b63a4b43bc81f2e7434c39378b70a08
+  content_hash: sha256:4a600fce08457fa7e6ef4548bca8a165477c6269e1592a41185c7cb8179ce72c
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/animate-to-from-top-layer.md
@@ -3272,7 +3307,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:b569402558edfd65b49a294b3e40bc43594ebd94cf023518044cc4a564c30032
+  content_hash: sha256:989feb0fbfce0db216e5cc5950c74d5340241a8d38c87df7c196da86bd34f927
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/carousel-snap-highlights.md
@@ -3281,7 +3316,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:efd069ae8d95174ca4347592179396f3844862b9cbb4c0e4e19d8198faa14180
+  content_hash: sha256:0451f4dbd40f98a1d8a5068bbea3ab03fe297f2e8ee0c6c7e98dcce0134586f0
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/consistent-cross-document-transitions.md
@@ -3299,7 +3334,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:b59ae459d1f436dfaac1533eb463194f8a10866e392b76f125f5068663cea47b
+  content_hash: sha256:c76f2c9f40ee3a800c3c15d8b6683dee7041187ec139499c654d1f62b1e80423
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/custom-button-actions.md
@@ -3317,7 +3352,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:27c0d7135bfcb9674ca20573166b7726ab5e050e38da91436a39507e3024faf2
+  content_hash: sha256:318d005b9142d1c607bee93691927d744fc4983bf11c13d9a043e1c8a141421d
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/directional-navigation-transitions.md
@@ -3326,7 +3361,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:f308e3d9bdd060c2b5f17a08c5270e12c75e7f487bad159d5df56f57b14a0b7a
+  content_hash: sha256:503f12b13ef03af4ad1a51f62b2f1bee045679191f38c023ccc7c82e3da3ea44
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/dynamic-sibling-animations.md
@@ -3344,7 +3379,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:5b140ac01a0d4382206c0ff2645be60eb7c26a3172a66e0fa097d5409b71a486
+  content_hash: sha256:5f26df1b777a28bd88c1a3794dfb5c4dbc0d6eceb8500efafa0b264ee3932a43
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/highlight-text-ranges.md
@@ -3353,7 +3388,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:fac1a8aba8c9581a4b7d37ec6fbd61d925fb28bb0d77314c6c3612713f449d4e
+  content_hash: sha256:0af66c1bee36d9b1fa254feca75b7b3d4ca477b4340b1ad95d36fe3a52d3ac16
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/interactive-content-reveal.md
@@ -3362,7 +3397,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:967397ff4d38cd79d1ec457ab86a4c6999ad6124829a53281cd08752025aaee7
+  content_hash: sha256:6dccf43443e6f1fc7eced7565ced180ce36ac2c0ccc73b4e96a35886179afc68
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-action-previews.md
@@ -3371,7 +3406,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:b9e1d1de239c10d654a21dd0ee4b5d5bc7e84f3b6798ffbb2d5f84d6704201ff
+  content_hash: sha256:49d37d435ca8c27a46d22c75363936230a43ec849237ace289a872c31e9893e1
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/interest-triggered-tooltips.md
@@ -3389,7 +3424,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:fd4551c66be7cd3e738e634d1007022f499296a85fd8d6aeb3f54af2ef5758e5
+  content_hash: sha256:bfee31fb9178dd1545e49c4f2dfa8565bc44ffe2bb7fc2b9461e698df8c41e11
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/move-dom-element-without-losing-state.md
@@ -3398,7 +3433,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:acefb9f4ff932f863680f5697e5a50047663c2faee198c0e2bc8d6dcb0c8e6f7
+  content_hash: sha256:f7732d64e28d5c8cf90c9d56e75a41430e3639022478a8278485344b3ba6fcf3
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/parallax-scroll-effects.md
@@ -3416,7 +3451,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:1b2d37d385c81e08a18e53faabf1d8edbf0ac0e1401d83de1c6dafa897a1c21d
+  content_hash: sha256:fa3dadd7bcc938a452b59845cbc334c0df7347ebb539cca118f59dbe71b640f4
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/physics-based-easing.md
@@ -3425,7 +3460,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:bde1b573fe705216ad840b1a8e7a9b2360405d0a7cd6e920bd8b085d9a1c6857
+  content_hash: sha256:b1bbe494a75fdf31e36af25d7f37b7af01250394e2b317c3f0f8b517ef51f040
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/platform-controls-dismiss-dialog.md
@@ -3434,7 +3469,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:25b18cb2d2901109e9a53c9d4a580bfa584fd4f48b999c985d5bf410d2585683
+  content_hash: sha256:59ac84105ca79e0c00609e3119997b2053565f81e57fec8a646955939efafed8
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md
@@ -3461,7 +3496,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:eb77ff1361af47628c3dcfabd33abfc7b1090b70bf41f9d27d408357ab4c9e3d
+  content_hash: sha256:795fceba3424426a23b7482f2bcde59a6314cfeb5ea71ac847a109f297922a2a
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-snap-state-sync.md
@@ -3470,7 +3505,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:f6a2fa331dee6c71c3a1fb3629a1406d711a6adcfb0d183a934f212e06e5c210
+  content_hash: sha256:9bf86b7661a387b788afeaca9a13387cebd1ab62634f1b335884a12a04aa6cec
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/scroll-target-on-load.md
@@ -3497,7 +3532,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:205ecf0efd7b701afc6cb9d053cdff9aaf1dbc511f3d6b700327f3912efc8f23
+  content_hash: sha256:4f5d3bce39670d06baaba7acc6739106268a11e6d4774f1cd43ad0a28f1be941
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-behaviors/swipe-to-remove.md
@@ -3506,7 +3541,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:4eabd7286aac3148752bc6cbda289e5d58e6bc4b964044e502dc7ce9aa8cbca3
+  content_hash: sha256:cf67af64724ed97e197463c75520f2f3fb04681627ca5e4918556742d417b1f8
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-components/navigation-drawer.md
@@ -3515,7 +3550,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:3ea2be575010e668024a49a84ad5bf2d71642c5d8b5308b46dc3208cc03889d7
+  content_hash: sha256:b033746b07a1e42f78d52885096821118614f8580051f9d73be5624b3cb70448
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-components/persistent-app-tours.md
@@ -3536,13 +3571,40 @@ deployments:
   content_hash: sha256:68ba2f3e284d181ba5b9ffa17bef8e97efe7368245a2d81fe05bf12dce1c0b3f
 - kind: project-relative
   target: agent-skills
+  value: .agents/skills/modern-web-guidance/guides/ui-components/progress-ring.md
+  runtime: null
+  scope: project
+  owners:
+  - googlechrome/modern-web-guidance/skills/modern-web-guidance
+  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
+  content_hash: sha256:3a5db7de594a827a7141b423acbc64dde99bd08be49a5999a7279ee79d8d705c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/modern-web-guidance/guides/ui-components/scrollspy.md
+  runtime: null
+  scope: project
+  owners:
+  - googlechrome/modern-web-guidance/skills/modern-web-guidance
+  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
+  content_hash: sha256:08110934d24039860834b903ff6381069fd1e924921b3104f4afc4d4686cf73b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/modern-web-guidance/guides/ui-components/spinner.md
+  runtime: null
+  scope: project
+  owners:
+  - googlechrome/modern-web-guidance/skills/modern-web-guidance
+  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
+  content_hash: sha256:c186f8827ca8eff95451228cf19f074d0ab7f3694c781103b1becb9b04b82774
+- kind: project-relative
+  target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/ui-components/stack-drill-down.md
   runtime: null
   scope: project
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:5a161583757ea9a64349fc9efd4d627990545ce99955a2740e5c15c8e128147b
+  content_hash: sha256:ca65d2c51d1db9218ec0224df509d3e2381b7301377d8f5f68c1d4b6982b3b23
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/adapt-scrollbar-to-contrast-preferences.md
@@ -3569,7 +3631,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:78d1b2bb6bc1d58c6077c87a2d4a7a4d28508496c0516013cfdf96bf28a31265
+  content_hash: sha256:dad784ec45a78656fe6eb3f4be32132f50d6517dd25b087ece2b7b9dcaa6de36
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/customize-scrollbar-color-and-thickness.md
@@ -3614,7 +3676,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:2c374438292e20752462465a2a470a7b1618291cec554c334a4cd86bcfd63753
+  content_hash: sha256:3211a975c450d6a036742dd3b3405dc7aa339aba8e12d5de0a5469bcc8a30f93
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/interactive-content-in-3d-scenes.md
@@ -3650,7 +3712,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:917a4dad961f9796e01a64c88539ac1db1cc26f8644a69e09608ee81dcc8facf
+  content_hash: sha256:03ee8ec12f4c0d5da09ac68af344ef39582cd519133b8ea1d461c9903c53bbb0
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/soft-edge-content-fade.md
@@ -3659,7 +3721,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:2464fb28fa39c539bf68e96056f2f129b0fd5d3cb38181b03746cf5f25565f4f
+  content_hash: sha256:f9a4607b1e34c271afe47085bea7d0d6fdc00a85fa7b93bb123cd4a99286b17b
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-font-fallbacks.md
@@ -3668,7 +3730,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:e2e9e362c976e4289509afdc8068fb986e76b07fc59576b67d92e8e4c645c77a
+  content_hash: sha256:5abff774ec3f29204e47fa64c29923a7ecaf33968ed8df4d644ccccf85f0369e
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/visually-stable-mixed-fonts.md
@@ -3677,7 +3739,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:c5770035287d0999fec3cf10d247c530d0d34c64739ccf4fc037475814d118a6
+  content_hash: sha256:be0e8769f8da79e5ba7758354fbd5ddbda4996fe9240bb25808fbfab1bb36f1e
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/visual-design/visually-texture-content.md
@@ -3686,7 +3748,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:bd591a56705519c22dc4b9a54ab14f20336ce691bb39e4ccc1264edbb222da80
+  content_hash: sha256:a13ac0070201b345c0db6364823b2aa6704017f5fe0d466f3b308b171710d62c
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md
@@ -3695,7 +3757,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:c9210a53221ae230c3820b94b75f4b7b21196d9b0b6b0979b789866c2f2a8396
+  content_hash: sha256:80f4a505998d5bf292f72d47a9392d7df46fa21b5f62d2813993e4f2e02d696f
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md
@@ -3704,7 +3766,7 @@ deployments:
   owners:
   - googlechrome/modern-web-guidance/skills/modern-web-guidance
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
-  content_hash: sha256:7b26edd8a70d0c33a1eef465edc4abc6391ce0d8f94c41acbed5a2487a558745
+  content_hash: sha256:f9d896c1a06a413570e99291ef0e085a09bc56bfe754fce858a1a2680c8fc3a5
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md
@@ -3758,7 +3820,7 @@ deployments:
   owners:
   - moonbitlang/skills/skills/moonbit-agent-guide
   active_owner: moonbitlang/skills/skills/moonbit-agent-guide
-  content_hash: sha256:3ae06bb3d68d1859e9d61ae0cc88af36edaf312b747f882bf205e34a424c4aaa
+  content_hash: sha256:ac4718173b33a39c7840fde4a4aeb0a0fa3ff893979799466915c961cd32d890
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/moonbit-agent-guide/SKILL.md
@@ -3767,7 +3829,7 @@ deployments:
   owners:
   - moonbitlang/skills/skills/moonbit-agent-guide
   active_owner: moonbitlang/skills/skills/moonbit-agent-guide
-  content_hash: sha256:3ae06bb3d68d1859e9d61ae0cc88af36edaf312b747f882bf205e34a424c4aaa
+  content_hash: sha256:ac4718173b33a39c7840fde4a4aeb0a0fa3ff893979799466915c961cd32d890
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/moonbit-agent-guide/ide.md
@@ -4379,7 +4441,7 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:e3f1f732de2bdd469023a6ac591849a1285abe9b0d12de11fb7d9fd13f6c108e
+  content_hash: sha256:7335a95c43554eadefcf03ece639291bb0e038c398a179299e3887ffe06bd2ef
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/ATTACK-CLASSES.md
@@ -4388,7 +4450,7 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:f3fab5e6a113553f357e3586f488b9c7e047d48c2ee5443c77724ec1d1d5fdb0
+  content_hash: sha256:3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/CLIENT-SIDE.md
@@ -4397,7 +4459,34 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:14a0bef183b95e62de4945b886fbfd677c53c68d77f8fdf4c7e2d42e9815f883
+  content_hash: sha256:613f6b98f86083e045525c5b60154ffdab122bac35f1e05eb17488e6e453370c
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/CLOUD-AND-DEPLOYMENT.md
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:3c80f3088be22345e07b057c056d6ed99fe2b0304f794398964f7ccd5a496ca3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:307dcb3e24d292715c4a041190e7bb135646a37eb6187619ae01d000a634a4ad
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:58eae8ee0ca6a46611c501ec5a3ab47fdff88dd7db0d8d74789bbf8bb19d8cb2
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/HUNTING.md
@@ -4406,7 +4495,7 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:735caebbc3bfed31d2c9fbbf61f383060305774708e0d0ac38050a7eac7ac679
+  content_hash: sha256:cb5b571eab3758e655860e97054ab4d6906e0e8dc2b340287fad7693fa58d489
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md
@@ -4415,7 +4504,16 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:8e1f8e8d9029941083fd5739fec493de7f2699a13fec23d0d0a9a3aae85f7e55
+  content_hash: sha256:7c8b0dccfb35315cca2455509674d49632b2fe37e1f3aac16c1a496a7e9924a7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:8b73816fa5b3697c9c40977f0c836b40f01d6e81929ff2720fe83ce089e9a619
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/RECONNAISSANCE.md
@@ -4424,7 +4522,16 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:89e2f899107335467716f06bc0bb175e87ccfb662dd9878b9a0f155d8005343f
+  content_hash: sha256:02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:4326fab5c92a0b4c420a70196254040105cd794026562130b59bf1a6db3e4baa
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/SKILL.md
@@ -4433,7 +4540,16 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:928503b4eb74321199fe2f8a8a38ea0f52b7902f49fe6bdfed118fa7a7cada1d
+  content_hash: sha256:20dcfe14ff1afa9584c0181eb409880a9a7fdc1a3f75abc951b277cd798af056
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:f372e919940e335468ba1ae09f99026c3986a345f7fe26f8068f132e199f52a5
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/VALIDATION-AND-REPORTING.md
@@ -4442,7 +4558,7 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:049dea0289689c66fd913aafa7d6d6df3d5b38d5d9d8e571825ba58f4308c2bd
+  content_hash: sha256:b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md
@@ -4451,7 +4567,7 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:b8f9a0e29ad6685a3d96cf42a538be7012c4a18925a4871a475291aae497ed04
+  content_hash: sha256:4f3066dffa23c5635859187be9b96c32f2aff29a688186b91ff0c63e47d62b5c
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/report-schema.json
@@ -4460,7 +4576,25 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:05c24d50f3314b025dbfb28dfee550d9dec9775602d51fc5c891013a3ab8b273
+  content_hash: sha256:6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/validate-coverage-ledger.cjs
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/validate-coverage-ledger.test.cjs
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/security-audit/validate-findings.cjs
@@ -4469,7 +4603,16 @@ deployments:
   owners:
   - cloudflare/security-audit-skill/skills/security-audit
   active_owner: cloudflare/security-audit-skill/skills/security-audit
-  content_hash: sha256:36d445209703d838c320c6366935f6476823e96e6b76d99a64f3aaf9beb51f2e
+  content_hash: sha256:e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/security-audit/validate-findings.test.cjs
+  runtime: null
+  scope: project
+  owners:
+  - cloudflare/security-audit-skill/skills/security-audit
+  active_owner: cloudflare/security-audit-skill/skills/security-audit
+  content_hash: sha256:b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-creator
@@ -4694,7 +4837,7 @@ deployments:
   owners:
   - warpdotdev/common-skills/.agents/skills/skill-doctor
   active_owner: warpdotdev/common-skills/.agents/skills/skill-doctor
-  content_hash: sha256:a0237538ea615b02b9e643abef036edd9100d05613b782e3412f4add96b6040f
+  content_hash: sha256:481234de3e77913678c575702973b8854241e71a85fcfaf5bef61627cf25729d
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-doctor/scorers/code-quality.md
@@ -4721,7 +4864,7 @@ deployments:
   owners:
   - warpdotdev/common-skills/.agents/skills/skill-doctor
   active_owner: warpdotdev/common-skills/.agents/skills/skill-doctor
-  content_hash: sha256:2fd0232ce47a42aa626e3b9e39d76dd5cab20c294240ed2d5b0111fef5612662
+  content_hash: sha256:4b5d420994682a330ef9528151a6c561774a55f085371cdebd3dc1c98029f2f6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-doctor/scripts/render_report.py
@@ -4739,7 +4882,7 @@ deployments:
   owners:
   - warpdotdev/common-skills/.agents/skills/skill-doctor
   active_owner: warpdotdev/common-skills/.agents/skills/skill-doctor
-  content_hash: sha256:9f46c49f7d7cf7f1b19a36b7f473f25386502e82a353a60d85925a771ca039cf
+  content_hash: sha256:3a5fed31a3768b0895bb6df13bf547f36ced9344308d7185467050eca855fbc3
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/skill-doctor/scripts/test_render_report.py
@@ -5390,6 +5533,51 @@ deployments:
   content_hash: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
 - kind: project-relative
   target: agents
+  value: .agents/skills/goalplan
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: agents
+  value: .agents/skills/goalplan/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:82d0f2700a8c837ab24c2499797c06c0e2cd82b4a9bbe6f4a61dd2cd6899f95b
+- kind: project-relative
+  target: agents
+  value: .agents/skills/goalplan/references/example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:78a0df734373e4fced87cb92b2b3e84d4f1b51bd30f7c0d4f119f52662416902
+- kind: project-relative
+  target: agents
+  value: .agents/skills/goalskill
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: agents
+  value: .agents/skills/goalskill/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4ba8331484c146743c1d7c3811f67d29e7fc79d067ac6f7f8b165159aba8ec9d
+- kind: project-relative
+  target: agents
   value: .agents/skills/golang-best-practices
   runtime: null
   scope: project
@@ -5849,6 +6037,60 @@ deployments:
   content_hash: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
 - kind: project-relative
   target: agents
+  value: .agents/skills/html-artifacts
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: agents
+  value: .agents/skills/html-artifacts/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:bc869e34136d9dccd6c4b6b9c5e2c424b6606c5cceed0a94d52d2bd3be16aa5a
+- kind: project-relative
+  target: agents
+  value: .agents/skills/html-artifacts/assets/dads.css
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:739b87d112718be4429edd459e1f128172f9049830600a3a8ea5eda52eccf15f
+- kind: project-relative
+  target: agents
+  value: .agents/skills/html-artifacts/assets/template.html
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
+- kind: project-relative
+  target: agents
+  value: .agents/skills/html-artifacts/references/dads.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6287a11248db1a5ee37e98cc84a07a92220e97ab25d66dc36418c5901de02232
+- kind: project-relative
+  target: agents
+  value: .agents/skills/html-artifacts/references/diagrams.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:7ce93a624b6efd64b8e9dfc5e814ad828e26763bccbf8fd2d1c88bfaf289e0be
+- kind: project-relative
+  target: agents
   value: .agents/skills/japanese-tech-writing
   runtime: null
   scope: project
@@ -6195,6 +6437,11 @@ local_deployed_files:
 - .agents/skills/cognitive-rhythm-writing/SKILL.md
 - .agents/skills/empirical-prompt-tuning
 - .agents/skills/empirical-prompt-tuning/SKILL.md
+- .agents/skills/goalplan
+- .agents/skills/goalplan/SKILL.md
+- .agents/skills/goalplan/references/example.md
+- .agents/skills/goalskill
+- .agents/skills/goalskill/SKILL.md
 - .agents/skills/golang-best-practices
 - .agents/skills/golang-best-practices/SKILL.md
 - .agents/skills/golang-best-practices/dist/golang-best-practices.skill
@@ -6210,6 +6457,12 @@ local_deployed_files:
 - .agents/skills/hono-best-practices/SKILL.md
 - .agents/skills/hono-best-practices/references/rpc-patterns.md
 - .agents/skills/hono-best-practices/references/validation-patterns.md
+- .agents/skills/html-artifacts
+- .agents/skills/html-artifacts/SKILL.md
+- .agents/skills/html-artifacts/assets/dads.css
+- .agents/skills/html-artifacts/assets/template.html
+- .agents/skills/html-artifacts/references/dads.md
+- .agents/skills/html-artifacts/references/diagrams.md
 - .agents/skills/japanese-tech-writing
 - .agents/skills/japanese-tech-writing/SKILL.md
 - .agents/skills/refactoring-code
@@ -6261,6 +6514,9 @@ local_deployed_file_hashes:
   .agents/skills/coding-style/SKILL.md: sha256:ba7512c160e38033fe4b12bec65f66a9fec8b5bea1fbaed4f697bf17114d3b32
   .agents/skills/cognitive-rhythm-writing/SKILL.md: sha256:35d6448e9cd8d1abc749ac89364b130ac676058a75f42db22d578e3340f312a4
   .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
+  .agents/skills/goalplan/SKILL.md: sha256:82d0f2700a8c837ab24c2499797c06c0e2cd82b4a9bbe6f4a61dd2cd6899f95b
+  .agents/skills/goalplan/references/example.md: sha256:78a0df734373e4fced87cb92b2b3e84d4f1b51bd30f7c0d4f119f52662416902
+  .agents/skills/goalskill/SKILL.md: sha256:4ba8331484c146743c1d7c3811f67d29e7fc79d067ac6f7f8b165159aba8ec9d
   .agents/skills/golang-best-practices/SKILL.md: sha256:91f52d578df149db89739e923826c96e46739d9f02d7c7fe048e922dcac9f0b7
   .agents/skills/golang-best-practices/dist/golang-best-practices.skill: sha256:81c910efff41c82348eb1b3aef17f392e3744225f134c9519df010cba17e59d7
   .agents/skills/golang-best-practices/references/code-style.md: sha256:46fb9140517d8bd1cc73042e4484c5a01f9ef2c867f62f425c58627b0ecdf99c
@@ -6274,6 +6530,11 @@ local_deployed_file_hashes:
   .agents/skills/hono-best-practices/SKILL.md: sha256:ffac109a384506c1ee38d0b4455dfd0b776969cdcbeaa4e7bc4c97052d80bc34
   .agents/skills/hono-best-practices/references/rpc-patterns.md: sha256:c8a971e98a4ed46f23f9211ffe8e0f0831498238d75a6066af91f89c3cd9b69f
   .agents/skills/hono-best-practices/references/validation-patterns.md: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
+  .agents/skills/html-artifacts/SKILL.md: sha256:bc869e34136d9dccd6c4b6b9c5e2c424b6606c5cceed0a94d52d2bd3be16aa5a
+  .agents/skills/html-artifacts/assets/dads.css: sha256:739b87d112718be4429edd459e1f128172f9049830600a3a8ea5eda52eccf15f
+  .agents/skills/html-artifacts/assets/template.html: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
+  .agents/skills/html-artifacts/references/dads.md: sha256:6287a11248db1a5ee37e98cc84a07a92220e97ab25d66dc36418c5901de02232
+  .agents/skills/html-artifacts/references/diagrams.md: sha256:7ce93a624b6efd64b8e9dfc5e814ad828e26763bccbf8fd2d1c88bfaf289e0be
   .agents/skills/japanese-tech-writing/SKILL.md: sha256:0891b88c7d3ccbe27037e556483b9c0618d90d314ee107fd5764ba8e331bc29d
   .agents/skills/refactoring-code/SKILL.md: sha256:4b9f975c60209f03718db7c5184e07caf84987268017f0e0e698aea1cb117b68
   .agents/skills/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
