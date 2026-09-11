@@ -62,7 +62,7 @@ yarn = "4.18.0"
 yazi = { version = "26.8.15", postinstall = "ya pkg install" }
 zig = "0.16.0"
 zoxide = "0.10.0"
-"github:herdrdev/herdr" = "v0.8.2"
+"github:herdrdev/herdr" = "v0.9.0"
 sd = "1.1.0"
 
 [tools."http:moshi"]
