@@ -1538,9 +1538,9 @@ checksum = "sha256:9f07834f0c546ab14d885ce0366285f61f44e326c0edd1fc63b8294e113ae
 url = "https://conda.anaconda.org/conda-forge/linux-64/imath-3.2.2-hde8ca8f_0.conda"
 checksum = "sha256:43f30e6fd8cbe1fef59da760d1847c9ceff3fb69ceee7fd4a34538b0927959dd"
 
-[conda-packages.linux-x64."intel-gmmlib-22.10.0-hb700be7_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/intel-gmmlib-22.10.0-hb700be7_0.conda"
-checksum = "sha256:bc231d69eb6663db0e09738fb916c5e5507147cf1ac60f364f964004e0b29bab"
+[conda-packages.linux-x64."intel-gmmlib-22.10.2-h7148c6a_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/intel-gmmlib-22.10.2-h7148c6a_0.conda"
+checksum = "sha256:a916de0f52de5ce16dc7869ca433dc420be55cae6a04592333ae9923545aa096"
 
 [conda-packages.linux-x64."intel-media-driver-26.1.6-hecca717_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/intel-media-driver-26.1.6-hecca717_0.conda"
@@ -2270,9 +2270,9 @@ checksum = "sha256:9f07834f0c546ab14d885ce0366285f61f44e326c0edd1fc63b8294e113ae
 url = "https://conda.anaconda.org/conda-forge/linux-64/imath-3.2.2-hde8ca8f_0.conda"
 checksum = "sha256:43f30e6fd8cbe1fef59da760d1847c9ceff3fb69ceee7fd4a34538b0927959dd"
 
-[conda-packages.linux-x64-musl."intel-gmmlib-22.10.0-hb700be7_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/intel-gmmlib-22.10.0-hb700be7_0.conda"
-checksum = "sha256:bc231d69eb6663db0e09738fb916c5e5507147cf1ac60f364f964004e0b29bab"
+[conda-packages.linux-x64-musl."intel-gmmlib-22.10.2-h7148c6a_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/intel-gmmlib-22.10.2-h7148c6a_0.conda"
+checksum = "sha256:a916de0f52de5ce16dc7869ca433dc420be55cae6a04592333ae9923545aa096"
 
 [conda-packages.linux-x64-musl."intel-media-driver-26.1.6-hecca717_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/intel-media-driver-26.1.6-hecca717_0.conda"
@@ -5168,7 +5168,6 @@ conda_deps = [
     "wayland-protocols-1.49-hd8ed1ab_0",
     "libogg-1.3.5-hd0c01bc_1",
     "intel-media-driver-26.1.6-hecca717_0",
-    "intel-gmmlib-22.10.0-hb700be7_0",
     "xorg-libxrandr-1.5.5-h7cc23a3_1",
     "xorg-libxdmcp-1.1.5-hb03c661_2",
     "pthread-stubs-0.4-h7cc23a3_1004",
@@ -5201,6 +5200,7 @@ conda_deps = [
     "libtiff-4.7.2-hcc2c06a_1",
     "lerc-4.2.0-hdb68285_0",
     "libpciaccess-0.19-hb03c661_1",
+    "intel-gmmlib-22.10.2-h7148c6a_0",
     "libflac-1.5.0-he200343_1",
     "mpg123-1.32.9-h8142553_0",
     "libcap-2.78-h084b8d7_1",
@@ -5310,7 +5310,6 @@ conda_deps = [
     "wayland-protocols-1.49-hd8ed1ab_0",
     "libogg-1.3.5-hd0c01bc_1",
     "intel-media-driver-26.1.6-hecca717_0",
-    "intel-gmmlib-22.10.0-hb700be7_0",
     "xorg-libxrandr-1.5.5-h7cc23a3_1",
     "xorg-libxdmcp-1.1.5-hb03c661_2",
     "pthread-stubs-0.4-h7cc23a3_1004",
@@ -5343,6 +5342,7 @@ conda_deps = [
     "libtiff-4.7.2-hcc2c06a_1",
     "lerc-4.2.0-hdb68285_0",
     "libpciaccess-0.19-hb03c661_1",
+    "intel-gmmlib-22.10.2-h7148c6a_0",
     "libflac-1.5.0-he200343_1",
     "mpg123-1.32.9-h8142553_0",
     "libcap-2.78-h084b8d7_1",
@@ -6062,20 +6062,9 @@ checksum = "sha256:4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb
 url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-x86_64"
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270163"
 provenance = "github-attestations"
-
-[tools."github:herdrdev/herdr"."platforms.linux-x64-baseline"]
-checksum = "sha256:4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb71f"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270163"
-provenance = "github-attestations"
+provenance_verified = true
 
 [tools."github:herdrdev/herdr"."platforms.linux-x64-musl"]
-checksum = "sha256:4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb71f"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270163"
-provenance = "github-attestations"
-
-[tools."github:herdrdev/herdr"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb71f"
 url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-x86_64"
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270163"
@@ -6093,19 +6082,7 @@ url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-macos-x8
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270161"
 provenance = "github-attestations"
 
-[tools."github:herdrdev/herdr"."platforms.macos-x64-baseline"]
-checksum = "sha256:d0c920b2a126a74809fa1491411c9a097a44786cac9c2ca51b818a995581cf16"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270161"
-provenance = "github-attestations"
-
 [tools."github:herdrdev/herdr"."platforms.windows-x64"]
-checksum = "sha256:b4508c445de1c1a68c760a01735da2aba2fa214b2aafd4b07f732e49b2a64b11"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270164"
-provenance = "github-attestations"
-
-[tools."github:herdrdev/herdr"."platforms.windows-x64-baseline"]
 checksum = "sha256:b4508c445de1c1a68c760a01735da2aba2fa214b2aafd4b07f732e49b2a64b11"
 url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270164"
