@@ -442,17 +442,17 @@ checksum = "sha256:84d2b667bce6549325243235952110b1849ff2dfd7091a1479108930b8805
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libstdcxx-ng-16.2.0-hdbbeba8_4.conda"
 checksum = "sha256:0f962247a60d3e0ae07b399063ac637a44fbdcb95c8602e5d2920c6612e53f01"
 
-[conda-packages.linux-arm64."libsystemd0-261.2-hd1ea486_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-261.2-hd1ea486_1.conda"
-checksum = "sha256:e256fb4f438e8d43c9ba9314368de0e10e5ebf1690c5ef2045d5170ebf3553c4"
+[conda-packages.linux-arm64."libsystemd0-261.3-hd1ea486_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-261.3-hd1ea486_0.conda"
+checksum = "sha256:e2277c8eb94c29f999331d27313a84998d2f1d4d136a10a754f0f67cf907d11a"
 
 [conda-packages.linux-arm64."libtiff-4.7.2-h45f9f85_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libtiff-4.7.2-h45f9f85_1.conda"
 checksum = "sha256:fa6daf2301dee912def3e74344fae792a8fc2bbbf7880dedee0e93ee8fb98fc5"
 
-[conda-packages.linux-arm64."libudev1-261.2-hd1ea486_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-261.2-hd1ea486_1.conda"
-checksum = "sha256:c9af50d1d63fce349e38d39525a6c20e43022fe3b8581ab3b348de3820f3621a"
+[conda-packages.linux-arm64."libudev1-261.3-hd1ea486_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-261.3-hd1ea486_0.conda"
+checksum = "sha256:1e60424ca5c9fca8ba3d266b4b1956d885c7ea9fff6ea791c35bc56cd7ec9a47"
 
 [conda-packages.linux-arm64."libunwind-1.8.3-h6470e1d_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libunwind-1.8.3-h6470e1d_0.conda"
@@ -1134,17 +1134,17 @@ checksum = "sha256:84d2b667bce6549325243235952110b1849ff2dfd7091a1479108930b8805
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libstdcxx-ng-16.2.0-hdbbeba8_4.conda"
 checksum = "sha256:0f962247a60d3e0ae07b399063ac637a44fbdcb95c8602e5d2920c6612e53f01"
 
-[conda-packages.linux-arm64-musl."libsystemd0-261.2-hd1ea486_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-261.2-hd1ea486_1.conda"
-checksum = "sha256:e256fb4f438e8d43c9ba9314368de0e10e5ebf1690c5ef2045d5170ebf3553c4"
+[conda-packages.linux-arm64-musl."libsystemd0-261.3-hd1ea486_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-261.3-hd1ea486_0.conda"
+checksum = "sha256:e2277c8eb94c29f999331d27313a84998d2f1d4d136a10a754f0f67cf907d11a"
 
 [conda-packages.linux-arm64-musl."libtiff-4.7.2-h45f9f85_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libtiff-4.7.2-h45f9f85_1.conda"
 checksum = "sha256:fa6daf2301dee912def3e74344fae792a8fc2bbbf7880dedee0e93ee8fb98fc5"
 
-[conda-packages.linux-arm64-musl."libudev1-261.2-hd1ea486_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-261.2-hd1ea486_1.conda"
-checksum = "sha256:c9af50d1d63fce349e38d39525a6c20e43022fe3b8581ab3b348de3820f3621a"
+[conda-packages.linux-arm64-musl."libudev1-261.3-hd1ea486_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-261.3-hd1ea486_0.conda"
+checksum = "sha256:1e60424ca5c9fca8ba3d266b4b1956d885c7ea9fff6ea791c35bc56cd7ec9a47"
 
 [conda-packages.linux-arm64-musl."libunwind-1.8.3-h6470e1d_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libunwind-1.8.3-h6470e1d_0.conda"
@@ -1846,17 +1846,17 @@ checksum = "sha256:40b792b0186c1e8859280a1f6f19a54fc50a11b32724fc7b637009c1a9bd3
 url = "https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-16.2.0-hdf11a46_4.conda"
 checksum = "sha256:4cdebd87b76cf53a58a08ebd6d15336daa79c5f0aa34d83a895ac503c0203632"
 
-[conda-packages.linux-x64."libsystemd0-261.2-h26e0ef7_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-261.2-h26e0ef7_1.conda"
-checksum = "sha256:8abeb862ea18698680ec98a44e28f02c44083beeda35e05325f7d51058d08252"
+[conda-packages.linux-x64."libsystemd0-261.3-h26e0ef7_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-261.3-h26e0ef7_0.conda"
+checksum = "sha256:d6ba5ea32387a11dbaf6f281eb566166c4a1830076a4380a1c17c3bfba9c4e52"
 
 [conda-packages.linux-x64."libtiff-4.7.2-hcc2c06a_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.7.2-hcc2c06a_1.conda"
 checksum = "sha256:10e125da82ca93e09191e66e5a94d566b2cf8d4024e2a0db3a9114297447e0d9"
 
-[conda-packages.linux-x64."libudev1-261.2-h26e0ef7_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-261.2-h26e0ef7_1.conda"
-checksum = "sha256:40544101e25417333a152d1a49513aab5e7a8b4128a668ccb46a0ef62b455279"
+[conda-packages.linux-x64."libudev1-261.3-h26e0ef7_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-261.3-h26e0ef7_0.conda"
+checksum = "sha256:fac1c96459e07f22913226e53636a229af72248e486b62433ab713ee589778f7"
 
 [conda-packages.linux-x64."libunwind-1.8.3-h65a8314_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
@@ -2578,17 +2578,17 @@ checksum = "sha256:40b792b0186c1e8859280a1f6f19a54fc50a11b32724fc7b637009c1a9bd3
 url = "https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-16.2.0-hdf11a46_4.conda"
 checksum = "sha256:4cdebd87b76cf53a58a08ebd6d15336daa79c5f0aa34d83a895ac503c0203632"
 
-[conda-packages.linux-x64-musl."libsystemd0-261.2-h26e0ef7_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-261.2-h26e0ef7_1.conda"
-checksum = "sha256:8abeb862ea18698680ec98a44e28f02c44083beeda35e05325f7d51058d08252"
+[conda-packages.linux-x64-musl."libsystemd0-261.3-h26e0ef7_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-261.3-h26e0ef7_0.conda"
+checksum = "sha256:d6ba5ea32387a11dbaf6f281eb566166c4a1830076a4380a1c17c3bfba9c4e52"
 
 [conda-packages.linux-x64-musl."libtiff-4.7.2-hcc2c06a_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.7.2-hcc2c06a_1.conda"
 checksum = "sha256:10e125da82ca93e09191e66e5a94d566b2cf8d4024e2a0db3a9114297447e0d9"
 
-[conda-packages.linux-x64-musl."libudev1-261.2-h26e0ef7_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-261.2-h26e0ef7_1.conda"
-checksum = "sha256:40544101e25417333a152d1a49513aab5e7a8b4128a668ccb46a0ef62b455279"
+[conda-packages.linux-x64-musl."libudev1-261.3-h26e0ef7_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-261.3-h26e0ef7_0.conda"
+checksum = "sha256:fac1c96459e07f22913226e53636a229af72248e486b62433ab713ee589778f7"
 
 [conda-packages.linux-x64-musl."libunwind-1.8.3-h65a8314_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
@@ -4680,44 +4680,44 @@ checksum = "sha256:78c221c2376f79731ccf4e4af0b3bb46d81fefa3296c5abee09ad8a1b21e6
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.263"
+version = "2.1.265"
 backend = "aqua:anthropics/claude-code"
-specifiers = ["2.1.263"]
+specifiers = ["2.1.265"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:cba2e616346c4f45f7fe468297bcc186d84ee6c292b2b1814b9be190b1da49be"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595138"
+checksum = "sha256:eb7d23dddfe0a3fc937c3a3b2922bc71667812f1e7989592275ec4a0c772e58e"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.265/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/551112865"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:7d49674fd10bbf7d0e5989bd300aaa8dce4c2ecfec66d2c19a82fe4ec84bfeb8"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595140"
+checksum = "sha256:a2b3115ab66ec93c86a4499211e3a85aa86bb12b68058eddfb7e05975ca23ad4"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.265/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/551112864"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:7f1444a22ba7c0949b728a19511ed8e47d218ab23b32dbb0a557fe9798ad7ce6"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595199"
+checksum = "sha256:e167347607ab1ca9751bc904fc85207f737951003de4617a278ff79324e65d1e"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.265/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/551113008"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:9a96f0e03cea5ebbb3af9b70cde7dc145ed33c7912735cbeee1f923f55de0585"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595141"
+checksum = "sha256:dd45860136dec59d1199377c73289aeb0eff99dc8d40c897b305d3ce0fe81a6b"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.265/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/551112861"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:c41b084242538dc94adb60b9cc74dab7571e1eb1d51ac7fb6c60fa9f16531765"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595143"
+checksum = "sha256:c628cda00c0c824247890547dd35f21c95b7da9c4a10be4d2ac9ac30d42cb4c1"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.265/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/551112867"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:459314a8bd2116f69cbd78caaa7c2d03f966a3aeaa7ffb6327f1f5f9e7d3b83a"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595142"
+checksum = "sha256:8c143db00ccd3ae194af2b17849616423ea07ff7455d4968f8eed22e3564addb"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.265/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/551112859"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:7b19749afc1f2298e5015f8ff2a5944c649f393c8b09f7bbc61544c209b8dc3c"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.263/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/546595222"
+checksum = "sha256:b261ac0b457b6e88e6f3d216c757ebc1026278cb9a13060dca4c3c72e95c3829"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.265/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/551113041"
 
 [[tools.cloudflared]]
 version = "2026.8.3"
@@ -4763,11 +4763,6 @@ url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/5
 version = "0.153.4"
 backend = "aqua:openai/codex"
 specifiers = ["0.153.4"]
-
-[tools.codex."platforms.linux-arm64"]
-checksum = "sha256:fc395cb043a1093ab0db34f44aba3199bfaa9ce640cd9be7fd588f44b0da64a4"
-url = "https://github.com/openai/codex/releases/download/rust-v0.153.4/codex-package-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/545043496"
 
 [tools.codex."platforms.linux-arm64-musl"]
 checksum = "sha256:fc395cb043a1093ab0db34f44aba3199bfaa9ce640cd9be7fd588f44b0da64a4"
@@ -4896,7 +4891,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-h71d469a_2",
     "libsndfile-1.2.2-h30591a0_2",
-    "libsystemd0-261.2-hd1ea486_1",
+    "libsystemd0-261.3-hd1ea486_0",
     "sdl3-3.4.16-hab42d0a_0",
     "libunwind-1.8.3-h6470e1d_0",
     "xorg-libxscrnsaver-1.2.4-h86ecc28_0",
@@ -4932,7 +4927,7 @@ conda_deps = [
     "xorg-libxi-1.8.3-h5bc82ec_1",
     "xorg-libxfixes-6.0.2-h5bc82ec_1",
     "wayland-1.26.0-h637a836_2",
-    "libudev1-261.2-hd1ea486_1",
+    "libudev1-261.3-hd1ea486_0",
     "xorg-libxtst-1.2.5-h5bc82ec_4",
     "libdeflate-1.25-hfa851ae_1",
     "xkeyboard-config-2.48-h80f16a2_0",
@@ -5028,7 +5023,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-h71d469a_2",
     "libsndfile-1.2.2-h30591a0_2",
-    "libsystemd0-261.2-hd1ea486_1",
+    "libsystemd0-261.3-hd1ea486_0",
     "sdl3-3.4.16-hab42d0a_0",
     "libunwind-1.8.3-h6470e1d_0",
     "xorg-libxscrnsaver-1.2.4-h86ecc28_0",
@@ -5064,7 +5059,7 @@ conda_deps = [
     "xorg-libxi-1.8.3-h5bc82ec_1",
     "xorg-libxfixes-6.0.2-h5bc82ec_1",
     "wayland-1.26.0-h637a836_2",
-    "libudev1-261.2-hd1ea486_1",
+    "libudev1-261.3-hd1ea486_0",
     "xorg-libxtst-1.2.5-h5bc82ec_4",
     "libdeflate-1.25-hfa851ae_1",
     "xkeyboard-config-2.48-h80f16a2_0",
@@ -5175,7 +5170,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-he8c428d_2",
     "libsndfile-1.2.2-hc7d488a_2",
-    "libsystemd0-261.2-h26e0ef7_1",
+    "libsystemd0-261.3-h26e0ef7_0",
     "sdl3-3.4.16-h5330f5c_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "libusb-1.0.29-h73b1eb8_0",
@@ -5208,7 +5203,7 @@ conda_deps = [
     "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
-    "libudev1-261.2-h26e0ef7_1",
+    "libudev1-261.3-h26e0ef7_0",
     "libdeflate-1.25-hd45a770_1",
     "xkeyboard-config-2.48-h280c20c_0",
 ]
@@ -5317,7 +5312,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-he8c428d_2",
     "libsndfile-1.2.2-hc7d488a_2",
-    "libsystemd0-261.2-h26e0ef7_1",
+    "libsystemd0-261.3-h26e0ef7_0",
     "sdl3-3.4.16-h5330f5c_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "libusb-1.0.29-h73b1eb8_0",
@@ -5350,7 +5345,7 @@ conda_deps = [
     "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
-    "libudev1-261.2-h26e0ef7_1",
+    "libudev1-261.3-h26e0ef7_0",
     "libdeflate-1.25-hd45a770_1",
     "xkeyboard-config-2.48-h280c20c_0",
 ]
