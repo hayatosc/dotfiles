@@ -11,7 +11,7 @@ Adhere to `coding-style` for all naming, comment, and expression rules.
 - **Move**: Move logic toward data owner. Finish renames/extractions first.
 - **Isolate Side Effects**: Push I/O & state mutations to edges; keep decision logic pure.
 - **Remove Duplication**: Unify genuine duplication (same rule/evolution path). Do NOT unify accidental similarity.
-- **De-engineering**: Inline 1-impl interfaces/factories, remove delegating wrappers, replace custom code with stdlib (`stdlib:`) or native platform features (`native:`). Purge dead flags (`yagni:` / `delete:`). Aim for `net: -<N> lines`.
+- **De-engineering**: Remove interfaces, factories, wrappers, and flags that serve no current contract. Replace custom code with standard library or native platform features when they fit. Judge simplification by behavior and clarity, not a negative line-count target.
 
 ## Duplication Cleanup Workflow
 

@@ -46,7 +46,7 @@ When no trustworthy tests exist:
 - Keep changes local to the behavior you can observe.
 - Avoid opportunistic redesign in unstable areas.
 - If you cannot describe the preserved behavior, do not widen the refactor.
-- If every safe step still feels risky, pause and ask for a narrower goal or approval to add stronger tests first.
+- Add a focused local characterization test when needed to carry out the authorized refactor. If the behavior cannot be established without unavailable data, access, or a user-owned decision, report that specific blocker and continue independent work.
 
 ## Good Outcome
 

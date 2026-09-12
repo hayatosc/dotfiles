@@ -1,27 +1,17 @@
 ---
 name: code-search
-description: Token-efficient codebase exploration funnel (locate -> outline -> zoom -> targeted read). Use to find definitions, trace call paths, or navigate large codebases without reading full files.
+description: Locate definitions, callers, and ownership in unfamiliar or large codebases. Use when the relevant files or execution path are unclear.
 ---
 
-# Code Search Funnel
+# Code Search
 
-Explore unfamiliar code by descending a token-efficient funnel. Minimize bytes read into context per unit of understanding; full-file reads are a last resort.
+Start from the question and supplied paths. Use `rg --files` for filenames and `rg` for symbols or text; narrow by directory or language before expanding the search.
 
-## The Funnel
+Read enough context to establish the relevant behavior and callers. For a large file, use an available outline tool or bounded reads. Small or known files can be read directly; no mandatory sequence of tools is needed.
 
-Descend only as far as the question requires:
+- For shared behavior changes, trace relevant callers and existing helpers before choosing the edit location.
+- Use `ast-grep` when syntax-aware matching will resolve ambiguity that text search cannot.
+- Read [funnel-playbook.md](references/funnel-playbook.md) for navigation commands and fallback patterns when ordinary searches are insufficient.
+- Delegate a broad sweep only when delegation is authorized and it can run independently of useful local work.
 
-| Stage | Question | Tool / Command |
-|---|---|---|
-| 0. Orient | What shape is this repo? | `fd`, read manifests (`package.json`, `go.mod`, `Cargo.toml`) |
-| 1. Locate | Which file(s)? | `rg` (symbols/strings), `fd` (filenames) |
-| 2. Map | What's in that file? | `ast-grep outline <file>` or `outline <dir>/*.ts` |
-| 3. Zoom | Specific symbol/callers? | `outline <file> --match Foo --view expanded` or `rg` for callers |
-| 4. Read | Target line range | `Read` with bounded line ranges |
-
-## Core Heuristics
-
-- **Trace All Callers First**: Before modifying any function or fixing a bug, grep all invocation sites. Locating the shared root cause prevents scattering symptom guards across callers.
-- **Search for Codebase Reuse**: Search the repository (`rg`/`fd`) for existing helpers or types before creating new ones.
-- **Budget and Stop**: Stop descending once you can answer the task. Skip the funnel for small/known files or single-file edits.
-- **Delegate Wide Sweeps**: Delegate multi-directory exploratory sweeps to subagents to keep file dumps out of the main context window.
+Stop when the assigned question is answered or the edit's affected path is understood. Report supporting file references and unresolved gaps, not a full repository map.

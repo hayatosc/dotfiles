@@ -1,6 +1,6 @@
 # Report Template
 
-Use this as the default output shape. Translate headings to match the user's language if needed, but keep the same section order unless the user asked for a shorter format.
+Use this for a full editorial report. A focused critique or passage rewrite does not need this template. Translate headings to the user's language and adapt the depth to the request; omit empty sections rather than inventing findings.
 
 ```markdown
 # [記事タイトル] 評価レポート

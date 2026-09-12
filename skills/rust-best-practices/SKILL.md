@@ -1,6 +1,6 @@
 ---
 name: rust-best-practices
-description: Resolve high-judgment Rust design and review problems involving ownership boundaries, public API evolution, async cancellation and task lifetime, Cargo feature topology, performance tradeoffs, FFI, and unsafe soundness. Use when a Rust change compiles only after clones, leaks, broad Arc/Mutex use, boxed futures, trait-object workarounds, unsafe code, or compatibility compromises; when reviewing public crates or concurrency; and whenever `.rs` or `Cargo.toml` work requires choosing among multiple valid designs. Skip elementary syntax and generic style advice.
+description: Resolve Rust ownership, API compatibility, async cancellation, Cargo feature, performance, or unsafe/FFI design decisions. Skip elementary syntax and routine formatting.
 ---
 
 # Rust Design Decisions
@@ -32,7 +32,7 @@ Treat advice according to its evidence level:
 
 When community advice conflicts, preserve the decision variables instead of manufacturing a universal rule. Read [community-practice.md](references/community-practice.md) for recurring field lessons and the agent skills reviewed while building this skill.
 
-## Stop Conditions
+## Signals to Reconsider the Design
 
 Do not paper over the following signals:
 
@@ -44,7 +44,7 @@ Do not paper over the following signals:
 - optimization justified without a representative profile or benchmark;
 - detached tasks whose completion, errors, or shutdown behavior are unobserved.
 
-At these signals, return to the ownership, state-machine, API, or safety boundary.
+At these signals, return to the ownership, state-machine, API, or safety boundary and continue resolving the requested design. Stop only for a concrete blocker or when the affected contract is established.
 
 ## Reference Routing
 

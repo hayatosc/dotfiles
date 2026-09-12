@@ -1,48 +1,52 @@
-# AI Agents Environment
+# Agent Prompts and Skills
 
-This repository features integrated support and rules for AI coding agents (such as Gemini, Claude Code, and Codex) to work efficiently and preserve system safety.
+## Source Ownership
 
-## 1. Rules & Guidelines (`AGENTS.md`)
+| Surface | Source | Use |
+|---|---|---|
+| Repository instructions | `AGENTS.md` | Edit locations and chezmoi deployment |
+| Shared preferences | `home/dot_agents/AGENTS.md` | Language, local tools, authorization, and completion |
+| Agent role prompts and descriptions | `home/.chezmoitemplates/agent_*` | Shared by Codex, Claude Code, and OpenCode wrappers |
+| Harness role configuration | `home/dot_codex/agents/`, `home/dot_claude/agents/`, `home/dot_config/opencode/agents/` | Models, effort, and tool permissions |
+| Self-authored skills | `skills/<name>/SKILL.md` | Task-specific routing and completion contracts |
+| Supporting knowledge | `skills/<name>/references/` and `assets/` | Examples and details loaded for the selected task |
+| External skills | `skills/apm.yml` and `skills/apm.lock.yaml` | APM dependencies; installed copies are not source files |
 
-- **Root `AGENTS.md`**: Provides an overview of the dotfiles repository and explains how to modify configuration files (i.e. edit files under `home/` and run `chezmoi apply`).
-- **`home/dot_agents/AGENTS.md`**: Provides general guidelines, tool aliases, and programming standards. This file is deployed to `~/.agents/AGENTS.md` and symlinked to client configurations:
-  - `~/.claude/CLAUDE.md`
-  - `~/.codex/AGENTS.md`
-  - `~/.gemini/GEMINI.md`
+Chezmoi's `symlink_*` templates link `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`, and `~/.gemini/GEMINI.md` to `~/.agents/AGENTS.md`. The corresponding skill links point to `~/.agents/skills/`.
 
-The deployment is managed automatically via the chezmoi script:
-[home/.chezmoiscripts/run_once_symlink-agents.sh.tmpl](file:///home/hayato/.local/share/chezmoi/home/.chezmoiscripts/run_once_symlink-agents.sh.tmpl)
+## Deployment
 
----
+`home/` is chezmoi's source root; `skills/` is outside it. After source edits, inspect `chezmoi status` and run `chezmoi apply --force`. If unrelated destination drift exists, pass the affected target paths to apply rather than overwriting it.
 
-## 2. RTK (Rust Token Killer)
+[The APM script](../home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl) reruns when the skill sources or manifest change. It stages local skills with temporary symlinks under `skills/.apm/skills/`, runs `apm install --target agent-skills` into `skills/.agents/skills/`, syncs the result to `~/.agents/skills/`, and removes staging directories. Self-authored skills live directly under `skills/`, not in those temporary directories.
 
-Commands executed by AI agents are automatically optimized using [rtk](https://github.com/rtk-ai/rtk) to reduce token usage by 60-90%.
+## Maintaining Prompts
 
-### Meta Commands
-- `rtk gain`: Show token savings analytics.
-- `rtk gain --history`: Show command usage history with token savings.
-- `rtk discover`: Analyze history for missed optimization opportunities.
-- `rtk proxy <cmd>`: Run commands directly without filtering (useful for debugging).
+Use [OpenAI's skill and prompt guidance](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra) as the rationale for concise routing and task-specific detail. Preserve guidance useful to the other configured models as well.
 
-### Hooks
-For agents like Gemini, hooks automatically intercept calls. The hook scripts are located under `home/dot_gemini/hooks/` and execute `rtk hook gemini`.
+- Keep shared instructions about this environment; place domain examples in the relevant skill.
+- Descriptions identify the work that needs a skill. Avoid keyword lists that activate it for unrelated tasks.
+- State the required outcome, evidence, and real authorization boundary. Let the agent choose routine steps.
+- Use relevant existing checks; do not require extra reviews or repeated passing tests for every edit.
 
-For more details, see [home/dot_agents/private_RTK.md](file:///home/hayato/.local/share/chezmoi/home/dot_agents/private_RTK.md).
+### Cross-Model Baseline
 
----
+Keep the short inspect → implement → check → report workflow explicit in shared instructions. Preserve role-specific skill loading and essential domain rules in entrypoints; move lengthy examples and specialized procedures into references. Short descriptions should still activate a language skill for implementation, not only after a model recognizes a difficult design problem.
 
-## 3. Agent Skills (managed by APM)
+Claude role files preload their baseline skills. The shared role prompts request the same skills when another harness does not preload them, without rereading contents already in context. Delegation instructions cover missing inheritance, skill discovery, and unsupported roles using the available tool schema.
 
-Agent skills are managed under [skills/](file:///home/hayato/.local/share/chezmoi/skills/) at the chezmoi repository root, using [Microsoft APM](https://github.com/microsoft/apm) (Agent Package Manager). This directory is **outside** chezmoi's source root (`.chezmoiroot=home`), so it is not deployed by `chezmoi apply` as files — instead, an `apm install` run during apply populates the actual deploy target.
+The optimization target is consistent task completion across the configured models, not the shortest prompt. Preserve required steps and output evidence while removing duplicate prose, unrelated reading, and repeated passing checks. Rendering validation checks configuration consistency; behavioral parity requires representative runs on each model and is not established by file-size reduction.
 
-- `skills/apm.yml` / `skills/apm.lock.yaml`: dependency manifest for external skills.
-- `skills/.apm/skills/`: self-authored skills.
-- `skills/.agents`: symlink to `~/.agents` (gitignored), created by the chezmoi script below so that APM's `agent-skills` target deploys to `~/.agents/skills/`.
+For a task prompt, supply the outcome, affected scope, constraints, and completion evidence. For example:
 
-Deployment flow:
+```text
+Update the shared reviewer prompt so findings include a triggering scenario and file reference.
+Preserve model and permission settings. Render the affected harness templates and apply the changes through chezmoi.
+Finish when the intended prompts are deployed; report any rendering or deployment blocker.
+```
 
-1. `chezmoi apply` runs [home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl](file:///home/hayato/.local/share/chezmoi/home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl) when `apm.yml` or `.apm/skills/` changes.
-2. The script ensures the `skills/.agents -> ~/.agents` symlink exists, then runs `apm install --target agent-skills` from `skills/`.
-3. APM deploys all skills (self-authored + external dependencies) to `~/.agents/skills/`.
-4. Each harness reads via the symlinks set up by `run_once_symlink-agents.sh.tmpl`: `~/.claude/skills`, `~/.codex/skills`, `~/.gemini/skills` all point to `~/.agents/skills/`.
+Shorter prompts and valid templates do not by themselves prove better model behavior. Compare representative real tasks before adding new global rules in response to a failure.
+
+## RTK
+
+RTK hooks filter supported command output. Use `rtk gain` for usage information or `rtk proxy <command>` when unfiltered output is needed. See [the local RTK reference](../home/dot_agents/private_RTK.md) for hook troubleshooting.

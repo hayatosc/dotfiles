@@ -1,99 +1,20 @@
 ---
 name: ast-grep
-description: Explore and transform large codebases with ast-grep using AST-aware search, rule-based scanning, and safe codemod workflows. Use when requests involve structural code search beyond regex, writing/testing ast-grep YAML rules, reducing noisy matches by syntax, or applying multi-file rewrites with controlled rollout. Also trigger when the user needs to find code patterns that regex can't reliably match (like "all useEffect calls with empty dependency arrays", "functions with more than 3 parameters", "class methods that call super"), when grep/ripgrep returns too many false positives due to syntax variations, or when the user wants to enforce code patterns across a codebase. Any request for syntax-aware code search or transformation should use this skill.
+description: Search or rewrite syntax patterns with ast-grep, or author its lint rules. Use when AST structure matters; ordinary filename and text searches do not need this skill.
 ---
 
 # ast-grep
 
-Use ast-grep for syntax-aware exploration, linting, and rewrite that stays resilient in large or mixed-language repositories.
+Use syntax-aware matching when it makes the requested search or rewrite more reliable. Restrict the path, language, and globs to the intended scope.
 
-## Start
+- For searches, rewrites, and optional structural outlines, use [command-cookbook.md](references/command-cookbook.md).
+- For reusable scan rules and their positive/negative fixtures, use [rule-authoring.md](references/rule-authoring.md).
+- Check the installed tool's help when a command is unavailable; use text search or bounded reads if they answer the question. An outline is useful for a large unfamiliar file, not a prerequisite for every read.
 
-1. Confirm `ast-grep` is installed.
-2. Identify the task mode: exploration/search (using `outline` or `run`), one-off rewrite (`run --rewrite`), or rule-driven scanning/linting (`scan`).
-3. For file exploration, ALWAYS use `outline` first to get a map before reading the whole file to save tokens.
-4. Restrict search/replace surface (path, language, globs, ignore policy).
-5. Apply modifications in small batch rollouts.
+## Rewrite Contract
 
-## Choose Workflow
+Preview matches and replacements before applying a codemod. Confirm the pattern captures the intended syntax, including relevant non-matches, then apply within the authorized scope.
 
-1. Use **Search / Explore Workflow** to inspect code structures or find specific AST patterns.
-2. Use **Replace / Rewrite Workflow** for one-off modifications or safe automated refactoring.
-3. Use **Rule / Lint Workflow** for repeatable scans, custom linting rules, and large migrations requiring tests.
+`--rewrite` only replaces matched nodes: it does not create imports or definitions. Resolve any introduced identifiers in affected files and run the relevant project typecheck, build, or tests. Inspect remaining matches against the intended scope; zero matches is required only when the request calls for complete replacement.
 
-## Search / Explore Workflow
-
-### 1. Structural Map with `ast-grep outline` (First Pass)
-Before opening or reading the full source of a file, use `outline` to obtain a syntax-aware table of contents (exports, imports, classes, structs, methods) without building an index.
-- **Inspect file structure**:
-  ```bash
-  ast-grep outline src/parser.ts
-  ```
-- **List exported surface of a directory** (use a glob — bare directory path returns nothing):
-  ```bash
-  ast-grep outline src/*.ts
-  ```
-- **Filter and inspect file imports**:
-  ```bash
-  ast-grep outline src/parser.ts --items imports
-  ```
-- **Expand specific symbol details**:
-  ```bash
-  ast-grep outline src/parser.ts --match Parser --view expanded
-  ```
-- **Find specific dependency imports across a folder**:
-  ```bash
-  ast-grep outline src/*.ts --items imports --match ast-grep-core --view signatures
-  ```
-
-### 2. AST Pattern Search
-Use `run` to perform structural search.
-- **AST pattern match**:
-  ```bash
-  ast-grep run -p 'Promise.all($$$ARGS)' -l TypeScript src
-  ```
-- Narrow down search via `--globs` and specify `--lang` when extension inference is unreliable.
-- Inspect pattern parsing with `--debug-query=ast` when matches are missing.
-
-Use command examples from:
-- `references/command-cookbook.md`
-
-## Replace / Rewrite Workflow
-
-### 1. Quick Rewrites
-Perform one-off changes using `run --rewrite`.
-- **Preview changes (diff only)**:
-  ```bash
-  ast-grep run -p 'foo($A)' -r 'bar($A)' -l TypeScript src
-  ```
-- **Interactive apply**:
-  ```bash
-  ast-grep run -p 'foo($A)' -r 'bar($A)' -l TypeScript src --interactive
-  ```
-- **Apply all changes**:
-  ```bash
-  ast-grep run -p 'foo($A)' -r 'bar($A)' -l TypeScript src --update-all
-  ```
-
-### 2. Verify After Apply
-`--rewrite` only replaces matched nodes — it never adds imports or definitions for identifiers introduced by the replacement. Before reporting success:
-1. If the replacement introduces an identifier (e.g. `safeParse`), confirm every modified file imports or defines it; add missing imports yourself.
-2. Re-run the original search pattern to confirm zero remaining matches.
-3. Run the repository's typecheck/build (or at minimum a syntax check) on the modified files.
-
-## Rule / Lint Workflow
-
-1. Initialize project/rule/test scaffolding with `ast-grep new ...`.
-2. Write rule YAML with `id`, `language`, `rule`, `constraints`, and `fix`.
-3. Validate rule behavior with `ast-grep test`.
-4. Scan with `ast-grep scan` (or `scan --inline-rules`).
-
-Use authoring details from:
-- `references/rule-authoring.md`
-
-## Execution Rules
-
-1. **Outline First**: Always summarize a target file using `ast-grep outline` before opening it, especially in large codebases (helps reduce Claude Code costs by up to 55%).
-2. **Narrow Scope First**: Order of narrowing to reduce noise: Path -> `--lang` -> `--globs` -> Pattern strictness.
-3. Prefer `scan --inline-rules` for quick hypothesis testing; promote stable logic to YAML files.
-4. Prefer `--json=stream` for large output pipelines; avoid pretty JSON for machine processing.
+Finish when the requested search is answered or the rewrite and relevant checks are complete. Report matches or changed paths, evidence, and any unsupported syntax or unresolved cases.

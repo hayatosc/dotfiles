@@ -1,11 +1,11 @@
 # Worked example
 
 One complete pass, compressed: what the interview settled, the contract that came out of it, and
-the `PLAN.md` that shipped with it. Shapes to copy — not a template to fill in blindly.
+the `PLAN.md` that shipped with it. The repeated test runs and turn cap are specific user choices in this example, not requirements for other goals.
 
 ## Request
 
-> ログイン周りの E2E が不安定で CI が赤くなる。直したい。
+> /goalplan ログイン周りの E2E が不安定で CI が赤くなる。直すための /goal を計画して。
 
 ## Step 1 — what exploration resolved (reported to the user, not asked)
 

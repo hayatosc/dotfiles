@@ -1,40 +1,26 @@
-# AGENTS.md
+# Dotfiles Repository
 
-Welcome! This file provides an overview of this repository for AI agents to help you navigate and modify configurations correctly.
+Configurations are managed by chezmoi, with `home/` as its source root.
+Edit sources here rather than deployed files in the active home directory.
 
-## Repository Overview
+## Edit Locations
 
-This repository contains the **dotfiles**, managed using **chezmoi**.
+- Application and shell settings: `home/dot_config/`, `home/dot_zsh*`, and other `home/dot_*` files.
+- Shared agent preferences: `home/dot_agents/AGENTS.md`, symlinked by Codex, Claude Code, and Gemini.
+- Shared agent role prompts: `home/.chezmoitemplates/agent_*`; harness wrappers live under `home/dot_codex/agents/`, `home/dot_claude/agents/`, and `home/dot_config/opencode/agents/`.
+- Self-authored skills: `skills/<name>/SKILL.md` and their resources. External dependencies are declared in `skills/apm.yml`; do not edit installed copies or `skills/apm_modules/`.
+- Chezmoi data and lifecycle scripts: `home/.chezmoidata/` and `home/.chezmoiscripts/`.
 
-### Directory Structure
+## Applying Changes
 
-- `home/`: The source directory representing the user's home folder (`~`). Chezmoi templates and files are defined here:
-  - `home/dot_config/` -> `~/.config/` (contains configs for `yazi`, `zsh`, `cage`, `sheldon`, `starship.toml`, `mise`, `tmux`, `helix`, `opencode`)
-  - `home/dot_zshrc`, `home/dot_zshenv`, `home/dot_zprofile`, `home/dot_profile` -> Zsh / shell configurations
-  - `home/dot_agents/` -> `~/.agents/` (cross-harness agent rules only; skills are managed separately under `skills/`)
-  - `home/dot_claude/` -> `~/.claude/` (Claude-specific configurations)
-  - `home/dot_gemini/` -> `~/.gemini/` (Gemini-specific configurations)
-  - `home/dot_codex/` -> `~/.codex/` (Codex-specific configurations)
-  - `home/dot_gitconfig` -> `~/.gitconfig`
-  - `home/.chezmoidata/` -> Chezmoi data variables (e.g. `codex.local.toml`)
-  - `home/.chezmoiscripts/` -> One-time or run-on-change scripts executed by chezmoi (e.g., package installation, symlinking)
-  - `home/.chezmoitemplates/` -> Templates reused across chezmoi configurations
-- `skills/`: Microsoft APM project root for agent skills (not deployed by chezmoi). `apm.yml` declares external skill dependencies; self-authored skills live in directories directly under `skills/`. `chezmoi apply` triggers `apm install` via `home/.chezmoiscripts/run_apm-install.sh.tmpl`, which stages self-authored skills into a temporary `skills/.apm/skills/`, runs `apm install --target agent-skills`, and syncs the result to `~/.agents/skills/` (cross-harness via existing symlinks).
-- `docs/`: Repository documentation (e.g., `docs/codex.md` for Codex configuration).
-- `scripts/`: Custom scripts used within the repository.
-- `pyproject.toml`, `uv.lock`: Python environment definition managed by `uv`.
+After editing configuration or skills, run `chezmoi apply --force` to deploy them.
+Skill changes trigger `home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl`: it stages local skills, runs `apm install --target agent-skills`, syncs to `~/.agents/skills/`, and removes staging directories.
+Inspect the pending apply scope first; resolve unrelated changes without overwriting user work.
+Report an apply failure separately from source changes so the user knows what is active.
 
----
+## Task-Specific References
 
-## IMPORTANT: How to Modify Configuration Settings
-
-> [!IMPORTANT]
-> **Never modify files directly in the user's active home directory (`~/...`).**
-> All configuration files are managed by Chezmoi.
->
-> To update any configuration, you **MUST**:
-> 1. Edit the source template or file inside the repository's `home/` directory (e.g., `~/.local/share/chezmoi/home/...`).
-> 2. Or, if you want to edit agent skills, go `skills` directory.
-> 3. Run the command `chezmoi apply --force` to apply the changes to the user's home directory.
->
-> Failing to do so will result in your changes being overwritten the next time `chezmoi apply` is run.
+- Agent prompt ownership and skill deployment: `docs/agents.md`.
+- Codex configuration: `docs/codex.md`.
+- Python tooling: `pyproject.toml` and `uv.lock`.
+- Relevant project checks: `.github/workflows/`; select checks for the changed surface instead of replaying unrelated workflows.

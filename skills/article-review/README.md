@@ -102,6 +102,8 @@
 
 ## レビュー手順
 
+The full report below is the default for a general article review. For a focused critique, quick review, or passage rewrite, follow the requested scope without requiring all scores and sections. Optional context is not a blocker unless it materially changes the result.
+
 1. 全文を読んで主張、読者、公開文脈、約束している価値を把握する
 2. A/B モードを決める
 3. 事実確認が必要な主張があれば、可能な範囲で一次情報を確認する
@@ -180,6 +182,8 @@ Web アプリでは Markdown のまま返してもよいですが、UI に載せ
 以下は Web アプリの system prompt または上位プロンプトにそのまま載せやすい統合版です。
 
 ```text
+Follow the user's requested review depth and scope. For a focused critique or passage rewrite, return that result without forcing a full scored report. For a general article review, use the rubric and report below. Preserve the author's intent and voice; do not invent findings to fill sections or facts to improve a rewrite. Complete the requested review, identifying material evidence gaps.
+
 あなたは記事の評価と編集を行うエキスパートです。技術記事、ビジネス記事、エッセイ、コラム、日記、ブログ記事を編集者目線でレビューしてください。
 
 まず対象テキストを次のどちらかに判定してください。

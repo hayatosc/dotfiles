@@ -1,52 +1,31 @@
 ---
 name: golang-best-practices
-description: "Comprehensive Go best practices for writing production-ready, idiomatic, secure, and maintainable code. Use when: (1) writing or reviewing Go code, (2) designing project structure and layout, (3) handling errors and contexts, (4) implementing concurrency, (5) writing tests or benchmarks, (6) optimizing performance, (7) applying security practices, (8) modernizing Go codebases. Covers coding style, project organization, error handling, testing, concurrency, performance, security, and modernization."
+description: Implement or review Go code using shared API, error handling, concurrency, and testing conventions. Use the references for specialized design decisions.
 ---
 
 # Go Best Practices
 
-## Core Principles
+Respect the module's Go version and established conventions. Prefer synchronous APIs with caller-owned concurrency, useful zero values, consumer-side interfaces, and explicit error handling. Use `crypto/rand` for security-sensitive randomness.
 
-- **Simplicity**: Prefer clear, readable code over clever code.
-- **Explicit over implicit**: Make dependencies and side effects visible.
-- **Composition over inheritance**: Use interfaces and embedding, not subclassing.
-- **Fail fast**: Return errors immediately; keep the happy path left-aligned.
-- **Zero value is useful**: Design types so their zero value is valid.
-- **Don't over-abstract**: Solve the problem at hand; add abstraction only when needed.
+## Baseline for Implementation and Review
 
-## Quick Navigation
+- Use `MixedCaps` names and document exported APIs with a sentence beginning with the name.
+- Pass `context.Context` first when an operation accepts context; propagate cancellation to work it starts.
+- Check returned errors. Explain intentional discards; return errors for normal failures rather than panicking.
+- Make goroutine ownership, shutdown, and error reporting explicit. Do not start background work with no owner.
+- Use `gofmt` and the project's import formatter on changed files. Run the affected package tests, plus race checks when the change concerns shared state and the environment supports them.
 
-Load the appropriate reference when working on a specific area:
+## References
 
-- **Project layout**: [project-layout.md](references/project-layout.md)
-- **Code style and naming**: [code-style.md](references/code-style.md)
-- **Error handling**: [error-handling.md](references/error-handling.md)
-- **Concurrency**: [concurrency.md](references/concurrency.md)
-- **Testing**: [testing.md](references/testing.md)
-- **Performance**: [performance.md](references/performance.md)
-- **Security**: [security.md](references/security.md)
-- **Modern Go features**: [modernize.md](references/modernize.md)
+Read only the reference relevant to the task:
 
-## Universal Rules
+- New module or package boundaries: [project-layout.md](references/project-layout.md).
+- Naming, comments, or style decisions: [code-style.md](references/code-style.md).
+- Error propagation or custom errors: [error-handling.md](references/error-handling.md).
+- Goroutines, channels, cancellation, or synchronization: [concurrency.md](references/concurrency.md).
+- Test design: [testing.md](references/testing.md).
+- Slow code or allocations: [performance.md](references/performance.md).
+- User input, secrets, or cryptography: [security.md](references/security.md).
+- Version upgrades or modern standard library features: [modernize.md](references/modernize.md).
 
-1. Run `gofmt` and `goimports` on every save. Do not fight the formatter.
-2. Use ` MixedCaps` or `mixedCaps`; never `snake_case` in identifiers.
-3. Context is the first parameter: `func F(ctx context.Context, ...) error`.
-4. Always check errors. Never silently ignore them with `_` unless justified.
-5. Document all exported names with a complete sentence starting with the name.
-6. Keep the normal code path at minimal indentation; handle errors and return.
-7. Prefer synchronous APIs; let the caller add concurrency if needed.
-8. Use `crypto/rand` for security-sensitive randomness, never `math/rand`.
-9. Avoid `panic` for normal error handling. Return `error` values.
-10. Use interfaces on the consumer side, return concrete types from producers.
-
-## When to Use References
-
-- Starting a new project or module: read `project-layout.md` first.
-- Reviewing or refactoring code style: read `code-style.md`.
-- Adding error propagation or custom errors: read `error-handling.md`.
-- Adding goroutines, channels, or synchronization: read `concurrency.md`.
-- Writing or reviewing tests: read `testing.md`.
-- Investigating slow code or allocations: read `performance.md`.
-- Handling user input, secrets, or crypto: read `security.md`.
-- Upgrading Go version or adopting new stdlib features: read `modernize.md`.
+Format changed Go files with the project's formatter and use relevant project checks. Rerun after changes or failures, not on every save. Finish when the requested behavior and affected contracts are established; document remaining limitations without broadening the task.

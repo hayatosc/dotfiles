@@ -1,5 +1,7 @@
 # Funnel Playbook
 
+Choose commands that resolve the current question; these stages are optional, not a required sequence. Use an outline only if the installed tool supports it and the file warrants one.
+
 ## Commands by Stage
 
 ### Stage 0 — Orient
@@ -36,4 +38,4 @@ Read bounded line ranges (`offset`/`limit`) only for surviving candidates.
 `ast-grep run` -> `rg -n -A 8 -B 2` -> bounded `Read`.
 
 ## Subagent Delegation
-Sweep wide directories using **Explore** subagent to keep file dumps out of main context.
+When delegation is authorized, assign a bounded directory sweep to an explorer while continuing independent work. Otherwise, narrow the search locally.
