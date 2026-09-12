@@ -4376,44 +4376,44 @@ url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x8
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/471228877"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.1.27"
+version = "1.1.28"
 backend = "aqua:google-antigravity/antigravity-cli"
-specifiers = ["1.1.27"]
+specifiers = ["1.1.28"]
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:97fc9fe5a6067406cd02cbe4ae6e362c9623a24d33bec486911246c17ceb6a94"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.27/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/545349564"
+checksum = "sha256:789420d2937393498eb158c4af8321d78c387e31c861db0c79627879509aa8a8"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.28/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/551653599"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:97fc9fe5a6067406cd02cbe4ae6e362c9623a24d33bec486911246c17ceb6a94"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.27/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/545349564"
+checksum = "sha256:789420d2937393498eb158c4af8321d78c387e31c861db0c79627879509aa8a8"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.28/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/551653599"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:f874d4f6b8a73c2df660f580f25fb656fcb6e64adbfd746e6692e837fd9a20be"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.27/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/545349566"
+checksum = "sha256:074ff4f732a750ad727aeed5fc82ed34b1fb72fda2a6ceba6c8e652ffd0a94b0"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.28/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/551653598"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:f874d4f6b8a73c2df660f580f25fb656fcb6e64adbfd746e6692e837fd9a20be"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.27/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/545349566"
+checksum = "sha256:074ff4f732a750ad727aeed5fc82ed34b1fb72fda2a6ceba6c8e652ffd0a94b0"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.28/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/551653598"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:e901e5c8fd20ab4c21c01df306030079286d08e6d372cdb535d5ccc7a3f565f4"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.27/agy_cli_mac_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/545349563"
+checksum = "sha256:8f642cffce8bc14aa3e49d1a75780bb2bd99fe7a3016389627476d9e3ec911eb"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.28/agy_cli_mac_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/551653597"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:fe5f102bf65be5d478c68fc2f9c3f5b3c5cb2cc788105310b35698fd1af10192"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.27/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/545349565"
+checksum = "sha256:629887c5baf30c9c1c130a5d3d9fdfebdf0b67ffd45f822d771c0abfb69e405b"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.28/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/551653603"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:94e3f09357159fd9ea10061c3c7749145070ff5794cc33efd43b73d53fe38559"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.27/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/545349561"
+checksum = "sha256:4eb8784538bc25ee597006aacdbc8e83819e4c1799330b678d0a1d73d7c6745d"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.1.28/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/551653600"
 
 [[tools."aqua:helix-editor/helix"]]
 version = "25.07.1"
@@ -4783,6 +4783,11 @@ url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/5
 version = "0.153.4"
 backend = "aqua:openai/codex"
 specifiers = ["0.153.4"]
+
+[tools.codex."platforms.linux-arm64"]
+checksum = "sha256:fc395cb043a1093ab0db34f44aba3199bfaa9ce640cd9be7fd588f44b0da64a4"
+url = "https://github.com/openai/codex/releases/download/rust-v0.153.4/codex-package-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/545043496"
 
 [tools.codex."platforms.linux-arm64-musl"]
 checksum = "sha256:fc395cb043a1093ab0db34f44aba3199bfaa9ce640cd9be7fd588f44b0da64a4"
@@ -7803,19 +7808,7 @@ url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-x86_64-unkno
 url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278642"
 provenance = "github-attestations"
 
-[tools.uv."platforms.linux-x64-baseline"]
-checksum = "sha256:4ae93e0f148a18434cc094072547cec88912fc4a72b984183c7d0d0e9586cb5e"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278642"
-provenance = "github-attestations"
-
 [tools.uv."platforms.linux-x64-musl"]
-checksum = "sha256:3343303ad6b4f9537ae0abfb36f1926a90c0445ba8f23d0e0a840a66a124cffd"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278646"
-provenance = "github-attestations"
-
-[tools.uv."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:3343303ad6b4f9537ae0abfb36f1926a90c0445ba8f23d0e0a840a66a124cffd"
 url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278646"
@@ -7833,19 +7826,7 @@ url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-x86_64-apple
 url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278628"
 provenance = "github-attestations"
 
-[tools.uv."platforms.macos-x64-baseline"]
-checksum = "sha256:96d773bf5fda4f9b08c4444847f9183d1c14bc8a28ff9c0490e261a8fc6e5309"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278628"
-provenance = "github-attestations"
-
 [tools.uv."platforms.windows-x64"]
-checksum = "sha256:e94225dea91e051472847bd6d146d7d66c4f54ffcd1f106678866a99580845f9"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278631"
-provenance = "github-attestations"
-
-[tools.uv."platforms.windows-x64-baseline"]
 checksum = "sha256:e94225dea91e051472847bd6d146d7d66c4f54ffcd1f106678866a99580845f9"
 url = "https://github.com/astral-sh/uv/releases/download/0.12.11/uv-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/551278631"
