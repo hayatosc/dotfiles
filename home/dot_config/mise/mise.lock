@@ -4699,17 +4699,7 @@ checksum = "sha256:449bc65dc82d68694103a801c8ac54b6549f9e12f469217c9e0d5560c1085
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.267/claude-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/553320444"
 
-[tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:449bc65dc82d68694103a801c8ac54b6549f9e12f469217c9e0d5560c1085023"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.267/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/553320444"
-
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:866c9778a3fce3cd2005fa8cf8d276962ed57c049ef77d356ce2b3bdb4512c49"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.267/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/553320292"
-
-[tools.claude."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:866c9778a3fce3cd2005fa8cf8d276962ed57c049ef77d356ce2b3bdb4512c49"
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.267/claude-linux-x64-musl.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/553320292"
@@ -4724,17 +4714,7 @@ checksum = "sha256:2b1d62b17ac11bedc9b70dfdbdaa36b9bcb979be93a64a9fb6c8b9d11b6ff
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.267/claude-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/553320293"
 
-[tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:2b1d62b17ac11bedc9b70dfdbdaa36b9bcb979be93a64a9fb6c8b9d11b6ffa63"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.267/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/553320293"
-
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:7f414f9d74d1dab779f1c85a6e8ed96557811d434f5c325efb68f7685c2dce86"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.267/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/553320464"
-
-[tools.claude."platforms.windows-x64-baseline"]
 checksum = "sha256:7f414f9d74d1dab779f1c85a6e8ed96557811d434f5c325efb68f7685c2dce86"
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.267/claude-win32-x64.zip"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/553320464"
@@ -4813,11 +4793,6 @@ url_api = "https://api.github.com/repos/openai/codex/releases/assets/545043538"
 checksum = "sha256:3ee638d7155c856ef31f3f4a85cb2195de1939962d3924c935b24f0514564a3d"
 url = "https://github.com/openai/codex/releases/download/rust-v0.153.4/codex-package-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/openai/codex/releases/assets/545043437"
-
-[tools.codex."platforms.windows-x64"]
-checksum = "sha256:a6ef3442cb12766a88b39311d79244289e4f9763e2c53ff4fbebc2cb653cc5f3"
-url = "https://github.com/openai/codex/releases/download/rust-v0.153.4/codex-package-x86_64-pc-windows-msvc.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/545043424"
 
 [[tools."conda:ffmpeg"]]
 version = "8.1.1"
