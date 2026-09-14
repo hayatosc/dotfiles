@@ -114,9 +114,9 @@ checksum = "sha256:bcba20fab38b359fe982bd004e0b28e5ecfa07e43ca03733db2f6f26fad68
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/glib-tools-2.88.3-he116ec0_4.conda"
 checksum = "sha256:8e644143b10426dc2f497177ed880c6dc76040e27a428433dca2e70f24d0f4d6"
 
-[conda-packages.linux-arm64."glslang-16.5.0-ha162a40_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.5.0-ha162a40_2.conda"
-checksum = "sha256:116d14066e5ef26ed4152f1892c6996cf37945cb2449840b37fcfa09e3768b6a"
+[conda-packages.linux-arm64."glslang-16.6.0-ha162a40_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.6.0-ha162a40_0.conda"
+checksum = "sha256:095a5c3efa9f5e473899cbf36463f9024b02f0763321cfd605d289516b2dee39"
 
 [conda-packages.linux-arm64."gmp-6.3.0-h4d6b352_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/gmp-6.3.0-h4d6b352_3.conda"
@@ -806,9 +806,9 @@ checksum = "sha256:bcba20fab38b359fe982bd004e0b28e5ecfa07e43ca03733db2f6f26fad68
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/glib-tools-2.88.3-he116ec0_4.conda"
 checksum = "sha256:8e644143b10426dc2f497177ed880c6dc76040e27a428433dca2e70f24d0f4d6"
 
-[conda-packages.linux-arm64-musl."glslang-16.5.0-ha162a40_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.5.0-ha162a40_2.conda"
-checksum = "sha256:116d14066e5ef26ed4152f1892c6996cf37945cb2449840b37fcfa09e3768b6a"
+[conda-packages.linux-arm64-musl."glslang-16.6.0-ha162a40_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/glslang-16.6.0-ha162a40_0.conda"
+checksum = "sha256:095a5c3efa9f5e473899cbf36463f9024b02f0763321cfd605d289516b2dee39"
 
 [conda-packages.linux-arm64-musl."gmp-6.3.0-h4d6b352_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/gmp-6.3.0-h4d6b352_3.conda"
@@ -1498,9 +1498,9 @@ checksum = "sha256:3611c5d605cd56017704e6c01c7bd849e74a656a546d4c49d655fde49ddfe
 url = "https://conda.anaconda.org/conda-forge/linux-64/glib-tools-2.88.3-h922ffe4_4.conda"
 checksum = "sha256:076d8183bf4f6718ece6227b6a9d7b22d9048ec24673a85e4296cfd249e721c5"
 
-[conda-packages.linux-x64."glslang-16.5.0-h980caa0_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/glslang-16.5.0-h980caa0_2.conda"
-checksum = "sha256:2c2eb8deb61d781c3b1bae69e6b8de3fe9cbb18049493de4578a65ca8068090a"
+[conda-packages.linux-x64."glslang-16.6.0-h980caa0_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/glslang-16.6.0-h980caa0_0.conda"
+checksum = "sha256:390b9e94b29b53366673e5460b433c9daa34788f5cdabf8b30bf40cf086c60dd"
 
 [conda-packages.linux-x64."gmp-6.3.0-hfd2156b_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hfd2156b_3.conda"
@@ -2230,9 +2230,9 @@ checksum = "sha256:3611c5d605cd56017704e6c01c7bd849e74a656a546d4c49d655fde49ddfe
 url = "https://conda.anaconda.org/conda-forge/linux-64/glib-tools-2.88.3-h922ffe4_4.conda"
 checksum = "sha256:076d8183bf4f6718ece6227b6a9d7b22d9048ec24673a85e4296cfd249e721c5"
 
-[conda-packages.linux-x64-musl."glslang-16.5.0-h980caa0_2"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/glslang-16.5.0-h980caa0_2.conda"
-checksum = "sha256:2c2eb8deb61d781c3b1bae69e6b8de3fe9cbb18049493de4578a65ca8068090a"
+[conda-packages.linux-x64-musl."glslang-16.6.0-h980caa0_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/glslang-16.6.0-h980caa0_0.conda"
+checksum = "sha256:390b9e94b29b53366673e5460b433c9daa34788f5cdabf8b30bf40cf086c60dd"
 
 [conda-packages.linux-x64-musl."gmp-6.3.0-hfd2156b_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hfd2156b_3.conda"
@@ -2946,9 +2946,9 @@ checksum = "sha256:be9b4cf253c7d3bf20ccc9ff278ea7ec6f144ebbe8fdc9a131d18c35ff496
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/glib-tools-2.88.3-hf080417_4.conda"
 checksum = "sha256:4997b9dcf6f5d535d31e12f7d0e21bd5bdf69706438394c67a8b3b87a42bfc9e"
 
-[conda-packages.macos-arm64."glslang-16.5.0-h1a33c25_2"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/glslang-16.5.0-h1a33c25_2.conda"
-checksum = "sha256:c161660cc0a1bd3808365081624babe07fd8104ec67441f3a21d75ab45fe7118"
+[conda-packages.macos-arm64."glslang-16.6.0-h1a33c25_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/glslang-16.6.0-h1a33c25_0.conda"
+checksum = "sha256:4d485440f96b81337b8f810488e695a0fda0aea540025d02c021ccce51837720"
 
 [conda-packages.macos-arm64."gmp-6.3.0-hf5e55b1_3"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/gmp-6.3.0-hf5e55b1_3.conda"
@@ -3458,9 +3458,9 @@ checksum = "sha256:7042b7399ea78f2558699002c09f8e9fd54ed5345836443bcbe942966552e
 url = "https://conda.anaconda.org/conda-forge/osx-64/glib-tools-2.88.3-h69987c9_4.conda"
 checksum = "sha256:94858c86832ad6beb95432e926c9603774cab918424ba3a0570f2c1ef15b3bcc"
 
-[conda-packages.macos-x64."glslang-16.5.0-he9b0248_2"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/glslang-16.5.0-he9b0248_2.conda"
-checksum = "sha256:871f6392bef8629ea148a00924708e989069f3649738b9ee016fa3a07076ede0"
+[conda-packages.macos-x64."glslang-16.6.0-he9b0248_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/glslang-16.6.0-he9b0248_0.conda"
+checksum = "sha256:857b86e48a1f88c42c79cc3fc44ece99f1077f82de996d8575efa385107bec12"
 
 [conda-packages.macos-x64."gmp-6.3.0-h65442b7_3"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/gmp-6.3.0-h65442b7_3.conda"
@@ -3970,9 +3970,9 @@ checksum = "sha256:04549d62070aa65a597007bb28b4ba53f7cfd8b6370a618ee90bfc6bdc24c
 url = "https://conda.anaconda.org/conda-forge/win-64/glib-tools-2.88.3-h16251db_4.conda"
 checksum = "sha256:2512097819623ec7f576d70f635082606410ae49c805a5ba2e9b6530d1a5c372"
 
-[conda-packages.windows-x64."glslang-16.5.0-h8fa7867_2"]
-url = "https://conda.anaconda.org/conda-forge/win-64/glslang-16.5.0-h8fa7867_2.conda"
-checksum = "sha256:6d8a5a4d8437d37517a3b1744d99bcf9f12fd4be5eb62c98b5805d08f2e9eb5d"
+[conda-packages.windows-x64."glslang-16.6.0-h8fa7867_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/glslang-16.6.0-h8fa7867_0.conda"
+checksum = "sha256:048f538b07594cc717a14517191a81cb1d3825fdde9c573d132c158b26d15806"
 
 [conda-packages.windows-x64."graphite2-1.3.15-h5112557_1"]
 url = "https://conda.anaconda.org/conda-forge/win-64/graphite2-1.3.15-h5112557_1.conda"
@@ -4456,44 +4456,44 @@ url = "https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.
 url_api = "https://api.github.com/repos/helix-editor/helix/releases/assets/274144377"
 
 [[tools."aqua:k1LoW/git-wt"]]
-version = "0.29.1"
+version = "0.29.3"
 backend = "aqua:k1LoW/git-wt"
-specifiers = ["0.29.1"]
+specifiers = ["0.29.3"]
 
 [tools."aqua:k1LoW/git-wt"."platforms.linux-arm64"]
-checksum = "sha256:8416f674ec29ac19d26045369fda77013d105a7c82c0699f010f44582fdc6860"
-url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.1/git-wt_v0.29.1_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764456"
+checksum = "sha256:d8e3574eae3c06c84472d1133951f7f41d460a8fd9fd93efd3d6d867fed5a59d"
+url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.3/git-wt_v0.29.3_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/556251188"
 
 [tools."aqua:k1LoW/git-wt"."platforms.linux-arm64-musl"]
-checksum = "sha256:8416f674ec29ac19d26045369fda77013d105a7c82c0699f010f44582fdc6860"
-url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.1/git-wt_v0.29.1_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764456"
+checksum = "sha256:d8e3574eae3c06c84472d1133951f7f41d460a8fd9fd93efd3d6d867fed5a59d"
+url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.3/git-wt_v0.29.3_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/556251188"
 
 [tools."aqua:k1LoW/git-wt"."platforms.linux-x64"]
-checksum = "sha256:37178ebc756598a9b28e76ef65e8931226a5faf9784b72b1596bdb0e7c15bb23"
-url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.1/git-wt_v0.29.1_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764467"
+checksum = "sha256:8fc67b34e92bf61fd509ee777df8d8d53442aa3c0d908e7fccffb972aad5a9eb"
+url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.3/git-wt_v0.29.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/556251189"
 
 [tools."aqua:k1LoW/git-wt"."platforms.linux-x64-musl"]
-checksum = "sha256:37178ebc756598a9b28e76ef65e8931226a5faf9784b72b1596bdb0e7c15bb23"
-url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.1/git-wt_v0.29.1_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764467"
+checksum = "sha256:8fc67b34e92bf61fd509ee777df8d8d53442aa3c0d908e7fccffb972aad5a9eb"
+url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.3/git-wt_v0.29.3_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/556251189"
 
 [tools."aqua:k1LoW/git-wt"."platforms.macos-arm64"]
-checksum = "sha256:9fccd453cb5c7f33a5ea079b659291d03d052eb57eb3daf2c8aac5f539c9e290"
-url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.1/git-wt_v0.29.1_darwin_arm64.zip"
-url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764449"
+checksum = "sha256:51381cc5651e186e92d215549380ca3a626b6dd57b54e5283b47aa854a031dcb"
+url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.3/git-wt_v0.29.3_darwin_arm64.zip"
+url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/556251216"
 
 [tools."aqua:k1LoW/git-wt"."platforms.macos-x64"]
-checksum = "sha256:130ed324b7c9d8ff5b1a677664605e549f8577248abe50b9eef0077598f5dfa0"
-url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.1/git-wt_v0.29.1_darwin_amd64.zip"
-url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764447"
+checksum = "sha256:c13cd2108a30e77d3fc1e0e328457b8f7bdf340c1e569374d80c324bbb311cdb"
+url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.3/git-wt_v0.29.3_darwin_amd64.zip"
+url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/556251190"
 
 [tools."aqua:k1LoW/git-wt"."platforms.windows-x64"]
-checksum = "sha256:54c22befa874dcdadb0f14bceb6faecd6b47b25cb90f5bad42776f8f4d7dfb24"
-url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.1/git-wt_v0.29.1_windows_amd64.tar.gz"
-url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/513764446"
+checksum = "sha256:a0816f65cbaf50bb38f9c5f009400e2cf5aa861784c931f9a3024a98054b4720"
+url = "https://github.com/k1LoW/git-wt/releases/download/v0.29.3/git-wt_v0.29.3_windows_amd64.tar.gz"
+url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/556251217"
 
 [[tools."aqua:rossmacarthur/sheldon"]]
 version = "0.8.5"
@@ -4908,7 +4908,7 @@ conda_deps = [
     "libglx-1.7.0-hd24410f_5",
     "libglvnd-1.7.0-hd24410f_5",
     "libegl-1.7.0-hd24410f_5",
-    "glslang-16.5.0-ha162a40_2",
+    "glslang-16.6.0-ha162a40_0",
     "spirv-tools-2026.3-hde6636f_1",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -5040,7 +5040,7 @@ conda_deps = [
     "libglx-1.7.0-hd24410f_5",
     "libglvnd-1.7.0-hd24410f_5",
     "libegl-1.7.0-hd24410f_5",
-    "glslang-16.5.0-ha162a40_2",
+    "glslang-16.6.0-ha162a40_0",
     "spirv-tools-2026.3-hde6636f_1",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -5182,7 +5182,7 @@ conda_deps = [
     "liburing-2.14-hb700be7_0",
     "libunwind-1.8.3-h65a8314_0",
     "xorg-libxcursor-1.2.3-hb9d3cd8_0",
-    "glslang-16.5.0-h980caa0_2",
+    "glslang-16.6.0-h980caa0_0",
     "spirv-tools-2026.3-h7148c6a_1",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -5324,7 +5324,7 @@ conda_deps = [
     "liburing-2.14-hb700be7_0",
     "libunwind-1.8.3-h65a8314_0",
     "xorg-libxcursor-1.2.3-hb9d3cd8_0",
-    "glslang-16.5.0-h980caa0_2",
+    "glslang-16.6.0-h980caa0_0",
     "spirv-tools-2026.3-h7148c6a_1",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -5432,7 +5432,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "sdl3-3.4.16-h4bb5895_0",
     "libusb-1.0.29-hbc156a2_0",
-    "glslang-16.5.0-h1a33c25_2",
+    "glslang-16.6.0-h1a33c25_0",
     "spirv-tools-2026.3-hc0b298b_1",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -5526,7 +5526,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "sdl3-3.4.16-h2f783eb_0",
     "libusb-1.0.29-h2287256_0",
-    "glslang-16.5.0-he9b0248_2",
+    "glslang-16.6.0-he9b0248_0",
     "spirv-tools-2026.3-hf9f308f_1",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -5604,7 +5604,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-h4c7d964_0",
     "sdl3-3.4.16-h5112557_0",
     "libusb-1.0.29-h1839187_0",
-    "glslang-16.5.0-h8fa7867_2",
+    "glslang-16.6.0-h8fa7867_0",
     "spirv-tools-2026.3-h49e36cd_1",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -7788,19 +7788,7 @@ url = "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-unkno
 url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/555670375"
 provenance = "github-attestations"
 
-[tools.uv."platforms.linux-x64-baseline"]
-checksum = "sha256:745765a3b6e360ad76743599ae5c42e9278c7edf8bbff9fc76d05bf2623a04dd"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/555670375"
-provenance = "github-attestations"
-
 [tools.uv."platforms.linux-x64-musl"]
-checksum = "sha256:4e2bfd0c9007b1032a50e539e965fd0a6037d87ad93ae1580d220a92d4c94098"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/555670382"
-provenance = "github-attestations"
-
-[tools.uv."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:4e2bfd0c9007b1032a50e539e965fd0a6037d87ad93ae1580d220a92d4c94098"
 url = "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/555670382"
@@ -7818,19 +7806,7 @@ url = "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-apple
 url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/555670348"
 provenance = "github-attestations"
 
-[tools.uv."platforms.macos-x64-baseline"]
-checksum = "sha256:5e287ef61cb6a9b61b3a83fef124fd143e400468a7dac794230147a810e17119"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/555670348"
-provenance = "github-attestations"
-
 [tools.uv."platforms.windows-x64"]
-checksum = "sha256:a86c9dc7bad9b03f388583b7187c05fe9951c2e0d392217e8fd43d97787f6ec2"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/555670362"
-provenance = "github-attestations"
-
-[tools.uv."platforms.windows-x64-baseline"]
 checksum = "sha256:a86c9dc7bad9b03f388583b7187c05fe9951c2e0d392217e8fd43d97787f6ec2"
 url = "https://github.com/astral-sh/uv/releases/download/0.12.13/uv-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/555670362"
