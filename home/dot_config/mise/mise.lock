@@ -4562,33 +4562,33 @@ specifiers = ["v1.41.0"]
 
 [tools.aube."platforms.linux-arm64"]
 checksum = "sha256:012b0da68e9e285aee1564178b2a668f4d79eac9b40868112674ff03c2cdfe22"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517186261"
+url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517186261"
 
 [tools.aube."platforms.linux-arm64-musl"]
 checksum = "sha256:5a2e5afb02759abad7f56e083c7e2fa2b0ae841f3669cbcf5add42ca5846821f"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517161124"
+url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517161124"
 
 [tools.aube."platforms.linux-x64"]
 checksum = "sha256:965ae6a487c3e280206afb93649e721387dbbba168567f02e2fa5c797c450c2b"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517166989"
+url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517166989"
 
 [tools.aube."platforms.linux-x64-musl"]
 checksum = "sha256:7955ddee163f64e9e4348200bb777c0f83fa596410de75e1ea5dd43d4b3fe7f1"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517165326"
+url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517165326"
 
 [tools.aube."platforms.macos-arm64"]
 checksum = "sha256:635720a45125b3cc8afb2979c9a18ed484deecfc91938e9d941e278f529e87e1"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517208780"
+url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517208780"
 
 [tools.aube."platforms.windows-x64"]
 checksum = "sha256:03e4d130262219c86d729001c3fc8c502198c60578360a4e8fba29a9564b89a4"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517175467"
+url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517175467"
 
 [[tools.bat]]
 version = "0.26.1"
@@ -4699,17 +4699,7 @@ checksum = "sha256:2749b0fc61cb5ff9a998431d30e9e447a2214b4c5393708db0800245dd373
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.269/claude-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/557750940"
 
-[tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:2749b0fc61cb5ff9a998431d30e9e447a2214b4c5393708db0800245dd3733eb"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.269/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/557750940"
-
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:32fe4d52bfa69b6ded66a7b5d852745681497dbaf39f38b3e4cc3b755d3aec47"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.269/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/557750830"
-
-[tools.claude."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:32fe4d52bfa69b6ded66a7b5d852745681497dbaf39f38b3e4cc3b755d3aec47"
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.269/claude-linux-x64-musl.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/557750830"
@@ -4724,17 +4714,7 @@ checksum = "sha256:c62ad73f946dec1001312e024b3a6cd46831356cae81f2a12a817df911fc8
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.269/claude-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/557750824"
 
-[tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:c62ad73f946dec1001312e024b3a6cd46831356cae81f2a12a817df911fc844f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.269/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/557750824"
-
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:535d783da264feb5f6a4f98683b173ce88e7d5b228c64f4306f3f8981ca2f510"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.269/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/557750954"
-
-[tools.claude."platforms.windows-x64-baseline"]
 checksum = "sha256:535d783da264feb5f6a4f98683b173ce88e7d5b228c64f4306f3f8981ca2f510"
 url = "https://github.com/anthropics/claude-code/releases/download/v2.1.269/claude-win32-x64.zip"
 url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/557750954"
@@ -5689,6 +5669,35 @@ checksum = "sha256:0e07221a275fdf7e61619c53566e3a421fd646d74d8e9ca491dbbff221f22
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.83/copilot-win32-x64.zip"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/544538802"
 
+[[tools.cursor-agent]]
+version = "2026.08.04-aaa8809"
+backend = "http:cursor-agent"
+specifiers = ["2026.08.04-aaa8809"]
+
+[tools.cursor-agent.options]
+strip_components = "0"
+
+[tools.cursor-agent."platforms.linux-arm64"]
+url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/arm64/agent-cli-package.tar.gz"
+
+[tools.cursor-agent."platforms.linux-arm64-musl"]
+url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/arm64/agent-cli-package.tar.gz"
+
+[tools.cursor-agent."platforms.linux-x64"]
+url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/x64/agent-cli-package.tar.gz"
+
+[tools.cursor-agent."platforms.linux-x64-musl"]
+url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/x64/agent-cli-package.tar.gz"
+
+[tools.cursor-agent."platforms.macos-arm64"]
+url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/darwin/arm64/agent-cli-package.tar.gz"
+
+[tools.cursor-agent."platforms.macos-x64"]
+url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/darwin/x64/agent-cli-package.tar.gz"
+
+[tools.cursor-agent."platforms.windows-x64"]
+url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/windows/x64/agent-cli-package.tar.gz"
+
 [[tools.delta]]
 version = "0.19.2"
 backend = "aqua:dandavison/delta"
@@ -5781,6 +5790,11 @@ url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530481315"
 checksum = "sha256:b67e1836c468e42e411984b56e52fa7abec08c2bd22c867398e7cc134aac5e12"
 url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-aarch64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530481346"
+
+[tools.fd."platforms.macos-x64"]
+checksum = "sha256:7e31028c62c6955877735d0406807aa484c2a5e6f86235a59e26c29c301da590"
+url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530484719"
 
 [tools.fd."platforms.windows-x64"]
 checksum = "sha256:a227701b8551c35a9931d9f6da75503cf86d88e182d71fb849a70864c5d57cd7"
@@ -6082,7 +6096,6 @@ checksum = "sha256:4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb
 url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-x86_64"
 url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270163"
 provenance = "github-attestations"
-provenance_verified = true
 
 [tools."github:herdrdev/herdr"."platforms.linux-x64-musl"]
 checksum = "sha256:4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb71f"
@@ -7379,6 +7392,12 @@ url = "https://github.com/pnpm/pnpm/releases/download/v12.4.1/pnpm-darwin-arm64.
 url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/555427216"
 provenance = "github-attestations"
 
+[tools.pnpm."platforms.macos-x64"]
+checksum = "sha256:98921409db2f510ccc4eb521f9bfec51e3f1e809fd66717a062962f3b2a4cdea"
+url = "https://github.com/pnpm/pnpm/releases/download/v12.4.1/pnpm-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/555427210"
+provenance = "github-attestations"
+
 [tools.pnpm."platforms.windows-x64"]
 checksum = "sha256:356092adbd4f69670945ed24c7fca994ba4dd9fbaf23b028bb9708afd7bc676e"
 url = "https://github.com/pnpm/pnpm/releases/download/v12.4.1/pnpm-win32-x64.zip"
@@ -7446,9 +7465,9 @@ url = "https://github.com/linebender/resvg/releases/download/v0.48.1/resvg-linux
 url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/498966811"
 
 [tools.resvg."platforms.macos-arm64"]
-checksum = "sha256:0135923e443863db251a26bd78eabc6efb4b59d67b8cdc5469e3e1da26bc0ce2"
-url = "https://github.com/linebender/resvg/releases/download/v0.48.1/resvg-macos-x86_64.zip"
-url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/498967669"
+checksum = "sha256:06440eb5aa14a28cbfc7e40ae39e1ffa71adc051b89fbaa913b4f1d9b905d09f"
+url = "https://github.com/linebender/resvg/releases/download/v0.48.1/resvg-macos-aarch64.zip"
+url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/498965947"
 
 [tools.resvg."platforms.macos-x64"]
 checksum = "sha256:0135923e443863db251a26bd78eabc6efb4b59d67b8cdc5469e3e1da26bc0ce2"
