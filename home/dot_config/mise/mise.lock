@@ -4739,17 +4739,7 @@ checksum = "sha256:53b7a7a5420d188758d24341294acb0d1bca54296548ac05e38811a694ac6
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.0/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/553348584"
 
-[tools.cloudflared."platforms.linux-x64-baseline"]
-checksum = "sha256:53b7a7a5420d188758d24341294acb0d1bca54296548ac05e38811a694ac6134"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.0/cloudflared-linux-amd64"
-url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/553348584"
-
 [tools.cloudflared."platforms.linux-x64-musl"]
-checksum = "sha256:53b7a7a5420d188758d24341294acb0d1bca54296548ac05e38811a694ac6134"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.0/cloudflared-linux-amd64"
-url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/553348584"
-
-[tools.cloudflared."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:53b7a7a5420d188758d24341294acb0d1bca54296548ac05e38811a694ac6134"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.0/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/553348584"
@@ -4764,17 +4754,7 @@ checksum = "sha256:8f2ecf41776d942bcc8070a56e7bafa4c5de70a1d1781110e2eb3774cca51
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.0/cloudflared-darwin-amd64.tgz"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/553347485"
 
-[tools.cloudflared."platforms.macos-x64-baseline"]
-checksum = "sha256:8f2ecf41776d942bcc8070a56e7bafa4c5de70a1d1781110e2eb3774cca512a8"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.0/cloudflared-darwin-amd64.tgz"
-url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/553347485"
-
 [tools.cloudflared."platforms.windows-x64"]
-checksum = "sha256:547057326266f0e1c7d50d102dbd22ff283d740c055bd61e94f10e2c606f89af"
-url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.0/cloudflared-windows-amd64.exe"
-url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/553349156"
-
-[tools.cloudflared."platforms.windows-x64-baseline"]
 checksum = "sha256:547057326266f0e1c7d50d102dbd22ff283d740c055bd61e94f10e2c606f89af"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.0/cloudflared-windows-amd64.exe"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/553349156"
@@ -4799,17 +4779,7 @@ checksum = "sha256:fc6e3e3b85f2cf7d664520ee5c66a7fe4aa12bae7d46834f47e2f165fd0d6
 url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/openai/codex/releases/assets/553706441"
 
-[tools.codex."platforms.linux-x64-baseline"]
-checksum = "sha256:fc6e3e3b85f2cf7d664520ee5c66a7fe4aa12bae7d46834f47e2f165fd0d6f78"
-url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/553706441"
-
 [tools.codex."platforms.linux-x64-musl"]
-checksum = "sha256:fc6e3e3b85f2cf7d664520ee5c66a7fe4aa12bae7d46834f47e2f165fd0d6f78"
-url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/553706441"
-
-[tools.codex."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:fc6e3e3b85f2cf7d664520ee5c66a7fe4aa12bae7d46834f47e2f165fd0d6f78"
 url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/openai/codex/releases/assets/553706441"
@@ -4824,17 +4794,7 @@ checksum = "sha256:8052c6accbe0361bfbd424a10aa5f2226636ed8afb6dcbd5e6437993e57b1
 url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-package-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/openai/codex/releases/assets/553706471"
 
-[tools.codex."platforms.macos-x64-baseline"]
-checksum = "sha256:8052c6accbe0361bfbd424a10aa5f2226636ed8afb6dcbd5e6437993e57b16d8"
-url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-package-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/553706471"
-
 [tools.codex."platforms.windows-x64"]
-checksum = "sha256:94cc5b3632769504c809f6c0364b693c0dfddc5c30c8361095d2263a07ac45a4"
-url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-package-x86_64-pc-windows-msvc.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/553706571"
-
-[tools.codex."platforms.windows-x64-baseline"]
 checksum = "sha256:94cc5b3632769504c809f6c0364b693c0dfddc5c30c8361095d2263a07ac45a4"
 url = "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-package-x86_64-pc-windows-msvc.tar.gz"
 url_api = "https://api.github.com/repos/openai/codex/releases/assets/553706571"
@@ -6248,17 +6208,7 @@ checksum = "sha256:35e78089d1089dc4f492bbd7d2a03d57ed5543b4394b4fddf3be57c75b777
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.8.1/terminal-browser-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/551692995"
 
-[tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-baseline"]
-checksum = "sha256:35e78089d1089dc4f492bbd7d2a03d57ed5543b4394b4fddf3be57c75b77747e"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.8.1/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/551692995"
-
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl"]
-checksum = "sha256:35e78089d1089dc4f492bbd7d2a03d57ed5543b4394b4fddf3be57c75b77747e"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.8.1/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/551692995"
-
-[tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:35e78089d1089dc4f492bbd7d2a03d57ed5543b4394b4fddf3be57c75b77747e"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.8.1/terminal-browser-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/551692995"
@@ -6269,11 +6219,6 @@ url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.8.1/t
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/551692990"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-x64"]
-checksum = "sha256:51645cfdf0428b439434776b5c2c21e50ea1200ea618c742cb3f5d65717f79dd"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.8.1/terminal-browser-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/551692994"
-
-[tools."github:zenbu-labs/terminal-browser"."platforms.macos-x64-baseline"]
 checksum = "sha256:51645cfdf0428b439434776b5c2c21e50ea1200ea618c742cb3f5d65717f79dd"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.8.1/terminal-browser-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/551692994"
@@ -7246,17 +7191,7 @@ checksum = "sha256:44d8e7dd1484b4a66e191bd4ab25a71e8b4b3a65ab122f838e65677ef58c5
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/545957203"
 
-[tools.lazygit."platforms.linux-x64-baseline"]
-checksum = "sha256:44d8e7dd1484b4a66e191bd4ab25a71e8b4b3a65ab122f838e65677ef58c5506"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/545957203"
-
 [tools.lazygit."platforms.linux-x64-musl"]
-checksum = "sha256:44d8e7dd1484b4a66e191bd4ab25a71e8b4b3a65ab122f838e65677ef58c5506"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/545957203"
-
-[tools.lazygit."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:44d8e7dd1484b4a66e191bd4ab25a71e8b4b3a65ab122f838e65677ef58c5506"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/545957203"
@@ -7271,17 +7206,7 @@ checksum = "sha256:3848033450205f975aa6a587e76f01c9796bff3a3cc0e32060ac77b942326
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_darwin_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/545957191"
 
-[tools.lazygit."platforms.macos-x64-baseline"]
-checksum = "sha256:3848033450205f975aa6a587e76f01c9796bff3a3cc0e32060ac77b9423264e3"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_darwin_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/545957191"
-
 [tools.lazygit."platforms.windows-x64"]
-checksum = "sha256:20a597e8f29d4ed295e28fb4b869b31a41d20dc69dc15829c4744263141be2ee"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_windows_x86_64.zip"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/545957221"
-
-[tools.lazygit."platforms.windows-x64-baseline"]
 checksum = "sha256:20a597e8f29d4ed295e28fb4b869b31a41d20dc69dc15829c4744263141be2ee"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.0/lazygit_0.65.0_windows_x86_64.zip"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/545957221"
@@ -7565,17 +7490,7 @@ checksum = "sha256:e4e650fa1677c0de2f6839a6040d7b17f312d32f163c402b75af70e9e5af1
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/544473450"
 
-[tools.rtk."platforms.linux-x64-baseline"]
-checksum = "sha256:e4e650fa1677c0de2f6839a6040d7b17f312d32f163c402b75af70e9e5af1a91"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/544473450"
-
 [tools.rtk."platforms.linux-x64-musl"]
-checksum = "sha256:e4e650fa1677c0de2f6839a6040d7b17f312d32f163c402b75af70e9e5af1a91"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/544473450"
-
-[tools.rtk."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:e4e650fa1677c0de2f6839a6040d7b17f312d32f163c402b75af70e9e5af1a91"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/544473450"
@@ -7590,17 +7505,7 @@ checksum = "sha256:a95f2c23e08572dcc84ddff5fbe432e41e7f94369622eb086cca49ae0b6f6
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/544473447"
 
-[tools.rtk."platforms.macos-x64-baseline"]
-checksum = "sha256:a95f2c23e08572dcc84ddff5fbe432e41e7f94369622eb086cca49ae0b6f61e8"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/544473447"
-
 [tools.rtk."platforms.windows-x64"]
-checksum = "sha256:8c9ae56bacde865112777a9fe9791b449186d8b2a081c32c0772ef773f284f93"
-url = "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/544473452"
-
-[tools.rtk."platforms.windows-x64-baseline"]
 checksum = "sha256:8c9ae56bacde865112777a9fe9791b449186d8b2a081c32c0772ef773f284f93"
 url = "https://github.com/rtk-ai/rtk/releases/download/v0.48.0/rtk-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/544473452"
