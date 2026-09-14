@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-09-14T07:01:50.548412+00:00'
+generated_at: '2026-09-14T07:41:14.812309+00:00'
 apm_version: 0.30.0
 dependencies:
 - repo_url: anthropics/skills
@@ -5782,7 +5782,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:cb079a095e2603e3938a8cf38262eb33f7a7ccaa0997c2c9c888697295e18808
+  content_hash: sha256:88b1de103cb58bb4dc8f016c1c81d805eeab9017faa32edeccff960ffe76882e
 - kind: project-relative
   target: legacy
   value: .agents/skills/blast-radius
@@ -5792,6 +5792,15 @@ deployments:
   - .
   active_owner: .
   content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/blast-radius/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:9b22f8d012fb8bb9cd615e934c9bb4b529ed191c15fea3b1d426389130a15266
 - kind: project-relative
   target: legacy
   value: .agents/skills/code-search
@@ -5836,7 +5845,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:abba44067519986a43b2e5d1ad4130270f1658ac2c0252d0a670a1331efecc7a
+  content_hash: sha256:480c0d93b43e0574653828cf7e00bfbeef7408164b939c65bc6f1eb4616bd47e
 - kind: project-relative
   target: legacy
   value: .agents/skills/cognitive-rhythm-writing
@@ -6136,6 +6145,15 @@ deployments:
   content_hash: null
 - kind: project-relative
   target: legacy
+  value: .agents/skills/how/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5981abf18a9c77803fe131ec9263ce66711185c141ee05cf6479386f5cbd1454
+- kind: project-relative
+  target: legacy
   value: .agents/skills/html-artifacts
   runtime: null
   scope: project
@@ -6268,7 +6286,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:84d9f632b23b1a662e0cb153f7bdc98d7a05b8732effe81b3b0d17ff6caddb49
+  content_hash: sha256:480f2965e877f3bccf136d1e357c17674695eb2b78b1ce938c52156370ea385d
 - kind: project-relative
   target: legacy
   value: .agents/skills/refactoring-code/evals/evals.json
@@ -6448,7 +6466,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:f1fa33a7e4a8adbb39fdd6e9f62f4cca22eed4dc00749d3ed0b624eea06e96d9
+  content_hash: sha256:f8aa786d1bade779ff5327ac41d885a3f3310cef5b4c508cbae1594a39a58b3a
 - kind: project-relative
   target: legacy
   value: .agents/skills/typescript-best-practices
@@ -6557,6 +6575,15 @@ deployments:
   - .
   active_owner: .
   content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/why/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2d4a1f932162522ed4f4734810eea02b48c583cc4243f88e61160e8a19f00471
 local_deployed_files:
 - .agents/skills/article-review
 - .agents/skills/article-review/README.md
@@ -6573,6 +6600,7 @@ local_deployed_files:
 - .agents/skills/before-commit
 - .agents/skills/before-commit/SKILL.md
 - .agents/skills/blast-radius
+- .agents/skills/blast-radius/SKILL.md
 - .agents/skills/code-search
 - .agents/skills/code-search/SKILL.md
 - .agents/skills/code-search/references/funnel-playbook.md
@@ -6611,6 +6639,7 @@ local_deployed_files:
 - .agents/skills/hono-best-practices/references/rpc-patterns.md
 - .agents/skills/hono-best-practices/references/validation-patterns.md
 - .agents/skills/how
+- .agents/skills/how/SKILL.md
 - .agents/skills/html-artifacts
 - .agents/skills/html-artifacts/SKILL.md
 - .agents/skills/html-artifacts/assets/dads.css
@@ -6658,6 +6687,7 @@ local_deployed_files:
 - .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md
 - .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md
 - .agents/skills/why
+- .agents/skills/why/SKILL.md
 local_deployed_file_hashes:
   .agents/skills/article-review/README.md: sha256:84c4695e51c7a8b2e744eb23854ab628fe9afdf93fc46f83c5aa8a67e627957e
   .agents/skills/article-review/SKILL.md: sha256:b85efb733833b59cc76e8a3025547e13b33610f913d5d4158dfe4d2458091126
@@ -6668,10 +6698,11 @@ local_deployed_file_hashes:
   .agents/skills/ast-grep/SKILL.md: sha256:04ffc18517478f49c6532701e4d64750d39363f2d702dcd226bbd227ac5140fd
   .agents/skills/ast-grep/references/command-cookbook.md: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
-  .agents/skills/before-commit/SKILL.md: sha256:cb079a095e2603e3938a8cf38262eb33f7a7ccaa0997c2c9c888697295e18808
+  .agents/skills/before-commit/SKILL.md: sha256:88b1de103cb58bb4dc8f016c1c81d805eeab9017faa32edeccff960ffe76882e
+  .agents/skills/blast-radius/SKILL.md: sha256:9b22f8d012fb8bb9cd615e934c9bb4b529ed191c15fea3b1d426389130a15266
   .agents/skills/code-search/SKILL.md: sha256:75ac2ce2272c716fa29431cb21059ca437a5ba11102b805f9d69422a9d287160
   .agents/skills/code-search/references/funnel-playbook.md: sha256:76267ef35e5623534bfa8ad63662c932dfc27f9190ae18c21cb44dfa510c08b5
-  .agents/skills/coding-style/SKILL.md: sha256:abba44067519986a43b2e5d1ad4130270f1658ac2c0252d0a670a1331efecc7a
+  .agents/skills/coding-style/SKILL.md: sha256:480c0d93b43e0574653828cf7e00bfbeef7408164b939c65bc6f1eb4616bd47e
   .agents/skills/cognitive-rhythm-writing/SKILL.md: sha256:2e78c07f02be5a7144282847a7ab31b6309b29ffe7b65e6a9eb65601aa9e1f54
   .agents/skills/cognitive-rhythm-writing/references/diagnosis.md: sha256:03dac8aef7392cc26b17b18feefae20531c31c4680f6df4a7d0b67cf711c28e6
   .agents/skills/cognitive-rhythm-writing/references/techniques.md: sha256:decaac7367a5b4c23e703cbfc1ccf083f27b4bafae026120f993a5d9b0770b00
@@ -6698,6 +6729,7 @@ local_deployed_file_hashes:
   .agents/skills/hono-best-practices/references/rpc-basics.md: sha256:888b2a3114be02c61575e07594f18ce5d4d430a74d8d92ba204065ee1ca30007
   .agents/skills/hono-best-practices/references/rpc-patterns.md: sha256:c8a971e98a4ed46f23f9211ffe8e0f0831498238d75a6066af91f89c3cd9b69f
   .agents/skills/hono-best-practices/references/validation-patterns.md: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
+  .agents/skills/how/SKILL.md: sha256:5981abf18a9c77803fe131ec9263ce66711185c141ee05cf6479386f5cbd1454
   .agents/skills/html-artifacts/SKILL.md: sha256:4026314fd118eca2d81c5a7782a1c1b18ed94aa297e21b2b978ab0a2a1c286a6
   .agents/skills/html-artifacts/assets/dads.css: sha256:739b87d112718be4429edd459e1f128172f9049830600a3a8ea5eda52eccf15f
   .agents/skills/html-artifacts/assets/template.html: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
@@ -6709,7 +6741,7 @@ local_deployed_file_hashes:
   .agents/skills/japanese-tech-writing/references/argument.md: sha256:b2d7ef6599a09081c51fa010156bce072a6c391722379ee0121337bafb51044a
   .agents/skills/japanese-tech-writing/references/formatting.md: sha256:28aa943dabd0926a4fd561b026fa2d5016313297fb748367825d86d89fdff04f
   .agents/skills/japanese-tech-writing/references/voice-and-editing.md: sha256:cc2f4072efd37026dc5f8d149cbb55897ea0ed98a98e72916cb992047c2f2cc1
-  .agents/skills/refactoring-code/SKILL.md: sha256:84d9f632b23b1a662e0cb153f7bdc98d7a05b8732effe81b3b0d17ff6caddb49
+  .agents/skills/refactoring-code/SKILL.md: sha256:480f2965e877f3bccf136d1e357c17674695eb2b78b1ce938c52156370ea385d
   .agents/skills/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
   .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
   .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:67a0774a6df1bfe5f479a26a6895e72322a6add93525557d3543fca84be0619f
@@ -6727,7 +6759,7 @@ local_deployed_file_hashes:
   .agents/skills/rust-best-practices/references/stumbling-blocks.md: sha256:2c17d9eccc11f14a96457d28d487b446884b93302bf94ea6e16e664909431216
   .agents/skills/rust-best-practices/references/testing.md: sha256:a2566946f55cd4847e2e48246e4571a59c21a0d278227aa8344d8ccd16578d9e
   .agents/skills/rust-best-practices/references/unsafe-security.md: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
-  .agents/skills/subagent-orchestration/SKILL.md: sha256:f1fa33a7e4a8adbb39fdd6e9f62f4cca22eed4dc00749d3ed0b624eea06e96d9
+  .agents/skills/subagent-orchestration/SKILL.md: sha256:f8aa786d1bade779ff5327ac41d885a3f3310cef5b4c508cbae1594a39a58b3a
   .agents/skills/typescript-best-practices/SKILL.md: sha256:2beda58c5f7b68b7b05736e57a17caa105e2bf4cf68dedcd0534aae7dd563a01
   .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
   .agents/skills/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
@@ -6737,3 +6769,4 @@ local_deployed_file_hashes:
   .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
   .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:5d7ec45eb3f2b65ff895b8e7c880751b56a9d838c84512136292337ac793042f
   .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
+  .agents/skills/why/SKILL.md: sha256:2d4a1f932162522ed4f4734810eea02b48c583cc4243f88e61160e8a19f00471

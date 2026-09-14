@@ -33,11 +33,11 @@ TEMP_APM_DIR="${SKILLS_DIR}/.apm"
 mkdir -p "${TEMP_AGENTS_DIR}"
 mkdir -p "${TEMP_APM_DIR}/skills"
 
-# 3. Temporarily symlink self-authored skills under .apm/skills
+# 3. Temporarily copy self-authored skills under .apm/skills
 for dir in "${SKILLS_DIR}"/*/; do
     dir_name=$(basename "${dir}")
     if [[ "${dir_name}" != "apm_modules" && "${dir_name}" != "tests" && "${dir_name}" != "scratch" && "${dir_name}" != "."* ]]; then
-        ln -nfs "../../${dir_name}" "${TEMP_APM_DIR}/skills/${dir_name}"
+        cp -a "${dir}" "${TEMP_APM_DIR}/skills/${dir_name}"
     fi
 done
 
