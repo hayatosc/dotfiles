@@ -1,6 +1,6 @@
 lockfile_version: '1'
-generated_at: '2026-09-11T04:17:25.865397+00:00'
-apm_version: 0.28.0
+generated_at: '2026-09-14T07:01:50.548412+00:00'
+apm_version: 0.30.0
 dependencies:
 - repo_url: anthropics/skills
   name: frontend-design
@@ -5326,384 +5326,6 @@ deployments:
   content_hash: sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f
 - kind: project-relative
   target: agents
-  value: .agents/skills/article-review
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/article-review/README.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:84c4695e51c7a8b2e744eb23854ab628fe9afdf93fc46f83c5aa8a67e627957e
-- kind: project-relative
-  target: agents
-  value: .agents/skills/article-review/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:b85efb733833b59cc76e8a3025547e13b33610f913d5d4158dfe4d2458091126
-- kind: project-relative
-  target: agents
-  value: .agents/skills/article-review/agents/openai.yaml
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
-- kind: project-relative
-  target: agents
-  value: .agents/skills/article-review/references/report-template.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:94afd340aa69058532c4cf07571c46435c010a113931ae045538d139ca8b257b
-- kind: project-relative
-  target: agents
-  value: .agents/skills/article-review/references/review-rubric.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
-- kind: project-relative
-  target: agents
-  value: .agents/skills/askmeplan
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/askmeplan/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:c17d88581e637adda8b768f8d57799e99071fda3b1979602df117071220587ab
-- kind: project-relative
-  target: agents
-  value: .agents/skills/ast-grep
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/ast-grep/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:04ffc18517478f49c6532701e4d64750d39363f2d702dcd226bbd227ac5140fd
-- kind: project-relative
-  target: agents
-  value: .agents/skills/ast-grep/references/command-cookbook.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
-- kind: project-relative
-  target: agents
-  value: .agents/skills/ast-grep/references/rule-authoring.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
-- kind: project-relative
-  target: agents
-  value: .agents/skills/before-commit
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/before-commit/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:cb079a095e2603e3938a8cf38262eb33f7a7ccaa0997c2c9c888697295e18808
-- kind: project-relative
-  target: agents
-  value: .agents/skills/code-search
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/code-search/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:75ac2ce2272c716fa29431cb21059ca437a5ba11102b805f9d69422a9d287160
-- kind: project-relative
-  target: agents
-  value: .agents/skills/code-search/references/funnel-playbook.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:76267ef35e5623534bfa8ad63662c932dfc27f9190ae18c21cb44dfa510c08b5
-- kind: project-relative
-  target: agents
-  value: .agents/skills/coding-style
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/coding-style/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:abba44067519986a43b2e5d1ad4130270f1658ac2c0252d0a670a1331efecc7a
-- kind: project-relative
-  target: agents
-  value: .agents/skills/cognitive-rhythm-writing
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/cognitive-rhythm-writing/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:2e78c07f02be5a7144282847a7ab31b6309b29ffe7b65e6a9eb65601aa9e1f54
-- kind: project-relative
-  target: agents
-  value: .agents/skills/cognitive-rhythm-writing/references/diagnosis.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:03dac8aef7392cc26b17b18feefae20531c31c4680f6df4a7d0b67cf711c28e6
-- kind: project-relative
-  target: agents
-  value: .agents/skills/cognitive-rhythm-writing/references/techniques.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:decaac7367a5b4c23e703cbfc1ccf083f27b4bafae026120f993a5d9b0770b00
-- kind: project-relative
-  target: agents
-  value: .agents/skills/empirical-prompt-tuning
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/empirical-prompt-tuning/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
-- kind: project-relative
-  target: agents
-  value: .agents/skills/goalplan
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/goalplan/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:a8fd10be4b3091ec4dbf8d98c1ea56f32d24c30c35123805dfd0638dc0dd75e0
-- kind: project-relative
-  target: agents
-  value: .agents/skills/goalplan/references/example.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:868b4912a7b318d2b24b9fa6033b11f61d61b8042645da304bf324028e86b925
-- kind: project-relative
-  target: agents
-  value: .agents/skills/goalplan/references/plan-template.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:7c6c3d92b55fbcbe9eddb68553bcee31cf5a8e66cb8dfb0e05d8c5e624383820
-- kind: project-relative
-  target: agents
-  value: .agents/skills/goalskill
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/goalskill/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:4ba8331484c146743c1d7c3811f67d29e7fc79d067ac6f7f8b165159aba8ec9d
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:c2194acede1803ba5faf449d35d18c62bd912f47a77b032635e87d5e9a03cf61
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/dist/golang-best-practices.skill
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:81c910efff41c82348eb1b3aef17f392e3744225f134c9519df010cba17e59d7
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/references/code-style.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:46fb9140517d8bd1cc73042e4484c5a01f9ef2c867f62f425c58627b0ecdf99c
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/references/concurrency.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:a29eb23cb630e5dbbd5be1e6e55b8bad8632f823caf6a442b3f5c506c2ce8d41
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/references/error-handling.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:81a6517cb07c7968b1e2a827d63939af0b976cb2eecd726ec1d5c8bfb2e808c5
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/references/modernize.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:5bbc66567f58076b836fdf7d5a27935508139d51d983ff75d930d4e3d5294425
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/references/performance.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:4f8845b8c67eb99a8c2324f5429121271c75abd79e102fdd30dda4834918db60
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/references/project-layout.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:376101b3f098290daaabaf235e24a9cf41f4afbe5f42dc68df8cf1e2d6e44584
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/references/security.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:691e69477a8122037251b7a9b2f09b983a9e358aeab932841a49659facfa9f66
-- kind: project-relative
-  target: agents
-  value: .agents/skills/golang-best-practices/references/testing.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:b9cd30a2ea2d760b48b8ae929d7c8e75131814505fbee6fc049d364706e73b18
-- kind: project-relative
-  target: agents
   value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png
   runtime: null
   scope: project
@@ -6028,204 +5650,6 @@ deployments:
   content_hash: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
 - kind: project-relative
   target: agents
-  value: .agents/skills/hono-best-practices
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/hono-best-practices/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:75150beeb436cbf2acd21445cb1ea687e9026d0f1145a274c4c03ef099571812
-- kind: project-relative
-  target: agents
-  value: .agents/skills/hono-best-practices/references/context-and-middleware.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:db41c97dea76d293d2e6c62c38c9709112fd8f560b456b4ccd2e0feb0f473106
-- kind: project-relative
-  target: agents
-  value: .agents/skills/hono-best-practices/references/errors-and-testing.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:316481deb81ffe314996adf9a9e3ab5e3025adcc464277a184f2083ef57e988c
-- kind: project-relative
-  target: agents
-  value: .agents/skills/hono-best-practices/references/request-validation.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:00c34364abbe5961f9ab42aafdcc612721be20f745497a9c25805d55b5e8f7bb
-- kind: project-relative
-  target: agents
-  value: .agents/skills/hono-best-practices/references/routing.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:440985d57c980b3c37b629f53899751b91d0ecfaba8b05ac92bb35ff3013d421
-- kind: project-relative
-  target: agents
-  value: .agents/skills/hono-best-practices/references/rpc-basics.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:888b2a3114be02c61575e07594f18ce5d4d430a74d8d92ba204065ee1ca30007
-- kind: project-relative
-  target: agents
-  value: .agents/skills/hono-best-practices/references/rpc-patterns.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:c8a971e98a4ed46f23f9211ffe8e0f0831498238d75a6066af91f89c3cd9b69f
-- kind: project-relative
-  target: agents
-  value: .agents/skills/hono-best-practices/references/validation-patterns.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
-- kind: project-relative
-  target: agents
-  value: .agents/skills/html-artifacts
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/html-artifacts/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:4026314fd118eca2d81c5a7782a1c1b18ed94aa297e21b2b978ab0a2a1c286a6
-- kind: project-relative
-  target: agents
-  value: .agents/skills/html-artifacts/assets/dads.css
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:739b87d112718be4429edd459e1f128172f9049830600a3a8ea5eda52eccf15f
-- kind: project-relative
-  target: agents
-  value: .agents/skills/html-artifacts/assets/template.html
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
-- kind: project-relative
-  target: agents
-  value: .agents/skills/html-artifacts/references/build.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:c2a2d78bed8473c33943ea6a192db675326c8125023439251c098daf446b522b
-- kind: project-relative
-  target: agents
-  value: .agents/skills/html-artifacts/references/dads.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:6287a11248db1a5ee37e98cc84a07a92220e97ab25d66dc36418c5901de02232
-- kind: project-relative
-  target: agents
-  value: .agents/skills/html-artifacts/references/diagrams.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:7ce93a624b6efd64b8e9dfc5e814ad828e26763bccbf8fd2d1c88bfaf289e0be
-- kind: project-relative
-  target: agents
-  value: .agents/skills/html-artifacts/references/remote-preview.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:afcbdcfd0a10cf5e0c6e3ca11ca99dce2f011020bd37c2d18a664b3850fdf1a3
-- kind: project-relative
-  target: agents
-  value: .agents/skills/japanese-tech-writing
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/japanese-tech-writing/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:21998b23b56ee29ea5496354e8c9bad570b5f0c5770ea5495c41b3c1576a5bd7
-- kind: project-relative
-  target: agents
-  value: .agents/skills/japanese-tech-writing/references/argument.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:b2d7ef6599a09081c51fa010156bce072a6c391722379ee0121337bafb51044a
-- kind: project-relative
-  target: agents
-  value: .agents/skills/japanese-tech-writing/references/formatting.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:28aa943dabd0926a4fd561b026fa2d5016313297fb748367825d86d89fdff04f
-- kind: project-relative
-  target: agents
-  value: .agents/skills/japanese-tech-writing/references/voice-and-editing.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:cc2f4072efd37026dc5f8d149cbb55897ea0ed98a98e72916cb992047c2f2cc1
-- kind: project-relative
-  target: agents
   value: .agents/skills/modern-web-guidance/guides/css-layout/usage-aware-component-variations.md
   runtime: null
   scope: project
@@ -6234,7 +5658,601 @@ deployments:
   active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
   content_hash: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
 - kind: project-relative
-  target: agents
+  target: legacy
+  value: .agents/skills/article-review
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/README.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:84c4695e51c7a8b2e744eb23854ab628fe9afdf93fc46f83c5aa8a67e627957e
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b85efb733833b59cc76e8a3025547e13b33610f913d5d4158dfe4d2458091126
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/references/report-template.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:94afd340aa69058532c4cf07571c46435c010a113931ae045538d139ca8b257b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/references/review-rubric.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/askmeplan
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/askmeplan/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c17d88581e637adda8b768f8d57799e99071fda3b1979602df117071220587ab
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/ast-grep
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/ast-grep/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:04ffc18517478f49c6532701e4d64750d39363f2d702dcd226bbd227ac5140fd
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/ast-grep/references/command-cookbook.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/ast-grep/references/rule-authoring.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/before-commit
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/before-commit/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:cb079a095e2603e3938a8cf38262eb33f7a7ccaa0997c2c9c888697295e18808
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/blast-radius
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/code-search
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/code-search/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:75ac2ce2272c716fa29431cb21059ca437a5ba11102b805f9d69422a9d287160
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/code-search/references/funnel-playbook.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:76267ef35e5623534bfa8ad63662c932dfc27f9190ae18c21cb44dfa510c08b5
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/coding-style
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/coding-style/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:abba44067519986a43b2e5d1ad4130270f1658ac2c0252d0a670a1331efecc7a
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/cognitive-rhythm-writing
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/cognitive-rhythm-writing/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2e78c07f02be5a7144282847a7ab31b6309b29ffe7b65e6a9eb65601aa9e1f54
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/cognitive-rhythm-writing/references/diagnosis.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:03dac8aef7392cc26b17b18feefae20531c31c4680f6df4a7d0b67cf711c28e6
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/cognitive-rhythm-writing/references/techniques.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:decaac7367a5b4c23e703cbfc1ccf083f27b4bafae026120f993a5d9b0770b00
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/empirical-prompt-tuning
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/empirical-prompt-tuning/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalplan
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalplan/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a8fd10be4b3091ec4dbf8d98c1ea56f32d24c30c35123805dfd0638dc0dd75e0
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalplan/references/example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:868b4912a7b318d2b24b9fa6033b11f61d61b8042645da304bf324028e86b925
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalplan/references/plan-template.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:7c6c3d92b55fbcbe9eddb68553bcee31cf5a8e66cb8dfb0e05d8c5e624383820
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalskill
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalskill/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4ba8331484c146743c1d7c3811f67d29e7fc79d067ac6f7f8b165159aba8ec9d
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c2194acede1803ba5faf449d35d18c62bd912f47a77b032635e87d5e9a03cf61
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/dist/golang-best-practices.skill
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:81c910efff41c82348eb1b3aef17f392e3744225f134c9519df010cba17e59d7
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/references/code-style.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:46fb9140517d8bd1cc73042e4484c5a01f9ef2c867f62f425c58627b0ecdf99c
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/references/concurrency.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a29eb23cb630e5dbbd5be1e6e55b8bad8632f823caf6a442b3f5c506c2ce8d41
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/references/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:81a6517cb07c7968b1e2a827d63939af0b976cb2eecd726ec1d5c8bfb2e808c5
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/references/modernize.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5bbc66567f58076b836fdf7d5a27935508139d51d983ff75d930d4e3d5294425
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/references/performance.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4f8845b8c67eb99a8c2324f5429121271c75abd79e102fdd30dda4834918db60
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/references/project-layout.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:376101b3f098290daaabaf235e24a9cf41f4afbe5f42dc68df8cf1e2d6e44584
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/references/security.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:691e69477a8122037251b7a9b2f09b983a9e358aeab932841a49659facfa9f66
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/references/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b9cd30a2ea2d760b48b8ae929d7c8e75131814505fbee6fc049d364706e73b18
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:75150beeb436cbf2acd21445cb1ea687e9026d0f1145a274c4c03ef099571812
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/references/context-and-middleware.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:db41c97dea76d293d2e6c62c38c9709112fd8f560b456b4ccd2e0feb0f473106
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/references/errors-and-testing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:316481deb81ffe314996adf9a9e3ab5e3025adcc464277a184f2083ef57e988c
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/references/request-validation.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:00c34364abbe5961f9ab42aafdcc612721be20f745497a9c25805d55b5e8f7bb
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/references/routing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:440985d57c980b3c37b629f53899751b91d0ecfaba8b05ac92bb35ff3013d421
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/references/rpc-basics.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:888b2a3114be02c61575e07594f18ce5d4d430a74d8d92ba204065ee1ca30007
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/references/rpc-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c8a971e98a4ed46f23f9211ffe8e0f0831498238d75a6066af91f89c3cd9b69f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/references/validation-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/how
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4026314fd118eca2d81c5a7782a1c1b18ed94aa297e21b2b978ab0a2a1c286a6
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/assets/dads.css
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:739b87d112718be4429edd459e1f128172f9049830600a3a8ea5eda52eccf15f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/assets/template.html
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/references/build.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c2a2d78bed8473c33943ea6a192db675326c8125023439251c098daf446b522b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/references/dads.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6287a11248db1a5ee37e98cc84a07a92220e97ab25d66dc36418c5901de02232
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/references/diagrams.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:7ce93a624b6efd64b8e9dfc5e814ad828e26763bccbf8fd2d1c88bfaf289e0be
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/references/remote-preview.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:afcbdcfd0a10cf5e0c6e3ca11ca99dce2f011020bd37c2d18a664b3850fdf1a3
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/japanese-tech-writing
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/japanese-tech-writing/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:21998b23b56ee29ea5496354e8c9bad570b5f0c5770ea5495c41b3c1576a5bd7
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/japanese-tech-writing/references/argument.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b2d7ef6599a09081c51fa010156bce072a6c391722379ee0121337bafb51044a
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/japanese-tech-writing/references/formatting.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:28aa943dabd0926a4fd561b026fa2d5016313297fb748367825d86d89fdff04f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/japanese-tech-writing/references/voice-and-editing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:cc2f4072efd37026dc5f8d149cbb55897ea0ed98a98e72916cb992047c2f2cc1
+- kind: project-relative
+  target: legacy
   value: .agents/skills/refactoring-code
   runtime: null
   scope: project
@@ -6243,7 +6261,7 @@ deployments:
   active_owner: .
   content_hash: null
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/refactoring-code/SKILL.md
   runtime: null
   scope: project
@@ -6252,7 +6270,7 @@ deployments:
   active_owner: .
   content_hash: sha256:84d9f632b23b1a662e0cb153f7bdc98d7a05b8732effe81b3b0d17ff6caddb49
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/refactoring-code/evals/evals.json
   runtime: null
   scope: project
@@ -6261,7 +6279,7 @@ deployments:
   active_owner: .
   content_hash: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/refactoring-code/references/examples.md
   runtime: null
   scope: project
@@ -6270,7 +6288,7 @@ deployments:
   active_owner: .
   content_hash: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/refactoring-code/references/legacy-safety-net.md
   runtime: null
   scope: project
@@ -6279,7 +6297,7 @@ deployments:
   active_owner: .
   content_hash: sha256:67a0774a6df1bfe5f479a26a6895e72322a6add93525557d3543fca84be0619f
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/refactoring-code/references/refactor-playbook.md
   runtime: null
   scope: project
@@ -6288,7 +6306,7 @@ deployments:
   active_owner: .
   content_hash: sha256:534ae82fc5e1d6ca02624d1068daf61a09b64754119cd9d4474adc417b73c30c
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices
   runtime: null
   scope: project
@@ -6297,7 +6315,7 @@ deployments:
   active_owner: .
   content_hash: null
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/SKILL.md
   runtime: null
   scope: project
@@ -6306,7 +6324,7 @@ deployments:
   active_owner: .
   content_hash: sha256:8b6e2b3b431ce1406ffc0017b2ec72238a35f62a788076d2cdb6fcd777817581
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/evals/evals.json
   runtime: null
   scope: project
@@ -6315,7 +6333,7 @@ deployments:
   active_owner: .
   content_hash: sha256:dcbbe8c255b6b5f37b7308a93a1a29121428a9d2d3fa5609511885e782187bdf
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/api-design.md
   runtime: null
   scope: project
@@ -6324,7 +6342,7 @@ deployments:
   active_owner: .
   content_hash: sha256:9630d25c0836a8edf956e924d335b8e32bac68e219c659d80a07f1b8a2ad2b9b
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/cargo-tooling.md
   runtime: null
   scope: project
@@ -6333,7 +6351,7 @@ deployments:
   active_owner: .
   content_hash: sha256:3a7bb6238c90d4d1313fb73b2d2a3a5ab1ca40456ba44497785f3420d5659c4f
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/community-practice.md
   runtime: null
   scope: project
@@ -6342,7 +6360,7 @@ deployments:
   active_owner: .
   content_hash: sha256:5fafb6f1013651d98b09b288ecbc5221fbf89110b6e469309028ed234f1581b2
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/concurrency-async.md
   runtime: null
   scope: project
@@ -6351,7 +6369,7 @@ deployments:
   active_owner: .
   content_hash: sha256:6e4fc71a655cb2ff30fc6ea79c3573a71513101b05885b5e9967bfccc5f01254
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/core-idioms.md
   runtime: null
   scope: project
@@ -6360,7 +6378,7 @@ deployments:
   active_owner: .
   content_hash: sha256:8aa88fc7122d2774e34cbdf247cae967d68c5756d805878f1b9bcaf7ddbac6aa
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/documentation.md
   runtime: null
   scope: project
@@ -6369,7 +6387,7 @@ deployments:
   active_owner: .
   content_hash: sha256:b7b0dcba4b5de220e1e9b558d0d80dc05ca0e042dadb6695968f360954e50efd
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/error-handling.md
   runtime: null
   scope: project
@@ -6378,7 +6396,7 @@ deployments:
   active_owner: .
   content_hash: sha256:83e59ee0b09f0db07c9f1de93bebbb71fc790476b3b2a8dcafdcead9ab6df4f1
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/performance.md
   runtime: null
   scope: project
@@ -6387,7 +6405,7 @@ deployments:
   active_owner: .
   content_hash: sha256:65f04e8ad2239c056eef672e0a373e2d535476d716b34412e2a11db60a184666
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/stumbling-blocks.md
   runtime: null
   scope: project
@@ -6396,7 +6414,7 @@ deployments:
   active_owner: .
   content_hash: sha256:2c17d9eccc11f14a96457d28d487b446884b93302bf94ea6e16e664909431216
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/testing.md
   runtime: null
   scope: project
@@ -6405,7 +6423,7 @@ deployments:
   active_owner: .
   content_hash: sha256:a2566946f55cd4847e2e48246e4571a59c21a0d278227aa8344d8ccd16578d9e
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/rust-best-practices/references/unsafe-security.md
   runtime: null
   scope: project
@@ -6414,7 +6432,7 @@ deployments:
   active_owner: .
   content_hash: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/subagent-orchestration
   runtime: null
   scope: project
@@ -6423,7 +6441,7 @@ deployments:
   active_owner: .
   content_hash: null
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/subagent-orchestration/SKILL.md
   runtime: null
   scope: project
@@ -6432,7 +6450,7 @@ deployments:
   active_owner: .
   content_hash: sha256:f1fa33a7e4a8adbb39fdd6e9f62f4cca22eed4dc00749d3ed0b624eea06e96d9
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-best-practices
   runtime: null
   scope: project
@@ -6441,7 +6459,7 @@ deployments:
   active_owner: .
   content_hash: null
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-best-practices/SKILL.md
   runtime: null
   scope: project
@@ -6450,7 +6468,7 @@ deployments:
   active_owner: .
   content_hash: sha256:2beda58c5f7b68b7b05736e57a17caa105e2bf4cf68dedcd0534aae7dd563a01
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-best-practices/references/config-baseline.md
   runtime: null
   scope: project
@@ -6459,7 +6477,7 @@ deployments:
   active_owner: .
   content_hash: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-best-practices/references/type-safety-patterns.md
   runtime: null
   scope: project
@@ -6468,7 +6486,7 @@ deployments:
   active_owner: .
   content_hash: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-recommend-tools
   runtime: null
   scope: project
@@ -6477,7 +6495,7 @@ deployments:
   active_owner: .
   content_hash: null
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-recommend-tools/SKILL.md
   runtime: null
   scope: project
@@ -6486,7 +6504,7 @@ deployments:
   active_owner: .
   content_hash: sha256:7fcac51f036f035e908615cd9ea896febec00914296934aac906d03245dcc13d
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-recommend-tools/references/default-stacks.md
   runtime: null
   scope: project
@@ -6495,7 +6513,7 @@ deployments:
   active_owner: .
   content_hash: sha256:e3ecfbada8a87ef32a7ca1106a21609908cc196cd57a8cba6544595500457f25
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md
   runtime: null
   scope: project
@@ -6504,7 +6522,7 @@ deployments:
   active_owner: .
   content_hash: sha256:b93b8fbf761616f59f5e9cb1f569bee0ab9e0bf83d695603e12284536757f24b
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md
   runtime: null
   scope: project
@@ -6513,7 +6531,7 @@ deployments:
   active_owner: .
   content_hash: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md
   runtime: null
   scope: project
@@ -6522,7 +6540,7 @@ deployments:
   active_owner: .
   content_hash: sha256:5d7ec45eb3f2b65ff895b8e7c880751b56a9d838c84512136292337ac793042f
 - kind: project-relative
-  target: agents
+  target: legacy
   value: .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md
   runtime: null
   scope: project
@@ -6530,6 +6548,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/why
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
 local_deployed_files:
 - .agents/skills/article-review
 - .agents/skills/article-review/README.md
@@ -6545,6 +6572,7 @@ local_deployed_files:
 - .agents/skills/ast-grep/references/rule-authoring.md
 - .agents/skills/before-commit
 - .agents/skills/before-commit/SKILL.md
+- .agents/skills/blast-radius
 - .agents/skills/code-search
 - .agents/skills/code-search/SKILL.md
 - .agents/skills/code-search/references/funnel-playbook.md
@@ -6582,6 +6610,7 @@ local_deployed_files:
 - .agents/skills/hono-best-practices/references/rpc-basics.md
 - .agents/skills/hono-best-practices/references/rpc-patterns.md
 - .agents/skills/hono-best-practices/references/validation-patterns.md
+- .agents/skills/how
 - .agents/skills/html-artifacts
 - .agents/skills/html-artifacts/SKILL.md
 - .agents/skills/html-artifacts/assets/dads.css
@@ -6628,6 +6657,7 @@ local_deployed_files:
 - .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md
 - .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md
 - .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md
+- .agents/skills/why
 local_deployed_file_hashes:
   .agents/skills/article-review/README.md: sha256:84c4695e51c7a8b2e744eb23854ab628fe9afdf93fc46f83c5aa8a67e627957e
   .agents/skills/article-review/SKILL.md: sha256:b85efb733833b59cc76e8a3025547e13b33610f913d5d4158dfe4d2458091126

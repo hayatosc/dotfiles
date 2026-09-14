@@ -9,6 +9,8 @@ Establish the requested structural outcome and the behavior that must remain sta
 
 Make coherent changes that simplify ownership, control flow, or duplication. Prefer existing helpers, standard libraries, and native platform features when they fit. Preserve public compatibility unless a breaking change is part of the request; fewer lines are not a completion criterion by themselves.
 
+For iterative optimizations (performance, memory, bundle size), use a hypothesis loop: freeze the measurement baseline first, test one hypothesis per attempt, keep only measured wins, and immediately revert changes that do not clear the noise. For sustained autonomous runs, record hypotheses, deltas, and verdicts in a decision log (`decision.tsv`).
+
 ## References
 
 - Structural moves and duplication decisions: [refactor-playbook.md](references/refactor-playbook.md).

@@ -19,7 +19,9 @@ Prefer the smallest clear implementation that satisfies the requested behavior a
 - Reuse existing code, standard libraries, platform features, and installed dependencies when they fit. Add an abstraction when it represents a real shared contract or simplifies the current task.
 - Name units and meaningful boundaries explicitly (`delay_ms`, `raw_html`, inclusive versus exclusive bounds). Follow the language's naming conventions.
 - Keep control flow and resource ownership easy to follow. Use early returns, explanatory variables, or extracted functions where they improve clarity; do not optimize for line count alone.
-- Comments explain intent, non-obvious constraints, or tradeoffs. Document a deliberate limitation and its upgrade trigger when that information will help a future maintainer.
+- Model data shapes constructively so illegal states cannot be represented (e.g., non-empty variants, branded primitives, explicit bounds) instead of scattering defensive guards across callers.
+- Concentrate validation and parsing at system boundaries (inputs, configs, external APIs); trust internal types and keep domain logic pure.
+- Comments explain non-obvious intent, constraints, or tradeoffs. Encode durable rules in types, assertions, lints, or tests instead of warning comments (e.g., "do not remove"); do not use comments to substitute for structural enforcement.
 - Trace relevant callers before changing shared behavior. Preserve existing public compatibility requirements; remove obsolete code when those requirements permit it.
 - Keep validation at trust boundaries, corruption-preventing error handling, security controls, and basic accessibility intact.
 

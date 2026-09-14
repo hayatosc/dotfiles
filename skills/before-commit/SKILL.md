@@ -9,6 +9,8 @@ Review the intended diff and preserve unrelated work. Check for accidental secre
 
 Use the repository's relevant formatting, lint, typecheck, and test commands. Reuse passing results for unchanged code. Fix failures introduced by this change and rerun affected checks; report unrelated failures with evidence instead of expanding the task.
 
+For bug fixes, sequence verifiable units: land the failing test or reproduction first, then the fix on top, so git history proves both the defect and its remedy. Tests must assert observable behavior against literal expected values; do not assert mock interactions that would pass if the system returned undefined.
+
 When local CI replay is useful, inspect the workflow first for external writes, deployment steps, and required services. Use an existing runner or the workflow's underlying commands; do not install a runner or replay every workflow by default. Use `nlx` rather than direct package-manager commands if a temporary runner is needed and authorized.
 
 Finish the requested commit or PR once the applicable checks pass, using Conventional Commits. Report anything that could not be verified; a request for local edits alone does not authorize a commit, push, or PR.

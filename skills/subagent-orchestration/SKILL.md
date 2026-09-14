@@ -32,7 +32,7 @@ Select skills from the assigned files: TypeScript → `typescript-best-practices
 
 ## Coordination and Completion
 
-Split by independent ownership, not arbitrary file counts. Reuse an existing agent for follow-up work that benefits from its context. Continue your independent work while agents run; use completion notifications or the harness's wait tool when their result is the next dependency.
+Split by independent ownership, not arbitrary file counts. For contested or critical architectural decisions, use a parallel bakeoff: spawn 2-3 independent subagents with distinct approaches in isolated paths, evaluate their trade-offs against explicit criteria, and graft the strongest ideas from non-winning attempts into the chosen base. Reuse an existing agent for follow-up work that benefits from its context. Continue your independent work while agents run; use completion notifications or the harness's wait tool when their result is the next dependency.
 
 Integrate reports against the requested outcome and existing check evidence. Resolve conflicting edits or unsupported claims before relying on them, without duplicating completed searches and checks. Send a focused follow-up when needed, or finish locally if a delegate fails.
 
