@@ -4395,17 +4395,7 @@ checksum = "sha256:2cfa5c9a4a1edd96db6d4058f34970be60d3bcacda866e2bdce6aefb2451b
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_linux_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553052"
 
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-baseline"]
-checksum = "sha256:2cfa5c9a4a1edd96db6d4058f34970be60d3bcacda866e2bdce6aefb2451b48e"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553052"
-
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:2cfa5c9a4a1edd96db6d4058f34970be60d3bcacda866e2bdce6aefb2451b48e"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553052"
-
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:2cfa5c9a4a1edd96db6d4058f34970be60d3bcacda866e2bdce6aefb2451b48e"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_linux_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553052"
@@ -4420,17 +4410,7 @@ checksum = "sha256:2b44ed726a73a0ef0a39956c80e07b5898c0b4fe21f8ecd383be74f1c0b65
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_mac_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553050"
 
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64-baseline"]
-checksum = "sha256:2b44ed726a73a0ef0a39956c80e07b5898c0b4fe21f8ecd383be74f1c0b65e5d"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553050"
-
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:50ce727a034980d341ee03773d2b81a78fb3c7897ac2ff138f55db88cead4c03"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553054"
-
-[tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64-baseline"]
 checksum = "sha256:50ce727a034980d341ee03773d2b81a78fb3c7897ac2ff138f55db88cead4c03"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_windows_x64.zip"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553054"
@@ -6221,17 +6201,7 @@ checksum = "sha256:5f73815950f30de4165b7b767103ca45c4950e84a1da601eda5294e9ff94f
 url = "https://github.com/openclaw/gogcli/releases/download/v0.40.0/gogcli_0.40.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/558220025"
 
-[tools."github:steipete/gogcli"."platforms.linux-x64-baseline"]
-checksum = "sha256:5f73815950f30de4165b7b767103ca45c4950e84a1da601eda5294e9ff94f767"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.40.0/gogcli_0.40.0_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/558220025"
-
 [tools."github:steipete/gogcli"."platforms.linux-x64-musl"]
-checksum = "sha256:5f73815950f30de4165b7b767103ca45c4950e84a1da601eda5294e9ff94f767"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.40.0/gogcli_0.40.0_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/558220025"
-
-[tools."github:steipete/gogcli"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:5f73815950f30de4165b7b767103ca45c4950e84a1da601eda5294e9ff94f767"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.40.0/gogcli_0.40.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/558220025"
@@ -6246,17 +6216,7 @@ checksum = "sha256:b953d88a84cf9a5d81f5f31bd76b76b930483a1b81c9574239065f7b5519a
 url = "https://github.com/openclaw/gogcli/releases/download/v0.40.0/gogcli_0.40.0_darwin_amd64.tar.gz"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/558219998"
 
-[tools."github:steipete/gogcli"."platforms.macos-x64-baseline"]
-checksum = "sha256:b953d88a84cf9a5d81f5f31bd76b76b930483a1b81c9574239065f7b5519a320"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.40.0/gogcli_0.40.0_darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/558219998"
-
 [tools."github:steipete/gogcli"."platforms.windows-x64"]
-checksum = "sha256:c8f8c0acca1ef09a2497b79e477749175aadfe21ea5e25fc170f577b497ae141"
-url = "https://github.com/openclaw/gogcli/releases/download/v0.40.0/gogcli_0.40.0_windows_amd64.zip"
-url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/558220078"
-
-[tools."github:steipete/gogcli"."platforms.windows-x64-baseline"]
 checksum = "sha256:c8f8c0acca1ef09a2497b79e477749175aadfe21ea5e25fc170f577b497ae141"
 url = "https://github.com/openclaw/gogcli/releases/download/v0.40.0/gogcli_0.40.0_windows_amd64.zip"
 url_api = "https://api.github.com/repos/openclaw/gogcli/releases/assets/558220078"
