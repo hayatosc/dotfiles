@@ -222,9 +222,9 @@ checksum = "sha256:37fd05e02780cf14c11763004eef9682a8b6f371b409511bb247108d787c3
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdeflate-1.25-hfa851ae_1.conda"
 checksum = "sha256:4cb3da1d4ce7540604219d2a016253777da66c1a710c41557bc708aae7f54a75"
 
-[conda-packages.linux-arm64."libdovi-3.4.0-h4cb7313_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-h4cb7313_0.conda"
-checksum = "sha256:de32021ce3b0cb641be6b422918a0b07009e4afbda642dfcd261311fd75cf46b"
+[conda-packages.linux-arm64."libdovi-3.4.0-h286a8f0_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-h286a8f0_1.conda"
+checksum = "sha256:c251cd0dd3bb01f73d506b77375eae7a02400ee695aac989045a5b30b2ca8317"
 
 [conda-packages.linux-arm64."libdrm-2.4.129-h5bc82ec_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdrm-2.4.129-h5bc82ec_0.conda"
@@ -914,9 +914,9 @@ checksum = "sha256:37fd05e02780cf14c11763004eef9682a8b6f371b409511bb247108d787c3
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdeflate-1.25-hfa851ae_1.conda"
 checksum = "sha256:4cb3da1d4ce7540604219d2a016253777da66c1a710c41557bc708aae7f54a75"
 
-[conda-packages.linux-arm64-musl."libdovi-3.4.0-h4cb7313_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-h4cb7313_0.conda"
-checksum = "sha256:de32021ce3b0cb641be6b422918a0b07009e4afbda642dfcd261311fd75cf46b"
+[conda-packages.linux-arm64-musl."libdovi-3.4.0-h286a8f0_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-h286a8f0_1.conda"
+checksum = "sha256:c251cd0dd3bb01f73d506b77375eae7a02400ee695aac989045a5b30b2ca8317"
 
 [conda-packages.linux-arm64-musl."libdrm-2.4.129-h5bc82ec_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdrm-2.4.129-h5bc82ec_0.conda"
@@ -1618,9 +1618,9 @@ checksum = "sha256:61ea18b0fe5cc57f6a497123a561f3c8414349be6e7ceb3ce5ff060f54d6b
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdeflate-1.25-hd45a770_1.conda"
 checksum = "sha256:82e134c8a08b1eed9a2ed8ab578b89aa1730dcde3dea8dd87645ed0637878e54"
 
-[conda-packages.linux-x64."libdovi-3.4.0-h39d0f39_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-h39d0f39_0.conda"
-checksum = "sha256:75b4ffeba62e7243350b6967d0701a677693f85c24ee3a8ddb7fe618565a59a6"
+[conda-packages.linux-x64."libdovi-3.4.0-h39d0f39_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-h39d0f39_1.conda"
+checksum = "sha256:2b662358b456aab29e0c4b0e2b476d559fbc4639665cd32ebea66cc3f796fbd2"
 
 [conda-packages.linux-x64."libdrm-2.4.129-h7cc23a3_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdrm-2.4.129-h7cc23a3_0.conda"
@@ -2350,9 +2350,9 @@ checksum = "sha256:61ea18b0fe5cc57f6a497123a561f3c8414349be6e7ceb3ce5ff060f54d6b
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdeflate-1.25-hd45a770_1.conda"
 checksum = "sha256:82e134c8a08b1eed9a2ed8ab578b89aa1730dcde3dea8dd87645ed0637878e54"
 
-[conda-packages.linux-x64-musl."libdovi-3.4.0-h39d0f39_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-h39d0f39_0.conda"
-checksum = "sha256:75b4ffeba62e7243350b6967d0701a677693f85c24ee3a8ddb7fe618565a59a6"
+[conda-packages.linux-x64-musl."libdovi-3.4.0-h39d0f39_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-h39d0f39_1.conda"
+checksum = "sha256:2b662358b456aab29e0c4b0e2b476d559fbc4639665cd32ebea66cc3f796fbd2"
 
 [conda-packages.linux-x64-musl."libdrm-2.4.129-h7cc23a3_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdrm-2.4.129-h7cc23a3_0.conda"
@@ -3042,9 +3042,9 @@ checksum = "sha256:38bdf17d4da3e913ace05dc3890363dc85cb39fcfd3aea746e9ad3270763c
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdeflate-1.25-he7e0567_1.conda"
 checksum = "sha256:d896f4aa4ce4c590c2838678cb1917356fdb461d2a189991c0280c818c362172"
 
-[conda-packages.macos-arm64."libdovi-3.4.0-h9d00c72_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdovi-3.4.0-h9d00c72_0.conda"
-checksum = "sha256:053aec3c8bb013f815722c6fc4e19063375a9c0555779d9f5f6935ab57c391fd"
+[conda-packages.macos-arm64."libdovi-3.4.0-hc336dc4_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdovi-3.4.0-hc336dc4_1.conda"
+checksum = "sha256:6439dd036af971cc5665b27ed4e8266edd8b948d1839b5d28c776f41b05b1707"
 
 [conda-packages.macos-arm64."libexpat-2.8.1-hf6b4638_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libexpat-2.8.1-hf6b4638_1.conda"
@@ -3554,9 +3554,9 @@ checksum = "sha256:a68aa41c2a9ce9a95feeb0148445c7060b49af919693b199fd380935af87f
 url = "https://conda.anaconda.org/conda-forge/osx-64/libdeflate-1.25-h7ad9622_1.conda"
 checksum = "sha256:210ee1d6a5aa201cf6d02b10edd02738cc35a4e8fb0866e4fb425010d6dd2c49"
 
-[conda-packages.macos-x64."libdovi-3.4.0-hee1dffb_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-hee1dffb_0.conda"
-checksum = "sha256:575655cd6c0a3eec86e7d84670ad79cfdc3e890891d694181c2445693442e0ad"
+[conda-packages.macos-x64."libdovi-3.4.0-hee1dffb_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-hee1dffb_1.conda"
+checksum = "sha256:1a9c0abc305e543cc21d02711a8e27d3ba2506ce80528e973a9a00f7338d3f87"
 
 [conda-packages.macos-x64."libexpat-2.8.1-hcc62823_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.8.1-hcc62823_1.conda"
@@ -4556,39 +4556,39 @@ url = "https://github.com/ast-grep/ast-grep/releases/download/0.45.3/app-x86_64-
 url_api = "https://api.github.com/repos/ast-grep/ast-grep/releases/assets/537334241"
 
 [[tools.aube]]
-version = "v1.41.0"
-backend = "aqua:jdx/aube"
-specifiers = ["v1.41.0"]
+version = "2.2.17"
+backend = "packslip:github.com/aubepkg/aube"
+specifiers = ["v2.2.17"]
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:012b0da68e9e285aee1564178b2a668f4d79eac9b40868112674ff03c2cdfe22"
-url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517186261"
+checksum = "sha256:933d5e63aafef67baa7ec9b0589674e399b3f0e567837f88404b89f08be0bbc1"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.17/aube-v2.2.17-aarch64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [tools.aube."platforms.linux-arm64-musl"]
-checksum = "sha256:5a2e5afb02759abad7f56e083c7e2fa2b0ae841f3669cbcf5add42ca5846821f"
-url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517161124"
+checksum = "sha256:2c564811b7a0ef1c3011282696a9cbaa422cdc65951ab8cc98ac65b298112921"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.17/aube-v2.2.17-aarch64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [tools.aube."platforms.linux-x64"]
-checksum = "sha256:965ae6a487c3e280206afb93649e721387dbbba168567f02e2fa5c797c450c2b"
-url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517166989"
+checksum = "sha256:ee4f05a2989e6cbe55b306097cbb53da9f908789acb027e62c430de2f7e22c2f"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.17/aube-v2.2.17-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [tools.aube."platforms.linux-x64-musl"]
-checksum = "sha256:7955ddee163f64e9e4348200bb777c0f83fa596410de75e1ea5dd43d4b3fe7f1"
-url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517165326"
+checksum = "sha256:6ec5a6bb93ded45db61445bd4b730b63be002cde442af8eecfc02a84a27dd221"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.17/aube-v2.2.17-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:635720a45125b3cc8afb2979c9a18ed484deecfc91938e9d941e278f529e87e1"
-url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517208780"
+checksum = "sha256:83b2906a998ea62eb4890abb8d45010f0ced1674a2bb6b436c2e352d47bb338f"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.17/aube-v2.2.17-aarch64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [tools.aube."platforms.windows-x64"]
-checksum = "sha256:03e4d130262219c86d729001c3fc8c502198c60578360a4e8fba29a9564b89a4"
-url = "https://github.com/aubepkg/aube/releases/download/v1.41.0/aube-v1.41.0-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/517175467"
+checksum = "sha256:03c93095d89f41496436083f45d770b3169dd1f7db91d86577a9e3d004605c0f"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.17/aube-v2.2.17-x86_64-pc-windows-msvc.zip"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [[tools.bat]]
 version = "0.26.1"
@@ -4885,7 +4885,7 @@ conda_deps = [
     "libprotobuf-6.33.5-h084db60_2",
     "snappy-1.2.2-he774c54_1",
     "lcms2-2.19.1-h137c43b_3",
-    "libdovi-3.4.0-h4cb7313_0",
+    "libdovi-3.4.0-h286a8f0_1",
     "gdk-pixbuf-2.44.8-hb26ce08_2",
     "pango-1.58.2-h03cb6a0_1",
     "libogg-1.3.5-h86ecc28_1",
@@ -5017,7 +5017,7 @@ conda_deps = [
     "libprotobuf-6.33.5-h084db60_2",
     "snappy-1.2.2-he774c54_1",
     "lcms2-2.19.1-h137c43b_3",
-    "libdovi-3.4.0-h4cb7313_0",
+    "libdovi-3.4.0-h286a8f0_1",
     "gdk-pixbuf-2.44.8-hb26ce08_2",
     "pango-1.58.2-h03cb6a0_1",
     "libogg-1.3.5-h86ecc28_1",
@@ -5154,7 +5154,7 @@ conda_deps = [
     "level-zero-1.33.1-h7148c6a_0",
     "libprotobuf-6.33.5-h538a264_2",
     "snappy-1.2.2-h03e3b7b_1",
-    "libdovi-3.4.0-h39d0f39_0",
+    "libdovi-3.4.0-h39d0f39_1",
     "lcms2-2.19.1-h9073bf1_3",
     "gdk-pixbuf-2.44.8-h68053f1_2",
     "pango-1.58.2-h7bb47b9_1",
@@ -5296,7 +5296,7 @@ conda_deps = [
     "level-zero-1.33.1-h7148c6a_0",
     "libprotobuf-6.33.5-h538a264_2",
     "snappy-1.2.2-h03e3b7b_1",
-    "libdovi-3.4.0-h39d0f39_0",
+    "libdovi-3.4.0-h39d0f39_1",
     "lcms2-2.19.1-h9073bf1_3",
     "gdk-pixbuf-2.44.8-h68053f1_2",
     "pango-1.58.2-h7bb47b9_1",
@@ -5424,7 +5424,7 @@ conda_deps = [
     "libhwloc-2.13.0-default_ha97f43a_1000",
     "libprotobuf-6.33.5-hb82ec63_2",
     "snappy-1.2.2-hada39a4_1",
-    "libdovi-3.4.0-h9d00c72_0",
+    "libdovi-3.4.0-hc336dc4_1",
     "lcms2-2.19.1-hce41798_3",
     "gdk-pixbuf-2.44.8-h5867e2c_2",
     "pango-1.58.2-hf9b25ef_1",
@@ -5518,7 +5518,7 @@ conda_deps = [
     "libhwloc-2.13.0-default_h4e3125e_1000",
     "libprotobuf-6.33.5-hb0ea838_2",
     "snappy-1.2.2-h01f5ddf_1",
-    "libdovi-3.4.0-hee1dffb_0",
+    "libdovi-3.4.0-hee1dffb_1",
     "lcms2-2.19.1-h4e6bd4b_3",
     "gdk-pixbuf-2.44.8-ha3e70bd_2",
     "pango-1.58.2-hc5a6962_1",
@@ -7321,7 +7321,7 @@ specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
 version = "1.24.0"
-aube = { path = ".mise/locks/npm-yaml-language-server/1.24.0", digest = "sha256:4272a495d1d42e17bcf2342f7e92413ebaabfbad9fb5f9cdd2575da74dc3ed66" }
+aube = { path = ".mise/locks/npm-yaml-language-server/1.24.0", digest = "sha256:6068b219a8490085ddb7b7238e8234db8c5d720ce267ffd6d2b39c2fbfbb4d4e" }
 backend = "npm:yaml-language-server"
 specifiers = ["1.24.0"]
 
