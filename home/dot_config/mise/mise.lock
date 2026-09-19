@@ -222,9 +222,9 @@ checksum = "sha256:37fd05e02780cf14c11763004eef9682a8b6f371b409511bb247108d787c3
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdeflate-1.25-hfa851ae_1.conda"
 checksum = "sha256:4cb3da1d4ce7540604219d2a016253777da66c1a710c41557bc708aae7f54a75"
 
-[conda-packages.linux-arm64."libdovi-3.4.0-h4cb7313_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-h4cb7313_0.conda"
-checksum = "sha256:de32021ce3b0cb641be6b422918a0b07009e4afbda642dfcd261311fd75cf46b"
+[conda-packages.linux-arm64."libdovi-3.4.0-h286a8f0_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-h286a8f0_1.conda"
+checksum = "sha256:c251cd0dd3bb01f73d506b77375eae7a02400ee695aac989045a5b30b2ca8317"
 
 [conda-packages.linux-arm64."libdrm-2.4.129-h5bc82ec_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdrm-2.4.129-h5bc82ec_0.conda"
@@ -914,9 +914,9 @@ checksum = "sha256:37fd05e02780cf14c11763004eef9682a8b6f371b409511bb247108d787c3
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdeflate-1.25-hfa851ae_1.conda"
 checksum = "sha256:4cb3da1d4ce7540604219d2a016253777da66c1a710c41557bc708aae7f54a75"
 
-[conda-packages.linux-arm64-musl."libdovi-3.4.0-h4cb7313_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-h4cb7313_0.conda"
-checksum = "sha256:de32021ce3b0cb641be6b422918a0b07009e4afbda642dfcd261311fd75cf46b"
+[conda-packages.linux-arm64-musl."libdovi-3.4.0-h286a8f0_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdovi-3.4.0-h286a8f0_1.conda"
+checksum = "sha256:c251cd0dd3bb01f73d506b77375eae7a02400ee695aac989045a5b30b2ca8317"
 
 [conda-packages.linux-arm64-musl."libdrm-2.4.129-h5bc82ec_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libdrm-2.4.129-h5bc82ec_0.conda"
@@ -1618,9 +1618,9 @@ checksum = "sha256:61ea18b0fe5cc57f6a497123a561f3c8414349be6e7ceb3ce5ff060f54d6b
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdeflate-1.25-hd45a770_1.conda"
 checksum = "sha256:82e134c8a08b1eed9a2ed8ab578b89aa1730dcde3dea8dd87645ed0637878e54"
 
-[conda-packages.linux-x64."libdovi-3.4.0-h39d0f39_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-h39d0f39_0.conda"
-checksum = "sha256:75b4ffeba62e7243350b6967d0701a677693f85c24ee3a8ddb7fe618565a59a6"
+[conda-packages.linux-x64."libdovi-3.4.0-h39d0f39_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-h39d0f39_1.conda"
+checksum = "sha256:2b662358b456aab29e0c4b0e2b476d559fbc4639665cd32ebea66cc3f796fbd2"
 
 [conda-packages.linux-x64."libdrm-2.4.129-h7cc23a3_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdrm-2.4.129-h7cc23a3_0.conda"
@@ -2350,9 +2350,9 @@ checksum = "sha256:61ea18b0fe5cc57f6a497123a561f3c8414349be6e7ceb3ce5ff060f54d6b
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdeflate-1.25-hd45a770_1.conda"
 checksum = "sha256:82e134c8a08b1eed9a2ed8ab578b89aa1730dcde3dea8dd87645ed0637878e54"
 
-[conda-packages.linux-x64-musl."libdovi-3.4.0-h39d0f39_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-h39d0f39_0.conda"
-checksum = "sha256:75b4ffeba62e7243350b6967d0701a677693f85c24ee3a8ddb7fe618565a59a6"
+[conda-packages.linux-x64-musl."libdovi-3.4.0-h39d0f39_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libdovi-3.4.0-h39d0f39_1.conda"
+checksum = "sha256:2b662358b456aab29e0c4b0e2b476d559fbc4639665cd32ebea66cc3f796fbd2"
 
 [conda-packages.linux-x64-musl."libdrm-2.4.129-h7cc23a3_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libdrm-2.4.129-h7cc23a3_0.conda"
@@ -3042,9 +3042,9 @@ checksum = "sha256:38bdf17d4da3e913ace05dc3890363dc85cb39fcfd3aea746e9ad3270763c
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdeflate-1.25-he7e0567_1.conda"
 checksum = "sha256:d896f4aa4ce4c590c2838678cb1917356fdb461d2a189991c0280c818c362172"
 
-[conda-packages.macos-arm64."libdovi-3.4.0-h9d00c72_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdovi-3.4.0-h9d00c72_0.conda"
-checksum = "sha256:053aec3c8bb013f815722c6fc4e19063375a9c0555779d9f5f6935ab57c391fd"
+[conda-packages.macos-arm64."libdovi-3.4.0-hc336dc4_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdovi-3.4.0-hc336dc4_1.conda"
+checksum = "sha256:6439dd036af971cc5665b27ed4e8266edd8b948d1839b5d28c776f41b05b1707"
 
 [conda-packages.macos-arm64."libexpat-2.8.1-hf6b4638_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libexpat-2.8.1-hf6b4638_1.conda"
@@ -3554,9 +3554,9 @@ checksum = "sha256:a68aa41c2a9ce9a95feeb0148445c7060b49af919693b199fd380935af87f
 url = "https://conda.anaconda.org/conda-forge/osx-64/libdeflate-1.25-h7ad9622_1.conda"
 checksum = "sha256:210ee1d6a5aa201cf6d02b10edd02738cc35a4e8fb0866e4fb425010d6dd2c49"
 
-[conda-packages.macos-x64."libdovi-3.4.0-hee1dffb_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-hee1dffb_0.conda"
-checksum = "sha256:575655cd6c0a3eec86e7d84670ad79cfdc3e890891d694181c2445693442e0ad"
+[conda-packages.macos-x64."libdovi-3.4.0-hee1dffb_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-hee1dffb_1.conda"
+checksum = "sha256:1a9c0abc305e543cc21d02711a8e27d3ba2506ce80528e973a9a00f7338d3f87"
 
 [conda-packages.macos-x64."libexpat-2.8.1-hcc62823_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.8.1-hcc62823_1.conda"
@@ -4376,44 +4376,44 @@ url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x8
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/471228877"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.2.2"
+version = "1.2.4"
 backend = "aqua:google-antigravity/antigravity-cli"
-specifiers = ["1.2.2"]
+specifiers = ["1.2.4"]
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:00fc5cb50cd714b81cdf1298fcc90e63a59e3e564a4f8076454ab8457d36e6eb"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553053"
+checksum = "sha256:9dee8d8de3ebf420525902ead1b4ca8d12b93731bfae3673f6f8a24131ac5e5c"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.4/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/567120974"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:00fc5cb50cd714b81cdf1298fcc90e63a59e3e564a4f8076454ab8457d36e6eb"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553053"
+checksum = "sha256:9dee8d8de3ebf420525902ead1b4ca8d12b93731bfae3673f6f8a24131ac5e5c"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.4/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/567120974"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:2cfa5c9a4a1edd96db6d4058f34970be60d3bcacda866e2bdce6aefb2451b48e"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553052"
+checksum = "sha256:dcd3e4d8c8afb1902d59c1ae52812458d2ddab67a5d2db44810c512910d918fe"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.4/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/567120982"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:2cfa5c9a4a1edd96db6d4058f34970be60d3bcacda866e2bdce6aefb2451b48e"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553052"
+checksum = "sha256:dcd3e4d8c8afb1902d59c1ae52812458d2ddab67a5d2db44810c512910d918fe"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.4/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/567120982"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:f90ff6094a196f1be3854ac45d999a542d47ec66a1513aa882a8505b947b9a0f"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_mac_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553056"
+checksum = "sha256:f59c12c289e74bbb48178f827702c6224bd0aa920914319f85b42760dfc72f4c"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.4/agy_cli_mac_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/567120981"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:2b44ed726a73a0ef0a39956c80e07b5898c0b4fe21f8ecd383be74f1c0b65e5d"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553050"
+checksum = "sha256:ed5d05f8175d05b1a3ba19e06552698beb59f0eb9c9e76a7eca092f5a8f7d07e"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.4/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/567120983"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:50ce727a034980d341ee03773d2b81a78fb3c7897ac2ff138f55db88cead4c03"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.2/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/558553054"
+checksum = "sha256:c3151993a59442affc3cc256c53cfded466abf80390cd648e7cbc0241c5a5190"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.2.4/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/567120979"
 
 [[tools."aqua:helix-editor/helix"]]
 version = "25.07.1"
@@ -4680,44 +4680,44 @@ checksum = "sha256:78c221c2376f79731ccf4e4af0b3bb46d81fefa3296c5abee09ad8a1b21e6
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.271"
+version = "2.1.273"
 backend = "aqua:anthropics/claude-code"
-specifiers = ["2.1.271"]
+specifiers = ["2.1.273"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:2604a725c66d586584d46971f4feeef3a9a907bbd850912c2353ef2929d556d5"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.271/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/564090608"
+checksum = "sha256:33983f2ec19610aaf9fe6d255fb61d91e985d2e4f76c70387da4820c8f8cf89e"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.273/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/566219528"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:9cab6eb3b501721abb269f2b1a91df7da36be4d1595fa16a9e65a31da20bccf2"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.271/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/564090605"
+checksum = "sha256:ebf9f42fe97219969f7bcbd89460b57a177dd1bd26b4b25e9458cfbc9ecb4528"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.273/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/566219527"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:3248fdde90215a0ba3b363515e2bccca2bc912eb01af0c617b6052b7e33ffd73"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.271/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/564090767"
+checksum = "sha256:afd5dbac0b1dfeb8f9fb8fa8adaaf8ba49c7a334fda73b9f49ed2e99197ee829"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.273/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/566219673"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:c4bc4585c3b979270bcb5942ea5a584a9a733c16ebf58bf3e812fc968d707126"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.271/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/564090602"
+checksum = "sha256:baa9e418478de805dadb4bae3a6c61a89597df70354f3bdca9b8d8de7015440e"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.273/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/566219521"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:4ab04c3cd0810d258b7cd47b4de542c2b4adfcd4a695a50242d91bba3ea04917"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.271/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/564090606"
+checksum = "sha256:ae48db6a5ea2bdec38bf8996dd2ae041d801de26dc3d210aba86d2156b485ce4"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.273/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/566219525"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:b6f9523260fc936aa5e69ea33054d63c9f4a8d209977ccea05a4aac88d340ad7"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.271/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/564090601"
+checksum = "sha256:0ca37d2f32674a980d1f91d7315be9ae67e044134579e24968d8d94a3de75d73"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.273/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/566219524"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:3a24594391d85fa26dc0984a53ed4cc5f9065e012f9692e7efd3c4cb87c02fd7"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.271/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/564090774"
+checksum = "sha256:a07b3344fb010ef9fef3ad9aae54dc11e1c3f59f4f05814a716284ca6ebe5212"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.273/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/566219688"
 
 [[tools.cloudflared]]
 version = "2026.9.1"
@@ -4885,7 +4885,7 @@ conda_deps = [
     "libprotobuf-6.33.5-h084db60_2",
     "snappy-1.2.2-he774c54_1",
     "lcms2-2.19.1-h137c43b_3",
-    "libdovi-3.4.0-h4cb7313_0",
+    "libdovi-3.4.0-h286a8f0_1",
     "gdk-pixbuf-2.44.8-hb26ce08_2",
     "pango-1.58.2-h03cb6a0_1",
     "libogg-1.3.5-h86ecc28_1",
@@ -5017,7 +5017,7 @@ conda_deps = [
     "libprotobuf-6.33.5-h084db60_2",
     "snappy-1.2.2-he774c54_1",
     "lcms2-2.19.1-h137c43b_3",
-    "libdovi-3.4.0-h4cb7313_0",
+    "libdovi-3.4.0-h286a8f0_1",
     "gdk-pixbuf-2.44.8-hb26ce08_2",
     "pango-1.58.2-h03cb6a0_1",
     "libogg-1.3.5-h86ecc28_1",
@@ -5154,7 +5154,7 @@ conda_deps = [
     "level-zero-1.33.1-h7148c6a_0",
     "libprotobuf-6.33.5-h538a264_2",
     "snappy-1.2.2-h03e3b7b_1",
-    "libdovi-3.4.0-h39d0f39_0",
+    "libdovi-3.4.0-h39d0f39_1",
     "lcms2-2.19.1-h9073bf1_3",
     "gdk-pixbuf-2.44.8-h68053f1_2",
     "pango-1.58.2-h7bb47b9_1",
@@ -5296,7 +5296,7 @@ conda_deps = [
     "level-zero-1.33.1-h7148c6a_0",
     "libprotobuf-6.33.5-h538a264_2",
     "snappy-1.2.2-h03e3b7b_1",
-    "libdovi-3.4.0-h39d0f39_0",
+    "libdovi-3.4.0-h39d0f39_1",
     "lcms2-2.19.1-h9073bf1_3",
     "gdk-pixbuf-2.44.8-h68053f1_2",
     "pango-1.58.2-h7bb47b9_1",
@@ -5424,7 +5424,7 @@ conda_deps = [
     "libhwloc-2.13.0-default_ha97f43a_1000",
     "libprotobuf-6.33.5-hb82ec63_2",
     "snappy-1.2.2-hada39a4_1",
-    "libdovi-3.4.0-h9d00c72_0",
+    "libdovi-3.4.0-hc336dc4_1",
     "lcms2-2.19.1-hce41798_3",
     "gdk-pixbuf-2.44.8-h5867e2c_2",
     "pango-1.58.2-hf9b25ef_1",
@@ -5518,7 +5518,7 @@ conda_deps = [
     "libhwloc-2.13.0-default_h4e3125e_1000",
     "libprotobuf-6.33.5-hb0ea838_2",
     "snappy-1.2.2-h01f5ddf_1",
-    "libdovi-3.4.0-hee1dffb_0",
+    "libdovi-3.4.0-hee1dffb_1",
     "lcms2-2.19.1-h4e6bd4b_3",
     "gdk-pixbuf-2.44.8-ha3e70bd_2",
     "pango-1.58.2-hc5a6962_1",
@@ -5630,44 +5630,44 @@ conda_deps = [
 ]
 
 [[tools.copilot]]
-version = "v1.0.83"
+version = "v1.0.85"
 backend = "aqua:github/copilot-cli"
-specifiers = ["v1.0.83"]
+specifiers = ["v1.0.85"]
 
 [tools.copilot."platforms.linux-arm64"]
-checksum = "sha256:213b3a267042dbac3cd8ae22c82f5ea04ff3cabc008108c0f895055d46be4473"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.83/copilot-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/544538797"
+checksum = "sha256:31042001026a26bc1d04b05ec2fc9419f82a55c0f9ff2fa75c0fae608359bc70"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/567012512"
 
 [tools.copilot."platforms.linux-arm64-musl"]
-checksum = "sha256:213b3a267042dbac3cd8ae22c82f5ea04ff3cabc008108c0f895055d46be4473"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.83/copilot-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/544538797"
+checksum = "sha256:31042001026a26bc1d04b05ec2fc9419f82a55c0f9ff2fa75c0fae608359bc70"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/567012512"
 
 [tools.copilot."platforms.linux-x64"]
-checksum = "sha256:ffbe1c429664b8a05efed67ecdb467123e40fcaa3c6c14ef9a98ba74da4687b7"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.83/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/544539073"
+checksum = "sha256:6f235cea897645eef67e8f480e36a15b5d9c9f7a6165ebc9b6b1c28afc8bcdda"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/567012597"
 
 [tools.copilot."platforms.linux-x64-musl"]
-checksum = "sha256:ffbe1c429664b8a05efed67ecdb467123e40fcaa3c6c14ef9a98ba74da4687b7"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.83/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/544539073"
+checksum = "sha256:6f235cea897645eef67e8f480e36a15b5d9c9f7a6165ebc9b6b1c28afc8bcdda"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/567012597"
 
 [tools.copilot."platforms.macos-arm64"]
-checksum = "sha256:80a5ded6f1db484b4661af676ea914605ecfbcaf49f6b4bed81e6df16cbd56bd"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.83/copilot-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/544538801"
+checksum = "sha256:54b1cdb4d88cfe0806f13e1f70adc4e8ed7d3edcac38fe070475e29f553949aa"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/567012510"
 
 [tools.copilot."platforms.macos-x64"]
-checksum = "sha256:7e4f7236b0cd5ee474e6ab6d35ea67b8c33d5ec6483498e0fdd0218f458b2d53"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.83/copilot-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/544538798"
+checksum = "sha256:c94d2a95d9c5716957a9e9dda0e722070c60c680c04b4745526225cc83ec5500"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/567012511"
 
 [tools.copilot."platforms.windows-x64"]
-checksum = "sha256:0e07221a275fdf7e61619c53566e3a421fd646d74d8e9ca491dbbff221f22945"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.83/copilot-win32-x64.zip"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/544538802"
+checksum = "sha256:07d1d258fa8fe806d24215b21f1978f9da3043b4e95ed935bf4629108d3eda18"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.85/copilot-win32-x64.zip"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/567012517"
 
 [[tools.cursor-agent]]
 version = "2026.08.04-aaa8809"
@@ -6014,17 +6014,7 @@ checksum = "sha256:b41fc923552285b51ffb7a837faef91840367276db6910e182a055ca01cb7
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.35.0/octoscope_0.35.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/567401185"
 
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-baseline"]
-checksum = "sha256:b41fc923552285b51ffb7a837faef91840367276db6910e182a055ca01cb7a96"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.35.0/octoscope_0.35.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/567401185"
-
 [tools."github:gfazioli/octoscope"."platforms.linux-x64-musl"]
-checksum = "sha256:b41fc923552285b51ffb7a837faef91840367276db6910e182a055ca01cb7a96"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.35.0/octoscope_0.35.0_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/567401185"
-
-[tools."github:gfazioli/octoscope"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:b41fc923552285b51ffb7a837faef91840367276db6910e182a055ca01cb7a96"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.35.0/octoscope_0.35.0_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/567401185"
@@ -6039,17 +6029,7 @@ checksum = "sha256:9374229c8761642bfd924a814fd7d643b13851132127c357ecf9ec40156e1
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.35.0/octoscope_0.35.0_macOS_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/567401173"
 
-[tools."github:gfazioli/octoscope"."platforms.macos-x64-baseline"]
-checksum = "sha256:9374229c8761642bfd924a814fd7d643b13851132127c357ecf9ec40156e1073"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.35.0/octoscope_0.35.0_macOS_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/567401173"
-
 [tools."github:gfazioli/octoscope"."platforms.windows-x64"]
-checksum = "sha256:e384e47113fae36c746f92eb7ee19dd16928647ac4f59ad1c411c37874e311ce"
-url = "https://github.com/gfazioli/octoscope/releases/download/v0.35.0/octoscope_0.35.0_Windows_x86_64.zip"
-url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/567401128"
-
-[tools."github:gfazioli/octoscope"."platforms.windows-x64-baseline"]
 checksum = "sha256:e384e47113fae36c746f92eb7ee19dd16928647ac4f59ad1c411c37874e311ce"
 url = "https://github.com/gfazioli/octoscope/releases/download/v0.35.0/octoscope_0.35.0_Windows_x86_64.zip"
 url_api = "https://api.github.com/repos/gfazioli/octoscope/releases/assets/567401128"
@@ -7304,22 +7284,22 @@ checksum = "sha256:158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e
 url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
-version = "1.0.31"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.31", digest = "sha256:e4d6467d89d060e0fa0575e83711f6dfde5115ff8ac4928745313e7484ede291" }
+version = "1.0.34"
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.34", digest = "sha256:38c2db0e881bcb39f1497540f7da6c16a0146ef1ec1d83714e035295fe1758b2" }
 backend = "npm:@xai-official/grok"
-specifiers = ["1.0.31"]
+specifiers = ["1.0.34"]
 
 [[tools."npm:acpx"]]
-version = "0.15.1"
-aube = { path = ".mise/locks/npm-acpx/0.15.1", digest = "sha256:39369b573babe2b76982302cd84cef894155576904e28eee129670590709dc1b" }
+version = "0.16.0"
+aube = { path = ".mise/locks/npm-acpx/0.16.0", digest = "sha256:71606b395e08d01070acb19ba5c4d9312e082e7cf42b26dadc9ba92f4904b909" }
 backend = "npm:acpx"
-specifiers = ["0.15.1"]
+specifiers = ["0.16.0"]
 
 [[tools."npm:agent-browser"]]
-version = "0.37.1"
-aube = { path = ".mise/locks/npm-agent-browser/0.37.1", digest = "sha256:0fdd6deab863b49df7262d7e36b13a7ed30d102279c0cb637c3b24e002769c18" }
+version = "0.38.0"
+aube = { path = ".mise/locks/npm-agent-browser/0.38.0", digest = "sha256:1a6e5a7eab38a66a3a8060759c65553d966fd091b8511ee51cd673c2a0bea2a0" }
 backend = "npm:agent-browser"
-specifiers = ["0.37.1"]
+specifiers = ["0.38.0"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.6.0"
@@ -7341,7 +7321,7 @@ specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
 version = "1.24.0"
-aube = { path = ".mise/locks/npm-yaml-language-server/1.24.0", digest = "sha256:4272a495d1d42e17bcf2342f7e92413ebaabfbad9fb5f9cdd2575da74dc3ed66" }
+aube = { path = ".mise/locks/npm-yaml-language-server/1.24.0", digest = "sha256:7c022b5f4defd5f330ee467d7ffbbd54b900d67a20def7f0c7855ba4ca74e359" }
 backend = "npm:yaml-language-server"
 specifiers = ["1.24.0"]
 
