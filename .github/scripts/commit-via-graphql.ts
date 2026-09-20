@@ -40,11 +40,29 @@ for (let attempt = 1; ; attempt++) {
   const additions: { path: string; contents: string }[] = [];
   const deletions: { path: string }[] = [];
 
-  for (const entry of entries) {
+  for (let i = 0; i < entries.length; i++) {
+    const entry = entries[i];
     const code = entry.slice(0, 2);
     const path = entry.slice(3);
 
-    if (code.includes("D")) {
+    if (code.includes("R")) {
+      // Rename: destination is 'path', source path follows in the next NUL-delimited entry
+      const srcPath = entries[++i];
+      if (srcPath) {
+        deletions.push({ path: srcPath });
+      }
+      additions.push({
+        path,
+        contents: Buffer.from(await Bun.file(path).arrayBuffer()).toString("base64"),
+      });
+    } else if (code.includes("C")) {
+      // Copy: destination is 'path', source path follows in the next entry (source remains present)
+      i++;
+      additions.push({
+        path,
+        contents: Buffer.from(await Bun.file(path).arrayBuffer()).toString("base64"),
+      });
+    } else if (code.includes("D")) {
       deletions.push({ path });
     } else {
       additions.push({
