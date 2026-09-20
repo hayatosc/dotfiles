@@ -63,12 +63,15 @@ jobs:
           MISE_FETCH_REMOTE_VERSIONS_TIMEOUT: 30s
           REPO: ${{ github.repository }}
           BRANCH: ${{ github.ref_name }}
-          FILES: home/dot_config/mise/mise.lock
+          FILES: home/dot_config/mise/mise.lock home/dot_config/mise/dot_mise
           MESSAGE: "chore(mise): update mise.lock"
           REGENERATE_CMD: |
             set -o pipefail
+            # 既存の dot_mise を .mise に同期して lock 解決させる
+            if [ -d home/dot_config/mise/dot_mise ]; then
+              cp -a home/dot_config/mise/dot_mise home/dot_config/mise/.mise
+            fi
             cd home/dot_config/mise
-            rm -f mise.lock
             mise lock 2>&1 | tee /tmp/mise-lock.log || exit 1
             # mise は解決に一部失敗しても exit 0 のため、レート制限等の警告が
             # ある場合は壊れた lockfile をコミットさせないために落とす。
@@ -76,6 +79,11 @@ jobs:
               echo "incomplete resolution detected; refusing to commit" >&2
               exit 1
             }
+            # chezmoi 管理用ディレクトリ dot_mise に同期
+            rm -rf dot_mise
+            if [ -d .mise ]; then
+              mv .mise dot_mise
+            fi
             cd - >/dev/null
             mise exec bun -- bun .github/scripts/validate-mise-lock.ts home/dot_config/mise/mise.lock
         run: mise exec bun -- bun .github/scripts/commit-via-graphql.ts

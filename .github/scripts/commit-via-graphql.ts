@@ -34,25 +34,45 @@ for (let attempt = 1; ; attempt++) {
   // core.fileMode=false: createCommitOnBranch は executable bit を扱えず tree mode が
   // 100644 固定になる一方、再生成コマンドが fs に +x を付けうる。mode 差を「変更あり」と
   // 誤認して空コミットを打ち続けないよう、ここでは mode 差を無視する。
-  if ((await $`git -c core.fileMode=false diff --quiet -- ${files}`.nothrow()).exitCode === 0) {
+  const statusRaw = await $`git -c core.fileMode=false status --porcelain -z -uall -- ${files}`.text();
+  const entries = statusRaw.split("\0").filter(Boolean);
+
+  const additions: { path: string; contents: string }[] = [];
+  const deletions: { path: string }[] = [];
+
+  for (const entry of entries) {
+    const code = entry.slice(0, 2);
+    const path = entry.slice(3);
+
+    if (code.includes("D")) {
+      deletions.push({ path });
+    } else {
+      additions.push({
+        path,
+        contents: Buffer.from(await Bun.file(path).arrayBuffer()).toString("base64"),
+      });
+    }
+  }
+
+  if (additions.length === 0 && deletions.length === 0) {
     console.log(`No changes in: ${files.join(" ")} — nothing to commit.`);
     process.exit(0);
   }
 
   const expectedHeadOid = (await $`git rev-parse HEAD`.text()).trim();
 
-  const additions = await Promise.all(
-    files.map(async (path) => ({
-      path,
-      contents: Buffer.from(await Bun.file(path).arrayBuffer()).toString("base64"),
-    })),
-  );
+  const fileChanges: {
+    additions?: { path: string; contents: string }[];
+    deletions?: { path: string }[];
+  } = {};
+  if (additions.length > 0) fileChanges.additions = additions;
+  if (deletions.length > 0) fileChanges.deletions = deletions;
 
   const input = {
     branch: { repositoryNameWithOwner: repo, branchName: branch },
     expectedHeadOid,
     message: { headline: message },
-    fileChanges: { additions },
+    fileChanges,
   };
 
   const res = await fetch("https://api.github.com/graphql", {
