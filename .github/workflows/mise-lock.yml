@@ -68,6 +68,7 @@ jobs:
           REGENERATE_CMD: |
             set -o pipefail
             # 既存の dot_mise を .mise に同期して lock 解決させる
+            rm -rf home/dot_config/mise/.mise
             if [ -d home/dot_config/mise/dot_mise ]; then
               cp -a home/dot_config/mise/dot_mise home/dot_config/mise/.mise
             fi
