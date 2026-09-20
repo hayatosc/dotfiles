@@ -38,6 +38,12 @@ jobs:
           # lockfile を生成する mise-lock.yml と同じ版を使い、挙動を一致させる。
           version: 2026.9.10
 
+      - name: Symlink dot_mise to .mise
+        run: |
+          if [ -d home/dot_config/mise/dot_mise ]; then
+            ln -sfn dot_mise home/dot_config/mise/.mise
+          fi
+
       - name: Install changed tools
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
