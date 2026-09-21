@@ -502,9 +502,9 @@ checksum = "sha256:58bf7fcf64bae7f624a5e2aed860ddea614a8ec13c8c43fe150420a275b8b
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxml2-2.15.4-h92b9305_0.conda"
 checksum = "sha256:3345c88fa9ebb373bcf4069ede898950005fa2d1707e56a13a1ac6339919492f"
 
-[conda-packages.linux-arm64."libzip-1.11.2-h139036c_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libzip-1.11.2-h139036c_1.conda"
-checksum = "sha256:0d22a919445b84c25d98e09eb2ed051a2608fea0b8f86f7284177525eaf96113"
+[conda-packages.linux-arm64."libzip-1.11.4-h139036c_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libzip-1.11.4-h139036c_0.conda"
+checksum = "sha256:6229cff2c76d5e62c918fb83c9f88d7922e7a8f1a9732e7388ab1968db1a8298"
 
 [conda-packages.linux-arm64."libzlib-1.3.2-hdc9db2a_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libzlib-1.3.2-hdc9db2a_3.conda"
@@ -1194,9 +1194,9 @@ checksum = "sha256:58bf7fcf64bae7f624a5e2aed860ddea614a8ec13c8c43fe150420a275b8b
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxml2-2.15.4-h92b9305_0.conda"
 checksum = "sha256:3345c88fa9ebb373bcf4069ede898950005fa2d1707e56a13a1ac6339919492f"
 
-[conda-packages.linux-arm64-musl."libzip-1.11.2-h139036c_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libzip-1.11.2-h139036c_1.conda"
-checksum = "sha256:0d22a919445b84c25d98e09eb2ed051a2608fea0b8f86f7284177525eaf96113"
+[conda-packages.linux-arm64-musl."libzip-1.11.4-h139036c_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libzip-1.11.4-h139036c_0.conda"
+checksum = "sha256:6229cff2c76d5e62c918fb83c9f88d7922e7a8f1a9732e7388ab1968db1a8298"
 
 [conda-packages.linux-arm64-musl."libzlib-1.3.2-hdc9db2a_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libzlib-1.3.2-hdc9db2a_3.conda"
@@ -1914,9 +1914,9 @@ checksum = "sha256:9a1685c8d8b8488cd7882a9cd6e673e687211ca763ebbcd1e91b6f594eead
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.15.4-h7df9aa5_0.conda"
 checksum = "sha256:053d85821ce5e36b7ce03faea5930382f6af695df9e2cd68e5d8d273072d1551"
 
-[conda-packages.linux-x64."libzip-1.11.2-h6008cf6_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libzip-1.11.2-h6008cf6_1.conda"
-checksum = "sha256:5fd2a4799c9e3859e136c6cf7cdfc93227fe5ee565a1596738247faf9a34f6e0"
+[conda-packages.linux-x64."libzip-1.11.4-h6008cf6_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libzip-1.11.4-h6008cf6_0.conda"
+checksum = "sha256:d89ef092620b9bf4e82871870c5a08aecf2a7fc441b23b37cae9a62e30ed670c"
 
 [conda-packages.linux-x64."libzlib-1.3.2-h25fd6f3_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_3.conda"
@@ -2646,9 +2646,9 @@ checksum = "sha256:9a1685c8d8b8488cd7882a9cd6e673e687211ca763ebbcd1e91b6f594eead
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.15.4-h7df9aa5_0.conda"
 checksum = "sha256:053d85821ce5e36b7ce03faea5930382f6af695df9e2cd68e5d8d273072d1551"
 
-[conda-packages.linux-x64-baseline."libzip-1.11.2-h6008cf6_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libzip-1.11.2-h6008cf6_1.conda"
-checksum = "sha256:5fd2a4799c9e3859e136c6cf7cdfc93227fe5ee565a1596738247faf9a34f6e0"
+[conda-packages.linux-x64-baseline."libzip-1.11.4-h6008cf6_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libzip-1.11.4-h6008cf6_0.conda"
+checksum = "sha256:d89ef092620b9bf4e82871870c5a08aecf2a7fc441b23b37cae9a62e30ed670c"
 
 [conda-packages.linux-x64-baseline."libzlib-1.3.2-h25fd6f3_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_3.conda"
@@ -3378,9 +3378,9 @@ checksum = "sha256:9a1685c8d8b8488cd7882a9cd6e673e687211ca763ebbcd1e91b6f594eead
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.15.4-h7df9aa5_0.conda"
 checksum = "sha256:053d85821ce5e36b7ce03faea5930382f6af695df9e2cd68e5d8d273072d1551"
 
-[conda-packages.linux-x64-musl."libzip-1.11.2-h6008cf6_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libzip-1.11.2-h6008cf6_1.conda"
-checksum = "sha256:5fd2a4799c9e3859e136c6cf7cdfc93227fe5ee565a1596738247faf9a34f6e0"
+[conda-packages.linux-x64-musl."libzip-1.11.4-h6008cf6_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libzip-1.11.4-h6008cf6_0.conda"
+checksum = "sha256:d89ef092620b9bf4e82871870c5a08aecf2a7fc441b23b37cae9a62e30ed670c"
 
 [conda-packages.linux-x64-musl."libzlib-1.3.2-h25fd6f3_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_3.conda"
@@ -4110,9 +4110,9 @@ checksum = "sha256:9a1685c8d8b8488cd7882a9cd6e673e687211ca763ebbcd1e91b6f594eead
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.15.4-h7df9aa5_0.conda"
 checksum = "sha256:053d85821ce5e36b7ce03faea5930382f6af695df9e2cd68e5d8d273072d1551"
 
-[conda-packages.linux-x64-musl-baseline."libzip-1.11.2-h6008cf6_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libzip-1.11.2-h6008cf6_1.conda"
-checksum = "sha256:5fd2a4799c9e3859e136c6cf7cdfc93227fe5ee565a1596738247faf9a34f6e0"
+[conda-packages.linux-x64-musl-baseline."libzip-1.11.4-h6008cf6_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libzip-1.11.4-h6008cf6_0.conda"
+checksum = "sha256:d89ef092620b9bf4e82871870c5a08aecf2a7fc441b23b37cae9a62e30ed670c"
 
 [conda-packages.linux-x64-musl-baseline."libzlib-1.3.2-h25fd6f3_3"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_3.conda"
@@ -4694,9 +4694,9 @@ checksum = "sha256:8a26f7c94ab849c1930da36c298f4b82e892382b70ae865cd7274188d9d78
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libxml2-2.15.4-h550178d_0.conda"
 checksum = "sha256:81217fcd4d4abdc69ee63cdb9cdb22e05a20b9ba7a76f596579914a838fe5960"
 
-[conda-packages.macos-arm64."libzip-1.11.2-hcd2b5ac_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libzip-1.11.2-hcd2b5ac_1.conda"
-checksum = "sha256:cd922b043c7a458a13360a93af8bc783f6cff60e01482d4509149bb68dd32f89"
+[conda-packages.macos-arm64."libzip-1.11.4-hcd2b5ac_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libzip-1.11.4-hcd2b5ac_0.conda"
+checksum = "sha256:1ef1bc862de3f055c210dd8a317ed2c48f3ccd1048183a06fb66c6141618762e"
 
 [conda-packages.macos-arm64."libzlib-1.3.2-h8088a28_3"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.2-h8088a28_3.conda"
@@ -5206,9 +5206,9 @@ checksum = "sha256:99b8a8977c93f4ab42dbdd345ee32677363175077473ef0acf1b20a3c15c8
 url = "https://conda.anaconda.org/conda-forge/osx-64/libxml2-2.15.4-hb56241c_0.conda"
 checksum = "sha256:2a3d6322639100d222f64caa146640f1e15e3623e1baf57da166c42afb657a19"
 
-[conda-packages.macos-x64."libzip-1.11.2-h99362d9_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libzip-1.11.2-h99362d9_1.conda"
-checksum = "sha256:9f4cde5d00f23aca97e7bf162421d4d7fc5ae185fa9143e425ac7142e742b854"
+[conda-packages.macos-x64."libzip-1.11.4-h99362d9_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libzip-1.11.4-h99362d9_0.conda"
+checksum = "sha256:38f2eae789beb1436b5a85635cd0ed5029bbcfdc73f3e30028d3bb60423b0596"
 
 [conda-packages.macos-x64."libzlib-1.3.2-hbb4bfdb_3"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libzlib-1.3.2-hbb4bfdb_3.conda"
@@ -5718,9 +5718,9 @@ checksum = "sha256:99b8a8977c93f4ab42dbdd345ee32677363175077473ef0acf1b20a3c15c8
 url = "https://conda.anaconda.org/conda-forge/osx-64/libxml2-2.15.4-hb56241c_0.conda"
 checksum = "sha256:2a3d6322639100d222f64caa146640f1e15e3623e1baf57da166c42afb657a19"
 
-[conda-packages.macos-x64-baseline."libzip-1.11.2-h99362d9_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libzip-1.11.2-h99362d9_1.conda"
-checksum = "sha256:9f4cde5d00f23aca97e7bf162421d4d7fc5ae185fa9143e425ac7142e742b854"
+[conda-packages.macos-x64-baseline."libzip-1.11.4-h99362d9_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libzip-1.11.4-h99362d9_0.conda"
+checksum = "sha256:38f2eae789beb1436b5a85635cd0ed5029bbcfdc73f3e30028d3bb60423b0596"
 
 [conda-packages.macos-x64-baseline."libzlib-1.3.2-hbb4bfdb_3"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libzlib-1.3.2-hbb4bfdb_3.conda"
@@ -6166,9 +6166,9 @@ checksum = "sha256:9fa71cec30425c9cc8eda6af3574af1faf4fefa5e239c9e037b1f778ef3ce
 url = "https://conda.anaconda.org/conda-forge/win-64/libxml2-2.15.4-he095d88_0.conda"
 checksum = "sha256:a19bb3821830f6b1281e782844d5dd265f796dfed2e4812b16c9995a8c778c88"
 
-[conda-packages.windows-x64."libzip-1.11.2-h0ac0a2c_1"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libzip-1.11.2-h0ac0a2c_1.conda"
-checksum = "sha256:4705fcfe52d886aced6baf3e4430b15879355ec8e703cd783d357c239bebebe8"
+[conda-packages.windows-x64."libzip-1.11.4-h0ac0a2c_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libzip-1.11.4-h0ac0a2c_0.conda"
+checksum = "sha256:48e5e76e7ea93fb425d740452c492c063f9bbb1ee895046db846d5c3605ae013"
 
 [conda-packages.windows-x64."libzlib-1.3.2-hfd05255_3"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.2-hfd05255_3.conda"
@@ -6642,9 +6642,9 @@ checksum = "sha256:9fa71cec30425c9cc8eda6af3574af1faf4fefa5e239c9e037b1f778ef3ce
 url = "https://conda.anaconda.org/conda-forge/win-64/libxml2-2.15.4-he095d88_0.conda"
 checksum = "sha256:a19bb3821830f6b1281e782844d5dd265f796dfed2e4812b16c9995a8c778c88"
 
-[conda-packages.windows-x64-baseline."libzip-1.11.2-h0ac0a2c_1"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libzip-1.11.2-h0ac0a2c_1.conda"
-checksum = "sha256:4705fcfe52d886aced6baf3e4430b15879355ec8e703cd783d357c239bebebe8"
+[conda-packages.windows-x64-baseline."libzip-1.11.4-h0ac0a2c_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libzip-1.11.4-h0ac0a2c_0.conda"
+checksum = "sha256:48e5e76e7ea93fb425d740452c492c063f9bbb1ee895046db846d5c3605ae013"
 
 [conda-packages.windows-x64-baseline."libzlib-1.3.2-hfd05255_3"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libzlib-1.3.2-hfd05255_3.conda"
@@ -7267,64 +7267,64 @@ checksum = "sha256:78c221c2376f79731ccf4e4af0b3bb46d81fefa3296c5abee09ad8a1b21e6
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.275"
+version = "2.1.276"
 backend = "aqua:anthropics/claude-code"
-specifiers = ["2.1.275"]
+specifiers = ["2.1.276"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:29ef4c18f7d1760ca1fedd2b5a08f43837e2e5b4bdb33f49c585657edff3c796"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255289"
+checksum = "sha256:da339bfa5e7345c6a793b4021fd7ac66a98a3f28ec888d106a2dc10ff1ac4e9e"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571549907"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:40932b5dbfb30e9c08961d3d4a4cf94401409214f672902f59677993da284781"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255292"
+checksum = "sha256:6df2859ff56c4b72059cbe65c7ae384f098242fd643d92601c511faf07079634"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571549906"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:ccb56c202f5b46e4f132245679c7f588a19e74bfe52f639a121fe0e086dfd3e6"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255468"
+checksum = "sha256:09514ef3ed18c33c24793c57fa1ecd9b9bb03b75dedb51b08ae5ca9c6588fce4"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571550299"
 
 [tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:ccb56c202f5b46e4f132245679c7f588a19e74bfe52f639a121fe0e086dfd3e6"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255468"
+checksum = "sha256:09514ef3ed18c33c24793c57fa1ecd9b9bb03b75dedb51b08ae5ca9c6588fce4"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571550299"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:231fa8abc19dfe189415c596385d39afb919005f7aefa0553d9748718ecf6dc1"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255297"
+checksum = "sha256:3c982b34a9c3406f9eb4d8906014df3e9c98aededbecd6be3b41420d4f26943d"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571549909"
 
 [tools.claude."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:231fa8abc19dfe189415c596385d39afb919005f7aefa0553d9748718ecf6dc1"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255297"
+checksum = "sha256:3c982b34a9c3406f9eb4d8906014df3e9c98aededbecd6be3b41420d4f26943d"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571549909"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:07b1c8ce799542d3e70d36741e3f55783db2862a9be2f5e286e70476a217e44f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255291"
+checksum = "sha256:fa258d405e854ed29245190e9fc8d49689a3bcb58c810f97cc6c17774b090c54"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571549904"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:7da5a80a2495c8814f07fc82533ee2179f9a5160a5827e8a6252e37b6aeea3f2"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255290"
+checksum = "sha256:d0a65277c7c8d42d483fbcc94daffa816fb37862943bd4d448644c7d19676b8a"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571549902"
 
 [tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:7da5a80a2495c8814f07fc82533ee2179f9a5160a5827e8a6252e37b6aeea3f2"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255290"
+checksum = "sha256:d0a65277c7c8d42d483fbcc94daffa816fb37862943bd4d448644c7d19676b8a"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571549902"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:8f5c7ef115cd17d3608b615182cf91f31073e1f43cd148547b85dd1df25a8bca"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255983"
+checksum = "sha256:533d97cda7bad1a047cdecbab66863071f1db82d2a545e87591cbaaa479b7307"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571550307"
 
 [tools.claude."platforms.windows-x64-baseline"]
-checksum = "sha256:8f5c7ef115cd17d3608b615182cf91f31073e1f43cd148547b85dd1df25a8bca"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.275/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571255983"
+checksum = "sha256:533d97cda7bad1a047cdecbab66863071f1db82d2a545e87591cbaaa479b7307"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.276/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/571550307"
 
 [[tools.cloudflared]]
 version = "2026.9.1"
@@ -9797,7 +9797,7 @@ conda_deps = [
     "libpng-1.6.58-hf9b7768_1",
     "libraw-0.22.2-h6c2e892_0",
     "libwebp-base-1.6.0-ha2e29f5_1",
-    "libzip-1.11.2-h139036c_1",
+    "libzip-1.11.4-h139036c_0",
     "libzlib-1.3.2-hdc9db2a_3",
     "openjpeg-2.5.4-h504851f_2",
     "xorg-libx11-1.8.13-h63a1b12_1",
@@ -9928,7 +9928,7 @@ conda_deps = [
     "libpng-1.6.58-hf9b7768_1",
     "libraw-0.22.2-h6c2e892_0",
     "libwebp-base-1.6.0-ha2e29f5_1",
-    "libzip-1.11.2-h139036c_1",
+    "libzip-1.11.4-h139036c_0",
     "libzlib-1.3.2-hdc9db2a_3",
     "openjpeg-2.5.4-h504851f_2",
     "xorg-libx11-1.8.13-h63a1b12_1",
@@ -10058,7 +10058,7 @@ conda_deps = [
     "libpng-1.6.58-h922cc85_1",
     "libraw-0.22.2-h074291d_0",
     "libwebp-base-1.6.0-hd42ef1d_1",
-    "libzip-1.11.2-h6008cf6_1",
+    "libzip-1.11.4-h6008cf6_0",
     "libzlib-1.3.2-h25fd6f3_3",
     "openjpeg-2.5.4-heb1ab33_2",
     "xorg-libx11-1.8.13-he1eb515_1",
@@ -10189,7 +10189,7 @@ conda_deps = [
     "libpng-1.6.58-h922cc85_1",
     "libraw-0.22.2-h074291d_0",
     "libwebp-base-1.6.0-hd42ef1d_1",
-    "libzip-1.11.2-h6008cf6_1",
+    "libzip-1.11.4-h6008cf6_0",
     "libzlib-1.3.2-h25fd6f3_3",
     "openjpeg-2.5.4-heb1ab33_2",
     "xorg-libx11-1.8.13-he1eb515_1",
@@ -10320,7 +10320,7 @@ conda_deps = [
     "libpng-1.6.58-h922cc85_1",
     "libraw-0.22.2-h074291d_0",
     "libwebp-base-1.6.0-hd42ef1d_1",
-    "libzip-1.11.2-h6008cf6_1",
+    "libzip-1.11.4-h6008cf6_0",
     "libzlib-1.3.2-h25fd6f3_3",
     "openjpeg-2.5.4-heb1ab33_2",
     "xorg-libx11-1.8.13-he1eb515_1",
@@ -10451,7 +10451,7 @@ conda_deps = [
     "libpng-1.6.58-h922cc85_1",
     "libraw-0.22.2-h074291d_0",
     "libwebp-base-1.6.0-hd42ef1d_1",
-    "libzip-1.11.2-h6008cf6_1",
+    "libzip-1.11.4-h6008cf6_0",
     "libzlib-1.3.2-h25fd6f3_3",
     "openjpeg-2.5.4-heb1ab33_2",
     "xorg-libx11-1.8.13-he1eb515_1",
@@ -10582,7 +10582,7 @@ conda_deps = [
     "libpng-1.6.58-hf5e6511_1",
     "libraw-0.22.2-h2d05ff4_0",
     "libwebp-base-1.6.0-h202fb40_1",
-    "libzip-1.11.2-hcd2b5ac_1",
+    "libzip-1.11.4-hcd2b5ac_0",
     "libzlib-1.3.2-h8088a28_3",
     "xorg-libx11-1.8.13-hf948f5a_1",
     "xorg-libxext-1.3.7-hb001647_1",
@@ -10679,7 +10679,7 @@ conda_deps = [
     "libpng-1.6.58-h4382c61_1",
     "libraw-0.22.2-h3650196_0",
     "libwebp-base-1.6.0-hb276fe9_1",
-    "libzip-1.11.2-h99362d9_1",
+    "libzip-1.11.4-h99362d9_0",
     "libzlib-1.3.2-hbb4bfdb_3",
     "openjpeg-2.5.4-he4eae51_1",
     "xorg-libx11-1.8.13-hd3cc91f_1",
@@ -10775,7 +10775,7 @@ conda_deps = [
     "libpng-1.6.58-h4382c61_1",
     "libraw-0.22.2-h3650196_0",
     "libwebp-base-1.6.0-hb276fe9_1",
-    "libzip-1.11.2-h99362d9_1",
+    "libzip-1.11.4-h99362d9_0",
     "libzlib-1.3.2-hbb4bfdb_3",
     "openjpeg-2.5.4-he4eae51_1",
     "xorg-libx11-1.8.13-hd3cc91f_1",
@@ -10872,7 +10872,7 @@ conda_deps = [
     "libpng-1.6.58-hdc8cecf_1",
     "libraw-0.22.2-h345c428_0",
     "libwebp-base-1.6.0-h4d5522a_1",
-    "libzip-1.11.2-h0ac0a2c_1",
+    "libzip-1.11.4-h0ac0a2c_0",
     "libzlib-1.3.2-hfd05255_3",
     "fontconfig-2.18.3-hd47e2ca_1",
     "ghostscript-10.08.0-hac47afa_0",
@@ -10982,7 +10982,7 @@ conda_deps = [
     "libpng-1.6.58-hdc8cecf_1",
     "libraw-0.22.2-h345c428_0",
     "libwebp-base-1.6.0-h4d5522a_1",
-    "libzip-1.11.2-h0ac0a2c_1",
+    "libzip-1.11.4-h0ac0a2c_0",
     "libzlib-1.3.2-hfd05255_3",
     "fontconfig-2.18.3-hd47e2ca_1",
     "ghostscript-10.08.0-hac47afa_0",
@@ -11264,10 +11264,10 @@ checksum = "sha256:158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e
 url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
-version = "1.0.34"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.34", digest = "sha256:38c2db0e881bcb39f1497540f7da6c16a0146ef1ec1d83714e035295fe1758b2" }
+version = "1.0.36"
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.36", digest = "sha256:ec9ca1a3cef380661e917886136d8c6e04062070e28554bdb5e3341bb2acea7c" }
 backend = "npm:@xai-official/grok"
-specifiers = ["1.0.34"]
+specifiers = ["1.0.36"]
 
 [[tools."npm:acpx"]]
 version = "0.17.0"
