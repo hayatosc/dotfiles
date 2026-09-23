@@ -11234,16 +11234,16 @@ checksum = "sha256:158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e
 url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
-version = "1.0.38"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.38", digest = "sha256:063a7a511af56c69a58951d3f6179e97585955151161a7e0625fbcb3a44ae577" }
+version = "1.0.39"
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.39", digest = "sha256:45236dc6b894915cb5c0ea18cb18dc958b1a9a22508fe368cf89f2d3679f7613" }
 backend = "npm:@xai-official/grok"
-specifiers = ["1.0.38"]
+specifiers = ["1.0.39"]
 
 [[tools."npm:acpx"]]
-version = "0.17.1"
-aube = { path = ".mise/locks/npm-acpx/0.17.1", digest = "sha256:6e4ea8e472fe862aa3c0dc15c243351c3c2f5db4827ec4b52d07b29ae286e960" }
+version = "0.18.0"
+aube = { path = ".mise/locks/npm-acpx/0.18.0", digest = "sha256:75bf1a4cb798fb40256bd565652f6d2e5fa75df01691b508ccf62be3f8041172" }
 backend = "npm:acpx"
-specifiers = ["0.17.1"]
+specifiers = ["0.18.0"]
 
 [[tools."npm:agent-browser"]]
 version = "0.38.1"
