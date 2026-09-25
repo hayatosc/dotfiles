@@ -242,9 +242,9 @@ checksum = "sha256:8d80ccab2fd622ae38931691c27952e56a5d3007ff920efd9f3ff52e2c81a
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libegl-devel-1.7.0-hd24410f_5.conda"
 checksum = "sha256:ae8dcab97d4905754cb70ecc345dc06df6386df0a1f1d578ec94bb987db2a4d6"
 
-[conda-packages.linux-arm64."libexpat-2.8.4-h4154aff_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libexpat-2.8.4-h4154aff_0.conda"
-checksum = "sha256:af168b3070c57d33187faad47da0b98251c255f7369399b4ffce408f4305d530"
+[conda-packages.linux-arm64."libexpat-2.8.5-h4154aff_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libexpat-2.8.5-h4154aff_0.conda"
+checksum = "sha256:d155b9ee74abac0865095a66ebb008be967937a6deea6e7666ba01ead4a155fc"
 
 [conda-packages.linux-arm64."libffi-3.7.0-hdaad0be_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libffi-3.7.0-hdaad0be_1.conda"
@@ -934,9 +934,9 @@ checksum = "sha256:8d80ccab2fd622ae38931691c27952e56a5d3007ff920efd9f3ff52e2c81a
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libegl-devel-1.7.0-hd24410f_5.conda"
 checksum = "sha256:ae8dcab97d4905754cb70ecc345dc06df6386df0a1f1d578ec94bb987db2a4d6"
 
-[conda-packages.linux-arm64-musl."libexpat-2.8.4-h4154aff_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libexpat-2.8.4-h4154aff_0.conda"
-checksum = "sha256:af168b3070c57d33187faad47da0b98251c255f7369399b4ffce408f4305d530"
+[conda-packages.linux-arm64-musl."libexpat-2.8.5-h4154aff_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libexpat-2.8.5-h4154aff_0.conda"
+checksum = "sha256:d155b9ee74abac0865095a66ebb008be967937a6deea6e7666ba01ead4a155fc"
 
 [conda-packages.linux-arm64-musl."libffi-3.7.0-hdaad0be_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libffi-3.7.0-hdaad0be_1.conda"
@@ -1638,9 +1638,9 @@ checksum = "sha256:13d3fde9c1dcf254968cc70652222a43f25d04e69555ccf855553110e7532
 url = "https://conda.anaconda.org/conda-forge/linux-64/libegl-devel-1.7.0-ha4b6fd6_5.conda"
 checksum = "sha256:fd2794bbcff7e692fb476c17886702702893d074071d429217bad7cfb072abfd"
 
-[conda-packages.linux-x64."libexpat-2.8.4-hd2095e1_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.4-hd2095e1_0.conda"
-checksum = "sha256:2f5e90b621f7bf64c35d5c972bd85a645555d82404130569149a129dcbc8b8dd"
+[conda-packages.linux-x64."libexpat-2.8.5-hd2095e1_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.5-hd2095e1_0.conda"
+checksum = "sha256:6de73033a7c5f712c9c5a54124e4581e025691029835e5bceaf10a333a7e7bc0"
 
 [conda-packages.linux-x64."libffi-3.7.0-h81df57d_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libffi-3.7.0-h81df57d_1.conda"
@@ -2370,9 +2370,9 @@ checksum = "sha256:13d3fde9c1dcf254968cc70652222a43f25d04e69555ccf855553110e7532
 url = "https://conda.anaconda.org/conda-forge/linux-64/libegl-devel-1.7.0-ha4b6fd6_5.conda"
 checksum = "sha256:fd2794bbcff7e692fb476c17886702702893d074071d429217bad7cfb072abfd"
 
-[conda-packages.linux-x64-baseline."libexpat-2.8.4-hd2095e1_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.4-hd2095e1_0.conda"
-checksum = "sha256:2f5e90b621f7bf64c35d5c972bd85a645555d82404130569149a129dcbc8b8dd"
+[conda-packages.linux-x64-baseline."libexpat-2.8.5-hd2095e1_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.5-hd2095e1_0.conda"
+checksum = "sha256:6de73033a7c5f712c9c5a54124e4581e025691029835e5bceaf10a333a7e7bc0"
 
 [conda-packages.linux-x64-baseline."libffi-3.7.0-h81df57d_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libffi-3.7.0-h81df57d_1.conda"
@@ -3102,9 +3102,9 @@ checksum = "sha256:13d3fde9c1dcf254968cc70652222a43f25d04e69555ccf855553110e7532
 url = "https://conda.anaconda.org/conda-forge/linux-64/libegl-devel-1.7.0-ha4b6fd6_5.conda"
 checksum = "sha256:fd2794bbcff7e692fb476c17886702702893d074071d429217bad7cfb072abfd"
 
-[conda-packages.linux-x64-musl."libexpat-2.8.4-hd2095e1_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.4-hd2095e1_0.conda"
-checksum = "sha256:2f5e90b621f7bf64c35d5c972bd85a645555d82404130569149a129dcbc8b8dd"
+[conda-packages.linux-x64-musl."libexpat-2.8.5-hd2095e1_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.5-hd2095e1_0.conda"
+checksum = "sha256:6de73033a7c5f712c9c5a54124e4581e025691029835e5bceaf10a333a7e7bc0"
 
 [conda-packages.linux-x64-musl."libffi-3.7.0-h81df57d_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libffi-3.7.0-h81df57d_1.conda"
@@ -3834,9 +3834,9 @@ checksum = "sha256:13d3fde9c1dcf254968cc70652222a43f25d04e69555ccf855553110e7532
 url = "https://conda.anaconda.org/conda-forge/linux-64/libegl-devel-1.7.0-ha4b6fd6_5.conda"
 checksum = "sha256:fd2794bbcff7e692fb476c17886702702893d074071d429217bad7cfb072abfd"
 
-[conda-packages.linux-x64-musl-baseline."libexpat-2.8.4-hd2095e1_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.4-hd2095e1_0.conda"
-checksum = "sha256:2f5e90b621f7bf64c35d5c972bd85a645555d82404130569149a129dcbc8b8dd"
+[conda-packages.linux-x64-musl-baseline."libexpat-2.8.5-hd2095e1_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.8.5-hd2095e1_0.conda"
+checksum = "sha256:6de73033a7c5f712c9c5a54124e4581e025691029835e5bceaf10a333a7e7bc0"
 
 [conda-packages.linux-x64-musl-baseline."libffi-3.7.0-h81df57d_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libffi-3.7.0-h81df57d_1.conda"
@@ -4510,9 +4510,9 @@ checksum = "sha256:d896f4aa4ce4c590c2838678cb1917356fdb461d2a189991c0280c818c362
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdovi-3.4.0-hc336dc4_1.conda"
 checksum = "sha256:6439dd036af971cc5665b27ed4e8266edd8b948d1839b5d28c776f41b05b1707"
 
-[conda-packages.macos-arm64."libexpat-2.8.4-h6111c0a_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libexpat-2.8.4-h6111c0a_0.conda"
-checksum = "sha256:fbf03ab4a6d688fa07d262cfa4cba3cbfb7fbb53607e40457d4494314407135d"
+[conda-packages.macos-arm64."libexpat-2.8.5-h6111c0a_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libexpat-2.8.5-h6111c0a_0.conda"
+checksum = "sha256:50aa761b83fc7a116ca88fe0cb4cefce5abababb10a926bf8afbafd5c298d102"
 
 [conda-packages.macos-arm64."libffi-3.7.0-h47dc5ef_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libffi-3.7.0-h47dc5ef_1.conda"
@@ -5022,9 +5022,9 @@ checksum = "sha256:210ee1d6a5aa201cf6d02b10edd02738cc35a4e8fb0866e4fb425010d6dd2
 url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-hee1dffb_1.conda"
 checksum = "sha256:1a9c0abc305e543cc21d02711a8e27d3ba2506ce80528e973a9a00f7338d3f87"
 
-[conda-packages.macos-x64."libexpat-2.8.4-h6e061ac_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.8.4-h6e061ac_0.conda"
-checksum = "sha256:b889ca9593abe1625433a050c3c63cbb28bc0208b9f70db2eee30c744a3fc0a8"
+[conda-packages.macos-x64."libexpat-2.8.5-h6e061ac_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.8.5-h6e061ac_0.conda"
+checksum = "sha256:c58d84e9455db8161fa6a2413c1bf11de30682c02f9a3c1ddfaf24ea73dbe10f"
 
 [conda-packages.macos-x64."libffi-3.7.0-h6b3a05b_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libffi-3.7.0-h6b3a05b_1.conda"
@@ -5534,9 +5534,9 @@ checksum = "sha256:210ee1d6a5aa201cf6d02b10edd02738cc35a4e8fb0866e4fb425010d6dd2
 url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-hee1dffb_1.conda"
 checksum = "sha256:1a9c0abc305e543cc21d02711a8e27d3ba2506ce80528e973a9a00f7338d3f87"
 
-[conda-packages.macos-x64-baseline."libexpat-2.8.4-h6e061ac_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.8.4-h6e061ac_0.conda"
-checksum = "sha256:b889ca9593abe1625433a050c3c63cbb28bc0208b9f70db2eee30c744a3fc0a8"
+[conda-packages.macos-x64-baseline."libexpat-2.8.5-h6e061ac_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.8.5-h6e061ac_0.conda"
+checksum = "sha256:c58d84e9455db8161fa6a2413c1bf11de30682c02f9a3c1ddfaf24ea73dbe10f"
 
 [conda-packages.macos-x64-baseline."libffi-3.7.0-h6b3a05b_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libffi-3.7.0-h6b3a05b_1.conda"
@@ -6026,9 +6026,9 @@ checksum = "sha256:b89bafa5188b126b5fcac9686d2e6fef3e1a0a7b9a1d250842995f9431a79
 url = "https://conda.anaconda.org/conda-forge/win-64/libdeflate-1.25-h1a1d4e4_1.conda"
 checksum = "sha256:af1cda21d4653f594fbef20aa4e1ff158a546902b3307ef8af9a9b44b43862d2"
 
-[conda-packages.windows-x64."libexpat-2.8.4-hac47afa_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libexpat-2.8.4-hac47afa_0.conda"
-checksum = "sha256:f7360315e293c587176bc2201fb4fa05926cb4dcf643772bbbdb90df5f7f64e5"
+[conda-packages.windows-x64."libexpat-2.8.5-hac47afa_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libexpat-2.8.5-hac47afa_0.conda"
+checksum = "sha256:70c73d9fd24ad996f2821d1501adae2ca70984b4e2d8faed76227f348ce86078"
 
 [conda-packages.windows-x64."libffi-3.7.0-h3d046cb_1"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libffi-3.7.0-h3d046cb_1.conda"
@@ -6502,9 +6502,9 @@ checksum = "sha256:b89bafa5188b126b5fcac9686d2e6fef3e1a0a7b9a1d250842995f9431a79
 url = "https://conda.anaconda.org/conda-forge/win-64/libdeflate-1.25-h1a1d4e4_1.conda"
 checksum = "sha256:af1cda21d4653f594fbef20aa4e1ff158a546902b3307ef8af9a9b44b43862d2"
 
-[conda-packages.windows-x64-baseline."libexpat-2.8.4-hac47afa_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libexpat-2.8.4-hac47afa_0.conda"
-checksum = "sha256:f7360315e293c587176bc2201fb4fa05926cb4dcf643772bbbdb90df5f7f64e5"
+[conda-packages.windows-x64-baseline."libexpat-2.8.5-hac47afa_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libexpat-2.8.5-hac47afa_0.conda"
+checksum = "sha256:70c73d9fd24ad996f2821d1501adae2ca70984b4e2d8faed76227f348ce86078"
 
 [conda-packages.windows-x64-baseline."libffi-3.7.0-h3d046cb_1"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libffi-3.7.0-h3d046cb_1.conda"
@@ -7480,7 +7480,6 @@ conda_deps = [
     "libplacebo-7.360.1-h07e46df_0",
     "alsa-lib-1.2.16.1-h5bc82ec_1",
     "aom-3.14.1-pl5321hf5316b6_2",
-    "libexpat-2.8.4-h4154aff_0",
     "libfreetype-2.14.3-h8af1aa0_2",
     "libfreetype6-2.14.3-h9cc7050_2",
     "liblzma-5.8.3-he30d5cf_1",
@@ -7502,6 +7501,7 @@ conda_deps = [
     "cairo-1.18.6-hca320e2_0",
     "freetype-2.14.3-h8af1aa0_2",
     "lame-3.100-h4e544f5_1003",
+    "libexpat-2.8.5-h4154aff_0",
     "libgcc-16.2.0-h205dda4_7",
     "libgcc-ng-16.2.0-he9431aa_7",
     "libstdcxx-16.2.0-hef695bb_7",
@@ -7612,7 +7612,6 @@ conda_deps = [
     "libplacebo-7.360.1-h07e46df_0",
     "alsa-lib-1.2.16.1-h5bc82ec_1",
     "aom-3.14.1-pl5321hf5316b6_2",
-    "libexpat-2.8.4-h4154aff_0",
     "libfreetype-2.14.3-h8af1aa0_2",
     "libfreetype6-2.14.3-h9cc7050_2",
     "liblzma-5.8.3-he30d5cf_1",
@@ -7634,6 +7633,7 @@ conda_deps = [
     "cairo-1.18.6-hca320e2_0",
     "freetype-2.14.3-h8af1aa0_2",
     "lame-3.100-h4e544f5_1003",
+    "libexpat-2.8.5-h4154aff_0",
     "libgcc-16.2.0-h205dda4_7",
     "libgcc-ng-16.2.0-he9431aa_7",
     "libstdcxx-16.2.0-hef695bb_7",
@@ -7731,7 +7731,6 @@ conda_deps = [
     "dav1d-1.2.1-hd590300_0",
     "libplacebo-7.360.1-h9eeb4b2_0",
     "aom-3.14.1-pl5321h57e6904_2",
-    "libexpat-2.8.4-hd2095e1_0",
     "libfreetype-2.14.3-ha770c72_2",
     "libfreetype6-2.14.3-h5e6c136_2",
     "liblzma-5.8.3-hb03c661_1",
@@ -7769,6 +7768,7 @@ conda_deps = [
     "cairo-1.18.6-h3c89d7e_0",
     "freetype-2.14.3-ha770c72_2",
     "lame-3.100-h166bdaf_1003",
+    "libexpat-2.8.5-hd2095e1_0",
     "libgcc-16.2.0-ha9f2e26_7",
     "libgcc-ng-16.2.0-h69a702a_7",
     "libstdcxx-16.2.0-h934c35e_7",
@@ -7873,7 +7873,6 @@ conda_deps = [
     "dav1d-1.2.1-hd590300_0",
     "libplacebo-7.360.1-h9eeb4b2_0",
     "aom-3.14.1-pl5321h57e6904_2",
-    "libexpat-2.8.4-hd2095e1_0",
     "libfreetype-2.14.3-ha770c72_2",
     "libfreetype6-2.14.3-h5e6c136_2",
     "liblzma-5.8.3-hb03c661_1",
@@ -7911,6 +7910,7 @@ conda_deps = [
     "cairo-1.18.6-h3c89d7e_0",
     "freetype-2.14.3-ha770c72_2",
     "lame-3.100-h166bdaf_1003",
+    "libexpat-2.8.5-hd2095e1_0",
     "libgcc-16.2.0-ha9f2e26_7",
     "libgcc-ng-16.2.0-h69a702a_7",
     "libstdcxx-16.2.0-h934c35e_7",
@@ -8015,7 +8015,6 @@ conda_deps = [
     "dav1d-1.2.1-hd590300_0",
     "libplacebo-7.360.1-h9eeb4b2_0",
     "aom-3.14.1-pl5321h57e6904_2",
-    "libexpat-2.8.4-hd2095e1_0",
     "libfreetype-2.14.3-ha770c72_2",
     "libfreetype6-2.14.3-h5e6c136_2",
     "liblzma-5.8.3-hb03c661_1",
@@ -8053,6 +8052,7 @@ conda_deps = [
     "cairo-1.18.6-h3c89d7e_0",
     "freetype-2.14.3-ha770c72_2",
     "lame-3.100-h166bdaf_1003",
+    "libexpat-2.8.5-hd2095e1_0",
     "libgcc-16.2.0-ha9f2e26_7",
     "libgcc-ng-16.2.0-h69a702a_7",
     "libstdcxx-16.2.0-h934c35e_7",
@@ -8157,7 +8157,6 @@ conda_deps = [
     "dav1d-1.2.1-hd590300_0",
     "libplacebo-7.360.1-h9eeb4b2_0",
     "aom-3.14.1-pl5321h57e6904_2",
-    "libexpat-2.8.4-hd2095e1_0",
     "libfreetype-2.14.3-ha770c72_2",
     "libfreetype6-2.14.3-h5e6c136_2",
     "liblzma-5.8.3-hb03c661_1",
@@ -8195,6 +8194,7 @@ conda_deps = [
     "cairo-1.18.6-h3c89d7e_0",
     "freetype-2.14.3-ha770c72_2",
     "lame-3.100-h166bdaf_1003",
+    "libexpat-2.8.5-hd2095e1_0",
     "libgcc-16.2.0-ha9f2e26_7",
     "libgcc-ng-16.2.0-h69a702a_7",
     "libstdcxx-16.2.0-h934c35e_7",
@@ -8298,7 +8298,6 @@ conda_deps = [
     "libplacebo-7.360.1-h176d363_0",
     "aom-3.14.1-pl5321hf79ea98_2",
     "lame-3.100-h1a8c8d9_1003",
-    "libexpat-2.8.4-h6111c0a_0",
     "libfreetype-2.14.3-hce30654_2",
     "libfreetype6-2.14.3-h2ed5691_2",
     "liblzma-5.8.3-h8088a28_1",
@@ -8332,6 +8331,7 @@ conda_deps = [
     "cairo-1.18.6-h580cee5_0",
     "freetype-2.14.3-hce30654_2",
     "libcxx-23.1.2-h55c6f16_0",
+    "libexpat-2.8.5-h6111c0a_0",
     "libiconv-1.18-he4c29f2_3",
     "libjxl-0.11.2-h934fa54_1",
     "librsvg-2.62.4-hc8ac265_0",
@@ -8405,7 +8405,6 @@ conda_deps = [
     "libplacebo-7.360.1-he17f467_0",
     "aom-3.14.1-pl5321hf898372_2",
     "fontconfig-2.18.3-h7f3b9c9_1",
-    "libexpat-2.8.4-h6e061ac_0",
     "libfreetype-2.14.3-h694c41f_2",
     "libfreetype6-2.14.3-h8afe040_2",
     "liblzma-5.8.3-hbb4bfdb_1",
@@ -8426,6 +8425,7 @@ conda_deps = [
     "freetype-2.14.3-h694c41f_2",
     "lame-3.100-hb7f2c08_1003",
     "libcxx-23.1.2-h19cb2f5_0",
+    "libexpat-2.8.5-h6e061ac_0",
     "libiconv-1.18-h4ae439b_3",
     "libjxl-0.11.2-h473410d_1",
     "librsvg-2.62.4-h43ae438_0",
@@ -8499,7 +8499,6 @@ conda_deps = [
     "libplacebo-7.360.1-he17f467_0",
     "aom-3.14.1-pl5321hf898372_2",
     "fontconfig-2.18.3-h7f3b9c9_1",
-    "libexpat-2.8.4-h6e061ac_0",
     "libfreetype-2.14.3-h694c41f_2",
     "libfreetype6-2.14.3-h8afe040_2",
     "liblzma-5.8.3-hbb4bfdb_1",
@@ -8520,6 +8519,7 @@ conda_deps = [
     "freetype-2.14.3-h694c41f_2",
     "lame-3.100-hb7f2c08_1003",
     "libcxx-23.1.2-h19cb2f5_0",
+    "libexpat-2.8.5-h6e061ac_0",
     "libiconv-1.18-h4ae439b_3",
     "libjxl-0.11.2-h473410d_1",
     "librsvg-2.62.4-h43ae438_0",
@@ -8579,7 +8579,6 @@ conda_deps = [
     "dav1d-1.2.1-hcfcfb64_0",
     "aom-3.14.1-pl5321h06fc181_2",
     "lame-3.100-hcfcfb64_1003",
-    "libexpat-2.8.4-hac47afa_0",
     "libfreetype-2.14.3-h57928b3_2",
     "libfreetype6-2.14.3-hdbac1cb_2",
     "libiconv-1.18-hc1393d2_3",
@@ -8601,6 +8600,7 @@ conda_deps = [
     "zlib-1.3.2-hfd05255_3",
     "glib-2.90.0-h6d70850_0",
     "glib-tools-2.90.0-hafa6b35_0",
+    "libexpat-2.8.5-hac47afa_0",
     "libjxl-0.11.2-h932607e_1",
     "librsvg-2.62.4-h5506a08_0",
     "libvulkan-loader-1.4.357.0-h477610d_2",
@@ -8665,7 +8665,6 @@ conda_deps = [
     "dav1d-1.2.1-hcfcfb64_0",
     "aom-3.14.1-pl5321h06fc181_2",
     "lame-3.100-hcfcfb64_1003",
-    "libexpat-2.8.4-hac47afa_0",
     "libfreetype-2.14.3-h57928b3_2",
     "libfreetype6-2.14.3-hdbac1cb_2",
     "libiconv-1.18-hc1393d2_3",
@@ -8687,6 +8686,7 @@ conda_deps = [
     "zlib-1.3.2-hfd05255_3",
     "glib-2.90.0-h6d70850_0",
     "glib-tools-2.90.0-hafa6b35_0",
+    "libexpat-2.8.5-hac47afa_0",
     "libjxl-0.11.2-h932607e_1",
     "librsvg-2.62.4-h5506a08_0",
     "libvulkan-loader-1.4.357.0-h477610d_2",
@@ -9825,7 +9825,7 @@ conda_deps = [
     "pango-1.58.2-h03cb6a0_1",
     "libgfortran-16.2.0-he9431aa_7",
     "libgfortran5-16.2.0-hc864f27_7",
-    "libexpat-2.8.4-h4154aff_0",
+    "libexpat-2.8.5-h4154aff_0",
     "libuuid-2.42.4-hd6fdeab_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -9956,7 +9956,7 @@ conda_deps = [
     "pango-1.58.2-h03cb6a0_1",
     "libgfortran-16.2.0-he9431aa_7",
     "libgfortran5-16.2.0-hc864f27_7",
-    "libexpat-2.8.4-h4154aff_0",
+    "libexpat-2.8.5-h4154aff_0",
     "libuuid-2.42.4-hd6fdeab_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
@@ -10087,8 +10087,8 @@ conda_deps = [
     "pango-1.58.2-h7bb47b9_1",
     "libgfortran-16.2.0-h69a702a_7",
     "libgfortran5-16.2.0-h6b99dfc_7",
-    "libexpat-2.8.4-hd2095e1_0",
     "libuuid-2.42.4-hcfc3c73_0",
+    "libexpat-2.8.5-hd2095e1_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -10218,8 +10218,8 @@ conda_deps = [
     "pango-1.58.2-h7bb47b9_1",
     "libgfortran-16.2.0-h69a702a_7",
     "libgfortran5-16.2.0-h6b99dfc_7",
-    "libexpat-2.8.4-hd2095e1_0",
     "libuuid-2.42.4-hcfc3c73_0",
+    "libexpat-2.8.5-hd2095e1_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -10349,8 +10349,8 @@ conda_deps = [
     "pango-1.58.2-h7bb47b9_1",
     "libgfortran-16.2.0-h69a702a_7",
     "libgfortran5-16.2.0-h6b99dfc_7",
-    "libexpat-2.8.4-hd2095e1_0",
     "libuuid-2.42.4-hcfc3c73_0",
+    "libexpat-2.8.5-hd2095e1_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -10480,8 +10480,8 @@ conda_deps = [
     "pango-1.58.2-h7bb47b9_1",
     "libgfortran-16.2.0-h69a702a_7",
     "libgfortran5-16.2.0-h6b99dfc_7",
-    "libexpat-2.8.4-hd2095e1_0",
     "libuuid-2.42.4-hcfc3c73_0",
+    "libexpat-2.8.5-hd2095e1_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -10610,8 +10610,8 @@ conda_deps = [
     "libgfortran-16.2.0-h07b0088_7",
     "libgfortran5-16.2.0-hdb7a957_7",
     "llvm-openmp-23.1.2-hdb3d66b_0",
-    "libexpat-2.8.4-h6111c0a_0",
     "libintl-0.25.1-hae62183_2",
+    "libexpat-2.8.5-h6111c0a_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -10706,8 +10706,8 @@ conda_deps = [
     "libgfortran-16.2.0-h7e5c614_7",
     "libgfortran5-16.2.0-h2539e6c_7",
     "llvm-openmp-23.1.2-h8c1e6b9_0",
-    "libexpat-2.8.4-h6e061ac_0",
     "libintl-0.25.1-h98e67c8_2",
+    "libexpat-2.8.5-h6e061ac_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -10802,8 +10802,8 @@ conda_deps = [
     "libgfortran-16.2.0-h7e5c614_7",
     "libgfortran5-16.2.0-h2539e6c_7",
     "llvm-openmp-23.1.2-h8c1e6b9_0",
-    "libexpat-2.8.4-h6e061ac_0",
     "libintl-0.25.1-h98e67c8_2",
+    "libexpat-2.8.5-h6e061ac_0",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -10897,7 +10897,7 @@ conda_deps = [
     "vc14_runtime-14.51.36247-habf1de7_41",
     "vcomp14-14.51.36247-habf1de7_41",
     "vs2015_runtime-14.51.36247-h633cb9f_41",
-    "libexpat-2.8.4-hac47afa_0",
+    "libexpat-2.8.5-hac47afa_0",
     "libiconv-1.18-hc1393d2_3",
     "libintl-0.22.5-h5728263_4",
     "font-ttf-ubuntu-0.83-h77eed37_3",
@@ -10992,7 +10992,7 @@ conda_deps = [
     "vc14_runtime-14.51.36247-habf1de7_41",
     "vcomp14-14.51.36247-habf1de7_41",
     "vs2015_runtime-14.51.36247-h633cb9f_41",
-    "libexpat-2.8.4-hac47afa_0",
+    "libexpat-2.8.5-hac47afa_0",
     "libiconv-1.18-hc1393d2_3",
     "libintl-0.22.5-h5728263_4",
     "font-ttf-ubuntu-0.83-h77eed37_3",
