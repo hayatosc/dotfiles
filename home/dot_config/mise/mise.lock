@@ -11240,10 +11240,10 @@ backend = "npm:@xai-official/grok"
 specifiers = ["1.0.41"]
 
 [[tools."npm:acpx"]]
-version = "0.19.1"
-aube = { path = ".mise/locks/npm-acpx/0.19.1", digest = "sha256:e03b8c11a999423bf5476ef2866fbac4a29ef8a1e6bab792f5454f0041402ab9" }
+version = "0.19.2"
+aube = { path = ".mise/locks/npm-acpx/0.19.2", digest = "sha256:f610703aed3f1ae476f9cd300451849958dd41354b1efe9c3fc2f4e78abe37b0" }
 backend = "npm:acpx"
-specifiers = ["0.19.1"]
+specifiers = ["0.19.2"]
 
 [[tools."npm:agent-browser"]]
 version = "0.38.1"
