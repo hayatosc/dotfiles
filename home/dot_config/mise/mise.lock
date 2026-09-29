@@ -12086,9 +12086,9 @@ url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/587159002"
 provenance = "github-attestations"
 
 [[tools.yarn]]
-version = "4.18.0"
+version = "4.18.1"
 backend = "vfox:mise-plugins/vfox-yarn"
-specifiers = ["4.18.0"]
+specifiers = ["4.18.1"]
 
 [[tools.yazi]]
 version = "26.9.1"
