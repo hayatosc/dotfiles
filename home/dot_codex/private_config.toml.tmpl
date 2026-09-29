@@ -7,6 +7,12 @@
 {{-   $current = include $localData | fromToml -}}
 {{- end -}}
 {{- $_ := unset $current "agents" -}}
+{{- $_ := unset $current "default_mode_request_user_input" -}}
+{{- range $path, $proj := $current.projects -}}
+{{-   if kindIs "map" $proj -}}
+{{-     $_ := unset $proj "mcp_servers" -}}
+{{-   end -}}
+{{- end -}}
 {{- $shared := dict
       "model" "gpt-6-astra"
       "model_reasoning_effort" "medium"
