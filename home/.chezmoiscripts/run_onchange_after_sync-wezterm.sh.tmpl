@@ -1,3 +1,4 @@
+{{ if ne (index . "profile") "dot-cloud" -}}
 #!/bin/bash
 # wezterm.lua hash: {{ include "dot_wezterm.lua" | sha256sum }}
 
@@ -27,3 +28,4 @@ fi
 
 cp -f "$HOME/.wezterm.lua" "$WIN_USERPROFILE/.wezterm.lua"
 echo "[chezmoi] Synced .wezterm.lua to Windows USERPROFILE: $WIN_USERPROFILE/.wezterm.lua"
+{{ end -}}

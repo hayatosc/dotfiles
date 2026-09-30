@@ -1,0 +1,25 @@
+{{ if eq (index . "profile") "dot-cloud" -}}
+# Target-path allowlist: future upstream additions stay excluded by default.
+# Parents must also be included so chezmoi can traverse to the allowed files.
+**
+!.zshenv
+!.zprofile
+!.zshrc
+!.config
+!.config/starship.toml
+!.config/tmux
+!.config/tmux/tmux.conf
+!.config/helix
+!.config/helix/config.toml
+!.config/git
+!.config/git/ignore
+!.local
+!.local/bin
+!.local/bin/dot-shell
+# Only the dot-cloud lifecycle scripts may execute in this profile.
+!.chezmoiscripts/00-dot-cloud-tools.sh
+!.chezmoiscripts/99-dot-cloud-skills.sh
+{{ else -}}
+# The isolated launcher is only installed for an explicitly selected dot profile.
+.local/bin/dot-shell
+{{ end -}}

@@ -1,3 +1,4 @@
+{{ if ne (index . "profile") "dot-cloud" -}}
 #!/bin/bash
 {{- if contains "microsoft" .chezmoi.kernel.osrelease }}
 
@@ -51,3 +52,4 @@ echo "==> Docker installation complete."
 echo "    Re-login (or run 'newgrp docker') to use docker without sudo."
 
 {{- end }}
+{{ end -}}

@@ -1,0 +1,5 @@
+{{- if eq (get . "profile") "dot-cloud" -}}
+#!/bin/sh
+set -eu
+exec /usr/bin/python3 {{ joinPath .chezmoi.sourceDir ".." "profiles" "dot-cloud" "apply.py" | quote }} tools --home {{ .chezmoi.destDir | quote }} --state {{ .dotCloudStateDir | quote }}
+{{- end }}

@@ -1,0 +1,4 @@
+{{ if ne (index . "profile") "dot-cloud" -}}
+#!/bin/bash
+sudo apt install build-essential
+{{ end -}}

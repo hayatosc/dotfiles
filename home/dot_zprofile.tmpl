@@ -1,0 +1,10 @@
+{{ if eq (index . "profile") "dot-cloud" -}}
+# dot-cloud: interactive setup lives in .zshrc.
+# Preserve the managed runtime's inherited login environment.
+{{ else -}}
+# ~/.zprofile: zsh login shell settings.
+
+if [ -f "$HOME/.config/zsh/init/mise.zsh" ]; then
+    source "$HOME/.config/zsh/init/mise.zsh"
+fi
+{{ end -}}

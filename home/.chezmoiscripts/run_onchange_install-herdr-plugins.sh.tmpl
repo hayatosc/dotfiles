@@ -1,3 +1,4 @@
+{{ if ne (index . "profile") "dot-cloud" -}}
 #!/bin/bash
 # herdr: {{ lookPath "herdr" }}
 set -euo pipefail
@@ -30,3 +31,4 @@ for plugin in "${PLUGINS[@]}"; do
 done
 
 
+{{ end -}}

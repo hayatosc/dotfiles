@@ -1,3 +1,4 @@
+{{ if ne (index . "profile") "dot-cloud" -}}
 #!/bin/bash
 # gh: {{ lookPath "gh" }}
 set -euo pipefail
@@ -23,3 +24,4 @@ for ext in "${EXTENSIONS[@]}"; do
         gh extension install "${ext}"
     fi
 done
+{{ end -}}

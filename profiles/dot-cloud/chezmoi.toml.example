@@ -1,0 +1,9 @@
+# One-time explicit selection. Use absolute paths appropriate to this machine.
+sourceDir = "/workspace/shared/hayatosc-dotfiles"
+destDir = "/workspace/shared/dot-cloud-home"
+cacheDir = "/workspace/shared/dot-cloud-state/chezmoi-cache"
+persistentState = "/workspace/shared/dot-cloud-state/chezmoi-state.boltdb"
+
+[data]
+profile = "dot-cloud"
+dotCloudStateDir = "/workspace/shared/dot-cloud-state"

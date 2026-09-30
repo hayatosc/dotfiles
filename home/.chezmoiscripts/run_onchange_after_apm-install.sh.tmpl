@@ -1,3 +1,4 @@
+{{ if ne (index . "profile") "dot-cloud" -}}
 #!/bin/bash
 # Re-run whenever apm.yml or any self-authored skill under skills/ changes.
 # apm.yml hash: {{ output "sh" "-c" (printf "sha256sum %s 2>/dev/null | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" "apm.yml")) }}
@@ -94,3 +95,4 @@ rm -rf "${TEMP_AGENTS_DIR}"
 rm -rf "${TEMP_APM_DIR}"
 
 echo "==> apm install completed and cleaned up temporary directories"
+{{ end -}}

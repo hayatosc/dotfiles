@@ -1,0 +1,89 @@
+{{ if eq (index . "profile") "dot-cloud" -}}
+{{- $stateDir := index . "dotCloudStateDir" -}}
+{{- if not (kindIs "string" $stateDir) -}}
+{{- fail "dot-cloud requires an absolute dotCloudStateDir in chezmoi data" -}}
+{{- end -}}
+{{- if not (hasPrefix "/" $stateDir) -}}
+{{- fail "dot-cloud requires an absolute dotCloudStateDir in chezmoi data" -}}
+{{- end -}}
+# dot-cloud: optional interactive conveniences, with isolated runtime state.
+[[ -o interactive ]] || return
+export DOT_CLOUD_STATE_DIR={{ $stateDir | shellQuote }}
+HISTFILE="$DOT_CLOUD_STATE_DIR/zsh/history"
+HISTSIZE=10000
+SAVEHIST=10000
+export STARSHIP_CACHE="$DOT_CLOUD_STATE_DIR/starship"
+export STARSHIP_CONFIG="$HOME/.config/starship.toml"
+export _ZO_DATA_DIR="$DOT_CLOUD_STATE_DIR/zoxide"
+
+# Keep every file written by completion, history, and prompt helpers in stateDir.
+if ! mkdir -p -- "$DOT_CLOUD_STATE_DIR/zsh" "$STARSHIP_CACHE" "$_ZO_DATA_DIR"; then
+  print -u2 -- "dot-cloud: cannot create runtime state in $DOT_CLOUD_STATE_DIR"
+  return
+fi
+setopt HIST_IGNORE_DUPS HIST_REDUCE_BLANKS INC_APPEND_HISTORY
+bindkey -e
+autoload -Uz compinit
+compinit -i -d "$DOT_CLOUD_STATE_DIR/zsh/zcompdump-$ZSH_VERSION"
+
+(( $+commands[bat] )) && alias cat='bat'
+(( $+commands[eza] )) && alias ls='eza --icons=auto'
+(( $+commands[fd] )) && alias find='fd'
+alias sd='sed'
+# rm, python, and python3 deliberately keep their standard behavior.
+if (( $+commands[zoxide] )); then
+  eval "$(zoxide init zsh)"
+  alias cd='z'
+fi
+if (( $+commands[fzf] )) && [[ -o zle && -t 0 ]]; then
+  # Older fzf versions without --zsh simply leave the standard bindings intact.
+  eval "$(fzf --zsh 2>/dev/null)"
+fi
+if (( $+commands[starship] )) && [[ ${TERM:-dumb} != dumb ]]; then
+  eval "$(starship init zsh)"
+elif [[ ${TERM:-dumb} == dumb ]]; then
+  PROMPT='%n %~ %# '
+else
+  autoload -Uz colors && colors
+  PROMPT='%F{magenta}%n%f %F{blue}%~%f %# '
+fi
+{{ else -}}
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+if [ -f "$HOME/.config/zsh/init/mise.zsh" ]; then
+  source "$HOME/.config/zsh/init/mise.zsh"
+fi
+
+# alias
+alias cat="bat"
+alias ls="eza --icons"
+alias find="fd"
+alias cd="z"
+alias rm="gomi"
+alias sd="sed"
+
+for zshrc_file in ~/.config/zsh/rc.d/*.zsh(.N); do
+  source "$zshrc_file"
+done
+
+# HACK: Start gnome-keyring-daemon for WSL2 (enables CLI token persistence)
+# Temporary workaround for: https://discuss.ai.google.dev/t/bug-antigravity-cli-agy-fails-to-persist-authentication-state-in-wsl-2-environment/146059
+# TODO: Remove once Antigravity CLI natively supports headless keyring or file-based token storage
+if [[ -z "$DISPLAY" && -n "$WSL_DISTRO_NAME" ]]; then
+  export $(dbus-launch 2>/dev/null)
+  eval "$(echo "" | gnome-keyring-daemon --unlock 2>/dev/null)"
+  eval "$(gnome-keyring-daemon --start 2>/dev/null)"
+  export SSH_AUTH_SOCK
+fi
+
+eval "$(sheldon source)"
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+eval "$(git wt --init zsh)"
+
+# Windowsのデフォルトブラウザで開くための設定 (Windows default browser setup for WSL)
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
+  export BROWSER='/mnt/c/Windows/System32/rundll32.exe url.dll,FileProtocolHandler'
+fi
+{{ end -}}
