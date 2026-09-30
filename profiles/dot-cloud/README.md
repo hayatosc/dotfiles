@@ -4,7 +4,7 @@ This explicit profile adapts the repository to dot's managed Linux x86_64 cloud 
 
 ## One-time setup
 
-Prerequisites: Git, Zsh, and Python 3. No sudo is required. The repository-owned bootstrap obtains the checksum-pinned official chezmoi binary and selects the profile explicitly.
+Prerequisites: Git, Zsh, and Python 3. No sudo is required. The repository-owned bootstrap obtains the checksum-pinned official mise and chezmoi binaries and selects the profile explicitly.
 
 The managed `/home/agent` is mounted read-only even with normal write approval. Use a separate writable shell HOME; do not remount the managed home, move credentials, or change runtime permissions.
 
@@ -30,13 +30,14 @@ The launcher sets HOME and XDG configuration/data/cache/state paths for that she
 
 `chezmoi.toml.example` documents the explicit profile configuration. Adjust absolute home, state, and source paths if using another writable location; preserve an existing configuration rather than overwriting it. Home and state must be separate non-nested directories. SourceDir points at the repository root; `.chezmoiroot` selects `home/` automatically. Re-running the bootstrap with the same configuration is safe but not required for updates.
 
-No manual installer, full `mise install`, or APM command is needed after setup. Runtime state lives in the explicitly configured writable directory. The original repository remains the source of truth.
+No manual installer, full upstream `mise install`, or APM command is needed after setup. Runtime state lives in the explicitly configured writable directory. The original repository remains the source of truth.
 
 ## Managed scope
 
 - Guarded Zsh startup, interactive completions, optional FZF integration, and the `dot-shell` launcher
 - Catppuccin Mocha Starship prompt, tmux bindings, Helix settings, and Git ignore patterns
-- Official pinned Starship, zoxide, eza, bat, fd, fzf, and chezmoi binaries under `~/.local/bin`
+- Official pinned mise and chezmoi bootstrap binaries under `~/.local/bin`
+- Starship, zoxide, eza, bat, fd, fzf, and gh managed by mise under `~/.local/share/mise`, with shims first on PATH in interactive and non-interactive Zsh
 - The 19 self-authored skill directories and their reference assets under `~/.agents/skills`, deployed additively
 - Four prose agent-role descriptions/prompts kept as reference assets; no model or approval settings activated
 
@@ -46,9 +47,9 @@ The prompt's Nerd Font symbols depend on the terminal font. tmux and Helix confi
 
 The dot profile ignores upstream runtime configurations, authentication/signing files, shell plugin managers, custom permission hooks, local Python wrappers, and WSL-specific settings. It disables all existing upstream lifecycle scripts, including system package installation and APM's replace/delete sync. Non-dot profiles preserve their original rendered content and behavior.
 
-Every downloaded archive and extracted binary is SHA256-pinned in `tools.json`, with official upstream provenance. Only the named regular binary file is extracted. No remote shell installer is executed. Changes to versions/checksums are explicit repository edits and must be reviewed.
+The two bootstrap archives and extracted binaries are SHA256-pinned in `tools.json`, with official upstream provenance. Only their named regular binary files are extracted. Global CLI versions are pinned in `mise.toml`; their official release URLs and SHA256 checksums are pinned in the cloud-specific `mise.lock`. Installation uses `mise install --locked`, never an unlocked fallback or a remote shell installer. Changes to versions/checksums are explicit repository edits and must be reviewed.
 
-The installer records hashes of its owned tool and skill files. Unmanaged files or edits to previously installed files cause an error rather than being overwritten. Unrelated skills are preserved, and stale files are not automatically deleted. Repeated unchanged applies do not download, replace, or rewrite these files.
+The installer records hashes of its bootstrap binaries, mise config/lock, and skill files. Mise owns its installed tools and shims. Unmanaged files or edits to previously installed files cause an error rather than being overwritten. Unrelated skills are preserved, and stale files are not automatically deleted. Repeated unchanged applies do not replace or rewrite those owned files; mise skips already-installed versions.
 
 The profile does not read, replace, or symlink the runtime's `.codex` directory, copy credentials, alter approval modes, enable persistent external access, or publish repository changes. Copied skills remain subordinate to the host assistant's current instructions, tools, and permission requirements.
 
@@ -56,8 +57,16 @@ The profile does not read, replace, or symlink the runtime's `.codex` directory,
 
 Edit source files here, then run `chezmoi diff` or `chezmoi apply --dry-run --verbose` to inspect the target scope before applying. Do not remove the profile selection or run the default upstream profile in the managed cloud home.
 
-`apply.py tools` and `apply.py skills` are implementation details called by chezmoi, not extra user deployment steps. The former prepares required binaries and writable shell-state directories before file deployment; the latter updates additive skill assets afterward. The functions are independently testable in an isolated destination.
+`apply.py tools` and `apply.py skills` are implementation details called by chezmoi, not extra user deployment steps. The former bootstraps mise/chezmoi, deploys the reviewed global mise config and lock, installs the pinned global CLIs, and prepares writable shell-state directories before file deployment; the latter updates additive skill assets afterward. The functions are independently testable in an isolated destination.
 
 ## Checks
 
 Run `python3 profiles/dot-cloud/test_apply.py -v` for the focused ownership, conflict, executable-mode, and symlink checks. Validate a complete profile with two consecutive chezmoi applies against an isolated `destDir` and separate `dotCloudStateDir`; compare file bytes, modes, and modification times after the source has stabilized. Place unrelated-skill and `.codex/config.toml` sentinels in that fixture to verify preservation. Normal-profile compatibility checks should render only, never execute its lifecycle scripts in the cloud runtime.
+
+## Global CLI policy
+
+Add global CLIs to `profiles/dot-cloud/mise.toml`, review their source and hooks, and update the adjacent lockfile before applying. Do not use ad-hoc global package installers. The full PC `home/dot_config/mise/config.toml` is unchanged: its 66-tool developer stack, language runtimes, GUI/agent CLIs, package managers, plugins, tasks, and postinstall hooks are not automatically imported into this cloud shell. Only the existing six shell utilities plus GitHub CLI are selected here. System Git, Zsh, and Python remain prerequisites provided by the environment. Mise and chezmoi are the two checksum-pinned bootstrap exceptions, so a missing mise installation can be repaired by `chezmoi apply`.
+
+The first apply after upgrading from the direct-binary profile checks ownership and hashes, installs the mise tools, then moves the six old binaries to recoverable `stateDir/legacy-bin/` backups outside PATH. Changed/unmanaged files cause a conflict instead. GitHub CLI uses the dedicated HOME's existing `~/.config/gh` authentication; this profile does not read, migrate, print, or recreate credentials.
+
+Use `mise ls`, `mise which gh`, and `gh api user --jq .login` inside `dot-shell` to inspect the active tools and account. Shims provide CLI resolution without automatic shell hook execution. To refresh the cloud lock intentionally, use the pinned mise with `MISE_GLOBAL_CONFIG_FILE` pointing to the cloud `mise.toml`, an isolated HOME, and `mise lock --global --platform linux-x64,linux-x64-baseline`; inspect the resulting `mise.lock` before committing.

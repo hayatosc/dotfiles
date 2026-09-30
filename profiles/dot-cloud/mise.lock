@@ -1,0 +1,51 @@
+# Linux x64 subset of the repository lock; exact versions, URLs, and checksums.
+lockfile_version = 2
+
+[[tools."starship"]]
+version = "1.26.0"
+backend = "aqua:starship/starship"
+specifiers = ["1.26.0"]
+"platforms.linux-x64" = { checksum = "sha256:321f0dd7af8340a5f2e6a8fec6538a04f617486f9ec70d878f91c09cd8deef22", url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/starship/starship/releases/assets/460374620" }
+"platforms.linux-x64-baseline" = { checksum = "sha256:321f0dd7af8340a5f2e6a8fec6538a04f617486f9ec70d878f91c09cd8deef22", url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/starship/starship/releases/assets/460374620" }
+
+[[tools."zoxide"]]
+version = "0.10.0"
+backend = "aqua:ajeetdsouza/zoxide"
+specifiers = ["0.10.0"]
+"platforms.linux-x64" = { checksum = "sha256:2d93385b99f3e82cf2701609a1bffcad863fbeb75aa3fe7eb6be4d29be68b1ae", url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.10.0/zoxide-0.10.0-x86_64-unknown-linux-musl.tar.gz", url_api = "https://api.github.com/repos/ajeetdsouza/zoxide/releases/assets/466316293" }
+"platforms.linux-x64-baseline" = { checksum = "sha256:2d93385b99f3e82cf2701609a1bffcad863fbeb75aa3fe7eb6be4d29be68b1ae", url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.10.0/zoxide-0.10.0-x86_64-unknown-linux-musl.tar.gz", url_api = "https://api.github.com/repos/ajeetdsouza/zoxide/releases/assets/466316293" }
+
+[[tools."aqua:eza-community/eza"]]
+version = "0.23.5"
+backend = "aqua:eza-community/eza"
+specifiers = ["0.23.5"]
+"platforms.linux-x64" = { checksum = "sha256:35c70c5c43c29108075e58b893234c67ef585f0b53a7eaf8e9e7d4eec9f339b4", url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza_x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/471228887" }
+"platforms.linux-x64-baseline" = { checksum = "sha256:35c70c5c43c29108075e58b893234c67ef585f0b53a7eaf8e9e7d4eec9f339b4", url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza_x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/471228887" }
+
+[[tools."bat"]]
+version = "0.26.1"
+backend = "aqua:sharkdp/bat"
+specifiers = ["0.26.1"]
+"platforms.linux-x64" = { checksum = "sha256:726f04c8f576a7fd18b7634f1bbf2f915c43494c1c0f013baa3287edb0d5a2a3", url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549181" }
+"platforms.linux-x64-baseline" = { checksum = "sha256:726f04c8f576a7fd18b7634f1bbf2f915c43494c1c0f013baa3287edb0d5a2a3", url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549181" }
+
+[[tools."fd"]]
+version = "10.5.0"
+backend = "aqua:sharkdp/fd"
+specifiers = ["10.5.0"]
+"platforms.linux-x64" = { checksum = "sha256:a1259cd129636efbc3fef123525c1b49e88fe5088c012630983c310e52fdfa95", url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530481615" }
+"platforms.linux-x64-baseline" = { checksum = "sha256:a1259cd129636efbc3fef123525c1b49e88fe5088c012630983c310e52fdfa95", url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530481615" }
+
+[[tools."fzf"]]
+version = "0.74.4"
+backend = "aqua:junegunn/fzf"
+specifiers = ["0.74.4"]
+"platforms.linux-x64" = { checksum = "sha256:05e6813a337cc722c3ed07e54a764b75cc5d671e2e60459db0ba696ee5fa7504", url = "https://github.com/junegunn/fzf/releases/download/v0.74.4/fzf-0.74.4-linux_amd64.tar.gz", url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/558287768" }
+"platforms.linux-x64-baseline" = { checksum = "sha256:05e6813a337cc722c3ed07e54a764b75cc5d671e2e60459db0ba696ee5fa7504", url = "https://github.com/junegunn/fzf/releases/download/v0.74.4/fzf-0.74.4-linux_amd64.tar.gz", url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/558287768" }
+
+[[tools."gh"]]
+version = "2.101.0"
+backend = "aqua:cli/cli"
+specifiers = ["2.101.0"]
+"platforms.linux-x64" = { checksum = "sha256:9bca2d1c16825f109907a23307628a2f0698fbf99662b73a5cf0b020293072b8", url = "https://github.com/cli/cli/releases/download/v2.101.0/gh_2.101.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/cli/cli/releases/assets/565857134", provenance = "github-attestations" }
+"platforms.linux-x64-baseline" = { checksum = "sha256:9bca2d1c16825f109907a23307628a2f0698fbf99662b73a5cf0b020293072b8", url = "https://github.com/cli/cli/releases/download/v2.101.0/gh_2.101.0_linux_amd64.tar.gz", url_api = "https://api.github.com/repos/cli/cli/releases/assets/565857134", provenance = "github-attestations" }

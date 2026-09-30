@@ -1,0 +1,14 @@
+# Cloud-only global CLIs. Keep pins and mise.lock in sync.
+# No project tasks, postinstall hooks, or model/credential configuration.
+[tools]
+"starship" = "1.26.0"
+"zoxide" = "0.10.0"
+"aqua:eza-community/eza" = "0.23.5"
+"bat" = "0.26.1"
+"fd" = "10.5.0"
+"fzf" = "0.74.4"
+"gh" = "2.101.0"
+
+[settings]
+experimental = true
+lockfile = true

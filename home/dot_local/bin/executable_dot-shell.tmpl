@@ -7,7 +7,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME={{ index . "dotCloudStateDir" | shellQuote }}
 export XDG_CACHE_HOME="$XDG_STATE_HOME/cache"
-export PATH="$HOME/.local/bin${PATH:+:$PATH}"
+export PATH="$HOME/.local/share/mise/shims:$HOME/.local/bin${PATH:+:$PATH}"
 if ! command -v zsh >/dev/null 2>&1; then
   printf '%s\n' 'dot-shell: zsh is not installed' >&2
   exit 127

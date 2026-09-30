@@ -8,8 +8,15 @@
 {{- end -}}
 # dot-cloud: explicit profile; keep system rm and Python behavior unchanged.
 export DOT_CLOUD_STATE_DIR={{ $stateDir | shellQuote }}
+export MISE_CONFIG_DIR="$HOME/.config/mise"
+export MISE_GLOBAL_CONFIG_FILE="$MISE_CONFIG_DIR/config.toml"
+export MISE_DATA_DIR="$HOME/.local/share/mise"
+export MISE_CACHE_DIR="$DOT_CLOUD_STATE_DIR/cache/mise"
+export MISE_STATE_DIR="$DOT_CLOUD_STATE_DIR/mise"
 typeset -U path PATH
 [[ -d "$HOME/.local/bin" ]] && path=("$HOME/.local/bin" $path)
+# Shims cover interactive and non-interactive shells, without executing hooks.
+[[ -d "$HOME/.local/share/mise/shims" ]] && path=("$HOME/.local/share/mise/shims" $path)
 export PATH
 {{ else -}}
 # ~/.zshenv: minimal environment for all zsh shells.

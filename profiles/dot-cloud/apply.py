@@ -10,6 +10,7 @@ import json
 import os
 from pathlib import Path
 import platform
+import subprocess
 import tarfile
 import tempfile
 import urllib.request
@@ -104,14 +105,82 @@ def install_tools(home, state, owned):
         archive = download(tool, cache)
         with tarfile.open(archive, 'r:gz') as bundle:
             member = bundle.getmember(tool['archive_member'])
-            if not member.isfile() or member.size > 100 * 1024 * 1024:
+            if not member.isfile() or member.size > 200 * 1024 * 1024:
                 raise RuntimeError(f'Invalid binary archive member: {tool["name"]}')
             data = bundle.extractfile(member).read()
         if digest(data) != tool['binary_sha256']:
             raise RuntimeError(f'Binary checksum mismatch: {tool["name"]}')
         if managed_write(destination, data, 0o755, home, owned):
             changed.append(tool['name'])
+    install_mise_tools(home, state, owned)
     return changed
+
+
+def mise_environment(home, state):
+    # Never inherit a caller's mise config/backend overrides into the bootstrap.
+    env = {key: value for key, value in os.environ.items() if not key.startswith('MISE_')}
+    env.update({
+        'HOME': str(home),
+        'XDG_CONFIG_HOME': str(home / '.config'),
+        'XDG_DATA_HOME': str(home / '.local/share'),
+        'XDG_CACHE_HOME': str(state / 'cache'),
+        'XDG_STATE_HOME': str(state),
+        'MISE_CONFIG_DIR': str(home / '.config/mise'),
+        'MISE_GLOBAL_CONFIG_FILE': str(home / '.config/mise/config.toml'),
+        'MISE_DATA_DIR': str(home / '.local/share/mise'),
+        'MISE_CACHE_DIR': str(state / 'cache/mise'),
+        'MISE_STATE_DIR': str(state / 'mise'),
+        'PATH': str(home / '.local/bin') + os.pathsep + os.environ.get('PATH', '/usr/bin:/bin'),
+    })
+    return env
+
+
+def legacy_candidates(home, owned):
+    """Only migrate unchanged binaries installed by this profile's old version."""
+    result = []
+    manifest = json.loads((ROOT / 'profiles/dot-cloud/legacy-tools.json').read_text())
+    for tool in manifest['tools']:
+        path = home / '.local/bin' / tool['name']
+        safe_parent(path, home)
+        if not path.exists():
+            continue
+        key = str(path.relative_to(home))
+        current = digest(path.read_bytes())
+        if current != tool['binary_sha256'] or owned.get(key) != current:
+            raise RuntimeError(f'Preserving unmanaged or locally changed legacy binary: {path}')
+        result.append((path, key, current))
+    return result
+
+
+def migrate_legacy_tools(home, state, owned):
+    for path, key, checksum in legacy_candidates(home, owned):
+        backup = state / 'legacy-bin' / (path.name + '-' + checksum)
+        safe_parent(backup, state)
+        if backup.exists():
+            raise RuntimeError(f'Preserving existing legacy backup: {backup}')
+        backup.parent.mkdir(parents=True, exist_ok=True)
+        # Retain a recoverable backup outside PATH; never silently delete files.
+        path.rename(backup)
+        owned.pop(key)
+
+
+def install_mise_tools(home, state, owned):
+    legacy_candidates(home, owned)  # Fail before installation on local conflicts.
+    for path in (home / '.config/mise', home / '.local/share/mise'):
+        safe_parent(path, home)
+    for path in (state / 'cache/mise', state / 'mise'):
+        safe_parent(path, state)
+    for source, name in [('mise.toml', 'config.toml'), ('mise.lock', 'mise.lock')]:
+        managed_write(home / '.config/mise' / name,
+                      (ROOT / 'profiles/dot-cloud' / source).read_bytes(),
+                      0o644, home, owned)
+    command = str(home / '.local/bin/mise')
+    env = mise_environment(home, state)
+    # The reviewed cloud config has only official aqua CLIs, no executable hooks.
+    # CWD prevents unrelated project configs from affecting this global install.
+    subprocess.run([command, 'install', '--locked'], cwd=home, env=env, check=True)
+    subprocess.run([command, 'reshim'], cwd=home, env=env, check=True)
+    migrate_legacy_tools(home, state, owned)
 
 
 def install_skills(home, owned):

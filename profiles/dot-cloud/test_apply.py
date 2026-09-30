@@ -1,8 +1,10 @@
 """Local checks for the dot-cloud installer's file-preservation contract."""
 import importlib.util
+import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location('dot_cloud_apply', Path(__file__).with_name('apply.py'))
 installer = importlib.util.module_from_spec(spec)
@@ -70,6 +72,47 @@ class ManagedWrites(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             self.write()
         self.assertEqual(other.read_bytes(), b'unrelated')
+
+    def legacy_manifest(self):
+        folder = self.home / 'source/profiles/dot-cloud'
+        folder.mkdir(parents=True)
+        (folder / 'legacy-tools.json').write_text(json.dumps({'tools': [
+            {'name': 'tool', 'binary_sha256': installer.digest(b'original')}
+        ]}))
+        return self.home / 'source'
+
+    def test_owned_legacy_binary_backed_up_outside_path(self):
+        self.write()
+        with patch.object(installer, 'ROOT', self.legacy_manifest()):
+            installer.migrate_legacy_tools(self.home, self.home / 'state', self.owned)
+            self.assertFalse(self.path.exists())
+            backups = list((self.home / 'state/legacy-bin').iterdir())
+            self.assertEqual([p.read_bytes() for p in backups], [b'original'])
+            self.assertNotIn('.local/bin/tool', self.owned)
+            installer.migrate_legacy_tools(self.home, self.home / 'state', self.owned)
+
+    def test_changed_legacy_binary_preserved(self):
+        self.write()
+        self.path.write_bytes(b'user edit')
+        with patch.object(installer, 'ROOT', self.legacy_manifest()):
+            with self.assertRaisesRegex(RuntimeError, 'legacy binary'):
+                installer.migrate_legacy_tools(self.home, self.home / 'state', self.owned)
+        self.assertEqual(self.path.read_bytes(), b'user edit')
+
+    def test_unmanaged_legacy_binary_preserved(self):
+        self.write()
+        self.owned.clear()
+        with patch.object(installer, 'ROOT', self.legacy_manifest()):
+            with self.assertRaisesRegex(RuntimeError, 'legacy binary'):
+                installer.legacy_candidates(self.home, self.owned)
+        self.assertTrue(self.path.exists())
+
+    def test_mise_environment_isolates_caller_overrides(self):
+        with patch.dict(installer.os.environ, {'MISE_CONFIG_DIR': '/unrelated', 'MISE_DATA_DIR': '/unrelated'}):
+            env = installer.mise_environment(self.home, self.home / 'state')
+        self.assertEqual(env['MISE_CONFIG_DIR'], str(self.home / '.config/mise'))
+        self.assertEqual(env['HOME'], str(self.home))
+        self.assertEqual(env['MISE_DATA_DIR'], str(self.home / '.local/share/mise'))
 
 
 if __name__ == '__main__':
