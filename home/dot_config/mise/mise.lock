@@ -414,9 +414,9 @@ checksum = "sha256:2161dacebeb075187f20ba35529297e7d4f6d456a89c4474062782436dbe3
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libplacebo-7.360.1-h07e46df_0.conda"
 checksum = "sha256:3af9437023ec7fa8f9bf5e390b7f6ad3df403aa736b0305121d1734af2d0620e"
 
-[conda-packages.linux-arm64."libpng-1.6.58-hf9b7768_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libpng-1.6.58-hf9b7768_1.conda"
-checksum = "sha256:bd6e423b08342969689d8893c965aad78244b29724da2168aef3634fa0e1ebd7"
+[conda-packages.linux-arm64."libpng-1.6.59-hf9b7768_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libpng-1.6.59-hf9b7768_0.conda"
+checksum = "sha256:11a8f519c148e9ce968b78ee718965a1166af135321e1803941ee6f92bd5862c"
 
 [conda-packages.linux-arm64."libprotobuf-6.33.5-h084db60_2"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libprotobuf-6.33.5-h084db60_2.conda"
@@ -442,17 +442,17 @@ checksum = "sha256:b241a3acfa9cdb1359112864a1241225533c92642de3000d52ae65ef5d3a9
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libstdcxx-ng-16.2.0-hdbbeba8_7.conda"
 checksum = "sha256:cfe644e4cf78302e605f7dc1cfa23ee4edabf5b72f84c92436f5f51c3003542c"
 
-[conda-packages.linux-arm64.libsystemd0-262-hd1ea486_1]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-262-hd1ea486_1.conda"
-checksum = "sha256:5c15b72c1723f544c2c52cc00dc1aee67ecee4be4f0d6f652d8b4232540e86a6"
+[conda-packages.linux-arm64.libsystemd0-262-hd1ea486_2]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-262-hd1ea486_2.conda"
+checksum = "sha256:f5b68f7fedc75155f567a2857b5fbcf411ad888e9888cf231715320dddd2d7e0"
 
 [conda-packages.linux-arm64."libtiff-4.7.2-h45f9f85_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libtiff-4.7.2-h45f9f85_1.conda"
 checksum = "sha256:fa6daf2301dee912def3e74344fae792a8fc2bbbf7880dedee0e93ee8fb98fc5"
 
-[conda-packages.linux-arm64.libudev1-262-hd1ea486_1]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-262-hd1ea486_1.conda"
-checksum = "sha256:e07aa60cf6764aa448847732da353d77568c93924858366472c6c61209b1d045"
+[conda-packages.linux-arm64.libudev1-262-hd1ea486_2]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-262-hd1ea486_2.conda"
+checksum = "sha256:0dc50d841a93971569830a47f5a216827126cdfcaa0591ad4dd92091ccaf7968"
 
 [conda-packages.linux-arm64."libunwind-1.8.3-h6470e1d_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libunwind-1.8.3-h6470e1d_0.conda"
@@ -558,9 +558,9 @@ checksum = "sha256:c66ea2c8f64b815b24344340a8a9d62152359dbf48a6151b1f282fdf35204
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pugixml-1.15-h6ef32b0_0.conda"
 checksum = "sha256:adc17205a87e064508d809fe5542b7cf49f9b9a458418f8448e2fc895fcd04f3"
 
-[conda-packages.linux-arm64."pulseaudio-client-17.0-hcf98165_3"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pulseaudio-client-17.0-hcf98165_3.conda"
-checksum = "sha256:bb55db0dfe120f6063ad3ac74524b37c0bf92c6002cc059c31a5506f96a67f22"
+[conda-packages.linux-arm64."pulseaudio-client-17.0-hcdf0bd4_4"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pulseaudio-client-17.0-hcdf0bd4_4.conda"
+checksum = "sha256:95492d8a94c8b976cda618b814008e0359f8477c8ba59e8ad7ff58f6a58aa91f"
 
 [conda-packages.linux-arm64."rav1e-0.8.1-h9d4cc37_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/rav1e-0.8.1-h9d4cc37_0.conda"
@@ -1106,9 +1106,9 @@ checksum = "sha256:2161dacebeb075187f20ba35529297e7d4f6d456a89c4474062782436dbe3
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libplacebo-7.360.1-h07e46df_0.conda"
 checksum = "sha256:3af9437023ec7fa8f9bf5e390b7f6ad3df403aa736b0305121d1734af2d0620e"
 
-[conda-packages.linux-arm64-musl."libpng-1.6.58-hf9b7768_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libpng-1.6.58-hf9b7768_1.conda"
-checksum = "sha256:bd6e423b08342969689d8893c965aad78244b29724da2168aef3634fa0e1ebd7"
+[conda-packages.linux-arm64-musl."libpng-1.6.59-hf9b7768_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libpng-1.6.59-hf9b7768_0.conda"
+checksum = "sha256:11a8f519c148e9ce968b78ee718965a1166af135321e1803941ee6f92bd5862c"
 
 [conda-packages.linux-arm64-musl."libprotobuf-6.33.5-h084db60_2"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libprotobuf-6.33.5-h084db60_2.conda"
@@ -1134,17 +1134,17 @@ checksum = "sha256:b241a3acfa9cdb1359112864a1241225533c92642de3000d52ae65ef5d3a9
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libstdcxx-ng-16.2.0-hdbbeba8_7.conda"
 checksum = "sha256:cfe644e4cf78302e605f7dc1cfa23ee4edabf5b72f84c92436f5f51c3003542c"
 
-[conda-packages.linux-arm64-musl.libsystemd0-262-hd1ea486_1]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-262-hd1ea486_1.conda"
-checksum = "sha256:5c15b72c1723f544c2c52cc00dc1aee67ecee4be4f0d6f652d8b4232540e86a6"
+[conda-packages.linux-arm64-musl.libsystemd0-262-hd1ea486_2]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libsystemd0-262-hd1ea486_2.conda"
+checksum = "sha256:f5b68f7fedc75155f567a2857b5fbcf411ad888e9888cf231715320dddd2d7e0"
 
 [conda-packages.linux-arm64-musl."libtiff-4.7.2-h45f9f85_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libtiff-4.7.2-h45f9f85_1.conda"
 checksum = "sha256:fa6daf2301dee912def3e74344fae792a8fc2bbbf7880dedee0e93ee8fb98fc5"
 
-[conda-packages.linux-arm64-musl.libudev1-262-hd1ea486_1]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-262-hd1ea486_1.conda"
-checksum = "sha256:e07aa60cf6764aa448847732da353d77568c93924858366472c6c61209b1d045"
+[conda-packages.linux-arm64-musl.libudev1-262-hd1ea486_2]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libudev1-262-hd1ea486_2.conda"
+checksum = "sha256:0dc50d841a93971569830a47f5a216827126cdfcaa0591ad4dd92091ccaf7968"
 
 [conda-packages.linux-arm64-musl."libunwind-1.8.3-h6470e1d_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libunwind-1.8.3-h6470e1d_0.conda"
@@ -1250,9 +1250,9 @@ checksum = "sha256:c66ea2c8f64b815b24344340a8a9d62152359dbf48a6151b1f282fdf35204
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pugixml-1.15-h6ef32b0_0.conda"
 checksum = "sha256:adc17205a87e064508d809fe5542b7cf49f9b9a458418f8448e2fc895fcd04f3"
 
-[conda-packages.linux-arm64-musl."pulseaudio-client-17.0-hcf98165_3"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pulseaudio-client-17.0-hcf98165_3.conda"
-checksum = "sha256:bb55db0dfe120f6063ad3ac74524b37c0bf92c6002cc059c31a5506f96a67f22"
+[conda-packages.linux-arm64-musl."pulseaudio-client-17.0-hcdf0bd4_4"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pulseaudio-client-17.0-hcdf0bd4_4.conda"
+checksum = "sha256:95492d8a94c8b976cda618b814008e0359f8477c8ba59e8ad7ff58f6a58aa91f"
 
 [conda-packages.linux-arm64-musl."rav1e-0.8.1-h9d4cc37_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/rav1e-0.8.1-h9d4cc37_0.conda"
@@ -1818,9 +1818,9 @@ checksum = "sha256:addc80c69d362a9e6c40305c493139a8e9ee504b2f45a6687dbdaa9da3c61
 url = "https://conda.anaconda.org/conda-forge/linux-64/libplacebo-7.360.1-h9eeb4b2_0.conda"
 checksum = "sha256:26cbbd3d7b91801826c779c3f7e87d071856d5cbe3d55b22777ca0d984fb02ed"
 
-[conda-packages.linux-x64."libpng-1.6.58-h922cc85_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.58-h922cc85_1.conda"
-checksum = "sha256:c19eefb87d70d9b4b0629fa48414a155a47a1be4f04583ae71ed8c5a9a32fdcb"
+[conda-packages.linux-x64."libpng-1.6.59-h922cc85_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.59-h922cc85_0.conda"
+checksum = "sha256:c7381be8ef713501f6cd2f5ad473e401f2edeaec3c46788296b8dbf0de165e15"
 
 [conda-packages.linux-x64."libprotobuf-6.33.5-h538a264_2"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libprotobuf-6.33.5-h538a264_2.conda"
@@ -1846,17 +1846,17 @@ checksum = "sha256:fa7018298629fc429971fffd6ecba3d27a7b02e4e890d6a93ea01ffebe8cb
 url = "https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-16.2.0-hdf11a46_7.conda"
 checksum = "sha256:337f481db36cc357884f05f404ccd1b3a7e0fc1ee48ec5c884e4281d213bc863"
 
-[conda-packages.linux-x64.libsystemd0-262-h26e0ef7_1]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-262-h26e0ef7_1.conda"
-checksum = "sha256:1f5d73aa59659fea2f0533c97c6c8eb46700f590a76c33f94188d4f96a003be6"
+[conda-packages.linux-x64.libsystemd0-262-h26e0ef7_2]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-262-h26e0ef7_2.conda"
+checksum = "sha256:265ba1e0bf848b9da2a33f7bec7745bc8d69bc2452e2d9fc75f340492a3b010d"
 
 [conda-packages.linux-x64."libtiff-4.7.2-hcc2c06a_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.7.2-hcc2c06a_1.conda"
 checksum = "sha256:10e125da82ca93e09191e66e5a94d566b2cf8d4024e2a0db3a9114297447e0d9"
 
-[conda-packages.linux-x64.libudev1-262-h26e0ef7_1]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-262-h26e0ef7_1.conda"
-checksum = "sha256:34c8f7c40016f42651e3e973adff9bab6213c9752fa29f0e6715a5f15760dec3"
+[conda-packages.linux-x64.libudev1-262-h26e0ef7_2]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-262-h26e0ef7_2.conda"
+checksum = "sha256:81a6318191e56eabb6935c480902a58b79872f1be600d58a3328a01ba6e7dba9"
 
 [conda-packages.linux-x64."libunwind-1.8.3-h65a8314_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
@@ -1978,9 +1978,9 @@ checksum = "sha256:4a44fd00ea73b79ca2c89b0727b9ccf61c506ead71e67a9abfa4c590042b5
 url = "https://conda.anaconda.org/conda-forge/linux-64/pugixml-1.15-h3f63f65_0.conda"
 checksum = "sha256:23c98a5000356e173568dc5c5770b53393879f946f3ace716bbdefac2a8b23d2"
 
-[conda-packages.linux-x64."pulseaudio-client-17.0-h9a6aba3_3"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/pulseaudio-client-17.0-h9a6aba3_3.conda"
-checksum = "sha256:0a0858c59805d627d02bdceee965dd84fde0aceab03a2f984325eec08d822096"
+[conda-packages.linux-x64."pulseaudio-client-17.0-hb10c1b2_4"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/pulseaudio-client-17.0-hb10c1b2_4.conda"
+checksum = "sha256:a044cfac9027a058bd6e59b6a514a6f08d735c85156bd30d577a5fd07f87581f"
 
 [conda-packages.linux-x64."rav1e-0.8.1-h1fbca29_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/rav1e-0.8.1-h1fbca29_0.conda"
@@ -2550,9 +2550,9 @@ checksum = "sha256:addc80c69d362a9e6c40305c493139a8e9ee504b2f45a6687dbdaa9da3c61
 url = "https://conda.anaconda.org/conda-forge/linux-64/libplacebo-7.360.1-h9eeb4b2_0.conda"
 checksum = "sha256:26cbbd3d7b91801826c779c3f7e87d071856d5cbe3d55b22777ca0d984fb02ed"
 
-[conda-packages.linux-x64-baseline."libpng-1.6.58-h922cc85_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.58-h922cc85_1.conda"
-checksum = "sha256:c19eefb87d70d9b4b0629fa48414a155a47a1be4f04583ae71ed8c5a9a32fdcb"
+[conda-packages.linux-x64-baseline."libpng-1.6.59-h922cc85_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.59-h922cc85_0.conda"
+checksum = "sha256:c7381be8ef713501f6cd2f5ad473e401f2edeaec3c46788296b8dbf0de165e15"
 
 [conda-packages.linux-x64-baseline."libprotobuf-6.33.5-h538a264_2"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libprotobuf-6.33.5-h538a264_2.conda"
@@ -2578,17 +2578,17 @@ checksum = "sha256:fa7018298629fc429971fffd6ecba3d27a7b02e4e890d6a93ea01ffebe8cb
 url = "https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-16.2.0-hdf11a46_7.conda"
 checksum = "sha256:337f481db36cc357884f05f404ccd1b3a7e0fc1ee48ec5c884e4281d213bc863"
 
-[conda-packages.linux-x64-baseline.libsystemd0-262-h26e0ef7_1]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-262-h26e0ef7_1.conda"
-checksum = "sha256:1f5d73aa59659fea2f0533c97c6c8eb46700f590a76c33f94188d4f96a003be6"
+[conda-packages.linux-x64-baseline.libsystemd0-262-h26e0ef7_2]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-262-h26e0ef7_2.conda"
+checksum = "sha256:265ba1e0bf848b9da2a33f7bec7745bc8d69bc2452e2d9fc75f340492a3b010d"
 
 [conda-packages.linux-x64-baseline."libtiff-4.7.2-hcc2c06a_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.7.2-hcc2c06a_1.conda"
 checksum = "sha256:10e125da82ca93e09191e66e5a94d566b2cf8d4024e2a0db3a9114297447e0d9"
 
-[conda-packages.linux-x64-baseline.libudev1-262-h26e0ef7_1]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-262-h26e0ef7_1.conda"
-checksum = "sha256:34c8f7c40016f42651e3e973adff9bab6213c9752fa29f0e6715a5f15760dec3"
+[conda-packages.linux-x64-baseline.libudev1-262-h26e0ef7_2]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-262-h26e0ef7_2.conda"
+checksum = "sha256:81a6318191e56eabb6935c480902a58b79872f1be600d58a3328a01ba6e7dba9"
 
 [conda-packages.linux-x64-baseline."libunwind-1.8.3-h65a8314_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
@@ -2710,9 +2710,9 @@ checksum = "sha256:4a44fd00ea73b79ca2c89b0727b9ccf61c506ead71e67a9abfa4c590042b5
 url = "https://conda.anaconda.org/conda-forge/linux-64/pugixml-1.15-h3f63f65_0.conda"
 checksum = "sha256:23c98a5000356e173568dc5c5770b53393879f946f3ace716bbdefac2a8b23d2"
 
-[conda-packages.linux-x64-baseline."pulseaudio-client-17.0-h9a6aba3_3"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/pulseaudio-client-17.0-h9a6aba3_3.conda"
-checksum = "sha256:0a0858c59805d627d02bdceee965dd84fde0aceab03a2f984325eec08d822096"
+[conda-packages.linux-x64-baseline."pulseaudio-client-17.0-hb10c1b2_4"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/pulseaudio-client-17.0-hb10c1b2_4.conda"
+checksum = "sha256:a044cfac9027a058bd6e59b6a514a6f08d735c85156bd30d577a5fd07f87581f"
 
 [conda-packages.linux-x64-baseline."rav1e-0.8.1-h1fbca29_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/rav1e-0.8.1-h1fbca29_0.conda"
@@ -3282,9 +3282,9 @@ checksum = "sha256:addc80c69d362a9e6c40305c493139a8e9ee504b2f45a6687dbdaa9da3c61
 url = "https://conda.anaconda.org/conda-forge/linux-64/libplacebo-7.360.1-h9eeb4b2_0.conda"
 checksum = "sha256:26cbbd3d7b91801826c779c3f7e87d071856d5cbe3d55b22777ca0d984fb02ed"
 
-[conda-packages.linux-x64-musl."libpng-1.6.58-h922cc85_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.58-h922cc85_1.conda"
-checksum = "sha256:c19eefb87d70d9b4b0629fa48414a155a47a1be4f04583ae71ed8c5a9a32fdcb"
+[conda-packages.linux-x64-musl."libpng-1.6.59-h922cc85_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.59-h922cc85_0.conda"
+checksum = "sha256:c7381be8ef713501f6cd2f5ad473e401f2edeaec3c46788296b8dbf0de165e15"
 
 [conda-packages.linux-x64-musl."libprotobuf-6.33.5-h538a264_2"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libprotobuf-6.33.5-h538a264_2.conda"
@@ -3310,17 +3310,17 @@ checksum = "sha256:fa7018298629fc429971fffd6ecba3d27a7b02e4e890d6a93ea01ffebe8cb
 url = "https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-16.2.0-hdf11a46_7.conda"
 checksum = "sha256:337f481db36cc357884f05f404ccd1b3a7e0fc1ee48ec5c884e4281d213bc863"
 
-[conda-packages.linux-x64-musl.libsystemd0-262-h26e0ef7_1]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-262-h26e0ef7_1.conda"
-checksum = "sha256:1f5d73aa59659fea2f0533c97c6c8eb46700f590a76c33f94188d4f96a003be6"
+[conda-packages.linux-x64-musl.libsystemd0-262-h26e0ef7_2]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-262-h26e0ef7_2.conda"
+checksum = "sha256:265ba1e0bf848b9da2a33f7bec7745bc8d69bc2452e2d9fc75f340492a3b010d"
 
 [conda-packages.linux-x64-musl."libtiff-4.7.2-hcc2c06a_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.7.2-hcc2c06a_1.conda"
 checksum = "sha256:10e125da82ca93e09191e66e5a94d566b2cf8d4024e2a0db3a9114297447e0d9"
 
-[conda-packages.linux-x64-musl.libudev1-262-h26e0ef7_1]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-262-h26e0ef7_1.conda"
-checksum = "sha256:34c8f7c40016f42651e3e973adff9bab6213c9752fa29f0e6715a5f15760dec3"
+[conda-packages.linux-x64-musl.libudev1-262-h26e0ef7_2]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-262-h26e0ef7_2.conda"
+checksum = "sha256:81a6318191e56eabb6935c480902a58b79872f1be600d58a3328a01ba6e7dba9"
 
 [conda-packages.linux-x64-musl."libunwind-1.8.3-h65a8314_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
@@ -3442,9 +3442,9 @@ checksum = "sha256:4a44fd00ea73b79ca2c89b0727b9ccf61c506ead71e67a9abfa4c590042b5
 url = "https://conda.anaconda.org/conda-forge/linux-64/pugixml-1.15-h3f63f65_0.conda"
 checksum = "sha256:23c98a5000356e173568dc5c5770b53393879f946f3ace716bbdefac2a8b23d2"
 
-[conda-packages.linux-x64-musl."pulseaudio-client-17.0-h9a6aba3_3"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/pulseaudio-client-17.0-h9a6aba3_3.conda"
-checksum = "sha256:0a0858c59805d627d02bdceee965dd84fde0aceab03a2f984325eec08d822096"
+[conda-packages.linux-x64-musl."pulseaudio-client-17.0-hb10c1b2_4"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/pulseaudio-client-17.0-hb10c1b2_4.conda"
+checksum = "sha256:a044cfac9027a058bd6e59b6a514a6f08d735c85156bd30d577a5fd07f87581f"
 
 [conda-packages.linux-x64-musl."rav1e-0.8.1-h1fbca29_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/rav1e-0.8.1-h1fbca29_0.conda"
@@ -4014,9 +4014,9 @@ checksum = "sha256:addc80c69d362a9e6c40305c493139a8e9ee504b2f45a6687dbdaa9da3c61
 url = "https://conda.anaconda.org/conda-forge/linux-64/libplacebo-7.360.1-h9eeb4b2_0.conda"
 checksum = "sha256:26cbbd3d7b91801826c779c3f7e87d071856d5cbe3d55b22777ca0d984fb02ed"
 
-[conda-packages.linux-x64-musl-baseline."libpng-1.6.58-h922cc85_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.58-h922cc85_1.conda"
-checksum = "sha256:c19eefb87d70d9b4b0629fa48414a155a47a1be4f04583ae71ed8c5a9a32fdcb"
+[conda-packages.linux-x64-musl-baseline."libpng-1.6.59-h922cc85_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libpng-1.6.59-h922cc85_0.conda"
+checksum = "sha256:c7381be8ef713501f6cd2f5ad473e401f2edeaec3c46788296b8dbf0de165e15"
 
 [conda-packages.linux-x64-musl-baseline."libprotobuf-6.33.5-h538a264_2"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libprotobuf-6.33.5-h538a264_2.conda"
@@ -4042,17 +4042,17 @@ checksum = "sha256:fa7018298629fc429971fffd6ecba3d27a7b02e4e890d6a93ea01ffebe8cb
 url = "https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-16.2.0-hdf11a46_7.conda"
 checksum = "sha256:337f481db36cc357884f05f404ccd1b3a7e0fc1ee48ec5c884e4281d213bc863"
 
-[conda-packages.linux-x64-musl-baseline.libsystemd0-262-h26e0ef7_1]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-262-h26e0ef7_1.conda"
-checksum = "sha256:1f5d73aa59659fea2f0533c97c6c8eb46700f590a76c33f94188d4f96a003be6"
+[conda-packages.linux-x64-musl-baseline.libsystemd0-262-h26e0ef7_2]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libsystemd0-262-h26e0ef7_2.conda"
+checksum = "sha256:265ba1e0bf848b9da2a33f7bec7745bc8d69bc2452e2d9fc75f340492a3b010d"
 
 [conda-packages.linux-x64-musl-baseline."libtiff-4.7.2-hcc2c06a_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.7.2-hcc2c06a_1.conda"
 checksum = "sha256:10e125da82ca93e09191e66e5a94d566b2cf8d4024e2a0db3a9114297447e0d9"
 
-[conda-packages.linux-x64-musl-baseline.libudev1-262-h26e0ef7_1]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-262-h26e0ef7_1.conda"
-checksum = "sha256:34c8f7c40016f42651e3e973adff9bab6213c9752fa29f0e6715a5f15760dec3"
+[conda-packages.linux-x64-musl-baseline.libudev1-262-h26e0ef7_2]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libudev1-262-h26e0ef7_2.conda"
+checksum = "sha256:81a6318191e56eabb6935c480902a58b79872f1be600d58a3328a01ba6e7dba9"
 
 [conda-packages.linux-x64-musl-baseline."libunwind-1.8.3-h65a8314_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
@@ -4174,9 +4174,9 @@ checksum = "sha256:4a44fd00ea73b79ca2c89b0727b9ccf61c506ead71e67a9abfa4c590042b5
 url = "https://conda.anaconda.org/conda-forge/linux-64/pugixml-1.15-h3f63f65_0.conda"
 checksum = "sha256:23c98a5000356e173568dc5c5770b53393879f946f3ace716bbdefac2a8b23d2"
 
-[conda-packages.linux-x64-musl-baseline."pulseaudio-client-17.0-h9a6aba3_3"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/pulseaudio-client-17.0-h9a6aba3_3.conda"
-checksum = "sha256:0a0858c59805d627d02bdceee965dd84fde0aceab03a2f984325eec08d822096"
+[conda-packages.linux-x64-musl-baseline."pulseaudio-client-17.0-hb10c1b2_4"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/pulseaudio-client-17.0-hb10c1b2_4.conda"
+checksum = "sha256:a044cfac9027a058bd6e59b6a514a6f08d735c85156bd30d577a5fd07f87581f"
 
 [conda-packages.linux-x64-musl-baseline."rav1e-0.8.1-h1fbca29_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/rav1e-0.8.1-h1fbca29_0.conda"
@@ -4642,9 +4642,9 @@ checksum = "sha256:f5fd2e1b1fec6da5d9218177b7d989af15f5aa14a84a1b1491dc3572e2457
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libplacebo-7.360.1-h176d363_0.conda"
 checksum = "sha256:e9b39572e2feaef496167ba9f4ab75ed3afa4c16c3aeb0bb8c71adc515a74536"
 
-[conda-packages.macos-arm64."libpng-1.6.58-hf5e6511_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libpng-1.6.58-hf5e6511_1.conda"
-checksum = "sha256:f88da60b348ee1f3e1a9c20fe02142fdafe889f08da0b1cc33c1f3f14460239d"
+[conda-packages.macos-arm64."libpng-1.6.59-hf5e6511_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libpng-1.6.59-hf5e6511_0.conda"
+checksum = "sha256:4de4dc4cb7432c328c1eaf4f7cc9c6b48c073eab1e9c6723d4533e6d57e7d595"
 
 [conda-packages.macos-arm64."libprotobuf-6.33.5-hb82ec63_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libprotobuf-6.33.5-hb82ec63_2.conda"
@@ -5154,9 +5154,9 @@ checksum = "sha256:5513f55c05a5ce39f6babbb56100eb05f23ccdedbad4707bf74a3f3a5125c
 url = "https://conda.anaconda.org/conda-forge/osx-64/libplacebo-7.360.1-he17f467_0.conda"
 checksum = "sha256:3c34dcb3de460c0fcc1602a604d4d3de24e8a0a8f67e8d118e6dabc59f4b815b"
 
-[conda-packages.macos-x64."libpng-1.6.58-h4382c61_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libpng-1.6.58-h4382c61_1.conda"
-checksum = "sha256:4677159f77da07eba37618f2e0c9887233dacf5e23290bb6d978732d0f5f896d"
+[conda-packages.macos-x64."libpng-1.6.59-h4382c61_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libpng-1.6.59-h4382c61_0.conda"
+checksum = "sha256:4576bdf533292672b4aa955a43029343e25dcffaf8048d255b88e66b0860e602"
 
 [conda-packages.macos-x64."libprotobuf-6.33.5-hb0ea838_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libprotobuf-6.33.5-hb0ea838_2.conda"
@@ -5666,9 +5666,9 @@ checksum = "sha256:5513f55c05a5ce39f6babbb56100eb05f23ccdedbad4707bf74a3f3a5125c
 url = "https://conda.anaconda.org/conda-forge/osx-64/libplacebo-7.360.1-he17f467_0.conda"
 checksum = "sha256:3c34dcb3de460c0fcc1602a604d4d3de24e8a0a8f67e8d118e6dabc59f4b815b"
 
-[conda-packages.macos-x64-baseline."libpng-1.6.58-h4382c61_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libpng-1.6.58-h4382c61_1.conda"
-checksum = "sha256:4677159f77da07eba37618f2e0c9887233dacf5e23290bb6d978732d0f5f896d"
+[conda-packages.macos-x64-baseline."libpng-1.6.59-h4382c61_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libpng-1.6.59-h4382c61_0.conda"
+checksum = "sha256:4576bdf533292672b4aa955a43029343e25dcffaf8048d255b88e66b0860e602"
 
 [conda-packages.macos-x64-baseline."libprotobuf-6.33.5-hb0ea838_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libprotobuf-6.33.5-hb0ea838_2.conda"
@@ -6110,9 +6110,9 @@ checksum = "sha256:c63e5fb169dbd192aacdcee6e37235407f106b8ca9c9036942a25e0366cbc
 url = "https://conda.anaconda.org/conda-forge/win-64/libopus-1.6.1-h6a83c73_1.conda"
 checksum = "sha256:0ca8a5f9c6505344d3c57068b50d2cfffe497e3ce1aa697deb46d8ab502d3cfa"
 
-[conda-packages.windows-x64."libpng-1.6.58-hdc8cecf_1"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libpng-1.6.58-hdc8cecf_1.conda"
-checksum = "sha256:8c49c32adf3ba2c59783630b82377f54ab72204ea99e2bafc90a47a8e25c1032"
+[conda-packages.windows-x64."libpng-1.6.59-hdc8cecf_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libpng-1.6.59-hdc8cecf_0.conda"
+checksum = "sha256:36050852deae6edc98d7b71489b8d07254e2753c69bd524bf5784927cd1f0b2c"
 
 [conda-packages.windows-x64."libpython-3.14.7-h4f90d01_106_cp314"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libpython-3.14.7-h4f90d01_106_cp314.conda"
@@ -6586,9 +6586,9 @@ checksum = "sha256:c63e5fb169dbd192aacdcee6e37235407f106b8ca9c9036942a25e0366cbc
 url = "https://conda.anaconda.org/conda-forge/win-64/libopus-1.6.1-h6a83c73_1.conda"
 checksum = "sha256:0ca8a5f9c6505344d3c57068b50d2cfffe497e3ce1aa697deb46d8ab502d3cfa"
 
-[conda-packages.windows-x64-baseline."libpng-1.6.58-hdc8cecf_1"]
-url = "https://conda.anaconda.org/conda-forge/win-64/libpng-1.6.58-hdc8cecf_1.conda"
-checksum = "sha256:8c49c32adf3ba2c59783630b82377f54ab72204ea99e2bafc90a47a8e25c1032"
+[conda-packages.windows-x64-baseline."libpng-1.6.59-hdc8cecf_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libpng-1.6.59-hdc8cecf_0.conda"
+checksum = "sha256:36050852deae6edc98d7b71489b8d07254e2753c69bd524bf5784927cd1f0b2c"
 
 [conda-packages.windows-x64-baseline."libpython-3.14.7-h4f90d01_106_cp314"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libpython-3.14.7-h4f90d01_106_cp314.conda"
@@ -7512,7 +7512,7 @@ conda_deps = [
     "libxml2-2.15.4-h92b9305_0",
     "libxml2-16-2.15.4-h2e5089f_0",
     "openssl-3.6.4-he6ad1d5_0",
-    "pulseaudio-client-17.0-hcf98165_3",
+    "pulseaudio-client-17.0-hcdf0bd4_4",
     "x264-1!164.3095-h5bc82ec_3",
     "x265-3.5-hfb1330e_4",
     "libuuid-2.42.4-hd6fdeab_0",
@@ -7520,7 +7520,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py311h3512406_2",
     "fribidi-1.0.17-h5bc82ec_0",
-    "libpng-1.6.58-hf9b7768_1",
+    "libpng-1.6.59-hf9b7768_0",
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-16.2.0-h8acb6b2_7",
     "libbrotlienc-1.2.0-hb247b97_4",
@@ -7542,7 +7542,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-h71d469a_2",
     "libsndfile-1.2.2-h30591a0_2",
-    "libsystemd0-262-hd1ea486_1",
+    "libsystemd0-262-hd1ea486_2",
     "sdl3-3.4.16-hab42d0a_0",
     "libunwind-1.8.3-h6470e1d_0",
     "xorg-libxscrnsaver-1.2.4-h86ecc28_0",
@@ -7579,7 +7579,7 @@ conda_deps = [
     "xorg-libxi-1.8.3-h5bc82ec_1",
     "xorg-libxfixes-6.0.2-h5bc82ec_1",
     "wayland-1.26.0-h637a836_2",
-    "libudev1-262-hd1ea486_1",
+    "libudev1-262-hd1ea486_2",
     "xorg-libxtst-1.2.5-h5bc82ec_4",
     "libdeflate-1.25-hfa851ae_1",
     "xkeyboard-config-2.48-h80f16a2_0",
@@ -7644,7 +7644,7 @@ conda_deps = [
     "libxml2-2.15.4-h92b9305_0",
     "libxml2-16-2.15.4-h2e5089f_0",
     "openssl-3.6.4-he6ad1d5_0",
-    "pulseaudio-client-17.0-hcf98165_3",
+    "pulseaudio-client-17.0-hcdf0bd4_4",
     "x264-1!164.3095-h5bc82ec_3",
     "x265-3.5-hfb1330e_4",
     "libuuid-2.42.4-hd6fdeab_0",
@@ -7652,7 +7652,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py311h3512406_2",
     "fribidi-1.0.17-h5bc82ec_0",
-    "libpng-1.6.58-hf9b7768_1",
+    "libpng-1.6.59-hf9b7768_0",
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-16.2.0-h8acb6b2_7",
     "libbrotlienc-1.2.0-hb247b97_4",
@@ -7674,7 +7674,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-h71d469a_2",
     "libsndfile-1.2.2-h30591a0_2",
-    "libsystemd0-262-hd1ea486_1",
+    "libsystemd0-262-hd1ea486_2",
     "sdl3-3.4.16-hab42d0a_0",
     "libunwind-1.8.3-h6470e1d_0",
     "xorg-libxscrnsaver-1.2.4-h86ecc28_0",
@@ -7711,7 +7711,7 @@ conda_deps = [
     "xorg-libxi-1.8.3-h5bc82ec_1",
     "xorg-libxfixes-6.0.2-h5bc82ec_1",
     "wayland-1.26.0-h637a836_2",
-    "libudev1-262-hd1ea486_1",
+    "libudev1-262-hd1ea486_2",
     "xorg-libxtst-1.2.5-h5bc82ec_4",
     "libdeflate-1.25-hfa851ae_1",
     "xkeyboard-config-2.48-h80f16a2_0",
@@ -7781,7 +7781,7 @@ conda_deps = [
     "libdrm-2.4.129-h7cc23a3_0",
     "libvulkan-loader-1.4.357.0-h0e34353_2",
     "openssl-3.6.4-h781a0a9_0",
-    "pulseaudio-client-17.0-h9a6aba3_3",
+    "pulseaudio-client-17.0-hb10c1b2_4",
     "x264-1!164.3095-h7cc23a3_3",
     "x265-3.5-h73f68a7_4",
     "libuuid-2.42.4-hcfc3c73_0",
@@ -7789,7 +7789,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py310h44b86e0_2",
     "fribidi-1.0.17-h7cc23a3_0",
-    "libpng-1.6.58-h922cc85_1",
+    "libpng-1.6.59-h922cc85_0",
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-16.2.0-he0feb66_7",
     "libhwy-1.4.0-h57c4cff_1",
@@ -7822,7 +7822,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-he8c428d_2",
     "libsndfile-1.2.2-hc7d488a_2",
-    "libsystemd0-262-h26e0ef7_1",
+    "libsystemd0-262-h26e0ef7_2",
     "sdl3-3.4.16-h5330f5c_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "liburing-2.14-hb700be7_0",
@@ -7855,7 +7855,7 @@ conda_deps = [
     "libusb-1.0.30-h0d1bbbc_0",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
-    "libudev1-262-h26e0ef7_1",
+    "libudev1-262-h26e0ef7_2",
     "libdeflate-1.25-hd45a770_1",
     "xkeyboard-config-2.48-h280c20c_0",
 ]
@@ -7923,7 +7923,7 @@ conda_deps = [
     "libdrm-2.4.129-h7cc23a3_0",
     "libvulkan-loader-1.4.357.0-h0e34353_2",
     "openssl-3.6.4-h781a0a9_0",
-    "pulseaudio-client-17.0-h9a6aba3_3",
+    "pulseaudio-client-17.0-hb10c1b2_4",
     "x264-1!164.3095-h7cc23a3_3",
     "x265-3.5-h73f68a7_4",
     "libuuid-2.42.4-hcfc3c73_0",
@@ -7931,7 +7931,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py310h44b86e0_2",
     "fribidi-1.0.17-h7cc23a3_0",
-    "libpng-1.6.58-h922cc85_1",
+    "libpng-1.6.59-h922cc85_0",
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-16.2.0-he0feb66_7",
     "libhwy-1.4.0-h57c4cff_1",
@@ -7964,7 +7964,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-he8c428d_2",
     "libsndfile-1.2.2-hc7d488a_2",
-    "libsystemd0-262-h26e0ef7_1",
+    "libsystemd0-262-h26e0ef7_2",
     "sdl3-3.4.16-h5330f5c_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "liburing-2.14-hb700be7_0",
@@ -7997,7 +7997,7 @@ conda_deps = [
     "libusb-1.0.30-h0d1bbbc_0",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
-    "libudev1-262-h26e0ef7_1",
+    "libudev1-262-h26e0ef7_2",
     "libdeflate-1.25-hd45a770_1",
     "xkeyboard-config-2.48-h280c20c_0",
 ]
@@ -8065,7 +8065,7 @@ conda_deps = [
     "libdrm-2.4.129-h7cc23a3_0",
     "libvulkan-loader-1.4.357.0-h0e34353_2",
     "openssl-3.6.4-h781a0a9_0",
-    "pulseaudio-client-17.0-h9a6aba3_3",
+    "pulseaudio-client-17.0-hb10c1b2_4",
     "x264-1!164.3095-h7cc23a3_3",
     "x265-3.5-h73f68a7_4",
     "libuuid-2.42.4-hcfc3c73_0",
@@ -8073,7 +8073,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py310h44b86e0_2",
     "fribidi-1.0.17-h7cc23a3_0",
-    "libpng-1.6.58-h922cc85_1",
+    "libpng-1.6.59-h922cc85_0",
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-16.2.0-he0feb66_7",
     "libhwy-1.4.0-h57c4cff_1",
@@ -8106,7 +8106,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-he8c428d_2",
     "libsndfile-1.2.2-hc7d488a_2",
-    "libsystemd0-262-h26e0ef7_1",
+    "libsystemd0-262-h26e0ef7_2",
     "sdl3-3.4.16-h5330f5c_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "liburing-2.14-hb700be7_0",
@@ -8139,7 +8139,7 @@ conda_deps = [
     "libusb-1.0.30-h0d1bbbc_0",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
-    "libudev1-262-h26e0ef7_1",
+    "libudev1-262-h26e0ef7_2",
     "libdeflate-1.25-hd45a770_1",
     "xkeyboard-config-2.48-h280c20c_0",
 ]
@@ -8207,7 +8207,7 @@ conda_deps = [
     "libdrm-2.4.129-h7cc23a3_0",
     "libvulkan-loader-1.4.357.0-h0e34353_2",
     "openssl-3.6.4-h781a0a9_0",
-    "pulseaudio-client-17.0-h9a6aba3_3",
+    "pulseaudio-client-17.0-hb10c1b2_4",
     "x264-1!164.3095-h7cc23a3_3",
     "x265-3.5-h73f68a7_4",
     "libuuid-2.42.4-hcfc3c73_0",
@@ -8215,7 +8215,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py310h44b86e0_2",
     "fribidi-1.0.17-h7cc23a3_0",
-    "libpng-1.6.58-h922cc85_1",
+    "libpng-1.6.59-h922cc85_0",
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-16.2.0-he0feb66_7",
     "libhwy-1.4.0-h57c4cff_1",
@@ -8248,7 +8248,7 @@ conda_deps = [
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "dbus-1.16.2-he8c428d_2",
     "libsndfile-1.2.2-hc7d488a_2",
-    "libsystemd0-262-h26e0ef7_1",
+    "libsystemd0-262-h26e0ef7_2",
     "sdl3-3.4.16-h5330f5c_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "liburing-2.14-hb700be7_0",
@@ -8281,7 +8281,7 @@ conda_deps = [
     "libusb-1.0.30-h0d1bbbc_0",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
-    "libudev1-262-h26e0ef7_1",
+    "libudev1-262-h26e0ef7_2",
     "libdeflate-1.25-hd45a770_1",
     "xkeyboard-config-2.48-h280c20c_0",
 ]
@@ -8346,7 +8346,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py310h579977c_2",
     "fribidi-1.0.17-hb001647_0",
-    "libpng-1.6.58-hf5e6511_1",
+    "libpng-1.6.59-hf5e6511_0",
     "libhwy-1.4.0-hd2bdd19_1",
     "libbrotlienc-1.2.0-h2ddc9cb_4",
     "libbrotlicommon-1.2.0-h1dcdb26_4",
@@ -8440,7 +8440,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py313hbf1d544_2",
     "fribidi-1.0.17-hd115831_0",
-    "libpng-1.6.58-h4382c61_1",
+    "libpng-1.6.59-h4382c61_0",
     "libhwy-1.4.0-ha8ee8a1_1",
     "libbrotlienc-1.2.0-h3d41943_4",
     "libbrotlicommon-1.2.0-he0616a4_4",
@@ -8534,7 +8534,7 @@ conda_deps = [
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
     "icu-78.3-py313hbf1d544_2",
     "fribidi-1.0.17-hd115831_0",
-    "libpng-1.6.58-h4382c61_1",
+    "libpng-1.6.59-h4382c61_0",
     "libhwy-1.4.0-ha8ee8a1_1",
     "libbrotlienc-1.2.0-h3d41943_4",
     "libbrotlicommon-1.2.0-he0616a4_4",
@@ -8617,7 +8617,7 @@ conda_deps = [
     "libintl-devel-0.22.5-h5728263_4",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
-    "libpng-1.6.58-hdc8cecf_1",
+    "libpng-1.6.59-hdc8cecf_0",
     "libhwy-1.4.0-h2419aca_1",
     "libbrotlienc-1.2.0-he2a975b_4",
     "libbrotlicommon-1.2.0-hf02afa3_4",
@@ -8703,7 +8703,7 @@ conda_deps = [
     "libintl-devel-0.22.5-h5728263_4",
     "fonts-conda-forge-1-hc364b38_1",
     "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
-    "libpng-1.6.58-hdc8cecf_1",
+    "libpng-1.6.59-hdc8cecf_0",
     "libhwy-1.4.0-h2419aca_1",
     "libbrotlienc-1.2.0-he2a975b_4",
     "libbrotlicommon-1.2.0-hf02afa3_4",
@@ -9823,7 +9823,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h9cc7050_2",
     "libjpeg-turbo-3.2.0-he30d5cf_1",
     "liblzma-5.8.3-he30d5cf_1",
-    "libpng-1.6.58-hf9b7768_1",
+    "libpng-1.6.59-hf9b7768_0",
     "libraw-0.22.2-h6c2e892_0",
     "libwebp-base-1.6.0-ha2e29f5_1",
     "libzip-1.11.4-h139036c_0",
@@ -9954,7 +9954,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h9cc7050_2",
     "libjpeg-turbo-3.2.0-he30d5cf_1",
     "liblzma-5.8.3-he30d5cf_1",
-    "libpng-1.6.58-hf9b7768_1",
+    "libpng-1.6.59-hf9b7768_0",
     "libraw-0.22.2-h6c2e892_0",
     "libwebp-base-1.6.0-ha2e29f5_1",
     "libzip-1.11.4-h139036c_0",
@@ -10084,7 +10084,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h5e6c136_2",
     "libjpeg-turbo-3.2.0-hb03c661_1",
     "liblzma-5.8.3-hb03c661_1",
-    "libpng-1.6.58-h922cc85_1",
+    "libpng-1.6.59-h922cc85_0",
     "libraw-0.22.2-h074291d_0",
     "libwebp-base-1.6.0-hd42ef1d_1",
     "libzip-1.11.4-h6008cf6_0",
@@ -10215,7 +10215,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h5e6c136_2",
     "libjpeg-turbo-3.2.0-hb03c661_1",
     "liblzma-5.8.3-hb03c661_1",
-    "libpng-1.6.58-h922cc85_1",
+    "libpng-1.6.59-h922cc85_0",
     "libraw-0.22.2-h074291d_0",
     "libwebp-base-1.6.0-hd42ef1d_1",
     "libzip-1.11.4-h6008cf6_0",
@@ -10346,7 +10346,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h5e6c136_2",
     "libjpeg-turbo-3.2.0-hb03c661_1",
     "liblzma-5.8.3-hb03c661_1",
-    "libpng-1.6.58-h922cc85_1",
+    "libpng-1.6.59-h922cc85_0",
     "libraw-0.22.2-h074291d_0",
     "libwebp-base-1.6.0-hd42ef1d_1",
     "libzip-1.11.4-h6008cf6_0",
@@ -10477,7 +10477,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h5e6c136_2",
     "libjpeg-turbo-3.2.0-hb03c661_1",
     "liblzma-5.8.3-hb03c661_1",
-    "libpng-1.6.58-h922cc85_1",
+    "libpng-1.6.59-h922cc85_0",
     "libraw-0.22.2-h074291d_0",
     "libwebp-base-1.6.0-hd42ef1d_1",
     "libzip-1.11.4-h6008cf6_0",
@@ -10608,7 +10608,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h2ed5691_2",
     "libjpeg-turbo-3.2.0-h84a0fba_1",
     "liblzma-5.8.3-h8088a28_1",
-    "libpng-1.6.58-hf5e6511_1",
+    "libpng-1.6.59-hf5e6511_0",
     "libraw-0.22.2-h2d05ff4_0",
     "libwebp-base-1.6.0-h202fb40_1",
     "libzip-1.11.4-hcd2b5ac_0",
@@ -10705,7 +10705,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h8afe040_2",
     "libjpeg-turbo-3.2.0-ha1e9b39_1",
     "liblzma-5.8.3-hbb4bfdb_1",
-    "libpng-1.6.58-h4382c61_1",
+    "libpng-1.6.59-h4382c61_0",
     "libraw-0.22.2-h3650196_0",
     "libwebp-base-1.6.0-hb276fe9_1",
     "libzip-1.11.4-h99362d9_0",
@@ -10801,7 +10801,7 @@ conda_deps = [
     "libfreetype6-2.14.3-h8afe040_2",
     "libjpeg-turbo-3.2.0-ha1e9b39_1",
     "liblzma-5.8.3-hbb4bfdb_1",
-    "libpng-1.6.58-h4382c61_1",
+    "libpng-1.6.59-h4382c61_0",
     "libraw-0.22.2-h3650196_0",
     "libwebp-base-1.6.0-hb276fe9_1",
     "libzip-1.11.4-h99362d9_0",
@@ -10898,7 +10898,7 @@ conda_deps = [
     "libfreetype6-2.14.3-hdbac1cb_2",
     "libjpeg-turbo-3.2.0-hfd05255_1",
     "liblzma-5.8.3-hfd05255_1",
-    "libpng-1.6.58-hdc8cecf_1",
+    "libpng-1.6.59-hdc8cecf_0",
     "libraw-0.22.2-h345c428_0",
     "libwebp-base-1.6.0-h4d5522a_1",
     "libzip-1.11.4-h0ac0a2c_0",
@@ -10993,7 +10993,7 @@ conda_deps = [
     "libfreetype6-2.14.3-hdbac1cb_2",
     "libjpeg-turbo-3.2.0-hfd05255_1",
     "liblzma-5.8.3-hfd05255_1",
-    "libpng-1.6.58-hdc8cecf_1",
+    "libpng-1.6.59-hdc8cecf_0",
     "libraw-0.22.2-h345c428_0",
     "libwebp-base-1.6.0-h4d5522a_1",
     "libzip-1.11.4-h0ac0a2c_0",
