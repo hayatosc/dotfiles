@@ -11264,10 +11264,10 @@ checksum = "sha256:158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e
 url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
-version = "1.0.43"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.43", digest = "sha256:6c252093abdeebc32c682a60bc42a3b66efe8e7032a98859c8570ba281456a05" }
+version = "1.0.44"
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.44", digest = "sha256:38fd3073f409fb945a5a316adf9415bc43ae16c86c4f72772cc447b479e84b2c" }
 backend = "npm:@xai-official/grok"
-specifiers = ["1.0.43"]
+specifiers = ["1.0.44"]
 
 [[tools."npm:acpx"]]
 version = "0.19.3"
