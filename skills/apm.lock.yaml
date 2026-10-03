@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-09-14T07:41:14.812309+00:00'
+generated_at: '2026-10-03T10:34:36.031550+00:00'
 apm_version: 0.30.0
 dependencies:
 - repo_url: anthropics/skills
@@ -601,35 +601,6 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:f9d896c1a06a413570e99291ef0e085a09bc56bfe754fce858a1a2680c8fc3a5
     .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:78b80afc94fcdc0177345d7cbd0abb83660f309a400266ff408325142db41b2c
   content_hash: sha256:3c64ad4db7184718e9f5217af22a728a5a272e4a0ab887d5c6038cddf51815f5
-- repo_url: ikora128/stop-ai-slop-jp
-  materialization_repo_url: iKora128/stop-ai-slop-jp
-  name: stop-ai-slop-jp
-  host: github.com
-  resolved_commit: e09d32796f253a62693885757cea484c275d06f2
-  version: unknown
-  package_type: claude_skill
-  deployed_files:
-  - .agents/skills/stop-ai-slop-jp
-  - .agents/skills/stop-ai-slop-jp/.gitignore
-  - .agents/skills/stop-ai-slop-jp/CHANGELOG.md
-  - .agents/skills/stop-ai-slop-jp/LICENSE
-  - .agents/skills/stop-ai-slop-jp/README.en.md
-  - .agents/skills/stop-ai-slop-jp/README.md
-  - .agents/skills/stop-ai-slop-jp/SKILL.md
-  - .agents/skills/stop-ai-slop-jp/references/examples.md
-  - .agents/skills/stop-ai-slop-jp/references/phrases.md
-  - .agents/skills/stop-ai-slop-jp/references/structures.md
-  deployed_file_hashes:
-    .agents/skills/stop-ai-slop-jp/.gitignore: sha256:cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e
-    .agents/skills/stop-ai-slop-jp/CHANGELOG.md: sha256:13b54e7ba2750b34f62c04ee47a29495777348e7ff90847078e3029dd1c742bd
-    .agents/skills/stop-ai-slop-jp/LICENSE: sha256:f9145903368bf0483fec06d7f2ed12d2e20667190783a7ffea161e92ff39f301
-    .agents/skills/stop-ai-slop-jp/README.en.md: sha256:37874550afb353707d5ef3f2706c776c4f97e3fe904dcf1057fc4c3ab66d3d40
-    .agents/skills/stop-ai-slop-jp/README.md: sha256:555c1fcabb809420cb5b8de240ab0be49e88a915bac872ce12a0b35b7916f4d8
-    .agents/skills/stop-ai-slop-jp/SKILL.md: sha256:4da89e5f9c69ce69a8d6c04e8f3d238686cd3a3ba3946c5cfadad805116c50f3
-    .agents/skills/stop-ai-slop-jp/references/examples.md: sha256:a971dfc0f69e914365d29b7566cf1dbcf4cbaf3abf3c331b384e8d29beb9b5f5
-    .agents/skills/stop-ai-slop-jp/references/phrases.md: sha256:0e23388b43146d7f560cdc04a1f8ebe3518b57889404e39fa258b025ab4d2003
-    .agents/skills/stop-ai-slop-jp/references/structures.md: sha256:af7447458633e522394a153295ac2a5ef8c14c6e82befae212a0650058e52969
-  content_hash: sha256:2e81e3a96cd7e5eaaf6fae3a597a76c8538c027a3ec86b8643cb454dc231f8ff
 - repo_url: moonbitlang/skills
   name: moonbit-agent-guide
   host: github.com
@@ -660,6 +631,42 @@ dependencies:
     .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.mbt.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
     .agents/skills/moonbit-agent-guide/references/moonbit-language-fundamentals.md: sha256:9d4e3fb88a61916552a8f4d27d9e1383c926fd641fde11032e998c4ffd7d09bd
   content_hash: sha256:d3e24e095d1a72b58f59216592132c09c28b40cb2a6b48cf04be2b573b51ee26
+- repo_url: nanaism/yomiyasu
+  name: yomiyasu
+  host: github.com
+  resolved_commit: 8d5abeebe2dd20c2db005deaddcc50be43c59c0a
+  resolved_ref: 8d5abeebe2dd20c2db005deaddcc50be43c59c0a
+  version: 1.0.4
+  virtual_path: skills/yomiyasu
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/yomiyasu
+  - .agents/skills/yomiyasu/.claude-plugin/marketplace.json
+  - .agents/skills/yomiyasu/.claude-plugin/plugin.json
+  - .agents/skills/yomiyasu/SKILL.md
+  - .agents/skills/yomiyasu/assets/algo-artis.png
+  - .agents/skills/yomiyasu/references/domains/business.md
+  - .agents/skills/yomiyasu/references/domains/essay.md
+  - .agents/skills/yomiyasu/references/domains/tech.md
+  - .agents/skills/yomiyasu/references/gemini-syntax.md
+  - .agents/skills/yomiyasu/references/slop-catalog.md
+  - .agents/skills/yomiyasu/scripts/yomiyasu_diff.py
+  - .agents/skills/yomiyasu/scripts/yomiyasu_lint.py
+  deployed_file_hashes:
+    .agents/skills/yomiyasu/.claude-plugin/marketplace.json: sha256:a5c9e3545d1ce48560054d2e054a73166df85188218b99cfa69c26dfcc7e2cc5
+    .agents/skills/yomiyasu/.claude-plugin/plugin.json: sha256:f83ebe78165ff1c2210849a6e0a402e451b3c3cd7b4152ab0722195d02147020
+    .agents/skills/yomiyasu/SKILL.md: sha256:b7115a21db69aefa9323a27076c877d25a3bd6cd6408ba12ed96b1931721e87b
+    .agents/skills/yomiyasu/assets/algo-artis.png: sha256:57c7c204d43d0e2873e3b61221db3ac4ba75a7ce29271a6deaeb3bd09f26fdec
+    .agents/skills/yomiyasu/references/domains/business.md: sha256:da27e2046d8f7ce8157e100c924b14d91473e5383e289d14d532976df4150445
+    .agents/skills/yomiyasu/references/domains/essay.md: sha256:f5cae53b4b707a9d15155ae6bf477551856217102ac668d85f9567aa150b896e
+    .agents/skills/yomiyasu/references/domains/tech.md: sha256:aa0afca5b6d742c2e588122012f0243202d172dc8563170ac494c998b7ee9b42
+    .agents/skills/yomiyasu/references/gemini-syntax.md: sha256:f75a2783264b7bd83758a0a4224f5fdb1f7a3074d8f4e7037ef2639a78cb5c24
+    .agents/skills/yomiyasu/references/slop-catalog.md: sha256:8ea6c52198a7d8d370d43c061201c0986eced6738bf21cbf0129676da093ff25
+    .agents/skills/yomiyasu/scripts/yomiyasu_diff.py: sha256:37f0a0ab821572401a1fcac5cebd2eb6c02559c8e3c789017fff92e1caf7f811
+    .agents/skills/yomiyasu/scripts/yomiyasu_lint.py: sha256:a78f98b5c7feaa0ec73a74f82fbbf2b6f2bd5997d261ae73357409377b90985b
+  content_hash: sha256:e9cc9e3ce946b0eb10f9c539cc88e8a704d376a1c573af164058ab95d7b83406
+  declared_license: MIT
 - repo_url: nutlope/hallmark
   materialization_repo_url: Nutlope/hallmark
   name: hallmark
@@ -4903,96 +4910,6 @@ deployments:
   content_hash: sha256:afc99fe98306c1a0dd537ef63a23ec891ff7e9f7146410e6a5e4cda86f3fdf83
 - kind: project-relative
   target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: null
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/.gitignore
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/CHANGELOG.md
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:13b54e7ba2750b34f62c04ee47a29495777348e7ff90847078e3029dd1c742bd
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/LICENSE
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:f9145903368bf0483fec06d7f2ed12d2e20667190783a7ffea161e92ff39f301
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/README.en.md
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:37874550afb353707d5ef3f2706c776c4f97e3fe904dcf1057fc4c3ab66d3d40
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/README.md
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:555c1fcabb809420cb5b8de240ab0be49e88a915bac872ce12a0b35b7916f4d8
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:4da89e5f9c69ce69a8d6c04e8f3d238686cd3a3ba3946c5cfadad805116c50f3
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/references/examples.md
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:a971dfc0f69e914365d29b7566cf1dbcf4cbaf3abf3c331b384e8d29beb9b5f5
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/references/phrases.md
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:0e23388b43146d7f560cdc04a1f8ebe3518b57889404e39fa258b025ab4d2003
-- kind: project-relative
-  target: agent-skills
-  value: .agents/skills/stop-ai-slop-jp/references/structures.md
-  runtime: null
-  scope: project
-  owners:
-  - ikora128/stop-ai-slop-jp
-  active_owner: ikora128/stop-ai-slop-jp
-  content_hash: sha256:af7447458633e522394a153295ac2a5ef8c14c6e82befae212a0650058e52969
-- kind: project-relative
-  target: agent-skills
   value: .agents/skills/svelte-core-bestpractices
   runtime: null
   scope: project
@@ -5324,6 +5241,114 @@ deployments:
   - vercel-labs/agent-skills/skills/web-design-guidelines
   active_owner: vercel-labs/agent-skills/skills/web-design-guidelines
   content_hash: sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/.claude-plugin/marketplace.json
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:a5c9e3545d1ce48560054d2e054a73166df85188218b99cfa69c26dfcc7e2cc5
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/.claude-plugin/plugin.json
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:f83ebe78165ff1c2210849a6e0a402e451b3c3cd7b4152ab0722195d02147020
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:b7115a21db69aefa9323a27076c877d25a3bd6cd6408ba12ed96b1931721e87b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/assets/algo-artis.png
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:57c7c204d43d0e2873e3b61221db3ac4ba75a7ce29271a6deaeb3bd09f26fdec
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/references/domains/business.md
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:da27e2046d8f7ce8157e100c924b14d91473e5383e289d14d532976df4150445
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/references/domains/essay.md
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:f5cae53b4b707a9d15155ae6bf477551856217102ac668d85f9567aa150b896e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/references/domains/tech.md
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:aa0afca5b6d742c2e588122012f0243202d172dc8563170ac494c998b7ee9b42
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/references/gemini-syntax.md
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:f75a2783264b7bd83758a0a4224f5fdb1f7a3074d8f4e7037ef2639a78cb5c24
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/references/slop-catalog.md
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:8ea6c52198a7d8d370d43c061201c0986eced6738bf21cbf0129676da093ff25
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/scripts/yomiyasu_diff.py
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:37f0a0ab821572401a1fcac5cebd2eb6c02559c8e3c789017fff92e1caf7f811
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/yomiyasu/scripts/yomiyasu_lint.py
+  runtime: null
+  scope: project
+  owners:
+  - nanaism/yomiyasu/skills/yomiyasu
+  active_owner: nanaism/yomiyasu/skills/yomiyasu
+  content_hash: sha256:a78f98b5c7feaa0ec73a74f82fbbf2b6f2bd5997d261ae73357409377b90985b
 - kind: project-relative
   target: agents
   value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png
