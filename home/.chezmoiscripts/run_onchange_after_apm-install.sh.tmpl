@@ -1,6 +1,7 @@
 #!/bin/bash
 # Re-run whenever apm.yml or any self-authored skill under skills/ changes.
 # apm.yml hash: {{ output "sh" "-c" (printf "sha256sum %s 2>/dev/null | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" "apm.yml")) }}
+# yomiyasu license hash: {{ output "sh" "-c" (printf "sha256sum %s 2>/dev/null | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" ".licenses" "yomiyasu.LICENSE")) }}
 # skills/ hash: {{ output "sh" "-c" (printf "cd '%s' && find . -mindepth 2 -maxdepth 3 -type f ! -path './.*' ! -path './apm_modules/*' 2>/dev/null | sort | xargs -r cat 2>/dev/null | sha256sum | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills")) }}
 
 set -euo pipefail
@@ -79,6 +80,10 @@ if [ -f apm.yml.bak ]; then
         mv apm.yml.bak apm.yml
     fi
 fi
+
+# APM's subdirectory dependency excludes the upstream repository's root LICENSE.
+# Keep its original MIT notice alongside the complete, APM-managed skill.
+cp "${SKILLS_DIR}/.licenses/yomiyasu.LICENSE" "${TEMP_AGENTS_DIR}/skills/yomiyasu/LICENSE"
 
 # 5. Sync the compiled skills to the actual destination (~/.agents/skills)
 mkdir -p "${HOME}/.agents/skills"
