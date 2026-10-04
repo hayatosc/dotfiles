@@ -7276,64 +7276,64 @@ checksum = "sha256:78c221c2376f79731ccf4e4af0b3bb46d81fefa3296c5abee09ad8a1b21e6
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.286"
+version = "2.1.287"
 backend = "aqua:anthropics/claude-code"
-specifiers = ["2.1.286"]
+specifiers = ["2.1.287"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:8e37600d9a94d9706a6223801203515a38e5494d0baffd567c93a7c1a86608ab"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418088"
+checksum = "sha256:9b1f2996166948602b399cea6c11a654f52ac3b38c27142dfa4e6420e57eb3bd"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710525"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:5eeac0b56aa03179557b8b1bd333725fa286b214597420571fa78f3c7c2edf3a"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418083"
+checksum = "sha256:6b52a82507e5a71e21fc1e70b63bad4cb4d939b41218cc0d40779058837e914a"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710527"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:ce19bf64fa7e1bc27c1607a8119cc7167f926f363c85b0983a4516a505b330b3"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418217"
+checksum = "sha256:627e578d436ebc12daf059c0379dee23f77c761fb7d2ad5de82645dc29b24372"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710749"
 
 [tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:ce19bf64fa7e1bc27c1607a8119cc7167f926f363c85b0983a4516a505b330b3"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418217"
+checksum = "sha256:627e578d436ebc12daf059c0379dee23f77c761fb7d2ad5de82645dc29b24372"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710749"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:9c250b8453ce0dfbd320ae1c9d23bacaacfdabee15553a3552b32ea06261155f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418081"
+checksum = "sha256:f6457822fa75fb2246031b30b2b68c0126ded7e3c5437c77ba8616f34493c35b"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710523"
 
 [tools.claude."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:9c250b8453ce0dfbd320ae1c9d23bacaacfdabee15553a3552b32ea06261155f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418081"
+checksum = "sha256:f6457822fa75fb2246031b30b2b68c0126ded7e3c5437c77ba8616f34493c35b"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710523"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:0b0333f25613cf8ba8035f6c806abc45c72b2bdd4dc8ef59ce7582a2a0e76744"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418085"
+checksum = "sha256:43b83e4bf099f47efe590c8da0db43b33109c558ae81b8d1c7b1d024db86d6ef"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710526"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:9b4fd1e81fb2c37690eb00b332d0e24110f10b8e32824caa13245f873363db3c"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418082"
+checksum = "sha256:7a33c480c439702c7cb28c4614fc9178f3b08d18038472b74a8fb939570b092f"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710528"
 
 [tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:9b4fd1e81fb2c37690eb00b332d0e24110f10b8e32824caa13245f873363db3c"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418082"
+checksum = "sha256:7a33c480c439702c7cb28c4614fc9178f3b08d18038472b74a8fb939570b092f"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710528"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:489896222ee1bdbadaf809fd1ce3cbcb93a04e4be1c06e5c1766b5c363159a1c"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418223"
+checksum = "sha256:3efef62507373b63f98ad3939cdf2c486ad6c18ad250912b994acc104699a14e"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710771"
 
 [tools.claude."platforms.windows-x64-baseline"]
-checksum = "sha256:489896222ee1bdbadaf809fd1ce3cbcb93a04e4be1c06e5c1766b5c363159a1c"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.286/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/601418223"
+checksum = "sha256:3efef62507373b63f98ad3939cdf2c486ad6c18ad250912b994acc104699a14e"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.287/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/603710771"
 
 [[tools.cloudflared]]
 version = "2026.9.3"
@@ -8750,64 +8750,64 @@ conda_deps = [
 ]
 
 [[tools.copilot]]
-version = "v1.0.90"
+version = "v1.0.91"
 backend = "aqua:github/copilot-cli"
-specifiers = ["v1.0.90"]
+specifiers = ["v1.0.91"]
 
 [tools.copilot."platforms.linux-arm64"]
-checksum = "sha256:860eeaccd067a18e60cf7585fdeb682035ff94c075283ad752ec4c3b836a5b27"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842778"
+checksum = "sha256:26a42491bec497a921f198d550a614e0a8989f1c2418f5bb1dd2150f09e6eac0"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757334"
 
 [tools.copilot."platforms.linux-arm64-musl"]
-checksum = "sha256:860eeaccd067a18e60cf7585fdeb682035ff94c075283ad752ec4c3b836a5b27"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842778"
+checksum = "sha256:26a42491bec497a921f198d550a614e0a8989f1c2418f5bb1dd2150f09e6eac0"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757334"
 
 [tools.copilot."platforms.linux-x64"]
-checksum = "sha256:7ebcce0f8a76b826e34c76f214361916b130ca9cf1571adf267fbda38f92b4b6"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842892"
+checksum = "sha256:0e7a0e85290228afecce4d4eed42fda80c0f5b9c86f433deb246cde1d5eec8e5"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757663"
 
 [tools.copilot."platforms.linux-x64-baseline"]
-checksum = "sha256:7ebcce0f8a76b826e34c76f214361916b130ca9cf1571adf267fbda38f92b4b6"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842892"
+checksum = "sha256:0e7a0e85290228afecce4d4eed42fda80c0f5b9c86f433deb246cde1d5eec8e5"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757663"
 
 [tools.copilot."platforms.linux-x64-musl"]
-checksum = "sha256:7ebcce0f8a76b826e34c76f214361916b130ca9cf1571adf267fbda38f92b4b6"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842892"
+checksum = "sha256:0e7a0e85290228afecce4d4eed42fda80c0f5b9c86f433deb246cde1d5eec8e5"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757663"
 
 [tools.copilot."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:7ebcce0f8a76b826e34c76f214361916b130ca9cf1571adf267fbda38f92b4b6"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842892"
+checksum = "sha256:0e7a0e85290228afecce4d4eed42fda80c0f5b9c86f433deb246cde1d5eec8e5"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757663"
 
 [tools.copilot."platforms.macos-arm64"]
-checksum = "sha256:d9baf683fcc830bbf95bfa7a45be4515b98613ccf86ea13ee194f1d49b33da18"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842779"
+checksum = "sha256:b29e3a9e4176f2e6417504916714328d030f04ac934ff1a2a6ddcad9235c847b"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757338"
 
 [tools.copilot."platforms.macos-x64"]
-checksum = "sha256:b19fe6e5626b5191b6f3cbba6f14953af6161ec79447ba6670bfa36558ad476b"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842780"
+checksum = "sha256:ff6217eb716be23ad70cc4d39b4191325568e757645036e07ad32f67aef72a4c"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757327"
 
 [tools.copilot."platforms.macos-x64-baseline"]
-checksum = "sha256:b19fe6e5626b5191b6f3cbba6f14953af6161ec79447ba6670bfa36558ad476b"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842780"
+checksum = "sha256:ff6217eb716be23ad70cc4d39b4191325568e757645036e07ad32f67aef72a4c"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757327"
 
 [tools.copilot."platforms.windows-x64"]
-checksum = "sha256:f153880e60a24d0d7bdb594d2c79c023259e458de50962f5da239488f750f3dc"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-win32-x64.zip"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842781"
+checksum = "sha256:c6513217c9bb9424d72167d6ae88f67fddc305f331497e1c7f3e9cc8b00d34bf"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-win32-x64.zip"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757333"
 
 [tools.copilot."platforms.windows-x64-baseline"]
-checksum = "sha256:f153880e60a24d0d7bdb594d2c79c023259e458de50962f5da239488f750f3dc"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.90/copilot-win32-x64.zip"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/601842781"
+checksum = "sha256:c6513217c9bb9424d72167d6ae88f67fddc305f331497e1c7f3e9cc8b00d34bf"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.91/copilot-win32-x64.zip"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/603757333"
 
 [[tools.cursor-agent]]
 version = "2026.08.04-aaa8809"
