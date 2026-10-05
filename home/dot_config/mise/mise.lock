@@ -11243,10 +11243,10 @@ backend = "vfox:moonbit"
 specifiers = ["0.10.7+bc794d341"]
 
 [[tools.ni]]
-version = "30.5.0"
-aube = { path = ".mise/locks/ni/30.5.0", digest = "sha256:d4a9194193d35e01f560501b08ddb4c5d751a9e225625a700066bfc2b36475f0" }
+version = "30.6.0"
+aube = { path = ".mise/locks/ni/30.6.0", digest = "sha256:b71563dcce8f3d0b62a41ae3b44333569923a86a6c47e70d99917885f190edda" }
 backend = "npm:@antfu/ni"
-specifiers = ["30.5.0"]
+specifiers = ["30.6.0"]
 
 [[tools.node]]
 version = "24.21.0"
