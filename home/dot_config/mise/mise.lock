@@ -534,9 +534,9 @@ checksum = "sha256:d07b190935acda11419bef754a96c2fcdc0171df8c5a34ce81c7883dc195b
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/openjph-0.31.0-h55827e0_0.conda"
 checksum = "sha256:05a7eeb42e685d56eb0d36e88876436ebe733eb14e56789960e23b0426320c5e"
 
-[conda-packages.linux-arm64."openssl-3.6.4-he6ad1d5_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/openssl-3.6.4-he6ad1d5_0.conda"
-checksum = "sha256:a70c05a9baba9b1ce17c7e8b9479029372069b3bf402dbf200bc03696c531bed"
+[conda-packages.linux-arm64."openssl-3.6.5-he6ad1d5_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/openssl-3.6.5-he6ad1d5_0.conda"
+checksum = "sha256:238136f1df197ecd89bafd728a34d0642176f3170423d13d8276746d675a9485"
 
 [conda-packages.linux-arm64."pango-1.58.2-h03cb6a0_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pango-1.58.2-h03cb6a0_1.conda"
@@ -1226,9 +1226,9 @@ checksum = "sha256:d07b190935acda11419bef754a96c2fcdc0171df8c5a34ce81c7883dc195b
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/openjph-0.31.0-h55827e0_0.conda"
 checksum = "sha256:05a7eeb42e685d56eb0d36e88876436ebe733eb14e56789960e23b0426320c5e"
 
-[conda-packages.linux-arm64-musl."openssl-3.6.4-he6ad1d5_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/openssl-3.6.4-he6ad1d5_0.conda"
-checksum = "sha256:a70c05a9baba9b1ce17c7e8b9479029372069b3bf402dbf200bc03696c531bed"
+[conda-packages.linux-arm64-musl."openssl-3.6.5-he6ad1d5_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/openssl-3.6.5-he6ad1d5_0.conda"
+checksum = "sha256:238136f1df197ecd89bafd728a34d0642176f3170423d13d8276746d675a9485"
 
 [conda-packages.linux-arm64-musl."pango-1.58.2-h03cb6a0_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/pango-1.58.2-h03cb6a0_1.conda"
@@ -1954,9 +1954,9 @@ checksum = "sha256:131688a88bea8da92fe418c4558c5073435e2848911bc4c836c3a9dd5994b
 url = "https://conda.anaconda.org/conda-forge/linux-64/openjph-0.31.0-h8d634f6_0.conda"
 checksum = "sha256:3c7a4118c678c43952ea10183388f175a4bcee16a1c61d90dab2fbdafddc45d7"
 
-[conda-packages.linux-x64."openssl-3.6.4-h781a0a9_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.4-h781a0a9_0.conda"
-checksum = "sha256:4747b2d6a8336f52343bceb8a1ebf41a9e6e665b9d2e3f989972de53a310599e"
+[conda-packages.linux-x64."openssl-3.6.5-h781a0a9_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.5-h781a0a9_0.conda"
+checksum = "sha256:9c1533f1cf784f0e250919c0c9762d0b0e6bc727a79290ffb7cea1ceca1d038c"
 
 [conda-packages.linux-x64."pango-1.58.2-h7bb47b9_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/pango-1.58.2-h7bb47b9_1.conda"
@@ -2686,9 +2686,9 @@ checksum = "sha256:131688a88bea8da92fe418c4558c5073435e2848911bc4c836c3a9dd5994b
 url = "https://conda.anaconda.org/conda-forge/linux-64/openjph-0.31.0-h8d634f6_0.conda"
 checksum = "sha256:3c7a4118c678c43952ea10183388f175a4bcee16a1c61d90dab2fbdafddc45d7"
 
-[conda-packages.linux-x64-baseline."openssl-3.6.4-h781a0a9_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.4-h781a0a9_0.conda"
-checksum = "sha256:4747b2d6a8336f52343bceb8a1ebf41a9e6e665b9d2e3f989972de53a310599e"
+[conda-packages.linux-x64-baseline."openssl-3.6.5-h781a0a9_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.5-h781a0a9_0.conda"
+checksum = "sha256:9c1533f1cf784f0e250919c0c9762d0b0e6bc727a79290ffb7cea1ceca1d038c"
 
 [conda-packages.linux-x64-baseline."pango-1.58.2-h7bb47b9_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/pango-1.58.2-h7bb47b9_1.conda"
@@ -3418,9 +3418,9 @@ checksum = "sha256:131688a88bea8da92fe418c4558c5073435e2848911bc4c836c3a9dd5994b
 url = "https://conda.anaconda.org/conda-forge/linux-64/openjph-0.31.0-h8d634f6_0.conda"
 checksum = "sha256:3c7a4118c678c43952ea10183388f175a4bcee16a1c61d90dab2fbdafddc45d7"
 
-[conda-packages.linux-x64-musl."openssl-3.6.4-h781a0a9_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.4-h781a0a9_0.conda"
-checksum = "sha256:4747b2d6a8336f52343bceb8a1ebf41a9e6e665b9d2e3f989972de53a310599e"
+[conda-packages.linux-x64-musl."openssl-3.6.5-h781a0a9_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.5-h781a0a9_0.conda"
+checksum = "sha256:9c1533f1cf784f0e250919c0c9762d0b0e6bc727a79290ffb7cea1ceca1d038c"
 
 [conda-packages.linux-x64-musl."pango-1.58.2-h7bb47b9_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/pango-1.58.2-h7bb47b9_1.conda"
@@ -4150,9 +4150,9 @@ checksum = "sha256:131688a88bea8da92fe418c4558c5073435e2848911bc4c836c3a9dd5994b
 url = "https://conda.anaconda.org/conda-forge/linux-64/openjph-0.31.0-h8d634f6_0.conda"
 checksum = "sha256:3c7a4118c678c43952ea10183388f175a4bcee16a1c61d90dab2fbdafddc45d7"
 
-[conda-packages.linux-x64-musl-baseline."openssl-3.6.4-h781a0a9_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.4-h781a0a9_0.conda"
-checksum = "sha256:4747b2d6a8336f52343bceb8a1ebf41a9e6e665b9d2e3f989972de53a310599e"
+[conda-packages.linux-x64-musl-baseline."openssl-3.6.5-h781a0a9_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/openssl-3.6.5-h781a0a9_0.conda"
+checksum = "sha256:9c1533f1cf784f0e250919c0c9762d0b0e6bc727a79290ffb7cea1ceca1d038c"
 
 [conda-packages.linux-x64-musl-baseline."pango-1.58.2-h7bb47b9_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/pango-1.58.2-h7bb47b9_1.conda"
@@ -4722,9 +4722,9 @@ checksum = "sha256:e71bd04b5d0e39f39a3c039d021d3b76cd65bee3032e7f859ab7082f0ace8
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/openjph-0.31.0-h2a4d681_0.conda"
 checksum = "sha256:853c41f0e041a5c1acce60490ec065e4ca1b43d7b63fbad504980de3a822f719"
 
-[conda-packages.macos-arm64."openssl-3.6.4-h55eecbc_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.6.4-h55eecbc_0.conda"
-checksum = "sha256:f23239eacd75c4c50705e68fae1aa3292da473e6a3a4abe2330f1e6afa680704"
+[conda-packages.macos-arm64."openssl-3.6.5-h55eecbc_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.6.5-h55eecbc_0.conda"
+checksum = "sha256:44fbc526456571a9fb8fa18157f6f269d4d4bd40eef20183a93b9c9296f94497"
 
 [conda-packages.macos-arm64."pango-1.58.2-hf9b25ef_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/pango-1.58.2-hf9b25ef_1.conda"
@@ -5234,9 +5234,9 @@ checksum = "sha256:2d9eef746dc20c5e829b0b10de6731c5c5ab01c55160364ecf05a1bfaea0c
 url = "https://conda.anaconda.org/conda-forge/osx-64/openjph-0.31.0-h2c0e27e_0.conda"
 checksum = "sha256:aa1a9be70abca41b4e94ddd9e29e30c53252c2a2160b7dd44282f3c01fb0b06d"
 
-[conda-packages.macos-x64."openssl-3.6.4-h332eb6d_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/openssl-3.6.4-h332eb6d_0.conda"
-checksum = "sha256:73d648d24f0994fd8641972848d74bd57b8d80888a64600643e3fe88a1b50545"
+[conda-packages.macos-x64."openssl-3.6.5-h332eb6d_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/openssl-3.6.5-h332eb6d_0.conda"
+checksum = "sha256:d992d27aec2f1beac81f792c85b449546c030f06937b5b3ea7cf58431861dde4"
 
 [conda-packages.macos-x64."pango-1.58.2-hc5a6962_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/pango-1.58.2-hc5a6962_1.conda"
@@ -5746,9 +5746,9 @@ checksum = "sha256:2d9eef746dc20c5e829b0b10de6731c5c5ab01c55160364ecf05a1bfaea0c
 url = "https://conda.anaconda.org/conda-forge/osx-64/openjph-0.31.0-h2c0e27e_0.conda"
 checksum = "sha256:aa1a9be70abca41b4e94ddd9e29e30c53252c2a2160b7dd44282f3c01fb0b06d"
 
-[conda-packages.macos-x64-baseline."openssl-3.6.4-h332eb6d_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/openssl-3.6.4-h332eb6d_0.conda"
-checksum = "sha256:73d648d24f0994fd8641972848d74bd57b8d80888a64600643e3fe88a1b50545"
+[conda-packages.macos-x64-baseline."openssl-3.6.5-h332eb6d_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/openssl-3.6.5-h332eb6d_0.conda"
+checksum = "sha256:d992d27aec2f1beac81f792c85b449546c030f06937b5b3ea7cf58431861dde4"
 
 [conda-packages.macos-x64-baseline."pango-1.58.2-hc5a6962_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/pango-1.58.2-hc5a6962_1.conda"
@@ -6190,9 +6190,9 @@ checksum = "sha256:d1c630ccd9ae0898b48d84e986f4c330f66a25e535f99efe8cbf03f042b33
 url = "https://conda.anaconda.org/conda-forge/win-64/openjph-0.31.0-hf13a347_0.conda"
 checksum = "sha256:37a5104c0adb4bbdccc856dd9458c631fc260da4ba1aaced3fb27b4a08a0c341"
 
-[conda-packages.windows-x64."openssl-3.6.4-hf411b9b_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/openssl-3.6.4-hf411b9b_0.conda"
-checksum = "sha256:9dddb559ba49744d5d94092d8d13cb0567f5c3b3f439f3acf28433d1f4256acc"
+[conda-packages.windows-x64."openssl-3.6.5-hf411b9b_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/openssl-3.6.5-hf411b9b_0.conda"
+checksum = "sha256:bc44625e0c6d83f3e02b5f6adc01e0e3ca7001d3d94e24959591a57f5a011b9a"
 
 [conda-packages.windows-x64."packaging-26.3-pyhc364b38_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/packaging-26.3-pyhc364b38_0.conda"
@@ -6666,9 +6666,9 @@ checksum = "sha256:d1c630ccd9ae0898b48d84e986f4c330f66a25e535f99efe8cbf03f042b33
 url = "https://conda.anaconda.org/conda-forge/win-64/openjph-0.31.0-hf13a347_0.conda"
 checksum = "sha256:37a5104c0adb4bbdccc856dd9458c631fc260da4ba1aaced3fb27b4a08a0c341"
 
-[conda-packages.windows-x64-baseline."openssl-3.6.4-hf411b9b_0"]
-url = "https://conda.anaconda.org/conda-forge/win-64/openssl-3.6.4-hf411b9b_0.conda"
-checksum = "sha256:9dddb559ba49744d5d94092d8d13cb0567f5c3b3f439f3acf28433d1f4256acc"
+[conda-packages.windows-x64-baseline."openssl-3.6.5-hf411b9b_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/openssl-3.6.5-hf411b9b_0.conda"
+checksum = "sha256:bc44625e0c6d83f3e02b5f6adc01e0e3ca7001d3d94e24959591a57f5a011b9a"
 
 [conda-packages.windows-x64-baseline."packaging-26.3-pyhc364b38_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/packaging-26.3-pyhc364b38_0.conda"
@@ -7396,64 +7396,64 @@ url = "https://github.com/cloudflare/cloudflared/releases/download/2026.9.3/clou
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/586327964"
 
 [[tools.codex]]
-version = "0.159.3"
+version = "0.160.0"
 backend = "aqua:openai/codex"
-specifiers = ["0.159.3"]
+specifiers = ["0.160.0"]
 
 [tools.codex."platforms.linux-arm64"]
-checksum = "sha256:20b7d673cf2b64b6c6208fa4fda06feb9dac0572da9987294b48cde1dab9d001"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601954492"
+checksum = "sha256:7f0fe42ff22ecfa3a47bc4a34f5b22c4218b431a4ec0aba51c7d98299f07900c"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604056302"
 
 [tools.codex."platforms.linux-arm64-musl"]
-checksum = "sha256:20b7d673cf2b64b6c6208fa4fda06feb9dac0572da9987294b48cde1dab9d001"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601954492"
+checksum = "sha256:7f0fe42ff22ecfa3a47bc4a34f5b22c4218b431a4ec0aba51c7d98299f07900c"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604056302"
 
 [tools.codex."platforms.linux-x64"]
-checksum = "sha256:3930f31ac5fca861ea3e444e2683f261190d96b63fba58e0a40a879174369cdf"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601947651"
+checksum = "sha256:4fcc47ab57f52ff75363951a8761146cd10c8288bd86fed45487dbb204a16b71"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604048102"
 
 [tools.codex."platforms.linux-x64-baseline"]
-checksum = "sha256:3930f31ac5fca861ea3e444e2683f261190d96b63fba58e0a40a879174369cdf"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601947651"
+checksum = "sha256:4fcc47ab57f52ff75363951a8761146cd10c8288bd86fed45487dbb204a16b71"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604048102"
 
 [tools.codex."platforms.linux-x64-musl"]
-checksum = "sha256:3930f31ac5fca861ea3e444e2683f261190d96b63fba58e0a40a879174369cdf"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601947651"
+checksum = "sha256:4fcc47ab57f52ff75363951a8761146cd10c8288bd86fed45487dbb204a16b71"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604048102"
 
 [tools.codex."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:3930f31ac5fca861ea3e444e2683f261190d96b63fba58e0a40a879174369cdf"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601947651"
+checksum = "sha256:4fcc47ab57f52ff75363951a8761146cd10c8288bd86fed45487dbb204a16b71"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604048102"
 
 [tools.codex."platforms.macos-arm64"]
-checksum = "sha256:fad57a5681cabcef21d322af5aec938975cfb711b5f25d4ce4907e6561616d07"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601957395"
+checksum = "sha256:007df41b607dbbc8d204b9746ce7fed2d4ce6c813f44c32ceee54175ca796525"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604060802"
 
 [tools.codex."platforms.macos-x64"]
-checksum = "sha256:fe3096a62b5d8395dd25abf9fe79334cf13c1520b825d236cd2b41eb75a63201"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601951532"
+checksum = "sha256:4d50514b2d8acd81ca8cfee55b667b3dc4f7681b65bf3299ff06b11a064f8861"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604052366"
 
 [tools.codex."platforms.macos-x64-baseline"]
-checksum = "sha256:fe3096a62b5d8395dd25abf9fe79334cf13c1520b825d236cd2b41eb75a63201"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601951532"
+checksum = "sha256:4d50514b2d8acd81ca8cfee55b667b3dc4f7681b65bf3299ff06b11a064f8861"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604052366"
 
 [tools.codex."platforms.windows-x64"]
-checksum = "sha256:a174a1c8c0405076c7cc56534fa8d6760b83ce175526ddd20d1a182e33d9ebdb"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-x86_64-pc-windows-msvc.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601949295"
+checksum = "sha256:7f7fbbc8d6fd4ea2f3b13855ef47ea59663ba7e61fb2e9821df37163b8030891"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-pc-windows-msvc.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604049911"
 
 [tools.codex."platforms.windows-x64-baseline"]
-checksum = "sha256:a174a1c8c0405076c7cc56534fa8d6760b83ce175526ddd20d1a182e33d9ebdb"
-url = "https://github.com/openai/codex/releases/download/rust-v0.159.3/codex-package-x86_64-pc-windows-msvc.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/601949295"
+checksum = "sha256:7f7fbbc8d6fd4ea2f3b13855ef47ea59663ba7e61fb2e9821df37163b8030891"
+url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-package-x86_64-pc-windows-msvc.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/604049911"
 
 [[tools."conda:ffmpeg"]]
 version = "8.1.1"
@@ -7521,7 +7521,7 @@ conda_deps = [
     "libvulkan-loader-1.4.357.0-h82234cf_2",
     "libxml2-2.15.4-h92b9305_0",
     "libxml2-16-2.15.4-h2e5089f_0",
-    "openssl-3.6.4-he6ad1d5_0",
+    "openssl-3.6.5-he6ad1d5_0",
     "pulseaudio-client-17.0-hcdf0bd4_4",
     "x264-1!164.3095-h5bc82ec_3",
     "x265-3.5-hfb1330e_4",
@@ -7653,7 +7653,7 @@ conda_deps = [
     "libvulkan-loader-1.4.357.0-h82234cf_2",
     "libxml2-2.15.4-h92b9305_0",
     "libxml2-16-2.15.4-h2e5089f_0",
-    "openssl-3.6.4-he6ad1d5_0",
+    "openssl-3.6.5-he6ad1d5_0",
     "pulseaudio-client-17.0-hcdf0bd4_4",
     "x264-1!164.3095-h5bc82ec_3",
     "x265-3.5-hfb1330e_4",
@@ -7790,7 +7790,7 @@ conda_deps = [
     "libva-2.24.1-hb83e432_1",
     "libdrm-2.4.129-h7cc23a3_0",
     "libvulkan-loader-1.4.357.0-h0e34353_2",
-    "openssl-3.6.4-h781a0a9_0",
+    "openssl-3.6.5-h781a0a9_0",
     "pulseaudio-client-17.0-hb10c1b2_4",
     "x264-1!164.3095-h7cc23a3_3",
     "x265-3.5-h73f68a7_4",
@@ -7932,7 +7932,7 @@ conda_deps = [
     "libva-2.24.1-hb83e432_1",
     "libdrm-2.4.129-h7cc23a3_0",
     "libvulkan-loader-1.4.357.0-h0e34353_2",
-    "openssl-3.6.4-h781a0a9_0",
+    "openssl-3.6.5-h781a0a9_0",
     "pulseaudio-client-17.0-hb10c1b2_4",
     "x264-1!164.3095-h7cc23a3_3",
     "x265-3.5-h73f68a7_4",
@@ -8074,7 +8074,7 @@ conda_deps = [
     "libva-2.24.1-hb83e432_1",
     "libdrm-2.4.129-h7cc23a3_0",
     "libvulkan-loader-1.4.357.0-h0e34353_2",
-    "openssl-3.6.4-h781a0a9_0",
+    "openssl-3.6.5-h781a0a9_0",
     "pulseaudio-client-17.0-hb10c1b2_4",
     "x264-1!164.3095-h7cc23a3_3",
     "x265-3.5-h73f68a7_4",
@@ -8216,7 +8216,7 @@ conda_deps = [
     "libva-2.24.1-hb83e432_1",
     "libdrm-2.4.129-h7cc23a3_0",
     "libvulkan-loader-1.4.357.0-h0e34353_2",
-    "openssl-3.6.4-h781a0a9_0",
+    "openssl-3.6.5-h781a0a9_0",
     "pulseaudio-client-17.0-hb10c1b2_4",
     "x264-1!164.3095-h7cc23a3_3",
     "x265-3.5-h73f68a7_4",
@@ -8348,7 +8348,7 @@ conda_deps = [
     "libvulkan-loader-1.4.357.0-hfbe1efa_2",
     "libxml2-2.15.4-h550178d_0",
     "libxml2-16-2.15.4-heb56d2d_0",
-    "openssl-3.6.4-h55eecbc_0",
+    "openssl-3.6.5-h55eecbc_0",
     "x264-1!164.3095-hb001647_3",
     "x265-3.5-h55d2f36_4",
     "libintl-0.25.1-hae62183_2",
@@ -8442,7 +8442,7 @@ conda_deps = [
     "libxml2-16-2.15.4-h8376fb4_0",
     "libxml2-2.15.4-hb56241c_0",
     "libvulkan-loader-1.4.357.0-h66869c8_2",
-    "openssl-3.6.4-h332eb6d_0",
+    "openssl-3.6.5-h332eb6d_0",
     "x264-1!164.3095-hd115831_3",
     "x265-3.5-h78a8136_4",
     "libintl-0.25.1-h98e67c8_2",
@@ -8536,7 +8536,7 @@ conda_deps = [
     "libxml2-16-2.15.4-h8376fb4_0",
     "libxml2-2.15.4-hb56241c_0",
     "libvulkan-loader-1.4.357.0-h66869c8_2",
-    "openssl-3.6.4-h332eb6d_0",
+    "openssl-3.6.5-h332eb6d_0",
     "x264-1!164.3095-hd115831_3",
     "x265-3.5-h78a8136_4",
     "libintl-0.25.1-h98e67c8_2",
@@ -8616,7 +8616,7 @@ conda_deps = [
     "libvulkan-loader-1.4.357.0-h477610d_2",
     "libxml2-2.15.4-he095d88_0",
     "libxml2-16-2.15.4-h3cfd58e_0",
-    "openssl-3.6.4-hf411b9b_0",
+    "openssl-3.6.5-hf411b9b_0",
     "ucrt-10.0.26100.0-h57928b3_0",
     "vc-14.5-ha367084_41",
     "vc14_runtime-14.51.36247-habf1de7_41",
@@ -8702,7 +8702,7 @@ conda_deps = [
     "libvulkan-loader-1.4.357.0-h477610d_2",
     "libxml2-2.15.4-he095d88_0",
     "libxml2-16-2.15.4-h3cfd58e_0",
-    "openssl-3.6.4-hf411b9b_0",
+    "openssl-3.6.5-hf411b9b_0",
     "ucrt-10.0.26100.0-h57928b3_0",
     "vc-14.5-ha367084_41",
     "vc14_runtime-14.51.36247-habf1de7_41",
@@ -9665,54 +9665,54 @@ url = "https://github.com/steipete/gogcli/releases/download/v0.43.0/gogcli_0.43.
 url_api = "https://api.github.com/repos/steipete/gogcli/releases/assets/602378003"
 
 [[tools."github:zenbu-labs/terminal-browser"]]
-version = "0.13.1"
+version = "0.13.4"
 backend = "github:zenbu-labs/terminal-browser"
-specifiers = ["v0.13.1"]
+specifiers = ["v0.13.4"]
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64"]
-checksum = "sha256:a210f01056b0379f959d15dff82cda196a3e4284ec440afaa75ad4bed79c355c"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205337"
+checksum = "sha256:0cf567d8218995a24fb6ce4b06c07ccf58a8c517906058087355f1e2fad1969f"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405728"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64-musl"]
-checksum = "sha256:a210f01056b0379f959d15dff82cda196a3e4284ec440afaa75ad4bed79c355c"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205337"
+checksum = "sha256:0cf567d8218995a24fb6ce4b06c07ccf58a8c517906058087355f1e2fad1969f"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405728"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64"]
-checksum = "sha256:21e32a55212249e30fa3dfda1c3ede82b1bf6f82f93ef44eb63b1b625ea0d567"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205340"
+checksum = "sha256:6277daaabab16711ab3f1961cdffad9efac5e70ac55d5076e2c86496d649d3a4"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405733"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-baseline"]
-checksum = "sha256:21e32a55212249e30fa3dfda1c3ede82b1bf6f82f93ef44eb63b1b625ea0d567"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205340"
+checksum = "sha256:6277daaabab16711ab3f1961cdffad9efac5e70ac55d5076e2c86496d649d3a4"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405733"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl"]
-checksum = "sha256:21e32a55212249e30fa3dfda1c3ede82b1bf6f82f93ef44eb63b1b625ea0d567"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205340"
+checksum = "sha256:6277daaabab16711ab3f1961cdffad9efac5e70ac55d5076e2c86496d649d3a4"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405733"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:21e32a55212249e30fa3dfda1c3ede82b1bf6f82f93ef44eb63b1b625ea0d567"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205340"
+checksum = "sha256:6277daaabab16711ab3f1961cdffad9efac5e70ac55d5076e2c86496d649d3a4"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405733"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-arm64"]
-checksum = "sha256:be44721273eed9b2bbb8ae0eaa6e44a489fc1fb9f252d738baebfa8d689238da"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205343"
+checksum = "sha256:f017230c78c60a07ef4451a1eb0a92727f0b955a8fcd87aec358910c5d0c03c7"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405729"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-x64"]
-checksum = "sha256:d0e4f7e9e286369a17d7b11ee60d0e264649c1b184c73cd5486e61cbbb7cf11e"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205342"
+checksum = "sha256:01bc6991bad122f42e4f2a5164a198d8384b944c036de112078fd51f58dc67ed"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405731"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-x64-baseline"]
-checksum = "sha256:d0e4f7e9e286369a17d7b11ee60d0e264649c1b184c73cd5486e61cbbb7cf11e"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.1/terminal-browser-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/600205342"
+checksum = "sha256:01bc6991bad122f42e4f2a5164a198d8384b944c036de112078fd51f58dc67ed"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.13.4/terminal-browser-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/604405731"
 
 [[tools.go]]
 version = "1.27.1"
@@ -9899,7 +9899,7 @@ conda_deps = [
     "libdeflate-1.25-hfa851ae_1",
     "zstd-1.5.7-h9d15635_7",
     "icu-78.3-py311h3512406_2",
-    "openssl-3.6.4-he6ad1d5_0",
+    "openssl-3.6.5-he6ad1d5_0",
     "fribidi-1.0.17-h5bc82ec_0",
     "libxcb-1.17.0-h3f04742_2",
     "xorg-libice-1.1.2-h80f16a2_0",
@@ -10030,7 +10030,7 @@ conda_deps = [
     "libdeflate-1.25-hfa851ae_1",
     "zstd-1.5.7-h9d15635_7",
     "icu-78.3-py311h3512406_2",
-    "openssl-3.6.4-he6ad1d5_0",
+    "openssl-3.6.5-he6ad1d5_0",
     "fribidi-1.0.17-h5bc82ec_0",
     "libxcb-1.17.0-h3f04742_2",
     "xorg-libice-1.1.2-h80f16a2_0",
@@ -10161,7 +10161,7 @@ conda_deps = [
     "libdeflate-1.25-hd45a770_1",
     "zstd-1.5.7-hb78ec9c_7",
     "icu-78.3-py310h44b86e0_2",
-    "openssl-3.6.4-h781a0a9_0",
+    "openssl-3.6.5-h781a0a9_0",
     "fribidi-1.0.17-h7cc23a3_0",
     "harfbuzz-14.5.1-ha770c72_0",
     "libharfbuzz-devel-14.5.1-h23af247_0",
@@ -10292,7 +10292,7 @@ conda_deps = [
     "libdeflate-1.25-hd45a770_1",
     "zstd-1.5.7-hb78ec9c_7",
     "icu-78.3-py310h44b86e0_2",
-    "openssl-3.6.4-h781a0a9_0",
+    "openssl-3.6.5-h781a0a9_0",
     "fribidi-1.0.17-h7cc23a3_0",
     "harfbuzz-14.5.1-ha770c72_0",
     "libharfbuzz-devel-14.5.1-h23af247_0",
@@ -10423,7 +10423,7 @@ conda_deps = [
     "libdeflate-1.25-hd45a770_1",
     "zstd-1.5.7-hb78ec9c_7",
     "icu-78.3-py310h44b86e0_2",
-    "openssl-3.6.4-h781a0a9_0",
+    "openssl-3.6.5-h781a0a9_0",
     "fribidi-1.0.17-h7cc23a3_0",
     "harfbuzz-14.5.1-ha770c72_0",
     "libharfbuzz-devel-14.5.1-h23af247_0",
@@ -10554,7 +10554,7 @@ conda_deps = [
     "libdeflate-1.25-hd45a770_1",
     "zstd-1.5.7-hb78ec9c_7",
     "icu-78.3-py310h44b86e0_2",
-    "openssl-3.6.4-h781a0a9_0",
+    "openssl-3.6.5-h781a0a9_0",
     "fribidi-1.0.17-h7cc23a3_0",
     "harfbuzz-14.5.1-ha770c72_0",
     "libharfbuzz-devel-14.5.1-h23af247_0",
@@ -10676,7 +10676,7 @@ conda_deps = [
     "libdeflate-1.25-he7e0567_1",
     "zstd-1.5.7-hf451053_7",
     "icu-78.3-py310h579977c_2",
-    "openssl-3.6.4-h55eecbc_0",
+    "openssl-3.6.5-h55eecbc_0",
     "imath-3.2.2-h13e8271_0",
     "fribidi-1.0.17-hb001647_0",
     "harfbuzz-14.5.1-hce30654_0",
@@ -10772,7 +10772,7 @@ conda_deps = [
     "libdeflate-1.25-h7ad9622_1",
     "zstd-1.5.7-hbc1a06c_7",
     "icu-78.3-py313hbf1d544_2",
-    "openssl-3.6.4-h332eb6d_0",
+    "openssl-3.6.5-h332eb6d_0",
     "imath-3.2.2-h6337977_0",
     "fribidi-1.0.17-hd115831_0",
     "harfbuzz-14.5.1-h694c41f_0",
@@ -10868,7 +10868,7 @@ conda_deps = [
     "libdeflate-1.25-h7ad9622_1",
     "zstd-1.5.7-hbc1a06c_7",
     "icu-78.3-py313hbf1d544_2",
-    "openssl-3.6.4-h332eb6d_0",
+    "openssl-3.6.5-h332eb6d_0",
     "imath-3.2.2-h6337977_0",
     "fribidi-1.0.17-hd115831_0",
     "harfbuzz-14.5.1-h694c41f_0",
@@ -10962,7 +10962,7 @@ conda_deps = [
     "libdeflate-1.25-h1a1d4e4_1",
     "zstd-1.5.7-h534d264_7",
     "icu-78.3-h5112557_2",
-    "openssl-3.6.4-hf411b9b_0",
+    "openssl-3.6.5-hf411b9b_0",
     "fribidi-1.0.17-hfd05255_0",
     "pixman-0.46.4-h5112557_3",
     "xorg-libxpm-3.5.19-hba3369d_0",
@@ -11057,7 +11057,7 @@ conda_deps = [
     "libdeflate-1.25-h1a1d4e4_1",
     "zstd-1.5.7-h534d264_7",
     "icu-78.3-h5112557_2",
-    "openssl-3.6.4-hf411b9b_0",
+    "openssl-3.6.5-hf411b9b_0",
     "fribidi-1.0.17-hfd05255_0",
     "pixman-0.46.4-h5112557_3",
     "xorg-libxpm-3.5.19-hba3369d_0",
@@ -11285,10 +11285,10 @@ backend = "npm:acpx"
 specifiers = ["0.19.4"]
 
 [[tools."npm:agent-browser"]]
-version = "0.38.1"
-aube = { path = ".mise/locks/npm-agent-browser/0.38.1", digest = "sha256:71da2d3eacd2d671de6b4f1621c8eb49c1288cf86a6b33f55654a8ad3d0f8321" }
+version = "0.38.2"
+aube = { path = ".mise/locks/npm-agent-browser/0.38.2", digest = "sha256:0b2ff7be211127e1a450d28cd323eab41c1d4851892d73b95d77e4fdd3e4e1b8" }
 backend = "npm:agent-browser"
-specifiers = ["0.38.1"]
+specifiers = ["0.38.2"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.6.0"
