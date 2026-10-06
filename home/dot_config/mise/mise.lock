@@ -11316,16 +11316,16 @@ backend = "npm:agent-browser"
 specifiers = ["0.38.2"]
 
 [[tools."npm:bash-language-server"]]
-version = "5.6.0"
-aube = { path = ".mise/locks/npm-bash-language-server/5.6.0", digest = "sha256:b8ce42cafd567a5f85dab54254513fa048625a460a73289eef2f94cd68dd5a30" }
+version = "5.8.1"
+aube = { path = ".mise/locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
 backend = "npm:bash-language-server"
-specifiers = ["5.6.0"]
+specifiers = ["5.8.1"]
 
 [[tools."npm:typescript-language-server"]]
-version = "6.0.0"
-aube = { path = ".mise/locks/npm-typescript-language-server/6.0.0", digest = "sha256:df8016fc179bdf942026d39a79f313ca5bf515e470c5e68d93fe0783d635decf" }
+version = "6.0.1"
+aube = { path = ".mise/locks/npm-typescript-language-server/6.0.1", digest = "sha256:cd5db34273d07076d582ba959987cbd36e89c20d479a4671433aca4f6bdc3c7e" }
 backend = "npm:typescript-language-server"
-specifiers = ["6.0.0"]
+specifiers = ["6.0.1"]
 
 [[tools."npm:vscode-langservers-extracted"]]
 version = "4.10.0"
