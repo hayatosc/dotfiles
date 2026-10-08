@@ -108,3 +108,18 @@ errs = append(errs, f1())
 errs = append(errs, f2())
 return errors.Join(errs...)
 ```
+
+## Cancellation Causes (Go 1.20+)
+
+- Use `context.WithCancelCause` and check root causes with `context.Cause(ctx)` instead of relying solely on generic `context.Canceled`.
+
+```go
+ctx, cancel := context.WithCancelCause(parentCtx)
+// When canceling with cause:
+cancel(fmt.Errorf("upstream service timed out: %w", err))
+
+// When inspecting:
+if cause := context.Cause(ctx); cause != nil {
+    // handle specific cause
+}
+```

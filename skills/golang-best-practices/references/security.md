@@ -2,16 +2,25 @@
 
 Security is not a feature. It is a baseline requirement.
 
-## Randomness
+## Randomness and Identifiers
 
-- Use `crypto/rand` for keys, tokens, passwords, and any security-sensitive randomness.
+- Use `crypto/rand` for keys, tokens, passwords, and security-sensitive randomness.
+- Use `rand.Text()` (Go 1.24+) for cryptographically secure random token strings.
+- Use the standard `uuid` package (Go 1.27+) for RFC 9562 identifiers: `uuid.New()` for UUIDv4 or `uuid.NewV7()` for time-ordered UUIDv7.
 - Never use `math/rand` or `math/rand/v2` for security purposes.
 
 ```go
-import "crypto/rand"
+import (
+    "crypto/rand"
+    "uuid"
+)
 
 func Token() string {
     return rand.Text() // Go 1.24+
+}
+
+func ID() string {
+    return uuid.New().String() // Go 1.27+
 }
 ```
 
@@ -28,6 +37,28 @@ rows, err := db.Query("SELECT * FROM users WHERE id = ?", userID)
 rows, err := db.Query("SELECT * FROM users WHERE id = " + userID)
 ```
 
+## Path Traversal and File Access: os.Root (Go 1.24+)
+
+- Use `os.Root` (`os.OpenRoot(baseDir)`) to confine filesystem operations within a designated directory.
+- `os.Root` natively prevents directory traversal (`../`) and symlink escapes without fragile manual path cleaning.
+
+```go
+root, err := os.OpenRoot(uploadDir)
+if err != nil {
+    return err
+}
+defer root.Close()
+
+// Secure against path traversal even if filename is "../../etc/passwd"
+f, err := root.Open(untrustedFilename)
+```
+
+## Cryptography
+
+- Use `crypto/hpke` (Go 1.26+) for Hybrid Public Key Encryption standards.
+- Use `crypto/mldsa` (Go 1.27+) for post-quantum digital signatures (ML-DSA).
+- Never use deprecated cryptographic algorithms (`crypto/md5`, `crypto/sha1`) for security purposes.
+
 ## Unsafe
 
 - Avoid the `unsafe` package entirely unless you are writing low-level systems code or optimizing a hot path with profiling data.
@@ -37,7 +68,7 @@ rows, err := db.Query("SELECT * FROM users WHERE id = " + userID)
 
 - Validate all untrusted input at the system boundary (HTTP handlers, RPC endpoints, CLI args).
 - Use `strconv` for numeric parsing; check bounds explicitly.
-- Sanitize filenames if accepting file uploads. Never use user input directly as a file path.
+- Use `encoding/json/v2` (Go 1.27+) for strict JSON parsing that flags duplicate keys and malformed syntax by default.
 
 ## Secrets
 

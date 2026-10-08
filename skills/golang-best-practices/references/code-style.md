@@ -63,7 +63,13 @@ package math
 - Use `if` with short variable declarations for error checking.
 - Omit unnecessary `else` when the `if` body ends in `return`, `break`, or `continue`.
 - Use `switch` for long `if-else` chains.
-- Use `range` for iterating over slices, maps, strings, and channels.
+- Use `range` for slices, maps, strings, channels, integer counts (`for i := range 10` Go 1.22+), and iterators (`iter.Seq`, `iter.Seq2` Go 1.23+).
+- Loop variables are per-iteration scoped (Go 1.22+); closures within loops do not require `v := v` re-declarations.
+
+## Pointers and Struct Literals
+
+- Use `new(expr)` (Go 1.26+) to create pointers to literal values (`new(42)`, `new("prod")`, `new(time.Minute)`). Avoid custom `ptr(v)` helper functions.
+- Struct literals support embedded and nested field selectors directly (Go 1.27+) (e.g., `Config{Server.Port: 8080}`).
 
 ## Named Result Parameters
 

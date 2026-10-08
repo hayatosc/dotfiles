@@ -5,13 +5,14 @@ Premature optimization is the root of all evil, but knowingly pessimizing code i
 ## Allocations and Preallocation
 
 - Preallocate slices and maps when the final size is known.
+- Use `unique.Make` (Go 1.23+) to intern strings and comparable types in memory-intensive applications, reducing memory footprint and making comparisons O(1).
+- Reuse buffers with `sync.Pool` for hot paths.
+- Take advantage of runtime allocator improvements (Swiss Tables maps in Go 1.24+, small object allocator optimizations up to Go 1.27).
 
 ```go
 results := make([]int, 0, len(inputs))
 m := make(map[string]int, estimatedSize)
 ```
-
-- Reuse buffers with `sync.Pool` for hot paths.
 
 ## Strings
 
@@ -30,6 +31,7 @@ result := b.String()
 
 - Pass slices by value (they are small descriptors). Only use a pointer if you must modify the slice header (length/capacity).
 - Maps are reference types; pass them by value unless you need to replace the map itself.
+- Use `slices` and `maps` package functions (`slices.Grow`, `slices.Clip`, `slices.Compact`) and iterators (`slices.Collect`) to avoid superfluous allocations.
 - Do not over-allocate. Use capacity hints, but do not guess wildly.
 
 ## Pointers vs Values
@@ -40,6 +42,7 @@ result := b.String()
 
 ## Benchmarking
 
+- Use `for b.Loop()` (Go 1.24+) in benchmarks to ensure setup code runs once and results are protected from compiler elimination.
 - Profile before optimizing. Use `go test -bench=. -cpuprofile=cpu.out`.
 - Use `go tool pprof` and `go tool trace` to find actual bottlenecks.
 - Optimize the real bottleneck, not what looks expensive.

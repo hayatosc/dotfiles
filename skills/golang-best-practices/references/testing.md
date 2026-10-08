@@ -62,16 +62,49 @@ t.Errorf("Foo(%q) = %d; want %d", tt.in, got, tt.want) // Good
 ## Benchmarks
 
 - Use `func BenchmarkFoo(b *testing.B)`.
-- Reset or stop the timer around expensive setup.
+- Use `for b.Loop()` (Go 1.24+) instead of `for i := 0; i < b.N; i++`.
+- Put expensive setup and teardown before/after the loop: `b.Loop()` automatically excludes setup time and stops timing when finished.
+- `b.Loop()` ensures function call results stay alive, preventing compiler dead-code elimination.
 - Use sub-benchmarks (`b.Run`) to compare variations.
 
 ```go
 func BenchmarkFoo(b *testing.B) {
-    data := make([]byte, 1024)
-    b.ResetTimer()
-    for i := 0; i < b.N; i++ {
+    data := make([]byte, 1024) // Setup runs once and is not timed
+    for b.Loop() {
         Foo(data)
     }
+}
+```
+
+## Concurrent and Timed Testing (Go 1.25+)
+
+- Use `testing/synctest` (`synctest.Test` and `synctest.Wait`) for testing concurrent or time-dependent logic.
+- Avoid `time.Sleep` and polling loops in tests. Inside `synctest.Test`, `time.Sleep` advances virtual time instantaneously once all goroutines in the bubble block.
+- Call `synctest.Wait()` to wait for all bubble goroutines to block before asserting state.
+- For cryptographic implementations, use `testing/cryptotest` (Go 1.26+) for algorithm conformance testing.
+
+```go
+import (
+    "testing"
+    "testing/synctest"
+    "time"
+)
+
+func TestTimeout(t *testing.T) {
+    synctest.Test(t, func(t *testing.T) {
+        done := make(chan struct{})
+        go func() {
+            time.Sleep(5 * time.Minute) // Advances virtual time instantly
+            close(done)
+        }()
+
+        synctest.Wait()
+        select {
+        case <-done:
+        default:
+            t.Fatal("expected goroutine to complete")
+        }
+    })
 }
 ```
 

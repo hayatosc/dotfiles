@@ -42,6 +42,7 @@ project-root/
 
 - Keep `go.mod` at the repository root.
 - Use a module path matching the repository URL (e.g., `github.com/org/project`).
+- Track development and build tools with the `tool` directive in `go.mod` (Go 1.24+) using `go get -tool <package>` and run them with `go tool <tool>`. Do not use legacy `tools.go` files with dummy imports.
 - Prefer minimal module sprawl. A single module per repository is usually sufficient unless there are clear versioning boundaries.
 - Run `go mod tidy` before every commit.
 - Pin dependencies intentionally. Review `go.sum` changes in PRs.
@@ -49,6 +50,6 @@ project-root/
 
 ## Version Support
 
-- Target the latest two Go releases for production services.
-- Use `go` directive in `go.mod` to declare the minimum supported version.
+- Target the latest two Go releases for production services (currently **Go 1.27** and **Go 1.26**).
+- Use `go` directive in `go.mod` to declare the minimum supported version (e.g., `go 1.27`).
 - CI should test against the minimum declared version and the latest stable version.

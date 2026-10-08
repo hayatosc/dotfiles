@@ -14,6 +14,7 @@ Concurrency is powerful in Go but easy to misuse. Prefer simplicity.
 - Pass `ctx` through the entire call chain.
 - Do not store Context in a struct. Add it as a parameter to each method that needs it.
 - Use `context.WithCancel`, `context.WithTimeout`, `context.WithDeadline` appropriately.
+- Use `context.WithCancelCause` and `context.Cause(ctx)` to attach and inspect root causes for cancellation.
 - Always call the cancel function returned by `WithCancel`, `WithTimeout`, or `WithDeadline`, typically with `defer`.
 
 ## Synchronization
@@ -24,13 +25,14 @@ Concurrency is powerful in Go but easy to misuse. Prefer simplicity.
 - Use `sync.Once` for one-time initialization.
 - Use `atomic` for simple numeric counters when performance is critical.
 
-## Channels
+## Channels and Timers
 
 - The sender closes the channel. Do not close from the receiver.
 - Closing a channel is optional if range isn't used.
 - Use buffered channels only when they solve a specific synchronization problem.
 - Use `for range` over a channel when the sender will close it.
 - Use `select` with a `default` case only for non-blocking sends/receives.
+- Timers: `time.Reset` and `time.Stop` (Go 1.23+) safely reclaim resources immediately; do not drain timer channels manually.
 
 ```go
 // Good: producer owns the channel and closes it
@@ -51,6 +53,11 @@ func producer() <-chan int {
 - Run tests with `-race` in CI.
 - Do not read and write a variable from different goroutines without synchronization.
 - Prefer passing data explicitly via channels over shared memory protected by mutexes when feasible.
+
+## Testing Concurrency
+
+- Use `testing/synctest` (Go 1.25+) with `synctest.Test` and `synctest.Wait` to test concurrent workflows deterministically with virtualized time.
+- Avoid `time.Sleep` in tests to coordinate goroutines.
 
 ## sync.Pool
 

@@ -5,7 +5,7 @@ description: Implement or review Go code using shared API, error handling, concu
 
 # Go Best Practices
 
-Respect the module's Go version and established conventions. Prefer synchronous APIs with caller-owned concurrency, useful zero values, consumer-side interfaces, and explicit error handling. Use `crypto/rand` for security-sensitive randomness.
+Respect the module's Go version (targeting Go 1.27 conventions) and established conventions. Prefer synchronous APIs with caller-owned concurrency, useful zero values, consumer-side interfaces, and explicit error handling. Use `crypto/rand` and `uuid` for security-sensitive randomness and identifiers.
 
 ## Baseline for Implementation and Review
 
@@ -13,6 +13,7 @@ Respect the module's Go version and established conventions. Prefer synchronous 
 - Pass `context.Context` first when an operation accepts context; propagate cancellation to work it starts.
 - Check returned errors. Explain intentional discards; return errors for normal failures rather than panicking.
 - Make goroutine ownership, shutdown, and error reporting explicit. Do not start background work with no owner.
+- Use `new(expr)` (Go 1.26+) for pointer literals and `b.Loop()` (Go 1.24+) for benchmarks.
 - Use `gofmt` and the project's import formatter on changed files. Run the affected package tests, plus race checks when the change concerns shared state and the environment supports them.
 
 ## References
