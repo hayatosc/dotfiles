@@ -1,10 +1,10 @@
 # Codex Cloud Sessions Only — Codexクラウドセッション専用
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/9e330d70de06416b28ee9e0eab6c35d4528eb232/scripts/install-codex-cloud.sh | sh
+curl -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/ace0ffa391edada83dc795f8b2ddbc2aae7d0cce/scripts/install-codex-cloud.sh | sh
 ```
 
-This installs the repository's common Agent Skills and minimal cloud Codex defaults. It does not run chezmoi or apply workstation settings. The installer URL is pinned to a full commit SHA, so it keeps working after the feature branch is deleted. This revision passed the real first-install and rerun checks. To update it, replace the SHA with another reviewed and verified installer commit.
+This installs the repository's common Agent Skills and minimal cloud Codex defaults. It does not run chezmoi or apply workstation settings. The installer URL is pinned to a full commit SHA, so it keeps working after the feature branch is deleted. The installer is covered by real first-install and rerun CI checks. To update it, replace the SHA with another reviewed and verified installer commit.
 
 ## How it works
 
@@ -47,7 +47,7 @@ Use the saved cloud environment's Install script, alongside project dependency s
 ```bash
 #!/usr/bin/env bash
 set -euo pipefail
-curl -q -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/9e330d70de06416b28ee9e0eab6c35d4528eb232/scripts/install-codex-cloud.sh | sh
+curl -q -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/ace0ffa391edada83dc795f8b2ddbc2aae7d0cce/scripts/install-codex-cloud.sh | sh
 ```
 
 A plain POSIX pipeline reports only the receiving shell's status; an empty failed download can otherwise appear successful. The installer puts commands inside a function so incomplete function definitions do not start setup. Its own downloads complete before any downloaded code executes.
