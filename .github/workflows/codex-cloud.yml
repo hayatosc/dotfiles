@@ -3,16 +3,10 @@ name: Codex cloud installer
 on:
   pull_request:
     paths:
-      - scripts/**
-      - tests/**
+      - scripts/install-codex-cloud.sh
+      - tests/test_codex_cloud.py
       - cloud/**
       - skills/**
-      - home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl
-      - home/dot_config/mise/tasks/executable_apm
-      - home/dot_config/mise/config.toml
-      - home/dot_config/mise/mise.lock
-      - pyproject.toml
-      - uv.lock
       - .github/workflows/codex-cloud.yml
   workflow_dispatch:
 
@@ -24,15 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Install test-only PyYAML
-        run: python3 -m pip install PyYAML==6.0.3
-      - name: Shell syntax
+      - name: Shell syntax and isolated behavior tests
         run: |
           sh -n scripts/install-codex-cloud.sh
-          bash -n scripts/install-codex-cloud-payload.sh home/dot_config/mise/tasks/executable_apm
-      - name: Isolated behavior tests
-        run: python3 -m unittest discover -s tests -v
-      - name: Real pinned bootstrap in a disposable HOME
+          python3 -m unittest discover -s tests -v
+      - name: Real APM install and rerun in a disposable HOME
         shell: bash
         run: |
           set -euo pipefail
@@ -41,24 +31,9 @@ jobs:
           export HOME="$work/home with spaces"
           export CODEX_HOME="$work/codex with spaces"
           export XDG_DATA_HOME="$work/data with spaces"
-          export XDG_STATE_HOME="$work/state with spaces"
           mkdir -p "$HOME"
-          ref=$(git rev-parse HEAD)
-          python3 -I scripts/codex_cloud.py --ref "$ref"
-          python3 -I scripts/codex_cloud.py --ref "$ref"
-      - name: Published one-URL pipe install and rerun
-        shell: bash
-        env:
-          LAUNCHER_REF: ${{ github.event.pull_request.head.sha || github.sha }}
-        run: |
-          set -euo pipefail
-          work=$(mktemp -d)
-          trap 'rm -rf -- "$work"' EXIT
-          export HOME="$work/home with spaces"
-          export CODEX_HOME="$work/codex with spaces"
-          export XDG_DATA_HOME="$work/data with spaces"
-          export XDG_STATE_HOME="$work/state with spaces"
-          mkdir -p "$HOME"
-          url="https://raw.githubusercontent.com/hayatosc/dotfiles/$LAUNCHER_REF/scripts/install-codex-cloud.sh"
-          curl -fsSL "$url" | sh
-          curl -fsSL "$url" | sh
+          sh scripts/install-codex-cloud.sh
+          sh scripts/install-codex-cloud.sh
+          test "$(find "$HOME/.agents/skills" -mindepth 1 -maxdepth 1 -type l | wc -l)" -eq 40
+          test -f "$CODEX_HOME/config.toml"
+          test -f "$CODEX_HOME/AGENTS.md"
