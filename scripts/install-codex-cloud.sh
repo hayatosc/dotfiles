@@ -30,7 +30,13 @@ main() (
     mkdir "$data/lock" 2>/dev/null || die "installation already running: $data/lock"
     work=
     stage=
-    trap 'rm -rf -- "$work" "$stage"; rmdir "$data/lock"' 0
+    cleanup() {
+        if [ -n "$stage" ] && [ "$(readlink "$data/current" 2>/dev/null || :)" = "$stage" ]; then stage=; fi
+        rm -f -- "$data/lock/current"
+        rm -rf -- "$work" "$stage"
+        rmdir "$data/lock"
+    }
+    trap cleanup 0
     trap 'exit 130' INT
     trap 'exit 143' TERM
     work=$(mktemp -d)

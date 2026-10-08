@@ -120,6 +120,32 @@ cp "$src" "$last"
         self.assertEqual((self.skills / "local/SKILL.md").read_text(), "local skill\n")
         self.assertEqual(len(list(self.data.glob("install.*"))), 1)
 
+    def interrupted_publication(self, tool):
+        self.run_install()
+        previous = os.readlink(self.data / "current")
+        self.command(tool, f'''/usr/bin/{tool} "$@"
+case "$*" in
+*'/lock/current'*) kill -TERM "$PPID" ;;
+esac
+''')
+        result = self.run_install(False)
+        self.assertEqual(result.returncode, 143)
+        (self.bin / tool).unlink()
+        current = os.readlink(self.data / "current")
+        if tool == "ln":
+            self.assertEqual(current, previous)
+        else:
+            self.assertNotEqual(current, previous)
+        self.assertTrue(Path(current).is_dir())
+        self.assertEqual((self.skills / "local/SKILL.md").read_text(), "local skill\n")
+        self.run_install()
+
+    def test_signal_before_publish_removes_temporary_link(self):
+        self.interrupted_publication("ln")
+
+    def test_signal_after_publish_preserves_live_generation(self):
+        self.interrupted_publication("mv")
+
     def test_download_and_checksum_failures(self):
         for tool in ("curl", "sha256sum"):
             with self.subTest(tool=tool):
