@@ -27,7 +27,9 @@ jobs:
       - name: Install test-only PyYAML
         run: python3 -m pip install PyYAML==6.0.3
       - name: Shell syntax
-        run: bash -n scripts/install-codex-cloud.sh home/dot_config/mise/tasks/executable_apm
+        run: |
+          sh -n scripts/install-codex-cloud.sh
+          bash -n scripts/install-codex-cloud-payload.sh home/dot_config/mise/tasks/executable_apm
       - name: Isolated behavior tests
         run: python3 -m unittest discover -s tests -v
       - name: Real pinned bootstrap in a disposable HOME
@@ -44,3 +46,19 @@ jobs:
           ref=$(git rev-parse HEAD)
           python3 -I scripts/codex_cloud.py --ref "$ref"
           python3 -I scripts/codex_cloud.py --ref "$ref"
+      - name: Published one-URL pipe install and rerun
+        shell: bash
+        env:
+          LAUNCHER_REF: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          set -euo pipefail
+          work=$(mktemp -d)
+          trap 'rm -rf -- "$work"' EXIT
+          export HOME="$work/home with spaces"
+          export CODEX_HOME="$work/codex with spaces"
+          export XDG_DATA_HOME="$work/data with spaces"
+          export XDG_STATE_HOME="$work/state with spaces"
+          mkdir -p "$HOME"
+          url="https://raw.githubusercontent.com/hayatosc/dotfiles/$LAUNCHER_REF/scripts/install-codex-cloud.sh"
+          curl -fsSL "$url" | sh
+          curl -fsSL "$url" | sh

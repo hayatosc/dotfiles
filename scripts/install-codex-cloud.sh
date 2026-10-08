@@ -1,27 +1,31 @@
-#!/usr/bin/env bash
-# Download this file, then execute it with the same immutable repository ref.
-set -euo pipefail
+#!/bin/sh
+# POSIX launcher: curl -fsSL <this URL> | sh (no arguments).
+# Keep the reviewed payload commit and its entrypoint checksum together.
+main() (
+    set -eu
+    die() { printf 'codex-cloud: %s\n' "$*" >&2; exit 1; }
+    [ "$#" -eq 0 ] || die "this launcher takes no arguments; pin its URL to a commit for reproducible installation"
+    for tool in curl mktemp python3 bash uname; do
+        command -v "$tool" >/dev/null 2>&1 || die "required tool missing: $tool"
+    done
+    [ "$(uname -s)" = Linux ] || die "this installer is for Linux Codex cloud sessions"
+    python3 -I -c 'import sys; assert sys.version_info >= (3, 11), "Python 3.11+ is required"'
+    work=$(mktemp -d)
+    trap 'rm -rf -- "$work"' 0
+    trap 'exit 130' INT
+    trap 'exit 143' TERM
 
-die() { echo "codex-cloud: $*" >&2; exit 1; }
-[[ $# == 2 && $1 == --ref && $2 =~ ^[0-9a-f]{40}$ ]] || die "usage: bash install-codex-cloud.sh --ref <40-character commit SHA>"
-ref=$2
-[[ -f ${BASH_SOURCE[0]} ]] || die "download the script to a file before executing it (see docs/codex-cloud.md)"
-for tool in curl tar cmp mktemp python3; do
-    command -v "$tool" >/dev/null || die "required tool missing: $tool"
-done
-python3 -I -c 'import sys, tarfile; assert sys.version_info >= (3, 11), "Python 3.11+ is required"; assert hasattr(tarfile, "data_filter"), "Python tarfile extraction filters are required"'
-[[ -x /usr/bin/git ]] || die "required tool missing: /usr/bin/git"
-[[ $(uname -s) == Linux ]] || die "this installer is for Linux Codex cloud sessions"
-work=$(mktemp -d)
-trap 'rm -rf -- "$work"' EXIT
-trap 'exit 130' INT
-trap 'exit 143' TERM
+    ref=260e8ffa0f642c78a2dcefc2402af791a804f3f0
+    checksum=31f6baf87e8227b79111814ffa3594fe64244d0ef3c7789de5e24cda6e6515f0
+    curl -q --fail --show-error --silent --location --proto '=https' --proto-redir '=https' \
+        "https://raw.githubusercontent.com/hayatosc/dotfiles/$ref/scripts/install-codex-cloud-payload.sh" \
+        -o "$work/payload.sh"
+    python3 -I -c 'import hashlib, pathlib, sys; actual=hashlib.sha256(pathlib.Path(sys.argv[1]).read_bytes()).hexdigest(); actual == sys.argv[2] or sys.exit("codex-cloud: pinned installer checksum mismatch")' \
+        "$work/payload.sh" "$checksum"
+    # The complete, verified payload requires Bash. It checks its own bytes
+    # against the repository archive at this same immutable ref.
+    bash "$work/payload.sh" --ref "$ref"
+)
 
-# -q prevents reading the user's curl configuration; HTTP failures stop setup.
-curl -q --fail --show-error --silent --location --proto '=https' --proto-redir '=https' \
-    "https://codeload.github.com/hayatosc/dotfiles/tar.gz/$ref" -o "$work/source.tar.gz"
-tar -xzf "$work/source.tar.gz" -C "$work"
-repo="$work/dotfiles-$ref"
-cmp -s -- "${BASH_SOURCE[0]}" "$repo/scripts/install-codex-cloud.sh" || \
-    die "entrypoint differs from --ref; download the entrypoint from that exact commit"
-python3 -I "$repo/scripts/codex_cloud.py" --ref "$ref"
+# Defining the function has no installation side effects during pipe parsing.
+main "$@"

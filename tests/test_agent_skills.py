@@ -320,23 +320,51 @@ class EntrypointTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix="entrypoint tests ")
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        self.ref = "a" * 40
+        self.ref = "260e8ffa0f642c78a2dcefc2402af791a804f3f0"
         self.entry = ROOT / "scripts/install-codex-cloud.sh"
+        self.payload = ROOT / "scripts/install-codex-cloud-payload.sh"
         self.bin = self.root / "bin"
         self.bin.mkdir()
         self.archive = self.root / "archive.tar.gz"
         self.source = self.root / f"dotfiles-{self.ref}"
         (self.source / "scripts").mkdir(parents=True)
-        shutil.copy2(self.entry, self.source / "scripts/install-codex-cloud.sh")
+        shutil.copy2(self.payload, self.source / "scripts/install-codex-cloud-payload.sh")
         self.marker = self.root / "executed"
         (self.source / "scripts/codex_cloud.py").write_text(f"from pathlib import Path\nPath({str(self.marker)!r}).write_text('ran')\n")
         self.tmp = self.root / "tmp"
         self.tmp.mkdir()
+        self.mode = self.root / "download-mode"
+        self.mode.write_text("ok")
         self.env = dict(os.environ, PATH=f"{self.bin}:/usr/bin:/bin", TMPDIR=str(self.tmp))
-        (self.bin / "curl").write_text(f'''#!/bin/bash
-[[ $1 == -q ]] || exit 99
-[[ "$*" == *"https://codeload.github.com/hayatosc/dotfiles/tar.gz/{self.ref}"* ]] || exit 98
-cp {str(self.archive)!r} "${{@: -1}}"
+        (self.bin / "curl").write_text(f'''#!{sys.executable}
+import pathlib, shutil, sys
+mode = pathlib.Path({str(self.mode)!r}).read_text()
+if sys.argv[1:] == ['-fsSL', 'https://example.invalid/codex-cloud.sh']:
+    data = pathlib.Path({str(self.entry)!r}).read_bytes()
+    if mode == 'outer-empty':
+        sys.exit(22)
+    if mode == 'outer-partial':
+        sys.stdout.buffer.write(data[:len(data)//2])
+        sys.exit(22)
+    if mode == 'outer-no-call':
+        sys.stdout.buffer.write(data.rsplit(b'\\nmain "$@"', 1)[0])
+        sys.exit(22)
+    sys.stdout.buffer.write(data)
+    sys.exit(0)
+assert sys.argv[1] == '-q'
+if 'https://raw.githubusercontent.com/hayatosc/dotfiles/{self.ref}/scripts/install-codex-cloud-payload.sh' in sys.argv:
+    if mode == 'payload-network':
+        sys.exit(22)
+    shutil.copyfile({str(self.payload)!r}, sys.argv[-1])
+    if mode == 'payload-corrupt':
+        with open(sys.argv[-1], 'a') as file:
+            file.write('# corrupted download\\n')
+elif 'https://codeload.github.com/hayatosc/dotfiles/tar.gz/{self.ref}' in sys.argv:
+    if mode == 'archive-network':
+        sys.exit(22)
+    shutil.copyfile({str(self.archive)!r}, sys.argv[-1])
+else:
+    sys.exit(98)
 ''')
         (self.bin / "curl").chmod(0o755)
 
@@ -344,9 +372,17 @@ cp {str(self.archive)!r} "${{@: -1}}"
         with tarfile.open(self.archive, "w:gz") as archive:
             archive.add(self.source, arcname=self.source.name)
 
-    def run_entry(self, ref=None):
+    def run_entry(self, *args):
         self.bundle()
-        return subprocess.run(["bash", str(self.entry), "--ref", ref or self.ref], env=self.env, capture_output=True, text=True)
+        return subprocess.run(["sh", str(self.entry), *args], env=self.env, capture_output=True, text=True)
+
+    def run_pipeline(self, pipefail=True):
+        self.bundle()
+        if pipefail:
+            command = ["/bin/bash", "-o", "pipefail", "-c", 'curl -fsSL "$1" | sh', "test", "https://example.invalid/codex-cloud.sh"]
+        else:
+            command = ["/bin/sh", "-c", 'curl -fsSL "$1" | sh', "test", "https://example.invalid/codex-cloud.sh"]
+        return subprocess.run(command, env=self.env, capture_output=True, text=True)
 
     def test_pinned_download_runs_and_cleans_up(self):
         result = self.run_entry()
@@ -354,8 +390,22 @@ cp {str(self.archive)!r} "${{@: -1}}"
         self.assertEqual(self.marker.read_text(), "ran")
         self.assertEqual(list(self.tmp.iterdir()), [])
 
+    def test_argument_free_pipeline_works_with_posix_sh(self):
+        result = self.run_pipeline(pipefail=False)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(self.marker.read_text(), "ran")
+        self.assertEqual(list(self.tmp.iterdir()), [])
+
+    def test_payload_pin_matches_committed_fixture(self):
+        import hashlib
+        self.assertEqual(hashlib.sha256(self.payload.read_bytes()).hexdigest(),
+                         "31f6baf87e8227b79111814ffa3594fe64244d0ef3c7789de5e24cda6e6515f0")
+        source = self.entry.read_text()
+        self.assertIn(f"ref={self.ref}", source)
+        self.assertIn("checksum=31f6baf87e8227b79111814ffa3594fe64244d0ef3c7789de5e24cda6e6515f0", source)
+
     def test_entrypoint_ref_mismatch_fails_before_execution(self):
-        with (self.source / "scripts/install-codex-cloud.sh").open("a") as file:
+        with (self.source / "scripts/install-codex-cloud-payload.sh").open("a") as file:
             file.write("# different version\n")
         result = self.run_entry()
         self.assertNotEqual(result.returncode, 0)
@@ -363,34 +413,65 @@ cp {str(self.archive)!r} "${{@: -1}}"
         self.assertFalse(self.marker.exists())
         self.assertEqual(list(self.tmp.iterdir()), [])
 
-    def test_mutable_ref_is_rejected(self):
-        result = self.run_entry("main")
+    def test_launcher_rejects_arguments(self):
+        result = self.run_entry("--ref", "main")
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("40-character", result.stderr)
+        self.assertIn("takes no arguments", result.stderr)
         self.assertFalse(self.marker.exists())
 
     def test_download_failure_propagates_and_cleans_up(self):
-        (self.bin / "curl").write_text("#!/bin/bash\nexit 22\n")
-        result = self.run_entry()
-        self.assertEqual(result.returncode, 22)
+        for mode in ("payload-network", "archive-network"):
+            with self.subTest(mode=mode):
+                self.mode.write_text(mode)
+                result = self.run_pipeline()
+                self.assertEqual(result.returncode, 22, result.stderr)
+                self.assertFalse(self.marker.exists())
+                self.assertEqual(list(self.tmp.iterdir()), [])
+
+    def test_outer_curl_failures_propagate_without_installation(self):
+        for mode in ("outer-empty", "outer-partial", "outer-no-call"):
+            with self.subTest(mode=mode):
+                self.mode.write_text(mode)
+                result = self.run_pipeline()
+                self.assertNotEqual(result.returncode, 0)
+                self.assertFalse(self.marker.exists())
+                self.assertEqual(list(self.tmp.iterdir()), [])
+
+    def test_payload_checksum_failure_blocks_bash_execution(self):
+        self.mode.write_text("payload-corrupt")
+        result = self.run_pipeline()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("checksum mismatch", result.stderr)
         self.assertFalse(self.marker.exists())
         self.assertEqual(list(self.tmp.iterdir()), [])
 
     def test_python_installer_failure_propagates(self):
         (self.source / "scripts/codex_cloud.py").write_text("raise SystemExit(39)\n")
-        result = self.run_entry()
+        result = self.run_pipeline()
         self.assertEqual(result.returncode, 39)
         self.assertEqual(list(self.tmp.iterdir()), [])
 
     def test_missing_prerequisite_fails(self):
         isolated_bin = self.root / "isolated bin"
         isolated_bin.mkdir()
-        for tool in ("curl", "tar", "cmp", "mktemp"):
+        for tool in ("curl", "mktemp"):
             (isolated_bin / tool).symlink_to(shutil.which(tool))
-        result = subprocess.run(["/bin/bash", str(self.entry), "--ref", self.ref],
+        result = subprocess.run(["/bin/sh", str(self.entry)],
                                 env=dict(self.env, PATH=str(isolated_bin)), capture_output=True, text=True)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("required tool missing: python3", result.stderr)
+
+    def test_missing_internal_bash_is_an_explicit_failure(self):
+        isolated_bin = self.root / "no bash bin"
+        isolated_bin.mkdir()
+        for tool in ("curl", "mktemp", "python3", "uname"):
+            (isolated_bin / tool).symlink_to(shutil.which(tool))
+        result = subprocess.run(["/bin/sh", str(self.entry)],
+                                env=dict(self.env, PATH=str(isolated_bin)), capture_output=True, text=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("required tool missing: bash", result.stderr)
+        self.assertFalse(self.marker.exists())
+        self.assertEqual(list(self.tmp.iterdir()), [])
 
 
 class BootstrapTests(unittest.TestCase):
