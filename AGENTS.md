@@ -14,7 +14,7 @@ Edit sources here rather than deployed files in the active home directory.
 ## Applying Changes
 
 After editing configuration or skills, run `chezmoi apply --force` to deploy them.
-Skill changes trigger `home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl`: it stages local skills, runs `apm install --target agent-skills`, syncs to `~/.agents/skills/`, and removes staging directories.
+Skill changes trigger `home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl`: it uses `scripts/agent_skills.py` to stage and verify a frozen APM install, then publishes only owned skill links. See `docs/codex-cloud.md` for collision handling and the separate cloud entrypoint. Cloud-installer work uses disposable HOME tests rather than applying desktop configuration to the active home.
 Inspect the pending apply scope first; resolve unrelated changes without overwriting user work.
 Report an apply failure separately from source changes so the user knows what is active.
 

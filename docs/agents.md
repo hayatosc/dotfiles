@@ -18,7 +18,9 @@ Chezmoi's `symlink_*` templates link `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`
 
 `home/` is chezmoi's source root; `skills/` is outside it. After source edits, inspect `chezmoi status` and run `chezmoi apply --force`. If unrelated destination drift exists, pass the affected target paths to apply rather than overwriting it.
 
-[The APM script](../home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl) reruns when the skill sources or manifest change. It stages local skills with temporary symlinks under `skills/.apm/skills/`, runs `apm install --target agent-skills` into `skills/.agents/skills/`, syncs the result to `~/.agents/skills/`, and removes staging directories. Self-authored skills live directly under `skills/`, not in those temporary directories.
+[The APM hook](../home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl) and `mise run apm install` reuse [the shared deployer](../scripts/agent_skills.py). It copies the manifest/lock and local skills into disposable staging, runs the mise-pinned APM with `install --frozen --target agent-skills`, verifies content, and publishes only owned symlinks under `~/.agents/skills/`. Existing unmanaged directories cause a collision instead of being deleted or adopted. Missing APM is a failure. Self-authored skills live directly under `skills/`; staging never modifies the source tree.
+
+See [Codex Cloud Sessions Only](codex-cloud.md) for the separate cloud Install script, ownership/update behavior, and migration of skills from the old copy/rsync deployment. Cloud installation does not apply workstation dotfiles. A desktop `chezmoi apply` is not a required validation step when working on that cloud-only entrypoint.
 
 ## Maintaining Prompts
 

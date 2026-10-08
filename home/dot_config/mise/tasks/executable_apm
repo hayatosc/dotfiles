@@ -8,5 +8,11 @@ source_dir="${source_dir%/}"
 [[ "$source_dir" == */home ]] && source_dir="${source_dir%/home}"
 skills_dir="$source_dir/skills"
 
+# install includes staging local skills and publishing owned links. Other APM
+# commands retain their existing manifest/lockfile maintenance behavior.
+if [[ "${1:-}" == install ]]; then
+    [[ $# == 1 ]] || { echo "Use mise run apm install without extra arguments; edit apm.yml or run apm update first" >&2; exit 1; }
+    exec uv run --frozen --project "$source_dir" python "$source_dir/scripts/agent_skills.py" --apm "$(command -v apm)"
+fi
 cd "$skills_dir"
 exec apm "$@"

@@ -1,10 +1,9 @@
 name: dotfile-skills
 version: 0.1.0
-description: agent skills managed via Microsoft APM (Agent Package Manager). 
-  Self-authored skills live in directories directly under skills/; external 
-  skills are pulled as dependencies. chezmoi's run_apm-install.sh stages them 
-  into a temporary .apm/skills/, runs `apm install`, and syncs the result to 
-  ~/.agents/skills/.
+description: Agent skills managed via Microsoft APM. Self-authored skills live
+  directly under skills/; external skills are pinned by apm.lock.yaml. The shared
+  scripts/agent_skills.py stages and verifies both before publishing owned links
+  under ~/.agents/skills/. Desktop chezmoi and the Codex cloud installer reuse it.
 targets:
   - agent-skills
 dependencies:

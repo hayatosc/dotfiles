@@ -1,0 +1,46 @@
+name: Codex cloud installer
+
+on:
+  pull_request:
+    paths:
+      - scripts/**
+      - tests/**
+      - cloud/**
+      - skills/**
+      - home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl
+      - home/dot_config/mise/tasks/executable_apm
+      - home/dot_config/mise/config.toml
+      - home/dot_config/mise/mise.lock
+      - pyproject.toml
+      - uv.lock
+      - .github/workflows/codex-cloud.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install test-only PyYAML
+        run: python3 -m pip install PyYAML==6.0.3
+      - name: Shell syntax
+        run: bash -n scripts/install-codex-cloud.sh home/dot_config/mise/tasks/executable_apm
+      - name: Isolated behavior tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Real pinned bootstrap in a disposable HOME
+        shell: bash
+        run: |
+          set -euo pipefail
+          work=$(mktemp -d)
+          trap 'rm -rf -- "$work"' EXIT
+          export HOME="$work/home with spaces"
+          export CODEX_HOME="$work/codex with spaces"
+          export XDG_DATA_HOME="$work/data with spaces"
+          export XDG_STATE_HOME="$work/state with spaces"
+          mkdir -p "$HOME"
+          ref=$(git rev-parse HEAD)
+          python3 -I scripts/codex_cloud.py --ref "$ref"
+          python3 -I scripts/codex_cloud.py --ref "$ref"
