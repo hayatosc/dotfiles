@@ -1,6 +1,7 @@
 """Exercise the shell entrypoint in disposable homes; no production Python."""
 import io
 import os
+import shutil
 from pathlib import Path
 import subprocess
 import tarfile
@@ -8,6 +9,7 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
+REAL_GIT = shutil.which("git")
 SCRIPT = ROOT / "scripts/install-agent-cloud.sh"
 REF = "0123456789abcdef0123456789abcdef01234567"
 
@@ -60,8 +62,15 @@ printf 'external skill\\n' > .agents/skills/yomiyasu/SKILL.md
             info.mode = 0o755
             info.size = len(body)
             tar.addfile(info, io.BytesIO(body))
-        self.command("git", f"[ \"$*\" = 'ls-remote https://github.com/hayatosc/dotfiles refs/heads/main' ]\n"
-                     f"printf '%s\\trefs/heads/main\\n' {REF}\n")
+        self.command("git", f"""if [ "$*" = 'ls-remote https://github.com/hayatosc/dotfiles refs/heads/main' ]; then
+printf '%s\\trefs/heads/main\\n' {REF}
+else
+exec '{REAL_GIT}' "$@"
+fi
+""")
+        # The installer configures repositories under its working directory.
+        self.cwd = self.root / "work"
+        self.cwd.mkdir()
         self.command("curl", f'''for arg do
 case "$arg" in
 https://codeload.github.com/hayatosc/dotfiles/tar.gz/{REF}) src='{self.root}/source.tar.gz';;
@@ -91,7 +100,7 @@ cp "$src" "$last"
 
     def run_install(self, success=True):
         result = subprocess.run(["sh"], input=SCRIPT.read_text(), text=True,
-                                env=self.env, capture_output=True)
+                                env=self.env, capture_output=True, cwd=self.cwd)
         self.assertEqual(result.returncode == 0, success, result.stdout + result.stderr)
         self.assertFalse((self.data / "lock").exists())
         return result
@@ -162,6 +171,31 @@ cp "$src" "$last"
         self.assertIn("keeping existing", result.stderr)
         self.assertEqual(rtk.read_text(), "user rtk")
         self.assertTrue((self.skills / "local/SKILL.md").is_file())
+
+    def git_identity(self, repo):
+        return [subprocess.run([REAL_GIT, "-C", str(repo), "config", "--local", key],
+                               capture_output=True, text=True).stdout.strip()
+                for key in ("user.name", "user.email")]
+
+    def test_sets_identity_in_each_repository(self):
+        repos = [self.cwd, self.cwd / "a", self.cwd / "group/b"]
+        for repo in repos:
+            repo.mkdir(parents=True, exist_ok=True)
+            subprocess.run([REAL_GIT, "init", "-q", str(repo)], check=True)
+        (self.cwd / "plain").mkdir()
+        result = self.run_install()
+        for repo in repos:
+            self.assertEqual(self.git_identity(repo), ["hayatosc", "145091553+hayatosc@users.noreply.github.com"])
+            self.assertIn(f"set commit identity in {repo}", result.stdout)
+        self.assertFalse((self.cwd / "plain/.git").exists())
+
+    def test_identity_override_and_root(self):
+        repo = self.root / "elsewhere"
+        subprocess.run([REAL_GIT, "init", "-q", str(repo)], check=True)
+        self.env.update(DOTFILES_GIT_ROOT=str(repo), DOTFILES_GIT_NAME="Some One",
+                        DOTFILES_GIT_EMAIL="one@example.com")
+        self.run_install()
+        self.assertEqual(self.git_identity(repo), ["Some One", "one@example.com"])
 
     def test_explicit_ref_and_ca_forwarding(self):
         self.command("git", "exit 1\n")

@@ -146,6 +146,16 @@ main() (
     elif [ ! -L "$bin/rtk" ]; then
         ln -s "$data/current/bin/rtk" "$bin/rtk"
     fi
+    # Commit as the owner in every repository checked out under the working
+    # directory. Repository-local user.* outranks the platform's ~/.gitconfig.
+    git_root=${DOTFILES_GIT_ROOT:-$PWD}
+    find "$git_root" -maxdepth 3 -name .git -prune -print |
+        while IFS= read -r dotgit; do
+            repo_dir=${dotgit%/.git}
+            git -C "$repo_dir" config user.name "${DOTFILES_GIT_NAME:-hayatosc}"
+            git -C "$repo_dir" config user.email "${DOTFILES_GIT_EMAIL:-145091553+hayatosc@users.noreply.github.com}"
+            printf 'agent-cloud: set commit identity in %s\n' "$repo_dir"
+        done
     # Links resolve through current, so superseded generations are unreferenced.
     for old in "$data"/install.*; do
         [ "$old" = "$live" ] || rm -rf -- "$old"

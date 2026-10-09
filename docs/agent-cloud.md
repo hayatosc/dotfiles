@@ -82,14 +82,6 @@ Because user settings are not read, choose the model, effort, and permission mod
 }
 ```
 
-### Commit author in this repository
-
-Claude Code on the web writes `Claude <noreply@anthropic.com>` to `~/.gitconfig` at session start. For this repository only, [`.claude/settings.json`](../.claude/settings.json) has a SessionStart hook that runs in cloud sessions (`CLAUDE_CODE_REMOTE=true`) and sets the repository-local `author.name` and `author.email` to `hayatosc <hayato8190+univ@gmail.com>`. Local sessions skip it.
-
-The hook uses `author.*` rather than `user.*`, so only the author changes. The committer and signing key stay with the platform, so signature verification on GitHub is unaffected. Git uses the author setting only for new commits and merges; rebase, cherry-pick, and `commit --amend` keep each commit's recorded author.
-
-Codex Cloud does not run this hook, because non-managed Codex hooks need an interactive trust review.
-
 ### Verify
 
 Start a new session and check:
@@ -98,6 +90,7 @@ Start a new session and check:
 - `/context` lists `/root/.claude/CLAUDE.md`.
 - Asking Claude which skills are available lists the repository skills, for example `coding-style`.
 - `rtk --version` prints `rtk 0.51.0`.
+- `git config --local user.email` in the repository prints `145091553+hayatosc@users.noreply.github.com`.
 
 ## Codex cloud
 
@@ -138,10 +131,19 @@ If a new task does not pick up the instructions or skills, the documented fallba
 
 During setup, and again in a new task after publishing, ask Codex to:
 
-- Print `$HOME`, `id -un`, and `$PATH`, list `~/.agents/skills`, and run `rtk --version` (or `~/.local/bin/rtk --version` if `rtk` is not on `PATH`).
+- Print `$HOME`, `id -un`, and `$PATH`, list `~/.agents/skills`, run `rtk --version` (or `~/.local/bin/rtk --version` if `rtk` is not on `PATH`), and run `git config --local user.email` in the repository.
 - Report which instruction files it loaded and whether it sees the repository skills, for example `coding-style`.
 
 Check that `$HOME` is the same during setup and in the task; the skill and rtk links point into `$HOME/.local/share/dotfiles-agent-cloud`.
+
+## Commit identity
+
+Cloud agents commit with the platform's identity; Claude Code on the web, for example, writes `Claude <noreply@anthropic.com>` to `~/.gitconfig`. After installing, the installer looks for Git repositories in its working directory and up to three levels below, and runs `git config user.name` and `git config user.email` in each one. The repository-local values outrank the platform's global ones, so both the author and the committer become `hayatosc <145091553+hayatosc@users.noreply.github.com>`, the GitHub noreply address that links commits to the account without exposing a mail address.
+
+- Set `DOTFILES_GIT_ROOT` to search another directory, and `DOTFILES_GIT_NAME` / `DOTFILES_GIT_EMAIL` to use another identity.
+- Global Git configuration is not changed, and repositories outside the searched directory keep the platform identity.
+- The platform still signs commits with its own key. With the committer no longer matching that key's account, GitHub may show the signature as **Unverified**.
+- The identity is set when the installer runs. A repository cloned after setup, or a fresh clone in a session that reuses a cached setup, does not get it; see the verification steps.
 
 ## How it works
 
@@ -176,4 +178,4 @@ sh -n scripts/install-agent-cloud.sh
 python3 -m unittest discover -s tests -v
 ```
 
-The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.
+The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, per-repository commit identity, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.
