@@ -8,18 +8,23 @@ main() (
     for tool in curl tar sha256sum git mktemp readlink awk; do
         command -v "$tool" >/dev/null 2>&1 || die "required tool missing: $tool"
     done
-    # The official APM release is pinned to the repository's mise lock.
+    # The official APM and rtk releases are pinned to the repository's mise lock.
     case $(uname -m) in
-        x86_64) arch=x86_64; checksum=e6374402c74318f7c8bef97a90d8572d049fdab0dc3871492c6b0647ae9e881f ;;
-        aarch64) arch=arm64; checksum=ac40dd0efd1af35a56847beedde96854530d2f54851e026728da017d3af827f8 ;;
+        x86_64)
+            arch=x86_64 checksum=e6374402c74318f7c8bef97a90d8572d049fdab0dc3871492c6b0647ae9e881f
+            rtk_target=x86_64-unknown-linux-musl rtk_checksum=5028d3b19a8f0990d30fec9fbb07e32782bc5698e618fb1861aad8a9ccba4eb5 ;;
+        aarch64)
+            arch=arm64 checksum=ac40dd0efd1af35a56847beedde96854530d2f54851e026728da017d3af827f8
+            rtk_target=aarch64-unknown-linux-gnu rtk_checksum=8d6d1aad9e69b42481eda7039507d1f7ee93698f87713cecd873d287c1931632 ;;
         *) die 'supported architectures: x86_64 and aarch64' ;;
     esac
     codex=${CODEX_HOME:-$HOME/.codex}
     claude=${CLAUDE_CONFIG_DIR:-$HOME/.claude}
     data=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles-agent-cloud
     agents_skills=$HOME/.agents/skills
+    bin=$HOME/.local/bin
     # Each check walks every ancestor, so this also covers $claude itself.
-    for path in "$codex" "$claude/skills" "$data" "$agents_skills"; do
+    for path in "$codex" "$claude/skills" "$data" "$agents_skills" "$bin"; do
         case $path in /*) ;; *) die "absolute path required: $path" ;; esac
         while [ "$path" != / ] && [ "${path%/}" != "$path" ]; do path=${path%/}; done
         while [ "$path" != / ]; do
@@ -59,6 +64,8 @@ main() (
     fetch "https://github.com/microsoft/apm/releases/download/v0.33.0/apm-linux-$arch.tar.gz" "$work/apm.tar.gz"
     printf '%s  %s\n' "$checksum" "$work/apm.tar.gz" | sha256sum -c -
     tar -xzf "$work/apm.tar.gz" -C "$work"
+    fetch "https://github.com/rtk-ai/rtk/releases/download/v0.51.0/rtk-$rtk_target.tar.gz" "$work/rtk.tar.gz"
+    printf '%s  %s\n' "$rtk_checksum" "$work/rtk.tar.gz" | sha256sum -c -
     mkdir -p "$stage/.apm/skills" "$work/home"
     cp "$repo/skills/apm.yml" "$repo/skills/apm.lock.yaml" "$stage/"
     for skill in "$repo"/skills/*/SKILL.md; do
@@ -80,6 +87,8 @@ main() (
     cp "$repo/skills/.licenses/yomiyasu.LICENSE" "$stage/.agents/skills/yomiyasu/LICENSE"
     # Deployed skills are copies; drop the dependency cache and staged sources.
     rm -rf -- "$stage/apm_modules" "$stage/.apm"
+    mkdir "$stage/bin"
+    tar -xzf "$work/rtk.tar.gz" -C "$stage/bin" rtk
     printf '%s\n' "$ref" > "$stage/SOURCE_REF"
     # Shared preferences without the workstation-only section, plus cloud notes.
     awk '/^## /{skip=($0 == "## Local Environment")} !skip' \
@@ -98,17 +107,21 @@ main() (
     }
     preflight "$agents_skills"
     preflight "$claude/skills"
+    # rtk is optional tooling: an unmanaged rtk at the link path stays as is.
+    link_rtk=1
+    if [ -e "$bin/rtk" ] || [ -L "$bin/rtk" ]; then
+        [ -L "$bin/rtk" ] && [ "$(readlink "$bin/rtk")" = "$data/current/bin/rtk" ] || link_rtk=
+    fi
     if [ -e "$data/current" ] || [ -L "$data/current" ]; then
         [ -L "$data/current" ] || die "existing deployment: $data/current"
         case $(readlink "$data/current") in "$data"/install.*) ;; *) die 'unrecognized current deployment' ;; esac
     fi
-    mkdir -p "$agents_skills" "$claude/skills" "$codex"
+    mkdir -p "$agents_skills" "$claude/skills" "$codex" "$bin"
     # Copy seed files only when absent, including dangling user symlinks.
     seed() { [ -e "$2" ] || [ -L "$2" ] || cp "$1" "$2"; }
     seed "$work/AGENTS.md" "$codex/AGENTS.md"
     seed "$repo/cloud/codex/config.toml" "$codex/config.toml"
     seed "$work/AGENTS.md" "$claude/CLAUDE.md"
-    seed "$repo/cloud/claude/settings.json" "$claude/settings.json"
     ln -s "$stage" "$data/lock/current"
     mv -Tf "$data/lock/current" "$data/current"
     live=$stage
@@ -128,6 +141,11 @@ main() (
     }
     publish "$agents_skills"
     publish "$claude/skills"
+    if [ -z "$link_rtk" ]; then
+        printf 'agent-cloud: keeping existing %s\n' "$bin/rtk" >&2
+    elif [ ! -L "$bin/rtk" ]; then
+        ln -s "$data/current/bin/rtk" "$bin/rtk"
+    fi
     # Links resolve through current, so superseded generations are unreferenced.
     for old in "$data"/install.*; do
         [ "$old" = "$live" ] || rm -rf -- "$old"

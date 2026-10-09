@@ -38,7 +38,6 @@ class InstallerTests(unittest.TestCase):
                 "home/dot_agents/AGENTS.md": "# Prefs\n\nshared\n\n## Local Environment\n\n- alias\n",
                 "cloud/AGENTS.md": "## Cloud Session\n",
                 "cloud/codex/config.toml": "model_reasoning_effort = 'high'\n",
-                "cloud/claude/settings.json": "{}\n",
             }.items():
                 info = tarfile.TarInfo(f"hayatosc-dotfiles-{REF[:7]}/{name}")
                 info.size = len(value.encode())
@@ -55,12 +54,19 @@ cp -R .apm/skills/local .agents/skills/
 printf 'external skill\\n' > .agents/skills/yomiyasu/SKILL.md
 '''
         self.bundle_apm()
+        with tarfile.open(self.root / "rtk.tar.gz", "w:gz") as tar:
+            body = b"#!/bin/sh\necho rtk fixture\n"
+            info = tarfile.TarInfo("rtk")
+            info.mode = 0o755
+            info.size = len(body)
+            tar.addfile(info, io.BytesIO(body))
         self.command("git", f"[ \"$*\" = 'ls-remote https://github.com/hayatosc/dotfiles refs/heads/main' ]\n"
                      f"printf '%s\\trefs/heads/main\\n' {REF}\n")
         self.command("curl", f'''for arg do
 case "$arg" in
 https://codeload.github.com/hayatosc/dotfiles/tar.gz/{REF}) src='{self.root}/source.tar.gz';;
 https://github.com/microsoft/apm/*) src='{self.root}/apm.tar.gz';;
+https://github.com/rtk-ai/rtk/releases/download/v0.51.0/rtk-*-unknown-linux-*.tar.gz) src='{self.root}/rtk.tar.gz';;
 esac
 done
 for last do :; done
@@ -112,7 +118,8 @@ cp "$src" "$last"
         self.assertEqual((self.codex / "AGENTS.md").read_text(), instructions)
         self.assertEqual((self.claude / "CLAUDE.md").read_text(), instructions)
         self.assertTrue((self.codex / "config.toml").is_file())
-        self.assertEqual((self.claude / "settings.json").read_text(), "{}\n")
+        # Cloud sessions do not read user settings.json, so none is seeded.
+        self.assertFalse((self.claude / "settings.json").exists())
 
     def test_claude_code_skills_and_user_files(self):
         (self.claude / "skills/platform").mkdir(parents=True)
@@ -136,8 +143,25 @@ cp "$src" "$last"
         generations = list(self.data.glob("install.*"))
         self.assertEqual(generations, [Path(os.readlink(self.data / "current"))])
         self.assertEqual(sorted(p.name for p in generations[0].iterdir()),
-                         [".agents", "SOURCE_REF", "apm.lock.yaml", "apm.yml"])
+                         [".agents", "SOURCE_REF", "apm.lock.yaml", "apm.yml", "bin"])
         self.assertEqual((generations[0] / "SOURCE_REF").read_text(), REF + "\n")
+
+    def test_rtk_link_follows_current(self):
+        rtk = self.home / ".local/bin/rtk"
+        self.run_install()
+        self.run_install()
+        self.assertEqual(os.readlink(rtk), str(self.data / "current/bin/rtk"))
+        result = subprocess.run([str(rtk)], capture_output=True, text=True, check=True)
+        self.assertEqual(result.stdout, "rtk fixture\n")
+
+    def test_unmanaged_rtk_is_kept(self):
+        rtk = self.home / ".local/bin/rtk"
+        rtk.parent.mkdir(parents=True)
+        rtk.write_text("user rtk")
+        result = self.run_install()
+        self.assertIn("keeping existing", result.stderr)
+        self.assertEqual(rtk.read_text(), "user rtk")
+        self.assertTrue((self.skills / "local/SKILL.md").is_file())
 
     def test_explicit_ref_and_ca_forwarding(self):
         self.command("git", "exit 1\n")

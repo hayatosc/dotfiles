@@ -54,5 +54,5 @@ jobs:
           test -f "$CODEX_HOME/config.toml"
           test -f "$CODEX_HOME/AGENTS.md"
           test -f "$CLAUDE_CONFIG_DIR/CLAUDE.md"
-          python3 -m json.tool "$CLAUDE_CONFIG_DIR/settings.json" >/dev/null
+          test "$("$HOME/.local/bin/rtk" --version)" = "rtk 0.51.0"
           if grep -q '^## Local Environment' "$CLAUDE_CONFIG_DIR/CLAUDE.md"; then exit 1; fi

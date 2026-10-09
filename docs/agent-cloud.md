@@ -1,15 +1,134 @@
 # Agent Cloud Sessions — Codex / Claude Code クラウドセッション専用
 
 ```bash
-set -o pipefail
+#!/usr/bin/env bash
+set -euo pipefail
 curl -q -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/main/scripts/install-agent-cloud.sh | sh
 ```
 
-This installs the repository's Agent Skills and minimal cloud defaults for Codex cloud and Claude Code on the web. It does not run chezmoi or apply workstation settings.
+This installs the repository's Agent Skills, rtk, and minimal cloud defaults into a Claude Code on the web or Codex cloud environment. It does not run chezmoi or apply workstation settings. Put the block above in the environment's setup script as described per platform below.
+
+Keep `pipefail`: a plain POSIX pipeline reports only the receiving shell's status, so a failed download could otherwise look successful. The installer wraps its commands in a function, so a truncated download does not start running, and its own downloads complete before any downloaded code executes.
+
+## What it installs
+
+| Destination | Contents |
+|---|---|
+| `~/.agents/skills/<name>` | Skill links for Codex |
+| `$CLAUDE_CONFIG_DIR/skills/<name>` | The same skill links for Claude Code |
+| `$CODEX_HOME/AGENTS.md`, `$CLAUDE_CONFIG_DIR/CLAUDE.md` | Shared preferences, written only if absent |
+| `$CODEX_HOME/config.toml` | [Codex reasoning defaults](../cloud/codex/config.toml), written only if absent |
+| `~/.local/bin/rtk` | Link to [rtk](https://github.com/rtk-ai/rtk) 0.51.0, the version pinned in mise |
+| `$XDG_DATA_HOME/dotfiles-agent-cloud` | The installed generation and its `current` link |
+
+Defaults: `CODEX_HOME=~/.codex`, `CLAUDE_CONFIG_DIR=~/.claude`, `XDG_DATA_HOME=~/.local/share`.
+
+The instruction file is generated from [`home/dot_agents/AGENTS.md`](../home/dot_agents/AGENTS.md) without its `## Local Environment` section, followed by the [cloud notes](../cloud/AGENTS.md). Keep that heading name when editing the shared file; a unit test guards it.
+
+The cloud notes tell the agent to prefix output-heavy commands with `rtk`. On the workstation a PreToolUse hook rewrites commands automatically, but neither cloud platform gives this installer a documented way to register that hook (see below), so the cloud uses rtk explicitly.
+
+Existing files and dangling symlinks are left alone without reading their contents. An existing `~/.local/bin/rtk` that this installer did not create is kept. Skills the platform already places in `~/.claude/skills` are untouched. No auth, account, shell startup, plugins, hooks, MCP servers, or other optional skill CLIs are configured.
+
+## Claude Code on the web
+
+Findings from the official [cloud environments](https://code.claude.com/docs/en/cloud-environments) and [settings](https://code.claude.com/docs/en/settings#settings-in-cloud-sessions) documentation:
+
+### Configure the environment
+
+1. At [claude.ai/code](https://claude.ai/code), select the cloud icon showing the current environment's name, in the row above the message box. In the Desktop app the same selector is in the prompt box.
+2. Select **Cloud**, then hover over the environment and select its settings icon, or select **Add cloud environment**.
+3. Paste the block above into **Setup script** and save.
+4. Leave **Network access** at **Trusted**, or see [Network access](#network-access).
+
+Environments you create are personal. Shared environments created by an organization Owner open read-only; an Owner edits those on the **Cloud environments** admin page.
+
+### How the setup script runs
+
+- Bash, as root, on Ubuntu 24.04 x86_64, before Claude Code launches in a new session. `HOME` is `/root`.
+- A non-zero exit makes the session fail to start. Keep `set -euo pipefail`: a failed install is then retried by the next session instead of being cached.
+- When setup finishes within roughly five minutes, the filesystem is snapshotted and reused by later sessions, which skip the script. The script runs again when you change it or the allowed network hosts, or after the cache expires (roughly seven days). It does not run when an idle session resumes.
+
+Because of that cache, tracking `main` takes effect only when the snapshot is rebuilt. To pick up a merged skill change immediately, edit the setup script (for example, update a dated comment) to force a rebuild.
+
+### Network access
+
+**Trusted** (the default) already allows every host the installer needs: `github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`, and `release-assets.githubusercontent.com`. With **Custom**, add those hosts or check **Also include default list of common package managers**. With **None**, the install fails.
+
+Traffic passes through an HTTPS-intercepting proxy. The installer forwards the proxy and CA variables (`SSL_CERT_FILE`, `REQUESTS_CA_BUNDLE`, `GIT_SSL_CAINFO`, and so on) to APM when they are set.
+
+### What Claude Code reads
+
+| File | Read in a cloud session? |
+|---|---|
+| `~/.claude/CLAUDE.md` written by a setup script | Yes, documented; `/context` lists `/root/.claude/CLAUDE.md` under Memory files |
+| `~/.claude/settings.json` | No, documented: user settings are not read, so the installer does not write one |
+| `~/.claude/skills/<name>` written by a setup script | Not documented; the platform itself places skills in this directory. Verify after setup |
+| Repository `.claude/settings.json` | Yes, in a session with one repository |
+
+Because user settings are not read, choose the model, effort, and permission mode in the session UI. For permission rules or hooks, commit them to a repository's `.claude/settings.json`. For example, this enables the rtk rewrite hook for one repository and does nothing where rtk is absent:
+
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "command -v rtk >/dev/null && rtk hook claude || true" }
+        ]
+      }
+    ]
+  }
+}
+```
+
+### Verify
+
+Start a new session and check:
+
+- The setup step shows `Agent cloud skills installed from <sha>`.
+- `/context` lists `/root/.claude/CLAUDE.md`.
+- Asking Claude which skills are available lists the repository skills, for example `coding-style`.
+- `rtk --version` prints `rtk 0.51.0`.
+
+## Codex cloud
+
+Findings from the official [cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments), [legacy cloud environment](https://learn.chatgpt.com/docs/environments/cloud-environment), and [customization](https://learn.chatgpt.com/docs/customization/overview) documentation:
+
+### Configure the environment
+
+1. In Codex on the web or the desktop app, open **Settings** > **Codex Cloud** > **Environments**. To create an environment, select **Create environment** (or, in a new task, **Work in** > **Cloud** > **Select environment** > **Create environment**).
+2. For an existing environment, open its **…** menu and select **Edit**.
+3. Add the block above to **Install script**, after any project dependency setup. Codex may already fill in a detected setup; keep that and append this block.
+4. Under internet access, allow the hosts in [Network access](#network-access-1).
+5. Save and test the setup, then **Publish** or **Republish**. Do this only after a successful run and the environment owner's approval. Existing tasks keep their own state.
+
+If initial setup fails, **Try again** retries it. Codex caches environment state and does not rerun the install for every task, so, as with Claude Code, merged changes on `main` take effect when the cache is rebuilt. Editing the install script invalidates the cache.
+
+Use **Personal vault** for your own environment variables. Variables `export`ed by the install script do not persist into the agent phase.
+
+### Network access
+
+Setup runs with internet access. If the environment restricts domains to **Custom domains only**, allow `github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`, and `release-assets.githubusercontent.com`. Traffic passes through an HTTP/HTTPS proxy.
+
+### What Codex reads
+
+The official docs list `~/.codex/AGENTS.md` and `~/.agents/skills` as personal locations and state that personal skills on your own computer are not synced to cloud environments. They do not say whether cloud tasks read these locations when the install script creates them, nor whether `~/.codex/config.toml` and user hooks apply in cloud tasks. Treat all three as unverified until checked in a task.
+
+Workstation Codex hooks also need `features.hooks` and an interactive trust approval, which a cloud task cannot give, so the installer does not write `~/.codex/hooks.json`; rtk is used through the instructions instead.
+
+### Verify
+
+Start a new task and ask Codex to:
+
+- Print `$HOME`, list `~/.agents/skills`, and run `rtk --version`.
+- Report which instruction files it loaded and whether it sees the repository skills, for example `coding-style`.
+
+If the skills or instructions are not picked up, the fallback is to commit them to the repository (`AGENTS.md`, `.agents/skills/`), which the docs confirm cloud tasks read.
 
 ## How it works
 
-One POSIX shell script resolves `main` to a commit with `git ls-remote`, downloads that commit's source, and downloads the official APM 0.33.0 Linux binary. It verifies the binary's SHA-256 from the repository's mise lock. Set `DOTFILES_REF` to a full commit SHA to install a specific reviewed commit instead; CI uses this to test a pull request's own skills and lock.
+One POSIX shell script resolves `main` to a commit with `git ls-remote`, downloads that commit's source, and downloads the official APM 0.33.0 and rtk 0.51.0 Linux binaries. Both are verified against the SHA-256 values in the repository's mise lock. Set `DOTFILES_REF` to a full commit SHA to install a specific reviewed commit instead; CI uses this to test a pull request's own skills and lock. To freeze an environment, replace `main` in the URL with a reviewed commit SHA on `main` and run the script with `DOTFILES_REF` set to the same SHA.
 
 The script copies `skills/apm.yml`, `skills/apm.lock.yaml`, and local skills into a staged APM project, then runs:
 
@@ -21,53 +140,17 @@ APM handles frozen dependency installation and skill deployment into `.agents/sk
 
 APM runs with a disposable HOME, no inherited tokens or user/system Git configuration, lifecycle scripts disabled, and its normal security scanning enabled. Proxy variables (upper and lower case) and the `SSL_CERT_FILE`, `SSL_CERT_DIR`, `REQUESTS_CA_BUNDLE`, `CURL_CA_BUNDLE`, and `GIT_SSL_CAINFO` CA variables are forwarded only when set. Public dependency access must work without interactive authentication.
 
-## Requirements and destinations
-
-- Linux x86_64 or aarch64, glibc, POSIX sh, curl, tar, sha256sum, Git, mktemp, awk, and standard GNU file utilities
-- Public HTTPS access to github.com, codeload.github.com, and GitHub release downloads/redirects
-- Absolute `HOME`, `CODEX_HOME` (default `~/.codex`), `CLAUDE_CONFIG_DIR` (default `~/.claude`), and `XDG_DATA_HOME` (default `~/.local/share`); paths with spaces work
-
-| Destination | Contents |
-|---|---|
-| `~/.agents/skills/<name>` | Skill links for Codex |
-| `$CLAUDE_CONFIG_DIR/skills/<name>` | The same skill links for Claude Code |
-| `$CODEX_HOME/AGENTS.md`, `$CLAUDE_CONFIG_DIR/CLAUDE.md` | Shared preferences, seeded only if absent |
-| `$CODEX_HOME/config.toml` | [Codex reasoning defaults](../cloud/codex/config.toml), seeded only if absent |
-| `$CLAUDE_CONFIG_DIR/settings.json` | [Claude Code effort and deny rules](../cloud/claude/settings.json), seeded only if absent |
-| `$XDG_DATA_HOME/dotfiles-agent-cloud` | The installed generation and its `current` link |
-
-The instruction file is generated from [`home/dot_agents/AGENTS.md`](../home/dot_agents/AGENTS.md) without its `## Local Environment` section, followed by the [cloud notes](../cloud/AGENTS.md). Keep that heading name when editing the shared file; a unit test guards it. The Claude Code deny rules mirror the workstation settings.
-
-Existing files and dangling symlinks are left alone without reading their contents. Skills that the cloud platform already places in `~/.claude/skills` are untouched. No auth, browser, account, shell startup, plugins, hooks, MCP servers, or optional skill CLIs are copied or configured. Symlinked destination parent directories are rejected.
+Requirements: Linux x86_64 or aarch64, POSIX sh, curl, tar, sha256sum, Git, mktemp, awk, and GNU coreutils; absolute `HOME`, `CODEX_HOME`, `CLAUDE_CONFIG_DIR`, and `XDG_DATA_HOME` (paths with spaces work). Symlinked destination directories are rejected.
 
 ## Repeated runs and failures
 
 Each run installs into a fresh generation. All skill-name collisions in both skill directories are checked before publication. Existing skills are preserved unless their symlink points to this installer's exact `current/.agents/skills/<name>` path. There is no force/adopt option.
 
-Once installation succeeds, the `current` symlink switches atomically, missing skill links are created, retired links belonging to this installer are removed, and superseded generations are deleted. Failed resolution, downloads, checksum checks, APM runs, or collision checks leave the previous deployment active.
+Once installation succeeds, the `current` symlink switches atomically, missing skill and rtk links are created, retired links belonging to this installer are removed, and superseded generations are deleted. Failed resolution, downloads, checksum checks, APM runs, or collision checks leave the previous deployment active.
 
 This deliberately does not provide a transactional multi-file publisher, a custom ownership database, or tamper detection for locally edited generations. Do not edit installed generations; change the source instead. A disk error or hard interruption during final publication can leave partially created links/config; rerun after fixing the error. A stale `dotfiles-agent-cloud/lock` directory after SIGKILL must be removed only after confirming no installation is running.
 
-APM version and checksums must be updated together with the repository's mise configuration.
-
-## Environment setup scripts
-
-Add the command to each cloud environment's setup script, alongside project dependency setup. In Bash, enable `pipefail` so an outer curl failure is reported as a setup failure:
-
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-curl -q -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/main/scripts/install-agent-cloud.sh | sh
-```
-
-- **Codex cloud:** use the saved environment's setup script. Save and Republish only after a successful run and the environment owner's approval; existing tasks keep their own state.
-- **Claude Code on the web:** open the cloud environment menu in the session's title bar, choose Edit, and set the Setup script. New sessions run the updated script.
-
-A plain POSIX pipeline reports only the receiving shell's status; an empty failed download can otherwise appear successful. The installer puts commands inside a function so a truncated download does not start setup. Its own downloads complete before any downloaded code executes.
-
-Both environments track `main`, so a merged skill change reaches new sessions without editing the setup script. To freeze an environment, replace `main` in the URL with a reviewed commit SHA on `main` and set `DOTFILES_REF` to the same SHA.
-
-After setup, check the success message and skill links, and confirm skill discovery in a new task or session.
+APM and rtk versions and checksums must be updated together with the repository's mise configuration.
 
 ## Verification
 
@@ -76,4 +159,4 @@ sh -n scripts/install-agent-cloud.sh
 python3 -m unittest discover -s tests -v
 ```
 
-The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, config/instruction preservation for both agents, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real APM installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.
+The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.
