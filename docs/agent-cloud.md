@@ -1,7 +1,8 @@
 # Agent Cloud Sessions — Codex / Claude Code クラウドセッション専用
 
-```sh
-curl -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/main/scripts/install-agent-cloud.sh | sh
+```bash
+set -o pipefail
+curl -q -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/main/scripts/install-agent-cloud.sh | sh
 ```
 
 This installs the repository's Agent Skills and minimal cloud defaults for Codex cloud and Claude Code on the web. It does not run chezmoi or apply workstation settings.

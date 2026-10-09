@@ -241,6 +241,14 @@ esac
         self.run_install(False)
         self.assertEqual(list(elsewhere.iterdir()), [])
 
+    def test_claude_skills_symlink_rejected(self):
+        elsewhere = self.root / "elsewhere"
+        elsewhere.mkdir()
+        self.claude.mkdir()
+        (self.claude / "skills").symlink_to(elsewhere)
+        self.assertIn("symlinked destination", self.run_install(False).stderr)
+        self.assertEqual(list(elsewhere.iterdir()), [])
+
     def test_destination_symlink_rejected(self):
         elsewhere = self.root / "elsewhere"
         elsewhere.mkdir()

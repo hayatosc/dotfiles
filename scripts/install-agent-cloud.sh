@@ -1,5 +1,5 @@
 #!/bin/sh
-# curl -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/main/scripts/install-agent-cloud.sh | sh
+# set -o pipefail; curl -q -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/main/scripts/install-agent-cloud.sh | sh
 main() (
     set -eu
     die() { printf 'agent-cloud: %s\n' "$*" >&2; exit 1; }
@@ -18,7 +18,8 @@ main() (
     claude=${CLAUDE_CONFIG_DIR:-$HOME/.claude}
     data=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles-agent-cloud
     agents_skills=$HOME/.agents/skills
-    for path in "$codex" "$claude" "$data" "$agents_skills"; do
+    # Each check walks every ancestor, so this also covers $claude itself.
+    for path in "$codex" "$claude/skills" "$data" "$agents_skills"; do
         case $path in /*) ;; *) die "absolute path required: $path" ;; esac
         while [ "$path" != / ] && [ "${path%/}" != "$path" ]; do path=${path%/}; done
         while [ "$path" != / ]; do
