@@ -6,7 +6,7 @@ set -euo pipefail
 curl -q -fsSL https://raw.githubusercontent.com/hayatosc/dotfiles/main/scripts/install-agent-cloud.sh | sh
 ```
 
-This installs the repository's Agent Skills, rtk, and minimal cloud defaults into a Claude Code on the web or Codex cloud environment. It does not run chezmoi or apply workstation settings. Put the block above in the environment's setup script as described per platform below.
+This installs the repository's Agent Skills, rtk, and minimal cloud defaults into a Claude Code on the web or Codex cloud environment. It does not run chezmoi or apply workstation settings. Add the block above to the environment's **Setup script** (Claude Code) or **Install script** (Codex), as described per platform below.
 
 Keep `pipefail`: a plain POSIX pipeline reports only the receiving shell's status, so a failed download could otherwise look successful. The installer wraps its commands in a function, so a truncated download does not start running, and its own downloads complete before any downloaded code executes.
 
@@ -52,7 +52,7 @@ Because of that cache, tracking `main` takes effect only when the snapshot is re
 
 ### Network access
 
-**Trusted** (the default) already allows every host the installer needs: `github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`, and `release-assets.githubusercontent.com`. With **Custom**, add those hosts or check **Also include default list of common package managers**. With **None**, the install fails.
+**Trusted** (the default) already allows every host the installer needs: `github.com`, `codeload.github.com`, `raw.githubusercontent.com`, and `release-assets.githubusercontent.com`. With **Custom**, add those hosts or check **Also include default list of common package managers**. With **None**, the install fails.
 
 Traffic passes through an HTTPS-intercepting proxy. The installer forwards the proxy and CA variables (`SSL_CERT_FILE`, `REQUESTS_CA_BUNDLE`, `GIT_SSL_CAINFO`, and so on) to APM when they are set.
 
@@ -93,38 +93,47 @@ Start a new session and check:
 
 ## Codex cloud
 
-Findings from the official [cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments), [legacy cloud environment](https://learn.chatgpt.com/docs/environments/cloud-environment), and [customization](https://learn.chatgpt.com/docs/customization/overview) documentation:
+Findings from the official [Codex Cloud](https://learn.chatgpt.com/docs/environments/cloud-environments), [hooks](https://learn.chatgpt.com/docs/hooks), [AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md), and [skills](https://learn.chatgpt.com/docs/build-skills) documentation. This describes the current Codex Cloud; **Codex Cloud (Legacy)**, still used for Code Review and the Linear and GitHub integrations, has [its own setup-script model](https://learn.chatgpt.com/docs/environments/cloud-environment).
+
+### How the current environments work
+
+- Environment setup is a conversation. Codex inspects the selected repositories, installs dependencies, tests the workflow, and records what worked in two fields: **Install script** and **Start skill**. There is no separate setup or maintenance script to fill in first.
+- **Publish** captures the prepared filesystem. Each new task starts from that snapshot; existing tasks keep their own files.
+- Background repository refresh keeps dependency caches but does not rerun installation. Skills therefore update only when you edit the environment, let Codex rerun the install, and **Republish**. Tracking `main` means "the latest `main` at the last Republish".
+- Tasks run in a VM. The docs no longer describe a default image, user, `HOME`, or `PATH`, so do not assume the legacy `codex-universal` image (root, `~/.local/bin` on `PATH`).
 
 ### Configure the environment
 
-1. In Codex on the web or the desktop app, open **Settings** > **Codex Cloud** > **Environments**. To create an environment, select **Create environment** (or, in a new task, **Work in** > **Cloud** > **Select environment** > **Create environment**).
-2. For an existing environment, open its **…** menu and select **Edit**.
-3. Add the block above to **Install script**, after any project dependency setup. Codex may already fill in a detected setup; keep that and append this block.
-4. Under internet access, allow the hosts in [Network access](#network-access-1).
-5. Save and test the setup, then **Publish** or **Republish**. Do this only after a successful run and the environment owner's approval. Existing tasks keep their own state.
+1. In Codex on the web or the desktop app, open **Settings** > **Codex Cloud** > **Environments**. For an existing environment, open its **…** menu and select **Edit**. For a new one, select **Create environment** (or, in a new task, **Work in** > **Cloud** > **Select environment** > **Create environment**) and select the repositories.
+2. Turn on **Allow Codex to access internet** and allow the hosts in [Network access](#network-access-1).
+3. In the setup conversation, ask Codex to run the block above and keep it in the **Install script**, after the project's own install steps.
+4. Have Codex run the [verification](#verify-1) checks during setup, then save and **Publish** (or **Republish**). Republish only after a successful run and the environment owner's approval.
+5. Start a new task to use the result.
 
-If initial setup fails, **Try again** retries it. Codex caches environment state and does not rerun the install for every task, so, as with Claude Code, merged changes on `main` take effect when the cache is rebuilt. Editing the install script invalidates the cache.
-
-Use **Personal vault** for your own environment variables. Variables `export`ed by the install script do not persist into the agent phase.
+If initial setup fails, **Try again** retries it. Use **Personal vault** (**Settings** > **Codex Cloud** > **Personal vault**) for your own environment variables and network secrets.
 
 ### Network access
 
-Setup runs with internet access. If the environment restricts domains to **Custom domains only**, allow `github.com`, `codeload.github.com`, `raw.githubusercontent.com`, `objects.githubusercontent.com`, and `release-assets.githubusercontent.com`. Traffic passes through an HTTP/HTTPS proxy.
+Internet access is off until **Allow Codex to access internet** is on, and it applies during setup and tasks. The **Package managers** preset includes `github.com`, `codeload.github.com`, and `release-assets.githubusercontent.com`, which cover `git ls-remote`, the source archive, and the APM and rtk release downloads. It does **not** include `raw.githubusercontent.com`, from which the block above downloads the installer, so add it under **Additional allowed domains**. With **Custom domains only**, allow all four hosts. Traffic passes through an HTTP/HTTPS proxy.
 
 ### What Codex reads
 
-The official docs list `~/.codex/AGENTS.md` and `~/.agents/skills` as personal locations and state that personal skills on your own computer are not synced to cloud environments. They do not say whether cloud tasks read these locations when the install script creates them, nor whether `~/.codex/config.toml` and user hooks apply in cloud tasks. Treat all three as unverified until checked in a task.
+| Location | Status in Codex Cloud |
+|---|---|
+| Repository `AGENTS.md` and `.agents/skills/` | Read, documented: "Skills stored in your repository are available in cloud tasks." |
+| `~/.codex/AGENTS.md`, `~/.agents/skills`, `~/.codex/config.toml` written by the install script | Not documented. These are the personal locations for local Codex, and personal skills on your own computer are not synced, but the docs do not say whether a cloud task reads them from the prepared VM |
+| `~/.codex/hooks.json` | Not used by this installer. Non-managed hooks run only after you review and trust their exact definition, which a cloud task cannot do |
 
-Workstation Codex hooks also need `features.hooks` and an interactive trust approval, which a cloud task cannot give, so the installer does not write `~/.codex/hooks.json`; rtk is used through the instructions instead.
+If a new task does not pick up the instructions or skills, the documented fallback is to commit them to the repository (`AGENTS.md`, `.agents/skills/`).
 
 ### Verify
 
-Start a new task and ask Codex to:
+During setup, and again in a new task after publishing, ask Codex to:
 
-- Print `$HOME`, list `~/.agents/skills`, and run `rtk --version`.
+- Print `$HOME`, `id -un`, and `$PATH`, list `~/.agents/skills`, and run `rtk --version` (or `~/.local/bin/rtk --version` if `rtk` is not on `PATH`).
 - Report which instruction files it loaded and whether it sees the repository skills, for example `coding-style`.
 
-If the skills or instructions are not picked up, the fallback is to commit them to the repository (`AGENTS.md`, `.agents/skills/`), which the docs confirm cloud tasks read.
+Check that `$HOME` is the same during setup and in the task; the skill and rtk links point into `$HOME/.local/share/dotfiles-agent-cloud`.
 
 ## How it works
 
