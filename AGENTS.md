@@ -22,7 +22,6 @@ Report an apply failure separately from source changes so the user knows what is
 
 - Agent prompt ownership and skill deployment: `docs/agents.md`.
 - Codex configuration: `docs/codex.md`.
+- Codex / Claude Code cloud installer: `docs/agent-cloud.md`; test it in disposable HOMEs, not by applying desktop configuration to the active home.
 - Python tooling: `pyproject.toml` and `uv.lock`.
 - Relevant project checks: `.github/workflows/`; select checks for the changed surface instead of replaying unrelated workflows.
-
-Cloud-installer changes use disposable HOME tests; do not apply desktop configuration to the active home. See `docs/codex-cloud.md`.

@@ -8,8 +8,8 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "scripts/install-codex-cloud.sh"
-REF = "26cb6e7534d05149847048d32e30a7d1970c7812"
+SCRIPT = ROOT / "scripts/install-agent-cloud.sh"
+REF = "0123456789abcdef0123456789abcdef01234567"
 
 
 class InstallerTests(unittest.TestCase):
@@ -21,11 +21,13 @@ class InstallerTests(unittest.TestCase):
         self.home.mkdir()
         self.bin = self.root / "bin"
         self.bin.mkdir()
-        self.data = self.home / ".local/share/dotfiles-codex-cloud"
+        self.data = self.home / ".local/share/dotfiles-agent-cloud"
         self.skills = self.home / ".agents/skills"
         self.codex = self.home / ".codex"
+        self.claude = self.home / ".claude"
         self.env = dict(os.environ, HOME=str(self.home), PATH=f"{self.bin}:{os.environ['PATH']}")
-        for key in ("CODEX_HOME", "XDG_DATA_HOME", "XDG_STATE_HOME"):
+        for key in ("CODEX_HOME", "CLAUDE_CONFIG_DIR", "XDG_DATA_HOME", "XDG_STATE_HOME",
+                    "DOTFILES_REF", "REQUESTS_CA_BUNDLE"):
             self.env.pop(key, None)
         with tarfile.open(self.root / "source.tar.gz", "w:gz") as tar:
             for name, value in {
@@ -33,10 +35,12 @@ class InstallerTests(unittest.TestCase):
                 "skills/apm.lock.yaml": "lockfile_version: '1'\n",
                 "skills/local/SKILL.md": "local skill\n",
                 "skills/.licenses/yomiyasu.LICENSE": "MIT fixture\n",
-                "cloud/codex/AGENTS.md": "cloud instructions\n",
+                "home/dot_agents/AGENTS.md": "# Prefs\n\nshared\n\n## Local Environment\n\n- alias\n",
+                "cloud/AGENTS.md": "## Cloud Session\n",
                 "cloud/codex/config.toml": "model_reasoning_effort = 'high'\n",
+                "cloud/claude/settings.json": "{}\n",
             }.items():
-                info = tarfile.TarInfo(f"dotfiles-{REF}/{name}")
+                info = tarfile.TarInfo(f"hayatosc-dotfiles-{REF[:7]}/{name}")
                 info.size = len(value.encode())
                 tar.addfile(info, io.BytesIO(value.encode()))
         self.apm = '''#!/bin/sh
@@ -45,14 +49,17 @@ set -eu
 [ "$APM_NO_SCRIPTS" = 1 ]
 [ "$GIT_CONFIG_GLOBAL" = /dev/null ]
 [ -z "${GITHUB_TOKEN:-}" ]
-mkdir -p .agents/skills/yomiyasu
+printf '%s' "${REQUESTS_CA_BUNDLE-unset}" > '@ROOT@/ca'
+mkdir -p .agents/skills/yomiyasu apm_modules/cache
 cp -R .apm/skills/local .agents/skills/
 printf 'external skill\\n' > .agents/skills/yomiyasu/SKILL.md
 '''
         self.bundle_apm()
+        self.command("git", f"[ \"$*\" = 'ls-remote https://github.com/hayatosc/dotfiles refs/heads/main' ]\n"
+                     f"printf '%s\\trefs/heads/main\\n' {REF}\n")
         self.command("curl", f'''for arg do
 case "$arg" in
-https://codeload.github.com/*) src='{self.root}/source.tar.gz';;
+https://codeload.github.com/hayatosc/dotfiles/tar.gz/{REF}) src='{self.root}/source.tar.gz';;
 https://github.com/microsoft/apm/*) src='{self.root}/apm.tar.gz';;
 esac
 done
@@ -68,12 +75,13 @@ cp "$src" "$last"
         path.chmod(0o755)
 
     def bundle_apm(self):
+        body = self.apm.replace("@ROOT@", str(self.root)).encode()
         with tarfile.open(self.root / "apm.tar.gz", "w:gz") as tar:
             for arch in ("x86_64", "arm64"):
                 info = tarfile.TarInfo(f"apm-linux-{arch}/apm")
                 info.mode = 0o755
-                info.size = len(self.apm.encode())
-                tar.addfile(info, io.BytesIO(self.apm.encode()))
+                info.size = len(body)
+                tar.addfile(info, io.BytesIO(body))
 
     def run_install(self, success=True):
         result = subprocess.run(["sh"], input=SCRIPT.read_text(), text=True,
@@ -90,6 +98,7 @@ cp "$src" "$last"
         (self.skills / "unrelated").mkdir()
         self.env["GITHUB_TOKEN"] = "test-token-never-inherited"
         self.run_install()
+        self.assertEqual((self.root / "ca").read_text(), "unset")
         self.run_install()
         self.assertEqual((self.skills / "local/SKILL.md").read_text(), "local skill\n")
         self.assertEqual((self.skills / "yomiyasu/LICENSE").read_text(), "MIT fixture\n")
@@ -99,8 +108,56 @@ cp "$src" "$last"
 
     def test_seeds_absent_config(self):
         self.run_install()
-        self.assertEqual((self.codex / "AGENTS.md").read_text(), "cloud instructions\n")
+        instructions = "# Prefs\n\nshared\n\n## Cloud Session\n"
+        self.assertEqual((self.codex / "AGENTS.md").read_text(), instructions)
+        self.assertEqual((self.claude / "CLAUDE.md").read_text(), instructions)
         self.assertTrue((self.codex / "config.toml").is_file())
+        self.assertEqual((self.claude / "settings.json").read_text(), "{}\n")
+
+    def test_claude_code_skills_and_user_files(self):
+        (self.claude / "skills/platform").mkdir(parents=True)
+        (self.claude / "settings.json").write_text("user settings")
+        self.run_install()
+        self.assertEqual((self.claude / "skills/local/SKILL.md").read_text(), "local skill\n")
+        self.assertEqual(os.readlink(self.claude / "skills/local"),
+                         str(self.data / "current/.agents/skills/local"))
+        self.assertTrue((self.claude / "skills/platform").is_dir())
+        self.assertEqual((self.claude / "settings.json").read_text(), "user settings")
+
+    def test_claude_collision_blocks_both_destinations(self):
+        (self.claude / "skills/local").mkdir(parents=True)
+        self.run_install(False)
+        self.assertFalse(self.skills.exists())
+        self.assertFalse((self.data / "current").exists())
+
+    def test_rerun_prunes_generations_and_caches(self):
+        self.run_install()
+        self.run_install()
+        generations = list(self.data.glob("install.*"))
+        self.assertEqual(generations, [Path(os.readlink(self.data / "current"))])
+        self.assertEqual(sorted(p.name for p in generations[0].iterdir()),
+                         [".agents", "SOURCE_REF", "apm.lock.yaml", "apm.yml"])
+        self.assertEqual((generations[0] / "SOURCE_REF").read_text(), REF + "\n")
+
+    def test_explicit_ref_and_ca_forwarding(self):
+        self.command("git", "exit 1\n")
+        self.env.update(DOTFILES_REF=REF, REQUESTS_CA_BUNDLE="/ca bundle.crt")
+        self.run_install()
+        self.assertEqual((self.root / "ca").read_text(), "/ca bundle.crt")
+        for ref in ("main", REF[:7], REF.upper()):
+            with self.subTest(ref=ref):
+                self.env["DOTFILES_REF"] = ref
+                self.assertIn("full commit SHA", self.run_install(False).stderr)
+
+    def test_unresolved_main_fails_before_changes(self):
+        self.command("git", "exit 128\n")
+        self.assertIn("cannot resolve main", self.run_install(False).stderr)
+        self.assertFalse(self.data.exists())
+
+    def test_repository_instructions_keep_stripped_section(self):
+        # The installer drops this workstation-only section by its exact heading.
+        text = (ROOT / "home/dot_agents/AGENTS.md").read_text()
+        self.assertIn("\n## Local Environment\n", text)
 
     def test_collision_leaves_existing_deployment(self):
         self.skills.mkdir(parents=True)
@@ -108,6 +165,7 @@ cp "$src" "$last"
         self.run_install(False)
         self.assertFalse((self.data / "current").exists())
         self.assertFalse(self.codex.exists())
+        self.assertFalse(self.claude.exists())
         self.assertTrue((self.skills / "local").is_dir())
 
     def test_failed_apm_preserves_previous_install(self):
