@@ -55,4 +55,8 @@ jobs:
           test -f "$CODEX_HOME/AGENTS.md"
           test -f "$CLAUDE_CONFIG_DIR/CLAUDE.md"
           test "$("$HOME/.local/bin/rtk" --version)" = "rtk 0.51.0"
+          case $("$HOME/.local/bin/git" var GIT_AUTHOR_IDENT) in
+            'hayatosc <hayato8190+univ@gmail.com> '*) ;;
+            *) exit 1 ;;
+          esac
           if grep -q '^## Local Environment' "$CLAUDE_CONFIG_DIR/CLAUDE.md"; then exit 1; fi

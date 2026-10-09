@@ -19,6 +19,7 @@ Keep `pipefail`: a plain POSIX pipeline reports only the receiving shell's statu
 | `$CODEX_HOME/AGENTS.md`, `$CLAUDE_CONFIG_DIR/CLAUDE.md` | Shared preferences, written only if absent |
 | `$CODEX_HOME/config.toml` | [Codex reasoning defaults](../cloud/codex/config.toml), written only if absent |
 | `~/.local/bin/rtk` | Link to [rtk](https://github.com/rtk-ai/rtk) 0.51.0, the version pinned in mise |
+| `~/.local/bin/git` | Link to a git wrapper that sets the commit author; see [Git author](#git-author) |
 | `$XDG_DATA_HOME/dotfiles-agent-cloud` | The installed generation and its `current` link |
 
 Defaults: `CODEX_HOME=~/.codex`, `CLAUDE_CONFIG_DIR=~/.claude`, `XDG_DATA_HOME=~/.local/share`.
@@ -27,7 +28,7 @@ The instruction file is generated from [`home/dot_agents/AGENTS.md`](../home/dot
 
 The cloud notes tell the agent to prefix output-heavy commands with `rtk`. On the workstation a PreToolUse hook rewrites commands automatically, but neither cloud platform gives this installer a documented way to register that hook (see below), so the cloud uses rtk explicitly.
 
-Existing files and dangling symlinks are left alone without reading their contents. An existing `~/.local/bin/rtk` that this installer did not create is kept. Skills the platform already places in `~/.claude/skills` are untouched. No auth, account, shell startup, plugins, hooks, MCP servers, or other optional skill CLIs are configured.
+Existing files and dangling symlinks are left alone without reading their contents. An existing `~/.local/bin/rtk` or `~/.local/bin/git` that this installer did not create is kept. Skills the platform already places in `~/.claude/skills` are untouched. No auth, account, shell startup, plugins, hooks, MCP servers, or other optional skill CLIs are configured.
 
 ## Claude Code on the web
 
@@ -89,7 +90,7 @@ Start a new session and check:
 - The setup step shows `Agent cloud skills installed from <sha>`.
 - `/context` lists `/root/.claude/CLAUDE.md`.
 - Asking Claude which skills are available lists the repository skills, for example `coding-style`.
-- `rtk --version` prints `rtk 0.51.0`.
+- `rtk --version` prints `rtk 0.51.0`, and `git var GIT_AUTHOR_IDENT` starts with `hayatosc <hayato8190+univ@gmail.com>`.
 
 ## Codex cloud
 
@@ -130,10 +131,29 @@ If a new task does not pick up the instructions or skills, the documented fallba
 
 During setup, and again in a new task after publishing, ask Codex to:
 
-- Print `$HOME`, `id -un`, and `$PATH`, list `~/.agents/skills`, and run `rtk --version` (or `~/.local/bin/rtk --version` if `rtk` is not on `PATH`).
+- Print `$HOME`, `id -un`, and `$PATH`, list `~/.agents/skills`, run `rtk --version` (or `~/.local/bin/rtk --version` if `rtk` is not on `PATH`), and run `command -v git` and `git var GIT_AUTHOR_IDENT` to confirm the [git author](#git-author) wrapper is in effect.
 - Report which instruction files it loaded and whether it sees the repository skills, for example `coding-style`.
 
 Check that `$HOME` is the same during setup and in the task; the skill and rtk links point into `$HOME/.local/share/dotfiles-agent-cloud`.
+
+## Git author
+
+Cloud agents commit with the platform's identity. Claude Code on the web, for example, writes `user.name Claude` and `user.email noreply@anthropic.com` to `~/.gitconfig` at session start, together with its commit-signing key. A global `git config` from the setup script would be overwritten, so the installer puts a wrapper at `~/.local/bin/git` instead:
+
+```sh
+#!/bin/sh
+GIT_AUTHOR_NAME='hayatosc' GIT_AUTHOR_EMAIL='hayato8190+univ@gmail.com'
+export GIT_AUTHOR_NAME GIT_AUTHOR_EMAIL
+exec '/usr/bin/git' "$@"
+```
+
+The real git path is resolved at install time from `PATH`, skipping the wrapper itself. Set `DOTFILES_GIT_AUTHOR_NAME` and `DOTFILES_GIT_AUTHOR_EMAIL` when running the installer to use another identity.
+
+- **Only the author changes.** The committer and signing key stay with the platform, so signature verification on GitHub is unaffected, and the `Co-Authored-By` trailer still credits the agent.
+- **Other people's commits keep their author.** Git takes the environment author only for new commits and merges; rebase, cherry-pick, and `commit --amend` preserve each commit's recorded author. An explicit `--author` still wins.
+- **It relies on `PATH`.** The wrapper applies when `~/.local/bin` comes before the real git on `PATH`. That holds in Claude Code on the web; check it in Codex with the verification step. A tool that runs `/usr/bin/git` directly bypasses the wrapper.
+
+Where a platform lets you set environment variables, `GIT_AUTHOR_NAME` and `GIT_AUTHOR_EMAIL` there achieve the same without relying on `PATH`: the Claude Code environment's **Environment variables** field, or Codex **Environment variables** and **Personal vault**.
 
 ## How it works
 
@@ -155,7 +175,7 @@ Requirements: Linux x86_64 or aarch64, POSIX sh, curl, tar, sha256sum, Git, mkte
 
 Each run installs into a fresh generation. All skill-name collisions in both skill directories are checked before publication. Existing skills are preserved unless their symlink points to this installer's exact `current/.agents/skills/<name>` path. There is no force/adopt option.
 
-Once installation succeeds, the `current` symlink switches atomically, missing skill and rtk links are created, retired links belonging to this installer are removed, and superseded generations are deleted. Failed resolution, downloads, checksum checks, APM runs, or collision checks leave the previous deployment active.
+Once installation succeeds, the `current` symlink switches atomically, missing skill, rtk, and git links are created, retired links belonging to this installer are removed, and superseded generations are deleted. Failed resolution, downloads, checksum checks, APM runs, or collision checks leave the previous deployment active.
 
 This deliberately does not provide a transactional multi-file publisher, a custom ownership database, or tamper detection for locally edited generations. Do not edit installed generations; change the source instead. A disk error or hard interruption during final publication can leave partially created links/config; rerun after fixing the error. A stale `dotfiles-agent-cloud/lock` directory after SIGKILL must be removed only after confirming no installation is running.
 
@@ -168,4 +188,4 @@ sh -n scripts/install-agent-cloud.sh
 python3 -m unittest discover -s tests -v
 ```
 
-The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.
+The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, the git author wrapper, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.

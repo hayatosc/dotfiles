@@ -60,8 +60,12 @@ printf 'external skill\\n' > .agents/skills/yomiyasu/SKILL.md
             info.mode = 0o755
             info.size = len(body)
             tar.addfile(info, io.BytesIO(body))
-        self.command("git", f"[ \"$*\" = 'ls-remote https://github.com/hayatosc/dotfiles refs/heads/main' ]\n"
-                     f"printf '%s\\trefs/heads/main\\n' {REF}\n")
+        self.command("git", f"""case "$*" in
+'ls-remote https://github.com/hayatosc/dotfiles refs/heads/main') printf '%s\\trefs/heads/main\\n' {REF} ;;
+author) printf '%s <%s>\\n' "$GIT_AUTHOR_NAME" "$GIT_AUTHOR_EMAIL" ;;
+*) exit 2 ;;
+esac
+""")
         self.command("curl", f'''for arg do
 case "$arg" in
 https://codeload.github.com/hayatosc/dotfiles/tar.gz/{REF}) src='{self.root}/source.tar.gz';;
@@ -162,6 +166,34 @@ cp "$src" "$last"
         self.assertIn("keeping existing", result.stderr)
         self.assertEqual(rtk.read_text(), "user rtk")
         self.assertTrue((self.skills / "local/SKILL.md").is_file())
+
+    def git_author(self):
+        git = self.home / ".local/bin/git"
+        return subprocess.run([str(git), "author"], capture_output=True, text=True,
+                              check=True, env=self.env).stdout
+
+    def test_git_wrapper_forces_author(self):
+        # A rerun with the wrapper first on PATH must still find the real git.
+        self.env["PATH"] = f"{self.home}/.local/bin:{self.env['PATH']}"
+        self.run_install()
+        self.run_install()
+        self.env.update(GIT_AUTHOR_NAME="Claude", GIT_AUTHOR_EMAIL="noreply@anthropic.com")
+        self.assertEqual(self.git_author(), "hayatosc <hayato8190+univ@gmail.com>\n")
+
+    def test_git_author_override_and_validation(self):
+        self.env.update(DOTFILES_GIT_AUTHOR_NAME="Some One",
+                        DOTFILES_GIT_AUTHOR_EMAIL="one@example.com")
+        self.run_install()
+        self.assertEqual(self.git_author(), "Some One <one@example.com>\n")
+        self.env["DOTFILES_GIT_AUTHOR_NAME"] = "O'Brien"
+        self.assertIn("must not contain quotes", self.run_install(False).stderr)
+
+    def test_unmanaged_git_is_kept(self):
+        git = self.home / ".local/bin/git"
+        git.parent.mkdir(parents=True)
+        git.write_text("user git")
+        self.assertIn("keeping existing", self.run_install().stderr)
+        self.assertEqual(git.read_text(), "user git")
 
     def test_explicit_ref_and_ca_forwarding(self):
         self.command("git", "exit 1\n")
