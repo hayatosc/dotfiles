@@ -1,6 +1,6 @@
 lockfile_version: '1'
-generated_at: '2026-10-08T02:40:51.429590+00:00'
-apm_version: 0.33.0
+generated_at: '2026-10-08T08:26:35.828762+00:00'
+apm_version: 0.30.0
 dependencies:
 - repo_url: anthropics/skills
   name: frontend-design
@@ -315,6 +315,7 @@ dependencies:
   - .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md
   - .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md
   - .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md
+  - .agents/skills/modern-web-guidance/guides/css-layout/usage-aware-component-variations.md
   - .agents/skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md
   - .agents/skills/modern-web-guidance/guides/css/calculate-with-intrinsic-sizes.md
   - .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md
@@ -461,6 +462,7 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/built-in-ai/prompt-api.md: sha256:e590079b811fb42fc032257bb1a1c3b38b8c9d5a10720887431adb5465004eb6
     .agents/skills/modern-web-guidance/guides/built-in-ai/summarizer.md: sha256:252c17be27d048b93e75250263dfbeb11167c8291f6a74f5d2ba9abf6f7b7bd9
     .agents/skills/modern-web-guidance/guides/built-in-ai/translator.md: sha256:ec3690c2c6aae76e0377fde26c7d64849ba7e99664edf83aca33e6cf51b232f7
+    .agents/skills/modern-web-guidance/guides/css-layout/usage-aware-component-variations.md: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
     .agents/skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md: sha256:c582698153a7f4747c66154f32d3082444171a222ff79b73b2aed5ce9dcd5ddd
     .agents/skills/modern-web-guidance/guides/css/calculate-with-intrinsic-sizes.md: sha256:9f82ae938a142fff3ce808476e83d833b3e9265afd0e21e9281bf21d807bf97b
     .agents/skills/modern-web-guidance/guides/css/child-state-based-styling.md: sha256:1461c9f33a3becfa92d0d694067f5bb60de1e582780e910e79cb6ed7e1f01c85
@@ -901,8 +903,80 @@ dependencies:
   deployed_files:
   - .agents/skills/herdr
   - .agents/skills/herdr/SKILL.md
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-9x17+1.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-9x17+1.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-9x17+1.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-9x17+1.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-9x17+1.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-9x17+1.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-9x17+1.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-9x17+1.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-11x21+2.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png
+  - .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png
   deployed_file_hashes:
     .agents/skills/herdr/SKILL.md: sha256:25a68bc36d9309048db89e7d168f2e04d1689d734c5d72cc3688bf4ff9db1e9f
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png: sha256:a6cacacdfc1722c5b19dde819d590180c7b5bd06d0cdeb1a0e27fb3d86443081
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-12x24+3.png: sha256:976297d3be8c886a2e1b272b21c3787d468ed3ca55cccd34642d6b7ea1324646
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-18x36+4.png: sha256:6f88ccff99f49fb39715922d3dc7f8caead0d5124e98de4acafcbd35a02079a7
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-9x17+1.png: sha256:c4d2dc32c2380fbac9f4dafbe82a797b631193f1caf49ae834e1b7e6b3b03ae3
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-11x21+2.png: sha256:ecef1b0819039ae42ef81693ce36bfdbc656677bbd2b47378ae4ce8490c167eb
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-12x24+3.png: sha256:446804ab6101272fc55fea43e4bb1a49cfb94efb410e592d31fbebd43c2c6cd2
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-18x36+4.png: sha256:282eb8a3622659c73f16d914148de88b05ef8226832a877e73474f3096a3a927
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-9x17+1.png: sha256:c1d93b902c02520a347ad3256708c192291af5ed1f55998e537271cc0385a17f
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-11x21+2.png: sha256:448e4037e2b90591e31b0bab91d83e28a89cca6f48a59740231954a12a6b0234
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-12x24+3.png: sha256:3ed1a062ed64aa7a9f028c754404f5fe7fda8be267b57af273a358ad075c97f5
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-18x36+4.png: sha256:320fd524855e5b9472743de71390c4b4dde54d39c6c8a0cb5c7f32935a601eed
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-9x17+1.png: sha256:b19d798ba26a973784e4e9a618c5eec8f5224240743f6c1e705aa5add029e631
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-11x21+2.png: sha256:b673237cc25425fd64974f63e49bf526f90b28c41bd4f22159ff677109be679c
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-12x24+3.png: sha256:7ba36ba0f771f11b1d252a2175dd9d1aa6295196caf5a4cd3f69981aecd4caac
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-18x36+4.png: sha256:f1ddb2a2d92f3c7763dd2ec84fc66ea73e094c556177c33f48b0e41c96dc51de
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-9x17+1.png: sha256:ad6fd453b201e0a51ba882753d4024b8b84f9d45aa131e2e2d83f37cfdcf1e7e
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-11x21+2.png: sha256:063c32ee48c624984d882a1b92da03c40e52f67f92fcf1ff0c77ba615d1e0945
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-12x24+3.png: sha256:ff9422e0e47c7ff7d7cc2d06035d0f2cd952ac76a0c4eb8b8b42dd7289045cc9
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-18x36+4.png: sha256:5f89dddf4c1a8b847a6b414579fdd43b9fcb075bcf42d7b1339362ad71aac831
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-9x17+1.png: sha256:fec0c945b9429da21b888fca8d7db5ef5842f75ee8c5a0bada7c079b5ad20624
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-11x21+2.png: sha256:08271ee187c501b69765d1517bccb93a32b97973871b3ac523e7a99327868d8c
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-12x24+3.png: sha256:1ece1c4bb31cb6566d6ff25ec276e3977571a8af3c7880fa0289173c5178d580
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-18x36+4.png: sha256:04b9472d9855580824711b12c4ea924019850aa7cb7d1e8c627033510aa5418e
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-9x17+1.png: sha256:ebdb5a16ffbb6b2fb55ab60b9fab65df48c0bdccb66373559ea9447bacab1a25
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-11x21+2.png: sha256:c9048f2d9df9643369a8a2f0d3df8c1041dc71ba2f27d952a688e7ca27e37038
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-12x24+3.png: sha256:554ee4f8c078c501ecef05cc101afb77ba256036b21fe046989bd0f83bf5632b
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-18x36+4.png: sha256:8ffff0d00b9aa338ffc4ce92aaf2e68049f7ef5b410a50957dc40f20d570e7b3
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-9x17+1.png: sha256:cdffec58defb54aeb664162485409e3ad28a210f4ae928b8c6cbeedbd717e3bc
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-11x21+2.png: sha256:1cdcfdbdc9027ded0923b1ef2fef842774d30ffe94349395e958d4663c20c8bf
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-12x24+3.png: sha256:dca71110feade278ef71c80db90da569ab5265427b9ccb1d40a92bacbfce4866
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-18x36+4.png: sha256:9b37370d657f727800393fccc44088d179cb4b56e14581babfe136fe4aa53692
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-9x17+1.png: sha256:354d640a65c85f5edbf7eacabb41a034c3a8791f0dde0499f7cfdb8ac86c8b5f
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-11x21+2.png: sha256:bfe86f21d3778556d34151f2f06dcd54725804d23b797c9249eed192fd498024
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png: sha256:be922a8d500b6b6ddc85c45ec3f093a93b37530feb63c743192c28b8cc6ceba4
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png: sha256:541e4e830c92eb7a38a3f6c295de5ce04810dd37cb421e833faec833e50a90f5
+    .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
   content_hash: sha256:70e39d26d9ccb8cfe803ccb80ae8398f2ea9782e4c767bfadbdc1db276813a30
 - repo_url: openai/skills
   name: gh-address-comments
@@ -5276,6 +5350,357 @@ deployments:
   active_owner: nanaism/yomiyasu/skills/yomiyasu
   content_hash: sha256:a78f98b5c7feaa0ec73a74f82fbbf2b6f2bd5997d261ae73357409377b90985b
 - kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:a6cacacdfc1722c5b19dde819d590180c7b5bd06d0cdeb1a0e27fb3d86443081
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:976297d3be8c886a2e1b272b21c3787d468ed3ca55cccd34642d6b7ea1324646
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:6f88ccff99f49fb39715922d3dc7f8caead0d5124e98de4acafcbd35a02079a7
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CC00...U+1CCFF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:c4d2dc32c2380fbac9f4dafbe82a797b631193f1caf49ae834e1b7e6b3b03ae3
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:ecef1b0819039ae42ef81693ce36bfdbc656677bbd2b47378ae4ce8490c167eb
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:446804ab6101272fc55fea43e4bb1a49cfb94efb410e592d31fbebd43c2c6cd2
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:282eb8a3622659c73f16d914148de88b05ef8226832a877e73474f3096a3a927
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CD00...U+1CDFF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:c1d93b902c02520a347ad3256708c192291af5ed1f55998e537271cc0385a17f
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:448e4037e2b90591e31b0bab91d83e28a89cca6f48a59740231954a12a6b0234
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:3ed1a062ed64aa7a9f028c754404f5fe7fda8be267b57af273a358ad075c97f5
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:320fd524855e5b9472743de71390c4b4dde54d39c6c8a0cb5c7f32935a601eed
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1CE00...U+1CEFF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:b19d798ba26a973784e4e9a618c5eec8f5224240743f6c1e705aa5add029e631
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:b673237cc25425fd64974f63e49bf526f90b28c41bd4f22159ff677109be679c
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:7ba36ba0f771f11b1d252a2175dd9d1aa6295196caf5a4cd3f69981aecd4caac
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:f1ddb2a2d92f3c7763dd2ec84fc66ea73e094c556177c33f48b0e41c96dc51de
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+1FB00...U+1FBFF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:ad6fd453b201e0a51ba882753d4024b8b84f9d45aa131e2e2d83f37cfdcf1e7e
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:063c32ee48c624984d882a1b92da03c40e52f67f92fcf1ff0c77ba615d1e0945
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:ff9422e0e47c7ff7d7cc2d06035d0f2cd952ac76a0c4eb8b8b42dd7289045cc9
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:5f89dddf4c1a8b847a6b414579fdd43b9fcb075bcf42d7b1339362ad71aac831
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2500...U+25FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:fec0c945b9429da21b888fca8d7db5ef5842f75ee8c5a0bada7c079b5ad20624
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:08271ee187c501b69765d1517bccb93a32b97973871b3ac523e7a99327868d8c
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:1ece1c4bb31cb6566d6ff25ec276e3977571a8af3c7880fa0289173c5178d580
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:04b9472d9855580824711b12c4ea924019850aa7cb7d1e8c627033510aa5418e
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+2800...U+28FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:ebdb5a16ffbb6b2fb55ab60b9fab65df48c0bdccb66373559ea9447bacab1a25
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:c9048f2d9df9643369a8a2f0d3df8c1041dc71ba2f27d952a688e7ca27e37038
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:554ee4f8c078c501ecef05cc101afb77ba256036b21fe046989bd0f83bf5632b
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:8ffff0d00b9aa338ffc4ce92aaf2e68049f7ef5b410a50957dc40f20d570e7b3
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+E000...U+E0FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:cdffec58defb54aeb664162485409e3ad28a210f4ae928b8c6cbeedbd717e3bc
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:1cdcfdbdc9027ded0923b1ef2fef842774d30ffe94349395e958d4663c20c8bf
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:dca71110feade278ef71c80db90da569ab5265427b9ccb1d40a92bacbfce4866
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:9b37370d657f727800393fccc44088d179cb4b56e14581babfe136fe4aa53692
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F500...U+F5FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:354d640a65c85f5edbf7eacabb41a034c3a8791f0dde0499f7cfdb8ac86c8b5f
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-11x21+2.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:bfe86f21d3778556d34151f2f06dcd54725804d23b797c9249eed192fd498024
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:be922a8d500b6b6ddc85c45ec3f093a93b37530feb63c743192c28b8cc6ceba4
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:541e4e830c92eb7a38a3f6c295de5ce04810dd37cb421e833faec833e50a90f5
+- kind: project-relative
+  target: agents
+  value: .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png
+  runtime: null
+  scope: project
+  owners:
+  - ogulcancelik/herdr
+  active_owner: ogulcancelik/herdr
+  content_hash: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
+- kind: project-relative
+  target: agents
+  value: .agents/skills/modern-web-guidance/guides/css-layout/usage-aware-component-variations.md
+  runtime: null
+  scope: project
+  owners:
+  - googlechrome/modern-web-guidance/skills/modern-web-guidance
+  active_owner: googlechrome/modern-web-guidance/skills/modern-web-guidance
+  content_hash: sha256:515b34e7a6f9174fb4a6bbcc6a9af39d1e78d10adecdceb22f56b6b9bc1516d6
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/anything-else
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/anything-else/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:bb5d8793b3b94723639ec55901daf8d06fb875a3e2e6d3339068d9babbfcb404
+- kind: project-relative
   target: legacy
   value: .agents/skills/article-review
   runtime: null
@@ -5313,6 +5738,51 @@ deployments:
   content_hash: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
 - kind: project-relative
   target: legacy
+  value: .agents/skills/article-review/article-review/README.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:84c4695e51c7a8b2e744eb23854ab628fe9afdf93fc46f83c5aa8a67e627957e
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/article-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b85efb733833b59cc76e8a3025547e13b33610f913d5d4158dfe4d2458091126
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/article-review/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/article-review/references/report-template.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:94afd340aa69058532c4cf07571c46435c010a113931ae045538d139ca8b257b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/article-review/article-review/references/review-rubric.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
+- kind: project-relative
+  target: legacy
   value: .agents/skills/article-review/references/report-template.md
   runtime: null
   scope: project
@@ -5331,6 +5801,24 @@ deployments:
   content_hash: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
 - kind: project-relative
   target: legacy
+  value: .agents/skills/askmeplan
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/askmeplan/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c17d88581e637adda8b768f8d57799e99071fda3b1979602df117071220587ab
+- kind: project-relative
+  target: legacy
   value: .agents/skills/ast-grep
   runtime: null
   scope: project
@@ -5347,6 +5835,33 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:04ffc18517478f49c6532701e4d64750d39363f2d702dcd226bbd227ac5140fd
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/ast-grep/ast-grep/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:04ffc18517478f49c6532701e4d64750d39363f2d702dcd226bbd227ac5140fd
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/ast-grep/ast-grep/references/command-cookbook.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/ast-grep/ast-grep/references/rule-authoring.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
 - kind: project-relative
   target: legacy
   value: .agents/skills/ast-grep/references/command-cookbook.md
@@ -5385,6 +5900,15 @@ deployments:
   content_hash: sha256:88b1de103cb58bb4dc8f016c1c81d805eeab9017faa32edeccff960ffe76882e
 - kind: project-relative
   target: legacy
+  value: .agents/skills/before-commit/before-commit/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:88b1de103cb58bb4dc8f016c1c81d805eeab9017faa32edeccff960ffe76882e
+- kind: project-relative
+  target: legacy
   value: .agents/skills/blast-radius
   runtime: null
   scope: project
@@ -5395,6 +5919,15 @@ deployments:
 - kind: project-relative
   target: legacy
   value: .agents/skills/blast-radius/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:9b22f8d012fb8bb9cd615e934c9bb4b529ed191c15fea3b1d426389130a15266
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/blast-radius/blast-radius/SKILL.md
   runtime: null
   scope: project
   owners:
@@ -5419,6 +5952,24 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:75ac2ce2272c716fa29431cb21059ca437a5ba11102b805f9d69422a9d287160
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/code-search/code-search/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:75ac2ce2272c716fa29431cb21059ca437a5ba11102b805f9d69422a9d287160
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/code-search/code-search/references/funnel-playbook.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:76267ef35e5623534bfa8ad63662c932dfc27f9190ae18c21cb44dfa510c08b5
 - kind: project-relative
   target: legacy
   value: .agents/skills/code-search/references/funnel-playbook.md
@@ -5448,6 +5999,15 @@ deployments:
   content_hash: sha256:480c0d93b43e0574653828cf7e00bfbeef7408164b939c65bc6f1eb4616bd47e
 - kind: project-relative
   target: legacy
+  value: .agents/skills/coding-style/coding-style/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:480c0d93b43e0574653828cf7e00bfbeef7408164b939c65bc6f1eb4616bd47e
+- kind: project-relative
+  target: legacy
   value: .agents/skills/cognitive-rhythm-writing
   runtime: null
   scope: project
@@ -5464,6 +6024,33 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:2e78c07f02be5a7144282847a7ab31b6309b29ffe7b65e6a9eb65601aa9e1f54
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2e78c07f02be5a7144282847a7ab31b6309b29ffe7b65e6a9eb65601aa9e1f54
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/references/diagnosis.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:03dac8aef7392cc26b17b18feefae20531c31c4680f6df4a7d0b67cf711c28e6
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/references/techniques.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:decaac7367a5b4c23e703cbfc1ccf083f27b4bafae026120f993a5d9b0770b00
 - kind: project-relative
   target: legacy
   value: .agents/skills/cognitive-rhythm-writing/references/diagnosis.md
@@ -5484,6 +6071,24 @@ deployments:
   content_hash: sha256:decaac7367a5b4c23e703cbfc1ccf083f27b4bafae026120f993a5d9b0770b00
 - kind: project-relative
   target: legacy
+  value: .agents/skills/empirical-prompt-tuning
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/empirical-prompt-tuning/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
+- kind: project-relative
+  target: legacy
   value: .agents/skills/goalplan
   runtime: null
   scope: project
@@ -5502,6 +6107,33 @@ deployments:
   content_hash: sha256:a8fd10be4b3091ec4dbf8d98c1ea56f32d24c30c35123805dfd0638dc0dd75e0
 - kind: project-relative
   target: legacy
+  value: .agents/skills/goalplan/goalplan/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a8fd10be4b3091ec4dbf8d98c1ea56f32d24c30c35123805dfd0638dc0dd75e0
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalplan/goalplan/references/example.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:868b4912a7b318d2b24b9fa6033b11f61d61b8042645da304bf324028e86b925
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalplan/goalplan/references/plan-template.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:7c6c3d92b55fbcbe9eddb68553bcee31cf5a8e66cb8dfb0e05d8c5e624383820
+- kind: project-relative
+  target: legacy
   value: .agents/skills/goalplan/references/example.md
   runtime: null
   scope: project
@@ -5518,6 +6150,24 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:7c6c3d92b55fbcbe9eddb68553bcee31cf5a8e66cb8dfb0e05d8c5e624383820
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalskill
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/goalskill/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4ba8331484c146743c1d7c3811f67d29e7fc79d067ac6f7f8b165159aba8ec9d
 - kind: project-relative
   target: legacy
   value: .agents/skills/golang-best-practices
@@ -5545,6 +6195,96 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:0f3db1e474d1851de955f38b9baa38c3ad06d5b8150efe44b91a5ed86f0ccb55
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e00d9d9f85f639dc5b41095f352a5534a40850241548e648a73ac708f78e6d38
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/dist/golang-best-practices.skill
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0f3db1e474d1851de955f38b9baa38c3ad06d5b8150efe44b91a5ed86f0ccb55
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/references/code-style.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5ebdba25a32ac6bcb9fff6b89cbc5e46b99d8326208067b1619de3e7225b8a13
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/references/concurrency.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:3a88371a88c8dd7d4c165932bc7ef4f2865392f21a9f398a343953a822e313ca
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/references/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:736e6ed8d6e1ee744cc56640e987c1856cd10461f66f9b7dcd29feb6cd1de5ff
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/references/modernize.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:15b2d7855112848f9f1c9d6fc3bc3746a9b4ba0731dd6d224e95b7ae2cb9789e
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/references/performance.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:d164bf795a9f1547de2bce7feebae282f8ee5103a15def6f4c2d746696177e72
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/references/project-layout.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:8741633a55a835b0f0f66311a704cd14955650eef7c310f5a0ece82ea43b58c7
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/references/security.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:1b598e0d5fe7415596df2c4e8936e0765246c4b42618fc84811502f23d302a83
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/golang-best-practices/golang-best-practices/references/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0c8593e950bafb64ea56115673d2cef847986aade19f2f7a257538009f553fa6
 - kind: project-relative
   target: legacy
   value: .agents/skills/golang-best-practices/references/code-style.md
@@ -5637,6 +6377,78 @@ deployments:
   content_hash: sha256:75150beeb436cbf2acd21445cb1ea687e9026d0f1145a274c4c03ef099571812
 - kind: project-relative
   target: legacy
+  value: .agents/skills/hono-best-practices/hono-best-practices/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:75150beeb436cbf2acd21445cb1ea687e9026d0f1145a274c4c03ef099571812
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/hono-best-practices/references/context-and-middleware.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:db41c97dea76d293d2e6c62c38c9709112fd8f560b456b4ccd2e0feb0f473106
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/hono-best-practices/references/errors-and-testing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:316481deb81ffe314996adf9a9e3ab5e3025adcc464277a184f2083ef57e988c
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/hono-best-practices/references/request-validation.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:00c34364abbe5961f9ab42aafdcc612721be20f745497a9c25805d55b5e8f7bb
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/hono-best-practices/references/routing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:440985d57c980b3c37b629f53899751b91d0ecfaba8b05ac92bb35ff3013d421
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/hono-best-practices/references/rpc-basics.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:888b2a3114be02c61575e07594f18ce5d4d430a74d8d92ba204065ee1ca30007
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/hono-best-practices/references/rpc-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c8a971e98a4ed46f23f9211ffe8e0f0831498238d75a6066af91f89c3cd9b69f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/hono-best-practices/hono-best-practices/references/validation-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
+- kind: project-relative
+  target: legacy
   value: .agents/skills/hono-best-practices/references/context-and-middleware.md
   runtime: null
   scope: project
@@ -5718,6 +6530,15 @@ deployments:
   content_hash: sha256:5981abf18a9c77803fe131ec9263ce66711185c141ee05cf6479386f5cbd1454
 - kind: project-relative
   target: legacy
+  value: .agents/skills/how/how/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5981abf18a9c77803fe131ec9263ce66711185c141ee05cf6479386f5cbd1454
+- kind: project-relative
+  target: legacy
   value: .agents/skills/html-artifacts
   runtime: null
   scope: project
@@ -5752,6 +6573,69 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/html-artifacts/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4026314fd118eca2d81c5a7782a1c1b18ed94aa297e21b2b978ab0a2a1c286a6
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/html-artifacts/assets/dads.css
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:739b87d112718be4429edd459e1f128172f9049830600a3a8ea5eda52eccf15f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/html-artifacts/assets/template.html
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/html-artifacts/references/build.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c2a2d78bed8473c33943ea6a192db675326c8125023439251c098daf446b522b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/html-artifacts/references/dads.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6287a11248db1a5ee37e98cc84a07a92220e97ab25d66dc36418c5901de02232
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/html-artifacts/references/diagrams.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:7ce93a624b6efd64b8e9dfc5e814ad828e26763bccbf8fd2d1c88bfaf289e0be
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/html-artifacts/html-artifacts/references/remote-preview.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:afcbdcfd0a10cf5e0c6e3ca11ca99dce2f011020bd37c2d18a664b3850fdf1a3
 - kind: project-relative
   target: legacy
   value: .agents/skills/html-artifacts/references/build.md
@@ -5808,6 +6692,42 @@ deployments:
   content_hash: sha256:21998b23b56ee29ea5496354e8c9bad570b5f0c5770ea5495c41b3c1576a5bd7
 - kind: project-relative
   target: legacy
+  value: .agents/skills/japanese-tech-writing/japanese-tech-writing/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:21998b23b56ee29ea5496354e8c9bad570b5f0c5770ea5495c41b3c1576a5bd7
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/japanese-tech-writing/japanese-tech-writing/references/argument.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b2d7ef6599a09081c51fa010156bce072a6c391722379ee0121337bafb51044a
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/japanese-tech-writing/japanese-tech-writing/references/formatting.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:28aa943dabd0926a4fd561b026fa2d5016313297fb748367825d86d89fdff04f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/japanese-tech-writing/japanese-tech-writing/references/voice-and-editing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:cc2f4072efd37026dc5f8d149cbb55897ea0ed98a98e72916cb992047c2f2cc1
+- kind: project-relative
+  target: legacy
   value: .agents/skills/japanese-tech-writing/references/argument.md
   runtime: null
   scope: project
@@ -5862,6 +6782,51 @@ deployments:
   content_hash: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
 - kind: project-relative
   target: legacy
+  value: .agents/skills/refactoring-code/refactoring-code/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:480f2965e877f3bccf136d1e357c17674695eb2b78b1ce938c52156370ea385d
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/refactoring-code/refactoring-code/evals/evals.json
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/refactoring-code/refactoring-code/references/examples.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/refactoring-code/refactoring-code/references/legacy-safety-net.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:67a0774a6df1bfe5f479a26a6895e72322a6add93525557d3543fca84be0619f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/refactoring-code/refactoring-code/references/refactor-playbook.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:534ae82fc5e1d6ca02624d1068daf61a09b64754119cd9d4474adc417b73c30c
+- kind: project-relative
+  target: legacy
   value: .agents/skills/refactoring-code/references/examples.md
   runtime: null
   scope: project
@@ -5905,6 +6870,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:8b6e2b3b431ce1406ffc0017b2ec72238a35f62a788076d2cdb6fcd777817581
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/evals/evals.json
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:dcbbe8c255b6b5f37b7308a93a1a29121428a9d2d3fa5609511885e782187bdf
 - kind: project-relative
   target: legacy
   value: .agents/skills/rust-best-practices/references/api-design.md
@@ -6006,6 +6980,114 @@ deployments:
   content_hash: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
 - kind: project-relative
   target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:8b6e2b3b431ce1406ffc0017b2ec72238a35f62a788076d2cdb6fcd777817581
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/api-design.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:9630d25c0836a8edf956e924d335b8e32bac68e219c659d80a07f1b8a2ad2b9b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/cargo-tooling.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:3a7bb6238c90d4d1313fb73b2d2a3a5ab1ca40456ba44497785f3420d5659c4f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/community-practice.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5fafb6f1013651d98b09b288ecbc5221fbf89110b6e469309028ed234f1581b2
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/concurrency-async.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6e4fc71a655cb2ff30fc6ea79c3573a71513101b05885b5e9967bfccc5f01254
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/core-idioms.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:8aa88fc7122d2774e34cbdf247cae967d68c5756d805878f1b9bcaf7ddbac6aa
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/documentation.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b7b0dcba4b5de220e1e9b558d0d80dc05ca0e042dadb6695968f360954e50efd
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:83e59ee0b09f0db07c9f1de93bebbb71fc790476b3b2a8dcafdcead9ab6df4f1
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/performance.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:65f04e8ad2239c056eef672e0a373e2d535476d716b34412e2a11db60a184666
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/stumbling-blocks.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2c17d9eccc11f14a96457d28d487b446884b93302bf94ea6e16e664909431216
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/testing.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a2566946f55cd4847e2e48246e4571a59c21a0d278227aa8344d8ccd16578d9e
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/rust-best-practices/rust-best-practices/references/unsafe-security.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
+- kind: project-relative
+  target: legacy
   value: .agents/skills/subagent-orchestration
   runtime: null
   scope: project
@@ -6016,6 +7098,15 @@ deployments:
 - kind: project-relative
   target: legacy
   value: .agents/skills/subagent-orchestration/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f8aa786d1bade779ff5327ac41d885a3f3310cef5b4c508cbae1594a39a58b3a
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/subagent-orchestration/subagent-orchestration/SKILL.md
   runtime: null
   scope: project
   owners:
@@ -6052,6 +7143,33 @@ deployments:
 - kind: project-relative
   target: legacy
   value: .agents/skills/typescript-best-practices/references/type-safety-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/typescript-best-practices/typescript-best-practices/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2beda58c5f7b68b7b05736e57a17caa105e2bf4cf68dedcd0534aae7dd563a01
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/typescript-best-practices/typescript-best-practices/references/config-baseline.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/typescript-best-practices/typescript-best-practices/references/type-safety-patterns.md
   runtime: null
   scope: project
   owners:
@@ -6123,6 +7241,60 @@ deployments:
   content_hash: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
 - kind: project-relative
   target: legacy
+  value: .agents/skills/typescript-recommend-tools/typescript-recommend-tools/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:7fcac51f036f035e908615cd9ea896febec00914296934aac906d03245dcc13d
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/default-stacks.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:e3ecfbada8a87ef32a7ca1106a21609908cc196cd57a8cba6544595500457f25
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/library-and-web-toolchains.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:b93b8fbf761616f59f5e9cb1f569bee0ab9e0bf83d695603e12284536757f24b
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/linting-and-formatting.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/node-cli-toolchain.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5d7ec45eb3f2b65ff895b8e7c880751b56a9d838c84512136292337ac793042f
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/tool-selection-rules.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
+- kind: project-relative
+  target: legacy
   value: .agents/skills/why
   runtime: null
   scope: project
@@ -6139,37 +7311,83 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:2d4a1f932162522ed4f4734810eea02b48c583cc4243f88e61160e8a19f00471
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/why/why/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2d4a1f932162522ed4f4734810eea02b48c583cc4243f88e61160e8a19f00471
 local_deployed_files:
+- .agents/skills/anything-else
+- .agents/skills/anything-else/SKILL.md
 - .agents/skills/article-review
 - .agents/skills/article-review/README.md
 - .agents/skills/article-review/SKILL.md
 - .agents/skills/article-review/agents/openai.yaml
+- .agents/skills/article-review/article-review/README.md
+- .agents/skills/article-review/article-review/SKILL.md
+- .agents/skills/article-review/article-review/agents/openai.yaml
+- .agents/skills/article-review/article-review/references/report-template.md
+- .agents/skills/article-review/article-review/references/review-rubric.md
 - .agents/skills/article-review/references/report-template.md
 - .agents/skills/article-review/references/review-rubric.md
+- .agents/skills/askmeplan
+- .agents/skills/askmeplan/SKILL.md
 - .agents/skills/ast-grep
 - .agents/skills/ast-grep/SKILL.md
+- .agents/skills/ast-grep/ast-grep/SKILL.md
+- .agents/skills/ast-grep/ast-grep/references/command-cookbook.md
+- .agents/skills/ast-grep/ast-grep/references/rule-authoring.md
 - .agents/skills/ast-grep/references/command-cookbook.md
 - .agents/skills/ast-grep/references/rule-authoring.md
 - .agents/skills/before-commit
 - .agents/skills/before-commit/SKILL.md
+- .agents/skills/before-commit/before-commit/SKILL.md
 - .agents/skills/blast-radius
 - .agents/skills/blast-radius/SKILL.md
+- .agents/skills/blast-radius/blast-radius/SKILL.md
 - .agents/skills/code-search
 - .agents/skills/code-search/SKILL.md
+- .agents/skills/code-search/code-search/SKILL.md
+- .agents/skills/code-search/code-search/references/funnel-playbook.md
 - .agents/skills/code-search/references/funnel-playbook.md
 - .agents/skills/coding-style
 - .agents/skills/coding-style/SKILL.md
+- .agents/skills/coding-style/coding-style/SKILL.md
 - .agents/skills/cognitive-rhythm-writing
 - .agents/skills/cognitive-rhythm-writing/SKILL.md
+- .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/SKILL.md
+- .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/references/diagnosis.md
+- .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/references/techniques.md
 - .agents/skills/cognitive-rhythm-writing/references/diagnosis.md
 - .agents/skills/cognitive-rhythm-writing/references/techniques.md
+- .agents/skills/empirical-prompt-tuning
+- .agents/skills/empirical-prompt-tuning/SKILL.md
 - .agents/skills/goalplan
 - .agents/skills/goalplan/SKILL.md
+- .agents/skills/goalplan/goalplan/SKILL.md
+- .agents/skills/goalplan/goalplan/references/example.md
+- .agents/skills/goalplan/goalplan/references/plan-template.md
 - .agents/skills/goalplan/references/example.md
 - .agents/skills/goalplan/references/plan-template.md
+- .agents/skills/goalskill
+- .agents/skills/goalskill/SKILL.md
 - .agents/skills/golang-best-practices
 - .agents/skills/golang-best-practices/SKILL.md
 - .agents/skills/golang-best-practices/dist/golang-best-practices.skill
+- .agents/skills/golang-best-practices/golang-best-practices/SKILL.md
+- .agents/skills/golang-best-practices/golang-best-practices/dist/golang-best-practices.skill
+- .agents/skills/golang-best-practices/golang-best-practices/references/code-style.md
+- .agents/skills/golang-best-practices/golang-best-practices/references/concurrency.md
+- .agents/skills/golang-best-practices/golang-best-practices/references/error-handling.md
+- .agents/skills/golang-best-practices/golang-best-practices/references/modernize.md
+- .agents/skills/golang-best-practices/golang-best-practices/references/performance.md
+- .agents/skills/golang-best-practices/golang-best-practices/references/project-layout.md
+- .agents/skills/golang-best-practices/golang-best-practices/references/security.md
+- .agents/skills/golang-best-practices/golang-best-practices/references/testing.md
 - .agents/skills/golang-best-practices/references/code-style.md
 - .agents/skills/golang-best-practices/references/concurrency.md
 - .agents/skills/golang-best-practices/references/error-handling.md
@@ -6180,6 +7398,14 @@ local_deployed_files:
 - .agents/skills/golang-best-practices/references/testing.md
 - .agents/skills/hono-best-practices
 - .agents/skills/hono-best-practices/SKILL.md
+- .agents/skills/hono-best-practices/hono-best-practices/SKILL.md
+- .agents/skills/hono-best-practices/hono-best-practices/references/context-and-middleware.md
+- .agents/skills/hono-best-practices/hono-best-practices/references/errors-and-testing.md
+- .agents/skills/hono-best-practices/hono-best-practices/references/request-validation.md
+- .agents/skills/hono-best-practices/hono-best-practices/references/routing.md
+- .agents/skills/hono-best-practices/hono-best-practices/references/rpc-basics.md
+- .agents/skills/hono-best-practices/hono-best-practices/references/rpc-patterns.md
+- .agents/skills/hono-best-practices/hono-best-practices/references/validation-patterns.md
 - .agents/skills/hono-best-practices/references/context-and-middleware.md
 - .agents/skills/hono-best-practices/references/errors-and-testing.md
 - .agents/skills/hono-best-practices/references/request-validation.md
@@ -6189,27 +7415,45 @@ local_deployed_files:
 - .agents/skills/hono-best-practices/references/validation-patterns.md
 - .agents/skills/how
 - .agents/skills/how/SKILL.md
+- .agents/skills/how/how/SKILL.md
 - .agents/skills/html-artifacts
 - .agents/skills/html-artifacts/SKILL.md
 - .agents/skills/html-artifacts/assets/dads.css
 - .agents/skills/html-artifacts/assets/template.html
+- .agents/skills/html-artifacts/html-artifacts/SKILL.md
+- .agents/skills/html-artifacts/html-artifacts/assets/dads.css
+- .agents/skills/html-artifacts/html-artifacts/assets/template.html
+- .agents/skills/html-artifacts/html-artifacts/references/build.md
+- .agents/skills/html-artifacts/html-artifacts/references/dads.md
+- .agents/skills/html-artifacts/html-artifacts/references/diagrams.md
+- .agents/skills/html-artifacts/html-artifacts/references/remote-preview.md
 - .agents/skills/html-artifacts/references/build.md
 - .agents/skills/html-artifacts/references/dads.md
 - .agents/skills/html-artifacts/references/diagrams.md
 - .agents/skills/html-artifacts/references/remote-preview.md
 - .agents/skills/japanese-tech-writing
 - .agents/skills/japanese-tech-writing/SKILL.md
+- .agents/skills/japanese-tech-writing/japanese-tech-writing/SKILL.md
+- .agents/skills/japanese-tech-writing/japanese-tech-writing/references/argument.md
+- .agents/skills/japanese-tech-writing/japanese-tech-writing/references/formatting.md
+- .agents/skills/japanese-tech-writing/japanese-tech-writing/references/voice-and-editing.md
 - .agents/skills/japanese-tech-writing/references/argument.md
 - .agents/skills/japanese-tech-writing/references/formatting.md
 - .agents/skills/japanese-tech-writing/references/voice-and-editing.md
 - .agents/skills/refactoring-code
 - .agents/skills/refactoring-code/SKILL.md
 - .agents/skills/refactoring-code/evals/evals.json
+- .agents/skills/refactoring-code/refactoring-code/SKILL.md
+- .agents/skills/refactoring-code/refactoring-code/evals/evals.json
+- .agents/skills/refactoring-code/refactoring-code/references/examples.md
+- .agents/skills/refactoring-code/refactoring-code/references/legacy-safety-net.md
+- .agents/skills/refactoring-code/refactoring-code/references/refactor-playbook.md
 - .agents/skills/refactoring-code/references/examples.md
 - .agents/skills/refactoring-code/references/legacy-safety-net.md
 - .agents/skills/refactoring-code/references/refactor-playbook.md
 - .agents/skills/rust-best-practices
 - .agents/skills/rust-best-practices/SKILL.md
+- .agents/skills/rust-best-practices/evals/evals.json
 - .agents/skills/rust-best-practices/references/api-design.md
 - .agents/skills/rust-best-practices/references/cargo-tooling.md
 - .agents/skills/rust-best-practices/references/community-practice.md
@@ -6221,12 +7465,28 @@ local_deployed_files:
 - .agents/skills/rust-best-practices/references/stumbling-blocks.md
 - .agents/skills/rust-best-practices/references/testing.md
 - .agents/skills/rust-best-practices/references/unsafe-security.md
+- .agents/skills/rust-best-practices/rust-best-practices/SKILL.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/api-design.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/cargo-tooling.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/community-practice.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/concurrency-async.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/core-idioms.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/documentation.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/error-handling.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/performance.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/stumbling-blocks.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/testing.md
+- .agents/skills/rust-best-practices/rust-best-practices/references/unsafe-security.md
 - .agents/skills/subagent-orchestration
 - .agents/skills/subagent-orchestration/SKILL.md
+- .agents/skills/subagent-orchestration/subagent-orchestration/SKILL.md
 - .agents/skills/typescript-best-practices
 - .agents/skills/typescript-best-practices/SKILL.md
 - .agents/skills/typescript-best-practices/references/config-baseline.md
 - .agents/skills/typescript-best-practices/references/type-safety-patterns.md
+- .agents/skills/typescript-best-practices/typescript-best-practices/SKILL.md
+- .agents/skills/typescript-best-practices/typescript-best-practices/references/config-baseline.md
+- .agents/skills/typescript-best-practices/typescript-best-practices/references/type-safety-patterns.md
 - .agents/skills/typescript-recommend-tools
 - .agents/skills/typescript-recommend-tools/SKILL.md
 - .agents/skills/typescript-recommend-tools/references/default-stacks.md
@@ -6234,30 +7494,70 @@ local_deployed_files:
 - .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md
 - .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md
 - .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md
+- .agents/skills/typescript-recommend-tools/typescript-recommend-tools/SKILL.md
+- .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/default-stacks.md
+- .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/library-and-web-toolchains.md
+- .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/linting-and-formatting.md
+- .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/node-cli-toolchain.md
+- .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/tool-selection-rules.md
 - .agents/skills/why
 - .agents/skills/why/SKILL.md
+- .agents/skills/why/why/SKILL.md
 local_deployed_file_hashes:
+  .agents/skills/anything-else/SKILL.md: sha256:bb5d8793b3b94723639ec55901daf8d06fb875a3e2e6d3339068d9babbfcb404
   .agents/skills/article-review/README.md: sha256:84c4695e51c7a8b2e744eb23854ab628fe9afdf93fc46f83c5aa8a67e627957e
   .agents/skills/article-review/SKILL.md: sha256:b85efb733833b59cc76e8a3025547e13b33610f913d5d4158dfe4d2458091126
   .agents/skills/article-review/agents/openai.yaml: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
+  .agents/skills/article-review/article-review/README.md: sha256:84c4695e51c7a8b2e744eb23854ab628fe9afdf93fc46f83c5aa8a67e627957e
+  .agents/skills/article-review/article-review/SKILL.md: sha256:b85efb733833b59cc76e8a3025547e13b33610f913d5d4158dfe4d2458091126
+  .agents/skills/article-review/article-review/agents/openai.yaml: sha256:0ac248c5867451c505d748fb9dfeaa2f5ebd648676626af09948f13b7ab2a78f
+  .agents/skills/article-review/article-review/references/report-template.md: sha256:94afd340aa69058532c4cf07571c46435c010a113931ae045538d139ca8b257b
+  .agents/skills/article-review/article-review/references/review-rubric.md: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
   .agents/skills/article-review/references/report-template.md: sha256:94afd340aa69058532c4cf07571c46435c010a113931ae045538d139ca8b257b
   .agents/skills/article-review/references/review-rubric.md: sha256:188285314ab0c5ed0e5aadcec320f0ce7ea38a03da6cfa581bfc1f60feb47a1d
+  .agents/skills/askmeplan/SKILL.md: sha256:c17d88581e637adda8b768f8d57799e99071fda3b1979602df117071220587ab
   .agents/skills/ast-grep/SKILL.md: sha256:04ffc18517478f49c6532701e4d64750d39363f2d702dcd226bbd227ac5140fd
+  .agents/skills/ast-grep/ast-grep/SKILL.md: sha256:04ffc18517478f49c6532701e4d64750d39363f2d702dcd226bbd227ac5140fd
+  .agents/skills/ast-grep/ast-grep/references/command-cookbook.md: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
+  .agents/skills/ast-grep/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
   .agents/skills/ast-grep/references/command-cookbook.md: sha256:884c9d4873dae1c7c3af489f51c1aae243d5b8f8b7159f9eb97c786df36efa74
   .agents/skills/ast-grep/references/rule-authoring.md: sha256:a25ee501bc3bd960610f3e25acda22e2102ac631bb34099b52dc61b9fde6b3b7
   .agents/skills/before-commit/SKILL.md: sha256:88b1de103cb58bb4dc8f016c1c81d805eeab9017faa32edeccff960ffe76882e
+  .agents/skills/before-commit/before-commit/SKILL.md: sha256:88b1de103cb58bb4dc8f016c1c81d805eeab9017faa32edeccff960ffe76882e
   .agents/skills/blast-radius/SKILL.md: sha256:9b22f8d012fb8bb9cd615e934c9bb4b529ed191c15fea3b1d426389130a15266
+  .agents/skills/blast-radius/blast-radius/SKILL.md: sha256:9b22f8d012fb8bb9cd615e934c9bb4b529ed191c15fea3b1d426389130a15266
   .agents/skills/code-search/SKILL.md: sha256:75ac2ce2272c716fa29431cb21059ca437a5ba11102b805f9d69422a9d287160
+  .agents/skills/code-search/code-search/SKILL.md: sha256:75ac2ce2272c716fa29431cb21059ca437a5ba11102b805f9d69422a9d287160
+  .agents/skills/code-search/code-search/references/funnel-playbook.md: sha256:76267ef35e5623534bfa8ad63662c932dfc27f9190ae18c21cb44dfa510c08b5
   .agents/skills/code-search/references/funnel-playbook.md: sha256:76267ef35e5623534bfa8ad63662c932dfc27f9190ae18c21cb44dfa510c08b5
   .agents/skills/coding-style/SKILL.md: sha256:480c0d93b43e0574653828cf7e00bfbeef7408164b939c65bc6f1eb4616bd47e
+  .agents/skills/coding-style/coding-style/SKILL.md: sha256:480c0d93b43e0574653828cf7e00bfbeef7408164b939c65bc6f1eb4616bd47e
   .agents/skills/cognitive-rhythm-writing/SKILL.md: sha256:2e78c07f02be5a7144282847a7ab31b6309b29ffe7b65e6a9eb65601aa9e1f54
+  .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/SKILL.md: sha256:2e78c07f02be5a7144282847a7ab31b6309b29ffe7b65e6a9eb65601aa9e1f54
+  .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/references/diagnosis.md: sha256:03dac8aef7392cc26b17b18feefae20531c31c4680f6df4a7d0b67cf711c28e6
+  .agents/skills/cognitive-rhythm-writing/cognitive-rhythm-writing/references/techniques.md: sha256:decaac7367a5b4c23e703cbfc1ccf083f27b4bafae026120f993a5d9b0770b00
   .agents/skills/cognitive-rhythm-writing/references/diagnosis.md: sha256:03dac8aef7392cc26b17b18feefae20531c31c4680f6df4a7d0b67cf711c28e6
   .agents/skills/cognitive-rhythm-writing/references/techniques.md: sha256:decaac7367a5b4c23e703cbfc1ccf083f27b4bafae026120f993a5d9b0770b00
+  .agents/skills/empirical-prompt-tuning/SKILL.md: sha256:d600cc59a11f814b55cb9b6c60d21b96a6d39654465efe6e959f74923e24db54
   .agents/skills/goalplan/SKILL.md: sha256:a8fd10be4b3091ec4dbf8d98c1ea56f32d24c30c35123805dfd0638dc0dd75e0
+  .agents/skills/goalplan/goalplan/SKILL.md: sha256:a8fd10be4b3091ec4dbf8d98c1ea56f32d24c30c35123805dfd0638dc0dd75e0
+  .agents/skills/goalplan/goalplan/references/example.md: sha256:868b4912a7b318d2b24b9fa6033b11f61d61b8042645da304bf324028e86b925
+  .agents/skills/goalplan/goalplan/references/plan-template.md: sha256:7c6c3d92b55fbcbe9eddb68553bcee31cf5a8e66cb8dfb0e05d8c5e624383820
   .agents/skills/goalplan/references/example.md: sha256:868b4912a7b318d2b24b9fa6033b11f61d61b8042645da304bf324028e86b925
   .agents/skills/goalplan/references/plan-template.md: sha256:7c6c3d92b55fbcbe9eddb68553bcee31cf5a8e66cb8dfb0e05d8c5e624383820
+  .agents/skills/goalskill/SKILL.md: sha256:4ba8331484c146743c1d7c3811f67d29e7fc79d067ac6f7f8b165159aba8ec9d
   .agents/skills/golang-best-practices/SKILL.md: sha256:e00d9d9f85f639dc5b41095f352a5534a40850241548e648a73ac708f78e6d38
   .agents/skills/golang-best-practices/dist/golang-best-practices.skill: sha256:0f3db1e474d1851de955f38b9baa38c3ad06d5b8150efe44b91a5ed86f0ccb55
+  .agents/skills/golang-best-practices/golang-best-practices/SKILL.md: sha256:e00d9d9f85f639dc5b41095f352a5534a40850241548e648a73ac708f78e6d38
+  .agents/skills/golang-best-practices/golang-best-practices/dist/golang-best-practices.skill: sha256:0f3db1e474d1851de955f38b9baa38c3ad06d5b8150efe44b91a5ed86f0ccb55
+  .agents/skills/golang-best-practices/golang-best-practices/references/code-style.md: sha256:5ebdba25a32ac6bcb9fff6b89cbc5e46b99d8326208067b1619de3e7225b8a13
+  .agents/skills/golang-best-practices/golang-best-practices/references/concurrency.md: sha256:3a88371a88c8dd7d4c165932bc7ef4f2865392f21a9f398a343953a822e313ca
+  .agents/skills/golang-best-practices/golang-best-practices/references/error-handling.md: sha256:736e6ed8d6e1ee744cc56640e987c1856cd10461f66f9b7dcd29feb6cd1de5ff
+  .agents/skills/golang-best-practices/golang-best-practices/references/modernize.md: sha256:15b2d7855112848f9f1c9d6fc3bc3746a9b4ba0731dd6d224e95b7ae2cb9789e
+  .agents/skills/golang-best-practices/golang-best-practices/references/performance.md: sha256:d164bf795a9f1547de2bce7feebae282f8ee5103a15def6f4c2d746696177e72
+  .agents/skills/golang-best-practices/golang-best-practices/references/project-layout.md: sha256:8741633a55a835b0f0f66311a704cd14955650eef7c310f5a0ece82ea43b58c7
+  .agents/skills/golang-best-practices/golang-best-practices/references/security.md: sha256:1b598e0d5fe7415596df2c4e8936e0765246c4b42618fc84811502f23d302a83
+  .agents/skills/golang-best-practices/golang-best-practices/references/testing.md: sha256:0c8593e950bafb64ea56115673d2cef847986aade19f2f7a257538009f553fa6
   .agents/skills/golang-best-practices/references/code-style.md: sha256:5ebdba25a32ac6bcb9fff6b89cbc5e46b99d8326208067b1619de3e7225b8a13
   .agents/skills/golang-best-practices/references/concurrency.md: sha256:3a88371a88c8dd7d4c165932bc7ef4f2865392f21a9f398a343953a822e313ca
   .agents/skills/golang-best-practices/references/error-handling.md: sha256:736e6ed8d6e1ee744cc56640e987c1856cd10461f66f9b7dcd29feb6cd1de5ff
@@ -6267,6 +7567,14 @@ local_deployed_file_hashes:
   .agents/skills/golang-best-practices/references/security.md: sha256:1b598e0d5fe7415596df2c4e8936e0765246c4b42618fc84811502f23d302a83
   .agents/skills/golang-best-practices/references/testing.md: sha256:0c8593e950bafb64ea56115673d2cef847986aade19f2f7a257538009f553fa6
   .agents/skills/hono-best-practices/SKILL.md: sha256:75150beeb436cbf2acd21445cb1ea687e9026d0f1145a274c4c03ef099571812
+  .agents/skills/hono-best-practices/hono-best-practices/SKILL.md: sha256:75150beeb436cbf2acd21445cb1ea687e9026d0f1145a274c4c03ef099571812
+  .agents/skills/hono-best-practices/hono-best-practices/references/context-and-middleware.md: sha256:db41c97dea76d293d2e6c62c38c9709112fd8f560b456b4ccd2e0feb0f473106
+  .agents/skills/hono-best-practices/hono-best-practices/references/errors-and-testing.md: sha256:316481deb81ffe314996adf9a9e3ab5e3025adcc464277a184f2083ef57e988c
+  .agents/skills/hono-best-practices/hono-best-practices/references/request-validation.md: sha256:00c34364abbe5961f9ab42aafdcc612721be20f745497a9c25805d55b5e8f7bb
+  .agents/skills/hono-best-practices/hono-best-practices/references/routing.md: sha256:440985d57c980b3c37b629f53899751b91d0ecfaba8b05ac92bb35ff3013d421
+  .agents/skills/hono-best-practices/hono-best-practices/references/rpc-basics.md: sha256:888b2a3114be02c61575e07594f18ce5d4d430a74d8d92ba204065ee1ca30007
+  .agents/skills/hono-best-practices/hono-best-practices/references/rpc-patterns.md: sha256:c8a971e98a4ed46f23f9211ffe8e0f0831498238d75a6066af91f89c3cd9b69f
+  .agents/skills/hono-best-practices/hono-best-practices/references/validation-patterns.md: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
   .agents/skills/hono-best-practices/references/context-and-middleware.md: sha256:db41c97dea76d293d2e6c62c38c9709112fd8f560b456b4ccd2e0feb0f473106
   .agents/skills/hono-best-practices/references/errors-and-testing.md: sha256:316481deb81ffe314996adf9a9e3ab5e3025adcc464277a184f2083ef57e988c
   .agents/skills/hono-best-practices/references/request-validation.md: sha256:00c34364abbe5961f9ab42aafdcc612721be20f745497a9c25805d55b5e8f7bb
@@ -6275,23 +7583,41 @@ local_deployed_file_hashes:
   .agents/skills/hono-best-practices/references/rpc-patterns.md: sha256:c8a971e98a4ed46f23f9211ffe8e0f0831498238d75a6066af91f89c3cd9b69f
   .agents/skills/hono-best-practices/references/validation-patterns.md: sha256:ce341001ecf0df3e698272501e19d08e11d82521e3457cc175454631e8eb4ba1
   .agents/skills/how/SKILL.md: sha256:5981abf18a9c77803fe131ec9263ce66711185c141ee05cf6479386f5cbd1454
+  .agents/skills/how/how/SKILL.md: sha256:5981abf18a9c77803fe131ec9263ce66711185c141ee05cf6479386f5cbd1454
   .agents/skills/html-artifacts/SKILL.md: sha256:4026314fd118eca2d81c5a7782a1c1b18ed94aa297e21b2b978ab0a2a1c286a6
   .agents/skills/html-artifacts/assets/dads.css: sha256:739b87d112718be4429edd459e1f128172f9049830600a3a8ea5eda52eccf15f
   .agents/skills/html-artifacts/assets/template.html: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
+  .agents/skills/html-artifacts/html-artifacts/SKILL.md: sha256:4026314fd118eca2d81c5a7782a1c1b18ed94aa297e21b2b978ab0a2a1c286a6
+  .agents/skills/html-artifacts/html-artifacts/assets/dads.css: sha256:739b87d112718be4429edd459e1f128172f9049830600a3a8ea5eda52eccf15f
+  .agents/skills/html-artifacts/html-artifacts/assets/template.html: sha256:6a7c4fa904763e791163af7f5be9c695920000bdd970ccd99c82199199155f8b
+  .agents/skills/html-artifacts/html-artifacts/references/build.md: sha256:c2a2d78bed8473c33943ea6a192db675326c8125023439251c098daf446b522b
+  .agents/skills/html-artifacts/html-artifacts/references/dads.md: sha256:6287a11248db1a5ee37e98cc84a07a92220e97ab25d66dc36418c5901de02232
+  .agents/skills/html-artifacts/html-artifacts/references/diagrams.md: sha256:7ce93a624b6efd64b8e9dfc5e814ad828e26763bccbf8fd2d1c88bfaf289e0be
+  .agents/skills/html-artifacts/html-artifacts/references/remote-preview.md: sha256:afcbdcfd0a10cf5e0c6e3ca11ca99dce2f011020bd37c2d18a664b3850fdf1a3
   .agents/skills/html-artifacts/references/build.md: sha256:c2a2d78bed8473c33943ea6a192db675326c8125023439251c098daf446b522b
   .agents/skills/html-artifacts/references/dads.md: sha256:6287a11248db1a5ee37e98cc84a07a92220e97ab25d66dc36418c5901de02232
   .agents/skills/html-artifacts/references/diagrams.md: sha256:7ce93a624b6efd64b8e9dfc5e814ad828e26763bccbf8fd2d1c88bfaf289e0be
   .agents/skills/html-artifacts/references/remote-preview.md: sha256:afcbdcfd0a10cf5e0c6e3ca11ca99dce2f011020bd37c2d18a664b3850fdf1a3
   .agents/skills/japanese-tech-writing/SKILL.md: sha256:21998b23b56ee29ea5496354e8c9bad570b5f0c5770ea5495c41b3c1576a5bd7
+  .agents/skills/japanese-tech-writing/japanese-tech-writing/SKILL.md: sha256:21998b23b56ee29ea5496354e8c9bad570b5f0c5770ea5495c41b3c1576a5bd7
+  .agents/skills/japanese-tech-writing/japanese-tech-writing/references/argument.md: sha256:b2d7ef6599a09081c51fa010156bce072a6c391722379ee0121337bafb51044a
+  .agents/skills/japanese-tech-writing/japanese-tech-writing/references/formatting.md: sha256:28aa943dabd0926a4fd561b026fa2d5016313297fb748367825d86d89fdff04f
+  .agents/skills/japanese-tech-writing/japanese-tech-writing/references/voice-and-editing.md: sha256:cc2f4072efd37026dc5f8d149cbb55897ea0ed98a98e72916cb992047c2f2cc1
   .agents/skills/japanese-tech-writing/references/argument.md: sha256:b2d7ef6599a09081c51fa010156bce072a6c391722379ee0121337bafb51044a
   .agents/skills/japanese-tech-writing/references/formatting.md: sha256:28aa943dabd0926a4fd561b026fa2d5016313297fb748367825d86d89fdff04f
   .agents/skills/japanese-tech-writing/references/voice-and-editing.md: sha256:cc2f4072efd37026dc5f8d149cbb55897ea0ed98a98e72916cb992047c2f2cc1
   .agents/skills/refactoring-code/SKILL.md: sha256:480f2965e877f3bccf136d1e357c17674695eb2b78b1ce938c52156370ea385d
   .agents/skills/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
+  .agents/skills/refactoring-code/refactoring-code/SKILL.md: sha256:480f2965e877f3bccf136d1e357c17674695eb2b78b1ce938c52156370ea385d
+  .agents/skills/refactoring-code/refactoring-code/evals/evals.json: sha256:1d3631d2d1d33a232b4bb98affdcc88a2c57c13173a06176a9df0b8bbfb37c2f
+  .agents/skills/refactoring-code/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
+  .agents/skills/refactoring-code/refactoring-code/references/legacy-safety-net.md: sha256:67a0774a6df1bfe5f479a26a6895e72322a6add93525557d3543fca84be0619f
+  .agents/skills/refactoring-code/refactoring-code/references/refactor-playbook.md: sha256:534ae82fc5e1d6ca02624d1068daf61a09b64754119cd9d4474adc417b73c30c
   .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
   .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:67a0774a6df1bfe5f479a26a6895e72322a6add93525557d3543fca84be0619f
   .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:534ae82fc5e1d6ca02624d1068daf61a09b64754119cd9d4474adc417b73c30c
   .agents/skills/rust-best-practices/SKILL.md: sha256:8b6e2b3b431ce1406ffc0017b2ec72238a35f62a788076d2cdb6fcd777817581
+  .agents/skills/rust-best-practices/evals/evals.json: sha256:dcbbe8c255b6b5f37b7308a93a1a29121428a9d2d3fa5609511885e782187bdf
   .agents/skills/rust-best-practices/references/api-design.md: sha256:9630d25c0836a8edf956e924d335b8e32bac68e219c659d80a07f1b8a2ad2b9b
   .agents/skills/rust-best-practices/references/cargo-tooling.md: sha256:3a7bb6238c90d4d1313fb73b2d2a3a5ab1ca40456ba44497785f3420d5659c4f
   .agents/skills/rust-best-practices/references/community-practice.md: sha256:5fafb6f1013651d98b09b288ecbc5221fbf89110b6e469309028ed234f1581b2
@@ -6303,14 +7629,37 @@ local_deployed_file_hashes:
   .agents/skills/rust-best-practices/references/stumbling-blocks.md: sha256:2c17d9eccc11f14a96457d28d487b446884b93302bf94ea6e16e664909431216
   .agents/skills/rust-best-practices/references/testing.md: sha256:a2566946f55cd4847e2e48246e4571a59c21a0d278227aa8344d8ccd16578d9e
   .agents/skills/rust-best-practices/references/unsafe-security.md: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
+  .agents/skills/rust-best-practices/rust-best-practices/SKILL.md: sha256:8b6e2b3b431ce1406ffc0017b2ec72238a35f62a788076d2cdb6fcd777817581
+  .agents/skills/rust-best-practices/rust-best-practices/references/api-design.md: sha256:9630d25c0836a8edf956e924d335b8e32bac68e219c659d80a07f1b8a2ad2b9b
+  .agents/skills/rust-best-practices/rust-best-practices/references/cargo-tooling.md: sha256:3a7bb6238c90d4d1313fb73b2d2a3a5ab1ca40456ba44497785f3420d5659c4f
+  .agents/skills/rust-best-practices/rust-best-practices/references/community-practice.md: sha256:5fafb6f1013651d98b09b288ecbc5221fbf89110b6e469309028ed234f1581b2
+  .agents/skills/rust-best-practices/rust-best-practices/references/concurrency-async.md: sha256:6e4fc71a655cb2ff30fc6ea79c3573a71513101b05885b5e9967bfccc5f01254
+  .agents/skills/rust-best-practices/rust-best-practices/references/core-idioms.md: sha256:8aa88fc7122d2774e34cbdf247cae967d68c5756d805878f1b9bcaf7ddbac6aa
+  .agents/skills/rust-best-practices/rust-best-practices/references/documentation.md: sha256:b7b0dcba4b5de220e1e9b558d0d80dc05ca0e042dadb6695968f360954e50efd
+  .agents/skills/rust-best-practices/rust-best-practices/references/error-handling.md: sha256:83e59ee0b09f0db07c9f1de93bebbb71fc790476b3b2a8dcafdcead9ab6df4f1
+  .agents/skills/rust-best-practices/rust-best-practices/references/performance.md: sha256:65f04e8ad2239c056eef672e0a373e2d535476d716b34412e2a11db60a184666
+  .agents/skills/rust-best-practices/rust-best-practices/references/stumbling-blocks.md: sha256:2c17d9eccc11f14a96457d28d487b446884b93302bf94ea6e16e664909431216
+  .agents/skills/rust-best-practices/rust-best-practices/references/testing.md: sha256:a2566946f55cd4847e2e48246e4571a59c21a0d278227aa8344d8ccd16578d9e
+  .agents/skills/rust-best-practices/rust-best-practices/references/unsafe-security.md: sha256:494b5919e66a8ae4147c56e2043f7233ffb3599f66c2e2902d5eaac2220782de
   .agents/skills/subagent-orchestration/SKILL.md: sha256:f8aa786d1bade779ff5327ac41d885a3f3310cef5b4c508cbae1594a39a58b3a
+  .agents/skills/subagent-orchestration/subagent-orchestration/SKILL.md: sha256:f8aa786d1bade779ff5327ac41d885a3f3310cef5b4c508cbae1594a39a58b3a
   .agents/skills/typescript-best-practices/SKILL.md: sha256:2beda58c5f7b68b7b05736e57a17caa105e2bf4cf68dedcd0534aae7dd563a01
   .agents/skills/typescript-best-practices/references/config-baseline.md: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
   .agents/skills/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
+  .agents/skills/typescript-best-practices/typescript-best-practices/SKILL.md: sha256:2beda58c5f7b68b7b05736e57a17caa105e2bf4cf68dedcd0534aae7dd563a01
+  .agents/skills/typescript-best-practices/typescript-best-practices/references/config-baseline.md: sha256:c11b5ce986276de2f11f162ca99e7625f538d7b0023f2d8e5d6e89aa9dd179d6
+  .agents/skills/typescript-best-practices/typescript-best-practices/references/type-safety-patterns.md: sha256:5ffa5475ee9723866e2264258ee7f74587affc38c48d622797d99f0021f7ca99
   .agents/skills/typescript-recommend-tools/SKILL.md: sha256:7fcac51f036f035e908615cd9ea896febec00914296934aac906d03245dcc13d
   .agents/skills/typescript-recommend-tools/references/default-stacks.md: sha256:e3ecfbada8a87ef32a7ca1106a21609908cc196cd57a8cba6544595500457f25
   .agents/skills/typescript-recommend-tools/references/library-and-web-toolchains.md: sha256:b93b8fbf761616f59f5e9cb1f569bee0ab9e0bf83d695603e12284536757f24b
   .agents/skills/typescript-recommend-tools/references/linting-and-formatting.md: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
   .agents/skills/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:5d7ec45eb3f2b65ff895b8e7c880751b56a9d838c84512136292337ac793042f
   .agents/skills/typescript-recommend-tools/references/tool-selection-rules.md: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
+  .agents/skills/typescript-recommend-tools/typescript-recommend-tools/SKILL.md: sha256:7fcac51f036f035e908615cd9ea896febec00914296934aac906d03245dcc13d
+  .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/default-stacks.md: sha256:e3ecfbada8a87ef32a7ca1106a21609908cc196cd57a8cba6544595500457f25
+  .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/library-and-web-toolchains.md: sha256:b93b8fbf761616f59f5e9cb1f569bee0ab9e0bf83d695603e12284536757f24b
+  .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/linting-and-formatting.md: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
+  .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:5d7ec45eb3f2b65ff895b8e7c880751b56a9d838c84512136292337ac793042f
+  .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/tool-selection-rules.md: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
   .agents/skills/why/SKILL.md: sha256:2d4a1f932162522ed4f4734810eea02b48c583cc4243f88e61160e8a19f00471
+  .agents/skills/why/why/SKILL.md: sha256:2d4a1f932162522ed4f4734810eea02b48c583cc4243f88e61160e8a19f00471

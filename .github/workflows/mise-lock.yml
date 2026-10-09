@@ -46,14 +46,14 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Setup mise
-        uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
+        uses: jdx/mise-action@2d8d4cafcbd33be2ea37d2b6f5ad595363d1f1ca # v5.1.1
         with:
           install: false
           cache: true
           # 新しめの mise は lock 解決時に platform entry を大量に skip する
           # (2026.8.10 では 666 中 315 のみ書き込み)。lockfile 生成を決定論的に
           # 保つため、完全解決を確認済みの版に固定する。
-          version: 2026.10.2
+          version: 2026.10.3
 
       - name: Regenerate and commit mise.lock via GraphQL
         env:
