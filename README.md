@@ -20,6 +20,7 @@ mise install
 
 ## Docs
 
+- [Agent Cloud Sessions](docs/agent-cloud.md) — Codex / Claude Code cloud setup script bootstrap; separate from workstation installation above
 - [Codex config](docs/codex.md)
 - [AI Agents Environment](docs/agents.md)
 - [Python Execution Wrappers](docs/python.md)

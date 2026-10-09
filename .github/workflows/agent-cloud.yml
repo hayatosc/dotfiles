@@ -1,0 +1,60 @@
+name: Agent cloud installer
+
+on:
+  pull_request:
+    paths:
+      - scripts/install-agent-cloud.sh
+      - tests/test_agent_cloud.py
+      - cloud/**
+      - skills/**
+      - home/dot_agents/AGENTS.md
+      - .github/workflows/agent-cloud.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Shell syntax and isolated behavior tests
+        run: |
+          sh -n scripts/install-agent-cloud.sh
+          python3 -m unittest discover -s tests -v
+      - name: Real APM install and rerun of this commit in a disposable HOME
+        shell: bash
+        env:
+          # Install the skills and lock under test, not the current main.
+          DOTFILES_REF: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          set -euo pipefail
+          work=$(mktemp -d)
+          trap 'rm -rf -- "$work"' EXIT
+          export HOME="$work/home with spaces"
+          export CODEX_HOME="$work/codex with spaces"
+          export CLAUDE_CONFIG_DIR="$work/claude with spaces"
+          export XDG_DATA_HOME="$work/data with spaces"
+          mkdir -p "$HOME"
+          sh scripts/install-agent-cloud.sh
+          sh scripts/install-agent-cloud.sh
+          current="$XDG_DATA_HOME/dotfiles-agent-cloud/current"
+          test "$(cat "$current/SOURCE_REF")" = "$DOTFILES_REF"
+          test "$(find "$XDG_DATA_HOME/dotfiles-agent-cloud" -mindepth 1 -maxdepth 1 -name 'install.*' | wc -l)" -eq 1
+          expected=$(find "$current/.agents/skills" -mindepth 1 -maxdepth 1 -type d | wc -l)
+          local_skills=$(find skills -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)
+          test "$expected" -gt "$local_skills"
+          for dir in "$HOME/.agents/skills" "$CLAUDE_CONFIG_DIR/skills"; do
+            test "$(find "$dir" -mindepth 1 -maxdepth 1 -type l | wc -l)" -eq "$expected"
+            test "$(find -L "$dir" -mindepth 2 -maxdepth 2 -name SKILL.md | wc -l)" -eq "$expected"
+          done
+          test -f "$CODEX_HOME/config.toml"
+          test -f "$CODEX_HOME/AGENTS.md"
+          test -f "$CLAUDE_CONFIG_DIR/CLAUDE.md"
+          test "$("$HOME/.local/bin/rtk" --version)" = "rtk 0.51.0"
+          # The installer runs in this checkout, so it sets the local identity here.
+          test "$(git config --local user.email)" = "145091553+hayatosc@users.noreply.github.com"
+          if grep -q '^## Local Environment' "$CLAUDE_CONFIG_DIR/CLAUDE.md"; then exit 1; fi
