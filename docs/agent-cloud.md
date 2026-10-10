@@ -18,17 +18,19 @@ Keep `pipefail`: a plain POSIX pipeline reports only the receiving shell's statu
 | `$CLAUDE_CONFIG_DIR/skills/<name>` | The same skill links for Claude Code |
 | `$CODEX_HOME/AGENTS.md`, `$CLAUDE_CONFIG_DIR/CLAUDE.md` | Shared preferences, written only if absent |
 | `$CODEX_HOME/config.toml` | [Codex reasoning defaults](../cloud/codex/config.toml), written only if absent |
+| `$CODEX_HOME/hooks/rtk-codex.sh` | [rtk hook script for Codex](../home/dot_codex/hooks/executable_rtk-codex.sh), written only if absent |
+| `~/.agents/RTK.md` | [rtk troubleshooting notes](../home/dot_agents/private_RTK.md), written only if absent |
 | `~/.local/bin/rtk` | Link to [rtk](https://github.com/rtk-ai/rtk) 0.51.0, the version pinned in mise |
 | `$XDG_DATA_HOME/dotfiles-agent-cloud` | The installed generation and its `current` link |
-| `<repository>/.claude/settings.local.json` | [rtk rewrite hook](../cloud/claude/settings.local.json) for Claude Code, written only if absent and excluded from Git; see [Per-repository setup](#per-repository-setup) |
+| `<repository>/.claude/settings.local.json`, `<repository>/.codex/hooks.json` | rtk rewrite hooks for Claude Code and Codex, written only if absent and excluded from Git; see [Per-repository setup](#per-repository-setup) |
 
 Defaults: `CODEX_HOME=~/.codex`, `CLAUDE_CONFIG_DIR=~/.claude`, `XDG_DATA_HOME=~/.local/share`.
 
-The instruction file is generated from [`home/dot_agents/AGENTS.md`](../home/dot_agents/AGENTS.md) without its `## Local Environment` section, followed by the [cloud notes](../cloud/AGENTS.md). Keep that heading name when editing the shared file; a unit test guards it.
+Files shared with the workstation come from `home/`, the chezmoi source. The instruction file is generated from [`home/dot_agents/AGENTS.md`](../home/dot_agents/AGENTS.md) without its `## Local Environment` section, followed by the [cloud notes](../cloud/AGENTS.md). Keep that heading name when editing the shared file; a unit test guards it. Only cloud-specific content lives in [`cloud/`](../cloud): the cloud notes and the Codex seed config, whose reasoning defaults differ from the workstation's.
 
-On the workstation a PreToolUse hook rewrites commands through rtk. Claude Code cloud sessions do not read `~/.claude/settings.json`, so the installer writes the hook into each repository's `.claude/settings.local.json` instead (see [What Claude Code reads](#what-claude-code-reads)). Codex Cloud gives the installer no way to register a hook. Where no hook applies, the cloud notes tell the agent to prefix output-heavy commands with `rtk` itself.
+On the workstation a PreToolUse hook rewrites commands through rtk. Claude Code cloud sessions do not read `~/.claude/settings.json`, so the installer writes the hook into each repository's local agent settings instead (see [What Claude Code reads](#what-claude-code-reads) and [What Codex reads](#what-codex-reads)). Where no hook applies, the cloud notes tell the agent to prefix output-heavy commands with `rtk` itself.
 
-Existing files and dangling symlinks are left alone without reading their contents. An existing `~/.local/bin/rtk` that this installer did not create is kept. Skills the platform already places in `~/.claude/skills` are untouched. Apart from the per-repository rtk hook, no auth, account, shell startup, plugins, hooks, MCP servers, or other optional skill CLIs are configured.
+Existing files and dangling symlinks are left alone without reading their contents. An existing `~/.local/bin/rtk` that this installer did not create is kept. Skills the platform already places in `~/.claude/skills` are untouched. Apart from the per-repository rtk hooks, no auth, account, shell startup, plugins, hooks, MCP servers, or other optional skill CLIs are configured.
 
 ## Claude Code on the web
 
@@ -126,7 +128,8 @@ Internet access is off until **Allow Codex to access internet** is on, and it ap
 |---|---|
 | Repository `AGENTS.md` and `.agents/skills/` | Read, documented: "Skills stored in your repository are available in cloud tasks." |
 | `~/.codex/AGENTS.md`, `~/.agents/skills`, `~/.codex/config.toml` written by the install script | Not documented. These are the personal locations for local Codex, and personal skills on your own computer are not synced, but the docs do not say whether a cloud task reads them from the prepared VM |
-| `~/.codex/hooks.json` | Not used by this installer. Non-managed hooks run only after you review and trust their exact definition, which a cloud task cannot do |
+| Repository `.codex/hooks.json` written by the install script | Documented for Codex, but "project-local hooks load only when the project `.codex/` layer is trusted", and non-managed hooks run only after their exact definition is trusted (`/hooks`) or with `--dangerously-bypass-hook-trust`. The installer grants neither, and the docs do not describe hooks in Codex Cloud tasks. Verify after publishing |
+| `~/.codex/hooks.json` | Not used by this installer; it needs the same hook trust |
 
 If a new task does not pick up the instructions or skills, the documented fallback is to commit them to the repository (`AGENTS.md`, `.agents/skills/`).
 
@@ -136,12 +139,13 @@ During setup, and again in a new task after publishing, ask Codex to:
 
 - Print `$HOME`, `id -un`, and `$PATH`, list `~/.agents/skills`, run `rtk --version` (or `~/.local/bin/rtk --version` if `rtk` is not on `PATH`), and run `git config --local user.email` in the repository.
 - Report which instruction files it loaded and whether it sees the repository skills, for example `coding-style`.
+- Run a plain `git status` and report whether the output is rtk's compact form. If it is not, the repository hook is untrusted or not loaded, and the agent should prefix `rtk` itself.
 
 Check that `$HOME` is the same during setup and in the task; the skill and rtk links point into `$HOME/.local/share/dotfiles-agent-cloud`.
 
 ## Per-repository setup
 
-After installing, the installer looks for Git repositories in its working directory and up to three levels below, and configures each one.
+After installing, the installer looks for Git repositories in its working directory and up to two levels below, and configures each one.
 
 ### Commit identity
 
@@ -152,15 +156,20 @@ Cloud agents commit with the platform's identity; Claude Code on the web, for ex
 - The platform still signs commits with its own key. With the committer no longer matching that key's account, GitHub may show the signature as **Unverified**.
 - The identity is set when the installer runs. A repository cloned after setup, or a fresh clone in a session that reuses a cached setup, does not get it; see the verification steps.
 
-### rtk hook
+### rtk hooks
 
-The installer copies [`cloud/claude/settings.local.json`](../cloud/claude/settings.local.json) to `.claude/settings.local.json` in each repository, so Claude Code rewrites Bash commands through rtk.
+The rtk `PreToolUse` entries live in [`home/.chezmoitemplates/rtk_hook_claude.json`](../home/.chezmoitemplates/rtk_hook_claude.json) and [`home/.chezmoitemplates/rtk_hook_codex.json`](../home/.chezmoitemplates/rtk_hook_codex.json). The workstation's `~/.claude/settings.json` and `~/.codex/hooks.json` templates include them, and the installer wraps each in a `{"hooks": {"PreToolUse": [...]}}` file per repository:
+
+| File | Agent | Runs |
+|---|---|---|
+| `.claude/settings.local.json` | Claude Code | `rtk hook claude`; does nothing when `rtk` is not on `PATH` |
+| `.codex/hooks.json` | Codex | `$CODEX_HOME/hooks/rtk-codex.sh`, the workstation script, which needs `jq`. The command names `~/.codex`, so it assumes the default `CODEX_HOME` |
 
 - An existing file, or a dangling symlink, is kept as is; merge the hook into it by hand if needed.
-- A repository whose `.claude` is a symlink is skipped.
-- Unless Git already ignores the file, `/.claude/settings.local.json` is appended to the repository's `info/exclude`, which is not committed.
-- Codex does not read this file; no Codex hook is configured.
-- Like the identity, the file exists only in repositories present when the installer runs.
+- A repository whose `.claude` or `.codex` is a symlink is skipped for that agent.
+- Unless Git already ignores a file, its path is appended to the repository's `info/exclude`, which is not committed.
+- Hooks rewrite commands to a bare `rtk ...`, so they apply only when `rtk` is on `PATH`; the installer does not fall back to `~/.local/bin/rtk`.
+- Like the identity, the files exist only in repositories present when the installer runs.
 
 ## How it works
 
@@ -195,4 +204,4 @@ sh -n scripts/install-agent-cloud.sh
 python3 -m unittest discover -s tests -v
 ```
 
-The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, per-repository commit identity and rtk hook, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.
+The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, per-repository commit identity and rtk hooks, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.

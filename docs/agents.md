@@ -7,6 +7,7 @@
 | Repository instructions | `AGENTS.md` | Edit locations and chezmoi deployment |
 | Shared preferences | `home/dot_agents/AGENTS.md` | Language, local tools, authorization, and completion |
 | Agent role prompts and descriptions | `home/.chezmoitemplates/agent_*` | Shared by Codex, Claude Code, and OpenCode wrappers |
+| rtk rewrite hooks | `home/.chezmoitemplates/rtk_hook_*.json` | Included by the Claude Code and Codex hook templates and by the [cloud installer](agent-cloud.md#rtk-hooks) |
 | Harness role configuration | `home/dot_codex/agents/`, `home/dot_claude/agents/`, `home/dot_config/opencode/agents/` | Models, effort, and tool permissions |
 | Self-authored skills | `skills/<name>/SKILL.md` | Task-specific routing and completion contracts |
 | Supporting knowledge | `skills/<name>/references/` and `assets/` | Examples and details loaded for the selected task |

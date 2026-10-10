@@ -1,5 +1,6 @@
 """Exercise the shell entrypoint in disposable homes; no production Python."""
 import io
+import json
 import os
 import shutil
 from pathlib import Path
@@ -40,7 +41,10 @@ class InstallerTests(unittest.TestCase):
                 "home/dot_agents/AGENTS.md": "# Prefs\n\nshared\n\n## Local Environment\n\n- alias\n",
                 "cloud/AGENTS.md": "## Cloud Session\n",
                 "cloud/codex/config.toml": "model_reasoning_effort = 'high'\n",
-                "cloud/claude/settings.local.json": "{}\n",
+                "home/.chezmoitemplates/rtk_hook_claude.json": '{"matcher": "Bash"}\n',
+                "home/.chezmoitemplates/rtk_hook_codex.json": '{"matcher": "exec"}\n',
+                "home/dot_codex/hooks/executable_rtk-codex.sh": "rtk codex fixture\n",
+                "home/dot_agents/private_RTK.md": "rtk notes\n",
             }.items():
                 info = tarfile.TarInfo(f"hayatosc-dotfiles-{REF[:7]}/{name}")
                 info.size = len(value.encode())
@@ -128,6 +132,8 @@ cp "$src" "$last"
         self.assertEqual((self.codex / "AGENTS.md").read_text(), instructions)
         self.assertEqual((self.claude / "CLAUDE.md").read_text(), instructions)
         self.assertTrue((self.codex / "config.toml").is_file())
+        self.assertEqual((self.codex / "hooks/rtk-codex.sh").read_text(), "rtk codex fixture\n")
+        self.assertEqual((self.home / ".agents/RTK.md").read_text(), "rtk notes\n")
         # Cloud sessions do not read user settings.json, so none is seeded.
         self.assertFalse((self.claude / "settings.json").exists())
 
@@ -188,7 +194,9 @@ cp "$src" "$last"
         for repo in repos:
             self.assertEqual(self.git_identity(repo), ["hayatosc", "145091553+hayatosc@users.noreply.github.com"])
             self.assertIn(f"set commit identity in {repo}", result.stdout)
-            self.assertEqual((repo / ".claude/settings.local.json").read_text(), "{}\n")
+            for path, matcher in ((".claude/settings.local.json", "Bash"), (".codex/hooks.json", "exec")):
+                hooks = json.loads((repo / path).read_text())
+                self.assertEqual(hooks, {"hooks": {"PreToolUse": [{"matcher": matcher}]}})
         self.assertFalse((self.cwd / "plain/.git").exists())
         self.assertFalse((self.cwd / "plain/.claude").exists())
         # The nested repositories are untracked from the outer one, so check each alone.
@@ -196,7 +204,7 @@ cp "$src" "$last"
                                 capture_output=True, text=True, check=True)
         self.assertEqual(status.stdout, "")
 
-    def test_rerun_keeps_claude_settings_and_single_exclude(self):
+    def test_rerun_keeps_hook_files_and_single_exclude(self):
         repo = self.cwd
         subprocess.run([REAL_GIT, "init", "-q", str(repo)], check=True)
         (repo / ".claude").mkdir()
@@ -204,8 +212,9 @@ cp "$src" "$last"
         self.run_install()
         self.run_install()
         self.assertEqual((repo / ".claude/settings.local.json").read_text(), "user settings")
-        exclude = (repo / ".git/info/exclude").read_text()
+        exclude = (repo / ".git/info/exclude").read_text().splitlines()
         self.assertEqual(exclude.count("/.claude/settings.local.json"), 1)
+        self.assertEqual(exclude.count("/.codex/hooks.json"), 1)
 
     def test_symlinked_claude_dir_is_skipped(self):
         subprocess.run([REAL_GIT, "init", "-q", str(self.cwd)], check=True)
@@ -216,6 +225,14 @@ cp "$src" "$last"
         self.assertIn("skipping symlinked", result.stderr)
         self.assertEqual(list(elsewhere.iterdir()), [])
         self.assertEqual(self.git_identity(self.cwd)[0], "hayatosc")
+        self.assertTrue((self.cwd / ".codex/hooks.json").is_file())
+
+    def test_desktop_templates_include_shared_rtk_hooks(self):
+        # The cloud hook files are built from the fragments the desktop configs render.
+        for template, fragment in (("home/dot_claude/private_settings.json.tmpl", "rtk_hook_claude.json"),
+                                   ("home/dot_codex/hooks.json.tmpl", "rtk_hook_codex.json")):
+            self.assertIn(f'{{{{ template "{fragment}" . }}}}', (ROOT / template).read_text())
+            json.loads((ROOT / "home/.chezmoitemplates" / fragment).read_text())
 
     def test_identity_override_and_root(self):
         repo = self.root / "elsewhere"

@@ -57,7 +57,12 @@ jobs:
           test "$("$HOME/.local/bin/rtk" --version)" = "rtk 0.51.0"
           # The installer runs in this checkout, so it sets the local identity here.
           test "$(git config --local user.email)" = "145091553+hayatosc@users.noreply.github.com"
-          cmp cloud/claude/settings.local.json .claude/settings.local.json
-          git check-ignore -q .claude/settings.local.json
-          test "$(grep -cx /.claude/settings.local.json .git/info/exclude)" -eq 1
+          test -f "$CODEX_HOME/hooks/rtk-codex.sh"
+          test -f "$HOME/.agents/RTK.md"
+          for pair in claude:.claude/settings.local.json codex:.codex/hooks.json; do
+            file=${pair#*:}
+            test "$(jq -c . "$file")" = "$(jq -c '{hooks: {PreToolUse: [.]}}' "home/.chezmoitemplates/rtk_hook_${pair%%:*}.json")"
+            git check-ignore -q "$file"
+            test "$(grep -cx "/$file" .git/info/exclude)" -eq 1
+          done
           if grep -q '^## Local Environment' "$CLAUDE_CONFIG_DIR/CLAUDE.md"; then exit 1; fi

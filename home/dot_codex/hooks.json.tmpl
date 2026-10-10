@@ -19,16 +19,7 @@
       }
     ],
     "PreToolUse": [
-      {
-        "hooks": [
-          {
-            "command": "/bin/bash ~/.codex/hooks/rtk-codex.sh",
-            "timeout": 5,
-            "type": "command"
-          }
-        ],
-        "matcher": "(Bash|exec|exec_command)"
-      }
+      {{ template "rtk_hook_codex.json" . }}
     ],
     "SessionStart": [
       {
