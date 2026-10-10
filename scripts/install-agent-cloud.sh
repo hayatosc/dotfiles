@@ -24,7 +24,7 @@ main() (
     agents_skills=$HOME/.agents/skills
     bin=$HOME/.local/bin
     # Each check walks every ancestor, so this also covers $claude itself.
-    for path in "$codex" "$claude/skills" "$data" "$agents_skills" "$bin"; do
+    for path in "$codex/hooks" "$claude/skills" "$data" "$agents_skills" "$bin"; do
         case $path in /*) ;; *) die "absolute path required: $path" ;; esac
         while [ "$path" != / ] && [ "${path%/}" != "$path" ]; do path=${path%/}; done
         while [ "$path" != / ]; do
@@ -94,6 +94,11 @@ main() (
     awk '/^## /{skip=($0 == "## Local Environment")} !skip' \
         "$repo/home/dot_agents/AGENTS.md" > "$work/AGENTS.md"
     cat "$repo/cloud/AGENTS.md" >> "$work/AGENTS.md"
+    # Repository-local hook files wrap the rtk entries shared with the desktop templates.
+    for agent in claude codex; do
+        printf '{ "hooks": { "PreToolUse": [ %s ] } }\n' \
+            "$(cat "$repo/home/.chezmoitemplates/rtk_hook_$agent.json")" > "$work/hooks.$agent.json"
+    done
     # Preflight every name before publishing. Only our exact link is replaceable.
     preflight() {
         for skill in "$stage"/.agents/skills/*; do
@@ -116,12 +121,14 @@ main() (
         [ -L "$data/current" ] || die "existing deployment: $data/current"
         case $(readlink "$data/current") in "$data"/install.*) ;; *) die 'unrecognized current deployment' ;; esac
     fi
-    mkdir -p "$agents_skills" "$claude/skills" "$codex" "$bin"
+    mkdir -p "$agents_skills" "$claude/skills" "$codex/hooks" "$bin"
     # Copy seed files only when absent, including dangling user symlinks.
     seed() { [ -e "$2" ] || [ -L "$2" ] || cp "$1" "$2"; }
     seed "$work/AGENTS.md" "$codex/AGENTS.md"
     seed "$repo/cloud/codex/config.toml" "$codex/config.toml"
+    seed "$repo/home/dot_codex/hooks/executable_rtk-codex.sh" "$codex/hooks/rtk-codex.sh"
     seed "$work/AGENTS.md" "$claude/CLAUDE.md"
+    seed "$repo/home/dot_agents/private_RTK.md" "$HOME/.agents/RTK.md"
     ln -s "$stage" "$data/lock/current"
     mv -Tf "$data/lock/current" "$data/current"
     live=$stage
@@ -148,6 +155,8 @@ main() (
     fi
     # Commit as the owner in every repository checked out under the working
     # directory. Repository-local user.* outranks the platform's ~/.gitconfig.
+    # Claude Code cloud sessions skip ~/.claude/settings.json, so the rtk hooks
+    # go into each repository's local agent settings, excluded from Git.
     git_root=${DOTFILES_GIT_ROOT:-$PWD}
     find "$git_root" -maxdepth 3 -name .git -prune -print |
         while IFS= read -r dotgit; do
@@ -155,6 +164,20 @@ main() (
             git -C "$repo_dir" config user.name "${DOTFILES_GIT_NAME:-hayatosc}"
             git -C "$repo_dir" config user.email "${DOTFILES_GIT_EMAIL:-145091553+hayatosc@users.noreply.github.com}"
             printf 'agent-cloud: set commit identity in %s\n' "$repo_dir"
+            for hook_file in .claude/settings.local.json .codex/hooks.json; do
+                agent_dir=${hook_file%%/*}
+                if [ -L "$repo_dir/$agent_dir" ]; then
+                    printf 'agent-cloud: skipping symlinked %s\n' "$repo_dir/$agent_dir" >&2
+                    continue
+                fi
+                mkdir -p "$repo_dir/$agent_dir"
+                seed "$work/hooks$agent_dir.json" "$repo_dir/$hook_file"
+                if ! git -C "$repo_dir" check-ignore -q "$hook_file"; then
+                    exclude=$(git -C "$repo_dir" rev-parse --path-format=absolute --git-path info/exclude)
+                    mkdir -p "$(dirname "$exclude")"
+                    printf '/%s\n' "$hook_file" >> "$exclude"
+                fi
+            done
         done
     # Links resolve through current, so superseded generations are unreferenced.
     for old in "$data"/install.*; do

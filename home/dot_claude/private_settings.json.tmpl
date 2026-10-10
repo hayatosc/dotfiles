@@ -63,15 +63,7 @@
       }
     ],
     "PreToolUse": [
-      {
-        "hooks": [
-          {
-            "command": "rtk hook claude",
-            "type": "command"
-          }
-        ],
-        "matcher": "Bash"
-      },
+      {{ template "rtk_hook_claude.json" . }},
       {
         "hooks": [
           {
