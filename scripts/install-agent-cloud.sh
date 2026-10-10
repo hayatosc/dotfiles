@@ -148,6 +148,8 @@ main() (
     fi
     # Commit as the owner in every repository checked out under the working
     # directory. Repository-local user.* outranks the platform's ~/.gitconfig.
+    # Cloud sessions skip ~/.claude/settings.json, so the rtk hook goes into
+    # each repository's local settings, excluded from Git.
     git_root=${DOTFILES_GIT_ROOT:-$PWD}
     find "$git_root" -maxdepth 3 -name .git -prune -print |
         while IFS= read -r dotgit; do
@@ -155,6 +157,17 @@ main() (
             git -C "$repo_dir" config user.name "${DOTFILES_GIT_NAME:-hayatosc}"
             git -C "$repo_dir" config user.email "${DOTFILES_GIT_EMAIL:-145091553+hayatosc@users.noreply.github.com}"
             printf 'agent-cloud: set commit identity in %s\n' "$repo_dir"
+            if [ -L "$repo_dir/.claude" ]; then
+                printf 'agent-cloud: skipping symlinked %s\n' "$repo_dir/.claude" >&2
+                continue
+            fi
+            mkdir -p "$repo_dir/.claude"
+            seed "$repo/cloud/claude/settings.local.json" "$repo_dir/.claude/settings.local.json"
+            if ! git -C "$repo_dir" check-ignore -q .claude/settings.local.json; then
+                exclude=$(git -C "$repo_dir" rev-parse --path-format=absolute --git-path info/exclude)
+                mkdir -p "$(dirname "$exclude")"
+                printf '%s\n' /.claude/settings.local.json >> "$exclude"
+            fi
         done
     # Links resolve through current, so superseded generations are unreferenced.
     for old in "$data"/install.*; do

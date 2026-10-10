@@ -20,14 +20,15 @@ Keep `pipefail`: a plain POSIX pipeline reports only the receiving shell's statu
 | `$CODEX_HOME/config.toml` | [Codex reasoning defaults](../cloud/codex/config.toml), written only if absent |
 | `~/.local/bin/rtk` | Link to [rtk](https://github.com/rtk-ai/rtk) 0.51.0, the version pinned in mise |
 | `$XDG_DATA_HOME/dotfiles-agent-cloud` | The installed generation and its `current` link |
+| `<repository>/.claude/settings.local.json` | [rtk rewrite hook](../cloud/claude/settings.local.json) for Claude Code, written only if absent and excluded from Git; see [Per-repository setup](#per-repository-setup) |
 
 Defaults: `CODEX_HOME=~/.codex`, `CLAUDE_CONFIG_DIR=~/.claude`, `XDG_DATA_HOME=~/.local/share`.
 
 The instruction file is generated from [`home/dot_agents/AGENTS.md`](../home/dot_agents/AGENTS.md) without its `## Local Environment` section, followed by the [cloud notes](../cloud/AGENTS.md). Keep that heading name when editing the shared file; a unit test guards it.
 
-The cloud notes tell the agent to prefix output-heavy commands with `rtk`. On the workstation a PreToolUse hook rewrites commands automatically, but neither cloud platform gives this installer a documented way to register that hook (see below), so the cloud uses rtk explicitly.
+On the workstation a PreToolUse hook rewrites commands through rtk. Claude Code cloud sessions do not read `~/.claude/settings.json`, so the installer writes the hook into each repository's `.claude/settings.local.json` instead (see [What Claude Code reads](#what-claude-code-reads)). Codex Cloud gives the installer no way to register a hook. Where no hook applies, the cloud notes tell the agent to prefix output-heavy commands with `rtk` itself.
 
-Existing files and dangling symlinks are left alone without reading their contents. An existing `~/.local/bin/rtk` that this installer did not create is kept. Skills the platform already places in `~/.claude/skills` are untouched. No auth, account, shell startup, plugins, hooks, MCP servers, or other optional skill CLIs are configured.
+Existing files and dangling symlinks are left alone without reading their contents. An existing `~/.local/bin/rtk` that this installer did not create is kept. Skills the platform already places in `~/.claude/skills` are untouched. Apart from the per-repository rtk hook, no auth, account, shell startup, plugins, hooks, MCP servers, or other optional skill CLIs are configured.
 
 ## Claude Code on the web
 
@@ -64,8 +65,9 @@ Traffic passes through an HTTPS-intercepting proxy. The installer forwards the p
 | `~/.claude/settings.json` | No, documented: user settings are not read, so the installer does not write one |
 | `~/.claude/skills/<name>` written by a setup script | Not documented; the platform itself places skills in this directory. Verify after setup |
 | Repository `.claude/settings.json` | Yes, in a session with one repository |
+| Repository `.claude/settings.local.json` written by a setup script | Documented as not read, giving the reason that the file is not in the clone. Observed: a file created inside the clone is loaded, even mid-session, and its hooks run. Verify after setup |
 
-Because user settings are not read, choose the model, effort, and permission mode in the session UI. For permission rules or hooks, commit them to a repository's `.claude/settings.json`. For example, this enables the rtk rewrite hook for one repository and does nothing where rtk is absent:
+Because user settings are not read, choose the model, effort, and permission mode in the session UI. The installer relies on the observed `settings.local.json` behavior for the rtk hook. For permission rules or hooks that must not depend on it, commit them to a repository's `.claude/settings.json`. For example, this is the rtk rewrite hook the installer writes, and it does nothing where rtk is absent:
 
 ```json
 {
@@ -91,6 +93,7 @@ Start a new session and check:
 - Asking Claude which skills are available lists the repository skills, for example `coding-style`.
 - `rtk --version` prints `rtk 0.51.0`.
 - `git config --local user.email` in the repository prints `145091553+hayatosc@users.noreply.github.com`.
+- A plain `git status` run by Claude prints rtk's compact output, such as `* <branch>` followed by `clean — nothing to commit`.
 
 ## Codex cloud
 
@@ -136,14 +139,28 @@ During setup, and again in a new task after publishing, ask Codex to:
 
 Check that `$HOME` is the same during setup and in the task; the skill and rtk links point into `$HOME/.local/share/dotfiles-agent-cloud`.
 
-## Commit identity
+## Per-repository setup
 
-Cloud agents commit with the platform's identity; Claude Code on the web, for example, writes `Claude <noreply@anthropic.com>` to `~/.gitconfig`. After installing, the installer looks for Git repositories in its working directory and up to three levels below, and runs `git config user.name` and `git config user.email` in each one. The repository-local values outrank the platform's global ones, so both the author and the committer become `hayatosc <145091553+hayatosc@users.noreply.github.com>`, the GitHub noreply address that links commits to the account without exposing a mail address.
+After installing, the installer looks for Git repositories in its working directory and up to three levels below, and configures each one.
+
+### Commit identity
+
+Cloud agents commit with the platform's identity; Claude Code on the web, for example, writes `Claude <noreply@anthropic.com>` to `~/.gitconfig`. The installer runs `git config user.name` and `git config user.email` in each repository. The repository-local values outrank the platform's global ones, so both the author and the committer become `hayatosc <145091553+hayatosc@users.noreply.github.com>`, the GitHub noreply address that links commits to the account without exposing a mail address.
 
 - Set `DOTFILES_GIT_ROOT` to search another directory, and `DOTFILES_GIT_NAME` / `DOTFILES_GIT_EMAIL` to use another identity.
 - Global Git configuration is not changed, and repositories outside the searched directory keep the platform identity.
 - The platform still signs commits with its own key. With the committer no longer matching that key's account, GitHub may show the signature as **Unverified**.
 - The identity is set when the installer runs. A repository cloned after setup, or a fresh clone in a session that reuses a cached setup, does not get it; see the verification steps.
+
+### rtk hook
+
+The installer copies [`cloud/claude/settings.local.json`](../cloud/claude/settings.local.json) to `.claude/settings.local.json` in each repository, so Claude Code rewrites Bash commands through rtk.
+
+- An existing file, or a dangling symlink, is kept as is; merge the hook into it by hand if needed.
+- A repository whose `.claude` is a symlink is skipped.
+- Unless Git already ignores the file, `/.claude/settings.local.json` is appended to the repository's `info/exclude`, which is not committed.
+- Codex does not read this file; no Codex hook is configured.
+- Like the identity, the file exists only in repositories present when the installer runs.
 
 ## How it works
 
@@ -178,4 +195,4 @@ sh -n scripts/install-agent-cloud.sh
 python3 -m unittest discover -s tests -v
 ```
 
-The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, per-repository commit identity, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.
+The focused tests exercise the POSIX pipe entrypoint, `main` resolution and explicit refs, first install/rerun, generation pruning, instruction/config preservation for both agents, the rtk link, per-repository commit identity and rtk hook, unrelated skills, collisions, CA forwarding, dependency/download/checksum failures, and redirected destinations in disposable homes. Python is test-only. CI also runs the real installer twice for the pull request's commit in an isolated HOME. Desktop chezmoi/mise behavior is unchanged.

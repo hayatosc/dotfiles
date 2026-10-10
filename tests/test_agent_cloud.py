@@ -40,6 +40,7 @@ class InstallerTests(unittest.TestCase):
                 "home/dot_agents/AGENTS.md": "# Prefs\n\nshared\n\n## Local Environment\n\n- alias\n",
                 "cloud/AGENTS.md": "## Cloud Session\n",
                 "cloud/codex/config.toml": "model_reasoning_effort = 'high'\n",
+                "cloud/claude/settings.local.json": "{}\n",
             }.items():
                 info = tarfile.TarInfo(f"hayatosc-dotfiles-{REF[:7]}/{name}")
                 info.size = len(value.encode())
@@ -187,7 +188,34 @@ cp "$src" "$last"
         for repo in repos:
             self.assertEqual(self.git_identity(repo), ["hayatosc", "145091553+hayatosc@users.noreply.github.com"])
             self.assertIn(f"set commit identity in {repo}", result.stdout)
+            self.assertEqual((repo / ".claude/settings.local.json").read_text(), "{}\n")
         self.assertFalse((self.cwd / "plain/.git").exists())
+        self.assertFalse((self.cwd / "plain/.claude").exists())
+        # The nested repositories are untracked from the outer one, so check each alone.
+        status = subprocess.run([REAL_GIT, "-C", str(self.cwd / "a"), "status", "--porcelain"],
+                                capture_output=True, text=True, check=True)
+        self.assertEqual(status.stdout, "")
+
+    def test_rerun_keeps_claude_settings_and_single_exclude(self):
+        repo = self.cwd
+        subprocess.run([REAL_GIT, "init", "-q", str(repo)], check=True)
+        (repo / ".claude").mkdir()
+        (repo / ".claude/settings.local.json").write_text("user settings")
+        self.run_install()
+        self.run_install()
+        self.assertEqual((repo / ".claude/settings.local.json").read_text(), "user settings")
+        exclude = (repo / ".git/info/exclude").read_text()
+        self.assertEqual(exclude.count("/.claude/settings.local.json"), 1)
+
+    def test_symlinked_claude_dir_is_skipped(self):
+        subprocess.run([REAL_GIT, "init", "-q", str(self.cwd)], check=True)
+        elsewhere = self.root / "elsewhere"
+        elsewhere.mkdir()
+        (self.cwd / ".claude").symlink_to(elsewhere)
+        result = self.run_install()
+        self.assertIn("skipping symlinked", result.stderr)
+        self.assertEqual(list(elsewhere.iterdir()), [])
+        self.assertEqual(self.git_identity(self.cwd)[0], "hayatosc")
 
     def test_identity_override_and_root(self):
         repo = self.root / "elsewhere"
