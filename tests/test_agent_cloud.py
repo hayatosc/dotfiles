@@ -227,6 +227,40 @@ cp "$src" "$last"
         self.assertEqual(self.git_identity(self.cwd)[0], "hayatosc")
         self.assertTrue((self.cwd / ".codex/hooks.json").is_file())
 
+    def test_file_agent_dir_is_skipped(self):
+        subprocess.run([REAL_GIT, "init", "-q", str(self.cwd)], check=True)
+        (self.cwd / ".codex").write_text("")
+        result = self.run_install()
+        self.assertIn("skipping non-directory", result.stderr)
+        self.assertEqual(self.git_identity(self.cwd)[0], "hayatosc")
+        self.assertTrue((self.cwd / ".claude/settings.local.json").is_file())
+        self.assertFalse((self.cwd / ".codex/hooks.json").exists())
+
+    def test_claude_cloud_scopes_to_claude_only(self):
+        subprocess.run([REAL_GIT, "init", "-q", str(self.cwd)], check=True)
+        # Even with an obstructing .codex file, Claude cloud skips codex entirely.
+        (self.cwd / ".codex").write_text("")
+        self.env.update(CLAUDE_CODE_REMOTE="true")
+        result = self.run_install()
+        self.assertNotIn("skipping non-directory", result.stderr)
+        self.assertTrue((self.claude / "CLAUDE.md").is_file())
+        self.assertTrue((self.claude / "skills").is_dir())
+        self.assertTrue((self.cwd / ".claude/settings.local.json").is_file())
+        self.assertFalse((self.codex / "AGENTS.md").exists())
+        self.assertFalse((self.codex / "config.toml").exists())
+        self.assertFalse((self.codex / "hooks").exists())
+        self.assertFalse((self.cwd / ".codex/hooks.json").exists())
+
+    def test_agent_override_scopes_target_agent(self):
+        subprocess.run([REAL_GIT, "init", "-q", str(self.cwd)], check=True)
+        self.env.update(DOTFILES_AGENT="codex")
+        self.run_install()
+        self.assertTrue((self.codex / "AGENTS.md").is_file())
+        self.assertTrue((self.cwd / ".codex/hooks.json").is_file())
+        self.assertFalse((self.claude / "CLAUDE.md").exists())
+        self.assertFalse((self.claude / "skills").exists())
+        self.assertFalse((self.cwd / ".claude/settings.local.json").exists())
+
     def test_desktop_templates_include_shared_rtk_hooks(self):
         # The cloud hook files are built from the fragments the desktop configs render.
         for template, fragment in (("home/dot_claude/private_settings.json.tmpl", "rtk_hook_claude.json"),

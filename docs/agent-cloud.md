@@ -47,7 +47,7 @@ Environments you create are personal. Shared environments created by an organiza
 
 ### How the setup script runs
 
-- Bash, as root, on Ubuntu 24.04 x86_64, before Claude Code launches in a new session. `HOME` is `/root`.
+- Bash on Ubuntu 24.04 x86_64, before Claude Code launches in a new session. `CLAUDE_CODE_REMOTE` is set to `true`.
 - A non-zero exit makes the session fail to start. Keep `set -euo pipefail`: a failed install is then retried by the next session instead of being cached.
 - When setup finishes within roughly five minutes, the filesystem is snapshotted and reused by later sessions, which skip the script. The script runs again when you change it or the allowed network hosts, or after the cache expires (roughly seven days). It does not run when an idle session resumes.
 
@@ -166,7 +166,8 @@ The rtk `PreToolUse` entries live in [`home/.chezmoitemplates/rtk_hook_claude.js
 | `.codex/hooks.json` | Codex | `$CODEX_HOME/hooks/rtk-codex.sh`, the workstation script, which needs `jq`. The command names `~/.codex`, so it assumes the default `CODEX_HOME` |
 
 - An existing file, or a dangling symlink, is kept as is; merge the hook into it by hand if needed.
-- A repository whose `.claude` or `.codex` is a symlink is skipped for that agent.
+- A repository whose `.claude` or `.codex` is a symlink or a non-directory file is skipped for that agent.
+- In Claude Code cloud sessions (`CLAUDE_CODE_REMOTE=true`), setup automatically targets Claude Code only, skipping Codex files and hooks. Set `DOTFILES_AGENT` (`claude`, `codex`, or `all`) to override target agent selection.
 - Unless Git already ignores a file, its path is appended to the repository's `info/exclude`, which is not committed.
 - Hooks rewrite commands to a bare `rtk ...`, so they apply only when `rtk` is on `PATH`; the installer does not fall back to `~/.local/bin/rtk`.
 - Like the identity, the files exist only in repositories present when the installer runs.

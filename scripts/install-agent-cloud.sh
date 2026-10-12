@@ -23,8 +23,26 @@ main() (
     data=${XDG_DATA_HOME:-$HOME/.local/share}/dotfiles-agent-cloud
     agents_skills=$HOME/.agents/skills
     bin=$HOME/.local/bin
-    # Each check walks every ancestor, so this also covers $claude itself.
-    for path in "$codex/hooks" "$claude/skills" "$data" "$agents_skills" "$bin"; do
+    target_agents=${DOTFILES_AGENT:-}
+    if [ -z "$target_agents" ]; then
+        if [ "${CLAUDE_CODE_REMOTE:-}" = true ] || [ -n "${CLAUDE_CODE_REMOTE_SESSION_ID:-}" ]; then
+            target_agents=claude
+        elif [ "${CODEX_CLOUD:-}" = true ]; then
+            target_agents=codex
+        else
+            target_agents="claude codex"
+        fi
+    fi
+    case $target_agents in
+        all) target_agents="claude codex" ;;
+        claude|codex|"claude codex") ;;
+        *) die "unrecognized target agent: $target_agents" ;;
+    esac
+    set -- "$data" "$agents_skills" "$bin"
+    case " $target_agents " in *" claude "*) set -- "$@" "$claude/skills" ;; esac
+    case " $target_agents " in *" codex "*) set -- "$@" "$codex/hooks" ;; esac
+    # Each check walks every ancestor, so this also covers $claude and $codex itself.
+    for path in "$@"; do
         case $path in /*) ;; *) die "absolute path required: $path" ;; esac
         while [ "$path" != / ] && [ "${path%/}" != "$path" ]; do path=${path%/}; done
         while [ "$path" != / ]; do
@@ -95,7 +113,7 @@ main() (
         "$repo/home/dot_agents/AGENTS.md" > "$work/AGENTS.md"
     cat "$repo/cloud/AGENTS.md" >> "$work/AGENTS.md"
     # Repository-local hook files wrap the rtk entries shared with the desktop templates.
-    for agent in claude codex; do
+    for agent in $target_agents; do
         printf '{ "hooks": { "PreToolUse": [ %s ] } }\n' \
             "$(cat "$repo/home/.chezmoitemplates/rtk_hook_$agent.json")" > "$work/hooks.$agent.json"
     done
@@ -111,7 +129,7 @@ main() (
         done
     }
     preflight "$agents_skills"
-    preflight "$claude/skills"
+    case " $target_agents " in *" claude "*) preflight "$claude/skills" ;; esac
     # rtk is optional tooling: an unmanaged rtk at the link path stays as is.
     link_rtk=1
     if [ -e "$bin/rtk" ] || [ -L "$bin/rtk" ]; then
@@ -121,13 +139,24 @@ main() (
         [ -L "$data/current" ] || die "existing deployment: $data/current"
         case $(readlink "$data/current") in "$data"/install.*) ;; *) die 'unrecognized current deployment' ;; esac
     fi
-    mkdir -p "$agents_skills" "$claude/skills" "$codex/hooks" "$bin"
+    set -- "$agents_skills" "$bin"
+    case " $target_agents " in *" claude "*) set -- "$@" "$claude/skills" ;; esac
+    case " $target_agents " in *" codex "*) set -- "$@" "$codex/hooks" ;; esac
+    mkdir -p "$@"
     # Copy seed files only when absent, including dangling user symlinks.
     seed() { [ -e "$2" ] || [ -L "$2" ] || cp "$1" "$2"; }
-    seed "$work/AGENTS.md" "$codex/AGENTS.md"
-    seed "$repo/cloud/codex/config.toml" "$codex/config.toml"
-    seed "$repo/home/dot_codex/hooks/executable_rtk-codex.sh" "$codex/hooks/rtk-codex.sh"
-    seed "$work/AGENTS.md" "$claude/CLAUDE.md"
+    case " $target_agents " in
+        *" codex "*)
+            seed "$work/AGENTS.md" "$codex/AGENTS.md"
+            seed "$repo/cloud/codex/config.toml" "$codex/config.toml"
+            seed "$repo/home/dot_codex/hooks/executable_rtk-codex.sh" "$codex/hooks/rtk-codex.sh"
+            ;;
+    esac
+    case " $target_agents " in
+        *" claude "*)
+            seed "$work/AGENTS.md" "$claude/CLAUDE.md"
+            ;;
+    esac
     seed "$repo/home/dot_agents/private_RTK.md" "$HOME/.agents/RTK.md"
     ln -s "$stage" "$data/lock/current"
     mv -Tf "$data/lock/current" "$data/current"
@@ -147,7 +176,7 @@ main() (
         done
     }
     publish "$agents_skills"
-    publish "$claude/skills"
+    case " $target_agents " in *" claude "*) publish "$claude/skills" ;; esac
     if [ -z "$link_rtk" ]; then
         printf 'agent-cloud: keeping existing %s\n' "$bin/rtk" >&2
     elif [ ! -L "$bin/rtk" ]; then
@@ -164,10 +193,17 @@ main() (
             git -C "$repo_dir" config user.name "${DOTFILES_GIT_NAME:-hayatosc}"
             git -C "$repo_dir" config user.email "${DOTFILES_GIT_EMAIL:-145091553+hayatosc@users.noreply.github.com}"
             printf 'agent-cloud: set commit identity in %s\n' "$repo_dir"
-            for hook_file in .claude/settings.local.json .codex/hooks.json; do
+            hook_files=
+            case " $target_agents " in *" claude "*) hook_files="$hook_files .claude/settings.local.json" ;; esac
+            case " $target_agents " in *" codex "*) hook_files="$hook_files .codex/hooks.json" ;; esac
+            for hook_file in $hook_files; do
                 agent_dir=${hook_file%%/*}
                 if [ -L "$repo_dir/$agent_dir" ]; then
                     printf 'agent-cloud: skipping symlinked %s\n' "$repo_dir/$agent_dir" >&2
+                    continue
+                fi
+                if [ -e "$repo_dir/$agent_dir" ] && [ ! -d "$repo_dir/$agent_dir" ]; then
+                    printf 'agent-cloud: skipping non-directory %s\n' "$repo_dir/$agent_dir" >&2
                     continue
                 fi
                 mkdir -p "$repo_dir/$agent_dir"
