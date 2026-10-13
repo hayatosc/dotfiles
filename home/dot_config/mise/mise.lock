@@ -11310,10 +11310,10 @@ backend = "npm:bash-language-server"
 specifiers = ["5.8.1"]
 
 [[tools."npm:typescript-language-server"]]
-version = "6.0.1"
-aube = { path = ".mise/locks/npm-typescript-language-server/6.0.1", digest = "sha256:cd5db34273d07076d582ba959987cbd36e89c20d479a4671433aca4f6bdc3c7e" }
+version = "6.0.2"
+aube = { path = ".mise/locks/npm-typescript-language-server/6.0.2", digest = "sha256:c04c228752c1b960fe23a17ede2a5332d60f7a757f2485adadabf23ec0facdf0" }
 backend = "npm:typescript-language-server"
-specifiers = ["6.0.1"]
+specifiers = ["6.0.2"]
 
 [[tools."npm:vscode-langservers-extracted"]]
 version = "4.10.0"
@@ -11322,10 +11322,10 @@ backend = "npm:vscode-langservers-extracted"
 specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
-version = "1.24.0"
-aube = { path = ".mise/locks/npm-yaml-language-server/1.24.0", digest = "sha256:7c022b5f4defd5f330ee467d7ffbbd54b900d67a20def7f0c7855ba4ca74e359" }
+version = "1.25.0"
+aube = { path = ".mise/locks/npm-yaml-language-server/1.25.0", digest = "sha256:ef75760496e2bf86d47dedca0f87fc232adcfce2ca92bdf3ff796635e708ddbd" }
 backend = "npm:yaml-language-server"
-specifiers = ["1.24.0"]
+specifiers = ["1.25.0"]
 
 [[tools.opencode]]
 version = "1.18.35"
