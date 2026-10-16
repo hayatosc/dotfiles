@@ -466,9 +466,9 @@ checksum = "sha256:0dc50d841a93971569830a47f5a216827126cdfcaa0591ad4dd92091ccaf7
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libunwind-1.8.3-h6470e1d_0.conda"
 checksum = "sha256:86c013d522975b76e16a74341bfcb22f6ec2e9b8b87ec3e15380f46c435eaa7b"
 
-[conda-packages.linux-arm64."liburing-2.14-hfefdfc9_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/liburing-2.14-hfefdfc9_0.conda"
-checksum = "sha256:7584dc478a34e50c5dc0e0ceac4cb9819ff352bc3a5d0cbb001b974dab9a0967"
+[conda-packages.linux-arm64."liburing-2.14-h45ce4d5_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/liburing-2.14-h45ce4d5_1.conda"
+checksum = "sha256:901744d6e0c3b35c87e2dd6fa194f1ef7a1607fde57538999b09198ae0eda3fa"
 
 [conda-packages.linux-arm64."libusb-1.0.30-h25c9a66_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libusb-1.0.30-h25c9a66_0.conda"
@@ -1166,9 +1166,9 @@ checksum = "sha256:0dc50d841a93971569830a47f5a216827126cdfcaa0591ad4dd92091ccaf7
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libunwind-1.8.3-h6470e1d_0.conda"
 checksum = "sha256:86c013d522975b76e16a74341bfcb22f6ec2e9b8b87ec3e15380f46c435eaa7b"
 
-[conda-packages.linux-arm64-musl."liburing-2.14-hfefdfc9_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/liburing-2.14-hfefdfc9_0.conda"
-checksum = "sha256:7584dc478a34e50c5dc0e0ceac4cb9819ff352bc3a5d0cbb001b974dab9a0967"
+[conda-packages.linux-arm64-musl."liburing-2.14-h45ce4d5_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/liburing-2.14-h45ce4d5_1.conda"
+checksum = "sha256:901744d6e0c3b35c87e2dd6fa194f1ef7a1607fde57538999b09198ae0eda3fa"
 
 [conda-packages.linux-arm64-musl."libusb-1.0.30-h25c9a66_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libusb-1.0.30-h25c9a66_0.conda"
@@ -1886,9 +1886,9 @@ checksum = "sha256:81a6318191e56eabb6935c480902a58b79872f1be600d58a3328a01ba6e7d
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
 checksum = "sha256:71c8b9d5c72473752a0bb6e91b01dd209a03916cb71f36cc6a564e3a2a132d7a"
 
-[conda-packages.linux-x64."liburing-2.14-hb700be7_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/liburing-2.14-hb700be7_0.conda"
-checksum = "sha256:3d17b7aa90610afc65356e9e6149aeac0b2df19deda73a51f0a09cf04fd89286"
+[conda-packages.linux-x64."liburing-2.14-h4dbf13b_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/liburing-2.14-h4dbf13b_1.conda"
+checksum = "sha256:ae813e53b6e7bc8f06ae5a8c00be69b44e842366557641f91bf363db46322b5f"
 
 [conda-packages.linux-x64."libusb-1.0.30-h0d1bbbc_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libusb-1.0.30-h0d1bbbc_0.conda"
@@ -2626,9 +2626,9 @@ checksum = "sha256:81a6318191e56eabb6935c480902a58b79872f1be600d58a3328a01ba6e7d
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
 checksum = "sha256:71c8b9d5c72473752a0bb6e91b01dd209a03916cb71f36cc6a564e3a2a132d7a"
 
-[conda-packages.linux-x64-baseline."liburing-2.14-hb700be7_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/liburing-2.14-hb700be7_0.conda"
-checksum = "sha256:3d17b7aa90610afc65356e9e6149aeac0b2df19deda73a51f0a09cf04fd89286"
+[conda-packages.linux-x64-baseline."liburing-2.14-h4dbf13b_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/liburing-2.14-h4dbf13b_1.conda"
+checksum = "sha256:ae813e53b6e7bc8f06ae5a8c00be69b44e842366557641f91bf363db46322b5f"
 
 [conda-packages.linux-x64-baseline."libusb-1.0.30-h0d1bbbc_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libusb-1.0.30-h0d1bbbc_0.conda"
@@ -3366,9 +3366,9 @@ checksum = "sha256:81a6318191e56eabb6935c480902a58b79872f1be600d58a3328a01ba6e7d
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
 checksum = "sha256:71c8b9d5c72473752a0bb6e91b01dd209a03916cb71f36cc6a564e3a2a132d7a"
 
-[conda-packages.linux-x64-musl."liburing-2.14-hb700be7_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/liburing-2.14-hb700be7_0.conda"
-checksum = "sha256:3d17b7aa90610afc65356e9e6149aeac0b2df19deda73a51f0a09cf04fd89286"
+[conda-packages.linux-x64-musl."liburing-2.14-h4dbf13b_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/liburing-2.14-h4dbf13b_1.conda"
+checksum = "sha256:ae813e53b6e7bc8f06ae5a8c00be69b44e842366557641f91bf363db46322b5f"
 
 [conda-packages.linux-x64-musl."libusb-1.0.30-h0d1bbbc_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libusb-1.0.30-h0d1bbbc_0.conda"
@@ -4106,9 +4106,9 @@ checksum = "sha256:81a6318191e56eabb6935c480902a58b79872f1be600d58a3328a01ba6e7d
 url = "https://conda.anaconda.org/conda-forge/linux-64/libunwind-1.8.3-h65a8314_0.conda"
 checksum = "sha256:71c8b9d5c72473752a0bb6e91b01dd209a03916cb71f36cc6a564e3a2a132d7a"
 
-[conda-packages.linux-x64-musl-baseline."liburing-2.14-hb700be7_0"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/liburing-2.14-hb700be7_0.conda"
-checksum = "sha256:3d17b7aa90610afc65356e9e6149aeac0b2df19deda73a51f0a09cf04fd89286"
+[conda-packages.linux-x64-musl-baseline."liburing-2.14-h4dbf13b_1"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/liburing-2.14-h4dbf13b_1.conda"
+checksum = "sha256:ae813e53b6e7bc8f06ae5a8c00be69b44e842366557641f91bf363db46322b5f"
 
 [conda-packages.linux-x64-musl-baseline."libusb-1.0.30-h0d1bbbc_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libusb-1.0.30-h0d1bbbc_0.conda"
@@ -6928,64 +6928,64 @@ url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x8
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/471228877"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.3.3"
+version = "1.3.4"
 backend = "aqua:google-antigravity/antigravity-cli"
-specifiers = ["1.3.3"]
+specifiers = ["1.3.4"]
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:a9d23fe1d7e5c8471881ab37723571a8d3f24e6ecace8fe082f8c0c8d90f41ca"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854050"
+checksum = "sha256:56161a1849eff501fead19bc7c477ee80f26776bf470fda01c119cc345a1818c"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961761"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:a9d23fe1d7e5c8471881ab37723571a8d3f24e6ecace8fe082f8c0c8d90f41ca"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854050"
+checksum = "sha256:56161a1849eff501fead19bc7c477ee80f26776bf470fda01c119cc345a1818c"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961761"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:8ee3ca32574c431285efbf4d4732f7f8d53e959370bc4a61646e4fa496f7f2b6"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854055"
+checksum = "sha256:db5e81e8dee72d282cb1fb5fcd98dc5a43680730d71e3d637a67c874ec077ad3"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961759"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-baseline"]
-checksum = "sha256:8ee3ca32574c431285efbf4d4732f7f8d53e959370bc4a61646e4fa496f7f2b6"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854055"
+checksum = "sha256:db5e81e8dee72d282cb1fb5fcd98dc5a43680730d71e3d637a67c874ec077ad3"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961759"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:8ee3ca32574c431285efbf4d4732f7f8d53e959370bc4a61646e4fa496f7f2b6"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854055"
+checksum = "sha256:db5e81e8dee72d282cb1fb5fcd98dc5a43680730d71e3d637a67c874ec077ad3"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961759"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:8ee3ca32574c431285efbf4d4732f7f8d53e959370bc4a61646e4fa496f7f2b6"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854055"
+checksum = "sha256:db5e81e8dee72d282cb1fb5fcd98dc5a43680730d71e3d637a67c874ec077ad3"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961759"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:c39926f3312e87eaa56d750658cf442669d0a716f49319d06369be7fa80520eb"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_mac_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854165"
+checksum = "sha256:ede28149c568c69f549b796a6142ba592b44294111acf8b79cdbffae74e72147"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_mac_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961969"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:78547d90bfd1559a87ba63e941f9332a0d1889d2de415da337dedec8dc9aa239"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854054"
+checksum = "sha256:f4e5bc649cbbdc903516f5918194ffc74dc78014806dda6a6c6403df5382b4a2"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961757"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64-baseline"]
-checksum = "sha256:78547d90bfd1559a87ba63e941f9332a0d1889d2de415da337dedec8dc9aa239"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854054"
+checksum = "sha256:f4e5bc649cbbdc903516f5918194ffc74dc78014806dda6a6c6403df5382b4a2"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961757"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:877b270b9151c5758e7a8c0ef4e407024f21003e04f00d8c45c2e6be230423e6"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854178"
+checksum = "sha256:051a928f45ce91daae0029de904ba03d4eb64ef9c4909ac6c2feef6d3ad65886"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961964"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64-baseline"]
-checksum = "sha256:877b270b9151c5758e7a8c0ef4e407024f21003e04f00d8c45c2e6be230423e6"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.3/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/626854178"
+checksum = "sha256:051a928f45ce91daae0029de904ba03d4eb64ef9c4909ac6c2feef6d3ad65886"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.3.4/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/635961964"
 
 [[tools."aqua:helix-editor/helix"]]
 version = "25.07.1"
@@ -7660,7 +7660,6 @@ conda_deps = [
     "libusb-1.0.30-h25c9a66_0",
     "xorg-libxscrnsaver-1.2.4-h86ecc28_0",
     "libunwind-1.8.3-h6470e1d_0",
-    "liburing-2.14-hfefdfc9_0",
     "libgl-1.7.0-hd24410f_5",
     "libglx-1.7.0-hd24410f_5",
     "libglvnd-1.7.0-hd24410f_5",
@@ -7686,6 +7685,7 @@ conda_deps = [
     "mpg123-1.32.9-h2b27223_0",
     "libcap-2.78-hfcc8634_1",
     "zstd-1.5.7-h9d15635_7",
+    "liburing-2.14-h45ce4d5_1",
     "libxkbcommon-1.13.2-he51e330_1",
     "wayland-1.26.0-h637a836_2",
     "xorg-libxi-1.8.3-h5bc82ec_1",
@@ -7794,7 +7794,6 @@ conda_deps = [
     "libusb-1.0.30-h25c9a66_0",
     "xorg-libxscrnsaver-1.2.4-h86ecc28_0",
     "libunwind-1.8.3-h6470e1d_0",
-    "liburing-2.14-hfefdfc9_0",
     "libgl-1.7.0-hd24410f_5",
     "libglx-1.7.0-hd24410f_5",
     "libglvnd-1.7.0-hd24410f_5",
@@ -7820,6 +7819,7 @@ conda_deps = [
     "mpg123-1.32.9-h2b27223_0",
     "libcap-2.78-hfcc8634_1",
     "zstd-1.5.7-h9d15635_7",
+    "liburing-2.14-h45ce4d5_1",
     "libxkbcommon-1.13.2-he51e330_1",
     "wayland-1.26.0-h637a836_2",
     "xorg-libxi-1.8.3-h5bc82ec_1",
@@ -7941,7 +7941,6 @@ conda_deps = [
     "sdl3-3.4.18-h5330f5c_0",
     "xorg-libxcursor-1.2.3-hb9d3cd8_0",
     "libunwind-1.8.3-h65a8314_0",
-    "liburing-2.14-hb700be7_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "libusb-1.0.30-h0d1bbbc_0",
     "glslang-16.6.0-h980caa0_0",
@@ -7967,6 +7966,7 @@ conda_deps = [
     "mpg123-1.32.9-h8142553_0",
     "libcap-2.78-h084b8d7_1",
     "zstd-1.5.7-hb78ec9c_7",
+    "liburing-2.14-h4dbf13b_1",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
@@ -8085,7 +8085,6 @@ conda_deps = [
     "sdl3-3.4.18-h5330f5c_0",
     "xorg-libxcursor-1.2.3-hb9d3cd8_0",
     "libunwind-1.8.3-h65a8314_0",
-    "liburing-2.14-hb700be7_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "libusb-1.0.30-h0d1bbbc_0",
     "glslang-16.6.0-h980caa0_0",
@@ -8111,6 +8110,7 @@ conda_deps = [
     "mpg123-1.32.9-h8142553_0",
     "libcap-2.78-h084b8d7_1",
     "zstd-1.5.7-hb78ec9c_7",
+    "liburing-2.14-h4dbf13b_1",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
@@ -8229,7 +8229,6 @@ conda_deps = [
     "sdl3-3.4.18-h5330f5c_0",
     "xorg-libxcursor-1.2.3-hb9d3cd8_0",
     "libunwind-1.8.3-h65a8314_0",
-    "liburing-2.14-hb700be7_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "libusb-1.0.30-h0d1bbbc_0",
     "glslang-16.6.0-h980caa0_0",
@@ -8255,6 +8254,7 @@ conda_deps = [
     "mpg123-1.32.9-h8142553_0",
     "libcap-2.78-h084b8d7_1",
     "zstd-1.5.7-hb78ec9c_7",
+    "liburing-2.14-h4dbf13b_1",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
@@ -8373,7 +8373,6 @@ conda_deps = [
     "sdl3-3.4.18-h5330f5c_0",
     "xorg-libxcursor-1.2.3-hb9d3cd8_0",
     "libunwind-1.8.3-h65a8314_0",
-    "liburing-2.14-hb700be7_0",
     "xorg-libxscrnsaver-1.2.4-hb9d3cd8_0",
     "libusb-1.0.30-h0d1bbbc_0",
     "glslang-16.6.0-h980caa0_0",
@@ -8399,6 +8398,7 @@ conda_deps = [
     "mpg123-1.32.9-h8142553_0",
     "libcap-2.78-h084b8d7_1",
     "zstd-1.5.7-hb78ec9c_7",
+    "liburing-2.14-h4dbf13b_1",
     "xorg-libxi-1.8.3-h7cc23a3_1",
     "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxtst-1.2.5-h7cc23a3_4",
@@ -11444,10 +11444,10 @@ checksum = "sha256:158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e
 url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
-version = "1.0.54"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.54", digest = "sha256:9ac396c9dcd5067aa024bdf64e6fe71b26446a6bea57a8a42c972bc7086c1cc2" }
+version = "1.0.55"
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.55", digest = "sha256:30a8d9d3e15d6671d0df4cf5eac9b3785553db48d1f845f7b0f8f371576e6990" }
 backend = "npm:@xai-official/grok"
-specifiers = ["1.0.54"]
+specifiers = ["1.0.55"]
 
 [[tools."npm:acpx"]]
 version = "0.19.5"
