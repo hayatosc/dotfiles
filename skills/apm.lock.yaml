@@ -1,5 +1,5 @@
 lockfile_version: '2'
-generated_at: '2026-10-12T03:41:04.394686+00:00'
+generated_at: '2026-10-17T02:45:58.976633+00:00'
 apm_version: 0.33.0
 dependencies:
 - repo_url: anthropics/skills
@@ -704,7 +704,7 @@ dependencies:
   host: github.com
   resolved_commit: 602a3690dadd5d620bb21524353b8d192914eabb
   resolved_ref: 602a3690dadd5d620bb21524353b8d192914eabb
-  version: 1.1.2
+  version: 1.0.4
   virtual_path: skills/yomiyasu
   is_virtual: true
   package_type: marketplace_plugin
