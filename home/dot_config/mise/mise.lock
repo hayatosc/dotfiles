@@ -7376,64 +7376,64 @@ checksum = "sha256:d7a7d3eb216614544aab0cde2d8d9f2e4e87839bf5a30a1cd11d077f02d84
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.3/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.299"
+version = "2.1.300"
 backend = "aqua:anthropics/claude-code"
-specifiers = ["2.1.299"]
+specifiers = ["2.1.300"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:d77bc1bc624c429f3e7d28d4ca93c4c9ce9e079264f1ab313daa6b59d1cdb18f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638660935"
+checksum = "sha256:7a4164d191334aa63dbbd0c9b77209770438e50eb04cac414cdf44f73c01d2bc"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640629980"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:9d319936a6e1847d9252ee2bb0e578a8c0a35bb3734d3f8b10e6d85fdf7873cf"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638660934"
+checksum = "sha256:f199bc77f680c67c8ec3af3dc49e1c9ced5f1dbd9de073b0e6dca1e8dc523e59"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640629983"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:053ff263ea005565625d8e94e15a1beb3b0dc46f7578ba15984c9ab9e17137be"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638661030"
+checksum = "sha256:11e459c4368a48554d5aa5eabf7f6d84a2ff7ae2f7210795394f60ded6633f56"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640630305"
 
 [tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:053ff263ea005565625d8e94e15a1beb3b0dc46f7578ba15984c9ab9e17137be"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638661030"
+checksum = "sha256:11e459c4368a48554d5aa5eabf7f6d84a2ff7ae2f7210795394f60ded6633f56"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640630305"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:a2846b25652c1ebbcd329025200e92e9ab977844e3757b9eaadc4928e6f1e2b7"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638660936"
+checksum = "sha256:73c6b933ec122bcd905e5c7ea6989635b2e36e243ce875878dabafa82943ce6f"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640629986"
 
 [tools.claude."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:a2846b25652c1ebbcd329025200e92e9ab977844e3757b9eaadc4928e6f1e2b7"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638660936"
+checksum = "sha256:73c6b933ec122bcd905e5c7ea6989635b2e36e243ce875878dabafa82943ce6f"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640629986"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:dd2579ba8cf89b58bb57228ba26546ac070fec981d0ceed33754f1a3911787aa"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638660937"
+checksum = "sha256:c18b0721712908fbeeb16f5a95338a4968db7f98c3031b684e402f472b923751"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640629982"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:cb3b4d1402944ddb91a4e066b738239328d72efdd9e58e0fef34e74e2646a607"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638660933"
+checksum = "sha256:dde16153cbf8dadc6c8bb24d612c2ac9c60e79c77d87db3825e6b9af1a9362a2"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640629981"
 
 [tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:cb3b4d1402944ddb91a4e066b738239328d72efdd9e58e0fef34e74e2646a607"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638660933"
+checksum = "sha256:dde16153cbf8dadc6c8bb24d612c2ac9c60e79c77d87db3825e6b9af1a9362a2"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640629981"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:2a0749665cf3bcb62d4f6aa65d336459e0d3d39032511cbfab5eecacce856bc6"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638661041"
+checksum = "sha256:c1da8e8153b251f635ac36a9889a0f232379735ff13b6d90d3029628a35f1e1c"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640630322"
 
 [tools.claude."platforms.windows-x64-baseline"]
-checksum = "sha256:2a0749665cf3bcb62d4f6aa65d336459e0d3d39032511cbfab5eecacce856bc6"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.299/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/638661041"
+checksum = "sha256:c1da8e8153b251f635ac36a9889a0f232379735ff13b6d90d3029628a35f1e1c"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.300/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/640630322"
 
 [[tools.cloudflared]]
 version = "2026.10.0"
@@ -8870,64 +8870,64 @@ conda_deps = [
 ]
 
 [[tools.copilot]]
-version = "v1.0.97"
+version = "v1.0.98"
 backend = "aqua:github/copilot-cli"
-specifiers = ["v1.0.97"]
+specifiers = ["v1.0.98"]
 
 [tools.copilot."platforms.linux-arm64"]
-checksum = "sha256:2cd044c6629f14b04e2bdc6791a71b43a8c3dc9cbcad529128ee6983764db349"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909772"
+checksum = "sha256:a7509dcac0e5f22886788ba4c1e2f8b9b07367e84714e42b9e7cee4d8f9fa5f2"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478156"
 
 [tools.copilot."platforms.linux-arm64-musl"]
-checksum = "sha256:2cd044c6629f14b04e2bdc6791a71b43a8c3dc9cbcad529128ee6983764db349"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909772"
+checksum = "sha256:a7509dcac0e5f22886788ba4c1e2f8b9b07367e84714e42b9e7cee4d8f9fa5f2"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478156"
 
 [tools.copilot."platforms.linux-x64"]
-checksum = "sha256:07f3f63cb361e911268e8a4b010e06eeced8d4f2d898d13a8180273e34aeff3f"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909931"
+checksum = "sha256:87ddb4b3f98462b7cb13c0a6857c68ee410ec9673e2e5f64ee5bedad45825b05"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478341"
 
 [tools.copilot."platforms.linux-x64-baseline"]
-checksum = "sha256:07f3f63cb361e911268e8a4b010e06eeced8d4f2d898d13a8180273e34aeff3f"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909931"
+checksum = "sha256:87ddb4b3f98462b7cb13c0a6857c68ee410ec9673e2e5f64ee5bedad45825b05"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478341"
 
 [tools.copilot."platforms.linux-x64-musl"]
-checksum = "sha256:07f3f63cb361e911268e8a4b010e06eeced8d4f2d898d13a8180273e34aeff3f"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909931"
+checksum = "sha256:87ddb4b3f98462b7cb13c0a6857c68ee410ec9673e2e5f64ee5bedad45825b05"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478341"
 
 [tools.copilot."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:07f3f63cb361e911268e8a4b010e06eeced8d4f2d898d13a8180273e34aeff3f"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909931"
+checksum = "sha256:87ddb4b3f98462b7cb13c0a6857c68ee410ec9673e2e5f64ee5bedad45825b05"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478341"
 
 [tools.copilot."platforms.macos-arm64"]
-checksum = "sha256:5c38e13684a8ef3ee59e07bb791168acca5a0289d71494168f00177aa1fdafbb"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909776"
+checksum = "sha256:a87018a0194789313c979906e45e8874699fee50549ea11d0be7bdde88b6b3c8"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478157"
 
 [tools.copilot."platforms.macos-x64"]
-checksum = "sha256:78c49bb9670d0b31c90f062b147189aca5c6c8db5d1988bd62abe61053321e5d"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909775"
+checksum = "sha256:dfa26894b0c178239daaac527d5aac0a6cfce4bc1ede6fa33d54ccf77a5bb3b5"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478153"
 
 [tools.copilot."platforms.macos-x64-baseline"]
-checksum = "sha256:78c49bb9670d0b31c90f062b147189aca5c6c8db5d1988bd62abe61053321e5d"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909775"
+checksum = "sha256:dfa26894b0c178239daaac527d5aac0a6cfce4bc1ede6fa33d54ccf77a5bb3b5"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478153"
 
 [tools.copilot."platforms.windows-x64"]
-checksum = "sha256:2e83ba8a55c96ad8a7ea1c766d1f6b87c8e21dc88d01e34c80ddc32bcf1086f4"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-win32-x64.zip"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909771"
+checksum = "sha256:e264811888fd77217dc36e9656c13d0b9abbb0433a7041043e1d53798e31fd94"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-win32-x64.zip"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478155"
 
 [tools.copilot."platforms.windows-x64-baseline"]
-checksum = "sha256:2e83ba8a55c96ad8a7ea1c766d1f6b87c8e21dc88d01e34c80ddc32bcf1086f4"
-url = "https://github.com/github/copilot-cli/releases/download/v1.0.97/copilot-win32-x64.zip"
-url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/637909771"
+checksum = "sha256:e264811888fd77217dc36e9656c13d0b9abbb0433a7041043e1d53798e31fd94"
+url = "https://github.com/github/copilot-cli/releases/download/v1.0.98/copilot-win32-x64.zip"
+url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/641478155"
 
 [[tools.cursor-agent]]
 version = "2026.08.04-aaa8809"
@@ -9539,74 +9539,74 @@ url = "https://github.com/hayatosc/git-cx/releases/download/v0.2.0/git-cx_0.2.0_
 url_api = "https://api.github.com/repos/hayatosc/git-cx/releases/assets/365112583"
 
 [[tools."github:herdrdev/herdr"]]
-version = "0.9.4"
+version = "0.9.5"
 backend = "github:herdrdev/herdr"
-specifiers = ["v0.9.4"]
+specifiers = ["v0.9.5"]
 
 [tools."github:herdrdev/herdr"."platforms.linux-arm64"]
-checksum = "sha256:9511cb70982c1ef115f232058e7ed7cf9640aa5a2c0ca78934cefda3aeb093fd"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474390"
+checksum = "sha256:17d7536f2da50859523680ef279dffcac8e4a235f4e46fe8da6c2ec44141897c"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-linux-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898231"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.linux-arm64-musl"]
-checksum = "sha256:9511cb70982c1ef115f232058e7ed7cf9640aa5a2c0ca78934cefda3aeb093fd"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474390"
+checksum = "sha256:17d7536f2da50859523680ef279dffcac8e4a235f4e46fe8da6c2ec44141897c"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-linux-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898231"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.linux-x64"]
-checksum = "sha256:493304fbefb0ed0ea0455f373b47f48d24e8774bc7974f4c916ad2e937675b23"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474400"
+checksum = "sha256:14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898235"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.linux-x64-baseline"]
-checksum = "sha256:493304fbefb0ed0ea0455f373b47f48d24e8774bc7974f4c916ad2e937675b23"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474400"
+checksum = "sha256:14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898235"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.linux-x64-musl"]
-checksum = "sha256:493304fbefb0ed0ea0455f373b47f48d24e8774bc7974f4c916ad2e937675b23"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474400"
+checksum = "sha256:14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898235"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:493304fbefb0ed0ea0455f373b47f48d24e8774bc7974f4c916ad2e937675b23"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474400"
+checksum = "sha256:14d9e8bc8b4a9e0118d77c32266f76d461f09b40342eb23752960bd89f59929d"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-linux-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898235"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.macos-arm64"]
-checksum = "sha256:ea20bfff9cb8c83a996081c926e6ff9370de8e543baa859bca48d19175d895ff"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474389"
+checksum = "sha256:fb77c2232a05a8035421382c894392f4174e4e38a18e48af3dd0290157c3a7e2"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-macos-aarch64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898230"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.macos-x64"]
-checksum = "sha256:2015ca1de3e93b84cdcccbfd94fbbd65dd56338cea4d3e57a8660e977a3bd700"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474391"
+checksum = "sha256:5fb0a908ec7f6745e3e245738b06bfad56c46391c391ab3c0955fbead01f1369"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-macos-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898229"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.macos-x64-baseline"]
-checksum = "sha256:2015ca1de3e93b84cdcccbfd94fbbd65dd56338cea4d3e57a8660e977a3bd700"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474391"
+checksum = "sha256:5fb0a908ec7f6745e3e245738b06bfad56c46391c391ab3c0955fbead01f1369"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-macos-x86_64"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898229"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.windows-x64"]
-checksum = "sha256:0e4ccb5cd7b6ca464a69637cda66d3c93334ebc057c50c5878b8e89e1a20afee"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474398"
+checksum = "sha256:d2c6c9c971c43a0bfdde8c692a9a1a7a45c3e4807cd01ae45662b4734fac1cbf"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898234"
 provenance = "github-attestations"
 
 [tools."github:herdrdev/herdr"."platforms.windows-x64-baseline"]
-checksum = "sha256:0e4ccb5cd7b6ca464a69637cda66d3c93334ebc057c50c5878b8e89e1a20afee"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.4/herdr-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/637474398"
+checksum = "sha256:d2c6c9c971c43a0bfdde8c692a9a1a7a45c3e4807cd01ae45662b4734fac1cbf"
+url = "https://github.com/herdrdev/herdr/releases/download/v0.9.5/herdr-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/640898234"
 provenance = "github-attestations"
 
 [[tools."github:microsoft/apm"]]
