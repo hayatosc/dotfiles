@@ -11444,10 +11444,10 @@ checksum = "sha256:158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e
 url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
-version = "1.0.60"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.60", digest = "sha256:d0497db9c14955ef56a9365d1206801ddb5f3e6db4b9e2f119e5619260de07ff" }
+version = "1.0.61"
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.61", digest = "sha256:8fb364a5901986d98d669d3167a0aca4873241cb8b02630e5f363e8fd8d5ee82" }
 backend = "npm:@xai-official/grok"
-specifiers = ["1.0.60"]
+specifiers = ["1.0.61"]
 
 [[tools."npm:acpx"]]
 version = "0.19.5"
@@ -11486,64 +11486,64 @@ backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
 
 [[tools.opencode]]
-version = "1.19.1"
+version = "1.19.2"
 backend = "aqua:anomalyco/opencode"
-specifiers = ["1.19.1"]
+specifiers = ["1.19.2"]
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:3840e9afb2462a666d31816b20bc13b91af9845c329cff660a972aa9cfaee3a2"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644852193"
+checksum = "sha256:3f73a474065b4b7c4a64cef2395a6123ae1039c2e41f0acbe29ae6521b50df66"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645848407"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:3840e9afb2462a666d31816b20bc13b91af9845c329cff660a972aa9cfaee3a2"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644852193"
+checksum = "sha256:3f73a474065b4b7c4a64cef2395a6123ae1039c2e41f0acbe29ae6521b50df66"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645848407"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:6f1904b860bdbd32e90e679c9e1b0e64e78269a353e1497d5ea792dfa449538c"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644852223"
+checksum = "sha256:4eff8d2cf8614ead97eadf1123d46033dc975eadeac3df04644a64bae0f9e819"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645848510"
 
 [tools.opencode."platforms.linux-x64-baseline"]
-checksum = "sha256:6f1904b860bdbd32e90e679c9e1b0e64e78269a353e1497d5ea792dfa449538c"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644852223"
+checksum = "sha256:4eff8d2cf8614ead97eadf1123d46033dc975eadeac3df04644a64bae0f9e819"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645848510"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:6f1904b860bdbd32e90e679c9e1b0e64e78269a353e1497d5ea792dfa449538c"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644852223"
+checksum = "sha256:4eff8d2cf8614ead97eadf1123d46033dc975eadeac3df04644a64bae0f9e819"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645848510"
 
 [tools.opencode."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:6f1904b860bdbd32e90e679c9e1b0e64e78269a353e1497d5ea792dfa449538c"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644852223"
+checksum = "sha256:4eff8d2cf8614ead97eadf1123d46033dc975eadeac3df04644a64bae0f9e819"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645848510"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:c9c4b7833a2cb0a0b676031d8b688012b5025bc55a890e2acd4412cb04d19b02"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644862558"
+checksum = "sha256:1c9da110bbf3e13c480e0a2e55f61b09ebdb33cfc67029b61ffbb9f8566d67cd"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645856068"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:2c446f5d482cb78f7d8ea3f276b3feda38a64346d574e56a744111dee52813e3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-darwin-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644862545"
+checksum = "sha256:9df7a1c7552a9573b9556ab9c1eb2b3cac46b380e25106a3d89b9ec662f44194"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-darwin-x64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645856064"
 
 [tools.opencode."platforms.macos-x64-baseline"]
-checksum = "sha256:2c446f5d482cb78f7d8ea3f276b3feda38a64346d574e56a744111dee52813e3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-darwin-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644862545"
+checksum = "sha256:9df7a1c7552a9573b9556ab9c1eb2b3cac46b380e25106a3d89b9ec662f44194"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-darwin-x64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645856064"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:efcbef1dc5265f468f43e607ea3c5729026e0a0a4e8f1d7552e97ac3acd3c7f4"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-windows-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644866687"
+checksum = "sha256:86e6279183d5fc68e2c1c66160943551a427cf45bf700d6e492f03603db35f05"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-windows-x64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645856071"
 
 [tools.opencode."platforms.windows-x64-baseline"]
-checksum = "sha256:efcbef1dc5265f468f43e607ea3c5729026e0a0a4e8f1d7552e97ac3acd3c7f4"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.1/opencode-windows-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/644866687"
+checksum = "sha256:86e6279183d5fc68e2c1c66160943551a427cf45bf700d6e492f03603db35f05"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.19.2/opencode-windows-x64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/645856071"
 
 [[tools.pnpm]]
 version = "12.11.2"
