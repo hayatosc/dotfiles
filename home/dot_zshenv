@@ -24,3 +24,10 @@ if [ -d "/snap/bin" ]; then
 fi
 
 export PATH
+
+# Load the 1Password service account token from an unmanaged file when present,
+# so headless shells (e.g. over SSH) can use the op CLI with no prompts.
+# Keep the token file out of this repository and chmod 600 it.
+if [ -z "${OP_SERVICE_ACCOUNT_TOKEN:-}" ] && [ -s "$HOME/.config/op/service-account-token" ]; then
+    export OP_SERVICE_ACCOUNT_TOKEN="$(<"$HOME/.config/op/service-account-token")"
+fi

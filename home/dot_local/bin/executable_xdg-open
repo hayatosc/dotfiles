@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ -n "${WSL_DISTRO_NAME:-}" || -n "${WSL_INTEROP:-}" ]] || grep -qi microsoft /proc/version 2>/dev/null; then
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: $(basename "$0") <url-or-path>" >&2
+    exit 1
+  fi
+
+  target="$1"
+
+  if [[ "$target" == file://* ]]; then
+    local_path="${target#file://}"
+    local_path="${local_path#localhost}"
+    if [[ -e "$local_path" ]] && command -v wslpath >/dev/null 2>&1; then
+      target="$(wslpath -w "$local_path")"
+    fi
+  elif [[ -e "$target" ]] && command -v wslpath >/dev/null 2>&1; then
+    target="$(wslpath -w "$target")"
+  fi
+
+  exec /mnt/c/Windows/System32/rundll32.exe url.dll,FileProtocolHandler "$target"
+fi
+
+if [[ -x /usr/bin/xdg-open ]]; then
+  exec /usr/bin/xdg-open "$@"
+fi
+
+echo "xdg-open: no browser launcher found" >&2
+exit 1

@@ -24,3 +24,4 @@ mise install
 - [Codex config](docs/codex.md)
 - [AI Agents Environment](docs/agents.md)
 - [Python Execution Wrappers](docs/python.md)
+- [1Password CLI](docs/1password.md) — headless service account setup and secret usage
