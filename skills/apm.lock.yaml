@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-10-19T11:01:04.984116+00:00'
+generated_at: '2026-10-20T04:48:54.772161+00:00'
 apm_version: 0.33.0
 dependencies:
 - repo_url: anthropics/skills
@@ -687,6 +687,29 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:f01972c67d9ee20be7931898685530f83a3ca29d77528fe28aa91d7e7d202ac7
     .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:78b80afc94fcdc0177345d7cbd0abb83660f309a400266ff408325142db41b2c
   content_hash: sha256:2bdf613c1efa013eb28bbc1ade3d6542f6864694cb344221b06d6754b183322c
+- repo_url: marycache/imozuru
+  materialization_repo_url: MaryCache/imozuru
+  name: imozuru
+  host: github.com
+  resolved_commit: 4f8fec7b686750c0c4083336691bdc6ea075aa32
+  version: unknown
+  package_type: skill_bundle
+  deployed_files:
+  - .agents/skills/imozuru
+  - .agents/skills/imozuru/SKILL.md
+  - .agents/skills/imozuru/references/theory.md
+  - .agents/skills/imozuru/scripts/chain.py
+  - .agents/skills/imozuru/scripts/fetch.py
+  - .agents/skills/imozuru/scripts/report.py
+  - .agents/skills/imozuru/scripts/watch.py
+  deployed_file_hashes:
+    .agents/skills/imozuru/SKILL.md: sha256:80b5481c7587bce4fca6956f2d5468182fed851de66eda5a6a5fde95c6b9a39b
+    .agents/skills/imozuru/references/theory.md: sha256:b96892de5dde66e2bc9f99b7b21ff119625ba4f285e8b5b0ef3a76095523d02a
+    .agents/skills/imozuru/scripts/chain.py: sha256:224ce4eef4c4e4aed8092648f2858fbd1f8f727fb3ca2d97c6397bc01acb6fb4
+    .agents/skills/imozuru/scripts/fetch.py: sha256:3cc1b173a92054da1a40498e05661dfcaa7cab5e91edc27c8d2ac0d981d8d306
+    .agents/skills/imozuru/scripts/report.py: sha256:d084ca3d887e83e66955be6dacc5e0920fc925325b26ce3bb7d9df5d546a8267
+    .agents/skills/imozuru/scripts/watch.py: sha256:fd5c102683069450850929082959dbb201feb61b34eb4a058e4b331bb129c397
+  content_hash: sha256:2806f8940eea378421afec63a603239ce82c9f1822b6563e14382eb893e0ed66
 - repo_url: moonbitlang/skills
   name: moonbit-agent-guide
   host: github.com
@@ -2611,6 +2634,69 @@ deployments:
   - ogulcancelik/herdr
   active_owner: ogulcancelik/herdr
   content_hash: sha256:fbd9d502767f7dff29c211505a0bd9ba34e980ed4cc456247e2adc1642883984
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/imozuru
+  runtime: null
+  scope: project
+  owners:
+  - marycache/imozuru
+  active_owner: marycache/imozuru
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/imozuru/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - marycache/imozuru
+  active_owner: marycache/imozuru
+  content_hash: sha256:80b5481c7587bce4fca6956f2d5468182fed851de66eda5a6a5fde95c6b9a39b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/imozuru/references/theory.md
+  runtime: null
+  scope: project
+  owners:
+  - marycache/imozuru
+  active_owner: marycache/imozuru
+  content_hash: sha256:b96892de5dde66e2bc9f99b7b21ff119625ba4f285e8b5b0ef3a76095523d02a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/imozuru/scripts/chain.py
+  runtime: null
+  scope: project
+  owners:
+  - marycache/imozuru
+  active_owner: marycache/imozuru
+  content_hash: sha256:224ce4eef4c4e4aed8092648f2858fbd1f8f727fb3ca2d97c6397bc01acb6fb4
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/imozuru/scripts/fetch.py
+  runtime: null
+  scope: project
+  owners:
+  - marycache/imozuru
+  active_owner: marycache/imozuru
+  content_hash: sha256:3cc1b173a92054da1a40498e05661dfcaa7cab5e91edc27c8d2ac0d981d8d306
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/imozuru/scripts/report.py
+  runtime: null
+  scope: project
+  owners:
+  - marycache/imozuru
+  active_owner: marycache/imozuru
+  content_hash: sha256:d084ca3d887e83e66955be6dacc5e0920fc925325b26ce3bb7d9df5d546a8267
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/imozuru/scripts/watch.py
+  runtime: null
+  scope: project
+  owners:
+  - marycache/imozuru
+  active_owner: marycache/imozuru
+  content_hash: sha256:fd5c102683069450850929082959dbb201feb61b34eb4a058e4b331bb129c397
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/modern-web-guidance
