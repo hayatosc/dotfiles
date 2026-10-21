@@ -1,0 +1,13 @@
+#!/bin/bash
+# pi: {{ lookPath "pi" }}
+# packages: {{ (include "dot_pi/agent/settings.json" | fromJson).packages | toJson | sha256sum }}
+set -euo pipefail
+
+if ! command -v pi >/dev/null 2>&1; then
+    echo "pi is not installed. Skipping Pi package installation."
+    exit 0
+fi
+
+# Ignore project-local packages; only manage this machine's global Pi packages.
+cd "${HOME}"
+pi update --extensions --no-approve

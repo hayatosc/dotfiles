@@ -21,6 +21,18 @@ Chezmoi's `symlink_*` templates link `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`
 
 [The APM script](../home/.chezmoiscripts/run_onchange_after_apm-install.sh.tmpl) reruns when the skill sources or manifest change. It stages local skills with temporary symlinks under `skills/.apm/skills/`, runs `apm install --target agent-skills` into `skills/.agents/skills/`, syncs the result to `~/.agents/skills/`, and removes staging directories. Self-authored skills live directly under `skills/`, not in those temporary directories.
 
+## Pi
+
+Pi configuration lives in `home/dot_pi/agent/`:
+
+- `settings.json` tracks the complete Pi settings file as plain JSON, including the package list, `antigravity.toolMode`, device ID, and changelog state. After changing settings in Pi, use `chezmoi add ~/.pi/agent/settings.json` to capture them; otherwise apply restores the repository version.
+- `symlink_AGENTS.md.tmpl` links to the shared `~/.agents/AGENTS.md`. Pi discovers `~/.agents/skills/` directly, so no skill symlink is needed.
+- `extensions/` contains local extensions.
+
+`home/.chezmoiscripts/run_onchange_after_install-pi-packages.sh.tmpl` runs `pi update --extensions --no-approve` after apply when the package list or Pi executable path changes. It installs/reconciles global packages without loading project-local packages. Unversioned packages update to the latest release when the script runs. If Pi is unavailable, installation is skipped; apply again after installing Pi.
+
+Do not add `auth.json`, `sessions/`, installed packages (`npm/`), provider caches, or extension runtime state such as `claude-bridge.json` to chezmoi. Authentication remains local to each machine. On a new machine, install Pi, apply configuration, then authenticate the providers you use.
+
 ## Maintaining Prompts
 
 Use [OpenAI's skill and prompt guidance](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra) as the rationale for concise routing and task-specific detail. Preserve guidance useful to the other configured models as well.
