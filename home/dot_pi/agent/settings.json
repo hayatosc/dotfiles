@@ -2,6 +2,49 @@
   "antigravity": {
     "toolMode": "native"
   },
+  "lsp": {
+    "servers": {
+      "typescript": {
+        "command": "typescript-language-server",
+        "args": ["--stdio"],
+        "languages": [
+          { "extensions": [".ts", ".mts", ".cts"], "languageId": "typescript" },
+          { "extensions": [".tsx"], "languageId": "typescriptreact" },
+          { "extensions": [".js", ".mjs", ".cjs"], "languageId": "javascript" },
+          { "extensions": [".jsx"], "languageId": "javascriptreact" }
+        ],
+        "rootMarkers": ["tsconfig.json", "jsconfig.json", "package.json", ".git"]
+      },
+      "go": {
+        "command": "gopls",
+        "languages": [{ "extensions": [".go"], "languageId": "go" }],
+        "rootMarkers": ["go.work", "go.mod", ".git"]
+      },
+      "rust": {
+        "command": "rust-analyzer",
+        "languages": [{ "extensions": [".rs"], "languageId": "rust" }],
+        "rootMarkers": ["Cargo.toml", ".git"]
+      },
+      "python": {
+        "command": "ty",
+        "args": ["server"],
+        "languages": [{ "extensions": [".py", ".pyi"], "languageId": "python" }],
+        "rootMarkers": ["pyproject.toml", "ty.toml", ".git"]
+      },
+      "bash": {
+        "command": "bash-language-server",
+        "args": ["start"],
+        "languages": [{ "extensions": [".sh", ".bash"], "languageId": "shellscript" }],
+        "rootMarkers": [".git"]
+      },
+      "yaml": {
+        "command": "yaml-language-server",
+        "args": ["--stdio"],
+        "languages": [{ "extensions": [".yaml", ".yml"], "languageId": "yaml" }],
+        "rootMarkers": [".git"]
+      }
+    }
+  },
   "deviceId": "8163c489-4b15-4858-97dc-3db771150f16",
   "lastChangelogVersion": "1.3.0",
   "packages": [
@@ -9,6 +52,9 @@
     "npm:billion-context",
     "npm:pi-web-search",
     "npm:pi-clear",
-    "npm:pi-claude-bridge"
+    "npm:pi-claude-bridge",
+    "npm:@ian-pascoe/pi-git-checkpoints",
+    "npm:@ian-pascoe/pi-lsp",
+    "npm:pi-subagents"
   ]
 }
