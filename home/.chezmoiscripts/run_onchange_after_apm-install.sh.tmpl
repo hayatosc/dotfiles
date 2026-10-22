@@ -88,7 +88,11 @@ cp "${SKILLS_DIR}/.licenses/yomiyasu.LICENSE" "${TEMP_AGENTS_DIR}/skills/yomiyas
 # 5. Sync the compiled skills to the actual destination (~/.agents/skills)
 mkdir -p "${HOME}/.agents/skills"
 if command -v rsync >/dev/null 2>&1; then
-    rsync -a --delete "${TEMP_AGENTS_DIR}/skills/" "${HOME}/.agents/skills/"
+    rsync -a --delete \
+        --exclude='synced/' \
+        --exclude='.ignore' \
+        --exclude='.gitignore' \
+        "${TEMP_AGENTS_DIR}/skills/" "${HOME}/.agents/skills/"
 else
     rm -rf "${HOME}/.agents/skills"
     cp -a "${TEMP_AGENTS_DIR}/skills" "${HOME}/.agents/"
