@@ -5,6 +5,7 @@ on:
     paths:
       - scripts/install-agent-cloud.sh
       - tests/test_agent_cloud.py
+      - tests/test_html_artifacts.py
       - cloud/**
       - skills/**
       - home/dot_agents/AGENTS.md
