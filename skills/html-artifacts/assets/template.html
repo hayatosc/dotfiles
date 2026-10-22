@@ -3,130 +3,97 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><!-- タイトル：何を説明するページか --></title>
-<style>
-@@DADS_CSS@@ /* replaced by the build command in SKILL.md step 3 */
+<meta name="color-scheme" content="only light">
+<meta http-equiv="Content-Security-Policy" content="@@DADS_CSP@@">
+<title>@@TITLE@@</title>
+<style id="dads-css">
+@@DADS_CSS@@
 </style>
 </head>
 <body>
 <a class="dads-skip-link" href="#main">本文へ移動</a>
-
 <header class="dads-header">
   <div class="dads-header__inner">
-    <p class="dads-header__title"><!-- タイトル --></p>
-    <p class="dads-header__meta"><!-- 元資料: PLAN.md ・ 生成日: YYYY-MM-DD --></p>
+    <p class="dads-header__title">@@TITLE@@</p>
+    <p class="dads-header__meta">作成日: @@DATE@@ · 自己完結型HTML</p>
   </div>
 </header>
-
 <div class="dads-layout">
   <nav class="dads-toc" aria-label="目次">
     <p class="dads-toc__title">目次</p>
     <ol>
-      <li><a href="#summary">概要</a></li>
-      <li><a href="#section-1">セクション 1</a></li>
-      <li><a href="#section-2">セクション 2</a></li>
-      <li><a href="#risks">リスクと未確定事項</a></li>
+      <li><a href="#overview">概要</a></li>
+      <li><a href="#evidence">確認方法</a></li>
+      <li><a href="#notes">補足</a></li>
     </ol>
   </nav>
-
-  <main id="main" class="dads-prose">
-    <h1><!-- タイトル --></h1>
-    <p class="dads-lead"><!-- TL;DR：読み手が5秒で全体像をつかめる1段落 --></p>
-
-    <section aria-labelledby="summary">
-      <h2 id="summary">概要</h2>
-      <p><!-- 何を説明するのか、なぜ重要か --></p>
+  <main id="main" class="dads-prose" tabindex="-1">
+    <h1>@@TITLE@@</h1>
+    <p class="dads-lead">この文書は、スタイルと図をひとつのファイルにまとめています。保存したファイルを開けば、ネットワークに接続していなくても読めます。</p>
+    <section aria-labelledby="overview">
+      <h2 id="overview">概要</h2>
+      <p>外部のフォントやCSSに頼らず、端末にあるフォントで表示します。配色と文字の大きさはデジタル庁デザインシステムの定義に合わせています。</p>
+      <div class="dads-callout dads-callout--warning">
+        <strong class="dads-callout__title">注意: 本文を用途に合わせて編集してください</strong>
+        <p>これは動作する出発点です。公開前に、説明・根拠・出典・作成日を実際の内容に置き換えてください。</p>
+      </div>
+      <div class="dads-grid-2">
+        <div class="dads-card"><h3 class="dads-card__title">読む</h3><p>見出しと目次で必要な箇所へ移動できます。</p></div>
+        <div class="dads-card"><h3 class="dads-card__title">保存する</h3><p>関連ファイルなしで共有・保管できます。</p></div>
+      </div>
+      <p><a class="dads-button dads-button--solid" href="#evidence">確認方法へ進む</a></p>
     </section>
-
-    <section aria-labelledby="section-1">
-      <h2 id="section-1"><!-- セクション見出し --></h2>
-      <p><!-- 本文 --></p>
-
-      <!-- 図：インライン SVG。図形にラベルを付け、色だけに意味を持たせない -->
-      <figure>
-        <svg class="dads-diagram" viewBox="0 0 720 240" role="img" aria-labelledby="fig1-title fig1-desc">
-          <title id="fig1-title"><!-- 図のタイトル --></title>
-          <desc id="fig1-desc"><!-- 図の内容を文章で説明 --></desc>
-          <!-- rect / text / path などで構成 -->
-        </svg>
-        <figcaption><!-- 図の説明と出典 --></figcaption>
-      </figure>
-
-      <!-- 表：caption と th scope を必ず付ける -->
-      <div class="dads-table">
+    <section aria-labelledby="evidence">
+      <h2 id="evidence">確認方法</h2>
+      <div class="dads-table" role="region" aria-label="確認項目の表。横にスクロールできます" tabindex="0">
         <table>
-          <caption><!-- 表のキャプション --></caption>
-          <thead>
-            <tr><th scope="col">項目</th><th scope="col">内容</th></tr>
-          </thead>
+          <caption>保存したHTMLの確認項目</caption>
+          <thead><tr><th scope="col">場面</th><th scope="col">期待する結果</th></tr></thead>
           <tbody>
-            <tr><th scope="row">例</th><td>値</td></tr>
+            <tr><th scope="row">オフライン</th><td>外部CSSやWebフォントを取得せず本文が表示される</td></tr>
+            <tr><th scope="row">狭い画面</th><td>本文は折り返され、幅の広い図表だけを横にスクロールできる</td></tr>
+            <tr><th scope="row">印刷</th><td>折りたたんだ補足も印刷される</td></tr>
           </tbody>
         </table>
       </div>
-
-      <!-- 注意書き：色とアイコンとラベルを併用する -->
-      <div class="dads-callout dads-callout--warning">
-        <span class="dads-callout__title">注意</span>
-        <p><!-- 補足や制約 --></p>
-      </div>
+      <figure>
+        <div class="dads-diagram-scroll" role="region" aria-label="作成の流れ。横にスクロールできます" tabindex="0">
+          <svg class="dads-diagram" viewBox="0 0 720 160" role="img" aria-labelledby="flow-title flow-desc">
+            <title id="flow-title">HTML作成の流れ</title>
+            <desc id="flow-desc">本文を編集し、検証したあと、ひとつのHTMLファイルとして保存します。</desc>
+            <defs><marker id="flow-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--color-key-900)"/></marker></defs>
+            <g fill="var(--color-key-50)" stroke="var(--color-key-900)" stroke-width="2">
+              <rect x="24" y="48" width="180" height="64" rx="8"/>
+              <rect x="270" y="48" width="180" height="64" rx="8"/>
+              <rect x="516" y="48" width="180" height="64" rx="8"/>
+            </g>
+            <g fill="var(--text)" font-size="17" text-anchor="middle" dominant-baseline="central">
+              <text x="114" y="80">本文を編集</text><text x="360" y="80">表示を検証</text><text x="606" y="80">ファイルを保存</text>
+            </g>
+            <g stroke="var(--color-key-900)" stroke-width="2" marker-end="url(#flow-arrow)">
+              <path d="M 204 80 H 262"/><path d="M 450 80 H 508"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption>図1: 編集・検証・保存の順に進みます。図の内容は代替説明でも読めます。</figcaption>
+      </figure>
     </section>
-
-    <section aria-labelledby="section-2">
-      <h2 id="section-2"><!-- セクション見出し --></h2>
-      <p><!-- 本文 --></p>
-
-      <details class="dads-details">
-        <summary><!-- 折りたたむ詳細の見出し --></summary>
-        <p><!-- 詳細 --></p>
+    <section aria-labelledby="notes">
+      <h2 id="notes">補足</h2>
+      <details class="dads-details" open>
+        <summary>表示と印刷について</summary>
+        <p>補足は初期状態で開きます。閉じても、印刷時には同梱スクリプトが一時的に開き、印刷後に元の状態へ戻します。</p>
       </details>
+      <pre tabindex="0" aria-label="検証コマンドの例"><code>python scripts/check.py /absolute/path/to/document.html</code></pre>
     </section>
-
-    <section aria-labelledby="risks">
-      <h2 id="risks">リスクと未確定事項</h2>
-      <ul>
-        <li><!-- リスク・前提・未確定事項 --></li>
-      </ul>
-    </section>
-
     <footer class="dads-footer">
-      <p><!-- 出典・元ファイルへのリンク -->。このページは
-        <a href="https://design.digital.go.jp/dads/">デジタル庁デザインシステム</a>
-        に基づいて <code>html-artifacts</code> で生成。</p>
+      <p>出典: html-artifacts 同梱テンプレート。作成日: @@DATE@@。このページは
+        <a href="https://design.digital.go.jp/dads/">デジタル庁デザインシステム</a>を参考にした文書用アダプターで作成しています。リンク先の閲覧にはネットワーク接続が必要です。</p>
     </footer>
   </main>
 </div>
-
-<script>
-/* タブ（必要な場合のみ）。ARIA パターン＋矢印キー対応。 */
-document.querySelectorAll('[role="tablist"]').forEach(function (list) {
-  var tabs = Array.prototype.slice.call(list.querySelectorAll('[role="tab"]'));
-  function select(tab, moveFocus) {
-    tabs.forEach(function (t) {
-      var selected = t === tab;
-      t.setAttribute('aria-selected', String(selected));
-      t.tabIndex = selected ? 0 : -1;
-      var panel = document.getElementById(t.getAttribute('aria-controls'));
-      if (panel) panel.hidden = !selected;
-    });
-    if (moveFocus) tab.focus();
-  }
-  list.addEventListener('keydown', function (e) {
-    var i = tabs.indexOf(document.activeElement);
-    if (i < 0) return;
-    var next = null;
-    if (e.key === 'ArrowRight') next = (i + 1) % tabs.length;
-    if (e.key === 'ArrowLeft') next = (i - 1 + tabs.length) % tabs.length;
-    if (e.key === 'Home') next = 0;
-    if (e.key === 'End') next = tabs.length - 1;
-    if (next !== null) { e.preventDefault(); select(tabs[next], true); }
-  });
-  tabs.forEach(function (t) {
-    t.addEventListener('click', function () { select(t, false); });
-    var panel = document.getElementById(t.getAttribute('aria-controls'));
-    if (panel) panel.hidden = t.getAttribute('aria-selected') !== 'true';
-  });
-});
+<script id="dads-print">
+@@DADS_PRINT@@
 </script>
 </body>
 </html>

@@ -1,209 +1,103 @@
-# Digital Agency Design System (DADS) reference
+# Digital Agency Design System: provenance and artifact API
 
-Source: デジタル庁デザインシステムβ版 v2.18.0 (2026-09-09)
-- Site: https://design.digital.go.jp/dads/
-- Foundations docs: https://design.digital.go.jp/dads/foundations/
-- HTML snippets: https://github.com/digital-go-jp/design-system-example-components-html
-- Tailwind tokens: https://github.com/digital-go-jp/tailwind-theme-plugin
+This is an **unofficial document adapter**, not a full DADS implementation or a claim of government endorsement. Use the bundled stylesheet as the authority for available classes and tokens. Do not reconstruct it from this reference, import a framework, or combine it with upstream component markup unchanged.
 
-All values below are taken from the official design tokens and example components. When a rule
-here conflicts with the artifact's need, follow DADS; do not invent values.
+## Official sources and snapshot
 
-## 1. Color
+Reviewed 2026-10-22. Website guidance evolves independently of repository revisions; the bundle is pinned to the following source commits, **not** to a purported site-wide `v2.18.0` release. Research links below are ordinary navigation links, never runtime dependencies.
 
-### 1.1 Primitive palettes
+| Source | What this adapter takes from it |
+|---|---|
+| [DADS foundations](https://design.digital.go.jp/dads/foundations/) | Accessibility-first design principles; use the individual foundations below for context. |
+| [Color](https://design.digital.go.jp/dads/foundations/color/) | Primitive, neutral, semantic and key roles; foreground/background pairing; text contrast 4.5:1 and meaningful UI/graphics 3:1. Do not assume the large-text exception or rely on color alone. |
+| [Typography](https://design.digital.go.jp/dads/foundations/typography/) and [text styles](https://design.digital.go.jp/dads/foundations/typography/text-style/) | Noto Sans JP/Mono, 400/700 weights, Standard type scale; 16px/1.7 prose. |
+| [Layout](https://design.digital.go.jp/dads/foundations/layout/), [spacing](https://design.digital.go.jp/dads/foundations/spacing/) | Fluid layouts, reading order, related-element spacing, 8px base and 32px desktop gutters. |
+| [Corner shapes](https://design.digital.go.jp/dads/foundations/corner-shapes/) and [elevation](https://design.digital.go.jp/dads/foundations/elevation/) | Radius/elevation scales, not decorative shadows everywhere. |
+| [Link text](https://design.digital.go.jp/dads/foundations/link-text/) | Descriptive destinations, underline and accessible link presentation. |
+| [design-tokens, commit a96c66793fef07af96b16f5e87f688a263b66df0](https://github.com/digital-go-jp/design-tokens/tree/a96c66793fef07af96b16f5e87f688a263b66df0) · [examples/tokens.css](https://github.com/digital-go-jp/design-tokens/blob/a96c66793fef07af96b16f5e87f688a263b66df0/examples/tokens.css) | Complete generated CSS token block, copied verbatim into `assets/dads.css`: palettes, font sizes, line heights, radii, elevations, semantic/key aliases. |
+| [HTML examples, commit caa50d731cf515cfa5eae0093121f11ac5299235](https://github.com/digital-go-jp/design-system-example-components-html/tree/caa50d731cf515cfa5eae0093121f11ac5299235) | Reference implementations, not dependencies. See the exact component files below. |
+| [button.css](https://github.com/digital-go-jp/design-system-example-components-html/blob/caa50d731cf515cfa5eae0093121f11ac5299235/src/components/button/button.css) | Key 900/1000/1200 states, medium 96×48px minimum, 8px radius, 4px transparent double solid-button border, distinct disabled outline treatment. |
+| [link.css](https://github.com/digital-go-jp/design-system-example-components-html/blob/caa50d731cf515cfa5eae0093121f11ac5299235/src/components/link/link.css) | Blue-1000 default, magenta-900 visited, blue-900 hover, orange-800 active; 1px underline/3px offset, 3px hover underline, yellow/black focus. |
+| [table.css](https://github.com/digital-go-jp/design-system-example-components-html/blob/caa50d731cf515cfa5eae0093121f11ac5299235/src/components/table/table.css) | Gray-420 borders, gray-500 header borders, gray-100 header fill; 20px/16px cells and 12px/16px dense cells. |
+| [disclosure.css](https://github.com/digital-go-jp/design-system-example-components-html/blob/caa50d731cf515cfa5eae0093121f11ac5299235/src/components/disclosure/disclosure.css) and [heading.css](https://github.com/digital-go-jp/design-system-example-components-html/blob/caa50d731cf515cfa5eae0093121f11ac5299235/src/components/heading/heading.css) | Native disclosure semantics, focus styling, Standard heading scale; adapter keeps native disclosure markers rather than copying its icon API. |
 
-Each hue has 13 steps (50 = lightest, 1200 = darkest). `key` is an alias for `blue`; the artifact
-may point `--key-*` at any hue, but blue is the DADS default.
+The upstream repositories are MIT licensed ([tokens license](https://github.com/digital-go-jp/design-tokens/blob/a96c66793fef07af96b16f5e87f688a263b66df0/LICENSE), [examples license](https://github.com/digital-go-jp/design-system-example-components-html/blob/caa50d731cf515cfa5eae0093121f11ac5299235/LICENSE)). The copyright/permission notice is inside `assets/dads.css`, so generated files retain it. Keep it when updating the snapshot.
 
-| Hue | 50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 1000 | 1100 | 1200 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Blue / key | #e8f1fe | #d9e6ff | #c5d7fb | #9db7f9 | #7096f8 | #4979f5 | #3460fb | #264af4 | #0031d8 | #0017c1 | #00118f | #000071 | #000060 |
-| Light blue | #f0f9ff | #dcf0ff | #c0e4ff | #97d3ff | #57b8ff | #39abff | #008bf2 | #0877d7 | #0066be | #0055ad | #00428c | #00316a | #00234b |
-| Cyan | #e9f7f9 | #c8f8ff | #99f2ff | #79e2f2 | #2bc8e4 | #01b7d6 | #00a3bf | #008da6 | #008299 | #006f83 | #006173 | #004c59 | #003741 |
-| Green | #e6f5ec | #c2e5d1 | #9bd4b5 | #71c598 | #51b883 | #2cac6e | #259d63 | #1d8b56 | #197a4b | #115a36 | #0c472a | #08351f | #032213 |
-| Lime | #ebfad9 | #d0f5a2 | #c0f354 | #ade830 | #9ddd15 | #8cc80c | #7eb40d | #6fa104 | #618e00 | #507500 | #3e5a00 | #2c4100 | #1e2d00 |
-| Yellow | #fbf5e0 | #fff0b3 | #ffe380 | #ffd43d | #ffc700 | #ebb700 | #d2a400 | #b78f00 | #a58000 | #927200 | #806300 | #6e5600 | #604b00 |
-| Orange | #ffeee2 | #ffdfca | #ffc199 | #ffa66d | #ff8d44 | #ff7628 | #fb5b01 | #e25100 | #c74700 | #ac3e00 | #8b3200 | #6d2700 | #541e00 |
-| Red | #fdeeee | #ffdada | #ffbbbb | #ff9696 | #ff7171 | #ff5454 | #fe3939 | #fa0000 | #ec0000 | #ce0000 | #a90000 | #850000 | #620000 |
-| Magenta | #f3e5f4 | #ffd0ff | #ffaeff | #ff8eff | #f661f6 | #f137f1 | #db00db | #c000c0 | #aa00aa | #8b008b | #6c006c | #500050 | #3b003b |
-| Purple | #f1eafa | #ecddff | #ddc2ff | #cda6ff | #bb87ff | #a565f8 | #8843e1 | #6f23d0 | #5c10be | #5109ad | #41048e | #30016c | #21004b |
+## Token contract
 
-### 1.2 Neutral colors
+The complete official token block is bundled, not fetched. Use canonical names:
 
-| Name | Value | Notes |
+| Role | Token | Value/meaning |
 |---|---|---|
-| white / black | #ffffff / #000000 | Both are specified together with any foreground color |
-| Solid gray 50 | #f2f2f2 | Page-level subtle background |
-| Solid gray 100 | #e6e6e6 | Table header, code background |
-| Solid gray 200 | #cccccc | Disabled borders |
-| Solid gray 300 | #b3b3b3 | Disabled fill |
-| Solid gray 400 | #999999 | Decorative only |
-| Solid gray 420 | #949494 | Minimum gray for 3:1 non-text on white |
-| Solid gray 500 | #7f7f7f | Strong table border |
-| Solid gray 536 | #767676 | Minimum gray for 4.5:1 text on white |
-| Solid gray 600 | #666666 | Minimum gray adjacent to black for 3:1 |
-| Solid gray 700 | #4d4d4d | Secondary text |
-| Solid gray 800 | #333333 | Table body text |
-| Solid gray 900 | #1a1a1a | Strong text |
+| Primary action | `--color-key-900` | Blue-900 `#0017c1`; hover key-1000, active key-1200 |
+| Text | `--color-neutral-black` | `#000000` on white |
+| Body/secondary gray | `--color-neutral-solid-gray-800` / `--color-neutral-solid-gray-700` | `#333333` / `#4d4d4d` |
+| Border | `--color-neutral-solid-gray-420` | `#949494`; verify contrast on nonwhite surfaces |
+| Focus | `--color-primitive-yellow-300` + `--color-neutral-black` | `#ffd43d` ring/fill and black outline |
+| Success | `--color-semantic-success-1` / `--color-semantic-success-2` | Green-600 / green-800 |
+| Error | `--color-semantic-error-1` / `--color-semantic-error-2` | Red-800 / red-900 |
+| Warning | `--color-semantic-warning-yellow-1` / `--color-semantic-warning-yellow-2` | Yellow-700 / yellow-900 |
+| Orange warning | `--color-semantic-warning-orange-1` / `--color-semantic-warning-orange-2` | Orange-600 / orange-800 |
+| Size/shape | `--font-size-36`, `--line-height-140`, `--border-radius-8`, `--elevation-1` | Official rem/unitless/shadow values; no invented variants |
 
-Opacity grays mirror solid grays using black at 5 %–90 % alpha (50/100/200/300/400/420/500/536/600/700/800/900). Prefer solid grays for text.
+**Local adapter roles** (not official token names): `--text`, `--text-secondary`, `--text-muted`, `--surface`, `--surface-subtle`, `--border`, `--border-strong`, `--link`, `--link-visited`, `--link-hover`, `--link-active`, `--focus-yellow`, `--font-sans`, `--font-mono`, `--space-1/2/3/4/6/8`, `--measure`, `--container`. Spacing is 0.5/1/1.5/2/3/4rem; prose max-width 42rem, outer container 72rem. Never redefine these in a generated document.
 
-### 1.3 Roles
+Old short palette aliases (`--key-*`, `--gray-*`, `--green-*`) and `--radius-*` are **not** supported. Use `--color-key-*`, `--color-neutral-solid-gray-*`, `--color-primitive-green-*`, `--border-radius-*`. The checker rejects unknown `var()` references, even with a fallback.
 
-- **Key color**: the brand voice. Primary `blue-900 #0017c1` (CTA, active states, primary buttons); hover `blue-1000 #00118f`; active `blue-1200 #000060`. Secondary/tertiary are lighter/darker steps of the same hue. Primary color must reach 4.5:1 against the main background when used for text.
-- **Common colors**: neutrals for text, borders, dividers, surfaces. Text/background contrast 4.5:1; non-text UI/borders 3:1.
-- **Links (functional)**: default `blue-1000 #00118f`, visited `magenta-900 #8b008b`, hover `blue-900 #0017c1`, active `orange-800 #c74700`; always underlined (1px, 3px offset; 3px on hover).
-- **Focus**: two-layer indicator, `yellow-300 #ffd43d` fill plus a black outline. Never change it.
-- **Search highlight**: cyan or magenta — light background with a darker border of the same hue.
-- **Accent colors**: hues outside the key color, used sparingly for callouts and emphasis. Check contrast like any other color.
-- **Semantic colors**: success `#259d63` / `#197a4b`; error `#ec0000` / `#ce0000`; warning-yellow `#b78f00` / `#927200`; warning-orange `#fb5b01` / `#c74700`. Hue is fixed (error must look red); only lightness may be tuned. Icon/border 3:1, text 4.5:1.
+The official `--font-family-sans` names Noto Sans JP; the adapter deliberately uses `--font-sans` with **installed** Japanese/system fallbacks instead. The same applies to monospace. No `@font-face` or font download is needed. Glyph shape/metrics can differ by OS; exact Noto rendering is not guaranteed offline.
 
-### 1.4 Contrast rules (JIS X 8341-3:2016 / WCAG 2.2)
+## Typography and accessibility
 
-- Text and images of text: **4.5:1 minimum**, regardless of size. DADS does not apply the large-text 3:1 exception.
-- UI components, graphical objects, focus indicators, borders: **3:1 minimum** against adjacent colors.
-- Always specify foreground and background together; never leave the background to the browser default.
-- Never use color as the only means of conveying information (WCAG 1.4.1). Pair color with text, icons, or patterns.
-- Diagrams: if a chart's gridlines or series colors are below 3:1, place 4.5:1 text labels next to the values, and provide a text alternative that carries the same information.
+- Body: 1rem/1.7, 0.02em tracking. At default browser settings this is 16px; do not lock the root size or disable zoom.
+- Headings h1/h2/h3/h4: 36/28/22/18px-equivalent rem sizes; line heights 1.4/1.5/1.5/1.6. The mapping is this adapter's document choice, not a mandatory DADS heading hierarchy. h1/h2 tracking is 0.01em.
+- 14px-equivalent rem is reserved for metadata/captions/code, never general prose. No Japanese justification, fake italics, or spacer characters for alignment.
+- Set foreground/background together. Success/error labels use semantic step 2 on the matching light fill. Warning badge text uses **yellow-1000**, not semantic yellow-900: yellow-900 on yellow-50 is only 4.16:1, below the 4.5:1 text target. Meaningful UI/graphics need 3:1; test changed pairings rather than assuming a token guarantees contrast.
+- Focus: 4px black outline, 2px offset, 2px yellow ring; ordinary links and summary also receive yellow fill. Never remove it. Forced colors may substitute system colors.
+- Semantic headings in order, descriptive links, table captions and `th scope`, `alt` for images. SVG needs unique title/description IDs and a text alternative. Color is never the sole signal.
+- Test at 320px and 200% text size. Reading order follows DOM order. Do not hide page overflow to conceal a layout bug.
 
-## 2. Typography
+## Component API: this bundle only
 
-- Families: `'Noto Sans JP', sans-serif` for everything; `'Noto Sans Mono', monospace` for code. Both are SIL OFL 1.1 and available as web fonts. Using OS system fonts is not prohibited, but do not block text scaling.
-- Weights: only **N = 400** and **B = 700**.
-- Minimum body size: 16 CSS px. 14 px is allowed only for constrained UI metadata (never below 14).
-- Body line-height: 1.5 minimum; 1.7 is the DADS default for prose. Headings use 1.4–1.5.
-- Letter-spacing: 0 for display and dense styles, 0.01em for 32–45 px Standard, 0.02em for Standard body/headings and Mono; 0 for code.
+These classes are **adapter APIs**. Upstream uses different selectors for several components (for example `data-type="solid-fill"`, `data-size="md"` on buttons and `.dads-table` on the table itself). Do not assume identical class names imply identical markup.
 
-### 2.1 Standard (Std) — the default for documents
+| Component | Supported markup/classes |
+|---|---|
+| Shell | `.dads-header` > `.dads-header__inner` with `__title`, `__meta`; `.dads-layout` contains optional `.dads-toc` and `main.dads-prose`; `.dads-footer` |
+| TOC | `nav.dads-toc` with `.dads-toc__title` and an `ol` of fragment links. Below 1024px it is in normal flow; desktop sidebar only exists when a TOC is present. |
+| Text | `.dads-lead`, `.dads-meta`, `.dads-caption`; semantic headings style themselves |
+| Columns | `.dads-grid-2`: one column until 768px, two after; min-width-zero children, 32px gutter |
+| Panel | `.dads-card` and optional `.dads-card__title`; 16px radius, 24px padding, gray-420 border; local document panel, not an official card specification |
+| Callout | `.dads-callout` + `--info`, `--notice`, `--success`, `--warning`, `--error`, or `--emphasis`; `.dads-callout__title`. Include a visible text label; border/fill is not the meaning. These are local adaptations, not official notification banners. |
+| Badge | `.dads-badge` + `--success`, `--error`, `--warning`, `--info`, or `--neutral`; local text labels, not the official chip-label API |
+| Button link | `a.dads-button.dads-button--solid` or `--outline`, with a real destination. Medium 48px minimum height. Normal link-state CSS has zero specificity so it cannot turn white button text dark. Native disabled buttons may illustrate unavailable actions; `aria-disabled` alone is not sufficient. |
+| Table | `div.dads-table` wrapping a `table`; optional `dads-table--dense` on the wrapper. Give the wrapper `role="region"`, `aria-label`, `tabindex="0"` for keyboard scrolling; caption and scoped headers inside. |
+| Code | `pre` > `code`, with `tabindex="0"`/label on overflow regions. Screen preserves code lines with local scroll; print wraps them. |
+| Disclosure | `details.dads-details` with `open`, native `summary`, body. Initial open is deliberate no-script print fallback; the bundled script opens reader-collapsed details before print and restores state after. |
+| Diagram | `svg.dads-diagram`; for a wide labeled diagram wrap in `.dads-diagram-scroll`, `role="region"`, `aria-label`, `tabindex="0"`. Minimum 42rem screen width preserves label size; print fits it to paper. |
+| Utilities | `.dads-skip-link` pointing to `main#main` (`tabindex="-1"`); `.dads-visually-hidden` for assistive text |
 
-| Token | Size | Weight | Line-height | Letter-spacing |
-|---|---|---|---|---|
-| Std-45N/B-140 | 45px | 400/700 | 1.4 | 0 |
-| Std-36N/B-140 | 36px | 400/700 | 1.4 | 0.01em |
-| Std-32N/B-150 | 32px | 400/700 | 1.5 | 0.01em |
-| Std-28N/B-150 | 28px | 400/700 | 1.5 | 0.01em |
-| Std-26N/B-150 | 26px | 400/700 | 1.5 | 0.02em |
-| Std-24N/B-150 | 24px | 400/700 | 1.5 | 0.02em |
-| Std-22N/B-150 | 22px | 400/700 | 1.5 | 0.02em |
-| Std-20N/B-150 | 20px | 400/700 | 1.5 | 0.02em |
-| Std-18N/B-160 | 18px | 400/700 | 1.6 | 0.02em |
-| Std-17N/B-170 | 17px | 400/700 | 1.7 | 0.02em |
-| Std-16N/B-170 | 16px | 400/700 | 1.7 | 0.02em |
-| Std-16N/B-175 | 16px | 400/700 | 1.75 | 0.02em |
+Modifiers are additive: write `class="dads-badge dads-badge--success"`, not the modifier alone. Do not invent BEM suffixes such as `dads-card__heading`. New document-specific classes must use the `artifact-` prefix and be defined in a separate inline style with known tokens. No token overrides or arbitrary scripts.
 
-Recommended heading mapping for artifacts: h1 → Std-36B-140, h2 → Std-28B-150, h3 → Std-22B-150, h4 → Std-18B-160, body → Std-16N-170.
+## Deliberate robustness adaptations
 
-### 2.2 Other styles
+1. **Deterministic embedding:** builder injects the complete CSS and hash-approved print script; the checker detects truncation or manual rewrites. Tokens are not reconstructed by a model.
+2. **Offline dependencies:** reset, local fonts, inline SVG/raster, no framework. CSP blocks external resources and arbitrary script; ordinary source links remain navigable.
+3. **Light-only:** metadata and root CSS declare `only light`. DADS token snapshots here do not supply a verified dark semantic mapping; partial background inversion would break contrast. A dark OS preference must still show the light document. This does not disable user forced colors.
+4. **Responsive:** minmax/min-width-zero layout, long-word wrapping, local labeled scroll regions. No `overflow-x:hidden` on the page. If `:has()` is unavailable, the shell stays a readable single column rather than requiring a polyfill.
+5. **Print:** keep provenance/header, hide navigation, wrap wide code/table content, open disclosures then restore state; no blanket `break-inside:avoid` on arbitrarily tall tables/code blocks. `::details-content` is additional enhancement, not the sole print mechanism.
 
-- **Display (Dsp-64/57/48, B/N, 140 %)**: hero/head copy only, letter-spacing 0.
-- **Dense (Dns 14/16/17, B/N, 120–130 %)**: data tables and dense admin UI, letter-spacing 0.
-- **Oneline (Oln 14/16/17, B/N, 100 %)**: single-line UI labels such as buttons, letter-spacing 0.02em.
-- **Mono (Mono 14/16/17, B/N, 150 %)**: code, letter-spacing 0. Same sizes B/N.
+## Diagnosed failure modes
 
-### 2.3 Text presentation
+- The old template shipped an unresolved CSS marker and relied on an inline instruction to paste the stylesheet. Partial/model-retyped CSS was neither prevented nor detected; the builder now assembles exact assets.
+- “Self-contained” was previously prose-only: external fonts/imports/CDNs, sibling assets, and SVG resource URLs were not checked. Installed font fallbacks, a dependency scan, and CSP now enforce the offline contract.
+- Pairing semantic warning yellow-900 with the pale yellow surface yielded only 4.16:1 for small badge text; the adapter uses yellow-1000 for that pairing.
+- Short token aliases and undocumented component APIs encouraged drift from official examples. The adapter now embeds canonical tokens and explicitly documents where its markup differs; official medium button height is 48px, not the old 44px.
+- `a:any-link` had greater specificity than `.dads-button--solid`, turning button text blue on its blue fill. Generic link states now use zero-specificity `:where()` selectors.
+- Layout/reset gaps included shrinkable grid children, long identifiers, and an unconditional sidebar even without a TOC. Theme support was unspecified, allowing partial dark inversion.
+- Setting `display:block` on children of closed `details` does not reliably expose the browser's hidden disclosure content for print. The bundled helper opens disclosures, guards duplicate print events, and restores their state; code/tables wrap on paper. Wide SVGs use local scrolling instead of shrinking their labels into unreadability.
 
-- Body text width: target **半角80字 / 全角40字** (about 42em) per line. Wider blocks need compensating devices (short lead, TOC, chunking).
-- Do not use `text-align: justify` or spacer characters (`&nbsp;`, ideographic spaces) for layout; they break screen readers and create rivers.
-- Do not use italic for Japanese (fonts compose fake obliques); keep italics out of long passages.
-- Paragraph spacing: at least 1.5× the line box (≥2.25× font size) between paragraphs.
-- Do not render text as images; exceptions are logos and cases where the text itself is the object.
-- Text must survive 200 % zoom and reflow to a 320 px viewport without loss of function.
+## Maintaining the bundle
 
-## 3. Spacing
+Fetch official sources only while maintaining the skill, never when opening a generated file. Compare upstream token changes, replace the whole token block from the pinned generated CSS, retain the license, update commit links/date, then rerun regression tests and browser checks. Review button/link specificity, no-TOC layout, 320px reflow, dark preference, forced colors, and print of a reader-collapsed disclosure. A static pass does not prove visual/accessibility conformance.
 
-- Base unit: **8 CSS px**. A style guide usually defines 3–5 steps; DADS examples use 8 / 24 / 64.
-- Same-type elements share the same spacing; hierarchy is shown by spacing size (more important = more space).
-- Related elements sit closer together than unrelated ones (e.g. image and its caption closer than caption and body).
-- Section separation: 48–64px; heading to body: 16–24px; inline element gaps: 8px.
-- Responsive: scale spacing with the viewport; keep proportions consistent.
-- Never use whitespace characters for alignment.
-
-## 4. Corner shapes (radius)
-
-| Shape | Radius | Typical use |
-|---|---|---|
-| None | 0 | Tables, separators, full-bleed surfaces |
-| Small | 8px | Buttons, inputs, tags |
-| Medium | 12–16px | Cards, panels (16 px square / 12 px wide) |
-| Large | 16–32px | Large containers, feature panels |
-| Full | 50 % of height/short side | Pills, avatars, circular icons |
-
-Roundness reads stronger on small shapes: adjust the radius per component size so roundness looks uniform. Mixing shape styles can emphasize one element, but do it deliberately.
-
-## 5. Elevation
-
-- Drop shadows, 8 levels: `--elevation-1` `0 2px 8px 1px rgba(0,0,0,.1), 0 1px 5px 0 rgba(0,0,0,.3)` up to `--elevation-8` `0 14px 40px 7px rgba(0,0,0,.1), 0 3px 16px 0 rgba(0,0,0,.3)` (see `assets/dads.css` for all values).
-- Level 0 (no shadow) is the default for nearly everything. Shadows mark overlays (dialogs, popovers, snackbars) or hover lift.
-- Shadows cannot satisfy contrast: give every elevated element a border with 3:1 contrast against its surface.
-- Use a small, consistent set of levels; levels are relative and may change by context.
-
-## 6. Layout
-
-- Grid: 12 columns for complex pages, 1 column for documents; margins on both sides, gutters between columns.
-- Gutter width: at least **2× the body font size** (32 px with 16 px text).
-- Breakpoint: **768 px** — below is mobile/tablet, at and above is desktop. Liquid (fluid-width) layouts only; don't hide the horizontal scrollbar.
-- Keep DOM order equal to visual/reading order; don't use grid `order` to rearrange content.
-- Reading measure: about 42em for Japanese prose.
-
-## 7. Link text
-
-- State colors and underline as in §1.3. Underline is mandatory so links are recognizable without color.
-- Link text must describe its destination; avoid 「こちら」「ここ」「詳細はこちら」as the whole link. Link the noun phrase, or the whole sentence if needed.
-- Target size: at least 24×24 CSS px, or 16 px height with 4 px vertical spacing that does not overlap neighbors.
-- Links opening a new tab or pointing to non-HTML resources need an icon with alternative text (e.g. "新しいタブで開きます", "PDF・100KB").
-
-## 8. Accessibility essentials
-
-- Semantic structure first: `header`, `nav`, `main`, `section` with `aria-labelledby`, `footer`; headings in order, no level skips.
-- Focus visible on every interactive element: `outline: 4px solid #000; outline-offset: 2px; border-radius: 4px; box-shadow: 0 0 0 2px #ffd43d`.
-- Icons are paired with labels; icon-only controls get `aria-label`. Decorative SVGs get `aria-hidden="true"`; meaningful diagrams get `role="img"` and a `<title>`/`<desc>`.
-- Forms: `<label for>`, error text tied with `aria-describedby`, no placeholder-as-label.
-- Tables: `<caption>` or a preceding heading; header cells use `<th scope>`.
-- Skip link to `#main` as the first focusable element.
-- Motion: respect `prefers-reduced-motion`; no auto-playing animation that carries meaning.
-
-## 9. Component specifications
-
-### Button
-
-- Font: 16px bold, line-height 1, letter-spacing 0.02em; padding makes the target at least 44 px tall.
-- Radius 8px (small 6px, link-like 4px).
-- Solid fill: background key-900 `#0017c1`, white text; hover key-1000 with 1px underline on the label; active key-1200; disabled gray-300 fill with gray-50 text.
-- Outline: white background, 1px `currentColor` border, key-900 text; hover key-200 background and key-1000 text.
-- Focus-visible uses the standard two-layer ring (black outline + yellow shadow), never removed.
-- Text links styled as buttons still need underline semantics; don't fake buttons with `<div>`.
-
-### Card / panel
-
-- Radius 16px, 1px border `solid-gray-420`, white surface; optional `--elevation-1` only if the card floats above other content.
-- Padding 16–24px; heading first; one idea per card; avoid nesting cards.
-
-### Table
-
-- Border color `solid-gray-420` (`solid-gray-500` for header cells), body text `solid-gray-800`.
-- Cell padding 20px/16px (dense variant 12px/16px, line-height 1.3).
-- Column headers: bold, background `solid-gray-100`, text `solid-gray-900`, `scope="col"`.
-- Keep numeric alignment consistent; right-align numbers.
-
-### Callout / notice block
-
-- Info: 1px key-700 border, white or key-50 background, radius 8px.
-- Notice: 1px gray-420 border with `solid-gray-50` background and a bold title row.
-- Emphasis/disclosure: square corners with a thick left border (4px) in the semantic color.
-- Semantic colors per §1.3; pair the color with an icon and a text label ("エラー", "注意") so meaning survives grayscale.
-
-### Tabs and disclosure
-
-- Tabs use 4px radius, 1px border for the active tab, and real `<button role="tab">` semantics with arrow-key support.
-- Prefer native `<details>/<summary>` for collapsible reference material; style the marker, keep keyboard behavior free.
-
-### Code
-
-- `Noto Sans Mono`, 14–16px, line-height 1.5, letter-spacing 0.
-- Block code: `solid-gray-50` background, 1px `solid-gray-200` border, radius 8px, horizontal scroll (never wrap code), copy button optional.
-- Inline code: `solid-gray-100` background, no border, 0.1em horizontal padding.
-
-## Attribution
-
-Artifacts generated with this skill should note in the footer that they follow the デジタル庁デザインシステム (Digital Agency Design System), with a link to https://design.digital.go.jp/dads/.
+Generated footers may say they use a document adapter based on DADS and link to the official site. Do not imply official approval or label local panels/callouts/dark behavior as normative DADS components.
