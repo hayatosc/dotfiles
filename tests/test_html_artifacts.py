@@ -81,6 +81,19 @@ class ArtifactTests(unittest.TestCase):
             )
             self.assertEqual(checked.returncode, 0, checked.stdout + checked.stderr)
 
+    def test_allow_placeholder_words_in_title_and_body(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "todo.html"
+            built = subprocess.run(
+                [sys.executable, str(BUILD), str(output), "--title", "TODO list"],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(built.returncode, 0, built.stderr)
+            document = output.read_text().replace(
+                "</main>", "<p>TODO and TBD items use YYYY-MM-DD dates.</p></main>",
+            )
+            self.assertEqual(self.checker.validate(document), [])
+
     def test_no_overwrite(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "existing.html"

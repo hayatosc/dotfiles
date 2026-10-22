@@ -193,7 +193,7 @@ def validate(html):
         errors.append("require HTML doctype, lang, UTF-8 charset, viewport, only-light scheme and offline CSP")
     if parser.main != 1 or parser.h1 != 1 or not parser.title_text.strip():
         errors.append("require one main, one h1 and a nonempty title")
-    if re.search(r"@@[A-Z_]+@@|\b(?:TODO|TBD|YYYY-MM-DD)\b", html):
+    if re.search(r"@@[A-Z_]+@@", html):
         errors.append("unresolved template placeholder")
     canonical = [(name, css) for name, css in parser.styles if name == "dads-css"]
     if len(canonical) != 1 or canonical[0][1].strip() != CSS.strip():
