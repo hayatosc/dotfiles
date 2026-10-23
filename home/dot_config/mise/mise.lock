@@ -4538,9 +4538,9 @@ checksum = "sha256:d77356267bf34639265ec79b217efe0b32fc2e91f4ca7a04263a5169cb156
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlienc-1.2.1-h2ddc9cb_0.conda"
 checksum = "sha256:5572a16f08a527f7b952d125be3c3215b4b0a1c8163efcb6fd052c8895fcc8ee"
 
-[conda-packages.macos-arm64."libcxx-23.1.4-h55c6f16_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libcxx-23.1.4-h55c6f16_0.conda"
-checksum = "sha256:a8ea9f3807c18e834968c805cddec95664c1ea2dd45ef3299b74a550efb97ab3"
+[conda-packages.macos-arm64."libcxx-23.1.4-h55c6f16_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libcxx-23.1.4-h55c6f16_2.conda"
+checksum = "sha256:9c390b4f403db32346754ccef6b84b7e5d9b70cb6d76258fd23b05f2db2ab216"
 
 [conda-packages.macos-arm64."libdav1d7-1.5.4-h74c22ad_4"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdav1d7-1.5.4-h74c22ad_4.conda"
@@ -5058,9 +5058,9 @@ checksum = "sha256:c951ebf9335ffc77be60eb50f505d6e0eca3b960a3b944b1f8017e929c848
 url = "https://conda.anaconda.org/conda-forge/osx-64/libbrotlienc-1.2.1-h3d41943_0.conda"
 checksum = "sha256:754d1e9c6636b33aac0440389e3a83a1c7d3fe1c177c8fda1be3a8e29caabb4c"
 
-[conda-packages.macos-x64."libcxx-23.1.4-h19cb2f5_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libcxx-23.1.4-h19cb2f5_0.conda"
-checksum = "sha256:c6a7cf4035c8e41cb9cd1023077de2823039e1050362b328300b43bacb5b0690"
+[conda-packages.macos-x64."libcxx-23.1.4-h19cb2f5_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libcxx-23.1.4-h19cb2f5_2.conda"
+checksum = "sha256:5d66e121f30c4b3792480de92230ec05d024106df5c031452bba356153df8c65"
 
 [conda-packages.macos-x64."libdav1d7-1.5.4-had63097_4"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libdav1d7-1.5.4-had63097_4.conda"
@@ -5578,9 +5578,9 @@ checksum = "sha256:c951ebf9335ffc77be60eb50f505d6e0eca3b960a3b944b1f8017e929c848
 url = "https://conda.anaconda.org/conda-forge/osx-64/libbrotlienc-1.2.1-h3d41943_0.conda"
 checksum = "sha256:754d1e9c6636b33aac0440389e3a83a1c7d3fe1c177c8fda1be3a8e29caabb4c"
 
-[conda-packages.macos-x64-baseline."libcxx-23.1.4-h19cb2f5_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libcxx-23.1.4-h19cb2f5_0.conda"
-checksum = "sha256:c6a7cf4035c8e41cb9cd1023077de2823039e1050362b328300b43bacb5b0690"
+[conda-packages.macos-x64-baseline."libcxx-23.1.4-h19cb2f5_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libcxx-23.1.4-h19cb2f5_2.conda"
+checksum = "sha256:5d66e121f30c4b3792480de92230ec05d024106df5c031452bba356153df8c65"
 
 [conda-packages.macos-x64-baseline."libdav1d7-1.5.4-had63097_4"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libdav1d7-1.5.4-had63097_4.conda"
@@ -8489,7 +8489,7 @@ conda_deps = [
     "libharfbuzz-14.6.0-hcda0f7c_2",
     "cairo-1.18.6-h580cee5_0",
     "freetype-2.14.3-hce30654_2",
-    "libcxx-23.1.4-h55c6f16_0",
+    "libcxx-23.1.4-h55c6f16_2",
     "libexpat-2.8.5-h6111c0a_0",
     "libiconv-1.18-he4c29f2_3",
     "libjxl-0.11.2-h934fa54_1",
@@ -8586,7 +8586,7 @@ conda_deps = [
     "cairo-1.18.6-h5791faa_0",
     "freetype-2.14.3-h694c41f_2",
     "lame-3.100-hb7f2c08_1003",
-    "libcxx-23.1.4-h19cb2f5_0",
+    "libcxx-23.1.4-h19cb2f5_2",
     "libexpat-2.8.5-h6e061ac_0",
     "libiconv-1.18-h4ae439b_3",
     "libjxl-0.11.2-h473410d_1",
@@ -8682,7 +8682,7 @@ conda_deps = [
     "cairo-1.18.6-h5791faa_0",
     "freetype-2.14.3-h694c41f_2",
     "lame-3.100-hb7f2c08_1003",
-    "libcxx-23.1.4-h19cb2f5_0",
+    "libcxx-23.1.4-h19cb2f5_2",
     "libexpat-2.8.5-h6e061ac_0",
     "libiconv-1.18-h4ae439b_3",
     "libjxl-0.11.2-h473410d_1",
@@ -10804,7 +10804,7 @@ conda_deps = [
     "fontconfig-2.18.3-h81aa574_1",
     "ghostscript-10.04.0-hf9b8971_0",
     "lcms2-2.19.1-hce41798_3",
-    "libcxx-23.1.4-h55c6f16_0",
+    "libcxx-23.1.4-h55c6f16_2",
     "libglib-2.90.0-hccd281b_0",
     "libheif-1.23.6-gpl_hea44f65_101",
     "libjxl-0.11.2-h934fa54_1",
@@ -10903,7 +10903,7 @@ conda_deps = [
     "bzip2-1.0.8-h374f1ed_10",
     "ghostscript-10.08.0-h6e061ac_0",
     "lcms2-2.19.1-h4e6bd4b_3",
-    "libcxx-23.1.4-h19cb2f5_0",
+    "libcxx-23.1.4-h19cb2f5_2",
     "libglib-2.90.1-h7e55108_0",
     "libheif-1.23.6-gpl_h3766be0_101",
     "libjxl-0.11.2-h473410d_1",
@@ -11001,7 +11001,7 @@ conda_deps = [
     "bzip2-1.0.8-h374f1ed_10",
     "ghostscript-10.08.0-h6e061ac_0",
     "lcms2-2.19.1-h4e6bd4b_3",
-    "libcxx-23.1.4-h19cb2f5_0",
+    "libcxx-23.1.4-h19cb2f5_2",
     "libglib-2.90.1-h7e55108_0",
     "libheif-1.23.6-gpl_h3766be0_101",
     "libjxl-0.11.2-h473410d_1",
