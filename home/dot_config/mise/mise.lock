@@ -11482,10 +11482,10 @@ checksum = "sha256:158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e
 url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
-version = "1.0.66"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.66", digest = "sha256:9ae977c6e6d5524278ae6d7069a6533e41f9ee1e2c4569715170fc7be4015766" }
+version = "1.0.67"
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.67", digest = "sha256:1d98dc5c67e84ba30e7c7d16abcdda068288a80e01d7c1d21b868e9a625864b1" }
 backend = "npm:@xai-official/grok"
-specifiers = ["1.0.66"]
+specifiers = ["1.0.67"]
 
 [[tools."npm:acpx"]]
 version = "0.20.0"
@@ -11507,7 +11507,7 @@ specifiers = ["5.8.1"]
 
 [[tools."npm:typescript"]]
 version = "7.0.2"
-aube = { path = "locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
+aube = { path = ".mise/locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
 backend = "npm:typescript"
 specifiers = ["7.0.2"]
 
