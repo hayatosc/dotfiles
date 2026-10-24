@@ -498,9 +498,9 @@ checksum = "sha256:4c64e6843d64876d054a28ecbab70abdf145da3c2cbdaa4a43db26cdf0fd7
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxcb-1.17.0-h3f04742_2.conda"
 checksum = "sha256:bb1d9aaa885de73c504bd887e1841ad8e9d5b8432bd370b02eaf33067a001dc3"
 
-[conda-packages.linux-arm64."libxkbcommon-1.13.2-he51e330_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxkbcommon-1.13.2-he51e330_1.conda"
-checksum = "sha256:b196478988b576d324b3343fdcf4972a42647ea0a5c1b02dc77b926a64b8ceb8"
+[conda-packages.linux-arm64."libxkbcommon-1.13.2-hcfc8558_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxkbcommon-1.13.2-hcfc8558_2.conda"
+checksum = "sha256:f3ba238e74d7da4638e6b5191f39fbe7e43ce0662a8144d1dc0999eab3286917"
 
 [conda-packages.linux-arm64."libxml2-16-2.15.4-h2e5089f_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxml2-16-2.15.4-h2e5089f_1.conda"
@@ -1198,9 +1198,9 @@ checksum = "sha256:4c64e6843d64876d054a28ecbab70abdf145da3c2cbdaa4a43db26cdf0fd7
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxcb-1.17.0-h3f04742_2.conda"
 checksum = "sha256:bb1d9aaa885de73c504bd887e1841ad8e9d5b8432bd370b02eaf33067a001dc3"
 
-[conda-packages.linux-arm64-musl."libxkbcommon-1.13.2-he51e330_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxkbcommon-1.13.2-he51e330_1.conda"
-checksum = "sha256:b196478988b576d324b3343fdcf4972a42647ea0a5c1b02dc77b926a64b8ceb8"
+[conda-packages.linux-arm64-musl."libxkbcommon-1.13.2-hcfc8558_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxkbcommon-1.13.2-hcfc8558_2.conda"
+checksum = "sha256:f3ba238e74d7da4638e6b5191f39fbe7e43ce0662a8144d1dc0999eab3286917"
 
 [conda-packages.linux-arm64-musl."libxml2-16-2.15.4-h2e5089f_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxml2-16-2.15.4-h2e5089f_1.conda"
@@ -1926,9 +1926,9 @@ checksum = "sha256:8415001414f488c85b72b9d8cc2071dfb3981a47bc3c8eb56ef91a57d12ea
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.17.0-hb83e432_2.conda"
 checksum = "sha256:7b49e6fd2a584b7f072943e6adf4149677af5121246975278804782d37752837"
 
-[conda-packages.linux-x64."libxkbcommon-1.13.2-h51789e4_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.13.2-h51789e4_1.conda"
-checksum = "sha256:d44878d396713ccf3b355df617f61c40a1442fffcf134392bc6ce0e6c2219369"
+[conda-packages.linux-x64."libxkbcommon-1.13.2-h59c2f34_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.13.2-h59c2f34_2.conda"
+checksum = "sha256:156fdf41b9f3efc54c077b5b8570b810a87800b978c12348c27ec6e0ddc20359"
 
 [conda-packages.linux-x64."libxml2-16-2.15.4-hf3af7cc_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-16-2.15.4-hf3af7cc_1.conda"
@@ -2666,9 +2666,9 @@ checksum = "sha256:8415001414f488c85b72b9d8cc2071dfb3981a47bc3c8eb56ef91a57d12ea
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.17.0-hb83e432_2.conda"
 checksum = "sha256:7b49e6fd2a584b7f072943e6adf4149677af5121246975278804782d37752837"
 
-[conda-packages.linux-x64-baseline."libxkbcommon-1.13.2-h51789e4_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.13.2-h51789e4_1.conda"
-checksum = "sha256:d44878d396713ccf3b355df617f61c40a1442fffcf134392bc6ce0e6c2219369"
+[conda-packages.linux-x64-baseline."libxkbcommon-1.13.2-h59c2f34_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.13.2-h59c2f34_2.conda"
+checksum = "sha256:156fdf41b9f3efc54c077b5b8570b810a87800b978c12348c27ec6e0ddc20359"
 
 [conda-packages.linux-x64-baseline."libxml2-16-2.15.4-hf3af7cc_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-16-2.15.4-hf3af7cc_1.conda"
@@ -3406,9 +3406,9 @@ checksum = "sha256:8415001414f488c85b72b9d8cc2071dfb3981a47bc3c8eb56ef91a57d12ea
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.17.0-hb83e432_2.conda"
 checksum = "sha256:7b49e6fd2a584b7f072943e6adf4149677af5121246975278804782d37752837"
 
-[conda-packages.linux-x64-musl."libxkbcommon-1.13.2-h51789e4_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.13.2-h51789e4_1.conda"
-checksum = "sha256:d44878d396713ccf3b355df617f61c40a1442fffcf134392bc6ce0e6c2219369"
+[conda-packages.linux-x64-musl."libxkbcommon-1.13.2-h59c2f34_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.13.2-h59c2f34_2.conda"
+checksum = "sha256:156fdf41b9f3efc54c077b5b8570b810a87800b978c12348c27ec6e0ddc20359"
 
 [conda-packages.linux-x64-musl."libxml2-16-2.15.4-hf3af7cc_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-16-2.15.4-hf3af7cc_1.conda"
@@ -4146,9 +4146,9 @@ checksum = "sha256:8415001414f488c85b72b9d8cc2071dfb3981a47bc3c8eb56ef91a57d12ea
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.17.0-hb83e432_2.conda"
 checksum = "sha256:7b49e6fd2a584b7f072943e6adf4149677af5121246975278804782d37752837"
 
-[conda-packages.linux-x64-musl-baseline."libxkbcommon-1.13.2-h51789e4_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.13.2-h51789e4_1.conda"
-checksum = "sha256:d44878d396713ccf3b355df617f61c40a1442fffcf134392bc6ce0e6c2219369"
+[conda-packages.linux-x64-musl-baseline."libxkbcommon-1.13.2-h59c2f34_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libxkbcommon-1.13.2-h59c2f34_2.conda"
+checksum = "sha256:156fdf41b9f3efc54c077b5b8570b810a87800b978c12348c27ec6e0ddc20359"
 
 [conda-packages.linux-x64-musl-baseline."libxml2-16-2.15.4-hf3af7cc_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxml2-16-2.15.4-hf3af7cc_1.conda"
@@ -7723,7 +7723,7 @@ conda_deps = [
     "libcap-2.78-hfcc8634_1",
     "zstd-1.5.7-h9d15635_7",
     "liburing-2.14-h45ce4d5_1",
-    "libxkbcommon-1.13.2-he51e330_1",
+    "libxkbcommon-1.13.2-hcfc8558_2",
     "libusb-1.0.30-h25c9a66_1",
     "wayland-1.26.0-h637a836_2",
     "xorg-libxi-1.8.4-h5bc82ec_0",
@@ -7857,7 +7857,7 @@ conda_deps = [
     "libcap-2.78-hfcc8634_1",
     "zstd-1.5.7-h9d15635_7",
     "liburing-2.14-h45ce4d5_1",
-    "libxkbcommon-1.13.2-he51e330_1",
+    "libxkbcommon-1.13.2-hcfc8558_2",
     "libusb-1.0.30-h25c9a66_1",
     "wayland-1.26.0-h637a836_2",
     "xorg-libxi-1.8.4-h5bc82ec_0",
@@ -8006,7 +8006,7 @@ conda_deps = [
     "libusb-1.0.30-h0d1bbbc_1",
     "liburing-2.14-h4dbf13b_1",
     "xorg-libxi-1.8.4-h7cc23a3_0",
-    "libxkbcommon-1.13.2-h51789e4_1",
+    "libxkbcommon-1.13.2-h59c2f34_2",
     "xorg-libxtst-1.2.6-h7cc23a3_0",
     "libudev1-262.1-h26e0ef7_0",
     "libdeflate-1.25-hd45a770_1",
@@ -8150,7 +8150,7 @@ conda_deps = [
     "libusb-1.0.30-h0d1bbbc_1",
     "liburing-2.14-h4dbf13b_1",
     "xorg-libxi-1.8.4-h7cc23a3_0",
-    "libxkbcommon-1.13.2-h51789e4_1",
+    "libxkbcommon-1.13.2-h59c2f34_2",
     "xorg-libxtst-1.2.6-h7cc23a3_0",
     "libudev1-262.1-h26e0ef7_0",
     "libdeflate-1.25-hd45a770_1",
@@ -8294,7 +8294,7 @@ conda_deps = [
     "libusb-1.0.30-h0d1bbbc_1",
     "liburing-2.14-h4dbf13b_1",
     "xorg-libxi-1.8.4-h7cc23a3_0",
-    "libxkbcommon-1.13.2-h51789e4_1",
+    "libxkbcommon-1.13.2-h59c2f34_2",
     "xorg-libxtst-1.2.6-h7cc23a3_0",
     "libudev1-262.1-h26e0ef7_0",
     "libdeflate-1.25-hd45a770_1",
@@ -8438,7 +8438,7 @@ conda_deps = [
     "libusb-1.0.30-h0d1bbbc_1",
     "liburing-2.14-h4dbf13b_1",
     "xorg-libxi-1.8.4-h7cc23a3_0",
-    "libxkbcommon-1.13.2-h51789e4_1",
+    "libxkbcommon-1.13.2-h59c2f34_2",
     "xorg-libxtst-1.2.6-h7cc23a3_0",
     "libudev1-262.1-h26e0ef7_0",
     "libdeflate-1.25-hd45a770_1",
@@ -10076,11 +10076,11 @@ conda_deps = [
     "at-spi2-atk-2.38.0-h1f2db35_3",
     "atk-1.0-2.38.0-hedc4a1f_2",
     "epoxy-1.5.10-he30d5cf_2",
-    "libxkbcommon-1.13.2-he51e330_1",
     "xorg-libxfixes-6.0.2-h5bc82ec_1",
     "xorg-libxrandr-1.5.5-h5bc82ec_1",
     "harfbuzz-15.0.0-h8af1aa0_0",
     "libcups-2.3.3-h4f2b762_6",
+    "libxkbcommon-1.13.2-hcfc8558_2",
     "wayland-1.26.0-h637a836_2",
     "xorg-libxi-1.8.4-h5bc82ec_0",
     "svt-av1-4.2.0-h4154aff_1",
@@ -10209,11 +10209,11 @@ conda_deps = [
     "at-spi2-atk-2.38.0-h1f2db35_3",
     "atk-1.0-2.38.0-hedc4a1f_2",
     "epoxy-1.5.10-he30d5cf_2",
-    "libxkbcommon-1.13.2-he51e330_1",
     "xorg-libxfixes-6.0.2-h5bc82ec_1",
     "xorg-libxrandr-1.5.5-h5bc82ec_1",
     "harfbuzz-15.0.0-h8af1aa0_0",
     "libcups-2.3.3-h4f2b762_6",
+    "libxkbcommon-1.13.2-hcfc8558_2",
     "wayland-1.26.0-h637a836_2",
     "xorg-libxi-1.8.4-h5bc82ec_0",
     "svt-av1-4.2.0-h4154aff_1",
@@ -10342,11 +10342,11 @@ conda_deps = [
     "pixman-0.46.4-h54a6638_3",
     "atk-1.0-2.38.0-h04ea711_2",
     "epoxy-1.5.10-hb03c661_2",
-    "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxfixes-6.0.2-h7cc23a3_1",
     "xorg-libxrandr-1.5.5-h7cc23a3_1",
     "at-spi2-atk-2.38.0-h0630a04_3",
     "libcups-2.3.3-h7a8fb5f_6",
+    "libxkbcommon-1.13.2-h59c2f34_2",
     "wayland-1.26.0-hc1c935e_2",
     "xorg-libxi-1.8.4-h7cc23a3_0",
     "svt-av1-4.2.0-hd2095e1_1",
@@ -10475,11 +10475,11 @@ conda_deps = [
     "pixman-0.46.4-h54a6638_3",
     "atk-1.0-2.38.0-h04ea711_2",
     "epoxy-1.5.10-hb03c661_2",
-    "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxfixes-6.0.2-h7cc23a3_1",
     "xorg-libxrandr-1.5.5-h7cc23a3_1",
     "at-spi2-atk-2.38.0-h0630a04_3",
     "libcups-2.3.3-h7a8fb5f_6",
+    "libxkbcommon-1.13.2-h59c2f34_2",
     "wayland-1.26.0-hc1c935e_2",
     "xorg-libxi-1.8.4-h7cc23a3_0",
     "svt-av1-4.2.0-hd2095e1_1",
@@ -10608,11 +10608,11 @@ conda_deps = [
     "pixman-0.46.4-h54a6638_3",
     "atk-1.0-2.38.0-h04ea711_2",
     "epoxy-1.5.10-hb03c661_2",
-    "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxfixes-6.0.2-h7cc23a3_1",
     "xorg-libxrandr-1.5.5-h7cc23a3_1",
     "at-spi2-atk-2.38.0-h0630a04_3",
     "libcups-2.3.3-h7a8fb5f_6",
+    "libxkbcommon-1.13.2-h59c2f34_2",
     "wayland-1.26.0-hc1c935e_2",
     "xorg-libxi-1.8.4-h7cc23a3_0",
     "svt-av1-4.2.0-hd2095e1_1",
@@ -10741,11 +10741,11 @@ conda_deps = [
     "pixman-0.46.4-h54a6638_3",
     "atk-1.0-2.38.0-h04ea711_2",
     "epoxy-1.5.10-hb03c661_2",
-    "libxkbcommon-1.13.2-h51789e4_1",
     "xorg-libxfixes-6.0.2-h7cc23a3_1",
     "xorg-libxrandr-1.5.5-h7cc23a3_1",
     "at-spi2-atk-2.38.0-h0630a04_3",
     "libcups-2.3.3-h7a8fb5f_6",
+    "libxkbcommon-1.13.2-h59c2f34_2",
     "wayland-1.26.0-hc1c935e_2",
     "xorg-libxi-1.8.4-h7cc23a3_0",
     "svt-av1-4.2.0-hd2095e1_1",
@@ -11428,7 +11428,7 @@ specifiers = ["0.10.7+bc794d341"]
 
 [[tools.ni]]
 version = "30.6.0"
-aube = { path = "locks/ni/30.6.0", digest = "sha256:b71563dcce8f3d0b62a41ae3b44333569923a86a6c47e70d99917885f190edda" }
+aube = { path = ".mise/locks/ni/30.6.0", digest = "sha256:20b74bf748f72a8a087775b6d97b0777259798f7a8ea040bf332ff172bfb6d3e" }
 backend = "npm:@antfu/ni"
 specifiers = ["30.6.0"]
 
@@ -11483,43 +11483,43 @@ url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
 version = "1.0.66"
-aube = { path = "locks/npm-xai-official-grok/1.0.66", digest = "sha256:9ae977c6e6d5524278ae6d7069a6533e41f9ee1e2c4569715170fc7be4015766" }
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.66", digest = "sha256:9ae977c6e6d5524278ae6d7069a6533e41f9ee1e2c4569715170fc7be4015766" }
 backend = "npm:@xai-official/grok"
 specifiers = ["1.0.66"]
 
 [[tools."npm:acpx"]]
 version = "0.20.0"
-aube = { path = "locks/npm-acpx/0.20.0", digest = "sha256:dc0360ac2b371975f2a86558bc93024d599e7e481ec1af146f1e25725812c83b" }
+aube = { path = ".mise/locks/npm-acpx/0.20.0", digest = "sha256:fc6182b2bfc69e8f6ed03aca529370812d699c25aad01d0d465cc02510b44977" }
 backend = "npm:acpx"
 specifiers = ["0.20.0"]
 
 [[tools."npm:agent-browser"]]
 version = "0.39.1"
-aube = { path = "locks/npm-agent-browser/0.39.1", digest = "sha256:86a55f9f1f21ded0b891cd2b3da12b933e646be00a66593db933a128b44074a0" }
+aube = { path = ".mise/locks/npm-agent-browser/0.39.1", digest = "sha256:86a55f9f1f21ded0b891cd2b3da12b933e646be00a66593db933a128b44074a0" }
 backend = "npm:agent-browser"
 specifiers = ["0.39.1"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
-aube = { path = "locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
+aube = { path = ".mise/locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
 backend = "npm:bash-language-server"
 specifiers = ["5.8.1"]
 
 [[tools."npm:typescript-language-server"]]
 version = "6.0.2"
-aube = { path = "locks/npm-typescript-language-server/6.0.2", digest = "sha256:c04c228752c1b960fe23a17ede2a5332d60f7a757f2485adadabf23ec0facdf0" }
+aube = { path = ".mise/locks/npm-typescript-language-server/6.0.2", digest = "sha256:c04c228752c1b960fe23a17ede2a5332d60f7a757f2485adadabf23ec0facdf0" }
 backend = "npm:typescript-language-server"
 specifiers = ["6.0.2"]
 
 [[tools."npm:vscode-langservers-extracted"]]
 version = "4.10.0"
-aube = { path = "locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:904d09d805abeb2ac88c84a215c4c3dc31d90b3a627ae0a0b06bcee5a50a2892" }
+aube = { path = ".mise/locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:ac0d4352606d95941c3e4cbe186d5b2e83bcca7c7505eaefdb542b13b0fa6a12" }
 backend = "npm:vscode-langservers-extracted"
 specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
 version = "1.25.0"
-aube = { path = "locks/npm-yaml-language-server/1.25.0", digest = "sha256:ef75760496e2bf86d47dedca0f87fc232adcfce2ca92bdf3ff796635e708ddbd" }
+aube = { path = ".mise/locks/npm-yaml-language-server/1.25.0", digest = "sha256:b2f82940e01ce68505614e37119a7ffbb9ad13907716c5d77410a0c44eda8d7a" }
 backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
 
@@ -11586,7 +11586,10 @@ url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/64721
 [[tools.pi]]
 version = "1.3.0"
 backend = "aqua:earendil-works/pi"
-specifiers = ["latest"]
+specifiers = [
+    "1.3.0",
+    "latest",
+]
 
 [tools.pi."platforms.linux-arm64"]
 checksum = "sha256:7fd2ea14fca390ebf9f47438baaef07c4b3d13db7cc8e459831118391b7ea65b"
@@ -11716,7 +11719,7 @@ provenance = "github-attestations"
 
 [[tools.portless]]
 version = "0.15.7"
-aube = { path = "locks/portless/0.15.7", digest = "sha256:0fc0610f5a55499fa7050857553690ce2830db38081d3c0c4086b9b555531b65" }
+aube = { path = ".mise/locks/portless/0.15.7", digest = "sha256:0fc0610f5a55499fa7050857553690ce2830db38081d3c0c4086b9b555531b65" }
 backend = "npm:portless"
 specifiers = ["0.15.7"]
 
