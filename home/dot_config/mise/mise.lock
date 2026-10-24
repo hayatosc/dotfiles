@@ -11428,7 +11428,7 @@ specifiers = ["0.10.7+bc794d341"]
 
 [[tools.ni]]
 version = "30.6.0"
-aube = { path = ".mise/locks/ni/30.6.0", digest = "sha256:b71563dcce8f3d0b62a41ae3b44333569923a86a6c47e70d99917885f190edda" }
+aube = { path = "locks/ni/30.6.0", digest = "sha256:b71563dcce8f3d0b62a41ae3b44333569923a86a6c47e70d99917885f190edda" }
 backend = "npm:@antfu/ni"
 specifiers = ["30.6.0"]
 
@@ -11483,43 +11483,43 @@ url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
 version = "1.0.66"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.66", digest = "sha256:9ae977c6e6d5524278ae6d7069a6533e41f9ee1e2c4569715170fc7be4015766" }
+aube = { path = "locks/npm-xai-official-grok/1.0.66", digest = "sha256:9ae977c6e6d5524278ae6d7069a6533e41f9ee1e2c4569715170fc7be4015766" }
 backend = "npm:@xai-official/grok"
 specifiers = ["1.0.66"]
 
 [[tools."npm:acpx"]]
 version = "0.20.0"
-aube = { path = ".mise/locks/npm-acpx/0.20.0", digest = "sha256:dc0360ac2b371975f2a86558bc93024d599e7e481ec1af146f1e25725812c83b" }
+aube = { path = "locks/npm-acpx/0.20.0", digest = "sha256:dc0360ac2b371975f2a86558bc93024d599e7e481ec1af146f1e25725812c83b" }
 backend = "npm:acpx"
 specifiers = ["0.20.0"]
 
 [[tools."npm:agent-browser"]]
 version = "0.39.1"
-aube = { path = ".mise/locks/npm-agent-browser/0.39.1", digest = "sha256:86a55f9f1f21ded0b891cd2b3da12b933e646be00a66593db933a128b44074a0" }
+aube = { path = "locks/npm-agent-browser/0.39.1", digest = "sha256:86a55f9f1f21ded0b891cd2b3da12b933e646be00a66593db933a128b44074a0" }
 backend = "npm:agent-browser"
 specifiers = ["0.39.1"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
-aube = { path = ".mise/locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
+aube = { path = "locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
 backend = "npm:bash-language-server"
 specifiers = ["5.8.1"]
 
 [[tools."npm:typescript-language-server"]]
 version = "6.0.2"
-aube = { path = ".mise/locks/npm-typescript-language-server/6.0.2", digest = "sha256:c04c228752c1b960fe23a17ede2a5332d60f7a757f2485adadabf23ec0facdf0" }
+aube = { path = "locks/npm-typescript-language-server/6.0.2", digest = "sha256:c04c228752c1b960fe23a17ede2a5332d60f7a757f2485adadabf23ec0facdf0" }
 backend = "npm:typescript-language-server"
 specifiers = ["6.0.2"]
 
 [[tools."npm:vscode-langservers-extracted"]]
 version = "4.10.0"
-aube = { path = ".mise/locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:904d09d805abeb2ac88c84a215c4c3dc31d90b3a627ae0a0b06bcee5a50a2892" }
+aube = { path = "locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:904d09d805abeb2ac88c84a215c4c3dc31d90b3a627ae0a0b06bcee5a50a2892" }
 backend = "npm:vscode-langservers-extracted"
 specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
 version = "1.25.0"
-aube = { path = ".mise/locks/npm-yaml-language-server/1.25.0", digest = "sha256:ef75760496e2bf86d47dedca0f87fc232adcfce2ca92bdf3ff796635e708ddbd" }
+aube = { path = "locks/npm-yaml-language-server/1.25.0", digest = "sha256:ef75760496e2bf86d47dedca0f87fc232adcfce2ca92bdf3ff796635e708ddbd" }
 backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
 
@@ -11582,6 +11582,66 @@ url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/64721
 checksum = "sha256:e4ce9117f55fc068414513789f8c7d1049f855d7518bb4e350b9170a3a20d8c3"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.19.3/opencode-windows-x64.zip"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/647217179"
+
+[[tools.pi]]
+version = "1.3.0"
+backend = "aqua:earendil-works/pi"
+specifiers = ["latest"]
+
+[tools.pi."platforms.linux-arm64"]
+checksum = "sha256:7fd2ea14fca390ebf9f47438baaef07c4b3d13db7cc8e459831118391b7ea65b"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855526"
+
+[tools.pi."platforms.linux-arm64-musl"]
+checksum = "sha256:7fd2ea14fca390ebf9f47438baaef07c4b3d13db7cc8e459831118391b7ea65b"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855526"
+
+[tools.pi."platforms.linux-x64"]
+checksum = "sha256:24f5be328b66d4da36876296989501974f43ab8434fbb57c35c523a3ea505ded"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855525"
+
+[tools.pi."platforms.linux-x64-baseline"]
+checksum = "sha256:24f5be328b66d4da36876296989501974f43ab8434fbb57c35c523a3ea505ded"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855525"
+
+[tools.pi."platforms.linux-x64-musl"]
+checksum = "sha256:24f5be328b66d4da36876296989501974f43ab8434fbb57c35c523a3ea505ded"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855525"
+
+[tools.pi."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:24f5be328b66d4da36876296989501974f43ab8434fbb57c35c523a3ea505ded"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855525"
+
+[tools.pi."platforms.macos-arm64"]
+checksum = "sha256:1f9ae61cdeae04dd68caf1a1e8ab8ec9b292062f6ccb3252e0a9cbe93b5b16f1"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855529"
+
+[tools.pi."platforms.macos-x64"]
+checksum = "sha256:9ff562e2e439f50971b1f6bd9b62b30946600d9e9baa4ea19635cf630a553066"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855527"
+
+[tools.pi."platforms.macos-x64-baseline"]
+checksum = "sha256:9ff562e2e439f50971b1f6bd9b62b30946600d9e9baa4ea19635cf630a553066"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855527"
+
+[tools.pi."platforms.windows-x64"]
+checksum = "sha256:daf0ef45fd08f13dbb64c62d559e332c2d3d3087f8ae022ec5a1b9b655b59894"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855589"
+
+[tools.pi."platforms.windows-x64-baseline"]
+checksum = "sha256:daf0ef45fd08f13dbb64c62d559e332c2d3d3087f8ae022ec5a1b9b655b59894"
+url = "https://github.com/earendil-works/pi/releases/download/v1.3.0/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/644855589"
 
 [[tools.pnpm]]
 version = "12.11.2"
@@ -11656,7 +11716,7 @@ provenance = "github-attestations"
 
 [[tools.portless]]
 version = "0.15.7"
-aube = { path = ".mise/locks/portless/0.15.7", digest = "sha256:0fc0610f5a55499fa7050857553690ce2830db38081d3c0c4086b9b555531b65" }
+aube = { path = "locks/portless/0.15.7", digest = "sha256:0fc0610f5a55499fa7050857553690ce2830db38081d3c0c4086b9b555531b65" }
 backend = "npm:portless"
 specifiers = ["0.15.7"]
 
