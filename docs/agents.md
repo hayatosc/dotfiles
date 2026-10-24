@@ -25,7 +25,19 @@ Chezmoi's `symlink_*` templates link `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`
 
 After changing settings in Pi, use `chezmoi add ~/.pi/agent/settings.json` to capture them; otherwise apply restores the repository version. Pi discovers `~/.agents/skills/` directly, so no skill symlink is needed.
 
+### Language servers
+
+Pi uses TypeScript 7's native LSP (`tsc --lsp --stdio`), not `typescript-language-server` and `tsserver`. TypeScript is installed and versioned globally by `home/dot_config/mise/config.toml` and its lockfile. Pi runs `mise exec -- tsc --lsp --stdio` to resolve the configured compiler even in already-running shells, without duplicating its version in Pi settings. A project-local mise override takes precedence over the global version and must also provide the native LSP. The obsolete `typescript-language-server` package is no longer managed or required.
+
+Bash diagnostics require ShellCheck in addition to `bash-language-server`; both are managed by mise. Rust analysis requires matching standard-library sources (`rustup component add rust-src` for the active toolchain). If rustup reports a file conflict, preserve the existing source tree before repairing it rather than overwriting it blindly.
+
+After changing LSP definitions, run `/reload` in Pi. An instance that failed before configuration changed can retain its unavailable state; `/lsp stop typescript` allows a fresh lazy start. Validate an actual diagnostic or hover response, not just the executable's version. The Python `ty` server registers pull diagnostics asynchronously: an immediate first request can report no pushed diagnostics before registration completes; a subsequent request can use pull diagnostics.
+
+### Extensions
+
 Validate the local RTK hook with Node.js 22.18+ and RTK on `PATH`: `node --test tests/test_pi_rtk.mjs`. To regenerate it, run `rtk init --agent pi --global --hook-only` in a disposable HOME before copying it into the source tree; do not run the initializer against the deployed file.
+
+The local `home/dot_pi/agent/extensions/fast.ts` extension adds `/fast` (toggle) and `/fast on|off|status` for the `openai` and legacy `openai-codex` providers. Other providers produce an error. Fast mode requests `service_tier: "priority"` without changing authentication or reasoning effort; backend support is still required and Pi's cost estimate may not reflect the higher tier. It starts disabled and resets on session start or model selection. Turning it off stops the extension's override; any service tier configured elsewhere still applies. Reload Pi after deployment. Validate with `node --test tests/test_pi_fast.mjs` (Node.js 22.18+).
 
 `home/.chezmoiscripts/run_onchange_after_install-pi-packages.sh.tmpl` runs `pi update --extensions --no-approve` after apply when the package list or Pi executable path changes. It installs/reconciles global packages without loading project-local packages. Unversioned packages update to the latest release when the script runs. If Pi is unavailable, installation is skipped; apply again after installing Pi.
 

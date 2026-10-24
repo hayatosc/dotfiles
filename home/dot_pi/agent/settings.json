@@ -5,8 +5,8 @@
   "lsp": {
     "servers": {
       "typescript": {
-        "command": "typescript-language-server",
-        "args": ["--stdio"],
+        "command": "mise",
+        "args": ["exec", "--", "tsc", "--lsp", "--stdio"],
         "languages": [
           { "extensions": [".ts", ".mts", ".cts"], "languageId": "typescript" },
           { "extensions": [".tsx"], "languageId": "typescriptreact" },
@@ -57,5 +57,7 @@
     "npm:@ian-pascoe/pi-lsp",
     "npm:pi-subagents"
   ],
-  "skills": ["!**/synced/**"]
+  "skills": ["!**/synced/**"],
+  "defaultProvider": "openai",
+  "defaultModel": "gpt-6-astra"
 }
