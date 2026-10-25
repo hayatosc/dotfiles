@@ -11494,10 +11494,10 @@ backend = "npm:acpx"
 specifiers = ["0.20.0"]
 
 [[tools."npm:agent-browser"]]
-version = "0.39.1"
-aube = { path = ".mise/locks/npm-agent-browser/0.39.1", digest = "sha256:86a55f9f1f21ded0b891cd2b3da12b933e646be00a66593db933a128b44074a0" }
+version = "0.39.2"
+aube = { path = ".mise/locks/npm-agent-browser/0.39.2", digest = "sha256:0ef8b31babacd40398fd9e96bcc5444c4053bd1e046a9fa5a82e0c5b9fc91f29" }
 backend = "npm:agent-browser"
-specifiers = ["0.39.1"]
+specifiers = ["0.39.2"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
