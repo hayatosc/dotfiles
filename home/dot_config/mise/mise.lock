@@ -6290,9 +6290,9 @@ checksum = "sha256:cad8b94c2b00264a15d469eed6dc53aac1c59c6d46f27ad1d91bfaf227cf1
 url = "https://conda.anaconda.org/conda-forge/win-64/pthread-stubs-0.4-hfa92662_1004.conda"
 checksum = "sha256:2418cf449df76b0da851cb59b7c826a9ade81914eaff799fbfd3f509ba1edf46"
 
-[conda-packages.windows-x64."python-3.15.1-h53f6dd8_100_cp315"]
-url = "https://conda.anaconda.org/conda-forge/win-64/python-3.15.1-h53f6dd8_100_cp315.conda"
-checksum = "sha256:c1086f7562010f4d588344cb2a3774e6414338ef76659ee5d424e9d410880051"
+[conda-packages.windows-x64."python-3.15.2-h53f6dd8_100_cp315"]
+url = "https://conda.anaconda.org/conda-forge/win-64/python-3.15.2-h53f6dd8_100_cp315.conda"
+checksum = "sha256:75ce979442c5a5cd4f38ced72c5060c35e3b3d4539d92d2cb8bae5e3b6043fa4"
 
 [conda-packages.windows-x64."python_abi-3.15-9_cp315"]
 url = "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.15-9_cp315.conda"
@@ -6770,9 +6770,9 @@ checksum = "sha256:cad8b94c2b00264a15d469eed6dc53aac1c59c6d46f27ad1d91bfaf227cf1
 url = "https://conda.anaconda.org/conda-forge/win-64/pthread-stubs-0.4-hfa92662_1004.conda"
 checksum = "sha256:2418cf449df76b0da851cb59b7c826a9ade81914eaff799fbfd3f509ba1edf46"
 
-[conda-packages.windows-x64-baseline."python-3.15.1-h53f6dd8_100_cp315"]
-url = "https://conda.anaconda.org/conda-forge/win-64/python-3.15.1-h53f6dd8_100_cp315.conda"
-checksum = "sha256:c1086f7562010f4d588344cb2a3774e6414338ef76659ee5d424e9d410880051"
+[conda-packages.windows-x64-baseline."python-3.15.2-h53f6dd8_100_cp315"]
+url = "https://conda.anaconda.org/conda-forge/win-64/python-3.15.2-h53f6dd8_100_cp315.conda"
+checksum = "sha256:75ce979442c5a5cd4f38ced72c5060c35e3b3d4539d92d2cb8bae5e3b6043fa4"
 
 [conda-packages.windows-x64-baseline."python_abi-3.15-9_cp315"]
 url = "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.15-9_cp315.conda"
@@ -7246,62 +7246,62 @@ url = "https://github.com/ast-grep/ast-grep/releases/download/0.50.0/app-x86_64-
 url_api = "https://api.github.com/repos/ast-grep/ast-grep/releases/assets/625198178"
 
 [[tools.aube]]
-version = "v2.8.1"
+version = "v2.8.2"
 backend = "aqua:jdx/aube"
-specifiers = ["v2.8.1"]
+specifiers = ["v2.8.2"]
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:12eda315743aea0a1a66eedaf4ebd2f2de80d985c71cf21d44475cf6c9f8728c"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660471696"
+checksum = "sha256:1a4d640140f6def6a18fdee28d33a54ac818f4b28e32c36ae66c452e1e41a400"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668826036"
 provenance = "github-attestations"
 
 [tools.aube."platforms.linux-arm64-musl"]
-checksum = "sha256:b067a7b4633f8ecafcf9e8d2d8ffe0de7c36af5dc7f632aff079782d11c5e49f"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660426192"
+checksum = "sha256:dc859a371c6ff8636022b55ebece0088e573b904b6deb768ee0eb0c1a5cb9472"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668787816"
 provenance = "github-attestations"
 
 [tools.aube."platforms.linux-x64"]
-checksum = "sha256:83ca5541a10a21b81189fc391d3853774826a439db28d3b0136648c37fbdbe79"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660435701"
+checksum = "sha256:778dec9a531f362ef28dd8de025ea760ef53ab7cd363841be51d383093843ff4"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668782274"
 provenance = "github-attestations"
 
 [tools.aube."platforms.linux-x64-baseline"]
-checksum = "sha256:83ca5541a10a21b81189fc391d3853774826a439db28d3b0136648c37fbdbe79"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660435701"
+checksum = "sha256:778dec9a531f362ef28dd8de025ea760ef53ab7cd363841be51d383093843ff4"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668782274"
 provenance = "github-attestations"
 
 [tools.aube."platforms.linux-x64-musl"]
-checksum = "sha256:5a8bb76fb728cc8d130014e660dd229fd908648ab8d1a8f2e005210f2c472a0d"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660434367"
+checksum = "sha256:2f8850cf7860385ed859b12d63ea01a475e4be989dc7ecdca1a27954e8cd955f"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668780035"
 provenance = "github-attestations"
 
 [tools.aube."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:5a8bb76fb728cc8d130014e660dd229fd908648ab8d1a8f2e005210f2c472a0d"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660434367"
+checksum = "sha256:2f8850cf7860385ed859b12d63ea01a475e4be989dc7ecdca1a27954e8cd955f"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668780035"
 provenance = "github-attestations"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:f5eca610159c38c5ab6d5766348305b2d391de436349c7abd49a967b289a895f"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660459276"
+checksum = "sha256:81a509aea6f0ef7339e173e0e6f0f44154fe2a49284a1942255dc5f09429e44b"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668845326"
 provenance = "github-attestations"
 
 [tools.aube."platforms.windows-x64"]
-checksum = "sha256:b01cac5f4e2ea4988bbabb36b49dced6986ef26107cbcfded40cc0469e735765"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660452645"
+checksum = "sha256:d033e7a34593715c278a5ef4611ca11c6f1c9f1f8179c87b2707206448fbba97"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668816671"
 provenance = "github-attestations"
 
 [tools.aube."platforms.windows-x64-baseline"]
-checksum = "sha256:b01cac5f4e2ea4988bbabb36b49dced6986ef26107cbcfded40cc0469e735765"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/660452645"
+checksum = "sha256:d033e7a34593715c278a5ef4611ca11c6f1c9f1f8179c87b2707206448fbba97"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.2/aube-v2.8.2-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/668816671"
 provenance = "github-attestations"
 
 [[tools.bat]]
@@ -8809,7 +8809,7 @@ conda_deps = [
     "libtiff-4.7.2-h8f73337_1",
     "lerc-4.2.0-hd936e49_0",
     "libusb-1.0.30-h6a83c73_1",
-    "python-3.15.1-h53f6dd8_100_cp315",
+    "python-3.15.2-h53f6dd8_100_cp315",
     "libsqlite-3.54.1-hf5d6505_100",
     "packaging-26.3-pyhc364b38_0",
     "libdeflate-1.25-h1a1d4e4_1",
@@ -8896,7 +8896,7 @@ conda_deps = [
     "libtiff-4.7.2-h8f73337_1",
     "lerc-4.2.0-hd936e49_0",
     "libusb-1.0.30-h6a83c73_1",
-    "python-3.15.1-h53f6dd8_100_cp315",
+    "python-3.15.2-h53f6dd8_100_cp315",
     "libsqlite-3.54.1-hf5d6505_100",
     "packaging-26.3-pyhc364b38_0",
     "libdeflate-1.25-h1a1d4e4_1",
@@ -11159,7 +11159,7 @@ conda_deps = [
     "freeglut-3.2.2-hac47afa_4",
     "graphite2-1.3.15-h5112557_1",
     "ca-certificates-2026.10.23-h4c7d964_0",
-    "python-3.15.1-h53f6dd8_100_cp315",
+    "python-3.15.2-h53f6dd8_100_cp315",
     "libsqlite-3.54.1-hf5d6505_100",
     "packaging-26.3-pyhc364b38_0",
     "libgcc-16.2.0-h110b43a_7",
@@ -11268,7 +11268,7 @@ conda_deps = [
     "freeglut-3.2.2-hac47afa_4",
     "graphite2-1.3.15-h5112557_1",
     "ca-certificates-2026.10.23-h4c7d964_0",
-    "python-3.15.1-h53f6dd8_100_cp315",
+    "python-3.15.2-h53f6dd8_100_cp315",
     "libsqlite-3.54.1-hf5d6505_100",
     "packaging-26.3-pyhc364b38_0",
     "libgcc-16.2.0-h110b43a_7",
