@@ -11718,10 +11718,10 @@ url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/625613173"
 provenance = "github-attestations"
 
 [[tools.portless]]
-version = "0.15.9"
-aube = { path = ".mise/locks/portless/0.15.9", digest = "sha256:f9a895dd74301c106f2e53b6e0c15494ddc71bb7f1a6dcecb35a88d63e225847" }
+version = "0.15.10"
+aube = { path = ".mise/locks/portless/0.15.10", digest = "sha256:f1ddf0acba4238967ef4fef03a21bc79169d68dd3bd0242493ef14d92d7379dd" }
 backend = "npm:portless"
-specifiers = ["0.15.9"]
+specifiers = ["0.15.10"]
 
 [[tools.python]]
 version = "3.15.1"
