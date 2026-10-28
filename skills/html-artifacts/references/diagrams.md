@@ -1,106 +1,75 @@
-# Inline SVG diagrams for DADS artifacts
+# Inline SVG diagrams
 
-Hand-written SVG is the part of an artifact most likely to come out crooked. Copy a pattern from
-here instead of inventing geometry, and keep every diagram inside `assets/dads.css` tokens — inline
-SVG inherits the page CSS, so `fill="var(--key-50)"` works.
+Use a diagram only when it clarifies a relationship, mechanism, comparison, or sequence better than prose. Keep a concise text explanation next to it. SVG must be inline: no Mermaid/CDN, remote `<use>`, icon font, external image, or fetch. Do not use a chart-shaped decoration in place of evidence.
 
-## Canvas conventions
+## Readable geometry
 
-- `viewBox="0 0 720 H"`, no `width`/`height` attributes. `.dads-diagram` makes it liquid.
-  H: 160 for one row, 240 for two rows, +100 per extra row.
-- Grid: 24px margin, boxes 160×64 (or 200×64 for long labels), 40px horizontal gap for the arrow,
-  32px vertical gap between rows. Stick to multiples of 8, like the page spacing scale.
-- Text: 15px labels, 13px annotations, never below 12px. `font-family: inherit`,
-  `text-anchor="middle"`, `dominant-baseline="central"` so a label centers on the box center.
-- Labels are short — around 全角10字. Anything longer belongs in the `figcaption` or a table.
-- Stroke widths: 1.5 for boxes, 2 for arrows. Radius 8 (`rx="8"`).
-- More than ~10 shapes means the content is a table, not a diagram. Switch devices.
+- Use a `viewBox`, predictable coordinates, and real `<text>` labels; do not convert text to outlines or use HTML `foreignObject`.
+- Labels should be at least 17 SVG units at the intended reading width, with 1.5-line spacing. Native SVG text does not wrap automatically; use explicit `tspan` lines, allow room for Japanese, and shorten labels rather than shrinking them.
+- Give boxes at least 16 units of horizontal padding. Center text using `text-anchor="middle"`; use baselines/tspans, not a large `dy` guess. Keep connector endpoints outside text areas.
+- Prefer two to four concepts per diagram. Split a large graph or make it vertically stacked rather than fitting every detail onto one canvas.
+- For a wide diagram, retain readable intrinsic width inside `.dads-diagram-scroll`. The bundle sets a 42rem minimum SVG width there, **not** a page-wide minimum. The region needs `role="region"`, a meaningful `aria-label`, and `tabindex="0"` for keyboard scrolling.
+- The supplied diagram class is responsive, so a standalone wide SVG would shrink its text on mobile. Do not omit the scroll wrapper merely to remove a scrollbar. At print time it fits the paper; if labels become too small, simplify or stack the diagram.
 
-## Accessibility (required on every figure)
+Use `var(--font-sans)` for SVG text and known canonical color tokens. Do not use the old `--key-*`, `--gray-*`, `--radius-*` aliases. Radius and coordinates on SVG shapes are numeric geometry; their presence is not a design-token violation. `rx="8"` is appropriate for a small diagram node, not a new global radius token.
+
+## Accessible labeled flow: complete copyable pattern
+
+Rename **all** IDs and fragment/ARIA references when including another copy. `title` names the picture, `desc` explains the connection without needing to see the arrows, and the caption relates it to surrounding prose. Color is redundant with labels and arrow direction.
 
 ```html
 <figure>
-  <svg class="dads-diagram" viewBox="0 0 720 160" role="img"
-       aria-labelledby="fig1-t fig1-d">
-    <title id="fig1-t">検証フロー</title>
-    <desc id="fig1-d">実装、テスト、レビューの順に進み、テストが失敗した場合は実装へ戻る。</desc>
-    ...
-  </svg>
-  <figcaption>図1 検証フロー。破線は失敗時の差し戻しを表す。</figcaption>
+  <div class="dads-diagram-scroll" role="region" aria-label="処理の流れ（横にスクロールできます）" tabindex="0">
+    <svg class="dads-diagram" viewBox="0 0 672 224" role="img"
+         aria-labelledby="flow-title flow-desc" xmlns="http://www.w3.org/2000/svg">
+      <title id="flow-title">入力から確認までの3段階</title>
+      <desc id="flow-desc">利用者が内容を入力し、システムが検証して、利用者に確認結果を返します。</desc>
+      <defs>
+        <marker id="flow-arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 Z" fill="var(--color-key-900)"/>
+        </marker>
+      </defs>
+      <g fill="var(--surface)" stroke="var(--color-neutral-solid-gray-420)" stroke-width="2">
+        <rect x="24" y="56" width="176" height="112" rx="8"/>
+        <rect x="248" y="56" width="176" height="112" rx="8"/>
+        <rect x="472" y="56" width="176" height="112" rx="8"/>
+      </g>
+      <g fill="none" stroke="var(--color-key-900)" stroke-width="2" marker-end="url(#flow-arrow)">
+        <path d="M 208 112 H 240"/>
+        <path d="M 432 112 H 464"/>
+      </g>
+      <g fill="var(--text)" font-family="var(--font-sans)" text-anchor="middle" font-size="17">
+        <text x="112" y="102" font-weight="700">1. 入力</text>
+        <text x="112" y="132">利用者が記入</text>
+        <text x="336" y="102" font-weight="700">2. 検証</text>
+        <text x="336" y="132">内容を確認</text>
+        <text x="560" y="102" font-weight="700">3. 結果</text>
+        <text x="560" y="132">利用者に返す</text>
+      </g>
+    </svg>
+  </div>
+  <figcaption>入力内容を検証した後、結果を利用者に返します。</figcaption>
 </figure>
 ```
 
-`desc` states the structure in words so the diagram survives a screen reader. Meaning never rides
-on color alone: pair every fill with a label, and every line style difference with a legend entry.
+The three node rectangles end at x=200/424/648; each arrow stays in the gap with 8 units of clearance. The labels have explicit vertical positions and fit within their nodes. The marker is local, not an external URL. Keep node fills/text paired if changing colors.
 
-## Arrow marker (put one `<defs>` in the first diagram of the page)
+## Choose the pattern to match the explanation
 
-```html
-<defs>
-  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
-          markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-    <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--gray-700)"/>
-  </marker>
-</defs>
-```
+| Need | Geometry and labeling |
+|---|---|
+| Sequence | Two to four same-size nodes with directional arrows and numbered headings; explain what each arrow transfers. |
+| Nested ownership | Outer frame with an explicit owner label above its children; leave room between nested borders, and do not imply an execution sequence without arrows. |
+| Comparison | Equal-size panels with the same axes/units; write differences in labels, not just red/green fills. A semantic table is often better. |
+| Cycle | Three or four nodes around a center with unambiguous arrowheads; number the starting point and explain what repeats. |
+| Mobile-first narrative | Stack nodes vertically with short down-arrows; a 320–360-unit viewBox can remain readable without a wide scroll region. Check at 320px before choosing this approach. |
 
-Use it as `marker-end="url(#arrow)"`. A dashed return path adds `stroke-dasharray="6 4"`.
+Avoid arbitrary CSS in SVG. Inline `fill`, `stroke`, `font-*`, geometry and local `url(#id)` references are sufficient for these patterns. New CSS classes, if truly needed, follow the documented `artifact-*` extension contract; preserve the bundled stylesheet.
 
-## Pattern A — linear flow
+## Final diagram check
 
-```html
-<svg class="dads-diagram" viewBox="0 0 720 160" role="img" aria-labelledby="figA-t figA-d">
-  <title id="figA-t">…</title><desc id="figA-d">…</desc>
-  <g fill="var(--key-50)" stroke="var(--key-900)" stroke-width="1.5">
-    <rect x="24"  y="48" width="180" height="64" rx="8"/>
-    <rect x="270" y="48" width="180" height="64" rx="8"/>
-    <rect x="516" y="48" width="180" height="64" rx="8"/>
-  </g>
-  <g fill="var(--text)" font-size="15" text-anchor="middle" dominant-baseline="central"
-     font-family="inherit">
-    <text x="114" y="80">実装</text>
-    <text x="360" y="80">検証</text>
-    <text x="606" y="80">記録</text>
-  </g>
-  <g stroke="var(--gray-700)" stroke-width="2" marker-end="url(#arrow)">
-    <line x1="204" y1="80" x2="262" y2="80"/>
-    <line x1="450" y1="80" x2="508" y2="80"/>
-  </g>
-</svg>
-```
-
-Grouping the shapes by role (`<g>` for boxes, one for text, one for arrows) keeps the markup short
-and the styling consistent. Add a failure path as
-`<path d="M 360 112 V 136 H 114 V 112" fill="none" stroke-dasharray="6 4" marker-end="url(#arrow)"/>`.
-
-## Pattern B — checkpoint timeline
-
-A horizontal rule with dots at each checkpoint; label above, evidence below.
-
-```html
-<svg class="dads-diagram" viewBox="0 0 720 160" role="img" aria-labelledby="figB-t figB-d">
-  <title id="figB-t">…</title><desc id="figB-d">…</desc>
-  <line x1="40" y1="88" x2="680" y2="88" stroke="var(--border-strong)" stroke-width="2"/>
-  <g fill="var(--key-900)"><circle cx="120" cy="88" r="8"/><circle cx="360" cy="88" r="8"/><circle cx="600" cy="88" r="8"/></g>
-  <g font-size="15" fill="var(--text)" text-anchor="middle" font-family="inherit">
-    <text x="120" y="64">C1 分割</text><text x="360" y="64">C2 型検査</text><text x="600" y="64">C3 完了</text>
-  </g>
-  <g font-size="13" fill="var(--text-secondary)" text-anchor="middle" font-family="inherit">
-    <text x="120" y="118">npm test</text><text x="360" y="118">tsc --noEmit</text><text x="600" y="118">bench</text>
-  </g>
-</svg>
-```
-
-## Pattern C — state or layered structure
-
-Nest rectangles: outer `fill="var(--gray-50)" stroke="var(--border)"` as the container, inner boxes
-as Pattern A. Put the container name at the top-left with `text-anchor="start"` at `x + 16`,
-`y + 24`, 13px, `fill="var(--text-secondary)"`.
-
-## Checks before shipping a diagram
-
-- Every shape has a label; the legend explains any dash or fill difference.
-- Nothing overflows the `viewBox` (largest `x + width` ≤ 720, `y + height` ≤ H).
-- `title` and `desc` exist and `aria-labelledby` points at both ids, unique per page.
-- Colors come from tokens; no raw hex.
-- Read the `desc` alone: it should still convey the structure.
+1. Read the `desc` alone: can a nonvisual reader understand the mechanism and direction?
+2. Check every ID is unique and every marker/ARIA reference resolves. Run `scripts/check.py` on the **complete generated HTML**, not the snippet.
+3. Inspect Japanese glyphs, label padding, arrowheads and connectors at desktop and mobile widths. Tab into the scroll region and scroll horizontally with the keyboard.
+4. Inspect print output. If scaling to paper makes the labels small, stack/split the picture. Do not claim legibility based on the desktop screenshot alone.

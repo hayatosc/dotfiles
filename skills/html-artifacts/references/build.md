@@ -1,52 +1,70 @@
-# Building the Artifact
+# Building and checking an artifact
 
-Run the commands from the skill directory, using a new or task-owned output path. Paths below that start with `assets/` or `references/` are relative to that directory.
+Paths in this reference are relative to the installed skill directory. Do not assume the current directory contains the skill. Python 3.10+ and its standard library are sufficient; no package or network access is needed.
 
-### 3. Build
-
-Build the starting file with the CSS already inlined — never retype the stylesheet. From the skill
-directory:
+## Build once, then edit the generated HTML
 
 ```bash
-awk -v css="$PWD/assets/dads.css" \
-    '/@@DADS_CSS@@/{while((getline l < css)>0) print l; next} {print}' \
-    "$PWD/assets/template.html" > /path/to/output.html
+python /absolute/path/to/html-artifacts/scripts/build.py /path/to/output.html --title "Document title"
 ```
 
-Then edit `output.html`: fill the template's placeholders, delete the sections you do not need, and
-add your own. Use DADS classes and tokens; do not invent colors, radii, or shadows. Content rules:
+The output must not already exist. The builder escapes the title, fills the date, inserts the **exact** CSS/print script, derives the print script's CSP hash, and validates the result before writing. The bundled template is source with markers, not a directly deliverable HTML file. Never manually copy/retype the CSS, insert an external `<link>`, or use the old `awk` substitution recipe (it does not insert the print script/CSP).
 
-- Headings follow the DADS Standard scale: h1 `Std-36B-140`, h2 `Std-28B-150`, h3 `Std-22B-150`,
-  h4 `Std-18B-160`.
-- Body text: 16px, line-height 1.7, letter-spacing 0.02em. 14px only for tight UI metadata.
-- Links: DADS default (blue-1000, underlined 1px, offset 3px; hover blue-900 with 3px underline).
-- Diagrams: inline SVG only, built on the `references/diagrams.md` patterns; label every shape;
-  never encode meaning in color alone.
-- Interactivity: add only when it removes real work (sticky TOC, tabs for parallel views, a copy
-  button for code). Every control must be keyboard reachable and work without a server.
-- Print styles: expand `<details>`, hide navigation, keep code and tables on one page where
-  possible.
+Edit the output's body, title, language, metadata, and provenance for the requested subject. Keep `style#dads-css` and `script#dads-print` unchanged and leave the offline CSP early in `head`. The builder creates a working starter, not finished content: the checker intentionally cannot decide whether the prose satisfies the user's request.
 
-## DADS rules to apply (condensed)
+## Components without class drift
 
-These are the rules most likely to be violated; `references/dads.md` has the full tables.
+Use the adapter APIs listed in [dads.md](dads.md). Modifiers are additive:
 
-- **Contrast**: text 4.5:1 minimum against its background (all sizes — DADS does not use the
-  large-text 3:1 exception); non-text UI and borders 3:1. Always set foreground and background
-  together; never rely on the browser default white.
-- **Focus ring**: `outline: 4px solid #000` with `outline-offset: 2px` plus a `#ffd43d` yellow
-  ring (`box-shadow: 0 0 0 2px`). Never remove or restyle it.
-- **Links**: default blue-1000 `#00118f`, visited magenta-900 `#8b008b`, hover blue-900 `#0017c1`,
-  active orange-800 `#c74700`; always underlined. Link text must state its purpose — no 「こちら」.
-- **Key color**: blue-900 `#0017c1` for primary actions; hover blue-1000, active blue-1200. White
-  text on key color passes contrast; do not place colored text directly on key fills.
-- **Semantics**: success `#259d63`, error `#ec0000`, warning-yellow `#b78f00`, warning-orange
-  `#fb5b01`. Keep the hue; adjust only lightness if needed.
-- **Type**: Noto Sans JP, weights 400/700 only. Line-height 1.7 for body, 1.4–1.5 for headings.
-  Avoid italic for Japanese.
-- **Spacing, radius, elevation, layout**: use the `--space-*`, `--radius-*`, `--elevation-*` tokens
-  and the `dads-*` classes; they already encode the 8px scale, the radius steps, and the 768px
-  single-column-first layout. Any raw px value in your CSS is a bug — see `references/dads.md` §3–6.
-- **Accessibility**: semantic HTML first, keyboard reachable, target size ≥24×24px, no justification
-  or `&nbsp;` alignment, no image-of-text, headings in order, `alt`/`aria-label` on meaningful
-  icons and diagrams.
+```html
+<div class="dads-callout dads-callout--warning">
+  <strong class="dads-callout__title">注意</strong>
+  <p>State the constraint in words, not just color.</p>
+</div>
+<a class="dads-button dads-button--outline" href="#evidence">Read the evidence</a>
+<details class="dads-details" open>
+  <summary>Supporting detail</summary>
+  <p>Initially visible for no-script printing; readers can collapse it.</p>
+</details>
+```
+
+Use normal links rather than actionless buttons. A native `disabled` button is acceptable to illustrate an unavailable action; `aria-disabled` alone does not disable behavior. There is no tab behavior or arbitrary script extension point. The only executable script is the hash-approved print handler.
+
+Wrap a wide table with `.dads-table`, `role="region"`, a useful `aria-label`, and `tabindex="0"`; use a caption and `th scope`. Make code blocks keyboard-focusable if they overflow. For prose use natural wrapping, not page-wide `overflow-x:hidden`. Diagrams use their own scroll region so 17px labels do not shrink to unreadable mobile text.
+
+## Small necessary additions
+
+Do not rewrite the core stylesheet or create new tokens. Prefer existing layout classes. If the requested explanation requires a specific rule, place it in a separate style block, using only known tokens and `artifact-*` classes:
+
+```html
+<style>
+.artifact-equation { border-inline-start: 4px solid var(--color-key-900); padding-inline-start: var(--space-2); }
+</style>
+```
+
+This is an explicit, browser-verified exception, not an invitation to redesign every document. Literal geometry such as `4px` borders, SVG coordinates, and media-query thresholds is legitimate; the former instruction that *every raw px value is a bug* was incorrect. Use tokens for palette, typography, spacing, shape, and elevation wherever applicable. CSS escapes, imports, `@font-face`, external `url()`, and custom token definitions are intentionally unsupported.
+
+## Final validation
+
+```bash
+python /absolute/path/to/html-artifacts/scripts/check.py /path/to/output.html
+```
+
+Exit codes: **0** passes the static contract, **1** has violations, **2** is a CLI/read error. The checker reports locations for markup issues. It accepts ordinary HTTPS/HTTP/mail/phone links, local fragment links, inline SVG, and base64 PNG/JPEG/GIF/WebP images. It rejects resource links (including relative files), remote SVG uses/images, `srcset`, fetching CSS, unknown tokens/classes, changed/missing core CSS, arbitrary scripts/event handlers, unresolved markers, duplicate IDs, and broken fragment/label references. Its CSP independently blocks external loads, including future accidental resource types. It is neither an HTML/CSS standards validator nor a sanitizer for hostile input.
+
+Follow SKILL.md's final visual/keyboard/print checklist after static success. A passing check alone is not evidence that a page looks right.
+
+## Troubleshooting style failures
+
+| Symptom | Cause and repair |
+|---|---|
+| Unstyled or partially styled | Opened the template directly, incomplete CSS insertion, or retyped CSS; rebuild into a new path and transfer only the content. |
+| Missing font/blank diagram | Web-font, icon CDN, remote SVG, or adjacent asset dependency; use installed fonts and inline SVG/embedded rasters. Installed fonts may differ across platforms. |
+| Unstyled component | Upstream `data-type` markup mixed with adapter classes, misspelled modifier, or absent base class; use the API in dads.md. |
+| Unknown token | Old `--key-*`, `--gray-*`, or invented alias; use `--color-key-*` and `--color-neutral-solid-gray-*`. Do not suppress the check. |
+| Button text loses contrast | Generic link states override a button class; retain bundled zero-specificity link selectors and explicit button states. |
+| Dark canvas/light controls mismatch | Partial theme override; retain `only light` in metadata and root CSS. Forced colors remain user-controlled. |
+| Mobile page overflow | Grid child minimum width or an unwrapped long identifier; use min-width-zero bundled layout and local scroll regions. |
+| Folded details missing in print | Keep initial `open`, exact print script and its matching CSP; print preview must open collapsed details and restore them afterward. |
+
+For maintainers: regression tests live at `tests/test_html_artifacts.py`; run `python -m unittest discover -s tests -p test_html_artifacts.py -v` from the repository root. Test in disposable output paths; never deploy desktop settings to validate this skill.

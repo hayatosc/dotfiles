@@ -5,49 +5,69 @@ description: Create a self-contained HTML explainer using the Digital Agency Des
 
 # HTML Artifacts
 
-Deliver one human-facing `.html` file that opens directly from disk, works offline, and explains the requested subject. Use the bundled Digital Agency of Japan Design System (DADS, v2.18.0) assets. Keep any agent-facing source in Markdown.
+Deliver one human-facing `.html` file that opens from disk and works offline. Use the bundled Japanese Digital Agency Design System (DADS) document adapter, not a CDN or a framework. Keep agent-facing source in Markdown. This is an unofficial document adapter, not a complete implementation of every DADS component.
+
+## Procedure
+
+### 1. Understand the reader and source
+
+Identify the subject, audience, purpose, and evidence before choosing the structure. For plans, preserve objectives, completion evidence, constraints, checkpoints, and risks. Include a descriptive title, a short orientation, and source/date provenance. Add a TOC only when useful; do not force a section count or diagram.
+
+Explain from zero: begin with a concrete situation and what the subject does, then introduce technical names. Define jargon on first use, give each step one idea, and use a labeled picture only when it explains more clearly than prose. Use analogies only when their connection and limits are explicit; keep an adult, direct tone unless writing for children. A newcomer should understand what happens, why, and what to do next.
+
+### 2. Build mechanically — never retype the CSS
+
+Read [build.md](references/build.md). Resolve the skill directory from this file's location, not the current project's working directory. With Python 3.10+:
+
+```bash
+python /absolute/path/to/html-artifacts/scripts/build.py /absolute/path/to/output.html --title "Subject"
+```
+
+The builder reads `assets/template.html`, embeds **all** of `assets/dads.css` and `assets/print.js`, and inserts an offline Content Security Policy (CSP). It refuses to overwrite an existing file. No downloads, package install, server, bundler, or adjacent asset folder is needed. In this repository, use its Python runner (`uv run python` also works).
+
+### 3. Edit the content, not the foundation
+
+Edit the generated file. Replace the starter's explanatory content, provenance, and TOC; remove unneeded sections. Keep `style#dads-css`, `script#dads-print`, the CSP, charset, viewport, and `only light` color-scheme metadata intact.
+
+- Inline SVG and embedded raster images only. No remote/local stylesheet, script, font, image, iframe, import, fetch, or analytics dependency. Ordinary source hyperlinks may point to the web; label local source files as text rather than broken relative links.
+- Use semantic HTML and the bundled classes/tokens. Read [dads.md](references/dads.md) for the class API, official sources, and local adaptations. Do not mix upstream `data-type`/`data-size` APIs with this adapter's modifiers.
+- Use [diagrams.md](references/diagrams.md) before adding SVG. Give each meaningful diagram a title, description, labels, and a text alternative. Put wide diagrams in a labeled, keyboard-focusable `.dads-diagram-scroll` region.
+- Use installed font fallbacks; missing Noto must not hide text. Match `lang` to the content. Body is 1rem/1.7 (16px at the default setting). Preserve browser zoom and reflow.
+- Default to links and native disclosures. Keep disclosures initially `open` so no-script printing retains content; the bundled script also opens any reader-collapsed disclosure for printing and restores it afterward. Do not add tabs, dead buttons, arbitrary JavaScript, or event-handler attributes.
+- Stay light in dark OS settings: this adapter has no verified official dark palette. Do not invert only the page background or invent a dark token set. Respect forced colors and reduced motion.
+- Prefer existing components. If essential, put small document-specific rules in a **separate** inline `<style>`; new classes must be `artifact-*` and have definitions there. Use known tokens, never redefine them or alter the bundled CSS. Browser-check these rules; static validation is not a CSS parser or contrast audit.
+
+### 4. Final self-check — fix failures before delivery
+
+Run after the last edit:
+
+```bash
+python /absolute/path/to/html-artifacts/scripts/check.py /absolute/path/to/output.html
+```
+
+Then check the actual file in a browser, with networking disabled when possible:
+
+1. **Content:** starter prose/placeholders are gone; requested evidence, sources, dates, and next actions remain. Read diagram descriptions independently; they must convey the meaning.
+2. **Offline:** no resource requests, failed assets, CSP violations, or console errors. Source hyperlinks are navigation, not embedded dependencies.
+3. **Mobile/desktop:** inspect screenshots at 390px and 1280px; additionally check reflow at 320px/200% text size. No page-wide horizontal overflow; only labeled, focusable code/table/diagram regions may scroll. Inspect actual Japanese glyphs and long URLs.
+4. **Keyboard/states:** follow the skip link and TOC, tab to scroll regions, toggle disclosures, and inspect visible focus and button-link contrast (including visited/hover). No color-only meaning.
+5. **Dark/print:** emulate dark preference (the page must remain legible light), print with a disclosure closed, verify its body prints, and check wide tables/code and page breaks. Preserve content without JavaScript by leaving disclosures open initially.
+
+The checker enforces the bundled asset/policy contract, known classes/tokens, and conservative offline resource rules. It does **not** prove CSS syntax, layout, contrast, accessibility, or correctness of arbitrary HTML. If no browser is available, say which visual/interaction checks remain unverified; never claim screenshots from static checks alone.
+
+### 5. Deliver
+
+Save beside the source or in the working directory, named for the subject (`PLAN.html` for a plan). Return the artifact link and material limitations, not a copy of the document or a second generic self-audit.
+
+For SSH/another device, follow [remote-preview.md](references/remote-preview.md). A remote path or `xdg-open` is not a usable viewing handoff. Serve only an isolated copy, use a public tunnel only for content authorized for public sharing, otherwise use SSH forwarding/access control, and provide cleanup instructions. Keep the original HTML offline-safe.
 
 ## Resources
 
-- Starting markup and inline stylesheet: `assets/template.html` and `assets/dads.css`.
-- Creating the file and applying the core design rules: [build.md](references/build.md).
-- Token or component details when styling needs them: [dads.md](references/dads.md).
-- SVG geometry and labeled diagram patterns when a diagram is useful: [diagrams.md](references/diagrams.md).
-- Viewing an artifact from SSH or another device: [remote-preview.md](references/remote-preview.md), covering Wrangler/Cloudflare tunnels, private SSH forwarding, and preview cleanup.
+- `assets/template.html`, `assets/dads.css`, `assets/print.js`: mechanically embedded sources.
+- `scripts/build.py`, `scripts/check.py`: standard-library build and final contract check.
+- [build.md](references/build.md): editing patterns and troubleshooting.
+- [dads.md](references/dads.md): official provenance, tokens, adapter component API.
+- [diagrams.md](references/diagrams.md): readable inline SVG patterns.
+- [remote-preview.md](references/remote-preview.md): secure remote handoff.
 
-Read the relevant build or design reference, not every resource. Reuse the stylesheet rather than recreating its tokens.
-For a new artifact, read `references/build.md` and start from the bundled template with its CSS inlined. Read `references/diagrams.md` before constructing SVG diagrams; use `references/dads.md` when changing styles beyond the template.
-
-## Content and Design Contract
-
-Understand the source and the reader's purpose. For a plan, preserve its objective, completion evidence, constraints, checkpoints, and risks. Choose prose, diagrams, comparisons, or callouts according to the information; do not force a section count or a diagram where prose is clearer.
-
-- Include a descriptive title, a short orientation paragraph, and source/date provenance. Add a table of contents when the page needs navigation.
-- Inline CSS, JavaScript, and visual assets. Do not load fonts, scripts, or styles from the network.
-- Use DADS classes and tokens, semantic headings, accessible contrast, labeled controls, and visible keyboard focus. Meaning must not depend on color alone.
-- Match `lang` to the content. Japanese body text uses 16px/1.7 and 0.02em letter spacing; avoid justification and spacer characters for layout.
-- Add interaction only when it helps the reader. Controls must work from disk and with a keyboard; print styles must preserve content.
-
-## Explain from Zero
-
-Apply an ELI5 lens: a reader with no background should grasp the central idea from the opening text and visual. Respect the requested audience and depth; use an adult, direct tone unless the artifact is actually for children.
-
-- Start with what the subject does and why it matters, using a familiar situation or concrete example before technical names. Define necessary jargon where it first appears.
-- Give each explanatory step one idea. Prefer a large, clearly labeled picture and a short caption when they explain a relationship or change better than prose; avoid decorative diagrams.
-- Use analogies only when they clarify the mechanism. Connect their parts to the real subject and state any limit that could mislead the reader.
-- Let readers progress from a simple overview to the details needed for their purpose. For plans, keep objectives, completion evidence, constraints, and risks explicit even when simplifying their wording.
-- During the content check, ask whether a newcomer can explain what happens, why, and what to do next without decoding unexplained terms or diagrams. Revise the confusing part instead of adding a generic summary.
-
-Inspired by the [ELI5 skill](https://github.com/anthropics/claude-plugins-community/blob/main/eli5/skills/eli5/SKILL.md).
-
-## Remote Viewing
-
-When the user needs to view an artifact on an SSH host or another device, follow [remote-preview.md](references/remote-preview.md) and return a reachable preview URL alongside the source path. A remote filesystem path or `xdg-open` on the SSH host is not a usable browser handoff. Keep the original HTML self-contained and serve only an isolated copy of the intended artifact.
-
-Use a Cloudflare Quick Tunnel for content authorized for public sharing; use SSH forwarding or an existing access-controlled tunnel for private content. An SSH connection alone does not authorize public disclosure. Keep the preview alive for the viewing session and provide the stop/cleanup instructions; do not close it immediately after returning the link. Follow the calling workflow or user's instructions for when viewing ends.
-
-## Completion
-
-Save beside the source or in the working directory, named for the subject (`PLAN.html` for a plan). Verify that template placeholders are resolved, assets are self-contained, and the requested content is present. When a browser is available, inspect layout and any controls, fixing observed problems. Report rendering limitations if it is unavailable; do not claim a visual inspection from markup checks alone.
-
-Return the artifact link and any material limitation. Do not repeat the document in chat or add a second generic self-audit after the relevant checks pass.
+The explain-from-zero approach is inspired by the [ELI5 skill](https://github.com/anthropics/claude-plugins-community/blob/main/eli5/skills/eli5/SKILL.md).
