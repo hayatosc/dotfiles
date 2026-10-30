@@ -7480,67 +7480,56 @@ specifiers = ["2026.10.4"]
 
 [tools.cloudflared."platforms.linux-arm64"]
 checksum = "sha256:2b7203b4fb0ba28a0c1e12f8855ce2c25f76d266a8d5edafac5540b6812acff6"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-linux-arm64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677936913"
 
 [tools.cloudflared."platforms.linux-arm64-musl"]
 checksum = "sha256:2b7203b4fb0ba28a0c1e12f8855ce2c25f76d266a8d5edafac5540b6812acff6"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-linux-arm64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677936913"
 
 [tools.cloudflared."platforms.linux-x64"]
 checksum = "sha256:ae5e8add7884b0531d66bbca4570d1de491ff6da51e4ebe7eb160cdf241d9e42"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677936595"
 
 [tools.cloudflared."platforms.linux-x64-baseline"]
 checksum = "sha256:ae5e8add7884b0531d66bbca4570d1de491ff6da51e4ebe7eb160cdf241d9e42"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677936595"
 
 [tools.cloudflared."platforms.linux-x64-musl"]
 checksum = "sha256:ae5e8add7884b0531d66bbca4570d1de491ff6da51e4ebe7eb160cdf241d9e42"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677936595"
 
 [tools.cloudflared."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:ae5e8add7884b0531d66bbca4570d1de491ff6da51e4ebe7eb160cdf241d9e42"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677936595"
 
 [tools.cloudflared."platforms.macos-arm64"]
 checksum = "sha256:68b6bc4080ac1330234db2a9002d07f98b000537a1bd531a687b660d4160fa7f"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-darwin-arm64.tgz"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677936244"
 
 [tools.cloudflared."platforms.macos-x64"]
 checksum = "sha256:f11fbef4207d715892331917dafd437f032cf4b7137ed64dea3008338c1c613d"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-darwin-amd64.tgz"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677935958"
 
 [tools.cloudflared."platforms.macos-x64-baseline"]
 checksum = "sha256:f11fbef4207d715892331917dafd437f032cf4b7137ed64dea3008338c1c613d"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-darwin-amd64.tgz"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677935958"
 
 [tools.cloudflared."platforms.windows-x64"]
 checksum = "sha256:411b16d40c8d872243efeb52c550053d00af0a8a97fbb32e730fb8aba429eaa8"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-windows-amd64.exe"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677938166"
 
 [tools.cloudflared."platforms.windows-x64-baseline"]
 checksum = "sha256:411b16d40c8d872243efeb52c550053d00af0a8a97fbb32e730fb8aba429eaa8"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.4/cloudflared-windows-amd64.exe"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/677938166"
 
@@ -9943,45 +9932,45 @@ backend = "go:golang.org/x/tools/gopls"
 specifiers = ["v0.23.0"]
 
 [[tools."http:moshi"]]
-version = "0.3.21"
+version = "0.4.43"
 backend = "http:moshi"
-specifiers = ["0.3.21"]
+specifiers = ["0.4.43"]
 
 [tools."http:moshi"."platforms.linux-arm64"]
-checksum = "sha256:e4dec1da4692e7678df70629c27bdda4e620f379ac0f73c6060c0f35d62f8520"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Linux_arm64.tar.gz"
+checksum = "sha256:715de9834519387429701115fb9e3f94bade37aaf1cfb0ee5b1e6494235ba5bb"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_arm64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-arm64-musl"]
-checksum = "sha256:e4dec1da4692e7678df70629c27bdda4e620f379ac0f73c6060c0f35d62f8520"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Linux_arm64.tar.gz"
+checksum = "sha256:715de9834519387429701115fb9e3f94bade37aaf1cfb0ee5b1e6494235ba5bb"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_arm64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-x64"]
-checksum = "sha256:038431d47325ab91e455491873f074df8b804e877e742e22e6b54164dd0dd926"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Linux_x86_64.tar.gz"
+checksum = "blake3:697070e1a4b1a24460cebf1b508c1cf8a018e729ed3d7da3a5a4a116a2b496a4"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-x64-baseline"]
-checksum = "sha256:038431d47325ab91e455491873f074df8b804e877e742e22e6b54164dd0dd926"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Linux_x86_64.tar.gz"
+checksum = "sha256:afc3b36b10f54dd5e2611d38e530e7fe8cd3e9c30a7a75ac97c2c6430837e3d6"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-x64-musl"]
-checksum = "sha256:038431d47325ab91e455491873f074df8b804e877e742e22e6b54164dd0dd926"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Linux_x86_64.tar.gz"
+checksum = "sha256:afc3b36b10f54dd5e2611d38e530e7fe8cd3e9c30a7a75ac97c2c6430837e3d6"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:038431d47325ab91e455491873f074df8b804e877e742e22e6b54164dd0dd926"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Linux_x86_64.tar.gz"
+checksum = "sha256:afc3b36b10f54dd5e2611d38e530e7fe8cd3e9c30a7a75ac97c2c6430837e3d6"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.macos-arm64"]
-checksum = "sha256:f70b3ee65a159e301c04dbf9528e0a484fd60d54daa2a203678a22a50f0e61a3"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Darwin_arm64.tar.gz"
+checksum = "sha256:af015be830ce93bfce5d47883c11030101af39bbe7b3d4ed26ac7b5fec2dac6f"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Darwin_arm64.tar.gz"
 
 [tools."http:moshi"."platforms.macos-x64"]
-checksum = "sha256:5a2883944e4e13584e4e5c6269e9d1b248a3f8e4437ded9d522dc3daa2c85ba6"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Darwin_x86_64.tar.gz"
+checksum = "sha256:8a7567f9ba59d4e00114acd55cec8ffa7b382d8b791905f2c20b105dd40fa3d6"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Darwin_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.macos-x64-baseline"]
-checksum = "sha256:5a2883944e4e13584e4e5c6269e9d1b248a3f8e4437ded9d522dc3daa2c85ba6"
-url = "https://cdn.getmoshi.app/hook/v0.3.21/moshi-hook_Darwin_x86_64.tar.gz"
+checksum = "sha256:8a7567f9ba59d4e00114acd55cec8ffa7b382d8b791905f2c20b105dd40fa3d6"
+url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Darwin_x86_64.tar.gz"
 
 [[tools.imagemagick]]
 version = "7.1.2_25"
@@ -11439,7 +11428,7 @@ specifiers = ["0.10.7+bc794d341"]
 
 [[tools.ni]]
 version = "30.6.0"
-aube = { path = ".mise/locks/ni/30.6.0", digest = "sha256:20b74bf748f72a8a087775b6d97b0777259798f7a8ea040bf332ff172bfb6d3e" }
+aube = { path = "locks/ni/30.6.0", digest = "sha256:20b74bf748f72a8a087775b6d97b0777259798f7a8ea040bf332ff172bfb6d3e" }
 backend = "npm:@antfu/ni"
 specifiers = ["30.6.0"]
 
@@ -11494,43 +11483,43 @@ url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@xai-official/grok"]]
 version = "1.0.70"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.70", digest = "sha256:336ea55d32f7c25a676e1a6574e08be7bfe68a200d21ae91f7c64ab2e9b8f9c9" }
+aube = { path = "locks/npm-xai-official-grok/1.0.70", digest = "sha256:336ea55d32f7c25a676e1a6574e08be7bfe68a200d21ae91f7c64ab2e9b8f9c9" }
 backend = "npm:@xai-official/grok"
 specifiers = ["1.0.70"]
 
 [[tools."npm:acpx"]]
 version = "0.21.1"
-aube = { path = ".mise/locks/npm-acpx/0.21.1", digest = "sha256:0e18025b48a8942e7819084e91c2b7bdf4aa8228e7af9d52e8bdab389d10dcbd" }
+aube = { path = "locks/npm-acpx/0.21.1", digest = "sha256:0e18025b48a8942e7819084e91c2b7bdf4aa8228e7af9d52e8bdab389d10dcbd" }
 backend = "npm:acpx"
 specifiers = ["0.21.1"]
 
 [[tools."npm:agent-browser"]]
 version = "0.39.4"
-aube = { path = ".mise/locks/npm-agent-browser/0.39.4", digest = "sha256:395fe1aeb3d5aa56c0e38c88a36ac69d7762d08effd0841316dfc15a382e1d81" }
+aube = { path = "locks/npm-agent-browser/0.39.4", digest = "sha256:395fe1aeb3d5aa56c0e38c88a36ac69d7762d08effd0841316dfc15a382e1d81" }
 backend = "npm:agent-browser"
 specifiers = ["0.39.4"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
-aube = { path = ".mise/locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
+aube = { path = "locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
 backend = "npm:bash-language-server"
 specifiers = ["5.8.1"]
 
 [[tools."npm:typescript"]]
 version = "7.0.2"
-aube = { path = ".mise/locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
+aube = { path = "locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
 backend = "npm:typescript"
 specifiers = ["7.0.2"]
 
 [[tools."npm:vscode-langservers-extracted"]]
 version = "4.10.0"
-aube = { path = ".mise/locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:ac0d4352606d95941c3e4cbe186d5b2e83bcca7c7505eaefdb542b13b0fa6a12" }
+aube = { path = "locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:ac0d4352606d95941c3e4cbe186d5b2e83bcca7c7505eaefdb542b13b0fa6a12" }
 backend = "npm:vscode-langservers-extracted"
 specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
 version = "1.25.0"
-aube = { path = ".mise/locks/npm-yaml-language-server/1.25.0", digest = "sha256:b2f82940e01ce68505614e37119a7ffbb9ad13907716c5d77410a0c44eda8d7a" }
+aube = { path = "locks/npm-yaml-language-server/1.25.0", digest = "sha256:b2f82940e01ce68505614e37119a7ffbb9ad13907716c5d77410a0c44eda8d7a" }
 backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
 
@@ -11719,7 +11708,7 @@ provenance = "github-attestations"
 
 [[tools.portless]]
 version = "0.15.12"
-aube = { path = ".mise/locks/portless/0.15.12", digest = "sha256:3b7034300819b5f874d8e8174e855a29e32b9e3441770ce528134332c946ab6a" }
+aube = { path = "locks/portless/0.15.12", digest = "sha256:3b7034300819b5f874d8e8174e855a29e32b9e3441770ce528134332c946ab6a" }
 backend = "npm:portless"
 specifiers = ["0.15.12"]
 

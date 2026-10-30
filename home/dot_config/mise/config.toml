@@ -70,7 +70,7 @@ shellcheck = "0.11.0"
 pi = "latest"
 
 [tools."http:moshi"]
-version = "0.3.21"
+version = "0.4.43"
 postinstall = "ln -sfn $MISE_TOOL_INSTALL_PATH/moshi-hook $MISE_TOOL_INSTALL_PATH/moshi && ln -sfn $MISE_TOOL_INSTALL_PATH $(dirname $MISE_TOOL_INSTALL_PATH)/latest"
 version_list_url = "https://cdn.getmoshi.app/hook/latest/version.txt"
 version_regex = 'v?(\d+\.\d+\.\d+)'
