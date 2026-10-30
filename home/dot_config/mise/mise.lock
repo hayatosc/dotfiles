@@ -6966,64 +6966,75 @@ url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x8
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/471228877"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.4.7"
+version = "1.4.8"
 backend = "aqua:google-antigravity/antigravity-cli"
-specifiers = ["1.4.7"]
+specifiers = ["1.4.8"]
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:b273c791b7647f680598fa1dbdf9c8086bdc42374b2276fa70e900bf8120e1d5"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080004"
+checksum = "sha256:bbe34c56bdfdcfd9b9a4fd24f7430f7a807777b356b216b41862fb6dd9450c80"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680773897"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:b273c791b7647f680598fa1dbdf9c8086bdc42374b2276fa70e900bf8120e1d5"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080004"
+checksum = "sha256:bbe34c56bdfdcfd9b9a4fd24f7430f7a807777b356b216b41862fb6dd9450c80"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680773897"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:67fd4e70be739b1f8b18f90b511da8cd2a7aef24e888e5837402e025bf7fdbfc"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080002"
+checksum = "sha256:8b165f0fc584f0f92dd1318dc3a090706ae18aade7d36b0b8623b85aeaf86c52"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680773895"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-baseline"]
-checksum = "sha256:67fd4e70be739b1f8b18f90b511da8cd2a7aef24e888e5837402e025bf7fdbfc"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080002"
+checksum = "sha256:8b165f0fc584f0f92dd1318dc3a090706ae18aade7d36b0b8623b85aeaf86c52"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680773895"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:67fd4e70be739b1f8b18f90b511da8cd2a7aef24e888e5837402e025bf7fdbfc"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080002"
+checksum = "sha256:8b165f0fc584f0f92dd1318dc3a090706ae18aade7d36b0b8623b85aeaf86c52"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680773895"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:67fd4e70be739b1f8b18f90b511da8cd2a7aef24e888e5837402e025bf7fdbfc"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080002"
+checksum = "sha256:8b165f0fc584f0f92dd1318dc3a090706ae18aade7d36b0b8623b85aeaf86c52"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680773895"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:9fed7bfe90cb158ac00b5b2da64dd54af732f7c062259e68ebd060b827fd0d88"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_mac_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080158"
+checksum = "sha256:ecd1f7b35927bc23ed4496139aeb0e39b99c4b1c63d5f1f3b8fc25ab515e7631"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_mac_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680774034"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:0ac94431f774659e71928019c26c649e5711179629b86968e96cb9193e2ec557"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080006"
+checksum = "sha256:ce851c99afb9a21a8c0cadebb1b7155a951ffba76749081f0fd2c06b0a7b29c3"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680773896"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64-baseline"]
-checksum = "sha256:0ac94431f774659e71928019c26c649e5711179629b86968e96cb9193e2ec557"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080006"
+checksum = "sha256:ce851c99afb9a21a8c0cadebb1b7155a951ffba76749081f0fd2c06b0a7b29c3"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680773896"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:b82fc615941c1ef1c0692186510e4f620004ee08017c9e94ec1ac61046b9cc66"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080164"
+checksum = "sha256:7f2cb792e41848b304506596452bbf775cb01e06bf1d0c9494c42ea69e99f2a5"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680774059"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64-baseline"]
-checksum = "sha256:b82fc615941c1ef1c0692186510e4f620004ee08017c9e94ec1ac61046b9cc66"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.7/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/671080164"
+checksum = "sha256:7f2cb792e41848b304506596452bbf775cb01e06bf1d0c9494c42ea69e99f2a5"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.8/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/680774059"
 
 [[tools."aqua:helix-editor/helix"]]
 version = "25.07.1"
@@ -11524,53 +11535,53 @@ backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
 
 [[tools.opencode]]
-version = "2.1.4"
+version = "2.2.0"
 backend = "aqua:anomalyco/opencode"
-specifiers = ["2.1.4"]
+specifiers = ["2.2.0"]
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:759c9d6e7b246b81bcc93dfc6cc3bb2a38287c75b6202e305eacacb5dd882315"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-linux-arm64.tar.gz"
+checksum = "sha256:1f1ce0fc07b9245a815ffa9d652dbb80e6b0f07e5bf74ea87d2b1c0339fbac52"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:759c9d6e7b246b81bcc93dfc6cc3bb2a38287c75b6202e305eacacb5dd882315"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-linux-arm64.tar.gz"
+checksum = "sha256:1f1ce0fc07b9245a815ffa9d652dbb80e6b0f07e5bf74ea87d2b1c0339fbac52"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:2edaf8cf96e81dec5ee996a3196b03345cf59e5a1673d83a4599bb4afc5c5f6d"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-linux-x64.tar.gz"
+checksum = "sha256:6d597970a8cc448f1b9a9f645532584b339dd3ab9583bb5f063f13d83e54768f"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-baseline"]
-checksum = "sha256:2edaf8cf96e81dec5ee996a3196b03345cf59e5a1673d83a4599bb4afc5c5f6d"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-linux-x64.tar.gz"
+checksum = "sha256:6d597970a8cc448f1b9a9f645532584b339dd3ab9583bb5f063f13d83e54768f"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:2edaf8cf96e81dec5ee996a3196b03345cf59e5a1673d83a4599bb4afc5c5f6d"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-linux-x64.tar.gz"
+checksum = "sha256:6d597970a8cc448f1b9a9f645532584b339dd3ab9583bb5f063f13d83e54768f"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:2edaf8cf96e81dec5ee996a3196b03345cf59e5a1673d83a4599bb4afc5c5f6d"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-linux-x64.tar.gz"
+checksum = "sha256:6d597970a8cc448f1b9a9f645532584b339dd3ab9583bb5f063f13d83e54768f"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:f9edc1dded080e39aa61db94270a51af66772ac572be7d6b15fa6f87251a3dff"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-darwin-arm64.zip"
+checksum = "sha256:c71b1cd96541539ad38e2a75377d2f43d2a27567289a14371a182e9a0800db3d"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:7f35265b6900ce75b01e03cab2497622026b402c021ecf6e6e68755874245a6b"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-darwin-x64.zip"
+checksum = "sha256:cc191a1cec9b9cd0192d78dc066bbf48730639131422fa54c87c485a821ba1d5"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.macos-x64-baseline"]
-checksum = "sha256:7f35265b6900ce75b01e03cab2497622026b402c021ecf6e6e68755874245a6b"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-darwin-x64.zip"
+checksum = "sha256:cc191a1cec9b9cd0192d78dc066bbf48730639131422fa54c87c485a821ba1d5"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:6d3ee895c0f6e089bb1f1ee3addfa3d700cc4488a7da97f182cb700d3985a799"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-windows-x64.zip"
+checksum = "sha256:a56307bdccdafd3fc5255556f3bf867703ea56dbeffaf00add4e9663edb3b974"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-windows-x64.zip"
 
 [tools.opencode."platforms.windows-x64-baseline"]
-checksum = "sha256:6d3ee895c0f6e089bb1f1ee3addfa3d700cc4488a7da97f182cb700d3985a799"
-url = "https://opencode.ai/files/bin/2.1.4/opencode-windows-x64.zip"
+checksum = "sha256:a56307bdccdafd3fc5255556f3bf867703ea56dbeffaf00add4e9663edb3b974"
+url = "https://opencode.ai/files/bin/2.2.0/opencode-windows-x64.zip"
 
 [[tools.pi]]
 version = "1.3.0"
