@@ -6972,67 +6972,56 @@ specifiers = ["1.4.10"]
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
 checksum = "sha256:107b7499ca90018ab2b6c1b636cdec4251dfd836656526845e354be1bfe05eba"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268499"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
 checksum = "sha256:107b7499ca90018ab2b6c1b636cdec4251dfd836656526845e354be1bfe05eba"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268499"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
 checksum = "sha256:ed0526231e3916b6cc1b025cf356862e88cc036e27c3c5eae5a580495fc79773"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_linux_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268493"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-baseline"]
 checksum = "sha256:ed0526231e3916b6cc1b025cf356862e88cc036e27c3c5eae5a580495fc79773"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_linux_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268493"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
 checksum = "sha256:ed0526231e3916b6cc1b025cf356862e88cc036e27c3c5eae5a580495fc79773"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_linux_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268493"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:ed0526231e3916b6cc1b025cf356862e88cc036e27c3c5eae5a580495fc79773"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_linux_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268493"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
 checksum = "sha256:05a7fc6dd348d2003787f3a750ffe9e9b067c44504002c6a834412831ff30c15"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_mac_arm64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268689"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
 checksum = "sha256:926992cc3ac63bffa05ad126104f92a23df3e76951bca1dc9e5fb9f1d135aa76"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_mac_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268497"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64-baseline"]
 checksum = "sha256:926992cc3ac63bffa05ad126104f92a23df3e76951bca1dc9e5fb9f1d135aa76"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_mac_x64.tar.gz"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268497"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
 checksum = "sha256:a78c3cd11459a788694080cf237580f808fc94e12cc1227d2902d02468977016"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_windows_x64.zip"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268691"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64-baseline"]
 checksum = "sha256:a78c3cd11459a788694080cf237580f808fc94e12cc1227d2902d02468977016"
-checksum_source = "mise-versions"
 url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.10/agy_cli_windows_x64.zip"
 url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/687268691"
 
@@ -9845,55 +9834,46 @@ specifiers = ["v0.15.1"]
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64"]
 checksum = "sha256:6ed94377367ba0923db922bdbefffe919d002fa21841fbfbb1b1025febaf364e"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333928"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64-musl"]
 checksum = "sha256:6ed94377367ba0923db922bdbefffe919d002fa21841fbfbb1b1025febaf364e"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333928"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64"]
 checksum = "sha256:138bf71c3d6f115025e8661b7ee2d036cf7c92ecb2f715e0b4c316539bcaa7eb"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333934"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-baseline"]
 checksum = "sha256:138bf71c3d6f115025e8661b7ee2d036cf7c92ecb2f715e0b4c316539bcaa7eb"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333934"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl"]
 checksum = "sha256:138bf71c3d6f115025e8661b7ee2d036cf7c92ecb2f715e0b4c316539bcaa7eb"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333934"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:138bf71c3d6f115025e8661b7ee2d036cf7c92ecb2f715e0b4c316539bcaa7eb"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333934"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-arm64"]
 checksum = "sha256:1d63db26249ce074301c1b5d308c57dd322c6c0758adb41d00c632496d818526"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-darwin-arm64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333936"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-x64"]
 checksum = "sha256:8c49a55e4cdb9b79d0ea68071c6119483194e3405fc68acd496079cd991c803f"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333932"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-x64-baseline"]
 checksum = "sha256:8c49a55e4cdb9b79d0ea68071c6119483194e3405fc68acd496079cd991c803f"
-checksum_source = "mise-versions"
 url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.1/terminal-browser-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/685333932"
 
