@@ -7480,67 +7480,56 @@ specifiers = ["2026.10.6"]
 
 [tools.cloudflared."platforms.linux-arm64"]
 checksum = "sha256:0ae0e179475b2c77651a718d2b376e0151f4fca5954702a84f02843a4d5fcac0"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-linux-arm64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688473003"
 
 [tools.cloudflared."platforms.linux-arm64-musl"]
 checksum = "sha256:0ae0e179475b2c77651a718d2b376e0151f4fca5954702a84f02843a4d5fcac0"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-linux-arm64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688473003"
 
 [tools.cloudflared."platforms.linux-x64"]
 checksum = "sha256:1d356dac769d0dbf62ebe588c4034824bbff98d5790c2f844cc99e0e2f57462d"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688471811"
 
 [tools.cloudflared."platforms.linux-x64-baseline"]
 checksum = "sha256:1d356dac769d0dbf62ebe588c4034824bbff98d5790c2f844cc99e0e2f57462d"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688471811"
 
 [tools.cloudflared."platforms.linux-x64-musl"]
 checksum = "sha256:1d356dac769d0dbf62ebe588c4034824bbff98d5790c2f844cc99e0e2f57462d"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688471811"
 
 [tools.cloudflared."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:1d356dac769d0dbf62ebe588c4034824bbff98d5790c2f844cc99e0e2f57462d"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-linux-amd64"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688471811"
 
 [tools.cloudflared."platforms.macos-arm64"]
 checksum = "sha256:ea1e5105d35bbe16cee5b2f7b4742059ada341fbd35938ed827c24b85efa51c8"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-darwin-arm64.tgz"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688470940"
 
 [tools.cloudflared."platforms.macos-x64"]
 checksum = "sha256:6c04a13835ca5ff29a0c6f58d17d1f3956aad1b7df1631f5b5efbc06269deded"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-darwin-amd64.tgz"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688471253"
 
 [tools.cloudflared."platforms.macos-x64-baseline"]
 checksum = "sha256:6c04a13835ca5ff29a0c6f58d17d1f3956aad1b7df1631f5b5efbc06269deded"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-darwin-amd64.tgz"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688471253"
 
 [tools.cloudflared."platforms.windows-x64"]
 checksum = "sha256:d521b3bf68982165f0d06d76732f22d9a105ef057ff3ae4c0986f3a23190950f"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-windows-amd64.exe"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688473926"
 
 [tools.cloudflared."platforms.windows-x64-baseline"]
 checksum = "sha256:d521b3bf68982165f0d06d76732f22d9a105ef057ff3ae4c0986f3a23190950f"
-checksum_source = "mise-versions"
 url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.6/cloudflared-windows-amd64.exe"
 url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/688473926"
 
