@@ -54,8 +54,8 @@
         "openai/codex",
         "aqua:openai/codex",
         "copilot",
-        "cursor-agent",
         "opencode",
+        "npm:@opencode/cli",
         "aqua:google-antigravity/antigravity-cli",
         "npm:acpx",
         "npm:agent-browser",
@@ -95,17 +95,6 @@
       datasourceTemplate: "github-releases",
       packageNameTemplate: "moonbitlang/moonbit-compiler",
       extractVersionTemplate: "^v?(?<version>.+)$",
-    },
-    {
-      customType: "regex",
-      managerFilePatterns: ["^home/dot_config/mise/config\\.toml$"],
-      matchStrings: [
-        "cursor-agent\\s*=\\s*\"(?<currentValue>[^\"]+)\"",
-      ],
-      depNameTemplate: "cursor-agent",
-      datasourceTemplate: "html",
-      packageNameTemplate: "https://cursor.com/install",
-      extractVersionTemplate: "downloads\\.cursor\\.com/lab/(?<version>[^/]+)/",
     },
     {
       customType: "regex",

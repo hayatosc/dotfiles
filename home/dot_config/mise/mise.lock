@@ -6888,36 +6888,47 @@ backend = "vfox:mise-plugins/vfox-1password"
 specifiers = ["2.41.0"]
 
 [tools.1password."platforms.linux-arm64"]
+checksum = "sha256:bc4ac99201909f96f67e7a89601dbf5388f991aca53120db6fc3f1666dff706b"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_linux_arm64_v2.41.0.zip"
 
 [tools.1password."platforms.linux-arm64-musl"]
+checksum = "sha256:bc4ac99201909f96f67e7a89601dbf5388f991aca53120db6fc3f1666dff706b"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_linux_arm64_v2.41.0.zip"
 
 [tools.1password."platforms.linux-x64"]
+checksum = "sha256:498bbaa154f0d90749325a14e04488fcd84930a426ae92ebf421d2a7d793a80a"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_linux_amd64_v2.41.0.zip"
 
 [tools.1password."platforms.linux-x64-baseline"]
+checksum = "sha256:498bbaa154f0d90749325a14e04488fcd84930a426ae92ebf421d2a7d793a80a"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_linux_amd64_v2.41.0.zip"
 
 [tools.1password."platforms.linux-x64-musl"]
+checksum = "sha256:498bbaa154f0d90749325a14e04488fcd84930a426ae92ebf421d2a7d793a80a"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_linux_amd64_v2.41.0.zip"
 
 [tools.1password."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:498bbaa154f0d90749325a14e04488fcd84930a426ae92ebf421d2a7d793a80a"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_linux_amd64_v2.41.0.zip"
 
 [tools.1password."platforms.macos-arm64"]
+checksum = "sha256:83da93b6d90726ac5111ce4f6993a9504ee420b7a299b9d145041886cd13c6ca"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_darwin_arm64_v2.41.0.zip"
 
 [tools.1password."platforms.macos-x64"]
+checksum = "sha256:cf5f3a78e2d3a09e9a003e0cd855e8fff0a4b38ceda6f9921cd0b29005d3e6f1"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_darwin_amd64_v2.41.0.zip"
 
 [tools.1password."platforms.macos-x64-baseline"]
+checksum = "sha256:cf5f3a78e2d3a09e9a003e0cd855e8fff0a4b38ceda6f9921cd0b29005d3e6f1"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_darwin_amd64_v2.41.0.zip"
 
 [tools.1password."platforms.windows-x64"]
+checksum = "sha256:1338a6799ef9f66d1b7d526fcf195a37675e80171c557ded01afebb159e3490b"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_windows_amd64_v2.41.0.zip"
 
 [tools.1password."platforms.windows-x64-baseline"]
+checksum = "sha256:1338a6799ef9f66d1b7d526fcf195a37675e80171c557ded01afebb159e3490b"
 url = "https://cache.agilebits.com/dist/1P/op2/pkg/v2.41.0/op_windows_amd64_v2.41.0.zip"
 
 [[tools."aqua:eza-community/eza"]]
@@ -7257,63 +7268,54 @@ url = "https://github.com/ast-grep/ast-grep/releases/download/0.51.0/app-x86_64-
 url_api = "https://api.github.com/repos/ast-grep/ast-grep/releases/assets/644255645"
 
 [[tools.aube]]
-version = "v2.8.5"
-backend = "aqua:jdx/aube"
-specifiers = ["v2.8.5"]
+version = "2.8.5"
+backend = "packslip:github.com/aubepkg/aube"
+specifiers = ["2.8.5"]
 
 [tools.aube."platforms.linux-arm64"]
 checksum = "sha256:9690b1968d3fdf6c3915d8cbef24ff1c2f7145161b726991b1bd500fead9d90f"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692823099"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [tools.aube."platforms.linux-arm64-musl"]
 checksum = "sha256:9ce103ff36d4300d5fb4a087323db9935b1843bc53df6042e0357b09807ee9d2"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692780092"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [tools.aube."platforms.linux-x64"]
 checksum = "sha256:bda6a85ac51b11930f92150d51a2d749ea85d0894195056c9e5a52747b56695a"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692778584"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [tools.aube."platforms.linux-x64-baseline"]
 checksum = "sha256:bda6a85ac51b11930f92150d51a2d749ea85d0894195056c9e5a52747b56695a"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692778584"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [tools.aube."platforms.linux-x64-musl"]
 checksum = "sha256:94ee848caeb773325de2ce41ecaedf4460f376d956b9e814d21fce922f9842d2"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692777024"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [tools.aube."platforms.linux-x64-musl-baseline"]
 checksum = "sha256:94ee848caeb773325de2ce41ecaedf4460f376d956b9e814d21fce922f9842d2"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692777024"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [tools.aube."platforms.macos-arm64"]
 checksum = "sha256:74c22535927c8ecd1ca9937371e9cce40a6b4ae7915ea5e45cfff17eb5dad5ff"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692857279"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [tools.aube."platforms.windows-x64"]
 checksum = "sha256:97cfb2ee932529091f39f6f47933802569e5b38a689f867ee45ae0ee6f2be4cc"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692818539"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [tools.aube."platforms.windows-x64-baseline"]
 checksum = "sha256:97cfb2ee932529091f39f6f47933802569e5b38a689f867ee45ae0ee6f2be4cc"
 url = "https://github.com/aubepkg/aube/releases/download/v2.8.5/aube-v2.8.5-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/692818539"
-provenance = "github-attestations"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 
 [[tools.bat]]
 version = "0.26.1"
@@ -9000,47 +9002,6 @@ checksum = "sha256:34e16e9cf47de0e1534920171d6f39fa246638bddbb6ece820870b382bcc0
 url = "https://github.com/github/copilot-cli/releases/download/v1.0.105/copilot-win32-x64.zip"
 url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/683348975"
 
-[[tools.cursor-agent]]
-version = "2026.08.04-aaa8809"
-backend = "http:cursor-agent"
-specifiers = ["2026.08.04-aaa8809"]
-
-[tools.cursor-agent.options]
-strip_components = "0"
-
-[tools.cursor-agent."platforms.linux-arm64"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/arm64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.linux-arm64-musl"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/arm64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.linux-x64"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/x64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.linux-x64-baseline"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/x64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.linux-x64-musl"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/x64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.linux-x64-musl-baseline"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/linux/x64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.macos-arm64"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/darwin/arm64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.macos-x64"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/darwin/x64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.macos-x64-baseline"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/darwin/x64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.windows-x64"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/windows/x64/agent-cli-package.tar.gz"
-
-[tools.cursor-agent."platforms.windows-x64-baseline"]
-url = "https://downloads.cursor.com/lab/2026.08.04-aaa8809/windows/x64/agent-cli-package.tar.gz"
-
 [[tools.delta]]
 version = "0.20.1"
 backend = "aqua:dandavison/delta"
@@ -9266,36 +9227,47 @@ backend = "vfox:mise-plugins/vfox-gcloud"
 specifiers = ["570.0.0"]
 
 [tools.gcloud."platforms.linux-arm64"]
+checksum = "sha256:ca0d6d789d6677b2d8b460b24a5df4d8298f015c642a85a66aaa1a0ffe9ebe20"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-arm.tar.gz"
 
 [tools.gcloud."platforms.linux-arm64-musl"]
+checksum = "sha256:ca0d6d789d6677b2d8b460b24a5df4d8298f015c642a85a66aaa1a0ffe9ebe20"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-arm.tar.gz"
 
 [tools.gcloud."platforms.linux-x64"]
+checksum = "sha256:b35c621a75d8e176b6b9f5629896b28a18fe3f2de6b147fc7c96d5e09921a2e3"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-x86_64.tar.gz"
 
 [tools.gcloud."platforms.linux-x64-baseline"]
+checksum = "sha256:b35c621a75d8e176b6b9f5629896b28a18fe3f2de6b147fc7c96d5e09921a2e3"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-x86_64.tar.gz"
 
 [tools.gcloud."platforms.linux-x64-musl"]
+checksum = "sha256:b35c621a75d8e176b6b9f5629896b28a18fe3f2de6b147fc7c96d5e09921a2e3"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-x86_64.tar.gz"
 
 [tools.gcloud."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:b35c621a75d8e176b6b9f5629896b28a18fe3f2de6b147fc7c96d5e09921a2e3"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-linux-x86_64.tar.gz"
 
 [tools.gcloud."platforms.macos-arm64"]
+checksum = "sha256:faf31849cb6737fe5a2d4e56ab7f3941ac7107908a7b6c9ba6099a4ac95fc66e"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-darwin-arm.tar.gz"
 
 [tools.gcloud."platforms.macos-x64"]
+checksum = "sha256:ad2aad8f8e03d06a69b4d0aea28938bb34bb41f152093bb8ca1f8c8b64ce66be"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-darwin-x86_64.tar.gz"
 
 [tools.gcloud."platforms.macos-x64-baseline"]
+checksum = "sha256:ad2aad8f8e03d06a69b4d0aea28938bb34bb41f152093bb8ca1f8c8b64ce66be"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-darwin-x86_64.tar.gz"
 
 [tools.gcloud."platforms.windows-x64"]
+checksum = "sha256:89329a134f6104fb1882bf553923d3ce0e62f9c7a016af789abd9000e6a74e63"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-windows-x86_64-bundled-python.zip"
 
 [tools.gcloud."platforms.windows-x64-baseline"]
+checksum = "sha256:89329a134f6104fb1882bf553923d3ce0e62f9c7a016af789abd9000e6a74e63"
 url = "https://storage.googleapis.com/cloud-sdk-release/google-cloud-sdk-570.0.0-windows-x86_64-bundled-python.zip"
 
 [[tools.gh]]
@@ -11492,7 +11464,7 @@ specifiers = ["0.10.7+bc794d341"]
 
 [[tools.ni]]
 version = "30.6.0"
-aube = { path = ".mise/locks/ni/30.6.0", digest = "sha256:6180ffdff67f5860d3cf15e6ebe787d10732b51ff6f9aa7afabec23578b080d8" }
+aube = { path = "locks/ni/30.6.0", digest = "sha256:6180ffdff67f5860d3cf15e6ebe787d10732b51ff6f9aa7afabec23578b080d8" }
 backend = "npm:@antfu/ni"
 specifiers = ["30.6.0"]
 
@@ -11545,96 +11517,53 @@ url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 checksum = "sha256:158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e541"
 url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
+[[tools."npm:@opencode/cli"]]
+version = "2.2.5"
+aube = { path = "locks/npm-opencode-cli/2.2.5", digest = "sha256:5423c53b1334bf1a0e09a122f05c23b204c2359adc0cce62d1b6270c268bd496" }
+backend = "npm:@opencode/cli"
+specifiers = ["2.2.5"]
+
 [[tools."npm:@xai-official/grok"]]
 version = "1.0.70"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.70", digest = "sha256:336ea55d32f7c25a676e1a6574e08be7bfe68a200d21ae91f7c64ab2e9b8f9c9" }
+aube = { path = "locks/npm-xai-official-grok/1.0.70", digest = "sha256:336ea55d32f7c25a676e1a6574e08be7bfe68a200d21ae91f7c64ab2e9b8f9c9" }
 backend = "npm:@xai-official/grok"
 specifiers = ["1.0.70"]
 
 [[tools."npm:acpx"]]
 version = "0.21.1"
-aube = { path = ".mise/locks/npm-acpx/0.21.1", digest = "sha256:0e18025b48a8942e7819084e91c2b7bdf4aa8228e7af9d52e8bdab389d10dcbd" }
+aube = { path = "locks/npm-acpx/0.21.1", digest = "sha256:0e18025b48a8942e7819084e91c2b7bdf4aa8228e7af9d52e8bdab389d10dcbd" }
 backend = "npm:acpx"
 specifiers = ["0.21.1"]
 
 [[tools."npm:agent-browser"]]
 version = "0.41.0"
-aube = { path = ".mise/locks/npm-agent-browser/0.41.0", digest = "sha256:a638ea117f197d70986e7c7e301831bf19e6068c4bc69918b6c2a59c1a55b549" }
+aube = { path = "locks/npm-agent-browser/0.41.0", digest = "sha256:a638ea117f197d70986e7c7e301831bf19e6068c4bc69918b6c2a59c1a55b549" }
 backend = "npm:agent-browser"
 specifiers = ["0.41.0"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
-aube = { path = ".mise/locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
+aube = { path = "locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
 backend = "npm:bash-language-server"
 specifiers = ["5.8.1"]
 
 [[tools."npm:typescript"]]
 version = "7.0.2"
-aube = { path = ".mise/locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
+aube = { path = "locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
 backend = "npm:typescript"
 specifiers = ["7.0.2"]
 
 [[tools."npm:vscode-langservers-extracted"]]
 version = "4.10.0"
-aube = { path = ".mise/locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:a6b6ca76702702ce4247c4b82fad51bf8afc0fa6578811420bef8f5d21046e11" }
+aube = { path = "locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:a6b6ca76702702ce4247c4b82fad51bf8afc0fa6578811420bef8f5d21046e11" }
 backend = "npm:vscode-langservers-extracted"
 specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
 version = "1.25.0"
-aube = { path = ".mise/locks/npm-yaml-language-server/1.25.0", digest = "sha256:c49a602343f1778c61a8c21e82d480062610654d6ba206a347d274d96e29a5b5" }
+aube = { path = "locks/npm-yaml-language-server/1.25.0", digest = "sha256:c49a602343f1778c61a8c21e82d480062610654d6ba206a347d274d96e29a5b5" }
 backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
-
-[[tools.opencode]]
-version = "2.2.5"
-backend = "aqua:anomalyco/opencode"
-specifiers = ["2.2.5"]
-
-[tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:5a528f42caf576c6cdece6a191eb273d3db54effa5518e0402684d8f8026aeb6"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-arm64.tar.gz"
-
-[tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:5a528f42caf576c6cdece6a191eb273d3db54effa5518e0402684d8f8026aeb6"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-arm64.tar.gz"
-
-[tools.opencode."platforms.linux-x64"]
-checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
-
-[tools.opencode."platforms.linux-x64-baseline"]
-checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
-
-[tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
-
-[tools.opencode."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
-
-[tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:25ba9908979fa7d764792c82589b4b5768ab1511154e0317d98aa77d216ce767"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-darwin-arm64.zip"
-
-[tools.opencode."platforms.macos-x64"]
-checksum = "sha256:4d4419022e6ffbd48afc97c5101bdf001d38b0499f516169b9a80a87a340fd56"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-darwin-x64.zip"
-
-[tools.opencode."platforms.macos-x64-baseline"]
-checksum = "sha256:4d4419022e6ffbd48afc97c5101bdf001d38b0499f516169b9a80a87a340fd56"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-darwin-x64.zip"
-
-[tools.opencode."platforms.windows-x64"]
-checksum = "sha256:2f3bfd6b3527c60c2a882557b20ddc9ba6bdff4b5a8fe61c853da8fcfb3076e8"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-windows-x64.zip"
-
-[tools.opencode."platforms.windows-x64-baseline"]
-checksum = "sha256:2f3bfd6b3527c60c2a882557b20ddc9ba6bdff4b5a8fe61c853da8fcfb3076e8"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-windows-x64.zip"
 
 [[tools.pi]]
 version = "1.4.0"
@@ -11780,7 +11709,7 @@ provenance = "github-attestations"
 
 [[tools.portless]]
 version = "0.15.12"
-aube = { path = ".mise/locks/portless/0.15.12", digest = "sha256:3b7034300819b5f874d8e8174e855a29e32b9e3441770ce528134332c946ab6a" }
+aube = { path = "locks/portless/0.15.12", digest = "sha256:3b7034300819b5f874d8e8174e855a29e32b9e3441770ce528134332c946ab6a" }
 backend = "npm:portless"
 specifiers = ["0.15.12"]
 
@@ -12262,46 +12191,57 @@ backend = "aqua:tamasfe/taplo"
 specifiers = ["0.10.0"]
 
 [tools.taplo."platforms.linux-arm64"]
+checksum = "sha256:033681d01eec8376c3fd38fa3703c79316f5e14bb013d859943b60a07bccdcc3"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-aarch64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322597"
 
 [tools.taplo."platforms.linux-arm64-musl"]
+checksum = "sha256:033681d01eec8376c3fd38fa3703c79316f5e14bb013d859943b60a07bccdcc3"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-aarch64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322597"
 
 [tools.taplo."platforms.linux-x64"]
+checksum = "sha256:8fe196b894ccf9072f98d4e1013a180306e17d244830b03986ee5e8eabeb6156"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322600"
 
 [tools.taplo."platforms.linux-x64-baseline"]
+checksum = "sha256:8fe196b894ccf9072f98d4e1013a180306e17d244830b03986ee5e8eabeb6156"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322600"
 
 [tools.taplo."platforms.linux-x64-musl"]
+checksum = "sha256:8fe196b894ccf9072f98d4e1013a180306e17d244830b03986ee5e8eabeb6156"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322600"
 
 [tools.taplo."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:8fe196b894ccf9072f98d4e1013a180306e17d244830b03986ee5e8eabeb6156"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257322600"
 
 [tools.taplo."platforms.macos-arm64"]
+checksum = "sha256:713734314c3e71894b9e77513c5349835eefbd52908445a0d73b0c7dc469347d"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-darwin-aarch64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323110"
 
 [tools.taplo."platforms.macos-x64"]
+checksum = "sha256:898122cde3a0b1cd1cbc2d52d3624f23338218c91b5ddb71518236a4c2c10ef2"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-darwin-x86_64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323116"
 
 [tools.taplo."platforms.macos-x64-baseline"]
+checksum = "sha256:898122cde3a0b1cd1cbc2d52d3624f23338218c91b5ddb71518236a4c2c10ef2"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-darwin-x86_64.gz"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323116"
 
 [tools.taplo."platforms.windows-x64"]
+checksum = "sha256:1615eed140039bd58e7089109883b1c434de5d6de8f64a993e6e8c80ca57bdf9"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323062"
 
 [tools.taplo."platforms.windows-x64-baseline"]
+checksum = "sha256:1615eed140039bd58e7089109883b1c434de5d6de8f64a993e6e8c80ca57bdf9"
 url = "https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323062"
 
@@ -12361,34 +12301,42 @@ backend = "aqua:tsl0922/ttyd"
 specifiers = ["1.7.7"]
 
 [tools.ttyd."platforms.linux-arm64"]
+checksum = "sha256:b38acadd89d1d396a0f5649aa52c539edbad07f4bc7348b27b4f4b7219dd4165"
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.aarch64"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377644"
 
 [tools.ttyd."platforms.linux-arm64-musl"]
+checksum = "sha256:b38acadd89d1d396a0f5649aa52c539edbad07f4bc7348b27b4f4b7219dd4165"
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.aarch64"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377644"
 
 [tools.ttyd."platforms.linux-x64"]
+checksum = "sha256:8a217c968aba172e0dbf3f34447218dc015bc4d5e59bf51db2f2cd12b7be4f55"
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377628"
 
 [tools.ttyd."platforms.linux-x64-baseline"]
+checksum = "sha256:8a217c968aba172e0dbf3f34447218dc015bc4d5e59bf51db2f2cd12b7be4f55"
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377628"
 
 [tools.ttyd."platforms.linux-x64-musl"]
+checksum = "sha256:8a217c968aba172e0dbf3f34447218dc015bc4d5e59bf51db2f2cd12b7be4f55"
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377628"
 
 [tools.ttyd."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:8a217c968aba172e0dbf3f34447218dc015bc4d5e59bf51db2f2cd12b7be4f55"
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377628"
 
 [tools.ttyd."platforms.windows-x64"]
+checksum = "sha256:e33a27501b10b96981335bcba938b1145c7f52551a343e72160f00ab71832b37"
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.win32.exe"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377630"
 
 [tools.ttyd."platforms.windows-x64-baseline"]
+checksum = "sha256:e33a27501b10b96981335bcba938b1145c7f52551a343e72160f00ab71832b37"
 url = "https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.win32.exe"
 url_api = "https://api.github.com/repos/tsl0922/ttyd/releases/assets/159377630"
 
