@@ -6966,64 +6966,75 @@ url = "https://github.com/eza-community/eza/releases/download/v0.23.5/eza.exe_x8
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/471228877"
 
 [[tools."aqua:google-antigravity/antigravity-cli"]]
-version = "1.4.11"
+version = "1.4.12"
 backend = "aqua:google-antigravity/antigravity-cli"
-specifiers = ["1.4.11"]
+specifiers = ["1.4.12"]
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64"]
-checksum = "sha256:debb2c056e387be63fdf86d48dfcc99ed1f523e51c5067abd119d78bd36e8a18"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691062670"
+checksum = "sha256:30dd61ebe1f0a8829057ea2de29dad08c710dd972ce4c02949f51e632135a86b"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693488646"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-arm64-musl"]
-checksum = "sha256:debb2c056e387be63fdf86d48dfcc99ed1f523e51c5067abd119d78bd36e8a18"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691062670"
+checksum = "sha256:30dd61ebe1f0a8829057ea2de29dad08c710dd972ce4c02949f51e632135a86b"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693488646"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64"]
-checksum = "sha256:d17c426977326361f3d81f3ea22820e967164285923de020247e460dcb9d15c3"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691062673"
+checksum = "sha256:3368d1923fc869f21ec8fce83252a8c96c89283aac9393958ac91fbf7a3949e4"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693488645"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-baseline"]
-checksum = "sha256:d17c426977326361f3d81f3ea22820e967164285923de020247e460dcb9d15c3"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691062673"
+checksum = "sha256:3368d1923fc869f21ec8fce83252a8c96c89283aac9393958ac91fbf7a3949e4"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693488645"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl"]
-checksum = "sha256:d17c426977326361f3d81f3ea22820e967164285923de020247e460dcb9d15c3"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691062673"
+checksum = "sha256:3368d1923fc869f21ec8fce83252a8c96c89283aac9393958ac91fbf7a3949e4"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693488645"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:d17c426977326361f3d81f3ea22820e967164285923de020247e460dcb9d15c3"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_linux_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691062673"
+checksum = "sha256:3368d1923fc869f21ec8fce83252a8c96c89283aac9393958ac91fbf7a3949e4"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_linux_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693488645"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-arm64"]
-checksum = "sha256:084887b4d4485d5a44ac47ed6df6ab7f92ba01337050524f0a98a690c8662228"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_mac_arm64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691066911"
+checksum = "sha256:4c989b5ccf0e39c99a1ce6df82410abb628d4d83e0d3183527702df744d9c589"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_mac_arm64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693494302"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64"]
-checksum = "sha256:2a3695aa83b47c30ceaff23f4fd1e7a9c9136010ab9b4ace3109458c1443ff89"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691062674"
+checksum = "sha256:624d01369df5841f64555741dd09d3ab4a6d174699a4ded896a5180c81f2c2de"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693488644"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.macos-x64-baseline"]
-checksum = "sha256:2a3695aa83b47c30ceaff23f4fd1e7a9c9136010ab9b4ace3109458c1443ff89"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_mac_x64.tar.gz"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691062674"
+checksum = "sha256:624d01369df5841f64555741dd09d3ab4a6d174699a4ded896a5180c81f2c2de"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_mac_x64.tar.gz"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693488644"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64"]
-checksum = "sha256:79140f11f0fb7222a6e543c2f446904822e27ce7a39766230fffa01d95639b67"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691066915"
+checksum = "sha256:1dfc617de5f9b4c5314489b0122c6f7f727a893326f361baa47a63fa86b9aec3"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693494305"
 
 [tools."aqua:google-antigravity/antigravity-cli"."platforms.windows-x64-baseline"]
-checksum = "sha256:79140f11f0fb7222a6e543c2f446904822e27ce7a39766230fffa01d95639b67"
-url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.11/agy_cli_windows_x64.zip"
-url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/691066915"
+checksum = "sha256:1dfc617de5f9b4c5314489b0122c6f7f727a893326f361baa47a63fa86b9aec3"
+checksum_source = "mise-versions"
+url = "https://github.com/google-antigravity/antigravity-cli/releases/download/1.4.12/agy_cli_windows_x64.zip"
+url_api = "https://api.github.com/repos/google-antigravity/antigravity-cli/releases/assets/693494305"
 
 [[tools."aqua:helix-editor/helix"]]
 version = "25.07.1"
@@ -7414,64 +7425,75 @@ checksum = "sha256:0f20ce6674d4f2dbcc8c5d59fdf99f7ba45f8c3b367e0f5781cbfa30a1c78
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.314"
+version = "2.1.316"
 backend = "aqua:anthropics/claude-code"
-specifiers = ["2.1.314"]
+specifiers = ["2.1.316"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:6acfc0d2f965bf910f12e89da32cc2bc826974e555d50c4a4b0936e042ec749b"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337506"
+checksum = "sha256:5f82c7fd9f289c9aad37792ffa5ca1bcd40d6dd3298b3a36ce01179e12ab2b14"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882163"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:92d8ca6238f961914e320dfb95863193281afe6aa6aa5851598e63b4fb02bd1a"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337505"
+checksum = "sha256:7241f7935485bd49421ce5ebb2e0ba9d1d9ab6a696742dfc3e6d9a7bb18b63e9"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882158"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:348a302629f3734a2a7318a97eb6a05d4c30e772f9c8366cb78a55977eca46da"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337852"
+checksum = "sha256:9ca14cd81a7b0d9654d392fc1253773e70f31f470aa98334732744956cd1006b"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882314"
 
 [tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:348a302629f3734a2a7318a97eb6a05d4c30e772f9c8366cb78a55977eca46da"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337852"
+checksum = "sha256:9ca14cd81a7b0d9654d392fc1253773e70f31f470aa98334732744956cd1006b"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882314"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:79fbabad07a6f3a950feee37df83b58514da7a1199428025fe9835d49e531cfc"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337507"
+checksum = "sha256:7f8277957c7d06aeef103da8cf4b54fbcecfb9a4cc6675d6037cda55eba6eae5"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882157"
 
 [tools.claude."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:79fbabad07a6f3a950feee37df83b58514da7a1199428025fe9835d49e531cfc"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337507"
+checksum = "sha256:7f8277957c7d06aeef103da8cf4b54fbcecfb9a4cc6675d6037cda55eba6eae5"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882157"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:c819253fa84c46ee77e14afb1aab0c38d7fdb240d914d168e9ad2e21ce3ba1b4"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337508"
+checksum = "sha256:e8956064b1c5055c1c79945aa7714faef98b29060a065c6930e8956953d0bace"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882159"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:b323d782325f71825b14189ccb6663ca772ca90fab95bc79b2e365b29f82234b"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337504"
+checksum = "sha256:7265a50837056d5b4f90985610228ea3fba6fa0a457dd499d22ff6ff905b34c6"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882160"
 
 [tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:b323d782325f71825b14189ccb6663ca772ca90fab95bc79b2e365b29f82234b"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337504"
+checksum = "sha256:7265a50837056d5b4f90985610228ea3fba6fa0a457dd499d22ff6ff905b34c6"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882160"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:0722d17136ef06c5675dbf97ad75148642213111f2192dda14c9ed5411b66746"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337904"
+checksum = "sha256:c77cb13c50365de63ad3a0e09c915294a9d1657627b82a6fc3c1bdf327e6a346"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882322"
 
 [tools.claude."platforms.windows-x64-baseline"]
-checksum = "sha256:0722d17136ef06c5675dbf97ad75148642213111f2192dda14c9ed5411b66746"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.314/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/690337904"
+checksum = "sha256:c77cb13c50365de63ad3a0e09c915294a9d1657627b82a6fc3c1bdf327e6a346"
+checksum_source = "mise-versions"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882322"
 
 [[tools.cloudflared]]
 version = "2026.10.7"
@@ -9861,54 +9883,63 @@ url = "https://github.com/steipete/gogcli/releases/download/v0.47.1/gogcli_0.47.
 url_api = "https://api.github.com/repos/steipete/gogcli/releases/assets/680303731"
 
 [[tools."github:zenbu-labs/terminal-browser"]]
-version = "0.15.2"
+version = "0.15.3"
 backend = "github:zenbu-labs/terminal-browser"
-specifiers = ["v0.15.2"]
+specifiers = ["v0.15.3"]
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64"]
-checksum = "sha256:5db099c0c3037936f2b22cfa9f9a929367cc2754d96a631c2e91b886f67d0f2a"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533219"
+checksum = "sha256:69f26a76bdcc61e4782733aa1b9fcb6e06774ac9d6b0df3e9fbb0aa4abb0f6bc"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552229"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64-musl"]
-checksum = "sha256:5db099c0c3037936f2b22cfa9f9a929367cc2754d96a631c2e91b886f67d0f2a"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533219"
+checksum = "sha256:69f26a76bdcc61e4782733aa1b9fcb6e06774ac9d6b0df3e9fbb0aa4abb0f6bc"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552229"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64"]
-checksum = "sha256:9681a94db7ace106cce86bf14dcb3fcba7a404e5e660e70bf9ceb72ace36b146"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533223"
+checksum = "sha256:244e995b554edb29f66cf07f7f830a76885ae6a6fa233dec53980bfb0a509541"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552231"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-baseline"]
-checksum = "sha256:9681a94db7ace106cce86bf14dcb3fcba7a404e5e660e70bf9ceb72ace36b146"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533223"
+checksum = "sha256:244e995b554edb29f66cf07f7f830a76885ae6a6fa233dec53980bfb0a509541"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552231"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl"]
-checksum = "sha256:9681a94db7ace106cce86bf14dcb3fcba7a404e5e660e70bf9ceb72ace36b146"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533223"
+checksum = "sha256:244e995b554edb29f66cf07f7f830a76885ae6a6fa233dec53980bfb0a509541"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552231"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:9681a94db7ace106cce86bf14dcb3fcba7a404e5e660e70bf9ceb72ace36b146"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533223"
+checksum = "sha256:244e995b554edb29f66cf07f7f830a76885ae6a6fa233dec53980bfb0a509541"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552231"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-arm64"]
-checksum = "sha256:986250885e71260fb2f9de3d0b3cc3a3c5ecb63fd360e46cab2c48e1716fd3db"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533221"
+checksum = "sha256:11afbc1c0cc0b8d12bb5effc2e2baf08507dd32456d6e0052824c1bc30c108f0"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552232"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-x64"]
-checksum = "sha256:37027af564db12487129161f66310df2fbf0d5bbdac4dd98af01ca40242d455f"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533217"
+checksum = "sha256:f91bb601f93b2959b76b24a6e4b765cab7ad35a885b97c07beaa1fd0773f6b05"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552234"
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.macos-x64-baseline"]
-checksum = "sha256:37027af564db12487129161f66310df2fbf0d5bbdac4dd98af01ca40242d455f"
-url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.2/terminal-browser-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/688533217"
+checksum = "sha256:f91bb601f93b2959b76b24a6e4b765cab7ad35a885b97c07beaa1fd0773f6b05"
+checksum_source = "mise-versions"
+url = "https://github.com/zenbu-labs/terminal-browser/releases/download/v0.15.3/terminal-browser-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/zenbu-labs/terminal-browser/releases/assets/693552234"
 
 [[tools.go]]
 version = "1.27.3"
@@ -11557,64 +11588,53 @@ backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
 
 [[tools.opencode]]
-version = "2.2.3"
+version = "2.2.5"
 backend = "aqua:anomalyco/opencode"
-specifiers = ["2.2.3"]
+specifiers = ["2.2.5"]
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:72aac82c021268f6cc9810de913f8d47d05626b1ad974d7f5dc5b087e1ad0f68"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691665616"
+checksum = "sha256:5a528f42caf576c6cdece6a191eb273d3db54effa5518e0402684d8f8026aeb6"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:72aac82c021268f6cc9810de913f8d47d05626b1ad974d7f5dc5b087e1ad0f68"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691665616"
+checksum = "sha256:5a528f42caf576c6cdece6a191eb273d3db54effa5518e0402684d8f8026aeb6"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:ef3aeeaf5522b10d69a3da7bbd6e6d8d259f845833d96b8310767d3407b18a35"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691665738"
+checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-baseline"]
-checksum = "sha256:ef3aeeaf5522b10d69a3da7bbd6e6d8d259f845833d96b8310767d3407b18a35"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691665738"
+checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:ef3aeeaf5522b10d69a3da7bbd6e6d8d259f845833d96b8310767d3407b18a35"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691665738"
+checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:ef3aeeaf5522b10d69a3da7bbd6e6d8d259f845833d96b8310767d3407b18a35"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691665738"
+checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:65db03573e5717e6da245ae3e5c2ffa35915b90689d37c43d4e1ade4d47f55f9"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691664486"
+checksum = "sha256:25ba9908979fa7d764792c82589b4b5768ab1511154e0317d98aa77d216ce767"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:e6b67deeb327ad25eff94bb3c39d8b15466c3de0224e3a0a47a385b69a266d4c"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-darwin-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691664484"
+checksum = "sha256:4d4419022e6ffbd48afc97c5101bdf001d38b0499f516169b9a80a87a340fd56"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.macos-x64-baseline"]
-checksum = "sha256:e6b67deeb327ad25eff94bb3c39d8b15466c3de0224e3a0a47a385b69a266d4c"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-darwin-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691664484"
+checksum = "sha256:4d4419022e6ffbd48afc97c5101bdf001d38b0499f516169b9a80a87a340fd56"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:48db8b9a57b8524948f61f1e0c770b6762ce840992bebf03ffca43d896844baf"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-windows-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691665781"
+checksum = "sha256:2f3bfd6b3527c60c2a882557b20ddc9ba6bdff4b5a8fe61c853da8fcfb3076e8"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-windows-x64.zip"
 
 [tools.opencode."platforms.windows-x64-baseline"]
-checksum = "sha256:48db8b9a57b8524948f61f1e0c770b6762ce840992bebf03ffca43d896844baf"
-url = "https://github.com/anomalyco/opencode/releases/download/v2.2.3/opencode-windows-x64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/691665781"
+checksum = "sha256:2f3bfd6b3527c60c2a882557b20ddc9ba6bdff4b5a8fe61c853da8fcfb3076e8"
+url = "https://opencode.ai/files/bin/2.2.5/opencode-windows-x64.zip"
 
 [[tools.pi]]
 version = "1.3.0"
