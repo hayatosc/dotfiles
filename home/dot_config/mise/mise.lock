@@ -11536,10 +11536,10 @@ backend = "npm:acpx"
 specifiers = ["0.21.1"]
 
 [[tools."npm:agent-browser"]]
-version = "0.41.0"
-aube = { path = "locks/npm-agent-browser/0.41.0", digest = "sha256:a638ea117f197d70986e7c7e301831bf19e6068c4bc69918b6c2a59c1a55b549" }
+version = "0.41.1"
+aube = { path = ".mise/locks/npm-agent-browser/0.41.1", digest = "sha256:18952d290cc581b3c96e02300ad420ffa4282cd47484c13df616bdddfa987ff0" }
 backend = "npm:agent-browser"
-specifiers = ["0.41.0"]
+specifiers = ["0.41.1"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
