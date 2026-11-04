@@ -1,7 +1,7 @@
 # pi-1password
 
 Use 1Password for selected native Pi providers without replacing their models,
-request transport, headers, or login flow. Requires Pi 1.3.0's native provider
+request transport, headers, or login flow unless explicitly configured. Requires Pi 1.3.0's native provider
 API, an authenticated `op` CLI with read/write access to the configured items,
 and Linux `/dev/shm` for private, memory-backed OAuth write templates.
 
@@ -11,12 +11,14 @@ and Linux `/dev/shm` for private, memory-backed OAuth write templates.
 
 - `providerId`: the exact ID of a built-in Pi provider.
 - `type`: `api_key` or `oauth`.
+- `transport` (optional): override streaming transport for this provider only.
+  Legacy OpenAI Codex uses `websocket-cached`; other providers retain Pi's defaults.
 - `secret`: the vault, item, and field IDs in 1Password. IDs survive renames.
 - `validate` (optional, OAuth): checks provider-specific credential metadata.
 - `migrateFrom` (optional, API key): exact old command strings that may be
   replaced by the reference. They are never executed by the extension.
 
-OpenAI OAuth and OpenCode Go API keys are configured initially. To add an API
+OpenAI OAuth, legacy OpenAI Codex OAuth (`openai-codex`), and OpenCode Go API keys are configured initially. The two OpenAI providers use separate vault items because their credentials are not interchangeable. To add an API
 key provider, create its concealed credential in 1Password and add a binding:
 
 ```ts
@@ -37,8 +39,9 @@ For a built-in OAuth provider, use `type: "oauth"` and a concealed field holding
 the complete JSON credential (`type`, `access`, `refresh`, `expires`, and any
 provider-specific metadata). Either let the extension migrate the existing
 local credential on reload or use the provider's normal OAuth `/login` flow.
-The generic wrapper preserves extra metadata. Only OpenAI's configured validator
-requires its client ID and subscription scopes. A provider without the requested
+The generic wrapper preserves extra metadata. OpenAI's configured validator
+requires its client ID and subscription scopes; the legacy OpenAI Codex validator
+requires its account ID instead. A provider without the requested
 native auth method is rejected rather than silently reconfigured.
 
 ## Storage and lifecycle

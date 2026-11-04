@@ -6,7 +6,7 @@ import test from "node:test";
 import type { OAuthAuth, OAuthCredential, ProviderAuthInteraction } from "@earendil-works/pi-ai";
 import { builtinProviders } from "@earendil-works/pi-ai/providers/all";
 import { ModelRuntime } from "@earendil-works/pi-coding-agent";
-import { validateOpenAI } from "./config.ts";
+import { providerBindings, validateOpenAI, validateOpenAICodex } from "./config.ts";
 import { parseCredential, referenceCredential, withOnePasswordOAuth, type OAuthStore } from "./oauth.ts";
 
 const reference = "op://test-vault/any-provider/credential";
@@ -58,6 +58,18 @@ test("only the configured OpenAI validator requires client and subscription scop
 	const value = { ...credential(), clientId: "test-client", scopes: ["chatgpt.tokens.use.direct"] };
 	assert.deepEqual(parseCredential(JSON.stringify(value), validateOpenAI), value);
 	assert.throws(() => parseCredential(JSON.stringify({ ...value, scopes: [] }), validateOpenAI), /complete OpenAI OAuth/);
+});
+
+test("legacy OpenAI credentials require accountId but not the new subscription metadata", () => {
+	const binding = providerBindings.find((binding) => binding.providerId === "openai-codex");
+	assert.ok(binding?.type === "oauth");
+	assert.equal(binding.validate, validateOpenAICodex);
+	const value = { ...credential(), accountId: "test-account" };
+	assert.deepEqual(parseCredential(JSON.stringify(value), binding.validate), value);
+	for (const accountId of [undefined, "", 123]) {
+		assert.throws(() => parseCredential(JSON.stringify({ ...value, accountId }), binding.validate), /complete OpenAI Codex OAuth/);
+	}
+	assert.notDeepEqual(binding.secret, providerBindings.find((binding) => binding.providerId === "openai")?.secret);
 });
 
 test("reference credentials contain no tokens or provider metadata", () => {
@@ -127,22 +139,24 @@ test("vault errors, wrong references, and cancelled refreshes fail closed", asyn
 	await assert.rejects(wrapped.toAuth(referenceCredential(f.saved(), "op://wrong/item/field")), /reload Pi to migrate/);
 });
 
-test("native ModelRuntime resolves vault auth and never persists real tokens", async () => {
+for (const providerId of ["openai", "openai-codex"]) {
+test(`native ModelRuntime resolves ${providerId} vault auth and never persists real tokens`, async () => {
 	const directory = await mkdtemp(join(tmpdir(), "pi-oauth-runtime-"));
 	try {
 		const path = join(directory, "auth.json");
 		const f = fixture(credential(1));
-		await writeFile(path, JSON.stringify({ openai: asReference(f.saved()) }), { mode: 0o600 });
+		await writeFile(path, JSON.stringify({ [providerId]: asReference(f.saved()) }), { mode: 0o600 });
 		const runtime = await ModelRuntime.create({ authPath: path, modelsPath: null, modelsStorePath: join(directory, "models-cache.json"), refreshOnCreate: false });
-		const provider = builtinProviders().find((provider) => provider.id === "openai");
+		const provider = builtinProviders().find((provider) => provider.id === providerId);
 		assert.ok(provider);
 		runtime.registerNativeProvider({ ...provider, auth: { ...provider.auth, oauth: withOnePasswordOAuth(f.oauth, reference, f.store) } });
-		const resolved = await runtime.getAuth("openai", { minOAuthValidityMs: 300000 });
+		const resolved = await runtime.getAuth(providerId, { minOAuthValidityMs: 300000 });
 		assert.equal(resolved?.auth.apiKey, "rotated-access");
 		assert.equal(resolved?.source, "OAuth");
-		assert.deepEqual(JSON.parse(await readFile(path, "utf8")).openai, asReference(f.refreshed));
+		assert.deepEqual(JSON.parse(await readFile(path, "utf8"))[providerId], asReference(f.refreshed));
 		assert.equal(f.refreshes(), 1);
 	} finally {
 		await rm(directory, { recursive: true, force: true });
 	}
 });
+}

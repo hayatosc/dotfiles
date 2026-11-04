@@ -11,6 +11,15 @@ import { secretReference } from "./op.ts";
 
 export function wrapProvider(provider: Provider, binding: ProviderBinding): Provider {
 	if (provider.id !== binding.providerId) throw new Error("Provider and 1Password binding do not match");
+	const transport = binding.transport;
+	if (transport) {
+		const native = provider;
+		provider = {
+			...native,
+			stream: (model, context, options) => native.stream(model, context, Object.assign({}, options, { transport })),
+			streamSimple: (model, context, options) => native.streamSimple(model, context, { ...options, transport }),
+		};
+	}
 	const reference = secretReference(binding.secret);
 	if (binding.type === "oauth") {
 		if (!provider.auth.oauth) throw new Error(`${binding.providerId} has no native OAuth implementation`);

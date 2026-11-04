@@ -1,8 +1,9 @@
-import type { OAuthCredential } from "@earendil-works/pi-ai";
+import type { OAuthCredential, Transport } from "@earendil-works/pi-ai";
 import type { SecretLocation } from "./op.ts";
 
 interface SecretBinding {
 	providerId: string;
+	transport?: Transport;
 	secret: SecretLocation;
 }
 
@@ -28,6 +29,12 @@ export function validateOpenAI(credential: OAuthCredential): void {
 	) throw new Error("1Password does not contain a complete OpenAI OAuth credential");
 }
 
+export function validateOpenAICodex(credential: OAuthCredential): void {
+	if (typeof credential.accountId !== "string" || !credential.accountId) {
+		throw new Error("1Password does not contain a complete OpenAI Codex OAuth credential");
+	}
+}
+
 // Add a binding here to reuse the native provider's models, transport, and auth flow.
 export const providerBindings: readonly ProviderBinding[] = [
 	{
@@ -35,6 +42,13 @@ export const providerBindings: readonly ProviderBinding[] = [
 		type: "oauth",
 		secret: { vault: "se3eb3uxlsudn7iaovhnd5rhme", item: "vkrcbb5m7izub6iv5ffc2loehe", field: "credential" },
 		validate: validateOpenAI,
+	},
+	{
+		providerId: "openai-codex",
+		transport: "websocket-cached",
+		type: "oauth",
+		secret: { vault: "se3eb3uxlsudn7iaovhnd5rhme", item: "bs6jkfls6kxxdcaezgciceos4q", field: "credential" },
+		validate: validateOpenAICodex,
 	},
 	{
 		providerId: "opencode-go",
