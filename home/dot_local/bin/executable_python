@@ -40,9 +40,11 @@ fi
 # Use --no-project only when outside a uv/Python project
 _dir="$PWD"
 _in_project=0
+_project_dir=""
 while [ "$_dir" != "/" ]; do
   if [ -f "$_dir/pyproject.toml" ] || [ -f "$_dir/uv.lock" ]; then
     _in_project=1
+    _project_dir="$_dir"
     break
   fi
   _dir="$(dirname "$_dir")"
@@ -53,7 +55,6 @@ uv_args="--no-python-downloads"
 if [ "$_in_project" = "0" ]; then
   uv_args="$uv_args --no-project"
 fi
-unset _in_project
 
 for pkg in $PYTHON_WITH; do
   uv_args="$uv_args --with $pkg"
@@ -62,6 +63,22 @@ done
 if [ "${PYTHON_OFFLINE:-0}" = "1" ]; then
   uv_args="$uv_args --offline"
 fi
+
+# Fast-path for version queries (e.g. Starship prompt, tool checks)
+# Avoid syncing the project virtualenv just to query the Python version.
+if [ "$#" -eq 1 ]; then
+  case "$1" in
+    -V|--version|-VV)
+      if [ "$_in_project" = "1" ]; then
+        if [ -x "$_project_dir/.venv/bin/$python_cmd" ]; then
+          exec "$_project_dir/.venv/bin/$python_cmd" "$@"
+        fi
+        exec uv run --no-sync $uv_args "$python_cmd" "$@"
+      fi
+      ;;
+  esac
+fi
+unset _in_project _project_dir
 
 run_and_hint() {
   "$@"
