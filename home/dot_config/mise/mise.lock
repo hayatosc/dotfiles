@@ -4554,9 +4554,9 @@ checksum = "sha256:789c0028997f73bf3ac74f3ec22c41fff261dcc7620f0027137dd8e34c7f8
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdeflate-1.25-he7e0567_1.conda"
 checksum = "sha256:d896f4aa4ce4c590c2838678cb1917356fdb461d2a189991c0280c818c362172"
 
-[conda-packages.macos-arm64."libdovi-3.4.0-hc336dc4_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdovi-3.4.0-hc336dc4_1.conda"
-checksum = "sha256:6439dd036af971cc5665b27ed4e8266edd8b948d1839b5d28c776f41b05b1707"
+[conda-packages.macos-arm64."libdovi-3.4.0-hcdd007a_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdovi-3.4.0-hcdd007a_1.conda"
+checksum = "sha256:a78b4b3ecae1ccc49b1cfca680d327dec1963f9486c0d9609ebb338602956c72"
 
 [conda-packages.macos-arm64."libexpat-2.9.0-h6111c0a_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libexpat-2.9.0-h6111c0a_0.conda"
@@ -5074,9 +5074,9 @@ checksum = "sha256:43dc7c873a963127546ee2c45a43e5018e0caf6d9dec20b11c2217e5e8176
 url = "https://conda.anaconda.org/conda-forge/osx-64/libdeflate-1.25-h7ad9622_1.conda"
 checksum = "sha256:210ee1d6a5aa201cf6d02b10edd02738cc35a4e8fb0866e4fb425010d6dd2c49"
 
-[conda-packages.macos-x64."libdovi-3.4.0-hee1dffb_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-hee1dffb_1.conda"
-checksum = "sha256:1a9c0abc305e543cc21d02711a8e27d3ba2506ce80528e973a9a00f7338d3f87"
+[conda-packages.macos-x64."libdovi-3.4.0-h20c45bb_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-h20c45bb_1.conda"
+checksum = "sha256:19d980563915148fe79f70447295068d0d6c20e9dfde89b76704b62cc2f4b148"
 
 [conda-packages.macos-x64."libexpat-2.9.0-h6e061ac_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.9.0-h6e061ac_0.conda"
@@ -5594,9 +5594,9 @@ checksum = "sha256:43dc7c873a963127546ee2c45a43e5018e0caf6d9dec20b11c2217e5e8176
 url = "https://conda.anaconda.org/conda-forge/osx-64/libdeflate-1.25-h7ad9622_1.conda"
 checksum = "sha256:210ee1d6a5aa201cf6d02b10edd02738cc35a4e8fb0866e4fb425010d6dd2c49"
 
-[conda-packages.macos-x64-baseline."libdovi-3.4.0-hee1dffb_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-hee1dffb_1.conda"
-checksum = "sha256:1a9c0abc305e543cc21d02711a8e27d3ba2506ce80528e973a9a00f7338d3f87"
+[conda-packages.macos-x64-baseline."libdovi-3.4.0-h20c45bb_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libdovi-3.4.0-h20c45bb_1.conda"
+checksum = "sha256:19d980563915148fe79f70447295068d0d6c20e9dfde89b76704b62cc2f4b148"
 
 [conda-packages.macos-x64-baseline."libexpat-2.9.0-h6e061ac_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.9.0-h6e061ac_0.conda"
@@ -7416,64 +7416,64 @@ checksum = "sha256:0f20ce6674d4f2dbcc8c5d59fdf99f7ba45f8c3b367e0f5781cbfa30a1c78
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-windows-x64-baseline.zip"
 
 [[tools.claude]]
-version = "2.1.317"
+version = "2.1.318"
 backend = "aqua:anthropics/claude-code"
-specifiers = ["2.1.317"]
+specifiers = ["2.1.318"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:b7ab2311a8d5f4041045e63685af49ebaffcbb121fe572afdb9080a3b4f42711"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596566"
+checksum = "sha256:0f4fb66a2af3bf02d114099727e4a7745f117b1e63d2f77c8aff165590197421"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216465"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:9dc6957d86b06a3a843c0839d343c6d6173dd264e3a2e8f94566fa23889a0e79"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596561"
+checksum = "sha256:198e232519752b4f64a39252507cd693b16eb2107a36ecc4a2b78971d1ad36ef"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216467"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:153511cf79cd27c55c9f9c919cc532eb90647f7893cb3f4e78dac776991714e0"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596770"
+checksum = "sha256:e6d426ca0c123f61fad58a361da0329f2a93cd206bc87040ed8d9576dd9eb583"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216832"
 
 [tools.claude."platforms.linux-x64-baseline"]
-checksum = "sha256:153511cf79cd27c55c9f9c919cc532eb90647f7893cb3f4e78dac776991714e0"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596770"
+checksum = "sha256:e6d426ca0c123f61fad58a361da0329f2a93cd206bc87040ed8d9576dd9eb583"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216832"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:fe1dd0d6db638520acc492df5ac8cf5a941370716bf6a69c8944eee15d6934d7"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596563"
+checksum = "sha256:6f6d85b6faf3f5ed2655e9aefd52289ca30647ed4503647c2bfd342e1a5431f9"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216466"
 
 [tools.claude."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:fe1dd0d6db638520acc492df5ac8cf5a941370716bf6a69c8944eee15d6934d7"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596563"
+checksum = "sha256:6f6d85b6faf3f5ed2655e9aefd52289ca30647ed4503647c2bfd342e1a5431f9"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216466"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:d550cb26bfbbdb79052435544f7edc090c2b02f5fd9b30431bfb98d07a4bb318"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596562"
+checksum = "sha256:cd7fa988d60e7aef7ed453847650255138440b229d081496b8ed0ab75836603b"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216476"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:88cd97306115aa7efde383002f4ebb385cc119828b870012be0670dd88f12e90"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596564"
+checksum = "sha256:ea3e05371b9e8760e5d366529db9c6a96d968f5d1a41ba42ad61687c9a3f8173"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216471"
 
 [tools.claude."platforms.macos-x64-baseline"]
-checksum = "sha256:88cd97306115aa7efde383002f4ebb385cc119828b870012be0670dd88f12e90"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596564"
+checksum = "sha256:ea3e05371b9e8760e5d366529db9c6a96d968f5d1a41ba42ad61687c9a3f8173"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216471"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:52a8c682a76008559b9f4a86ef0e860a30661b8fc7290837d66bb1555508d14d"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596818"
+checksum = "sha256:09291c31ac37b9a905e0f0e76d4867b741589bb6b3ae9daa06943042ec72c619"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216895"
 
 [tools.claude."platforms.windows-x64-baseline"]
-checksum = "sha256:52a8c682a76008559b9f4a86ef0e860a30661b8fc7290837d66bb1555508d14d"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596818"
+checksum = "sha256:09291c31ac37b9a905e0f0e76d4867b741589bb6b3ae9daa06943042ec72c619"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.318/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/707216895"
 
 [[tools.cloudflared]]
 version = "2026.10.7"
@@ -8515,7 +8515,7 @@ conda_deps = [
     "tbb-2023.1.0-h81c76ee_2",
     "libprotobuf-6.33.5-hb82ec63_2",
     "snappy-1.2.2-h3951085_2",
-    "libdovi-3.4.0-hc336dc4_1",
+    "libdovi-3.4.0-hcdd007a_1",
     "lcms2-2.20-hce41798_0",
     "libjpeg-turbo-3.2.1-hb001647_0",
     "gdk-pixbuf-2.44.8-h5867e2c_2",
@@ -8611,7 +8611,7 @@ conda_deps = [
     "tbb-2023.1.0-h56c72fe_2",
     "libprotobuf-6.33.5-hb0ea838_2",
     "snappy-1.2.2-h3613d57_2",
-    "libdovi-3.4.0-hee1dffb_1",
+    "libdovi-3.4.0-h20c45bb_1",
     "lcms2-2.20-h4e6bd4b_0",
     "libjpeg-turbo-3.2.1-hd115831_0",
     "gdk-pixbuf-2.44.8-ha3e70bd_2",
@@ -8707,7 +8707,7 @@ conda_deps = [
     "tbb-2023.1.0-h56c72fe_2",
     "libprotobuf-6.33.5-hb0ea838_2",
     "snappy-1.2.2-h3613d57_2",
-    "libdovi-3.4.0-hee1dffb_1",
+    "libdovi-3.4.0-h20c45bb_1",
     "lcms2-2.20-h4e6bd4b_0",
     "libjpeg-turbo-3.2.1-hd115831_0",
     "gdk-pixbuf-2.44.8-ha3e70bd_2",
@@ -11472,10 +11472,10 @@ backend = "npm:acpx"
 specifiers = ["0.21.1"]
 
 [[tools."npm:agent-browser"]]
-version = "0.41.1"
-aube = { path = ".mise/locks/npm-agent-browser/0.41.1", digest = "sha256:18952d290cc581b3c96e02300ad420ffa4282cd47484c13df616bdddfa987ff0" }
+version = "0.41.2"
+aube = { path = ".mise/locks/npm-agent-browser/0.41.2", digest = "sha256:f0fa958e381004270c63bdac4d42e64c5c2e54eb75e9f287a3d64974ae12371a" }
 backend = "npm:agent-browser"
-specifiers = ["0.41.1"]
+specifiers = ["0.41.2"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
