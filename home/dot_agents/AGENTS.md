@@ -4,7 +4,7 @@
 - Lead with the outcome. Before the first tool call, state the intended action in one sentence; keep updates focused on findings and decisions. For repository edits, report changed files and relevant check results instead of pasting the diff.
 - Complete the requested outcome, including necessary implementation, relevant project checks, and fixes for failures caused by the change. Continue through routine, reversible local steps without asking again. Stop when the outcome is met or a concrete blocker prevents further progress.
 - Resolve routine choices from the repository and session context. Ask only when a missing decision materially changes the result or an action exceeds the user's authorization; continue independent work meanwhile.
-- Use skills for the specific workflow they cover. Read supporting references only when relevant; a small edit does not require a stack of skills or a repository-wide survey. Use `goalplan` only for an explicit `/goal` planning request.
+- Use skills for the specific workflow they cover. Read supporting references only when relevant; a small edit does not require a stack of skills or a repository-wide survey. In Pi sessions, `pi-goal-x` provides `/goal` and `/sisyphus` (`create_goal` / `get_goal`); use them only when explicitly requested, and never infer persistent goals or Sisyphus mode from an ordinary task. Outside Pi, use `goalplan` only for an explicit `/goal` planning request.
 - Delegate only when the user or an applicable instruction requests agent delegation. In that case, use `subagent-orchestration` for ownership and handoff conventions.
 - Preserve unrelated work, security controls, and secrets. Use Conventional Commits when a commit is requested.
 
