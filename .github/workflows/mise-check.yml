@@ -32,11 +32,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: jdx/mise-action@f5be966e4a917d54244728e6a5fdcd1d93a35e6c # v5.2.6
+      - uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # v5.2.7
         with:
           install: false
           # lockfile を生成する mise-lock.yml と同じ版を使い、挙動を一致させる。
-          version: 2026.11.2
+          version: 2026.11.3
 
       - name: Symlink dot_mise to .mise
         run: |
