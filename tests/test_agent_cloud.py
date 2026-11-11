@@ -39,7 +39,7 @@ class InstallerTests(unittest.TestCase):
                 "skills/local/SKILL.md": "local skill\n",
                 "skills/.licenses/yomiyasu.LICENSE": "MIT fixture\n",
                 "home/dot_agents/AGENTS.md": "# Prefs\n\nshared\n\n## Local Environment\n\n- alias\n",
-                "cloud/AGENTS.md": "## Cloud Session\n",
+                "cloud/session-notes.md": "## Cloud Session\n",
                 "cloud/codex/config.toml": "model_reasoning_effort = 'high'\n",
                 "home/.chezmoitemplates/rtk_hook_claude.json": '{"matcher": "Bash"}\n',
                 "home/.chezmoitemplates/rtk_hook_codex.json": '{"matcher": "exec"}\n',

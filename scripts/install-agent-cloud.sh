@@ -111,7 +111,7 @@ main() (
     # Shared preferences without the workstation-only section, plus cloud notes.
     awk '/^## /{skip=($0 == "## Local Environment")} !skip' \
         "$repo/home/dot_agents/AGENTS.md" > "$work/AGENTS.md"
-    cat "$repo/cloud/AGENTS.md" >> "$work/AGENTS.md"
+    cat "$repo/cloud/session-notes.md" >> "$work/AGENTS.md"
     # Repository-local hook files wrap the rtk entries shared with the desktop templates.
     for agent in $target_agents; do
         printf '{ "hooks": { "PreToolUse": [ %s ] } }\n' \

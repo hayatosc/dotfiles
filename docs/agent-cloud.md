@@ -26,7 +26,7 @@ Keep `pipefail`: a plain POSIX pipeline reports only the receiving shell's statu
 
 Defaults: `CODEX_HOME=~/.codex`, `CLAUDE_CONFIG_DIR=~/.claude`, `XDG_DATA_HOME=~/.local/share`.
 
-Files shared with the workstation come from `home/`, the chezmoi source. The instruction file is generated from [`home/dot_agents/AGENTS.md`](../home/dot_agents/AGENTS.md) without its `## Local Environment` section, followed by the [cloud notes](../cloud/AGENTS.md). Keep that heading name when editing the shared file; a unit test guards it. Only cloud-specific content lives in [`cloud/`](../cloud): the cloud notes and the Codex seed config, whose reasoning defaults differ from the workstation's.
+Files shared with the workstation come from `home/`, the chezmoi source. The instruction file is generated from [`home/dot_agents/AGENTS.md`](../home/dot_agents/AGENTS.md) without its `## Local Environment` section, followed by the [cloud notes](../cloud/session-notes.md). Keep that heading name when editing the shared file; a unit test guards it. Only cloud-specific content lives in [`cloud/`](../cloud): the cloud notes and the Codex seed config, whose reasoning defaults differ from the workstation's.
 
 On the workstation a PreToolUse hook rewrites commands through rtk. Claude Code cloud sessions do not read `~/.claude/settings.json`, so the installer writes the hook into each repository's local agent settings instead (see [What Claude Code reads](#what-claude-code-reads) and [What Codex reads](#what-codex-reads)). Where no hook applies, the cloud notes tell the agent to prefix output-heavy commands with `rtk` itself.
 
