@@ -92,7 +92,7 @@ Start a new session and check:
 
 - The setup step shows `Agent cloud skills installed from <sha>`.
 - `/context` lists `/root/.claude/CLAUDE.md`.
-- Asking Claude which skills are available lists the repository skills, for example `coding-style`.
+- Asking Claude which skills are available lists the repository skills, for example `typescript-best-practices`.
 - `rtk --version` prints `rtk 0.51.0`.
 - `git config --local user.email` in the repository prints `145091553+hayatosc@users.noreply.github.com`.
 - A plain `git status` run by Claude prints rtk's compact output, such as `* <branch>` followed by `clean — nothing to commit`.
@@ -138,7 +138,7 @@ If a new task does not pick up the instructions or skills, the documented fallba
 During setup, and again in a new task after publishing, ask Codex to:
 
 - Print `$HOME`, `id -un`, and `$PATH`, list `~/.agents/skills`, run `rtk --version` (or `~/.local/bin/rtk --version` if `rtk` is not on `PATH`), and run `git config --local user.email` in the repository.
-- Report which instruction files it loaded and whether it sees the repository skills, for example `coding-style`.
+- Report which instruction files it loaded and whether it sees the repository skills, for example `typescript-best-practices`.
 - Run a plain `git status` and report whether the output is rtk's compact form. If it is not, the repository hook is untrusted or not loaded, and the agent should prefix `rtk` itself.
 
 Check that `$HOME` is the same during setup and in the task; the skill and rtk links point into `$HOME/.local/share/dotfiles-agent-cloud`.

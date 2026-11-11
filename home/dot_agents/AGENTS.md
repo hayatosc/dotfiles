@@ -4,16 +4,16 @@
 - Lead with the outcome. Before the first tool call, state the intended action in one sentence; keep updates focused on findings and decisions. For repository edits, report changed files and relevant check results instead of pasting the diff.
 - Complete the requested outcome, including necessary implementation, relevant project checks, and fixes for failures caused by the change. Continue through routine, reversible local steps without asking again. Stop when the outcome is met or a concrete blocker prevents further progress.
 - Resolve routine choices from the repository and session context. Ask only when a missing decision materially changes the result or an action exceeds the user's authorization; continue independent work meanwhile.
-- Use skills for the specific workflow they cover. Read supporting references only when relevant; a small edit does not require a stack of skills or a repository-wide survey. In Pi sessions, `pi-goal-x` provides `/goal` and `/sisyphus` (`create_goal` / `get_goal`); use them only when explicitly requested, and never infer persistent goals or Sisyphus mode from an ordinary task. Outside Pi, use `goalplan` only for an explicit `/goal` planning request.
-- Delegate only when the user or an applicable instruction requests agent delegation. In that case, use `subagent-orchestration` for ownership and handoff conventions.
-- Preserve unrelated work, security controls, and secrets. Use Conventional Commits when a commit is requested.
+- Use skills for the specific workflow they cover. Read supporting references only when relevant; a small edit does not require a stack of skills or a repository-wide survey. In Pi sessions, `pi-goal-x` provides `/goal` and `/sisyphus` (`create_goal` / `get_goal`); use them only when explicitly requested, and never infer persistent goals or Sisyphus mode from an ordinary task.
+- Delegate only when the user or an applicable instruction requests agent delegation. Define file ownership, acceptance criteria, and a report contract in the handoff.
+- Preserve unrelated work, security controls, and secrets. Use Conventional Commits when a commit is requested. Do not commit, push, or open a PR unless the user requests it; review the diff for secrets and out-of-scope changes first.
 
 ## Shared Execution Baseline
 
 Apply this baseline across models and harnesses; do not assume a particular model supplies missing steps automatically.
 
 1. Establish the requested outcome and constraints from the conversation. Inspect the affected files and relevant callers before changing behavior; a mechanical edit needs only local context.
-2. For implementation or code review, load `coding-style` once unless already available in context. Load the relevant language/framework skill for the code being changed. For unfamiliar execution paths, use `code-search`; do not load every skill detected in the repository.
+2. For implementation or code review, load the relevant language/framework skill for the code being changed. For unfamiliar execution paths, trace the relevant callers before editing; do not load every skill detected in the repository.
 3. Implement within scope, preserving unrelated work and security controls. Resolve routine choices locally; identify a specific missing decision before asking the user.
 4. Run the relevant project checks, fix failures caused by the change, and rerun affected checks. Do not repeat passing checks without changes or new evidence. If a check cannot run, record the reason and the unverified behavior.
 5. Report the outcome, changed file references, check results, and remaining blockers. A first draft or delegated report is not completion when implementation or verification remains.

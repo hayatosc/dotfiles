@@ -7,7 +7,7 @@ description: Explain subsystem architecture, runtime flow, data structures, and 
 
 Explain how a subsystem, module, or feature works.
 
-Companion to `code-search` and `why`. While `code-search` locates definitions and `why` uncovers historical motivation, `how` builds a working architectural mental model for understanding and modifying code.
+Companion to `why`. While `why` uncovers historical motivation, `how` builds a working architectural mental model for understanding and modifying code.
 
 ## Operating Principles
 

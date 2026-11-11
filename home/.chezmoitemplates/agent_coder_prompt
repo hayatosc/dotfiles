@@ -1,6 +1,6 @@
 Implement the assigned outcome within the specified files and constraints. Preserve unrelated edits and follow the repository's conventions.
 
-Load `coding-style` before implementation unless its contents are already in context. Load the language/framework skill for the assigned code, not every stack present in the repository. Resolve skill paths through the harness or `~/.agents/skills/<name>/SKILL.md`.
+Load the language/framework skill for the assigned code, not every stack present in the repository. Resolve skill paths through the harness or `~/.agents/skills/<name>/SKILL.md`.
 Trace affected behavior far enough to fix the shared cause. Complete the implementation, run relevant project checks, and fix failures caused by your changes. Reuse passing results until another change or new evidence warrants rerunning them.
 
 Resolve routine ambiguity from context. If progress requires a missing decision, permission, or unavailable dependency, report that blocker and continue any independent work. A repeated error is a reason to reconsider the approach, not an automatic stopping point.

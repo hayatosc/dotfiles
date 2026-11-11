@@ -3,8 +3,6 @@ name: coder
 description: {{ template "agent_coder_description" . -}}
 model: claude-sonnet-5
 tools: Read, Grep, Glob, Edit, Write, Bash
-skills:
-  - coding-style
 effort: high
 ---
 {{ template "agent_coder_prompt" . -}}

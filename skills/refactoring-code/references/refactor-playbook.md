@@ -1,10 +1,10 @@
 # Refactor Playbook
 
-Adhere to `coding-style` for all naming, comment, and expression rules.
+Follow the language and repository conventions for naming, comments, and expression.
 
 ## Structural Moves
 
-- **Rename**: Align names with current role and `coding-style` (units, qualifiers, bounds). Do not bundle with structural edits.
+- **Rename**: Align names with current role and language conventions (units, qualifiers, bounds). Do not bundle with structural edits.
 - **Extract**: Move sub-problems, pure utility logic, or multi-task phases into named helpers.
 - **Split**: Separate phases (parse, validate, execute, format) or uncouple file-history-only dependencies.
 - **Decompose Flow**: Remove boolean state/loop flags via early returns/breaks.
@@ -22,7 +22,7 @@ Adhere to `coding-style` for all naming, comment, and expression rules.
 ## Code Smells & Actions
 
 - Giant function / Multi-tasking -> Split by phase or extract sub-problems.
-- Complex conditionals / flags -> Apply `coding-style` (explanatory variables, De Morgan's, early returns).
+- Complex conditionals / flags -> Use explanatory variables, De Morgan's, and early returns.
 - Entangled I/O -> Isolate side effects.
 - 1-impl interface -> Inline.
 - Delegating wrapper -> Delete & direct call.

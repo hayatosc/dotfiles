@@ -3,9 +3,6 @@ name: deep-reviewer
 description: {{ template "agent_deep_reviewer_description" . -}}
 model: fable
 tools: Read, Grep, Glob, Bash
-skills:
-  - coding-style
-  - code-search
 effort: xhigh
 ---
 {{ template "agent_deep_reviewer_prompt" . -}}

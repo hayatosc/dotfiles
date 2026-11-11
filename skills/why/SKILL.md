@@ -7,7 +7,7 @@ description: Investigate the historical motivation, intent, and architectural de
 
 Investigate the motivation, constraints, and historical intent behind existing code.
 
-Companion to `code-search` and `coding-style`. While search reveals *what* the code does, `why` reveals *what forces and trade-offs led to its shape*.
+Companion to `how`. While reading the code reveals *what* it does, `why` reveals *what forces and trade-offs led to its shape*.
 
 ## Investigation Workflow
 
