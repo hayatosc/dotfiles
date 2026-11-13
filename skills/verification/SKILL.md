@@ -15,6 +15,10 @@ Verification proves behavior by driving the real system the way a user does. A p
 
 Do not use this for type-only changes or edits already covered by a trustworthy end-to-end check.
 
+## Ownership and behavior changes
+
+If an implementation changes existing behavior, including an unrequested refactor or cleanup, verify the previous behavior as well or report the change and its evidence. A passing new test does not excuse an unreported behavior change.
+
 ## Create the project-local skill
 
 1. Find how the project runs: README, package scripts, mise tasks, Makefile, Cargo, Docker, or CI.

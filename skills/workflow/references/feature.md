@@ -1,5 +1,7 @@
 # Feature
 
+Default to maintainer mode when the feature needs new structure; state it before editing.
+
 1. Plan: outcome, users, scope, acceptance evidence, affected modules.
 2. Implement in small units; keep unrelated changes out.
 3. Review: defects, contracts, error paths, tests.

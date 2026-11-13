@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-11-13T08:35:41.876766+00:00'
+generated_at: '2026-11-13T09:05:26.593246+00:00'
 apm_version: 0.35.0
 dependencies:
 - repo_url: anthropics/skills
@@ -769,7 +769,7 @@ dependencies:
   name: yomiyasu
   host: github.com
   resolved_commit: 2318a6d0820a58d3f8cfadc75af86978bb739185
-  version: 3.1.0
+  version: 3.0.1
   package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/yomiyasu
@@ -5185,7 +5185,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:c26ad1e04de51e970e40d679fb5c2454a99d4c04195aea2f8402941f55f52085
+  content_hash: sha256:11c114deb51112115b99b2e40805a22e8b95e2fb4e18ede564ddba865a1e45ea
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/verification/references/driver-patterns.md
@@ -5473,7 +5473,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:5b69c5ae9e566a2cdc18d1b3a8da1db148ef2be6f3ed74403a2662739b4d02a2
+  content_hash: sha256:03d49705312bdd58f51d360ee2d8a52e0a788823118b187ccea074e10b194a63
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/workflow/references/bugfix.md
@@ -5482,7 +5482,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:06e4d95ae06a427400a62bccab06d9779a8bde0e61904c1423b21bfd8d2e2869
+  content_hash: sha256:b4c0971533b053f2f4b426996a45423750d808df3cf0997d28d646f1c9964b50
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/workflow/references/feature.md
@@ -5491,7 +5491,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:5d6c5ab4e1a1b7a932dd905973ae6d7738879c2060b349320fa086b46969d6ea
+  content_hash: sha256:5d8007e0138adaa8e3ae2b43319615b0eb444bea84995da1b20040151b2c8975
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/workflow/references/refactor.md
@@ -5500,7 +5500,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:87025f4532eb4332916d529d47ce93f292967589cb4123e013cab2d21f720bf6
+  content_hash: sha256:21ea93369445156d698b582de9897fac2c74a6a9a09fd82332ea50c6ccf13280
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/yomiyasu
@@ -7297,12 +7297,12 @@ local_deployed_file_hashes:
   .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/linting-and-formatting.md: sha256:d4f0370c1537c70be409ffb029c3c36b3bff6d91111784dc8f947cf448391785
   .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/node-cli-toolchain.md: sha256:5d7ec45eb3f2b65ff895b8e7c880751b56a9d838c84512136292337ac793042f
   .agents/skills/typescript-recommend-tools/typescript-recommend-tools/references/tool-selection-rules.md: sha256:a39a3bf5cfb2b22291c71161ad38fd3518fa78c529b9747a220bafe6e4fe1301
-  .agents/skills/verification/SKILL.md: sha256:c26ad1e04de51e970e40d679fb5c2454a99d4c04195aea2f8402941f55f52085
+  .agents/skills/verification/SKILL.md: sha256:11c114deb51112115b99b2e40805a22e8b95e2fb4e18ede564ddba865a1e45ea
   .agents/skills/verification/references/driver-patterns.md: sha256:8b005fc68e2f597a2723695a7188f0047f92fa8194325c029425bbecf7fd7d60
   .agents/skills/verification/references/skill-template.md: sha256:9b129b0d91a988acab66d1d23fbe56661b9ac97d32e9752f16c81a8911d4d683
   .agents/skills/why/SKILL.md: sha256:b943a9eaa90ccf5d68402198cf9d34a83ebc4a8cb59e6b6d3eef135530ac146f
   .agents/skills/why/why/SKILL.md: sha256:2d4a1f932162522ed4f4734810eea02b48c583cc4243f88e61160e8a19f00471
-  .agents/skills/workflow/SKILL.md: sha256:5b69c5ae9e566a2cdc18d1b3a8da1db148ef2be6f3ed74403a2662739b4d02a2
-  .agents/skills/workflow/references/bugfix.md: sha256:06e4d95ae06a427400a62bccab06d9779a8bde0e61904c1423b21bfd8d2e2869
-  .agents/skills/workflow/references/feature.md: sha256:5d6c5ab4e1a1b7a932dd905973ae6d7738879c2060b349320fa086b46969d6ea
-  .agents/skills/workflow/references/refactor.md: sha256:87025f4532eb4332916d529d47ce93f292967589cb4123e013cab2d21f720bf6
+  .agents/skills/workflow/SKILL.md: sha256:03d49705312bdd58f51d360ee2d8a52e0a788823118b187ccea074e10b194a63
+  .agents/skills/workflow/references/bugfix.md: sha256:b4c0971533b053f2f4b426996a45423750d808df3cf0997d28d646f1c9964b50
+  .agents/skills/workflow/references/feature.md: sha256:5d8007e0138adaa8e3ae2b43319615b0eb444bea84995da1b20040151b2c8975
+  .agents/skills/workflow/references/refactor.md: sha256:21ea93369445156d698b582de9897fac2c74a6a9a09fd82332ea50c6ccf13280
