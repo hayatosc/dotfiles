@@ -9910,9 +9910,9 @@ checksum = "sha256:f26081f438319757f8a1b46d7d0b2c5ec7583d4038e485e0aa725cfde7885
 url = "https://dl.google.com/go/go1.27.3.windows-amd64.zip"
 
 [[tools."go:golang.org/x/tools/gopls"]]
-version = "0.23.0"
+version = "0.24.0"
 backend = "go:golang.org/x/tools/gopls"
-specifiers = ["v0.23.0"]
+specifiers = ["v0.24.0"]
 
 [[tools."http:moshi"]]
 version = "0.4.43"
