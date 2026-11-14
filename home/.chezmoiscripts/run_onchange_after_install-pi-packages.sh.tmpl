@@ -1,5 +1,4 @@
 #!/bin/bash
-# pi: {{ lookPath "pi" }}
 # packages: {{ (include "dot_pi/agent/settings.json" | fromJson).packages | toJson | sha256sum }}
 set -euo pipefail
 
