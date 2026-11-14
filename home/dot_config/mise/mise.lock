@@ -9915,45 +9915,45 @@ backend = "go:golang.org/x/tools/gopls"
 specifiers = ["v0.23.0"]
 
 [[tools."http:moshi"]]
-version = "0.4.43"
+version = "0.4.56"
 backend = "http:moshi"
-specifiers = ["0.4.43"]
+specifiers = ["0.4.56"]
 
 [tools."http:moshi"."platforms.linux-arm64"]
-checksum = "sha256:715de9834519387429701115fb9e3f94bade37aaf1cfb0ee5b1e6494235ba5bb"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_arm64.tar.gz"
+checksum = "sha256:c83a206dc666d223e6285e2eb8e872132ed05427afcf8d7f37a0c076c6bdf30c"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Linux_arm64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-arm64-musl"]
-checksum = "sha256:715de9834519387429701115fb9e3f94bade37aaf1cfb0ee5b1e6494235ba5bb"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_arm64.tar.gz"
+checksum = "sha256:c83a206dc666d223e6285e2eb8e872132ed05427afcf8d7f37a0c076c6bdf30c"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Linux_arm64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-x64"]
-checksum = "sha256:afc3b36b10f54dd5e2611d38e530e7fe8cd3e9c30a7a75ac97c2c6430837e3d6"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_x86_64.tar.gz"
+checksum = "blake3:438c3aff869d248da8bed20ffe1abbb76bea984a078f39abdaef40a1144d0084"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Linux_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-x64-baseline"]
-checksum = "sha256:afc3b36b10f54dd5e2611d38e530e7fe8cd3e9c30a7a75ac97c2c6430837e3d6"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_x86_64.tar.gz"
+checksum = "sha256:715c009453688a9faff9222edc4769a99c4c04c4fd07a7577e8e50c07605551e"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Linux_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-x64-musl"]
-checksum = "sha256:afc3b36b10f54dd5e2611d38e530e7fe8cd3e9c30a7a75ac97c2c6430837e3d6"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_x86_64.tar.gz"
+checksum = "sha256:715c009453688a9faff9222edc4769a99c4c04c4fd07a7577e8e50c07605551e"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Linux_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:afc3b36b10f54dd5e2611d38e530e7fe8cd3e9c30a7a75ac97c2c6430837e3d6"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Linux_x86_64.tar.gz"
+checksum = "sha256:715c009453688a9faff9222edc4769a99c4c04c4fd07a7577e8e50c07605551e"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Linux_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.macos-arm64"]
-checksum = "sha256:af015be830ce93bfce5d47883c11030101af39bbe7b3d4ed26ac7b5fec2dac6f"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Darwin_arm64.tar.gz"
+checksum = "sha256:185d58ebab51d6efe1bca42d22130599fc8eb19ec0eac7091a2fe4a9af1597d2"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Darwin_arm64.tar.gz"
 
 [tools."http:moshi"."platforms.macos-x64"]
-checksum = "sha256:8a7567f9ba59d4e00114acd55cec8ffa7b382d8b791905f2c20b105dd40fa3d6"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Darwin_x86_64.tar.gz"
+checksum = "sha256:a256293445d45172bddd5bf7d79ee7f178052754d2c6c1bd5876979efa1f0866"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Darwin_x86_64.tar.gz"
 
 [tools."http:moshi"."platforms.macos-x64-baseline"]
-checksum = "sha256:8a7567f9ba59d4e00114acd55cec8ffa7b382d8b791905f2c20b105dd40fa3d6"
-url = "https://cdn.getmoshi.app/hook/v0.4.43/moshi-hook_Darwin_x86_64.tar.gz"
+checksum = "sha256:a256293445d45172bddd5bf7d79ee7f178052754d2c6c1bd5876979efa1f0866"
+url = "https://cdn.getmoshi.app/hook/v0.4.56/moshi-hook_Darwin_x86_64.tar.gz"
 
 [[tools.imagemagick]]
 version = "7.1.2_25"
@@ -11405,13 +11405,13 @@ url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygi
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837778"
 
 [[tools.moonbit]]
-version = "0.10.7+bc794d341"
+version = "latest"
 backend = "vfox:moonbit"
-specifiers = ["0.10.7+bc794d341"]
+specifiers = ["latest"]
 
 [[tools.ni]]
 version = "30.6.0"
-aube = { path = ".mise/locks/ni/30.6.0", digest = "sha256:6180ffdff67f5860d3cf15e6ebe787d10732b51ff6f9aa7afabec23578b080d8" }
+aube = { path = "locks/ni/30.6.0", digest = "sha256:6180ffdff67f5860d3cf15e6ebe787d10732b51ff6f9aa7afabec23578b080d8" }
 backend = "npm:@antfu/ni"
 specifiers = ["30.6.0"]
 
@@ -11466,49 +11466,49 @@ url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@opencode/cli"]]
 version = "2.2.5"
-aube = { path = ".mise/locks/npm-opencode-cli/2.2.5", digest = "sha256:5423c53b1334bf1a0e09a122f05c23b204c2359adc0cce62d1b6270c268bd496" }
+aube = { path = "locks/npm-opencode-cli/2.2.5", digest = "sha256:5423c53b1334bf1a0e09a122f05c23b204c2359adc0cce62d1b6270c268bd496" }
 backend = "npm:@opencode/cli"
 specifiers = ["2.2.5"]
 
 [[tools."npm:@xai-official/grok"]]
 version = "1.0.74"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.74", digest = "sha256:9b30a19b0f1f514044319da51f1d5efffe35ff70439235648795f2410652e4b6" }
+aube = { path = "locks/npm-xai-official-grok/1.0.74", digest = "sha256:9b30a19b0f1f514044319da51f1d5efffe35ff70439235648795f2410652e4b6" }
 backend = "npm:@xai-official/grok"
 specifiers = ["1.0.74"]
 
 [[tools."npm:acpx"]]
 version = "0.21.1"
-aube = { path = ".mise/locks/npm-acpx/0.21.1", digest = "sha256:f7dbbe6fb0c33ffa5f3547b99403346b61c1d2ff1d5a369887df8c398a0ee836" }
+aube = { path = "locks/npm-acpx/0.21.1", digest = "sha256:c2d16dbc94fa690bd906be847b4707563cf3d4d42b9c4352b2673cf26d4571f7" }
 backend = "npm:acpx"
 specifiers = ["0.21.1"]
 
 [[tools."npm:agent-browser"]]
 version = "0.41.2"
-aube = { path = ".mise/locks/npm-agent-browser/0.41.2", digest = "sha256:f0fa958e381004270c63bdac4d42e64c5c2e54eb75e9f287a3d64974ae12371a" }
+aube = { path = "locks/npm-agent-browser/0.41.2", digest = "sha256:f0fa958e381004270c63bdac4d42e64c5c2e54eb75e9f287a3d64974ae12371a" }
 backend = "npm:agent-browser"
 specifiers = ["0.41.2"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
-aube = { path = ".mise/locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
+aube = { path = "locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
 backend = "npm:bash-language-server"
 specifiers = ["5.8.1"]
 
 [[tools."npm:typescript"]]
 version = "7.0.2"
-aube = { path = ".mise/locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
+aube = { path = "locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
 backend = "npm:typescript"
 specifiers = ["7.0.2"]
 
 [[tools."npm:vscode-langservers-extracted"]]
 version = "4.10.0"
-aube = { path = ".mise/locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:a6b6ca76702702ce4247c4b82fad51bf8afc0fa6578811420bef8f5d21046e11" }
+aube = { path = "locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:a6b6ca76702702ce4247c4b82fad51bf8afc0fa6578811420bef8f5d21046e11" }
 backend = "npm:vscode-langservers-extracted"
 specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
 version = "1.25.0"
-aube = { path = ".mise/locks/npm-yaml-language-server/1.25.0", digest = "sha256:c49a602343f1778c61a8c21e82d480062610654d6ba206a347d274d96e29a5b5" }
+aube = { path = "locks/npm-yaml-language-server/1.25.0", digest = "sha256:c49a602343f1778c61a8c21e82d480062610654d6ba206a347d274d96e29a5b5" }
 backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
 
@@ -11645,7 +11645,7 @@ provenance = "github-attestations"
 
 [[tools.portless]]
 version = "0.15.12"
-aube = { path = ".mise/locks/portless/0.15.12", digest = "sha256:3b7034300819b5f874d8e8174e855a29e32b9e3441770ce528134332c946ab6a" }
+aube = { path = "locks/portless/0.15.12", digest = "sha256:3b7034300819b5f874d8e8174e855a29e32b9e3441770ce528134332c946ab6a" }
 backend = "npm:portless"
 specifiers = ["0.15.12"]
 
@@ -11708,46 +11708,6 @@ provenance = "github-attestations"
 checksum = "sha256:02e532b60e720aa3d77e757c349ae9cc945441c05851fa646336fc9ff0403041"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20261026/cpython-3.15.2+20261026-x86_64-pc-windows-msvc-install_only_stripped.tar.gz"
 provenance = "github-attestations"
-
-[[tools.resvg]]
-version = "0.49.0"
-backend = "aqua:linebender/resvg"
-specifiers = ["0.49.0"]
-
-[tools.resvg."platforms.linux-x64"]
-checksum = "sha256:216637e75e909e53e3098b0875cd5f7da2fdc8b4359771b4a29b539afff9d3f5"
-url = "https://github.com/linebender/resvg/releases/download/v0.49.0/resvg-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/672458584"
-
-[tools.resvg."platforms.linux-x64-baseline"]
-checksum = "sha256:216637e75e909e53e3098b0875cd5f7da2fdc8b4359771b4a29b539afff9d3f5"
-url = "https://github.com/linebender/resvg/releases/download/v0.49.0/resvg-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/672458584"
-
-[tools.resvg."platforms.linux-x64-musl"]
-checksum = "sha256:216637e75e909e53e3098b0875cd5f7da2fdc8b4359771b4a29b539afff9d3f5"
-url = "https://github.com/linebender/resvg/releases/download/v0.49.0/resvg-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/672458584"
-
-[tools.resvg."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:216637e75e909e53e3098b0875cd5f7da2fdc8b4359771b4a29b539afff9d3f5"
-url = "https://github.com/linebender/resvg/releases/download/v0.49.0/resvg-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/672458584"
-
-[tools.resvg."platforms.macos-arm64"]
-checksum = "sha256:847acb5210c7c6244b5e8f07dd62fa1ce596108cce8193628ebfd5750504b259"
-url = "https://github.com/linebender/resvg/releases/download/v0.49.0/resvg-macos-aarch64.zip"
-url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/672460044"
-
-[tools.resvg."platforms.macos-x64"]
-checksum = "sha256:7c92cba55348f0254707c8d2c61e71651296981f8ccfadf8477782e91db5e171"
-url = "https://github.com/linebender/resvg/releases/download/v0.49.0/resvg-macos-x86_64.zip"
-url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/672463407"
-
-[tools.resvg."platforms.macos-x64-baseline"]
-checksum = "sha256:7c92cba55348f0254707c8d2c61e71651296981f8ccfadf8477782e91db5e171"
-url = "https://github.com/linebender/resvg/releases/download/v0.49.0/resvg-macos-x86_64.zip"
-url_api = "https://api.github.com/repos/linebender/resvg/releases/assets/672463407"
 
 [[tools.ripgrep]]
 version = "15.2.0"

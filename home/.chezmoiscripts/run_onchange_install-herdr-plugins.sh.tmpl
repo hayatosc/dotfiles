@@ -25,7 +25,7 @@ PLUGINS=(
 
 for plugin in "${PLUGINS[@]}"; do
     echo "Installing ${plugin}..."
-    if ! mise exec -- herdr plugin install "${plugin}" --yes; then
+    if ! MISE_AUTO_INSTALL=0 mise exec -- herdr plugin install "${plugin}" --yes; then
         echo "Warning: Failed to install ${plugin}. A herdr server restart may be required if running an older server version." >&2
     fi
 done
