@@ -3,7 +3,7 @@
 {{- $workspaces := list -}}
 {{- if stat $liveConfig -}}
   {{- $data := include $liveConfig | fromJson -}}
-  {{- $workspaces = $data.trustedWorkspaces -}}
+  {{- $workspaces = get $data "trustedWorkspaces" | default list -}}
 {{- else -}}
   {{- $workspaces = get $gemini "trusted_workspaces" | default list -}}
 {{- end -}}
