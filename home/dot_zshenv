@@ -23,6 +23,18 @@ if [ -d "/snap/bin" ]; then
     esac
 fi
 
+# mise shims keep managed tools (pi, rtk, ...) available to non-interactive
+# shells such as `ssh host '<command>'`, which never source .zprofile or
+# .zshrc. Append after ~/.local/bin so the python wrappers there still win.
+_mise_shims="${MISE_DATA_DIR:-$HOME/.local/share/mise}/shims"
+if [ -d "$_mise_shims" ]; then
+    case ":$PATH:" in
+        *":$_mise_shims:"*) ;;
+        *) PATH="${PATH:+$PATH:}$_mise_shims" ;;
+    esac
+fi
+unset _mise_shims
+
 export PATH
 
 # Load the 1Password service account token from an unmanaged file when present,
