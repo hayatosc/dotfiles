@@ -1,7 +1,6 @@
 ---
 name: workflow
-description: Run a nontrivial feature, bug fix, or refactor through plan, implement, review, and verification with recorded evidence. Use when the user asks for a change that needs a repeatable playbook.
-disable-model-invocation: true
+description: Run a multi-step feature, bug fix, or refactor through plan, implement, review, and verification with recorded evidence. Use when a change spans several files or needs runtime verification; skip single-file edits and quick fixes.
 ---
 
 # Workflow

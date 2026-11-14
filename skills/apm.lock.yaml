@@ -1,5 +1,5 @@
 lockfile_version: '1'
-generated_at: '2026-11-13T09:05:26.593246+00:00'
+generated_at: '2026-11-14T18:44:18.500397+00:00'
 apm_version: 0.35.0
 dependencies:
 - repo_url: anthropics/skills
@@ -5473,7 +5473,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:03d49705312bdd58f51d360ee2d8a52e0a788823118b187ccea074e10b194a63
+  content_hash: sha256:be24bc051ab9f55f9c38c85bb266625ae4f976c3b24b3a957c8d1b034bdd43b6
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/workflow/references/bugfix.md
@@ -7302,7 +7302,7 @@ local_deployed_file_hashes:
   .agents/skills/verification/references/skill-template.md: sha256:9b129b0d91a988acab66d1d23fbe56661b9ac97d32e9752f16c81a8911d4d683
   .agents/skills/why/SKILL.md: sha256:b943a9eaa90ccf5d68402198cf9d34a83ebc4a8cb59e6b6d3eef135530ac146f
   .agents/skills/why/why/SKILL.md: sha256:2d4a1f932162522ed4f4734810eea02b48c583cc4243f88e61160e8a19f00471
-  .agents/skills/workflow/SKILL.md: sha256:03d49705312bdd58f51d360ee2d8a52e0a788823118b187ccea074e10b194a63
+  .agents/skills/workflow/SKILL.md: sha256:be24bc051ab9f55f9c38c85bb266625ae4f976c3b24b3a957c8d1b034bdd43b6
   .agents/skills/workflow/references/bugfix.md: sha256:b4c0971533b053f2f4b426996a45423750d808df3cf0997d28d646f1c9964b50
   .agents/skills/workflow/references/feature.md: sha256:5d8007e0138adaa8e3ae2b43319615b0eb444bea84995da1b20040151b2c8975
   .agents/skills/workflow/references/refactor.md: sha256:21ea93369445156d698b582de9897fac2c74a6a9a09fd82332ea50c6ccf13280
