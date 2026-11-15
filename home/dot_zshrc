@@ -7,7 +7,21 @@ fi
 
 # alias
 alias cat="bat"
-alias ls="eza --icons"
+# eza prints nothing for a bare listing when stdout is not a terminal, so a
+# piped `ls` (an agent shell, `ls | head`) would silently lose its output.
+# Pass the current directory explicitly unless the caller already names a path.
+ls() {
+  local arg
+  local -a args
+  args=("$@")
+  for arg in "${args[@]}"; do
+    if [[ $arg != -* ]]; then
+      eza --icons=auto "${args[@]}"
+      return
+    fi
+  done
+  eza --icons=auto "${args[@]}" .
+}
 alias find="fd"
 alias cd="z"
 alias rm="gomi"
