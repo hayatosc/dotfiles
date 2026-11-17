@@ -11404,11 +11404,6 @@ checksum = "sha256:8b1e2194c2d8ac660f0a132cb4384e9d2fe1405217a144e280df16383c18d
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_x86_64.zip"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837778"
 
-[[tools.moonbit]]
-version = "latest"
-backend = "vfox:moonbit"
-specifiers = ["latest"]
-
 [[tools.ni]]
 version = "30.6.0"
 aube = { path = "locks/ni/30.6.0", digest = "sha256:6180ffdff67f5860d3cf15e6ebe787d10732b51ff6f9aa7afabec23578b080d8" }

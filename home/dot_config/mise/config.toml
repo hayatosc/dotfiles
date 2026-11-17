@@ -32,9 +32,6 @@ go = "1.27.3"
 imagemagick = "7.1.2_25"
 jq = "1.8.2"
 lazygit = "0.66.2"
-# vfox plugin lives only on this machine (no registry entry), so CI excludes it
-# from `mise lock` / install checks via MISE_DISABLE_TOOLS (see workflows).
-moonbit = "latest"
 ni = "30.6.0"
 node = "24.21.0"
 "npm:agent-browser" = "0.41.2"
