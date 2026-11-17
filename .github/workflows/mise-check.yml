@@ -27,6 +27,9 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       MISE_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       MISE_FETCH_REMOTE_VERSIONS_TIMEOUT: 30s
+      # moonbit is a local-only vfox plugin and cannot be locked/resolved on the
+      # runner; disable it so config resolution of the changed tools still works.
+      MISE_DISABLE_TOOLS: moonbit
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
