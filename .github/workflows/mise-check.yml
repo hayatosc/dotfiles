@@ -41,10 +41,13 @@ jobs:
           # lockfile を生成する mise-lock.yml と同じ版を使い、挙動を一致させる。
           version: 2026.11.8
 
-      - name: Symlink dot_mise to .mise
+      - name: Copy dot_mise to .mise
         run: |
+          # mise refuses to read lockfile sidecars through a symlinked .mise, so
+          # copy the directory the same way mise-lock.yml does.
+          rm -rf home/dot_config/mise/.mise
           if [ -d home/dot_config/mise/dot_mise ]; then
-            ln -sfn dot_mise home/dot_config/mise/.mise
+            cp -a home/dot_config/mise/dot_mise home/dot_config/mise/.mise
           fi
 
       - name: Install changed tools
@@ -60,6 +63,10 @@ jobs:
           echo "$specs"
           # aube と node は npm: バックエンド等の前提となるため一律で事前インストールする
           mise install aube node
+          # go: tools (gopls, ...) declare go as an install dependency.
+          if printf '%s\n' "$specs" | grep -q '^go:'; then
+            mise install go
+          fi
 
           mapfile -t tools < <(printf '%s\n' "$specs" | sed 's/@[^@]*$//')
           if ! mise install --locked "${tools[@]}"; then
