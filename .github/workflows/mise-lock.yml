@@ -61,6 +61,11 @@ jobs:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           MISE_GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           MISE_FETCH_REMOTE_VERSIONS_TIMEOUT: 30s
+          # moonbit is a local-only vfox plugin (no registry entry, self-hosted
+          # plugin under ~/.local/share/mise/plugins) and cannot be resolved for
+          # the other lockfile platforms. Disabling it keeps `mise lock` from
+          # failing, which otherwise aborts the whole lock refresh.
+          MISE_DISABLE_TOOLS: moonbit
           REPO: ${{ github.repository }}
           BRANCH: ${{ github.ref_name }}
           FILES: home/dot_config/mise/mise.lock home/dot_config/mise/dot_mise

@@ -11404,14 +11404,9 @@ checksum = "sha256:8b1e2194c2d8ac660f0a132cb4384e9d2fe1405217a144e280df16383c18d
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_x86_64.zip"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837778"
 
-[[tools.moonbit]]
-version = "latest"
-backend = "vfox:moonbit"
-specifiers = ["latest"]
-
 [[tools.ni]]
 version = "30.6.0"
-aube = { path = "locks/ni/30.6.0", digest = "sha256:6180ffdff67f5860d3cf15e6ebe787d10732b51ff6f9aa7afabec23578b080d8" }
+aube = { path = ".mise/locks/ni/30.6.0", digest = "sha256:6180ffdff67f5860d3cf15e6ebe787d10732b51ff6f9aa7afabec23578b080d8" }
 backend = "npm:@antfu/ni"
 specifiers = ["30.6.0"]
 
@@ -11466,49 +11461,49 @@ url = "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip"
 
 [[tools."npm:@opencode/cli"]]
 version = "2.2.5"
-aube = { path = "locks/npm-opencode-cli/2.2.5", digest = "sha256:5423c53b1334bf1a0e09a122f05c23b204c2359adc0cce62d1b6270c268bd496" }
+aube = { path = ".mise/locks/npm-opencode-cli/2.2.5", digest = "sha256:5423c53b1334bf1a0e09a122f05c23b204c2359adc0cce62d1b6270c268bd496" }
 backend = "npm:@opencode/cli"
 specifiers = ["2.2.5"]
 
 [[tools."npm:@xai-official/grok"]]
 version = "1.0.74"
-aube = { path = "locks/npm-xai-official-grok/1.0.74", digest = "sha256:9b30a19b0f1f514044319da51f1d5efffe35ff70439235648795f2410652e4b6" }
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.74", digest = "sha256:9b30a19b0f1f514044319da51f1d5efffe35ff70439235648795f2410652e4b6" }
 backend = "npm:@xai-official/grok"
 specifiers = ["1.0.74"]
 
 [[tools."npm:acpx"]]
 version = "0.21.1"
-aube = { path = "locks/npm-acpx/0.21.1", digest = "sha256:c2d16dbc94fa690bd906be847b4707563cf3d4d42b9c4352b2673cf26d4571f7" }
+aube = { path = ".mise/locks/npm-acpx/0.21.1", digest = "sha256:e2856b67f04e6319637982a4954788b11e70f340e5e603bf9932bc0e9028a7b6" }
 backend = "npm:acpx"
 specifiers = ["0.21.1"]
 
 [[tools."npm:agent-browser"]]
 version = "0.41.2"
-aube = { path = "locks/npm-agent-browser/0.41.2", digest = "sha256:f0fa958e381004270c63bdac4d42e64c5c2e54eb75e9f287a3d64974ae12371a" }
+aube = { path = ".mise/locks/npm-agent-browser/0.41.2", digest = "sha256:f0fa958e381004270c63bdac4d42e64c5c2e54eb75e9f287a3d64974ae12371a" }
 backend = "npm:agent-browser"
 specifiers = ["0.41.2"]
 
 [[tools."npm:bash-language-server"]]
 version = "5.8.1"
-aube = { path = "locks/npm-bash-language-server/5.8.1", digest = "sha256:8884e71e19a3bb70df45b356a06194f6c0cf3e99f83f1332f8ca26a62eacb6ef" }
+aube = { path = ".mise/locks/npm-bash-language-server/5.8.1", digest = "sha256:c211b6123e6e8967e02b459ea1721e5bb36cd9f4c200f2523ae1339118087bfa" }
 backend = "npm:bash-language-server"
 specifiers = ["5.8.1"]
 
 [[tools."npm:typescript"]]
 version = "7.0.2"
-aube = { path = "locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
+aube = { path = ".mise/locks/npm-typescript/7.0.2", digest = "sha256:3d06b3b23564c68cdad7815c356edb1506fab1c42bfb8c54234134fd9650ec17" }
 backend = "npm:typescript"
 specifiers = ["7.0.2"]
 
 [[tools."npm:vscode-langservers-extracted"]]
 version = "4.10.0"
-aube = { path = "locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:a6b6ca76702702ce4247c4b82fad51bf8afc0fa6578811420bef8f5d21046e11" }
+aube = { path = ".mise/locks/npm-vscode-langservers-extracted/4.10.0", digest = "sha256:cfcde76c1138b72ec42fbaa9ffa06cc0e4a64bb3343ae5399e3a54d8b9a15de6" }
 backend = "npm:vscode-langservers-extracted"
 specifiers = ["4.10.0"]
 
 [[tools."npm:yaml-language-server"]]
 version = "1.25.0"
-aube = { path = "locks/npm-yaml-language-server/1.25.0", digest = "sha256:c49a602343f1778c61a8c21e82d480062610654d6ba206a347d274d96e29a5b5" }
+aube = { path = ".mise/locks/npm-yaml-language-server/1.25.0", digest = "sha256:657ab95a3535ef33ff84dfc982e85eeadabdd8722da9c75401cbdcaa6f702116" }
 backend = "npm:yaml-language-server"
 specifiers = ["1.25.0"]
 
@@ -11645,7 +11640,7 @@ provenance = "github-attestations"
 
 [[tools.portless]]
 version = "0.15.12"
-aube = { path = "locks/portless/0.15.12", digest = "sha256:3b7034300819b5f874d8e8174e855a29e32b9e3441770ce528134332c946ab6a" }
+aube = { path = ".mise/locks/portless/0.15.12", digest = "sha256:3b7034300819b5f874d8e8174e855a29e32b9e3441770ce528134332c946ab6a" }
 backend = "npm:portless"
 specifiers = ["0.15.12"]
 

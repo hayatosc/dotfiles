@@ -49,8 +49,8 @@ packages:
     resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
     engines: {node: '>=12'}
 
-  prettier@3.9.10:
-    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
+  prettier@3.10.1:
+    resolution: {integrity: sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -119,7 +119,7 @@ snapshots:
 
   picomatch@4.0.7: {}
 
-  prettier@3.9.10: {}
+  prettier@3.10.1: {}
 
   request-light@0.5.8: {}
 
@@ -150,7 +150,7 @@ snapshots:
       ajv-i18n: 4.2.0(ajv@8.20.0)
       jsonc-parser: 3.3.1
       picomatch: 4.0.7
-      prettier: 3.9.10
+      prettier: 3.10.1
       request-light: 0.5.8
       vscode-languageserver: 9.0.1
       vscode-languageserver-textdocument: 1.0.16
