@@ -11573,10 +11573,10 @@ backend = "npm:@opencode/cli"
 specifiers = ["2.3.0"]
 
 [[tools."npm:@xai-official/grok"]]
-version = "1.0.86"
-aube = { path = ".mise/locks/npm-xai-official-grok/1.0.86", digest = "sha256:4ac853bb0c886f7787300e8ee3f852f5c0c418331286c0ef0d8d634a3baf1d30" }
+version = "1.0.87"
+aube = { path = ".mise/locks/npm-xai-official-grok/1.0.87", digest = "sha256:7c64e7e6355db7f5e72c6411c2b8d4a964b89286ca794ac6a53ab67c112a8000" }
 backend = "npm:@xai-official/grok"
-specifiers = ["1.0.86"]
+specifiers = ["1.0.87"]
 
 [[tools."npm:acpx"]]
 version = "0.22.0"
