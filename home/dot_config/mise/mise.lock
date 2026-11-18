@@ -12605,3 +12605,35 @@ url_api = "https://api.github.com/repos/ajeetdsouza/zoxide/releases/assets/46631
 checksum = "sha256:f465ae548f8754c8e7edbc60b45fbf58c92bfe123db83d790252d6810fa5daf1"
 url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.10.0/zoxide-0.10.0-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/ajeetdsouza/zoxide/releases/assets/466316769"
+
+[[tools."vfox:maya0513/vfox-moonbit"]]
+version = "0.10.20+65efd5b93"
+backend = "vfox:maya0513/vfox-moonbit"
+specifiers = ["0.10.20+65efd5b93"]
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-arm64"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-aarch64.tar.gz"
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-arm64-musl"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-aarch64.tar.gz"
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-x64"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-x64-baseline"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-x64-musl"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-x64-musl-baseline"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.macos-arm64"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-darwin-aarch64.tar.gz"
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.windows-x64"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-windows-x86_64.zip"
+
+[tools."vfox:maya0513/vfox-moonbit"."platforms.windows-x64-baseline"]
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-windows-x86_64.zip"

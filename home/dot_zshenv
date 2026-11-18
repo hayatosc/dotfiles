@@ -16,15 +16,6 @@ if [ -d "$HOME/.local/bin" ]; then
     esac
 fi
 
-# MoonBit toolchain: installed by a chezmoi run script (~/.local/share/moonbit),
-# not by mise, because the mise plugin could not be locked for CI.
-if [ -d "$HOME/.local/share/moonbit/bin" ]; then
-    case ":$PATH:" in
-        *":$HOME/.local/share/moonbit/bin:"*) ;;
-        *) PATH="${PATH:+$PATH:}$HOME/.local/share/moonbit/bin" ;;
-    esac
-fi
-
 if [ -d "/snap/bin" ]; then
     case ":$PATH:" in
         *":/snap/bin:"*) ;;
