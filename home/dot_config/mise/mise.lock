@@ -9969,6 +9969,47 @@ version = "0.24.0"
 backend = "go:golang.org/x/tools/gopls"
 specifiers = ["v0.24.0"]
 
+[[tools."http:moonbit"]]
+version = "0.10.20+65efd5b93"
+backend = "http:moonbit"
+specifiers = ["0.10.20+65efd5b93"]
+
+[tools."http:moonbit"."platforms.linux-arm64"]
+checksum = "sha256:8eaf1e2bd633bc6ab480d86ebeeef2d40248b7c8b5317dc287d77ad01f165727"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-aarch64.tar.gz"
+
+[tools."http:moonbit"."platforms.linux-arm64-musl"]
+checksum = "sha256:8eaf1e2bd633bc6ab480d86ebeeef2d40248b7c8b5317dc287d77ad01f165727"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-aarch64.tar.gz"
+
+[tools."http:moonbit"."platforms.linux-x64"]
+checksum = "sha256:80d987523308fa490eba9f1baf98df996a5a7891e118357553b7c2608c0597c5"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
+
+[tools."http:moonbit"."platforms.linux-x64-baseline"]
+checksum = "sha256:80d987523308fa490eba9f1baf98df996a5a7891e118357553b7c2608c0597c5"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
+
+[tools."http:moonbit"."platforms.linux-x64-musl"]
+checksum = "sha256:80d987523308fa490eba9f1baf98df996a5a7891e118357553b7c2608c0597c5"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
+
+[tools."http:moonbit"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:80d987523308fa490eba9f1baf98df996a5a7891e118357553b7c2608c0597c5"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
+
+[tools."http:moonbit"."platforms.macos-arm64"]
+checksum = "sha256:3ccd56479ba704a779178abe8731490edee9e57b3b90f5cef2252afef4fdf130"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-darwin-aarch64.tar.gz"
+
+[tools."http:moonbit"."platforms.windows-x64"]
+checksum = "sha256:bdff9a3b2d7c61a3adae2fe09221d3de63effc6cab28bfa0cbeb94fb0d529d79"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-windows-x86_64.zip"
+
+[tools."http:moonbit"."platforms.windows-x64-baseline"]
+checksum = "sha256:bdff9a3b2d7c61a3adae2fe09221d3de63effc6cab28bfa0cbeb94fb0d529d79"
+url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-windows-x86_64.zip"
+
 [[tools."http:moshi"]]
 version = "0.4.56"
 backend = "http:moshi"
@@ -12605,35 +12646,3 @@ url_api = "https://api.github.com/repos/ajeetdsouza/zoxide/releases/assets/46631
 checksum = "sha256:f465ae548f8754c8e7edbc60b45fbf58c92bfe123db83d790252d6810fa5daf1"
 url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.10.0/zoxide-0.10.0-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/ajeetdsouza/zoxide/releases/assets/466316769"
-
-[[tools."vfox:maya0513/vfox-moonbit"]]
-version = "0.10.20+65efd5b93"
-backend = "vfox:maya0513/vfox-moonbit"
-specifiers = ["0.10.20+65efd5b93"]
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-arm64"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-aarch64.tar.gz"
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-arm64-musl"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-aarch64.tar.gz"
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-x64"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-x64-baseline"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-x64-musl"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.linux-x64-musl-baseline"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-linux-x86_64.tar.gz"
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.macos-arm64"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-darwin-aarch64.tar.gz"
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.windows-x64"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-windows-x86_64.zip"
-
-[tools."vfox:maya0513/vfox-moonbit"."platforms.windows-x64-baseline"]
-url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-windows-x86_64.zip"

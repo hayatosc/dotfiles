@@ -32,7 +32,6 @@ go = "1.27.3"
 imagemagick = "7.1.2_25"
 jq = "1.8.2"
 lazygit = "0.66.2"
-"vfox:maya0513/vfox-moonbit" = "0.10.20+65efd5b93"
 ni = "30.6.0"
 node = "24.21.0"
 "npm:agent-browser" = "0.43.0"
@@ -79,6 +78,26 @@ linux-x64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Lin
 linux-arm64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Linux_arm64.tar.gz" }
 macos-x64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Darwin_x86_64.tar.gz" }
 macos-arm64 = { url = "https://cdn.getmoshi.app/hook/v{{ version }}/moshi-hook_Darwin_arm64.tar.gz" }
+
+[tools."http:moonbit"]
+version = "0.10.20+65efd5b93"
+bin_path = "bin"
+postinstall = """
+find "$MISE_TOOL_INSTALL_PATH/bin" -type f -exec chmod +x {} +
+ln -sfn moon "$MISE_TOOL_INSTALL_PATH/bin/moonx"
+mkdir -p "$MISE_TOOL_INSTALL_PATH/lib"
+rm -rf "$MISE_TOOL_INSTALL_PATH/lib/core"
+ver_encoded=$(printf '%s' "$MISE_TOOL_VERSION" | sed 's/+/%2B/g')
+curl -fsSL "https://cli.moonbitlang.com/cores/core-${ver_encoded}.tar.gz" | tar -xz -C "$MISE_TOOL_INSTALL_PATH/lib"
+PATH="$MISE_TOOL_INSTALL_PATH/bin:$PATH" "$MISE_TOOL_INSTALL_PATH/bin/moon" -C "$MISE_TOOL_INSTALL_PATH/lib/core" bundle --warn-list -a --all
+PATH="$MISE_TOOL_INSTALL_PATH/bin:$PATH" "$MISE_TOOL_INSTALL_PATH/bin/moon" -C "$MISE_TOOL_INSTALL_PATH/lib/core" bundle --warn-list -a --target wasm-gc --quiet
+"""
+
+[tools."http:moonbit".platforms]
+linux-x64 = { url = "https://cli.moonbitlang.com/binaries/{{ version | replace(from=\"+\", to=\"%2B\") }}/moonbit-linux-x86_64.tar.gz" }
+linux-arm64 = { url = "https://cli.moonbitlang.com/binaries/{{ version | replace(from=\"+\", to=\"%2B\") }}/moonbit-linux-aarch64.tar.gz" }
+macos-arm64 = { url = "https://cli.moonbitlang.com/binaries/{{ version | replace(from=\"+\", to=\"%2B\") }}/moonbit-darwin-aarch64.tar.gz" }
+windows-x64 = { url = "https://cli.moonbitlang.com/binaries/{{ version | replace(from=\"+\", to=\"%2B\") }}/moonbit-windows-x86_64.zip" }
 
 [settings]
 experimental = true
