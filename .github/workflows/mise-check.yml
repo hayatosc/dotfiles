@@ -58,11 +58,13 @@ jobs:
           fi
           echo "変更されたツールをインストールして検証します:"
           echo "$specs"
-          # aube と node は npm: バックエンド等の前提となるため一律で事前インストールする
-          mise install aube node
+          # aube と node は npm: バックエンド等の前提となるため一律で事前インストールする。
+          # config.toml の lockfile = true により mise install 時に全ツールの lock 解決が
+          # 自動実行されるのを防ぐため MISE_LOCKFILE=0 で実行する。
+          MISE_LOCKFILE=0 mise install aube node
           # go: tools (gopls, ...) declare go as an install dependency.
           if printf '%s\n' "$specs" | grep -q '^go:'; then
-            mise install go
+            MISE_LOCKFILE=0 mise install go
           fi
 
           mapfile -t tools < <(printf '%s\n' "$specs" | sed 's/@[^@]*$//')
@@ -70,5 +72,5 @@ jobs:
             # vfox: 等のバックエンドは lockfile URL を生成できず locked モードが
             # 常に失敗する。検証目的はインストール可能性なので unlocked で再試行する。
             echo "locked install failed; retrying without --locked"
-            mise install "${tools[@]}"
+            MISE_LOCKFILE=0 mise install "${tools[@]}"
           fi
