@@ -4,6 +4,7 @@ import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 import { getAgentDir } from "@earendil-works/pi-coding-agent";
 import { join } from "node:path";
 import { withOnePasswordApiKey } from "./api-key.ts";
+import { withRemoteCatalog } from "./catalog.ts";
 import { providerBindings, type ProviderBinding } from "./config.ts";
 import { migrateAuthFile } from "./migrate.ts";
 import { createOAuthStore, withOnePasswordOAuth } from "./oauth.ts";
@@ -34,7 +35,7 @@ export default async function (pi: ExtensionAPI) {
 	const providers = providerBindings.map((binding) => {
 		const provider = native.find((provider) => provider.id === binding.providerId);
 		if (!provider) throw new Error(`Native provider not found: ${binding.providerId}`);
-		return wrapProvider(provider, binding);
+		return wrapProvider(withRemoteCatalog(provider), binding);
 	});
 	// Migrating a legacy credential also verifies the vault before replacing it.
 	await migrateAuthFile(join(getAgentDir(), "auth.json"), providerBindings);
