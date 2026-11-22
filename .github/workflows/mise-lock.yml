@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate GitHub App Token
-        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        uses: actions/create-github-app-token@f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc # v3.4.0
         id: app-token
         with:
           app-id: ${{ vars.APP_ID }}
@@ -46,14 +46,14 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Setup mise
-        uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5.2.8
+        uses: jdx/mise-action@90f833d396d0cc3674b631d2d225e306476c303a # v5.2.10
         with:
           install: false
           cache: true
           # 新しめの mise は lock 解決時に platform entry を大量に skip する
           # (2026.8.10 では 666 中 315 のみ書き込み)。lockfile 生成を決定論的に
           # 保つため、完全解決を確認済みの版に固定する。
-          version: 2026.11.8
+          version: 2026.11.10
 
       - name: Regenerate and commit mise.lock via GraphQL
         env:
