@@ -9880,10 +9880,6 @@ url_api = "https://api.github.com/repos/steipete/gogcli/releases/assets/68030373
 version = "0.15.9"
 backend = "github:zenbu-labs/terminal-browser"
 specifiers = ["v0.15.9"]
-unsupported_platforms = [
-    "windows-x64",
-    "windows-x64-baseline",
-]
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64"]
 checksum = "sha256:2a4da9f9b8f6496966d8a0190df334f3fd6ed1ea1042defbac59343fef0fe79c"
