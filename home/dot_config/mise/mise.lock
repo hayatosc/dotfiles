@@ -7171,6 +7171,12 @@ url_api = "https://api.github.com/repos/k1LoW/git-wt/releases/assets/622546222"
 version = "0.8.5"
 backend = "aqua:rossmacarthur/sheldon"
 specifiers = ["0.8.5"]
+unsupported_platforms = [
+    "macos-x64",
+    "macos-x64-baseline",
+    "windows-x64",
+    "windows-x64-baseline",
+]
 
 [tools."aqua:rossmacarthur/sheldon"."platforms.linux-arm64"]
 checksum = "sha256:1f6b792e49e259f7c313e9921c8d4ad638d827abc2c023efe0588a55678f9a3e"
@@ -7282,6 +7288,10 @@ url_api = "https://api.github.com/repos/ast-grep/ast-grep/releases/assets/753401
 version = "2.10.1"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["v2.10.1"]
+unsupported_platforms = [
+    "macos-x64",
+    "macos-x64-baseline",
+]
 
 [tools.aube."platforms.linux-arm64"]
 checksum = "sha256:c64f55a43ee7ca4a19fbbf3be0eed161c24c9858bdcdaea024b69eafbc71ad15"
@@ -9028,6 +9038,10 @@ url_api = "https://api.github.com/repos/github/copilot-cli/releases/assets/76212
 version = "0.20.1"
 backend = "aqua:dandavison/delta"
 specifiers = ["0.20.1"]
+unsupported_platforms = [
+    "macos-x64",
+    "macos-x64-baseline",
+]
 
 [tools.delta."platforms.linux-arm64"]
 checksum = "sha256:da7f4338f593572ff426ae153e0870e2fdc72729416eff551b40cdeb67940db8"
@@ -9880,6 +9894,10 @@ url_api = "https://api.github.com/repos/steipete/gogcli/releases/assets/68030373
 version = "0.15.9"
 backend = "github:zenbu-labs/terminal-browser"
 specifiers = ["v0.15.9"]
+unsupported_platforms = [
+    "windows-x64",
+    "windows-x64-baseline",
+]
 
 [tools."github:zenbu-labs/terminal-browser"."platforms.linux-arm64"]
 checksum = "sha256:2a4da9f9b8f6496966d8a0190df334f3fd6ed1ea1042defbac59343fef0fe79c"
@@ -9993,6 +10011,10 @@ specifiers = ["v0.24.0"]
 version = "0.10.20+65efd5b93"
 backend = "http:moonbit"
 specifiers = ["0.10.20+65efd5b93"]
+unsupported_platforms = [
+    "macos-x64",
+    "macos-x64-baseline",
+]
 
 [tools."http:moonbit"."platforms.linux-arm64"]
 checksum = "sha256:8eaf1e2bd633bc6ab480d86ebeeef2d40248b7c8b5317dc287d77ad01f165727"
@@ -10034,6 +10056,10 @@ url = "https://cli.moonbitlang.com/binaries/0.10.20%2B65efd5b93/moonbit-windows-
 version = "0.4.56"
 backend = "http:moshi"
 specifiers = ["0.4.56"]
+unsupported_platforms = [
+    "windows-x64",
+    "windows-x64-baseline",
+]
 
 [tools."http:moshi"."platforms.linux-arm64"]
 checksum = "sha256:c83a206dc666d223e6285e2eb8e872132ed05427afcf8d7f37a0c076c6bdf30c"
@@ -12271,6 +12297,10 @@ url_api = "https://api.github.com/repos/tamasfe/taplo/releases/assets/257323062"
 version = "3.6b"
 backend = "aqua:tmux/tmux-builds"
 specifiers = ["3.6b"]
+unsupported_platforms = [
+    "windows-x64",
+    "windows-x64-baseline",
+]
 
 [tools.tmux."platforms.linux-arm64"]
 checksum = "sha256:fd4a2206c5e468dd2ee4e9a65f2d40e0762551965d7fdbe849c494ab14f513e9"
@@ -12321,6 +12351,11 @@ url_api = "https://api.github.com/repos/tmux/tmux-builds/releases/assets/4251729
 version = "1.7.7"
 backend = "aqua:tsl0922/ttyd"
 specifiers = ["1.7.7"]
+unsupported_platforms = [
+    "macos-arm64",
+    "macos-x64",
+    "macos-x64-baseline",
+]
 
 [tools.ttyd."platforms.linux-arm64"]
 checksum = "sha256:b38acadd89d1d396a0f5649aa52c539edbad07f4bc7348b27b4f4b7219dd4165"
