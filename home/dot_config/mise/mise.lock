@@ -7282,10 +7282,6 @@ url_api = "https://api.github.com/repos/ast-grep/ast-grep/releases/assets/753401
 version = "2.10.1"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["v2.10.1"]
-unsupported_platforms = [
-    "macos-x64",
-    "macos-x64-baseline",
-]
 
 [tools.aube."platforms.linux-arm64"]
 checksum = "sha256:c64f55a43ee7ca4a19fbbf3be0eed161c24c9858bdcdaea024b69eafbc71ad15"
