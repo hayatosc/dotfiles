@@ -2,6 +2,9 @@
 
 typeset -U path PATH
 
+# Prevent Ubuntu's /etc/zsh/zshrc from running compinit before zsh-autocomplete.
+skip_global_compinit=1
+
 if [ -d "$HOME/bin" ]; then
     case ":$PATH:" in
         *":$HOME/bin:"*) ;;

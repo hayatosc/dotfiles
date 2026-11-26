@@ -12,7 +12,7 @@ apply = ["source"]
 
 [plugins.zsh-autocomplete]
 github = "marlonrichert/zsh-autocomplete"
-apply = ["defer"]
+apply = ["source"]
 
 [plugins.ohmyzsh]
 github = "ohmyzsh/ohmyzsh"

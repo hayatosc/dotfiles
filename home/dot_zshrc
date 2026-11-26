@@ -1,6 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# Load sheldon plugins (including zsh-autocomplete) before mise/compdef callers
+# so zsh-autocomplete can intercept compdef and run compinit with its Completions dir.
+eval "$(sheldon source)"
+
 if [ -f "$HOME/.config/zsh/init/mise.zsh" ]; then
   source "$HOME/.config/zsh/init/mise.zsh"
 fi
@@ -31,7 +35,6 @@ for zshrc_file in ~/.config/zsh/rc.d/*.zsh(.N); do
   source "$zshrc_file"
 done
 
-eval "$(sheldon source)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(git wt --init zsh)"
