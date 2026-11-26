@@ -6,8 +6,8 @@ fi
 # HACK: Start gnome-keyring-daemon for WSL2 (enables CLI token persistence)
 # Temporary workaround for: https://discuss.ai.google.dev/t/bug-antigravity-cli-agy-fails-to-persist-authentication-state-in-wsl-2-environment/146059
 # TODO: Remove once Antigravity CLI natively supports headless keyring or file-based token storage
-if [[ -z "$DISPLAY" ]]; then
-  export $(dbus-launch 2>/dev/null)
+if [[ -z "$DISPLAY" ]] && (( $+commands[dbus-launch] && $+commands[gnome-keyring-daemon] )); then
+  eval "$(dbus-launch --sh-syntax 2>/dev/null)"
   eval "$(echo "" | gnome-keyring-daemon --unlock 2>/dev/null)"
   eval "$(gnome-keyring-daemon --start 2>/dev/null)"
   export SSH_AUTH_SOCK

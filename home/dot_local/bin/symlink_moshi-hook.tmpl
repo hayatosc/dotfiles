@@ -1,1 +1,5 @@
-{{ .chezmoi.homeDir }}/.local/share/mise/installs/http-moshi/latest/moshi-hook
+{{- $miseData := env "MISE_DATA_DIR" | default (joinPath .chezmoi.homeDir ".local/share/mise") -}}
+{{- $moshiHook := joinPath $miseData "installs/http-moshi/latest/moshi-hook" -}}
+{{- if stat $moshiHook -}}
+{{ $moshiHook }}
+{{- end -}}

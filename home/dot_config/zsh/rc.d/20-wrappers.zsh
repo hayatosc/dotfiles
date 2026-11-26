@@ -50,7 +50,7 @@ function chezmoi() {
   command chezmoi "$@"
   local exit_code=$?
 
-  if [[ "$subcommand" == "re-add" && $exit_code -eq 0 ]]; then
+  if [[ "$subcommand" == "re-add" && $exit_code -eq 0 ]] && (( $+commands[bun] )); then
     if ! ~/.config/zsh/scripts/codex-sync-config.ts; then
       echo "warning: codex-sync-config failed after chezmoi re-add" >&2
     fi

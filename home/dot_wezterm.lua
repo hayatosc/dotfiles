@@ -241,7 +241,22 @@ if is_windows then
   -- The default WSL domains already start in the Linux home directory; new tabs
   -- inherit the cwd of the current pane, which requires the shell to report it
   -- via OSC 7 (see ~/.config/zsh/rc.d/91-osc7-cwd.zsh).
-  config.default_domain = 'WSL:Ubuntu'
+  local env_domain = os.getenv('WEZTERM_WSL_DOMAIN')
+  if env_domain and env_domain ~= '' then
+    config.default_domain = env_domain
+  elseif wezterm.default_wsl_domains then
+    local ok, wsl_domains = pcall(wezterm.default_wsl_domains)
+    if ok and wsl_domains and #wsl_domains > 0 then
+      local selected = wsl_domains[1].name
+      for _, dom in ipairs(wsl_domains) do
+        if dom.name == 'WSL:Ubuntu' then
+          selected = dom.name
+          break
+        end
+      end
+      config.default_domain = selected
+    end
+  end
 end
 
 -- ---------------------------------------------------------------------------

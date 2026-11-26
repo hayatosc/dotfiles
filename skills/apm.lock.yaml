@@ -1,6 +1,8 @@
-lockfile_version: '1'
-generated_at: '2026-11-15T15:50:37.901677+00:00'
-apm_version: 0.35.0
+lockfile_version: '4'
+generated_at: '2026-11-26T09:50:25.042603+00:00'
+apm_version: 0.38.0
+manifest_targets:
+- agent-skills
 dependencies:
 - repo_url: anthropics/skills
   name: frontend-design
@@ -17,7 +19,7 @@ dependencies:
   deployed_file_hashes:
     .agents/skills/frontend-design/LICENSE.txt: sha256:0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594
     .agents/skills/frontend-design/SKILL.md: sha256:d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3
-  content_hash: sha256:89496d5dd00f4810205f351759594fc2742bf8eea85a2f2b2d1de59f4bd91576
+  content_hash: sha256:d43ace63d22e3502ab5c53b63138dafd0431ed5fd2fa63320285c8167ab27de6
 - repo_url: anthropics/skills
   name: pptx
   host: github.com
@@ -141,7 +143,7 @@ dependencies:
     .agents/skills/pptx/scripts/office/validators/pptx.py: sha256:17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299
     .agents/skills/pptx/scripts/office/validators/redlining.py: sha256:ed50d0885eee4b9c387f546b059bcaed64086815880a5167336244f93e305123
     .agents/skills/pptx/scripts/thumbnail.py: sha256:94ef83a84346aa2d63913de0d42bb2fe902ccdc17bfac6130096ca758381793c
-  content_hash: sha256:e09e0b3c1c84df535ded1de997afe1c07764b9e0a7359c848df6bd7a3f7abcb3
+  content_hash: sha256:1e6e250a368412bac8ee0ae9c0dc8ebe3c082c7ecb7c0fba699a1d6f9938c15a
 - repo_url: anthropics/skills
   name: skill-creator
   host: github.com
@@ -189,7 +191,7 @@ dependencies:
     .agents/skills/skill-creator/scripts/run_eval.py: sha256:43e3b8f80dbf69c343967ba77e268fae991d9fa3ed68b32a0ff02532cd48657f
     .agents/skills/skill-creator/scripts/run_loop.py: sha256:7bd6f674203168520517eec94c55f493c0d154339b061b4d7c0f0dad187d0f21
     .agents/skills/skill-creator/scripts/utils.py: sha256:3af8ae62c40c73ab712207436a0d9a981e845f25c5a7040229eb189cc8e45bb1
-  content_hash: sha256:b2bfe91d69ca99994c0566baede889e7d2b9bb8791c6b6106c5d387392f717f6
+  content_hash: sha256:412558e2d4103a965f8bd319273797a4787f1d4635c2b16f1df0d77d7e0680f4
 - repo_url: cloudflare/security-audit-skill
   name: security-audit
   host: github.com
@@ -241,7 +243,7 @@ dependencies:
     .agents/skills/security-audit/validate-coverage-ledger.test.cjs: sha256:cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648
     .agents/skills/security-audit/validate-findings.cjs: sha256:e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283
     .agents/skills/security-audit/validate-findings.test.cjs: sha256:b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b
-  content_hash: sha256:ac796659de231c3ab76f6ee012836072bdc82928fb019199925c9062800e16c1
+  content_hash: sha256:872862c01c6a9ff003ec91b8fabc71cf994e27bd15f93790760e3cee533fa4d9
 - repo_url: github/gh-stack
   name: gh-stack
   host: github.com
@@ -261,7 +263,7 @@ dependencies:
     .agents/skills/gh-stack/references/commands.md: sha256:f10d076868780913dc5f1ea26333dbdfc91c1a3c41e45fbc6a24fd6cba0b6929
     .agents/skills/gh-stack/references/stack-design.md: sha256:4a61e3065ce61a5d129a30f5dcbebe73bfde250e34c382277facdc31d2c4e5ce
     .agents/skills/gh-stack/references/troubleshooting.md: sha256:1a85094e2398f0d28b4e861f2af6e5a81e0553a0f44ddb51eb3dc6585b48e7f3
-  content_hash: sha256:83c1b8adac9beaaaa8647df0b83c6e45eb9096cf79fffe28542d6eea4b8455de
+  content_hash: sha256:3918cf119d2ab4c7a8d5e2e7b8dcb8f7bcdc67d94eabb41677b32fa8f924ca49
 - repo_url: googlechrome/modern-web-guidance
   materialization_repo_url: GoogleChrome/modern-web-guidance
   name: modern-web-guidance
@@ -696,7 +698,7 @@ dependencies:
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-forms.md: sha256:85e2320343299cd20ed511be1b9dc9fa4d44b9fcf822e3351f2ef24f62d49b05
     .agents/skills/modern-web-guidance/guides/webmcp/agentic-javascript-tools.md: sha256:cb5500844c63ee8cf869c33493d3965515a6236df6482daf449abfa74cdcb22d
     .agents/skills/modern-web-guidance/guides/webmcp/webmcp.md: sha256:ed20a7cb5bb400b186e234ec0f4ffa0d923ded078447777ff42499cce902afa9
-  content_hash: sha256:e83f6558ba84a2972229bacf4f7c41fc79ac3fd23266d8c80ebf1ca0e4e71d8c
+  content_hash: sha256:7cd80a1988f187cdba9aad33b1f6d18d8f704a17a8cdd2e115ab52cbf25c2824
 - repo_url: marycache/imozuru
   materialization_repo_url: MaryCache/imozuru
   name: imozuru
@@ -763,7 +765,7 @@ dependencies:
     .agents/skills/imozuru/scripts/report.py: sha256:f8686bd66f8c883b8b53ab0eea3077656294669136b8a8b458df826046f7cf97
     .agents/skills/imozuru/scripts/skin.py: sha256:646ed5b3defc301725bb30f357030e67c489533a3f978e31a485b1f0dd83f963
     .agents/skills/imozuru/scripts/watch.py: sha256:95c54d207378c7162b97f7d2a4d4329d2b957bbe45c051db572e6d42808686b1
-  content_hash: sha256:bbb22e7eb47e29dd1c70718159a31475c6c2baee1bbdb3b164358e3197e509f8
+  content_hash: sha256:145854e48b4186827acba833247bdd4d373098059129ccb8b55bfeb62528ba63
   declared_license: MIT
 - repo_url: nanaism/yomiyasu
   name: yomiyasu
@@ -860,7 +862,7 @@ dependencies:
     .agents/skills/yomiyasu/scripts/yomiyasu_diff.py: sha256:4923a869e599c47ee050c3a0ced7db6bdae12ba195cd99291a6713cf77b9d8e4
     .agents/skills/yomiyasu/scripts/yomiyasu_hook.py: sha256:71ba021b28526d928ca2cc4506ece9c50cfd9d9eab6de9a274d5581905ea68f4
     .agents/skills/yomiyasu/scripts/yomiyasu_lint.py: sha256:5e12c86bd891b14e650f7e737c982c7334a5b2de56a8a65bd3d6f5cd216b1f7a
-  content_hash: sha256:a3b58baf326030c03f61244e60efbee58207dc9fcccb4b7772471579fa9b40ec
+  content_hash: sha256:59995da02b22e2b96440791d001f864195f9aea5ad80cbb0fd29779fab0814f4
   declared_license: MIT
 - repo_url: ogulcancelik/herdr
   name: herdr
@@ -942,7 +944,7 @@ dependencies:
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-12x24+3.png: sha256:be922a8d500b6b6ddc85c45ec3f093a93b37530feb63c743192c28b8cc6ceba4
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-18x36+4.png: sha256:541e4e830c92eb7a38a3f6c295de5ce04810dd37cb421e833faec833e50a90f5
     .agents/skills/herdr/vendor/libghostty-vt/src/font/sprite/testdata/U+F600...U+F6FF-9x17+1.png: sha256:cd7732f559aa2be0fa30514e92f0bd2e509eb6ef6623d7252c4e380c69c91a24
-  content_hash: sha256:1a9db772fb02e8b34787eaefb887460361d815b85e26ee5387b0ecf4e93dbd7a
+  content_hash: sha256:cc3de779ec86f14691c717ea976df1bc5772eaadc1e6c9b1bbaf79492550a4f1
 - repo_url: openai/skills
   name: gh-address-comments
   host: github.com
@@ -966,7 +968,7 @@ dependencies:
     .agents/skills/gh-address-comments/assets/github-small.svg: sha256:ee05e92d373d4d84f4612af3c1090ef67698d421bbe30896a4ed5a00cb86a069
     .agents/skills/gh-address-comments/assets/github.png: sha256:d55a9baa41798d8b5108e3058df3a5bda09914ea9fd73b49929cc38a8832424f
     .agents/skills/gh-address-comments/scripts/fetch_comments.py: sha256:d7bc64f6b26f7482f9ca9dd7c923a5b8b20e1ef13491ae2d9052cd208a7c1ad1
-  content_hash: sha256:068d34fb59cb97a39aea3de1708877b6a01210d02fa7eda5e74fc8277ed52916
+  content_hash: sha256:9bf17217b3b2e5c3a72fedcccd07a361b1aa893bba52810a598a93ab11ae8386
 - repo_url: openai/skills
   name: gh-fix-ci
   host: github.com
@@ -990,7 +992,7 @@ dependencies:
     .agents/skills/gh-fix-ci/assets/github-small.svg: sha256:ee05e92d373d4d84f4612af3c1090ef67698d421bbe30896a4ed5a00cb86a069
     .agents/skills/gh-fix-ci/assets/github.png: sha256:d55a9baa41798d8b5108e3058df3a5bda09914ea9fd73b49929cc38a8832424f
     .agents/skills/gh-fix-ci/scripts/inspect_pr_checks.py: sha256:9459e5b03f86785d184a83e5cd8d621b832e918ec04158a2962d867785812c6c
-  content_hash: sha256:02b4d97e4bd91e342e3ec3efa06b7871097d6a64e8398f4ed5b69c64d8d902fb
+  content_hash: sha256:7a978956a9f9842ead2bf9dfd98dcde1f35fda7cfe365534ffe0027b83828710
 - repo_url: sveltejs/ai-tools
   name: svelte-core-bestpractices
   host: github.com
@@ -1022,7 +1024,7 @@ dependencies:
     .agents/skills/svelte-core-bestpractices/references/render.md: sha256:372f1ca7ee3205d7d9e4aaa687b1d4a5e71bcc5937e1cce7f3c98a51d8b1f746
     .agents/skills/svelte-core-bestpractices/references/snippet.md: sha256:b7924dc1babe16e5f938ce257041636e21a0eb585015bde3561aabd1bec3d52b
     .agents/skills/svelte-core-bestpractices/references/svelte-reactivity.md: sha256:962d86eca94fc2377b8ffddbe35c556e23a5b3e941ec04d6320e85828c727487
-  content_hash: sha256:680bcf2dbe7df32c01f9a662ce0b8930524c67b173665aaf6cef5b176fcabb3e
+  content_hash: sha256:f90908c02245833f16d604eb0a8a8c6bb245e5a513a0d74df7ab05031dfc2eef
 - repo_url: vercel-labs/agent-browser
   name: agent-browser
   host: github.com
@@ -1036,7 +1038,7 @@ dependencies:
   - .agents/skills/agent-browser/SKILL.md
   deployed_file_hashes:
     .agents/skills/agent-browser/SKILL.md: sha256:ef7c2da16e25e86b78396bd9a2fd112e23c42cdd2de435197a920b9fc646d1c2
-  content_hash: sha256:60a9cbe5af176150582c019e16e5d3703a41bb02d88438e881349876120d7944
+  content_hash: sha256:aa0b63b137c92d34003acea5d876d1eed84ff0c9d3986f987161891c24d4790a
 - repo_url: vercel-labs/agent-skills
   name: web-design-guidelines
   host: github.com
@@ -1050,7 +1052,7 @@ dependencies:
   - .agents/skills/web-design-guidelines/SKILL.md
   deployed_file_hashes:
     .agents/skills/web-design-guidelines/SKILL.md: sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f
-  content_hash: sha256:a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a
+  content_hash: sha256:b6849640846e0e39a09629c4cebfd25529b67a1174eb4d3d86f49783094669f9
 - repo_url: vuejs-ai/skills
   name: vue-best-practices
   host: github.com
@@ -1108,7 +1110,7 @@ dependencies:
     .agents/skills/vue-best-practices/references/sfc.md: sha256:dfe09f28869a2bc44e618068c3b6269f55d925d096714df25e253d2bbb58c28f
     .agents/skills/vue-best-practices/references/state-management.md: sha256:9e98a1c6d9009c0c8ef7228b6b3bcf10d30be6b713ffcef448ab7db3b419a851
     .agents/skills/vue-best-practices/references/updated-hook-performance.md: sha256:ded08ce93f9b23082538846f84e8d159d84af757c27b2c6b43a9283df803a32b
-  content_hash: sha256:40229445c32bee0726ac4e36aae0bfbd50a72b44c5061b178b839f3a533052f9
+  content_hash: sha256:7d9130a2b8d2cfa45ad2062ce09279f9bb5f4b6f5f787b03c4f8fccdfcbdeb21
 deployments:
 - kind: project-relative
   target: agent-skills

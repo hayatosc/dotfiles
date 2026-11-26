@@ -19,11 +19,28 @@ if [[ -n "${WSL_DISTRO_NAME:-}" || -n "${WSL_INTEROP:-}" ]] || grep -qi microsof
     target="$(wslpath -w "$target")"
   fi
 
-  exec /mnt/c/Windows/System32/rundll32.exe url.dll,FileProtocolHandler "$target"
+  rundll32=""
+  if command -v rundll32.exe >/dev/null 2>&1; then
+    rundll32="$(command -v rundll32.exe)"
+  elif command -v wslpath >/dev/null 2>&1 && command -v cmd.exe >/dev/null 2>&1; then
+    sys_root="$(cmd.exe /c "echo %SystemRoot%" 2>/dev/null | tr -d '\r')"
+    if [[ -n "$sys_root" ]]; then
+      candidate="$(wslpath -u "$sys_root")/System32/rundll32.exe"
+      [[ -x "$candidate" ]] && rundll32="$candidate"
+    fi
+  elif [[ -x /mnt/c/Windows/System32/rundll32.exe ]]; then
+    rundll32="/mnt/c/Windows/System32/rundll32.exe"
+  fi
+
+  if [[ -n "$rundll32" ]]; then
+    exec "$rundll32" url.dll,FileProtocolHandler "$target"
+  fi
 fi
 
 if [[ -x /usr/bin/xdg-open ]]; then
   exec /usr/bin/xdg-open "$@"
+elif command -v open >/dev/null 2>&1; then
+  exec open "$@"
 fi
 
 echo "xdg-open: no browser launcher found" >&2

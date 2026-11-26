@@ -1,8 +1,8 @@
 #!/bin/bash
 # Re-run whenever apm.yml or any self-authored skill under skills/ changes.
-# apm.yml hash: {{ output "sh" "-c" (printf "sha256sum %s 2>/dev/null | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" "apm.yml")) }}
-# yomiyasu license hash: {{ output "sh" "-c" (printf "sha256sum %s 2>/dev/null | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" ".licenses" "yomiyasu.LICENSE")) }}
-# skills/ hash: {{ output "sh" "-c" (printf "cd '%s' && find . -mindepth 2 -maxdepth 3 -type f ! -path './.*' ! -path './apm_modules/*' 2>/dev/null | sort | xargs -r cat 2>/dev/null | sha256sum | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills")) }}
+# apm.yml hash: {{ output "sh" "-c" (printf "(sha256sum '%s' 2>/dev/null || shasum -a 256 '%s' 2>/dev/null) | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" "apm.yml") (joinPath .chezmoi.sourceDir ".." "skills" "apm.yml")) }}
+# yomiyasu license hash: {{ output "sh" "-c" (printf "(sha256sum '%s' 2>/dev/null || shasum -a 256 '%s' 2>/dev/null) | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills" ".licenses" "yomiyasu.LICENSE") (joinPath .chezmoi.sourceDir ".." "skills" ".licenses" "yomiyasu.LICENSE")) }}
+# skills/ hash: {{ output "sh" "-c" (printf "cd '%s' && find . -mindepth 2 -maxdepth 3 -type f ! -path './.*' ! -path './apm_modules/*' 2>/dev/null | sort | xargs cat 2>/dev/null | (sha256sum 2>/dev/null || shasum -a 256) | cut -d' ' -f1" (joinPath .chezmoi.sourceDir ".." "skills")) }}
 
 set -euo pipefail
 
@@ -21,7 +21,7 @@ if ! command -v apm >/dev/null 2>&1; then
     exit 0
 fi
 
-SKILLS_DIR="${HOME}/.local/share/chezmoi/skills"
+SKILLS_DIR="{{ joinPath .chezmoi.sourceDir ".." "skills" }}"
 
 # 1. Clean up old permanent symlink if it exists
 if [ -L "${SKILLS_DIR}/.agents" ]; then

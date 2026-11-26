@@ -16,16 +16,26 @@ sudo apt-get update -y
 sudo apt-get install -y ca-certificates curl
 
 # Add Docker's official GPG key
+DISTRO_ID=$(. /etc/os-release && echo "${ID:-}")
+VERSION_CODENAME=$(. /etc/os-release && echo "${VERSION_CODENAME:-}")
+case "$DISTRO_ID" in
+    ubuntu|debian) ;;
+    *)
+        echo "Unsupported distro '${DISTRO_ID:-unknown}' for automated Docker install; skipping."
+        exit 0
+        ;;
+esac
+
 sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+sudo curl -fsSL "https://download.docker.com/linux/${DISTRO_ID}/gpg" \
     -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 # Add Docker's apt repository
 echo \
     "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] \
-    https://download.docker.com/linux/ubuntu \
-    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" \
+    https://download.docker.com/linux/${DISTRO_ID} \
+    ${VERSION_CODENAME} stable" \
     | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # Install Docker Engine

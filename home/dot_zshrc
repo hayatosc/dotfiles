@@ -3,41 +3,45 @@
 
 # Load sheldon plugins (including zsh-autocomplete) before mise/compdef callers
 # so zsh-autocomplete can intercept compdef and run compinit with its Completions dir.
-eval "$(sheldon source)"
+if (( $+commands[sheldon] )); then
+  eval "$(sheldon source)"
+fi
 
 if [ -f "$HOME/.config/zsh/init/mise.zsh" ]; then
   source "$HOME/.config/zsh/init/mise.zsh"
 fi
 
 # alias
-alias cat="bat"
+(( $+commands[bat] )) && alias cat="bat"
 # eza prints nothing for a bare listing when stdout is not a terminal, so a
 # piped `ls` (an agent shell, `ls | head`) would silently lose its output.
 # Pass the current directory explicitly unless the caller already names a path.
-ls() {
-  local arg
-  local -a args
-  args=("$@")
-  for arg in "${args[@]}"; do
-    if [[ $arg != -* ]]; then
-      eza --icons=auto "${args[@]}"
-      return
-    fi
-  done
-  eza --icons=auto "${args[@]}" .
-}
-alias find="fd"
-alias cd="z"
-alias rm="gomi"
-alias sd="sed"
+if (( $+commands[eza] )); then
+  ls() {
+    local arg
+    local -a args
+    args=("$@")
+    for arg in "${args[@]}"; do
+      if [[ $arg != -* ]]; then
+        eza --icons=auto "${args[@]}"
+        return
+      fi
+    done
+    eza --icons=auto "${args[@]}" .
+  }
+fi
+(( $+commands[fd] )) && alias find="fd"
+(( $+commands[zoxide] )) && alias cd="z"
+(( $+commands[gomi] )) && alias rm="gomi"
+(( $+commands[sd] )) && alias sd="sed"
 
 for zshrc_file in ~/.config/zsh/rc.d/*.zsh(.N); do
   source "$zshrc_file"
 done
 
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
-eval "$(git wt --init zsh)"
+(( $+commands[starship] )) && eval "$(starship init zsh)"
+(( $+commands[zoxide] )) && eval "$(zoxide init zsh)"
+(( $+commands[git-wt] )) && eval "$(git wt --init zsh)"
 
 if (( $+commands[op] )); then
   zsh-defer -c 'eval "$(op completion zsh)"; compdef _op op'
