@@ -1,6 +1,6 @@
 ---
 name: rust-best-practices
-description: Resolve Rust ownership, API compatibility, async cancellation, Cargo feature, performance, or unsafe/FFI design decisions. Skip elementary syntax and routine formatting.
+description: Implement or review Rust code and resolve ownership, API design, error handling, async concurrency, Cargo feature, performance, or unsafe/FFI decisions. Skip routine formatting.
 ---
 
 # Rust Design Decisions
@@ -46,9 +46,20 @@ Do not paper over the following signals:
 
 At these signals, return to the ownership, state-machine, API, or safety boundary and continue resolving the requested design. Stop only for a concrete blocker or when the affected contract is established.
 
+## Google Rust Style Baseline
+
+Apply these defaults alongside the decision protocol (see [google-style-guide.md](references/google-style-guide.md) for the full checklist):
+
+- Favor unique ownership/borrowing over `Rc`/`Arc` and deep copies; keep application code direct rather than over-generalized.
+- Avoid glob imports (`use foo::*;`); import from one module per `use`, qualify top-level function calls (`module::func()`), and use types unqualified.
+- Prefer named struct fields, `enum` over `bool` parameters, `#[non_exhaustive]` on public enums/field-exposed structs, and `#[must_use]` on critical return values.
+- Prefer pattern matching over check-then-unwrap, `expect("context")` over `unwrap()`, and direct loops over unreadable iterator combinator chains.
+
 ## Reference Routing
 
 Read only the references needed for the decision:
+
+- Google Rust Style Guide baseline (imports, APIs, naming, implementation): [google-style-guide.md](references/google-style-guide.md)
 
 - Symptom-driven diagnosis and common expert traps: [stumbling-blocks.md](references/stumbling-blocks.md)
 - Community field lessons, disputed heuristics, and lessons from other Rust agent skills: [community-practice.md](references/community-practice.md)

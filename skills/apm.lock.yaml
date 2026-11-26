@@ -1,5 +1,5 @@
 lockfile_version: '4'
-generated_at: '2026-11-26T09:50:25.042603+00:00'
+generated_at: '2026-11-26T11:19:43.563503+00:00'
 apm_version: 0.38.0
 manifest_targets:
 - agent-skills
@@ -4522,7 +4522,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:8b6e2b3b431ce1406ffc0017b2ec72238a35f62a788076d2cdb6fcd777817581
+  content_hash: sha256:6262e3a8cca1b61fb506b12b98708464cb22faaf58cce4a74cfa9a828939b9f2
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/rust-best-practices/references/api-design.md
@@ -4586,6 +4586,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:83e59ee0b09f0db07c9f1de93bebbb71fc790476b3b2a8dcafdcead9ab6df4f1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/rust-best-practices/references/google-style-guide.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:987a777310695feba29e15f8b2d255bdb06636d1cab9b72abb8b4993f7f5c862
 - kind: project-relative
   target: agent-skills
   value: .agents/skills/rust-best-practices/references/performance.md
@@ -7062,6 +7071,7 @@ local_deployed_files:
 - .agents/skills/rust-best-practices/references/core-idioms.md
 - .agents/skills/rust-best-practices/references/documentation.md
 - .agents/skills/rust-best-practices/references/error-handling.md
+- .agents/skills/rust-best-practices/references/google-style-guide.md
 - .agents/skills/rust-best-practices/references/performance.md
 - .agents/skills/rust-best-practices/references/stumbling-blocks.md
 - .agents/skills/rust-best-practices/references/testing.md
@@ -7208,7 +7218,7 @@ local_deployed_file_hashes:
   .agents/skills/refactoring-code/references/examples.md: sha256:34f8b4bdb29304e1ded30e7bdbf90a3dd9925286c4aff8eaae021c8ae61a8b28
   .agents/skills/refactoring-code/references/legacy-safety-net.md: sha256:67a0774a6df1bfe5f479a26a6895e72322a6add93525557d3543fca84be0619f
   .agents/skills/refactoring-code/references/refactor-playbook.md: sha256:2852a3e61c09c52cb8b67763938b0baf6aad8bbe479c8c73de2c37ba31befba5
-  .agents/skills/rust-best-practices/SKILL.md: sha256:8b6e2b3b431ce1406ffc0017b2ec72238a35f62a788076d2cdb6fcd777817581
+  .agents/skills/rust-best-practices/SKILL.md: sha256:6262e3a8cca1b61fb506b12b98708464cb22faaf58cce4a74cfa9a828939b9f2
   .agents/skills/rust-best-practices/evals/evals.json: sha256:dcbbe8c255b6b5f37b7308a93a1a29121428a9d2d3fa5609511885e782187bdf
   .agents/skills/rust-best-practices/references/api-design.md: sha256:9630d25c0836a8edf956e924d335b8e32bac68e219c659d80a07f1b8a2ad2b9b
   .agents/skills/rust-best-practices/references/cargo-tooling.md: sha256:3a7bb6238c90d4d1313fb73b2d2a3a5ab1ca40456ba44497785f3420d5659c4f
@@ -7217,6 +7227,7 @@ local_deployed_file_hashes:
   .agents/skills/rust-best-practices/references/core-idioms.md: sha256:8aa88fc7122d2774e34cbdf247cae967d68c5756d805878f1b9bcaf7ddbac6aa
   .agents/skills/rust-best-practices/references/documentation.md: sha256:b7b0dcba4b5de220e1e9b558d0d80dc05ca0e042dadb6695968f360954e50efd
   .agents/skills/rust-best-practices/references/error-handling.md: sha256:83e59ee0b09f0db07c9f1de93bebbb71fc790476b3b2a8dcafdcead9ab6df4f1
+  .agents/skills/rust-best-practices/references/google-style-guide.md: sha256:987a777310695feba29e15f8b2d255bdb06636d1cab9b72abb8b4993f7f5c862
   .agents/skills/rust-best-practices/references/performance.md: sha256:65f04e8ad2239c056eef672e0a373e2d535476d716b34412e2a11db60a184666
   .agents/skills/rust-best-practices/references/stumbling-blocks.md: sha256:2c17d9eccc11f14a96457d28d487b446884b93302bf94ea6e16e664909431216
   .agents/skills/rust-best-practices/references/testing.md: sha256:a2566946f55cd4847e2e48246e4571a59c21a0d278227aa8344d8ccd16578d9e
