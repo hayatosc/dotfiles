@@ -1,8 +1,36 @@
 {
-  "providers": {},
   "pi": {
-    "subagents": {
-      "forceEnable": true
+    "inline": false,
+    "subagents": false
+  },
+  "network": {
+    "maxShrinkPerCompress": 0.6
+  },
+  "storage": {
+    "archiveAfterDays": 30
+  },
+  "compress": {
+    "promptPack": "lean",
+    "requireRecommendation": true,
+    "protectedLatestTools": [
+      "get_goal",
+      "update_goal",
+      "update_goal_task"
+    ]
+  },
+  "providers": {
+    "https://chatgpt.com": {
+      "models": {
+        "gpt-6.2-sol": { "context": 500000 },
+        "gpt-6.2-astra": { "context": 272000 },
+        "gpt-6-astra": { "context": 272000 }
+      }
+    }
+  },
+  "billing": {
+    "prices": {
+      "gpt-6.2-sol": { "input": 2, "output": 10, "cacheRead": 0.1 },
+      "gpt-6.2-astra": { "input": 8, "output": 40, "cacheRead": 0.4 }
     }
   }
 }
